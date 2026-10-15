@@ -9,17 +9,18 @@ from pathlib import Path
 
 import pytest
 
-from app.infrastructure.persistence.seed_products import _CATALOG_FIXTURE, build_seed_products
+from app.infrastructure.persistence.seed_products import build_seed_products
 from scripts.eval.data_quality import validate_catalog_raw_records
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 V3_CATALOG = PROJECT_ROOT / "data/catalog-v3.jsonl"
+DEMO_CATALOG = PROJECT_ROOT / "data/catalog-demo.jsonl.gz"
 
 
-def test_default_catalog_adds_real_amazon_products_and_preserves_existing_records():
+def test_demo_catalog_adds_real_amazon_products_and_preserves_existing_records():
     with V3_CATALOG.open(encoding="utf-8") as stream:
         old_records = [json.loads(line) for line in stream if line.strip()]
-    with gzip.open(_CATALOG_FIXTURE, "rt", encoding="utf-8") as stream:
+    with gzip.open(DEMO_CATALOG, "rt", encoding="utf-8") as stream:
         records = [json.loads(line) for line in stream if line.strip()]
 
     assert len(records) == 5700
@@ -35,7 +36,7 @@ def test_default_catalog_adds_real_amazon_products_and_preserves_existing_record
     assert len({record["product_id"] for record in records}) == 5700
     sku_ids = [sku["sku_id"] for record in records for sku in record["skus"]]
     assert len(set(sku_ids)) == len(sku_ids)
-    products = build_seed_products()
+    products = build_seed_products(DEMO_CATALOG)
     assert [product.product_id for product in products] == [record["product_id"] for record in records]
     assert all(product.rating_summary is None for product in products[3700:])
 

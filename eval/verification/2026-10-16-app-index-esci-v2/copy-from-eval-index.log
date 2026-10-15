@@ -1,0 +1,2 @@
+source: data/esci-evaluation-vectors-v2/qdrant collection voyacart_products_esci_eval
+copied points: 12299 in 7.6s; target voyacart_products now has 12299 points

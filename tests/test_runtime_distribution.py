@@ -30,7 +30,17 @@ def test_docker_image_packages_catalog_outside_mutable_data_volume() -> None:
     dockerfile = (PROJECT_ROOT / "Dockerfile").read_text(encoding="utf-8")
 
     assert "COPY data/catalog-v3.jsonl ./catalog/catalog-v3.jsonl" in dockerfile
-    assert "COPY data/catalog-demo.jsonl.gz ./catalog/catalog-demo.jsonl.gz" in dockerfile
+    assert "COPY data/catalog-esci-v2.jsonl.gz ./catalog/catalog-esci-v2.jsonl.gz" in dockerfile
+
+
+def test_default_catalog_is_esci_v2_real_products() -> None:
+    from app.infrastructure.persistence import seed_products
+
+    assert seed_products._PACKAGED_CATALOG_FIXTURE.name == "catalog-esci-v2.jsonl.gz"
+    assert seed_products._DEVELOPMENT_CATALOG_FIXTURE.name == "catalog-esci-v2.jsonl.gz"
+    products = seed_products.build_seed_products(seed_products._DEVELOPMENT_CATALOG_FIXTURE)
+    assert len(products) == 12_299
+    assert {p.source_locale for p in products} == {"us", "es", "jp"}
 
 
 def test_compose_passes_reranker_configuration_to_app_and_worker() -> None:

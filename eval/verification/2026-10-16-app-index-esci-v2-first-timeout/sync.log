@@ -1,0 +1,20 @@
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+WARNING:app.infrastructure.vector.index_bootstrap:商品向量同步未完成，已写入批次保留，检索可能降级：
+{
+  "model": "text-embedding-v4",
+  "model_version": "",
+  "model_key": "7ace48e6f7264054d03887d33857e2c25d591dfdfdedf3d9055fa650cf4053af",
+  "collection": "voyacart_products",
+  "total_products": 12299,
+  "reused_products": 0,
+  "embedded_products": 0,
+  "written_products": 0,
+  "pending_products": 12299,
+  "batches": 0,
+  "complete": false,
+  "error_type": "ConnectTimeout"
+}
+real 16.39
+user 1.22
+sys 0.10

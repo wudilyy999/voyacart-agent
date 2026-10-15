@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
-"""加载版本化商品目录：原样例保留，加入真实亚马逊原文与演示交易字段。
+"""加载版本化商品目录：默认使用 ESCI v2 的真实亚马逊商品原文与演示交易字段。
 
-默认目录包含 3,700 件原样例和 2,000 件 ESCI 商品。
-历史评测显式选择各自的 v1、v2 或 v3 目录。
+默认目录为 12,299 件 ESCI 商品（类目与材质来自模型批量增强，价格、库存与配送为固定种子合成）。
+原样例目录与历史评测显式选择各自的 demo、v1、v2 或 v3 目录。
 """
 from __future__ import annotations
 
@@ -16,10 +16,10 @@ from app.domain.catalog.sku import Sku
 
 
 _PROJECT_ROOT = Path(__file__).resolve().parents[3]
-_PACKAGED_CATALOG_FIXTURE = _PROJECT_ROOT / "catalog" / "catalog-demo.jsonl.gz"
-_DEVELOPMENT_CATALOG_FIXTURE = _PROJECT_ROOT / "data" / "catalog-demo.jsonl.gz"
+_PACKAGED_CATALOG_FIXTURE = _PROJECT_ROOT / "catalog" / "catalog-esci-v2.jsonl.gz"
+_DEVELOPMENT_CATALOG_FIXTURE = _PROJECT_ROOT / "data" / "catalog-esci-v2.jsonl.gz"
 # 容器内优先读取镜像自带的只读目录，避免 /app/data 数据卷遮蔽商品底座；
-# 本地开发读取同一版本化目录，包含原样例与真实亚马逊商品。
+# 本地开发读取同一版本化目录。
 _CATALOG_FIXTURE = (
     _PACKAGED_CATALOG_FIXTURE
     if _PACKAGED_CATALOG_FIXTURE.exists()

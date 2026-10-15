@@ -28,7 +28,7 @@ COPY scripts/loadtest ./scripts/loadtest
 COPY knowledge ./knowledge
 # 版本化商品底座放在只读目录，不能放进会被命名卷遮蔽的 /app/data。
 COPY data/catalog-v3.jsonl ./catalog/catalog-v3.jsonl
-COPY data/catalog-demo.jsonl.gz ./catalog/catalog-demo.jsonl.gz
+COPY data/catalog-esci-v2.jsonl.gz ./catalog/catalog-esci-v2.jsonl.gz
 
 # 运行时数据目录（会话/偏好；向量库走 QDRANT_URL 指向 qdrant 服务）
 RUN mkdir -p /app/data
