@@ -1,0 +1,26 @@
+{
+  "source_and_original_log_unchanged": {
+    "app/infrastructure/transient.py": true,
+    "app/infrastructure/llm.py": true,
+    "app/infrastructure/model_recovery.py": true,
+    "app/application/agents/orchestrator.py": true,
+    "app/infrastructure/throttle.py": true,
+    "tests/test_phase3.py": true,
+    "tests/test_model_runtime_counting.py": true,
+    "tests/test_phase4_model.py": true,
+    "tests/test_model_cancellation.py": true,
+    "tests/test_budget_settlement.py": true,
+    "tests/test_context_prefix_recovery.py": true,
+    "eval/verification/2026-10-14-r2-model/command-010.stdout.log": true
+  },
+  "diff_check_exit_code": 0,
+  "passed": 114,
+  "counts_by_file": {
+    "test_phase3": 32,
+    "test_model_runtime_counting": 32,
+    "test_phase4_model": 7,
+    "test_model_cancellation": 6,
+    "test_budget_settlement": 19,
+    "test_context_prefix_recovery": 18
+  }
+}

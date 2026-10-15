@@ -1,0 +1,18 @@
+{
+  "calls_before_kill": {
+    "fault": {
+      "model": "mock-primary",
+      "status": 429,
+      "requests": 0
+    },
+    "requests": {
+      "mock-primary": {
+        "200": 2
+      }
+    }
+  },
+  "killed_at": 1791978698.7851489,
+  "lease_until": 1791978726.5860906,
+  "recovered_at_server": 1791978726.832,
+  "recovery_after_lease_seconds": 0.2459094524383545
+}

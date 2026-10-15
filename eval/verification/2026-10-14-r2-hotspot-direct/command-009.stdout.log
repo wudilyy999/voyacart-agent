@@ -1,0 +1,15 @@
+{
+  "buyer_id": "hotspot-8c5be8f8a1c940cf8b4eb1cdad95031e",
+  "sku": "P1005-S1",
+  "initial_stock_expected": 100,
+  "confirmations": 500,
+  "approval_requests": 500,
+  "approved": 100,
+  "orders": 100,
+  "orders_before_approval": 0,
+  "errors": {
+    "INSUFFICIENT_STOCK": 400
+  },
+  "approve_seconds": 6.880636416957714,
+  "expected_approved": 100
+}

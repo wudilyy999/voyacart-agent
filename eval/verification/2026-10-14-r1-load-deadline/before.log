@@ -1,0 +1,31 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+______ test_total_deadline_counts_heartbeat_lines_without_business_events ______
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x1064bbd10>
+
+    def test_total_deadline_counts_heartbeat_lines_without_business_events(monkeypatch):
+        from unittest.mock import Mock
+        clock = 0
+        monkeypatch.setattr(load.time, 'perf_counter', lambda: clock)
+    
+        class Heartbeats(Response):
+            def iter_lines(self, **_):
+                nonlocal clock
+                for _ in range(10):
+                    clock += .05
+                    yield ': heartbeat'
+                    yield ''
+    
+        result = load.consume_run(Mock(request=Mock(return_value=Heartbeats([]))),
+            'http://test', 'buyer', 'run', timeout=.2)
+>       assert result['error_code'] == 'Timeout:run_deadline_exceeded'
+E       AssertionError: assert 'ValueError:s...fore_terminal' == 'Timeout:run_...line_exceeded'
+E         
+E         - Timeout:run_deadline_exceeded
+E         + ValueError:stream_ended_before_terminal
+
+tests/test_agui_loadtest.py:94: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_agui_loadtest.py::test_total_deadline_counts_heartbeat_lines_without_business_events
+1 failed, 10 deselected in 0.04s

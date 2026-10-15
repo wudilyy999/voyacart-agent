@@ -1,0 +1,1692 @@
+[
+  {
+    "path": ".dockerignore",
+    "bytes": 268,
+    "content_fingerprint": "2f520d8d323a2ca40ad9a7d719974d92e6741818630b5bcf8c7f76276f9655e6d2fe3f1aeba6ebda257783f98cbd6eba6353747faa9d00947638db88deb7dece"
+  },
+  {
+    "path": "AGENTS.md",
+    "bytes": 3085,
+    "content_fingerprint": "16233e8629af0ea8d39bc9357ec6cc6fdb1ca0487702760e492486485e50075d76a8e3403f45b956bf5229e3a878966761ce59cfe9fe30b7cf09cfc2320295b6"
+  },
+  {
+    "path": "Dockerfile",
+    "bytes": 1239,
+    "content_fingerprint": "92c441b1f9d2773d00149f212d5992f86a0f65875132f875180512e53aaf871ba0f3daec8fa34ed3951893c38a6260c1035cc3e8f733d4ed40837b78cea2b5e0"
+  },
+  {
+    "path": "README.md",
+    "bytes": 52029,
+    "content_fingerprint": "42ab7084f44c3b27799948437c428670fc64bd48bde51aaf3d1e1782954219e7f9d4904a7e72a76ebd9538002f31ffd36261157ae1e321a85bd6d45a8770a0b8"
+  },
+  {
+    "path": "app/__init__.py",
+    "bytes": 24,
+    "content_fingerprint": "ce7ab91daa5efe5a66608aa19e6758718ffe31fe595181308a397633df00f4ea96128e65c4dd2829dfde99ac956150e3363908a99bc7d3210659329845231800"
+  },
+  {
+    "path": "app/application/__init__.py",
+    "bytes": 24,
+    "content_fingerprint": "ce7ab91daa5efe5a66608aa19e6758718ffe31fe595181308a397633df00f4ea96128e65c4dd2829dfde99ac956150e3363908a99bc7d3210659329845231800"
+  },
+  {
+    "path": "app/application/agent_runtime.py",
+    "bytes": 13824,
+    "content_fingerprint": "cfb1e741a4dea144ba0a96d7202a1a8e63895aa67a526825803494d9dff52cb8eba59283b5019b353bef92c4b5c88523fd64580d128cfe16cc6e351fbf4145c0"
+  },
+  {
+    "path": "app/application/agents/__init__.py",
+    "bytes": 24,
+    "content_fingerprint": "ce7ab91daa5efe5a66608aa19e6758718ffe31fe595181308a397633df00f4ea96128e65c4dd2829dfde99ac956150e3363908a99bc7d3210659329845231800"
+  },
+  {
+    "path": "app/application/agents/activity_summary.py",
+    "bytes": 5099,
+    "content_fingerprint": "cb22b7d30a2313f5324003225d61c3e44952db69ab3a7c09cf366f6499e819fcd5017f69d67feaa7ba1b839b1765da35974797c9f3fcb4f86040c6b0bcc90d0c"
+  },
+  {
+    "path": "app/application/agents/ag_ui_adapter.py",
+    "bytes": 22025,
+    "content_fingerprint": "9d8ce955315423cbbd856efc2e1351112c2e504444cbd7708c1bd5f0ab00e0b549d6f88a6eb9929aaaeb0ab00102dcd4155f182ba71e3dd33858b9eb6fa16097"
+  },
+  {
+    "path": "app/application/agents/context_policy.py",
+    "bytes": 4173,
+    "content_fingerprint": "0d36ff1fdff0153bf46509de67928682532bcb6ed33ac05b1fd698fef1694e44a7d87f673e7d8b3f6fa14c0354604dc5371ff5624d50a1a20f0bad04937ff6bb"
+  },
+  {
+    "path": "app/application/agents/context_service.py",
+    "bytes": 12913,
+    "content_fingerprint": "5f2fd5389417bf6493d58ec4e3578f9524f81d6d61f4dcb2e680db95eab74835831eea402018661322feb0de2c1184562c4214292653b9a90f6597193ed0ed46"
+  },
+  {
+    "path": "app/application/agents/main_agent.py",
+    "bytes": 19573,
+    "content_fingerprint": "2371110628c358ae5289a631f41874ec6d8c929faa52dcbd0cd99de206494c1977fbe63badb5664bb6dbcc308d8a2c15f111906a53575db976d0e1b4ada9da01"
+  },
+  {
+    "path": "app/application/agents/model_selection.py",
+    "bytes": 4243,
+    "content_fingerprint": "cc201fdff4d0ee77d11a78c9f3bbcc8a1d19ccb9caa45d851f7aff3d5c2353f95b70ed5d59e0b75305332bd501353cbbf2f202a649be1d11b3212454be5c0838"
+  },
+  {
+    "path": "app/application/agents/orchestrator.py",
+    "bytes": 38049,
+    "content_fingerprint": "b2be8b2e1da987f4c1c8030f97d7e53ceb240d9219710aa88079afd9ac66c37349c935f134e2617beca403ec5e69f298f7d6ed47ddd877334a606f741e5ec7a1"
+  },
+  {
+    "path": "app/application/agents/permissions.py",
+    "bytes": 1596,
+    "content_fingerprint": "79a01e9126f181e07194f5b6b565ded3cc9fb2dc99123a2d6bf99792554fdb9d631f9f54ba397e5cb25beeb395b3a814113bc3f3cd2de7875086f4ec4f0f2b60"
+  },
+  {
+    "path": "app/application/agents/personal_skill_context.py",
+    "bytes": 9588,
+    "content_fingerprint": "4bb413adf5b55fa6a7cafb069635df86ca30b7d7f3902d2ea91491f9aa17732d21c6298c9d3343eb6bead80d8398bf6fc4a1e3257841ee052a483781278531ad"
+  },
+  {
+    "path": "app/application/agents/product_candidate_projection.py",
+    "bytes": 3959,
+    "content_fingerprint": "2d5891866ae64e65c63ab5bfc3c2be412bf9b1033b266e5b200b6322f4e61c020c788db113f393cbd80a1fd48859a5c6b8821c56c5851e79cef0ffdb0163b328"
+  },
+  {
+    "path": "app/application/agents/search_agent.py",
+    "bytes": 5661,
+    "content_fingerprint": "42d052f3aca202a7a13c39583198d7acce93cdc9f2631ea7a9c50d4dfe94793ef5e4a1ea968da4b07837c980652407f22aab11e48f8d535b03b61845e837c4a6"
+  },
+  {
+    "path": "app/application/agents/selected_skill.py",
+    "bytes": 5732,
+    "content_fingerprint": "747e1b38ac1d1ed275f11d8713697ef716bc85dc0642f0422f4737a4373f44a2de61683487e649716bda96ce75d9e6c847c93329d72c7c5d1cfe2416da939d32"
+  },
+  {
+    "path": "app/application/agents/tool_confirmation.py",
+    "bytes": 3024,
+    "content_fingerprint": "fd6c94314aebcc7f794969935cf7e57a12a2576b37a26a154a3a4eacc49ae4640fd28ab2ff81bb755ac8728e83d58b40a53038972176d3812a7228bd22769e23"
+  },
+  {
+    "path": "app/application/agents/trade_agent.py",
+    "bytes": 4747,
+    "content_fingerprint": "8599ae7421de18d533e8624035fa888d6a148d9295fe10ae4cdea476fbdfb6030b99dc3b54bc7ff97db4bded3df252b5d98f6bc53e84153583b36757d49a0cf6"
+  },
+  {
+    "path": "app/application/automation.py",
+    "bytes": 8249,
+    "content_fingerprint": "a7cc72f98359556f5eac1a6aab4c75602b92d8837e330dc97a4e8b843d574226be0321039016ecb5f352545c6af81b1f33f86acc1a9e5bdd810b8ddbe54202dc"
+  },
+  {
+    "path": "app/application/harness/__init__.py",
+    "bytes": 556,
+    "content_fingerprint": "fe57848824e44a5ae4dbe78f95b6d5fcc8221f0250f7192e8381ebb1851daa223ece33e18da9b60b9e29f5c5783a86036e7cc84ed336ce9d4f741020bd566118"
+  },
+  {
+    "path": "app/application/harness/assertions.py",
+    "bytes": 6149,
+    "content_fingerprint": "0773a19d1bca761668c009a1dbda87dea32ad00d2830dbbac9fb5b2058b87f64d9fb31e1c8d7ffc56b428a596cb0aa8ca0f038f5c3387fc8466d4017d595e37e"
+  },
+  {
+    "path": "app/application/harness/drift_detector.py",
+    "bytes": 7387,
+    "content_fingerprint": "960655ac9a6990fac2bc39a2e812bb047b69679e47c7e47d26340a9980ee790d8debed75de61dbb7d1ed0d4e2acecdf94eb1a16c7271850a744327963e99fa93"
+  },
+  {
+    "path": "app/application/harness/loop_detector.py",
+    "bytes": 5612,
+    "content_fingerprint": "8d62866cd369fd0025586177f8b82924d9730418f5951c654db59fb9ceafe06f2e3e980a819f85b70735272de14e58ba5a19ddb37fca1d8becc36a1cfa6859bf"
+  },
+  {
+    "path": "app/application/learning.py",
+    "bytes": 3591,
+    "content_fingerprint": "7c484ef1c0653fec3ac4862154762e0867f8848bc439cedf0552633277c72686c812cc4e2d588797428808cdbcb4cb5cbbbd06d9d2421e9e025fbb36670076bf"
+  },
+  {
+    "path": "app/application/memory/__init__.py",
+    "bytes": 476,
+    "content_fingerprint": "e62095842138c95bc75c8d6d75a4829f17eb4e7fd6c4cd5903c9ad3de3b94e03ec85bb0623180be368c633b235c81d8358446934372f38ed28424b15a34eeb93"
+  },
+  {
+    "path": "app/application/memory/middleware.py",
+    "bytes": 1761,
+    "content_fingerprint": "b0020c710788bc19738fefc9711689f3664d23cb9e9b189590e6de6a55aa4d704ca97ffd79d99c170557c77c303a8bed66ca594c4c11cf9c71e0fe4047e3d50f"
+  },
+  {
+    "path": "app/application/memory/preference_selector.py",
+    "bytes": 6999,
+    "content_fingerprint": "40d192769135f1c8bc62ec76c278135c3a657af01dce369bdf2c6853a2a02a439a1c3ea4ddf38dd6cb15d006e636ba738e2c92e8d355231c1d592b82ade62e92"
+  },
+  {
+    "path": "app/application/prompts/__init__.py",
+    "bytes": 24,
+    "content_fingerprint": "ce7ab91daa5efe5a66608aa19e6758718ffe31fe595181308a397633df00f4ea96128e65c4dd2829dfde99ac956150e3363908a99bc7d3210659329845231800"
+  },
+  {
+    "path": "app/application/prompts/voyacart.yml",
+    "bytes": 13361,
+    "content_fingerprint": "2796a86aa1e7a58ce2287305481e23a17b1de31f936766ca5bf88da14ca94c6c8aeaddde6a17ce6561272af866fa520683143d9073b715fea89996174069c451"
+  },
+  {
+    "path": "app/application/prompts/loader.py",
+    "bytes": 997,
+    "content_fingerprint": "c15da4a77e823c6236e7d95e012ab4511e9cb7c79023dc2043ed438b4194f158dc96872320aeeb88d362f51171f93325d05486ae519b96a847fddd16d0ae2d9b"
+  },
+  {
+    "path": "app/application/tools/__init__.py",
+    "bytes": 24,
+    "content_fingerprint": "ce7ab91daa5efe5a66608aa19e6758718ffe31fe595181308a397633df00f4ea96128e65c4dd2829dfde99ac956150e3363908a99bc7d3210659329845231800"
+  },
+  {
+    "path": "app/application/tools/capability_tools.py",
+    "bytes": 8334,
+    "content_fingerprint": "73778c00b4824ed5ded8b2e7e56a0bb72ae143a11c4246b80f7c9bb81d9918f0dff273b3169b8bfb0d4164f4e6739a82fba0aaee6f7ea5e5eb10560b454f6521"
+  },
+  {
+    "path": "app/application/tools/category_insight_tool.py",
+    "bytes": 5829,
+    "content_fingerprint": "7a484a42c70969f95b1771b6747224adbcae68cf9b2c23e9970500aad07392c31483d5d6d3e4bb2a888a4d691a773f3cf954115f7e05faea9ede2538c168c2d8"
+  },
+  {
+    "path": "app/application/tools/conversation_fact_lookup.py",
+    "bytes": 11314,
+    "content_fingerprint": "891a4cc6b07f6aa169bebe9a54595baac67e833db29a9bb38aa06dd96f21b2533de202956fb790c22e78b236f6235751a314ea559d6cc52a4021e302ba3a17d9"
+  },
+  {
+    "path": "app/application/tools/forget_preference_tool.py",
+    "bytes": 4844,
+    "content_fingerprint": "e387ce15fca1806c03043242be7274cbc93871d9bbffa59d2828d9675e18168beacde37fc4a895c70b96a7309b8c1a76249e17032214895def2c08d14704c3b2"
+  },
+  {
+    "path": "app/application/tools/order_tools.py",
+    "bytes": 9489,
+    "content_fingerprint": "b0be1b21dc83c0b4a212ecdec985e16b9ade36eca73d422711fcd4f5324f51ae369b2057c1f36d10792f7aecc11502eb3ec5c51ec0c54403261526cc5f508b39"
+  },
+  {
+    "path": "app/application/tools/product_search_tool.py",
+    "bytes": 10142,
+    "content_fingerprint": "51f055e0d2ad832961cff7a88ba59a438799ce8f0cb21cc73a3e0c049bf4a28524d7d0b9d0806b74667c65a02879e23e62b95601dc6bd986f86d9c50d859c765"
+  },
+  {
+    "path": "app/application/tools/remember_preference_tool.py",
+    "bytes": 2852,
+    "content_fingerprint": "b85ba0742519b846c2e1b7df0a3f4ce9c67fe859ee803d9e3d122e5d57059484ffeed549b3ac121918886b005bf6973f162da94466ca806e55a6dc915a2310fd"
+  },
+  {
+    "path": "app/application/tools/shopping_form_tool.py",
+    "bytes": 3033,
+    "content_fingerprint": "80829dea4a8a43986234bdf28d5350998be2c7882d5562898339b44b3a3c335ede1a9fea759fb00e7f527f98d6221ac792c0a4babdaa16d5bd4bbd01e6cbb950"
+  },
+  {
+    "path": "app/application/tools/task_dispatch_tool.py",
+    "bytes": 7798,
+    "content_fingerprint": "81ba4c36cd3f0c2939930e137aebea0cf814ee70e7ce030a5278261bc1f2de713098475494c4cea562c6e5cdce9740293336af5c606983bf5cec16ed6d6f2184"
+  },
+  {
+    "path": "app/application/tools/update_preference_tool.py",
+    "bytes": 3400,
+    "content_fingerprint": "959b3f4aaeb26fdaa82afc02d8f69354aef49d67a7d4b9ece243effcfd260644ae3e95b047abb5308d5a96c1b50f277fea890ba4dfb853345883f479c3b3cb77"
+  },
+  {
+    "path": "app/application/tools/web_search_tool.py",
+    "bytes": 2779,
+    "content_fingerprint": "0a6c3e4ff4dd48d5d3fea4239a2bfe369c7848efd952ccd8ff599c1c31697e66d33a4734c5599b7a2469619b1ede91c09dce6502cfea3df4e6e2cdceb2c55199"
+  },
+  {
+    "path": "app/application/usecases/__init__.py",
+    "bytes": 24,
+    "content_fingerprint": "ce7ab91daa5efe5a66608aa19e6758718ffe31fe595181308a397633df00f4ea96128e65c4dd2829dfde99ac956150e3363908a99bc7d3210659329845231800"
+  },
+  {
+    "path": "app/application/usecases/catalog_search.py",
+    "bytes": 25702,
+    "content_fingerprint": "1b2b3882463ba4753f8938a4bae4f329e4ffdad0e7c82b1f90f2b33f2216223d1760ee67378366b669298e754076f075a9210ee10fa1aaa274fd7b9590da3670"
+  },
+  {
+    "path": "app/application/usecases/confirmation_service.py",
+    "bytes": 9162,
+    "content_fingerprint": "0999c4a17227cd317c1e01a3631cdfd690c360b9c4e435445323f531bb4e23ed643cc4e5cd95f79da36f583f7b42007461295b164c7554837dbd640ef4f2da53"
+  },
+  {
+    "path": "app/application/usecases/order_usecases.py",
+    "bytes": 2461,
+    "content_fingerprint": "8a58d35ef1343a1f93b9495f2c825cf168f78dafca5370863f1de8211ba6ce90bb1a45e599fe6588f7c94e0b4efa9dd97655594b4e3bc6a18d558a25aa18cb23"
+  },
+  {
+    "path": "app/application/usecases/product_media.py",
+    "bytes": 1017,
+    "content_fingerprint": "262c34630eaa450cbf0cf79fcc42d7528bf028ceceacba40bd326bbc7c1a0a56fa0d18b74f0d24a8bb41d0b7b54f9fbbe74b86c0481910364fbac86714e26cb8"
+  },
+  {
+    "path": "app/automation_worker.py",
+    "bytes": 887,
+    "content_fingerprint": "24fb5f6c0a09dd04d5f6942503201278d49a084e84c74ce6eb76858cc0033092440c8f4ae266eb6715094d1ecc9e5c9e10e15f3c5298be1e2ccfd6b70c125925"
+  },
+  {
+    "path": "app/composition.py",
+    "bytes": 22127,
+    "content_fingerprint": "f9e225762423dd0497c8cc842f57e577bbb857ed9b6b48cff80642cddddf010fd95ce2864a17bbf7a9285bdaeadc55608422323cbdbcac0efad0bff3efa987fe"
+  },
+  {
+    "path": "app/domain/__init__.py",
+    "bytes": 24,
+    "content_fingerprint": "ce7ab91daa5efe5a66608aa19e6758718ffe31fe595181308a397633df00f4ea96128e65c4dd2829dfde99ac956150e3363908a99bc7d3210659329845231800"
+  },
+  {
+    "path": "app/domain/automation/__init__.py",
+    "bytes": 64,
+    "content_fingerprint": "1a7019781fb83d4331bec28662e78064f28407726c2e49e49084810bfc735ee1c8acea4823662e93d4345d5fc8499725eed23bcd4be6820267d90826ca82034c"
+  },
+  {
+    "path": "app/domain/automation/models.py",
+    "bytes": 5913,
+    "content_fingerprint": "cec2320b016a98130b6e005f8b18dd5dd179150fd9ecb2d367162ea3a13279f323fbf0bedde59cf5d71daaca18613a49d8bef14f07a8959f8aafd9c5a3103482"
+  },
+  {
+    "path": "app/domain/buyer/__init__.py",
+    "bytes": 24,
+    "content_fingerprint": "ce7ab91daa5efe5a66608aa19e6758718ffe31fe595181308a397633df00f4ea96128e65c4dd2829dfde99ac956150e3363908a99bc7d3210659329845231800"
+  },
+  {
+    "path": "app/domain/buyer/ports/__init__.py",
+    "bytes": 24,
+    "content_fingerprint": "ce7ab91daa5efe5a66608aa19e6758718ffe31fe595181308a397633df00f4ea96128e65c4dd2829dfde99ac956150e3363908a99bc7d3210659329845231800"
+  },
+  {
+    "path": "app/domain/buyer/preference.py",
+    "bytes": 2677,
+    "content_fingerprint": "e9cd844d868cdc6e58b80779226bf24b7fbf465bb06b4cd2b7f1980706b6e1c400e5c8281960c240570dc43d5dac6c5cf4410bd6d417c813b7353c693494fd7f"
+  },
+  {
+    "path": "app/domain/catalog/__init__.py",
+    "bytes": 24,
+    "content_fingerprint": "ce7ab91daa5efe5a66608aa19e6758718ffe31fe595181308a397633df00f4ea96128e65c4dd2829dfde99ac956150e3363908a99bc7d3210659329845231800"
+  },
+  {
+    "path": "app/domain/catalog/exchange_rate.py",
+    "bytes": 1536,
+    "content_fingerprint": "37db87e1b80e54ad2705df19a86422cf1ee69013235cd9c0e7f323655c25e28a81e654ed1215966ba7117099f9900902ca29ac27ed4ddf5ba0c3a61caee58f65"
+  },
+  {
+    "path": "app/domain/catalog/money.py",
+    "bytes": 2028,
+    "content_fingerprint": "5f6723fd0d46f39b01529c566df4e833a1a6ecdf2001fa6d63d7547a603bb70f6cc2324bc3b11f23c99701e8623d4db976032191df360d5526bdc466979dc5b7"
+  },
+  {
+    "path": "app/domain/catalog/ports/__init__.py",
+    "bytes": 24,
+    "content_fingerprint": "ce7ab91daa5efe5a66608aa19e6758718ffe31fe595181308a397633df00f4ea96128e65c4dd2829dfde99ac956150e3363908a99bc7d3210659329845231800"
+  },
+  {
+    "path": "app/domain/catalog/ports/product_repository.py",
+    "bytes": 636,
+    "content_fingerprint": "6931ab76ebbd75c178e926e1b863c9bcd3728fa14c950ddd9ec36369f62a326a9b93444669d63d1bbeb90609fa8b6d6efa72ed4b2a77d7ac6c73b5da15d94740"
+  },
+  {
+    "path": "app/domain/catalog/ports/retrieval_ports.py",
+    "bytes": 1957,
+    "content_fingerprint": "0f0944d5b2b030de20daacfdcb9632491da8bd0bb4c6d7c41bddd11d72ac2d8b6adf133a56ecca604312b126cd59cc7009f0cd5f46fc692298ed06e2b82bb049"
+  },
+  {
+    "path": "app/domain/catalog/product.py",
+    "bytes": 2903,
+    "content_fingerprint": "6efae56caf4f678c2111863359b6e5a390a6fa97118d3ef88463a919e51d5a1dea2d3d35715ca443c6cf80d3ed0e4ccb167310b2f7d6bb3b369cb6e94469f929"
+  },
+  {
+    "path": "app/domain/catalog/product_search_spec.py",
+    "bytes": 2608,
+    "content_fingerprint": "de55c78e548abb2a93c164721f3204674e00b84683afb1d3a77f4637d9fd70083232c27a09b8ad230aa155fc567ae1fc47f04efa5d109c5fea7021239a823538"
+  },
+  {
+    "path": "app/domain/catalog/sku.py",
+    "bytes": 1116,
+    "content_fingerprint": "a5e9dfbc9d2aef659cbc7a5efa781321f852bfa2466d2bbc5c968255db980fe861b59b0af93f6b8b340cfb79f4ddba72f0fc1a40262b2609680b080e53de2b79"
+  },
+  {
+    "path": "app/domain/learning.py",
+    "bytes": 3805,
+    "content_fingerprint": "41cfca8d69d9065d9d4ac74194d2ae8b6d2257259d117789d4d913f0b9a7e612fee74ae6ec049613ac30dcbb322a21eb296b4f7bb2a8055b4e96f3d13ba90dec"
+  },
+  {
+    "path": "app/domain/order/__init__.py",
+    "bytes": 24,
+    "content_fingerprint": "ce7ab91daa5efe5a66608aa19e6758718ffe31fe595181308a397633df00f4ea96128e65c4dd2829dfde99ac956150e3363908a99bc7d3210659329845231800"
+  },
+  {
+    "path": "app/domain/order/address.py",
+    "bytes": 757,
+    "content_fingerprint": "e5c3d805a84be9fa0fdbea3759a717eaa6789b4e23f1fee43fab44d4894cd552f9192a5a29cedb688ed4c092fde774e36c8e4a32715aacaa597659812561453d"
+  },
+  {
+    "path": "app/domain/order/order.py",
+    "bytes": 3845,
+    "content_fingerprint": "56fd8515c358f11ecdbe1cd78dfb1ee859f8f7068ddea3abe5b08b3432258037396dbc54177e97426967acd6f4816a0bdde2b6b2be4e4eabb07db37e820f5d3e"
+  },
+  {
+    "path": "app/domain/order/order_line.py",
+    "bytes": 651,
+    "content_fingerprint": "4b9f7ca20d9ad47bf48ea64ebb2affabefe10790241670cd4a8b7703b8c473f3bddb0acd43fc2f23498057fd7715e9a66ed5e17bc8d7ae660d98f1c064bb9adf"
+  },
+  {
+    "path": "app/domain/order/ports/__init__.py",
+    "bytes": 24,
+    "content_fingerprint": "ce7ab91daa5efe5a66608aa19e6758718ffe31fe595181308a397633df00f4ea96128e65c4dd2829dfde99ac956150e3363908a99bc7d3210659329845231800"
+  },
+  {
+    "path": "app/domain/order/ports/order_repository.py",
+    "bytes": 579,
+    "content_fingerprint": "027bdaf3bf309bcd807cebfdd6767ca54b59063f5697890cca7149561902c983f272e78ab886a8b215346ba0be3e1f28479c9e021d67531c1cd2d1207633ba5e"
+  },
+  {
+    "path": "app/domain/order/ports/trade_store.py",
+    "bytes": 1859,
+    "content_fingerprint": "da1d124fd8b10e9dbb89e8bbf8591c3eafe6c6c8aeea74dd3bff0b9d80e67dd6b1bd6a871df6f7c5d01efbe21ab49aed86b8118d0e2c15f1d733b542a10e8a83"
+  },
+  {
+    "path": "app/domain/queue/__init__.py",
+    "bytes": 24,
+    "content_fingerprint": "ce7ab91daa5efe5a66608aa19e6758718ffe31fe595181308a397633df00f4ea96128e65c4dd2829dfde99ac956150e3363908a99bc7d3210659329845231800"
+  },
+  {
+    "path": "app/domain/queue/ports/__init__.py",
+    "bytes": 24,
+    "content_fingerprint": "ce7ab91daa5efe5a66608aa19e6758718ffe31fe595181308a397633df00f4ea96128e65c4dd2829dfde99ac956150e3363908a99bc7d3210659329845231800"
+  },
+  {
+    "path": "app/domain/queue/ports/task_queue.py",
+    "bytes": 3836,
+    "content_fingerprint": "3fd69a278d8623258602e617f27c301a8910be6d50c171c6d4367e5228105315e956b8512f9f657dc89ff0997c696db3d21008ca1668a5fde0e679a4358a6a66"
+  },
+  {
+    "path": "app/domain/session/__init__.py",
+    "bytes": 24,
+    "content_fingerprint": "ce7ab91daa5efe5a66608aa19e6758718ffe31fe595181308a397633df00f4ea96128e65c4dd2829dfde99ac956150e3363908a99bc7d3210659329845231800"
+  },
+  {
+    "path": "app/domain/session/ports/__init__.py",
+    "bytes": 24,
+    "content_fingerprint": "ce7ab91daa5efe5a66608aa19e6758718ffe31fe595181308a397633df00f4ea96128e65c4dd2829dfde99ac956150e3363908a99bc7d3210659329845231800"
+  },
+  {
+    "path": "app/domain/session/ports/conversation_store.py",
+    "bytes": 2580,
+    "content_fingerprint": "7a8eebdf443e98c4546d0f231dddd3014385c2261641bd847a72ff9b44008a87f1beb6b42ac88f805ba405ea27be72caa9b76ed28f9990fe90b6110d9fb42b33"
+  },
+  {
+    "path": "app/domain/session/ports/session_store.py",
+    "bytes": 2475,
+    "content_fingerprint": "f531fcbec4775f9385a976b85f3d28be20a18acc6db0bba1125c19e0a4dc7451ce6838219ae4248a6609144026d4c9e76bf5b3053b73dfb6225e120d3cf3ec3c"
+  },
+  {
+    "path": "app/domain/shipping/__init__.py",
+    "bytes": 24,
+    "content_fingerprint": "ce7ab91daa5efe5a66608aa19e6758718ffe31fe595181308a397633df00f4ea96128e65c4dd2829dfde99ac956150e3363908a99bc7d3210659329845231800"
+  },
+  {
+    "path": "app/domain/shipping/tariff_schedule.py",
+    "bytes": 4263,
+    "content_fingerprint": "2c94b16bb088f2053bb7f4406433bab609eba58098d6ad94fa7fa942df807e56b69bc206eda9a182b3e7c0d5d952c4cafb09036c59a6065db915dee024f9f34f"
+  },
+  {
+    "path": "app/infrastructure/__init__.py",
+    "bytes": 24,
+    "content_fingerprint": "ce7ab91daa5efe5a66608aa19e6758718ffe31fe595181308a397633df00f4ea96128e65c4dd2829dfde99ac956150e3363908a99bc7d3210659329845231800"
+  },
+  {
+    "path": "app/infrastructure/ag_ui_journal.py",
+    "bytes": 30155,
+    "content_fingerprint": "9d4a6b97cce47802205bedd4b5f5ffbc5f49aa126b398f323446a08c1ec37c6c5dd00d7f4dfa4b707acebf75874f01c24fe8857588f2b24cfb0bf5522c28c5f3"
+  },
+  {
+    "path": "app/infrastructure/ag_ui_signals.py",
+    "bytes": 1201,
+    "content_fingerprint": "bedb5fe225688cf9b9ea22b8c6b7a555dfe051ca59537018e9c93c5e3cf77b3d84693a9a019b0baf73bfc960124008b9ef4e18b129b409af0558189b16f9df1d"
+  },
+  {
+    "path": "app/infrastructure/automation_store.py",
+    "bytes": 32380,
+    "content_fingerprint": "6636ea83d476d2efcf83975a9c6c61f6e54d7c623bda5b4944e3add5292399a90b9dcf2de9e6697bc380f7726ebc011c8bc65b1f6f3dbe7ad316e65588e8f7a2"
+  },
+  {
+    "path": "app/infrastructure/budget.py",
+    "bytes": 6600,
+    "content_fingerprint": "f7670886a947d9fb8bae13fe3c91df413f40bb73e6c7f01cc6e8a2457a42f4bd7717f83a3d5f04f65de26de5d7556ffaec8855694af537fbd68c28b5b4100c5b"
+  },
+  {
+    "path": "app/infrastructure/buyer_favorites.py",
+    "bytes": 1984,
+    "content_fingerprint": "c49616c0ac8def2d134afc621f522e877faac474fcd9dff548323373632aaf2b255a476b68a295dfa92adfee071a53f250c19fbd90b43294a91f3f3fa94d17f6"
+  },
+  {
+    "path": "app/infrastructure/buyer_skills.py",
+    "bytes": 5944,
+    "content_fingerprint": "59a0da423ee160e32ad31607dff6d0969453132942e750db3226ecde20be1433844ab70b5f65c43c36d1609887cb6b4d5629139f50720b5a1659e5512c3f7708"
+  },
+  {
+    "path": "app/infrastructure/cache/__init__.py",
+    "bytes": 24,
+    "content_fingerprint": "ce7ab91daa5efe5a66608aa19e6758718ffe31fe595181308a397633df00f4ea96128e65c4dd2829dfde99ac956150e3363908a99bc7d3210659329845231800"
+  },
+  {
+    "path": "app/infrastructure/cache/cached_embedding_client.py",
+    "bytes": 3093,
+    "content_fingerprint": "2ef9b11fe593cf8fdcddee50358bcdb8df94352c76cf61a68ac0abf392f7b6b0983103b67d8cefcac4682f71e5e694e491889da95ec69c2c7bdae18068619fb1"
+  },
+  {
+    "path": "app/infrastructure/cache/redis_cache.py",
+    "bytes": 5213,
+    "content_fingerprint": "60bac2403cbc116035dc38de56503008addfbf3db44a1cabe1f429f77ff662fbe31d4178f1e349199cda7f166b99820a1e0a0b7694c610d09a181dab0c546ec8"
+  },
+  {
+    "path": "app/infrastructure/cache/semantic_cache.py",
+    "bytes": 7461,
+    "content_fingerprint": "adbff19820842449f67b2a9a2133c3cf5217e64da86b53d6eaabd3387de19800c92882f91dab202a6d26ae0abdc767e7695c06923ac6fdb48be3742abf0408bc"
+  },
+  {
+    "path": "app/infrastructure/capability_registry.py",
+    "bytes": 22251,
+    "content_fingerprint": "a6f609ad96f4859b59c24e45c48a4d19cdeba03f7e59d1053ee16eefe6b855221c47eafe60923f8e0dc518fe97cf786183d42d5e5ec499d665873b8c3aac04c3"
+  },
+  {
+    "path": "app/infrastructure/commerce/acp.py",
+    "bytes": 13081,
+    "content_fingerprint": "60bb6906545341aa6f1e083f689b26684fd680ac6cc54d0744d30263a6bcbe70696175a5aeee7508018b434105d73cf4028e04c044ba7f1082b4ea621dcb0ffe"
+  },
+  {
+    "path": "app/infrastructure/commerce/sandbox.py",
+    "bytes": 7869,
+    "content_fingerprint": "dfc1c37f6242627b240082e50a7737866437a076de16caf36c4ba97e0c52c1cb62b9f84863aacc08599a46f0c160217ab3cd124379f4c24147e3fcd14001a2c3"
+  },
+  {
+    "path": "app/infrastructure/context.py",
+    "bytes": 3800,
+    "content_fingerprint": "639318e0d6a3ac547925b3515e814b9a59f6df114dd724fa315a99692aadb11620d0b37ab6c67bb8f5bf0699fe34f20435113e8d2aa5d51de88509235c50e1d7"
+  },
+  {
+    "path": "app/infrastructure/context_compaction.py",
+    "bytes": 3217,
+    "content_fingerprint": "335aee0e444a36b4d632addd8586ad132293d26a5c23818a97b830acd78d1d13886e3f9ac866ea65eed7a285dffca7250d58df401b25c1742805f4381ec6e36e"
+  },
+  {
+    "path": "app/infrastructure/context_governance.py",
+    "bytes": 49737,
+    "content_fingerprint": "a4dcaa7101359b176dbbeff9af71d2f76286a0680b79b3572fa50e69bbf7cadc615c4dc20fe83abd36517ae7d3c32c7f9f0f489c54029f9da9c8340c892a58a6"
+  },
+  {
+    "path": "app/infrastructure/context_products.py",
+    "bytes": 7306,
+    "content_fingerprint": "e84147d8c54de3fbde35c4a613d49072ba952c21e42c6caba706cc278e6270c6ab4b75e86b7aead8982fb22bb3650ba4f9b21ac60ea585097df7450dd29e1903"
+  },
+  {
+    "path": "app/infrastructure/context_state.py",
+    "bytes": 5199,
+    "content_fingerprint": "31abffe0d06a21a84a883cc909284ed672daeecbb946476ad8df8bf9ae6206fd3e13d99485a9b75a2bf060484470e250a279bc8fce476b96d19ef6eb386a0501"
+  },
+  {
+    "path": "app/infrastructure/context_summary.py",
+    "bytes": 4525,
+    "content_fingerprint": "171630ae84cdd814a53505df7383ce4783aad8ef544a0af62f337cae85f0e0f1e8af175a3c76a6e98761a6943e74bd49550fe483449c07ad25fac1e28cd3f2fc"
+  },
+  {
+    "path": "app/infrastructure/context_usage.py",
+    "bytes": 3813,
+    "content_fingerprint": "9d88699932a5b59ecab20f8fd354c1fb6be93859b3687fdfef37f655139db8f81a9b67e1479432ac52b2a2c2b2bdc966df3eea95ef782a8a92d9dc8f79025039"
+  },
+  {
+    "path": "app/infrastructure/embedding/__init__.py",
+    "bytes": 24,
+    "content_fingerprint": "ce7ab91daa5efe5a66608aa19e6758718ffe31fe595181308a397633df00f4ea96128e65c4dd2829dfde99ac956150e3363908a99bc7d3210659329845231800"
+  },
+  {
+    "path": "app/infrastructure/embedding/local_multilingual.py",
+    "bytes": 3119,
+    "content_fingerprint": "fa38408731fc65c013764e90ffb7b4d2d83c8d830e1a32d95e027abd710069d0289acee55842f63145c52e212c17d5492e2699c88444270e16e981ed6a2e7009"
+  },
+  {
+    "path": "app/infrastructure/embedding/openai_embedding_client.py",
+    "bytes": 3268,
+    "content_fingerprint": "91c550aac5fc237d9c2848472021e8424c9ab0e39acf954266caf895fded5b5dc6212fa6da0fcd1e1032cf31e9ee0f59560ad84cec7b5610c08b52bef0495b83"
+  },
+  {
+    "path": "app/infrastructure/eventbus.py",
+    "bytes": 5970,
+    "content_fingerprint": "1510333e92433b160e8f8e4bcc295c2be86931a67bb7ffc5624ae09bedfa957f2aeea8788aaeb59180102f1bfc4352ab90eff019dd6d1104479ac2beeb769783"
+  },
+  {
+    "path": "app/infrastructure/harness_middleware.py",
+    "bytes": 8145,
+    "content_fingerprint": "861658871f2ccc31020dbb302b574d5de6247dd38b7f62ee44e9fa4f968c0f07a7bdc47f8fe4c92a8896b318bc636de1505cc2fa7c2a5cfa9c3a49e12785be53"
+  },
+  {
+    "path": "app/infrastructure/identity.py",
+    "bytes": 3447,
+    "content_fingerprint": "52603b5dc631a920b36fb10095cbb6bfbc83bcf9a1bc00cbce62f01f15937c768f8889b689acdf923b350485c5e3d0d9fd9aa77e3f634974f8b9ba036d3f9411"
+  },
+  {
+    "path": "app/infrastructure/langfuse_config.py",
+    "bytes": 3759,
+    "content_fingerprint": "d746a9818c4d6f3c6a47edc3ba17f0d46ebd543051c544171820667f14613c20337ff2734b11151f81fd605374d22d8d3f51026537f2d827d4061f7e77fbcd41"
+  },
+  {
+    "path": "app/infrastructure/learning_context.py",
+    "bytes": 531,
+    "content_fingerprint": "8886ad03697e69264a9d4c4073b2c15c6cde930bdf6a01a0a02e07425d998187a7b08092779cc1b221b1a2b4ae71a9ec3288b6d5026f22356fb75ddadd711fbf"
+  },
+  {
+    "path": "app/infrastructure/learning_publication.py",
+    "bytes": 2797,
+    "content_fingerprint": "b26a6a2ad39b367508256918cf7df283ce2c6ac5c795200ae8ed355b630ea0c9c7dcee000566ba7fcf5a0edd8320700956556dfc9c5f0d261f74c99de2526eb8"
+  },
+  {
+    "path": "app/infrastructure/learning_store.py",
+    "bytes": 27250,
+    "content_fingerprint": "d1d9a450dbe43399f931970657d6c2011e75e10f32d0eb84f63eb0338cf64e1c48ba18839c07b2ae4ac9a4f1a0190ab3388b0f992d1223f307ff5791b42d6ba0"
+  },
+  {
+    "path": "app/infrastructure/llm.py",
+    "bytes": 41560,
+    "content_fingerprint": "e500b870617bd6190dfd54a361d0265fe309746641fd7ae18b8312a9c8a29f1f71ebc42bd8ee9053c4ed4658a62f8bef0e47b226c68ec25da2e92a9e3f88c0c1"
+  },
+  {
+    "path": "app/infrastructure/model_connection.py",
+    "bytes": 12235,
+    "content_fingerprint": "201793ca7219b168898e1b653d7782aa1599f82eb968e689516e0bb4b487ec1bac55f4ad73db7a45226fbc37d89122acb1e3bc5bcb40988123ae249bd36c22bb"
+  },
+  {
+    "path": "app/infrastructure/model_counting.py",
+    "bytes": 7064,
+    "content_fingerprint": "e922e39df3cc3838473065034169377a07d3bd37028683cac7c72aa1dfd1a5c0bcca4cf75902514ae8fa1dec601c3e0cf157662c1512516b28b0a89199377a1f"
+  },
+  {
+    "path": "app/infrastructure/model_protocol.py",
+    "bytes": 4361,
+    "content_fingerprint": "1f83b88cf5c00110e42e8dbd87d7a7a995cfb42fd990995e86671df6c8dd99505894eb3e2ad03de85dde0c41b26181d888019e19fcadff1bd60cad91e02f545b"
+  },
+  {
+    "path": "app/infrastructure/model_recovery.py",
+    "bytes": 10986,
+    "content_fingerprint": "196f29896401b7824e1f323077ba773567c1aa884597f961f4d2916948a6bb2216a618b0f3d07a7e3c02b925beeac78443b89bb975b4d4225c6eed7eb2ab1418"
+  },
+  {
+    "path": "app/infrastructure/model_registry.py",
+    "bytes": 49443,
+    "content_fingerprint": "5582b0b15576b9246eeca33dee7cbb8b31bf95c99a74159dfaa2cb876293145fd281758f6b5127801438f86273040f322755c578b56dac3cd015a61325569ec1"
+  },
+  {
+    "path": "app/infrastructure/model_stream.py",
+    "bytes": 3667,
+    "content_fingerprint": "18c6c6c5dd9b31f28f17c127cd31bafb8896afe32e910dbb9a93e3bfb6d6bde5b6971299bd43ad65b91d31c55fd6071119bef3e820dd8eea1117a0394305eef8"
+  },
+  {
+    "path": "app/infrastructure/operational_metrics.py",
+    "bytes": 9560,
+    "content_fingerprint": "ccc367c74421acba5d8542c768e9724252d94c3ae86c2e03828dc2d35677470e191aa13bd8acd4a1e17de9d9d0db65e76a27c61c7a91a212322da2f4ba22ae0a"
+  },
+  {
+    "path": "app/infrastructure/persistence/__init__.py",
+    "bytes": 24,
+    "content_fingerprint": "ce7ab91daa5efe5a66608aa19e6758718ffe31fe595181308a397633df00f4ea96128e65c4dd2829dfde99ac956150e3363908a99bc7d3210659329845231800"
+  },
+  {
+    "path": "app/infrastructure/persistence/context_evidence.py",
+    "bytes": 7421,
+    "content_fingerprint": "99aa82cc3ad724565025895339140995c511dfb6846535476ec633f9c82fa7bc335601c245b6e961a4b708feec123721bd271e4d67d06373d6480e242f2c2dee"
+  },
+  {
+    "path": "app/infrastructure/persistence/in_memory_repositories.py",
+    "bytes": 2569,
+    "content_fingerprint": "3d948743aa367b0879f708dd200088bb1d1d08ca18dfdc16a2f1ffa28f9676caefc35d955c495d90888cb2f8b137b98568384ac602271a48b36e934b4e10f6b6"
+  },
+  {
+    "path": "app/infrastructure/persistence/json_file_stores.py",
+    "bytes": 12929,
+    "content_fingerprint": "ea7b393862030e5283c30c71b77215cab2d863b60e9ff914bd733a6dd2f2b3dad805c27ca787d2951848e13d3e106ae02522a650d2f59b33db1adbfe84cdf0a1"
+  },
+  {
+    "path": "app/infrastructure/persistence/seed_products.py",
+    "bytes": 25462,
+    "content_fingerprint": "335c57b649ec7fcb86169b83da25419ff470d3799ee061ea1d27b6f75350d13faa32d5c9af635748126c5828025a02da8191e0e84611628ef7c2a7194257d610"
+  },
+  {
+    "path": "app/infrastructure/persistence/sql/__init__.py",
+    "bytes": 24,
+    "content_fingerprint": "ce7ab91daa5efe5a66608aa19e6758718ffe31fe595181308a397633df00f4ea96128e65c4dd2829dfde99ac956150e3363908a99bc7d3210659329845231800"
+  },
+  {
+    "path": "app/infrastructure/persistence/sql/repositories.py",
+    "bytes": 14813,
+    "content_fingerprint": "3143610431f31bad344b3b8892086f33caf4b0c6323eb083e237d432234995133080564886a5eec12309a5d919af704e4d1dfc9892ec2fe6f20edccae27422dc"
+  },
+  {
+    "path": "app/infrastructure/persistence/sql/session_store.py",
+    "bytes": 22535,
+    "content_fingerprint": "ae96518148de87a9ebd5c8495f19fbfeb45ac1a51b81f8372ece124fba4f29353fdc8a4043f798f64735607cde2e37d504ea8edd60a36e1df6b38c621ee30ba6"
+  },
+  {
+    "path": "app/infrastructure/persistence/sql/tables.py",
+    "bytes": 5346,
+    "content_fingerprint": "d233ba7587236eba9dd7dbf2eb871abb1e0973795db66bdaf6a6937e0ccb12c2661e62f4025f525d9cea6e1994a69f02affcbd5ee6ca626d4c13f9dbd737d58f"
+  },
+  {
+    "path": "app/infrastructure/persistence/sql/trade_store.py",
+    "bytes": 23681,
+    "content_fingerprint": "3435a46444718ed1aab541bb5f2fb206322cf276ccede8475dd36dec2b15674f4d5c109e243fc87d4944bf81fab60aef51eb656671700a0a1c5398e9d1ee5aed"
+  },
+  {
+    "path": "app/infrastructure/persistence/sql/trade_tables.py",
+    "bytes": 2429,
+    "content_fingerprint": "d6e4a0ee7655b922ae6b0778f66ce18373cf6b77ad0993244531370f50c461d750bd997e1e406cc246e8ffa06671178795c3367fb1e7170e643e001b1966dd82"
+  },
+  {
+    "path": "app/infrastructure/prompt_cache.py",
+    "bytes": 18381,
+    "content_fingerprint": "fcedd3a1e36b7ea4884228286957440ce2d9c58df94cac4621db5e292f5f3f81c051089b81e4b2ea484528e4c37227fab0acf14d68752b634076f7ea4c68548c"
+  },
+  {
+    "path": "app/infrastructure/prompt_registry.py",
+    "bytes": 15491,
+    "content_fingerprint": "b5d028f1d9b960bf300cf4d2688a8c367e3d9e819c0cb2f95d5c03c02d305660784d37e9f41afcff8c852c5f473fa9b2d71a0105d2fa73eb8ee39a968db51e33"
+  },
+  {
+    "path": "app/infrastructure/prompt_release.py",
+    "bytes": 7064,
+    "content_fingerprint": "32b53dbbdbc52e1007a69127c60f0a9f81f7103836df22d811acdc393c79a5f4d69223e8e02d59180d5c3aea90db3aeaf2b7fb2816d7378b5f7859c2c251fa99"
+  },
+  {
+    "path": "app/infrastructure/queue/__init__.py",
+    "bytes": 24,
+    "content_fingerprint": "ce7ab91daa5efe5a66608aa19e6758718ffe31fe595181308a397633df00f4ea96128e65c4dd2829dfde99ac956150e3363908a99bc7d3210659329845231800"
+  },
+  {
+    "path": "app/infrastructure/queue/archive.py",
+    "bytes": 3403,
+    "content_fingerprint": "b8a7e4fb50aac4e0c17f096010d2425a1fdba6105c1e6a1862317ed8c9fb996187df29542f8a5496e7453b09f337002392575a56f302a515a292004de34f203c"
+  },
+  {
+    "path": "app/infrastructure/queue/maintenance.py",
+    "bytes": 8507,
+    "content_fingerprint": "27ef5cdc6727ad9a487988cfb5eaee3aee0eaf305418790afc61078b5ce4ba0b2e5e1034f3055fa46ab9b1168735cad90de3d8ae01eb8f0f4ce4ea4783fe1f62"
+  },
+  {
+    "path": "app/infrastructure/queue/redis_stream_queue.py",
+    "bytes": 27679,
+    "content_fingerprint": "38b8d24f0d774e997106d8631453481fd9ca13b597ca863d43053700fe1ffb65d3862acc5267e716ad9eef7b4ef28b9ff5ad8ffd26fdbcad49b6bc80caecc6c5"
+  },
+  {
+    "path": "app/infrastructure/rag/__init__.py",
+    "bytes": 24,
+    "content_fingerprint": "ce7ab91daa5efe5a66608aa19e6758718ffe31fe595181308a397633df00f4ea96128e65c4dd2829dfde99ac956150e3363908a99bc7d3210659329845231800"
+  },
+  {
+    "path": "app/infrastructure/rag/category_knowledge.py",
+    "bytes": 11515,
+    "content_fingerprint": "30895374bf08527471bf2c691a5708044322d49314f657f04d5f831219457b94f7e479b698a525e0a27709bdbeb435f1bc5f466bfe0d66a94764b7cf868180fa"
+  },
+  {
+    "path": "app/infrastructure/rag/knowledge_retrieval.py",
+    "bytes": 5526,
+    "content_fingerprint": "2fd158e3490766a5f72373034cddd7819c276b82a2d9c19f3ebdd387bab8e74735258caad828338156841c3c0acadaaea1db514300c574c41cf696ca97fde407"
+  },
+  {
+    "path": "app/infrastructure/rerank/__init__.py",
+    "bytes": 24,
+    "content_fingerprint": "ce7ab91daa5efe5a66608aa19e6758718ffe31fe595181308a397633df00f4ea96128e65c4dd2829dfde99ac956150e3363908a99bc7d3210659329845231800"
+  },
+  {
+    "path": "app/infrastructure/rerank/factory.py",
+    "bytes": 439,
+    "content_fingerprint": "30be041c456c1d533d36edc22aaa9eea9da1dec0d5f450a01069808a76ce3f00d3eccd57e938660e95a430fa162d40ee3b2873a1e18a69d2d17710c88a20a68e"
+  },
+  {
+    "path": "app/infrastructure/rerank/http_reranker.py",
+    "bytes": 5703,
+    "content_fingerprint": "53f3440b7d7d30f13c58408364ae8056d6821c8c76c8556f64a8668dad6e137affbcaef58d514cf51321e0e66ec43823b5f2d9c830a1350e49d87acb289822e5"
+  },
+  {
+    "path": "app/infrastructure/resilience.py",
+    "bytes": 8938,
+    "content_fingerprint": "93232bfd44eb650b29675b59af9109fc5a6de7ff222f3442267f69346f45818e8bae0cbb6ca93a84f8cae9363c9abb21a8f78fefd477889f9a7032819787be95"
+  },
+  {
+    "path": "app/infrastructure/retrieval/bm25.py",
+    "bytes": 4319,
+    "content_fingerprint": "15f7044d647b52e63633fa00b3675870221fda7094d5d386e8d429e6b62ffa894355f3aadfd3b62e453a78cf11b89154b96099c08953bb34f0cb1e5efafb2bb6"
+  },
+  {
+    "path": "app/infrastructure/runtime_version.py",
+    "bytes": 603,
+    "content_fingerprint": "4918853c2cf41ff0d95adc21ebb46b0613922a42bf436bd6b8749c51e2d7d0fe29234506fb7d63229858b356bf4c3e6c6604f158b5cf80bf62bd22628f6b3fd5"
+  },
+  {
+    "path": "app/infrastructure/security/__init__.py",
+    "bytes": 905,
+    "content_fingerprint": "da7414f26bd26de0e133de461792268a5ccbebab6e95bcf8095634ccbe173cf59017610e448b2e8d9193291267ddd7523e6ee8e05860b9b41f707581fa3e58c1"
+  },
+  {
+    "path": "app/infrastructure/security/content_filter.py",
+    "bytes": 2038,
+    "content_fingerprint": "67b8b48415c03c61b43f80c1b85e4d8b14387a0368683086bb46af1f628e4d2a113fb0045a631c256c188d18e27f9c1fdbfa42e63fe389693274b86ab1c0f4a2"
+  },
+  {
+    "path": "app/infrastructure/security/output_guard.py",
+    "bytes": 2241,
+    "content_fingerprint": "e7abda7d03b7614dfca1673866f1ce70a3d393344509cdee3d87f0a951c8c25ed1a3a354daeb775f0bb5576cc3f46a07e81b889c927011e03d90d51fc7c97486"
+  },
+  {
+    "path": "app/infrastructure/semantic_memory.py",
+    "bytes": 20776,
+    "content_fingerprint": "e5896f3f0a4d6ab9474708a70348e53ddc97a951c9c8cb25812dbe3248d15869e245278c90798d33e0f9389e641321f0d2859132cd51f6a1e83929a3b6347516"
+  },
+  {
+    "path": "app/infrastructure/settings.py",
+    "bytes": 17841,
+    "content_fingerprint": "5558af5ce273892c2252b04e2a68b77f035b17152e6d94ac1d30b10fcf182d601550dafb23aa8760173c18ec8b406295c60536bf2c0c9a5441f4b5d61d6f7976"
+  },
+  {
+    "path": "app/infrastructure/shared_breaker.py",
+    "bytes": 4675,
+    "content_fingerprint": "6f438fc49c594d3481346af5455a1909bccd98bc373acd33c0fdcbf356585b5c2e913071c32990a35587b324a17285a157f05d5cd7fed27903e964bbf79ded77"
+  },
+  {
+    "path": "app/infrastructure/shared_throttle.py",
+    "bytes": 9356,
+    "content_fingerprint": "dd212f592144a4a3c91c7b6f0c764d3dab9df0e18e3d7c0fdbcb99913108be6be11e0516745f7ea37b7accbfb413b45f90c833e30b5ee773e67ddd5a9660492f"
+  },
+  {
+    "path": "app/infrastructure/shopping_forms.py",
+    "bytes": 20381,
+    "content_fingerprint": "7f0562533a2f9f6de987feada413f26f848e77454f40322954aaca4a9ae5887b192301795f6883ba90f9b89c777c8d9642b4486eed1e6cace539c18627c60205"
+  },
+  {
+    "path": "app/infrastructure/strategy_extractor.py",
+    "bytes": 2862,
+    "content_fingerprint": "2634115dddeb7ec37e051199675382e39a72a73d137dd1e71a42236fa6451a079188d96bef7a2cd32268881e6f7d86bab5c06d0e519df0f304fb248b7caa10af"
+  },
+  {
+    "path": "app/infrastructure/throttle.py",
+    "bytes": 1919,
+    "content_fingerprint": "cc9bdffa7f7dc1e690ce82ea1a9576b2ba173e8bc517d600748707838c4effb52f364852e0a879beb15e9f321f13d6cdeb68d214f6fe4deae306e2619424b37e"
+  },
+  {
+    "path": "app/infrastructure/tool_product_view.py",
+    "bytes": 5444,
+    "content_fingerprint": "89ec04c198a36e474aa7ff305463249370365f6a55b8b0447ccd348d91e6530ed38f0127defbd6e87f7cde808bc2f9f189703df76601d0341c9587494dafb1c2"
+  },
+  {
+    "path": "app/infrastructure/tracing.py",
+    "bytes": 22888,
+    "content_fingerprint": "56c8e4ed83ca7492e2ec6405813082308fcd41b01819db88e79e50fd14db763ee0c8609500ebaae7892c16b7c9f96ea3f4c9278c7b5238c572dbe012192ee65e"
+  },
+  {
+    "path": "app/infrastructure/transient.py",
+    "bytes": 1238,
+    "content_fingerprint": "546785b5f565f454284dcb366074c29b73e7624023c583175f82841b215775f7ac788decee43118ba71f338c559db15f4a2c57e75eafa18a6c4789377c589608"
+  },
+  {
+    "path": "app/infrastructure/vector/__init__.py",
+    "bytes": 24,
+    "content_fingerprint": "ce7ab91daa5efe5a66608aa19e6758718ffe31fe595181308a397633df00f4ea96128e65c4dd2829dfde99ac956150e3363908a99bc7d3210659329845231800"
+  },
+  {
+    "path": "app/infrastructure/vector/embedding_identity.py",
+    "bytes": 1167,
+    "content_fingerprint": "82c2760e9df1408d8450ba20da8f822da4b0f805703e5a5e3370d53f7fec23c8d504b79746b59995366c3301348c71bbfda0791edec37c3de3c3e904c1e5dbe3"
+  },
+  {
+    "path": "app/infrastructure/vector/index_bootstrap.py",
+    "bytes": 3272,
+    "content_fingerprint": "f318fac09deae216f3b8f01562cec3b1755f77179432bb655458813217c802d49551ba4243fc88b00ab975fecc203e4928a82190b4aac54c6d7553c09b0c2aca"
+  },
+  {
+    "path": "app/infrastructure/vector/qdrant_product_index.py",
+    "bytes": 5333,
+    "content_fingerprint": "3cbcda01e06e7350d8e39c807eca0198a8ab5cf6e75db9674d41c2f60012848beec2432e186c44f14c73217ff2e3d3979bbb1772a4e6dc6cedace5279f9e4637"
+  },
+  {
+    "path": "app/infrastructure/visible_evidence.py",
+    "bytes": 11854,
+    "content_fingerprint": "4bdaa80328a22d77518b344beb4c0f5c1899ecaa61274d01a7820fc694db6114cdaeb173e4f6a508d59f73a3f764729bb22a12fe5c73462c86919a72005fff1a"
+  },
+  {
+    "path": "app/presentation/__init__.py",
+    "bytes": 24,
+    "content_fingerprint": "ce7ab91daa5efe5a66608aa19e6758718ffe31fe595181308a397633df00f4ea96128e65c4dd2829dfde99ac956150e3363908a99bc7d3210659329845231800"
+  },
+  {
+    "path": "app/presentation/ag_ui.py",
+    "bytes": 14520,
+    "content_fingerprint": "cff82b8b22986c4ee5f0b42efdf23053b4909a65c609ca0baea9b42ca8ec5e6c085254af7ca58ca3cbc3a4b51567b2e271041e9f16a8dbcfe86dda9c80614df1"
+  },
+  {
+    "path": "app/presentation/ag_ui_runtime.py",
+    "bytes": 180,
+    "content_fingerprint": "8fc721a3177bb6814d43d7b44d062eb13cbae0cfadb0d0dec5076bf49602e5a65ffed2d7a65fa5f9e07ed5599cc54b09e311ae9811903040a2ff6b42a7198d96"
+  },
+  {
+    "path": "app/presentation/assets/product-media-v1.json",
+    "bytes": 215095,
+    "content_fingerprint": "c10f94ec2dd01022e18aff718162490ce1a70880c7b7809c9824f1747e566e49ce4017fdb9444e63f08b0d118aad7a5d02e34031c508a497861a106831ce0edf"
+  },
+  {
+    "path": "app/presentation/automations.py",
+    "bytes": 6313,
+    "content_fingerprint": "27faba665db3ab22da7b2c04ebc0d6d83eb64fec3b52b41c09fde556444294c6dbfd765d8f30b3760de4ae6acc7b7ca0b59a565f5ea5b62cadea0715f96209a3"
+  },
+  {
+    "path": "app/presentation/buyer_workspace.py",
+    "bytes": 6299,
+    "content_fingerprint": "0507ac6c672cf4b0174ff0a362e007875fb8e15341764f644e71c3c82cbbb30d580ac86253af2872d3e5d8d9c29397284e97bb1169f6be9e114179a0614a7cff"
+  },
+  {
+    "path": "app/presentation/confirmations.py",
+    "bytes": 4483,
+    "content_fingerprint": "e72099ac0a5a7298e1692f4853926045b049d1a8c6e2e4ae371cc6b2917d90d942bc847189e34836fe47216e27fbbf79c9f426a5b29d221263df9d66ae0f6c3e"
+  },
+  {
+    "path": "app/presentation/connection.py",
+    "bytes": 3083,
+    "content_fingerprint": "0d386b4e5c58edb481e65a9d144449d89aec102e561272aa593beba8ee3083674a8caa0af54019998430f9b5455f8d379402f21f8cdd72271943132fabaf463c"
+  },
+  {
+    "path": "app/presentation/context_workspace.py",
+    "bytes": 2057,
+    "content_fingerprint": "8aa85704a6d11f6a35c8dea4d37d9cffc5e7c3be0b52adcc76ab2ab32f4c8eaef7780efb5a9816b55fd29e1cb1a0b0d3bc7f3969e112bcfa1801656162ed43c4"
+  },
+  {
+    "path": "app/presentation/dto.py",
+    "bytes": 1030,
+    "content_fingerprint": "272c654da3c21c1e070a2b92558f591ddf00af9e6aa5474aecc8a2e6b75f23c3e2eb467e81681b6364b638bc0ff64d9aaaf9ae2e5c5db904077b0461ea8b56fc"
+  },
+  {
+    "path": "app/presentation/favorites.py",
+    "bytes": 1505,
+    "content_fingerprint": "fcfe080b8dfd6aef6e13c64c4d3df697efe9e5369dca9876102d818c9cc735b641fb6627507a7b885885e1bcc37957e258b0b781b9852555c87809c144a308ca"
+  },
+  {
+    "path": "app/presentation/identity.py",
+    "bytes": 4508,
+    "content_fingerprint": "f2792e1b66bd5d99b6fc0847cf28f4f520f85ac493984afba331cc28e98b0aa6dbb5fbe607aebe4e3189549f09381cda537832b89078f40dd7c6d9cf8221e425"
+  },
+  {
+    "path": "app/presentation/model_workspace.py",
+    "bytes": 8662,
+    "content_fingerprint": "ecd1c4f757b7eabab9da707d55426999ec94420282bb84a0051868f0f417a2fea7f53da42cc574bad716105eecc604c877000be318e05a4c30c069e27a853035"
+  },
+  {
+    "path": "app/presentation/product_media.py",
+    "bytes": 679,
+    "content_fingerprint": "49974def24408f24d28508bace0e78007fce743c3804269981e39d454d2542c157b584e824431d67637a0a6e634de39874c3d6f364cde472b7b943183757d9b0"
+  },
+  {
+    "path": "app/presentation/server.py",
+    "bytes": 18170,
+    "content_fingerprint": "d6039c60074bc169d3687b23e951509f25c647f77d9316f3f8f2e1f51ead76f9946e6df608de4369fe635da6e551cbbc5b6fa71d8120e8f1ae6408fea696d626"
+  },
+  {
+    "path": "app/presentation/shopping_forms.py",
+    "bytes": 3479,
+    "content_fingerprint": "7f49b65b44c15ccd1dcb45a034cba995b7f93eb158d2ffd5e72b76b412ca789e5a90ade29a381fdfffc8ef9e21e1c5da60117dd5b88812f8bcee2de08a5dd6c7"
+  },
+  {
+    "path": "app/worker.py",
+    "bytes": 4873,
+    "content_fingerprint": "ef07fc76d5ae49c2d9d81529e25bfcc116f9bc59291d5f0018b9725fd83af5c322f75945741dca3d340cdf943de01433c9d616b465b8afa6230b41b2bfbd2fa6"
+  },
+  {
+    "path": "configs/models.yaml",
+    "bytes": 2725,
+    "content_fingerprint": "f2731600a85cd9001ae292320ca75da5fab5fcf5b8a0f5750b37da409649d3704d92c5c8604af773f0969db43f26d33663613db747e0966d25e39d19241dc297"
+  },
+  {
+    "path": "data/catalog-v3.jsonl",
+    "bytes": 4781535,
+    "content_fingerprint": "471f912eb5d74cd7e773db2e97f6b3095038a892d1e5e68a8a2f94e729a2be2446f7679b29211d3f32ef772a2b715a30ef79eb79ef4f392acc24574e91acc9d7"
+  },
+  {
+    "path": "docker/docker-compose.load.yaml",
+    "bytes": 1298,
+    "content_fingerprint": "9b7522794f5129aae8f7cb36671f448163b6190bf3d67b04e8b5f83bf9d21b80378fbe3d1c7e8c192299cb060338d7246a1299e504a375da2e972c8398f15095"
+  },
+  {
+    "path": "docker/docker-compose.scale.yaml",
+    "bytes": 2322,
+    "content_fingerprint": "8fb4a28231e132ef26fe339649f77ba25d5f77357b5193f18c40655ddbda4f4a795fa9af3d299ddfecd5ea58632968fbadff7837c34c66b23db9ad8fade7453a"
+  },
+  {
+    "path": "docker/docker-compose.yaml",
+    "bytes": 8328,
+    "content_fingerprint": "368f5daf0b676e3f33c12a0e8d1893807d1417e98a78bf7e084c8125f34d938f397a4683ebc9f9814ebec19a08097f8be6004325a9c86452cb3e1da7b4645809"
+  },
+  {
+    "path": "docker/nginx.scale.conf",
+    "bytes": 1070,
+    "content_fingerprint": "2b57196cb67df38e95da99bcc14bc5d3f28b213f492327e043eaeec994588587f9833637d3d14c81c1e1ad3208648bc60ce923eb8f451c8875934f922e56d2b9"
+  },
+  {
+    "path": "docs/DESIGN.md",
+    "bytes": 30735,
+    "content_fingerprint": "297f1528877a0098f9b39ad7372fe7cb4b38507a3df879ff770563b837a28ed6a7bb42c7bb6cbad79da0a1ec3fbe604e90bf41d94b4baf4870abc5c7b2f7c585"
+  },
+  {
+    "path": "docs/PLAN.md",
+    "bytes": 20359,
+    "content_fingerprint": "1ca5e92e2d6a5acf5bfb88b97812d4a35ab4e550b21445ec8f168517440b64785b6a6f47fd3b7118bbfb66ac5c2735e56ee28689648e8a7e53b18777fc97abea"
+  },
+  {
+    "path": "eval/verification/2026-10-14-c3-container-runtime/colima-override.yaml",
+    "bytes": 177,
+    "content_fingerprint": "0bdfbc6a2abfaf43669d27de3aba19a9b0b9039a877355661bfb78d525b04f2549573c5a3d22d51f7496cd1ee7058037a05d5ecad760b082998d0ea9256e3ae8"
+  },
+  {
+    "path": "frontend/.dockerignore",
+    "bytes": 38,
+    "content_fingerprint": "483b4b17fd79989465e98b8b49c16e90298b665ede3a9391caf118a869dc470c33e2410d56ce430a9d77a3843a0e37bf8441c1bb1ecaa46d4224f2ad40ec012d"
+  },
+  {
+    "path": "frontend/.gitignore",
+    "bytes": 20,
+    "content_fingerprint": "6db7297789d3719303f9aef2cdffd9c8c36e0efaf2ff75eb22eaf8f294e4c4ad8e165640baac8d4ca9df3f396f0142a2981beff670c213514e85c85ee22cb4f4"
+  },
+  {
+    "path": "frontend/Dockerfile",
+    "bytes": 363,
+    "content_fingerprint": "bf7209c32905984ef9624b2c8bffc5ebcce0d908cb94c0d4b9c91778249ba27a6abec925230563703c49228fb8993db1883a7090a736a1846275e2d4ce648a96"
+  },
+  {
+    "path": "frontend/index.html",
+    "bytes": 511,
+    "content_fingerprint": "14ab49cf8cab7d7b16bac6e634708d808b7b52eea3044c976bebba81413fed9a6e747256c2d0e3253654380179416092c27c2c0f7505437ea68ba3116b5d2297"
+  },
+  {
+    "path": "frontend/nginx.conf",
+    "bytes": 954,
+    "content_fingerprint": "56c2428cebe81456bbb4bd590bb659b6df56a0d312f0a00b9b120745ab47a647ca6d1e4da1e5c53ec14e95db7be28af8a475d07fe09bf3a300d243740bd906f9"
+  },
+  {
+    "path": "frontend/package-lock.json",
+    "bytes": 157429,
+    "content_fingerprint": "b23e19c0db78138ec99c4c69780e40acaf7a3409c85abbbdd21160d1353db66c980ca062608f0395fdb47c4281fb7a860d574f25bc63f98ad5aa642b0d4c7ee8"
+  },
+  {
+    "path": "frontend/package.json",
+    "bytes": 734,
+    "content_fingerprint": "a23dd881be61f4c13a233c36a4eb857678b68ac5c968c4db32aad1bd39e38fec644b89350367538fde5157a007eaf739b0dedead3c7c7537d18062688776eb18"
+  },
+  {
+    "path": "frontend/public/assets/voyacart-atmosphere.png",
+    "bytes": 1967200,
+    "content_fingerprint": "f4c6848f95988a95102b5ca68ef5dca3b5a9d9d43cbf225e346cf4303b9f708dbc2d3af0354ddca45e07a5f829300f52d51048145e0a7e01d7a65c8e7fd6264d"
+  },
+  {
+    "path": "frontend/public/products/README.md",
+    "bytes": 2603,
+    "content_fingerprint": "67703c70ee2ea042a7a41386d7c5a53718a5d1552d6097c3bbfc4de88a43e4c06b3da04f09b349ba781b703fd2183263b0066499659283d53d61ace0ce6cb929"
+  },
+  {
+    "path": "frontend/public/products/budgetpack.png",
+    "bytes": 2114960,
+    "content_fingerprint": "3f20baf55b2ea51c6314fa3d3b26b23ae9eecf21249ca0f243d09f9b81d6ef6e1401e6d4024b0fc153faddc93ffbd5ec615b0b2c9fe34d6a69c5543451b7b611"
+  },
+  {
+    "path": "frontend/public/products/catalog-atlas-a-v1.png",
+    "bytes": 1822180,
+    "content_fingerprint": "ac47dbd35e458f85d5a64712ef8f983b99d406853198c76adddb7b9ba03ca0a1b0e8024b8e98c18e9d8114e6915699c1e025583bad24103b0cf010ba5b512e99"
+  },
+  {
+    "path": "frontend/public/products/catalog-atlas-b-v1.png",
+    "bytes": 1799007,
+    "content_fingerprint": "84c28cba18b6f7b38fecabf636c4744eb8bd0070b8defa1e600a702f0cf7640d2e14290c99774e4f8ca36aea430c6ecae4330e5fc41d7ff57c3607103bb12594"
+  },
+  {
+    "path": "frontend/public/products/drypack.png",
+    "bytes": 1829500,
+    "content_fingerprint": "f090d2356660b4d68a118044d26b18f0fb930e58c1fb6debb9bb6db5b717d61fb235536290523c7e7b8a217cd90d21d7f9945270a7b297270281876f27f00d9d"
+  },
+  {
+    "path": "frontend/public/products/generation-20261010.json",
+    "bytes": 3001,
+    "content_fingerprint": "a3263803ae3f82cd34a0c10f818b6ba66709f5106736b59ee43afe17c061fa4d311a3da5af681d2c69b7c6443ec16f8a89b061270ef71ee78b3cf5545680377f"
+  },
+  {
+    "path": "frontend/public/products/wanderlite.png",
+    "bytes": 1782392,
+    "content_fingerprint": "8ee63f0ecf297222b8cdf0679aa3eb9cf5de97fd138bfbb961264e03fb293e6668628512cb93fc67d42cce3e0f4baddc1cf0a16b34b2d13ed138ec747dbeb5a0"
+  },
+  {
+    "path": "frontend/src/App.tsx",
+    "bytes": 37550,
+    "content_fingerprint": "f68079da8a5540265cc814ed92f7df46a9b4e0df0611399fd73ea130790ac2f1e997b131260573308ca48c4f1003b2bd4a6cc4e6b64173fa4af46b91de939ead"
+  },
+  {
+    "path": "frontend/src/components/Automations.tsx",
+    "bytes": 37157,
+    "content_fingerprint": "af61693a0d026d354670fce2516f2eac0747c31db95579322216859352f946cdd84e86d2951242c37f8d9b90b1109a2ca1bd25daf15799653c622006931bf11c"
+  },
+  {
+    "path": "frontend/src/components/BuyerWorkspace.tsx",
+    "bytes": 13493,
+    "content_fingerprint": "6772c794399f85c6fe4acea36b877a250c32bfb6ac59da558881f55b63374e25ed272b0cd5f4285012ca1c77d1650d6f3060cc86c5d62594db618788f63c76e8"
+  },
+  {
+    "path": "frontend/src/components/CatalogMedia.tsx",
+    "bytes": 4830,
+    "content_fingerprint": "7239c55a1982cb163ac2c9d614c836c985faac04707e53b4bd9de537cb0c0d29f136c3d1419cfa245b91a814f1bcf3c755d1e7787fb7f3ffd71880589fc3fedd"
+  },
+  {
+    "path": "frontend/src/components/ConfirmationCards.tsx",
+    "bytes": 11196,
+    "content_fingerprint": "0bc10367e9829398b1b4716ef9d091944bb89676f363a1133a205820dc5d4dd1d3ee9107cbffdd9d61138daff3c30c4ebd36fcb9ecd558f2ea41c9045ee2057d"
+  },
+  {
+    "path": "frontend/src/components/ContextWorkspace.tsx",
+    "bytes": 10701,
+    "content_fingerprint": "5517b5010236cde5891b4e80f51bf452c4bd334510ece85900409f527d11ab8ef396b4bc2c0c687010650c11afdd2ce767d81ecbdeae116efadc5033106f78c9"
+  },
+  {
+    "path": "frontend/src/components/ConversationTurns.tsx",
+    "bytes": 2377,
+    "content_fingerprint": "c87f79b427d36e01853e2a6fd3eb0da7d2a1b820616f2be47ddfcd243a8e6eeced422d143511a61f9c4d9c990ed9725dd92ba00028fc96e697b1f574db06b1b4"
+  },
+  {
+    "path": "frontend/src/components/EventTimeline.tsx",
+    "bytes": 2265,
+    "content_fingerprint": "aad259fc023c58aca5b29d2ab6a14dec5e4e234dbd64d31e23bc80d002ff9485a2e2b1417de49d91a5f8c8312cc2a74949b4ea0c8a56c691b5b6632788c136c3"
+  },
+  {
+    "path": "frontend/src/components/ExecutionTrace.tsx",
+    "bytes": 7051,
+    "content_fingerprint": "9adc966a3a7c1decdae090819c84d1dd3c7829557050c07270c88e5c45cf3cee4af1149388a3c87ecbc6e04dc61d1da89331b4cfff0d4624ca5cecf1ae0363e6"
+  },
+  {
+    "path": "frontend/src/components/FavoritesList.tsx",
+    "bytes": 1800,
+    "content_fingerprint": "401fd34b5a99d89c995135e6d9030319e1691df261e33322b82c1efa90a0b50162e319f050beefad5f80fe44a5a12ac48073a02fcd1935a4d5f019ec7f404171"
+  },
+  {
+    "path": "frontend/src/components/HistorySearch.tsx",
+    "bytes": 5096,
+    "content_fingerprint": "e807caf773f2a0123ec34b45b9bcbbde0b7544e204d2abbef24f542c127cf5003a3d4f3d8e6f503eab7700e66b92a844f7a30813688d96a07b7b0a40d4bcf685"
+  },
+  {
+    "path": "frontend/src/components/Icon.tsx",
+    "bytes": 2137,
+    "content_fingerprint": "7087b9000149b0bbe08f5c5b5e7ba904a63955095e653c5d1120c5369f56a0db04ea08bf6b7f05de9d8b8bb4030ebd14fa47207344e6751d2398b15c1b9379dd"
+  },
+  {
+    "path": "frontend/src/components/Markdown.tsx",
+    "bytes": 1899,
+    "content_fingerprint": "8fdafbea6fa75cf750b7dae46706a670a9553f647d0b48a426f000b8bb6dee2ab370768c7c29b2c34817c86184f32a0801996b46318631b7e5b13c6700d0074f"
+  },
+  {
+    "path": "frontend/src/components/Modal.tsx",
+    "bytes": 2594,
+    "content_fingerprint": "9e1698af2ced4d20aa5bda832a2ae8bffcc20cf4ba8f4de597757cfdd692f8d394cdb200f63a84192e63944d39b7b921fc7e0ea3bb606f2a84fe85aa35399b0c"
+  },
+  {
+    "path": "frontend/src/components/ModelPicker.tsx",
+    "bytes": 48879,
+    "content_fingerprint": "1ee6fd663ca66fe8ecb7bd36fa97482c682244c307a51b503f8bc66218b808fe84b3c870054bbecd177c7e739bba81be0afb0d576c1ac5de44080ac23a80f408"
+  },
+  {
+    "path": "frontend/src/components/MyOrders.tsx",
+    "bytes": 5766,
+    "content_fingerprint": "b400ae259bee67694a54a20addaabc28ad26e1e82862ed0210eeeba54bef0bd0e9819a5cc72cd7c87ddde651e1a2b96414b0b943018ab3436f8d1827fa16c04a"
+  },
+  {
+    "path": "frontend/src/components/OrderIntentForm.tsx",
+    "bytes": 8053,
+    "content_fingerprint": "89e4fd62940ef7a337c15a7f0b2de720a11f8383e8948e1ca0666ba3fe6e8601f2e9a03a00a6cc1b96da47d19acc541a53845cae6126245c6e617a978b01eb20"
+  },
+  {
+    "path": "frontend/src/components/ProductCards.tsx",
+    "bytes": 4623,
+    "content_fingerprint": "421cea0f338bf83227d2d25602777b81c29763e8878e0664a9d8cafa7b5b2399ef6e439f9b1c77f4311bbe35109a573df4726399705157ac3e70043bf7f36416"
+  },
+  {
+    "path": "frontend/src/components/ProductComparison.tsx",
+    "bytes": 4145,
+    "content_fingerprint": "de07aff6a3ed56c8db21f8c37f0bf0aff76aea708dd622713c9644745fc8faa74b340fdd484caeb619836b53a975b9bfbc1e7d80c80692061220eacfb57f13e3"
+  },
+  {
+    "path": "frontend/src/components/ProductDetail.tsx",
+    "bytes": 7247,
+    "content_fingerprint": "f83901a38db212b807e5d5621297d521517afd777c2b062d1136ca67b3fe326d9bff2b987643ed9c1ec021dce8b74f1bb21d9d7647f1db8f79f376751ad243ca"
+  },
+  {
+    "path": "frontend/src/components/ProductHistory.tsx",
+    "bytes": 872,
+    "content_fingerprint": "834a6a95d62d5dfd7371bddd4a3172fbe620e204c17d427ec6740f35a2d10f43d383590b6676c452ff9c11f1fc60a702fb97d12f181886522be3cce806d88496"
+  },
+  {
+    "path": "frontend/src/components/ShoppingForm.tsx",
+    "bytes": 12595,
+    "content_fingerprint": "b8cfda6849e353e23d5750647c8f89de75e1f50a143d4dc90a2b215dccce5abf204a557730b2e5ac9f59e939d79679156d4e2adde78577745590e7f0ce283422"
+  },
+  {
+    "path": "frontend/src/components/ShoppingPlans.tsx",
+    "bytes": 3491,
+    "content_fingerprint": "117aedc6c0bc74d50d31f9e799ac4cb35f6c9b6be06c48a5265ce7e6fb7478e83a6f34efbaa9cd885f61aecd5a570bb916f003717d31c71ebb74eca7477a0aae"
+  },
+  {
+    "path": "frontend/src/components/SkillQueryInput.tsx",
+    "bytes": 6507,
+    "content_fingerprint": "14a70aab0106f0198ca5a2775919697e5dfbd35cb88a74305b211d1c65692663d3962af5c159dd23e09d012d546b216ce2af5bb33f019ac5006b974d2b18e4e0"
+  },
+  {
+    "path": "frontend/src/components/ToolApprovalCards.tsx",
+    "bytes": 1578,
+    "content_fingerprint": "d3015d6bcb89de7cdfd5d69b8bb63250e1c31293e7fab14e854eeb6b942f79da929c4c85542c68f6c60a13aa3d53a49fd3fe8536e82d9c16af2add82e5f544eb"
+  },
+  {
+    "path": "frontend/src/components/ToolProductResult.tsx",
+    "bytes": 4218,
+    "content_fingerprint": "bc15342deb71a4c9a4d1b19d0101e86f1a7946b804b4eb39eb779f58378d94dd9dc4c368a6845b10c5382471edf81a98c35f4b0b9d7ece5397e8e0a4c9b34412"
+  },
+  {
+    "path": "frontend/src/components/automations.css",
+    "bytes": 14416,
+    "content_fingerprint": "1b409acbf568fddfe1ad92194d9a39d26e9171d6b084119cb4ccaa3f35eecc52b02e2086ff1f9a47299551d8e2a9db43d31c11b3cb7393acc3f063eb98e496d9"
+  },
+  {
+    "path": "frontend/src/components/buyerWorkspace.css",
+    "bytes": 10944,
+    "content_fingerprint": "44859662a789e6b98161c2b2931be0fb71f40c14b67ac5442d7a55468c4dd8c19ae1a871859b3c450da40149585cab32479273b045ca52990b15adbaf1d417e3"
+  },
+  {
+    "path": "frontend/src/components/compactProductCards.css",
+    "bytes": 5585,
+    "content_fingerprint": "3302926434caf92ea1630f8b81abb38d695be88fe1636808bead162928a1d6bcaa25d8212cf3ce98f9c03b2dfbaa5fc42faa0af96cfbcaf008edb25a802c88e2"
+  },
+  {
+    "path": "frontend/src/components/confirmations.css",
+    "bytes": 8429,
+    "content_fingerprint": "062259dae7072b1ca9a5c4a364a64c1548c03ba6df5da5f942743c62fc3cae414be5afbc06394dc6d1bd1f3b5da7e6e1562bdfa336e4c9bfffea9cfd2f4299a5"
+  },
+  {
+    "path": "frontend/src/components/contextWorkspace.css",
+    "bytes": 5412,
+    "content_fingerprint": "3c68977fbf6a11b7a9587b357e819c2c7bce564976c78dfc84deaea0a6f20aba7e5462b420f179aeca3686a6b9a039f8ab5e047536ade894677cb6b423187929"
+  },
+  {
+    "path": "frontend/src/components/conversationDensity.css",
+    "bytes": 2345,
+    "content_fingerprint": "232806adb84af3e70043ebfc14e3b11be895ee2af9dc2d79714bd139c6a644b8516d15e7d90a15360ad6f9d1787c2dd63426af784ad3106325205fb2c1dc7595"
+  },
+  {
+    "path": "frontend/src/components/executionTrace.css",
+    "bytes": 5779,
+    "content_fingerprint": "cbc7fe50d09fbb6e3b005767c4c411c0aa7c68a1590eff48607033eddafb733d63ccc6271320e5927ef78cb28af3c56c1441d6e676d4ad72d41c7f893c95db04"
+  },
+  {
+    "path": "frontend/src/components/historySearch.css",
+    "bytes": 4719,
+    "content_fingerprint": "175a977342d713e3dbbd6b57a11fc193b0d374392c11b919d6d275cc76ed6e47c08f5bdc4ad66074cc863b23d4496ccad04cc132dde20d312d547c1177804b18"
+  },
+  {
+    "path": "frontend/src/components/modelPicker.css",
+    "bytes": 24104,
+    "content_fingerprint": "5bf3ad303f6ff723b0a829f6da5534aa40ec8f9a220249981ab271075126ba053fd4a7eeea4ea48df5e52223f48b0a7824d28df949f36afc7cce99071174309e"
+  },
+  {
+    "path": "frontend/src/components/myOrders.css",
+    "bytes": 8499,
+    "content_fingerprint": "2c5a4a6ff5ffe1e82593ecccf138bef759aec3458cb7926b4bc2366ccdf30061ae3db3d3c5b3806ab0ae680fdb6ecaae589139bd2c6c75cd178cbb4a6faf32c8"
+  },
+  {
+    "path": "frontend/src/components/productDetail.css",
+    "bytes": 7153,
+    "content_fingerprint": "ccf96285cfaa94e8df5ce3e7dbc00d8d4085a5304c4b97b142d80d975fa3cb0d483ec7163673a2e65ddcaa1d0574fe053b924896a589d775b380c73871a48e1c"
+  },
+  {
+    "path": "frontend/src/components/shoppingForm.css",
+    "bytes": 2091,
+    "content_fingerprint": "edc96858ffb08cc5dfdb5bbb1c4e6ff529459be3ee2694c3451fc28c430831abb56d6ad1fe0eae5950d3dd7ded6b23ad62a2890340a4887ad755fdd5f1fc9cf1"
+  },
+  {
+    "path": "frontend/src/components/shoppingPlans.css",
+    "bytes": 6256,
+    "content_fingerprint": "a659801a5fdbd7e9feb311f992199bda1806aa25afdb103adaf1734aba7fa460986ad85e99ba33710108f365199c11f46e5c9088699d71d5943be5e94f352c54"
+  },
+  {
+    "path": "frontend/src/hooks/useCommerceAgent.ts",
+    "bytes": 1620,
+    "content_fingerprint": "e2ea6e3d88dc6d5e69a77c3406d7c16e15bb0195eb191d75ab63a2db478b8520337210ef599db001fde4fa6ce79316052e570c79e77b164a4ea4d4109fb3e196"
+  },
+  {
+    "path": "frontend/src/lib/activities.ts",
+    "bytes": 2957,
+    "content_fingerprint": "2733f77d7f91027bae1b53bddbff50a92175752e69d30715cd9a73f659e82b397985d5217f1a2f86c21dfac9179d0565d048669f6e698cd2d69a28f4c38ae4c5"
+  },
+  {
+    "path": "frontend/src/lib/commerceClient.ts",
+    "bytes": 45609,
+    "content_fingerprint": "9facc2cd64638e60aac187d0e9af78d30f3cdaab36f0b75f83ef544c1e84d7b2f2452699a7a85ead25d0ad774a48f54ff3faa76cb0ab01bf93389cbeee8c121e"
+  },
+  {
+    "path": "frontend/src/lib/confirmations.ts",
+    "bytes": 3956,
+    "content_fingerprint": "cd301b92ff37dfae74e831ac6db267a4b4e3ebeefed44103b0c072a5cdd5760cabd5a01affe567c969f7020daf07671e353f399d37a7e98ea2b67eb58e267a69"
+  },
+  {
+    "path": "frontend/src/lib/modelCatalog.ts",
+    "bytes": 3777,
+    "content_fingerprint": "9b84fa4431d0ff4b2fa5c092f1801546f1ebb01bca58416059dcfe32fc561b27a10bbbb86a423210b10369853bbf10cf60d06478969ecd1bcd9b8abb17d5acd2"
+  },
+  {
+    "path": "frontend/src/lib/recoveringFetch.ts",
+    "bytes": 5951,
+    "content_fingerprint": "d8031418261d3fa1463789f167abc33dfcbf4d387386ec449f7ffaae7070b793dd929554d0340a6e2528bfd27fc48ebd47c8cb35c65e7c9b7b13b49b029690f4"
+  },
+  {
+    "path": "frontend/src/lib/skills.ts",
+    "bytes": 4293,
+    "content_fingerprint": "7c83fd911272663ceb087fee138de44021e7df4a72f6b94c7f1804fa493ae45938b63368ee11df6bf9e58265027ebc6994259b7054912445abfc9a40bf170bf0"
+  },
+  {
+    "path": "frontend/src/main.tsx",
+    "bytes": 238,
+    "content_fingerprint": "060339b79bc32a02ad753e24e013462b4a9b140d980187b3625465e326ec6200a723ece56a6a0becbf99456bc63bf57293e3d375b43413afd25738e4e7d6eb6e"
+  },
+  {
+    "path": "frontend/src/styles.css",
+    "bytes": 75697,
+    "content_fingerprint": "3f3a5b8ef7e5d01a227a734e6dac332c6c90c6ea69e3a107489cacbc5c6b6dc8bfdb8f6b99416723bdfc80b76e047138912eb5da55d3e5e353f44d3e2cf91724"
+  },
+  {
+    "path": "frontend/src/types.ts",
+    "bytes": 5271,
+    "content_fingerprint": "4207735cbf7fa62b119f01efb2fb168c3a70b95cee1e2f1134524fc7e371a7443d9fff6986a110feb808b72d831068fcfce68a750dd5bfc67e18da4565009962"
+  },
+  {
+    "path": "frontend/tests/activities.test.tsx",
+    "bytes": 8716,
+    "content_fingerprint": "d6695b11006255318a609365a13a62df0df1530a5f78febf8eea158477d83786da02b13860e4a111de6604a5dead7a6ac5c567d832f10758e594db2d46c7968c"
+  },
+  {
+    "path": "frontend/tests/automations.test.tsx",
+    "bytes": 10869,
+    "content_fingerprint": "508caa25f99fdd1188549399c738e88c95364c93f05a383f71a9ed3344064c7446a55b5abc5dc3172d890d1199e2072651f8179f6afa464c601d71f2ccdae131"
+  },
+  {
+    "path": "frontend/tests/buyerWorkspace.test.tsx",
+    "bytes": 16956,
+    "content_fingerprint": "3b4bef6502fa2942c591ac6c16cba368205afddb69c3c68d12f6028b3ffbbf078d38b7d3f4386eea5fadebfb2332085b12524c3b6a0b72b5eadac613cbb9cf0b"
+  },
+  {
+    "path": "frontend/tests/catalogMedia.test.tsx",
+    "bytes": 2203,
+    "content_fingerprint": "060d68e13bdb339e36c8dfd0b25b4b16f18dff296849764863d8e5f65f70a4181c3d2ed173e6eb2332ca60a9d94c0f9dfac89c6a542414eb5cb80be084147ff5"
+  },
+  {
+    "path": "frontend/tests/commerceClient.test.ts",
+    "bytes": 10229,
+    "content_fingerprint": "8a9ccf64ee641b71374d0c95a4fc27eadc4dbcc52e1d138ae1ea38d30e0f30e6dba81a80569d94b0e8e848b89e4dad2eacdde92319e124a6cb26ee16d20b99e0"
+  },
+  {
+    "path": "frontend/tests/confirmationCards.test.tsx",
+    "bytes": 7703,
+    "content_fingerprint": "6e52c1d79d7a8cd270cfb1cfb8300c5e722fc7a369f002c24b0e07ba4066931d5c0e80748b78d3857021422c833cbf84d2427758f0f7f23879d0946a381ab279"
+  },
+  {
+    "path": "frontend/tests/confirmations.test.ts",
+    "bytes": 9801,
+    "content_fingerprint": "1969dbecc3e700149bf9dd80873e7852f4107c94460a173cdf5298e180a08375f0efba29c83dea121177937c3333c65fc97c4a7e60fe0e46372964e456d99350"
+  },
+  {
+    "path": "frontend/tests/contextWorkspace.test.tsx",
+    "bytes": 11121,
+    "content_fingerprint": "8f1330511d9fa0233a05566a52a5e78dafaa055c256d1ab1afa2568976b34762aac83cec8705cec5266ad3ce13b6b6db8479c61ba69aea386d7860d5f58dfbca"
+  },
+  {
+    "path": "frontend/tests/conversationDensity.test.tsx",
+    "bytes": 13395,
+    "content_fingerprint": "f711769d5ae795561aa64ec847849cfe3026f9873038a0e6910b6b3e3ee3516bb9c5409c323637346b61982e6463ee7d2b7c96e222832166c5e787f8cac6a88a"
+  },
+  {
+    "path": "frontend/tests/historySearch.test.tsx",
+    "bytes": 10416,
+    "content_fingerprint": "7c06cd5becf3f3e7dd07dda56d7b857340795f9e11b04674b3d6cdff1b7e6546d6ec8f5df2bb5ad3f111520b82f6f831c7589cedb4aa1b5fbfc209d3dd8522a1"
+  },
+  {
+    "path": "frontend/tests/modelPicker.test.tsx",
+    "bytes": 53307,
+    "content_fingerprint": "00efcd4c6a127cf3ed1c3406acc6ed6ea3528db8d520002962faea189cfe648409f4fd93e86cf622462672d73a072a0c4be56a058dbade566cd1948217ec2e0a"
+  },
+  {
+    "path": "frontend/tests/myOrders.test.tsx",
+    "bytes": 4072,
+    "content_fingerprint": "e8cda6c4e8c992856ca902efc106991fc7fd76281348c966463819c8c07b77b859bdc84c180f1b6f8f02971daff3a6b3421df5c333ab3a488a5111af5776b2fa"
+  },
+  {
+    "path": "frontend/tests/productCards.test.tsx",
+    "bytes": 4784,
+    "content_fingerprint": "ad31d14a802f6fcb69ade519b1c03b02425e57ad774b1faccf590e8cf04a78becc37055f7a76d396ac605558b46dae90287af7e7f38899859e5ca24e5e7fc84c"
+  },
+  {
+    "path": "frontend/tests/productContract.test.ts",
+    "bytes": 6989,
+    "content_fingerprint": "5c01477837a69c3618017095602c199a48d9d5902e7e9955e1643d031dee51013c7dddbf7b619eb325fbeca22c464992a7c3f2a1ba595d6fe9b3b55ba9db0bea"
+  },
+  {
+    "path": "frontend/tests/runRecovery.test.ts",
+    "bytes": 26499,
+    "content_fingerprint": "969105d8c393e753ef13f8442c7b8c45d47bae69ee4ad5a6d3444e7e358e06b5283f92ebd0250b8aa9c5a0499863f762760cc33f5340e3810ff91e6b1d32c572"
+  },
+  {
+    "path": "frontend/tests/shoppingForm.test.tsx",
+    "bytes": 10006,
+    "content_fingerprint": "f4d41d92ca297bc39b8b1dfe2813660e4be57b10b9ed88792bcfb2c0735dda1b6fca803546df6e6619cae13f1c173fe72e16d912f63c46b6004148babc6d2b9a"
+  },
+  {
+    "path": "frontend/tests/shoppingPlans.test.tsx",
+    "bytes": 12680,
+    "content_fingerprint": "0a07bce6a12087d415aa960e4a26db4802a78c227cc6c0a3ba5ffeddb50d3870b2b0fc096ea5f3662bd3573da559b5191e54e08b6a4aff64780717fc4526ac2b"
+  },
+  {
+    "path": "frontend/tests/skillSlashInteraction.test.tsx",
+    "bytes": 10760,
+    "content_fingerprint": "5318e7464d2c0cd1c010223ae0016735d7edbdc75719394e96d21e929605de3aca2c4b4d3405546de5a616084b450dd8af45989a3a322130190690f7b07794c5"
+  },
+  {
+    "path": "frontend/tests/toolApprovals.test.tsx",
+    "bytes": 1168,
+    "content_fingerprint": "e7fa7bb6924b591009cdba631d0982e66e04d50ccd0753dce72dd99075a806c08a2307fc748c176844cb4b088718f022c55286fe515c463ff188cf65b33fbac2"
+  },
+  {
+    "path": "frontend/tsconfig.json",
+    "bytes": 526,
+    "content_fingerprint": "11934fce61f547d4cfe3623b0531548fae56a1a44737f445566bd4ea5e3658434bca5af7d2a1622712ff69097c8f0d07a6f9a22ccc133ddb187431162e05ce94"
+  },
+  {
+    "path": "frontend/tsconfig.tsbuildinfo",
+    "bytes": 401,
+    "content_fingerprint": "2fab1132f0929656df0f4d799359a6f398b9b279184fae2fb06523d6b8b2fe700cd4ba130f9f7480c37896190e8c648608c7d07a6b9d5d3ad6519e02cc631aa0"
+  },
+  {
+    "path": "frontend/vite.config.ts",
+    "bytes": 771,
+    "content_fingerprint": "a2986afc02c5f339282fc86f41d61e28527616e1fbee8a368aa3b7efdf6983ec161baf2d8506f291c2b051a0ba8ab3259ca898e84dac2611c70bf0a68267e082"
+  },
+  {
+    "path": "knowledge/cross-border-guide.md",
+    "bytes": 2133,
+    "content_fingerprint": "b09a01135a7f5b3a4fec6014358910057614867a943b0b09f4cfc61ff71ad242fea726b994637fc1d6512d993f668245c6d3f4f8870e06fe29f2944043108829"
+  },
+  {
+    "path": "knowledge/digital-accessories.md",
+    "bytes": 2254,
+    "content_fingerprint": "3c86b6285a1df827624117e14ce13ce91045fc13deae0c9c6f74d23c873e0936eeb89cd24c68dd1d6b9c3d257cc0d0cf7f4949d6c2fdc31629d31cd950f93885"
+  },
+  {
+    "path": "knowledge/eval-baby-pet-价格与预算.md",
+    "bytes": 5821,
+    "content_fingerprint": "728fe1c177685f8a797501e4d16d7f9144c4e01ab93154128898fb7026341ce649251a1a38f529303e04c91de752a65e044b3c0b3215c14d303f057b33b94a0b"
+  },
+  {
+    "path": "knowledge/eval-baby-pet-参数判断.md",
+    "bytes": 5725,
+    "content_fingerprint": "0d2140381a5bb303a0424b06dddf92b3581e1779dd4dbaa1e41afc6c2deacd898768510627986d3ea9e8535374e3af2dec2f9937f94a4ab645f68c5238576c82"
+  },
+  {
+    "path": "knowledge/eval-baby-pet-概览.md",
+    "bytes": 5533,
+    "content_fingerprint": "5b60b7438be521542de5c50ee52a3c0cc06311dd6ef5709095da21f158472c570b6db52d9441ed6d9adb070171890856ecf0ce1c32a08cf6d548d6791ce71387"
+  },
+  {
+    "path": "knowledge/eval-baby-pet-避坑与合规.md",
+    "bytes": 5821,
+    "content_fingerprint": "ca552dea9d41a20c565322f369ddbc30cbf2a1503e3e153975bc9a5a8e2d034d4dcfc5507eb1f654a2b1bdc7b0484fcfdbb39a64d7cd8cdfbd7f7e909e0e391e"
+  },
+  {
+    "path": "knowledge/eval-beauty-care-价格与预算.md",
+    "bytes": 5821,
+    "content_fingerprint": "ad9c0cf3f573f865397d57c3774daf9dec42e0c2061aad90d45a0259254f8230477dce8caf52f5dc7d445ce13aeb91e8bc5f3e5c3432f23372661eca2ebb92c2"
+  },
+  {
+    "path": "knowledge/eval-beauty-care-参数判断.md",
+    "bytes": 5725,
+    "content_fingerprint": "d6a7ee3e69f95d0f182d55edcc9d6d86ee94631ee9d7fab6e1ba6b552895e7914d94fae087178a5d4363f31705dce013b1656c128f023f648c4e9d42bedf1b55"
+  },
+  {
+    "path": "knowledge/eval-beauty-care-概览.md",
+    "bytes": 5533,
+    "content_fingerprint": "5341c1342a50eb34d0e38c921b8cd20a30959b1a9c8f5ae0f6d90eabefd9946ef0101f7647839e0b3a5632f7ae8d6fc8b9e1bb01aa8b6300056cb2aa5b48b44e"
+  },
+  {
+    "path": "knowledge/eval-beauty-care-避坑与合规.md",
+    "bytes": 5821,
+    "content_fingerprint": "8aa26eb06ba138b2644fdb65bd39c3fdade3364e5afc818ddb19b00c62f0afd9e0bf9f2892385f1e02584bbd346692c456a5808729e915c2354af2be06872157"
+  },
+  {
+    "path": "knowledge/eval-digital-accessories-价格与预算.md",
+    "bytes": 5683,
+    "content_fingerprint": "49408a9fb47639796103750e1c07e195826f8517da757094b9ee59472b985b52fd20a34b00f2d8ea0ea32105ed00b1d12c44c3ed24a9502783ef94ec661d234e"
+  },
+  {
+    "path": "knowledge/eval-digital-accessories-参数判断.md",
+    "bytes": 5587,
+    "content_fingerprint": "a24979620d89e499b568e3eca9bf61b858bda904ef7dd60f2977fc70975cd6772014674ce34b6412edcb6ffd916147f2487fb701a8364cb07915d8c15b4e41cd"
+  },
+  {
+    "path": "knowledge/eval-digital-accessories-概览.md",
+    "bytes": 5395,
+    "content_fingerprint": "91b563d3f31216f5922503c318913001c583db5a72c221320aa16f55b5b602c79e5e498d36d6e824935db605944dee6562ab832f6331950dd0b52d84a137c733"
+  },
+  {
+    "path": "knowledge/eval-digital-accessories-避坑与合规.md",
+    "bytes": 5683,
+    "content_fingerprint": "6e56214187779d368943d87b7d4c9b159cf2a180c4944225fd69a93414c649e67aa927ec25def349434fa9d868954e7f046b1df3467209c5353d3d0ed4a002af"
+  },
+  {
+    "path": "knowledge/eval-home-living-价格与预算.md",
+    "bytes": 5821,
+    "content_fingerprint": "9ea5b7ce8127a301312ed8308e4e9ea9447773efaee094f52ef81fa16973ffcd7bac8be75c9c15babd6020d75d575d4b558f050b9b031bdac924078ea5e60193"
+  },
+  {
+    "path": "knowledge/eval-home-living-参数判断.md",
+    "bytes": 5725,
+    "content_fingerprint": "c5f770303c07c1d61217acefc9fa7bac8e5dd1c556cf28faccbb175fa2bb38146e6ba0a0dd440167f36804e1a2d8b03907e5d60d5edd260a3907088288535033"
+  },
+  {
+    "path": "knowledge/eval-home-living-概览.md",
+    "bytes": 5533,
+    "content_fingerprint": "0653e1135698717b624c0e2154343b15b5225fe2f9726290ce70fb1360f225f60fe117695dc0e8ef3537b6bb45e4593fac63dc0a24acdc7784997b28652ef019"
+  },
+  {
+    "path": "knowledge/eval-home-living-避坑与合规.md",
+    "bytes": 5821,
+    "content_fingerprint": "05df2069b11f92cba9e1d970479f7c529fcba058e9253c0942f27af06c5ecdd95c9e4678e52267259f5aa50f46d2962759c2ff827a6e39cabf72ba87349ecd49"
+  },
+  {
+    "path": "knowledge/eval-kitchen-dining-价格与预算.md",
+    "bytes": 5821,
+    "content_fingerprint": "837fc1003785a7de6d2013485a8681d22ed91386519ebe25f237e9a53f72586c01ce2e002a07fd34d53f609d6cd6a623a88b4a08db11f8284a0aa0197879c71f"
+  },
+  {
+    "path": "knowledge/eval-kitchen-dining-参数判断.md",
+    "bytes": 5725,
+    "content_fingerprint": "272d50eb58a804cf2d2946e9af4d365356a061350972a1bc2e777823d670f7655867bba94ff60cebea8db70ba5c1551403754097476b866e14f5eda4f8ea3807"
+  },
+  {
+    "path": "knowledge/eval-kitchen-dining-概览.md",
+    "bytes": 5533,
+    "content_fingerprint": "3188598046623bbda09127c7b42524b57bc3b2f83e097959e81469e95d2a0dd23531c8e7f66b54600e766efca95b0f9ec4eec788b4ebafec03f45dede57bb23c"
+  },
+  {
+    "path": "knowledge/eval-kitchen-dining-避坑与合规.md",
+    "bytes": 5821,
+    "content_fingerprint": "fd9d2ee6be7e7f7008cbc52515c14b9f83ab84828a9fa9cf3e127488511697f91d693a49b70460eb8112067c283f3be0da68c3c9a56d33896a168a54322207cf"
+  },
+  {
+    "path": "knowledge/eval-office-study-价格与预算.md",
+    "bytes": 5821,
+    "content_fingerprint": "665a1c04187559a1dc1aec36d12b1baecf103ed424851cf1c6c9c177204787ad62201654f7bc680b337f0eadfd668d24286b14dd0feabc62e28042b7efd2ee18"
+  },
+  {
+    "path": "knowledge/eval-office-study-参数判断.md",
+    "bytes": 5725,
+    "content_fingerprint": "23bf9105d8338ed6bea7dcc631c9deda568929ff30211ca3d44c5c0e19936673ffc4c8ba5cc7826134ffa983b2c445d4fd419348f4c5f209e769109a2843a1fd"
+  },
+  {
+    "path": "knowledge/eval-office-study-概览.md",
+    "bytes": 5533,
+    "content_fingerprint": "4ff08b3a2ccfb64725f2b2f88ad53495830b23563aa0de58d0c59bef2792a12b130a68c0c9b1336d55be24a66317f0042844449029df5bdb2c0a770e769d4b01"
+  },
+  {
+    "path": "knowledge/eval-office-study-避坑与合规.md",
+    "bytes": 5821,
+    "content_fingerprint": "49c361663d4c09222e2a0ae07cb7059c3afd64d2565613b29b7c8c6c25143037ff37e306ace3880aceb8aafb706a4438ee4a18fbfbd8dca809e9ce2aec9d83d1"
+  },
+  {
+    "path": "knowledge/eval-outdoor-sports-价格与预算.md",
+    "bytes": 5821,
+    "content_fingerprint": "814fd1cb3453ed1d5580d596af7871e6cbb8e94ef251c83f52f45c6c69c9215b362df31df01277549595b97e092fcae1b2e077ef1dc46356b6865315841a5b0f"
+  },
+  {
+    "path": "knowledge/eval-outdoor-sports-参数判断.md",
+    "bytes": 5725,
+    "content_fingerprint": "9e7b971bb5725937c5fb2e05d272f687e87dfb1aac4716e1cb84d01340dbcb7afab0f0cd765c8fd46c9304540684a181582c1fde608d8e5397c6bd525a59245f"
+  },
+  {
+    "path": "knowledge/eval-outdoor-sports-概览.md",
+    "bytes": 5533,
+    "content_fingerprint": "35f8bde77fdb4c4d2d6c294016ad73e0fa3e9e9fe688c86966644068101e5950075a299e0d8e3f5001ba153be041a7526e710a932a53c9308109fb7d826bb079"
+  },
+  {
+    "path": "knowledge/eval-outdoor-sports-避坑与合规.md",
+    "bytes": 5821,
+    "content_fingerprint": "b4b3b1c0f443b772d80c650782f3ec53954677c49967fe09bee715064d5a20068cf1a7fa02e522eb440efbf446269aae104704189b0248442b857f3833cf18b9"
+  },
+  {
+    "path": "knowledge/eval-policy-battery.md",
+    "bytes": 6799,
+    "content_fingerprint": "56a18227da323996e69b713cd66a12be082867500894d26475dca463a628c87fe68b9559115254d109668a226099ae863388aa24a17247f35a2754932e6e17a2"
+  },
+  {
+    "path": "knowledge/eval-policy-cn.md",
+    "bytes": 6154,
+    "content_fingerprint": "ff750839a61df75caa232867ad2b9a4206fb88c91820b1db81a5e45bd38b76feba4823aeab9f5331505900211b103e475af2e59f7f9a94d93c2781b70f9f19a3"
+  },
+  {
+    "path": "knowledge/eval-policy-eu.md",
+    "bytes": 6154,
+    "content_fingerprint": "98155cb32af15b7353a33cab5a834ec06d8d176ead83e05ba9cba19122cbf7159b3c9a520f93fa89852be8bf6b159022e15a548cc09bf29d201560b5a9d81f90"
+  },
+  {
+    "path": "knowledge/eval-policy-global-shipping.md",
+    "bytes": 6967,
+    "content_fingerprint": "5434f58851612f103da2eb4f43df142ca1aac70cf13ec9add072bb94a769fd122ba3782c6bb0414be2de6592128cbde953fd562d488fbe26e7568f442f12e1ad"
+  },
+  {
+    "path": "knowledge/eval-policy-jp.md",
+    "bytes": 6154,
+    "content_fingerprint": "e392b5b4031f064a182a3d86c1616e5fd406552a8358e313caf0d689dbb01b3e8ff63a802e047eeca0e9636539ab9a3d550a51a57db686fb26b6e1fc431c5c57"
+  },
+  {
+    "path": "knowledge/eval-policy-material.md",
+    "bytes": 6799,
+    "content_fingerprint": "92342206d20ad0c3c088e05ce3ad36c5e20b14126af789cfc569556e875d413eae4352b7a2f0b23711d04f6a51bdeb0428dea4fe88ef504da55d5998571325ad"
+  },
+  {
+    "path": "knowledge/eval-policy-sg.md",
+    "bytes": 6154,
+    "content_fingerprint": "8c9f0a35ab9f2589d1f51b6f27424917e50b93f125a5e3bf0c393e5567c36a87df4cbb29b595fe7bd240b3ff0321ab9a55189cf22e7154c4868e65016e5b0981"
+  },
+  {
+    "path": "knowledge/eval-policy-us.md",
+    "bytes": 6154,
+    "content_fingerprint": "417da45f1f242bf6398ac01d770cca63ab53676f1a30cb40544e9c3a8f788310a7fbfd385213f4f2cb282c68cf05b325ecac2dec7f8f615e49b802437bdbc4f6"
+  },
+  {
+    "path": "knowledge/eval-travel-gear-价格与预算.md",
+    "bytes": 5821,
+    "content_fingerprint": "ccadc3b1776f62dfb26388c948c6fe4138bac463ae74cc802fc6e61e9cac3383485cacc0868cf72f67b48867a3b89f730628bac2e4bcb44305a753aa2e553f9e"
+  },
+  {
+    "path": "knowledge/eval-travel-gear-参数判断.md",
+    "bytes": 5725,
+    "content_fingerprint": "2ac64a2150f4544c1fb505b3389aa67e35d3c757bb468b55fa8552a2703022c433e7dd20e3893b3ea2b0b0dd90fc7404602c83945ac8932f2fb3c2c67bc852af"
+  },
+  {
+    "path": "knowledge/eval-travel-gear-概览.md",
+    "bytes": 5533,
+    "content_fingerprint": "7d23fc2322cf5737edd08286e767b2dc047f6431a41e54bfc01398db84841fef6582bdb6cbf75b299aee9a22498fd80b7cada9dff5c790ea79bb0226a84c36b9"
+  },
+  {
+    "path": "knowledge/eval-travel-gear-避坑与合规.md",
+    "bytes": 5821,
+    "content_fingerprint": "a8cfb219c59f7b2d964f93033ea1b28d8900f3e0981248a0cd19ae085ed3e73710509207f1f18ff071c5ba025a5cabec03066c69e0b59d4bb869488a426d6c3f"
+  },
+  {
+    "path": "knowledge/home-living.md",
+    "bytes": 2019,
+    "content_fingerprint": "549cfd9faa11ed0a2a95546a8fe895b1a1ca787d0f855572c674d2c3189905d860bf0afddc2ea2670a3111a760d929cc500f4a99f373d3d14e2191136cc0f758"
+  },
+  {
+    "path": "knowledge/manifest.jsonl",
+    "bytes": 17722,
+    "content_fingerprint": "9bbb6563517fa9acc30414f72f953d87401da711f0d11e7e0d32f5520fa3a9b829c38de70438743846a0403242bbba202aa05d93844de7f1b2266df56a1b0847"
+  },
+  {
+    "path": "knowledge/outdoor-sports.md",
+    "bytes": 2226,
+    "content_fingerprint": "23a4a5b0c5bde08b8e1f1e83b46f090e9d1beb3b943219bc37910b443404371204d8d162811bc5ca584688a1e5808dcefaa97332d2b5672f6d43f93298588362"
+  },
+  {
+    "path": "knowledge/travel-gear.md",
+    "bytes": 2685,
+    "content_fingerprint": "19deb26f112a173b82eb2b8831ae887c0ff2a8ee5029ccaa357f14e946890201dbafe0034d077a92464c346172a740fd3274aa5dfd3ae16742d983f2d8d160d4"
+  },
+  {
+    "path": "pyproject.toml",
+    "bytes": 1283,
+    "content_fingerprint": "5adb60513ab863db1883217ab5b252d6183b6f7ff6d322a7f870f132e9e4d59b308e85ea914b69540b66ad9a7f90537fbace5af4edbaec5c49e6afc8a1be597e"
+  },
+  {
+    "path": "scripts/loadtest/analyze.py",
+    "bytes": 1937,
+    "content_fingerprint": "0c4d654d4f6f046fbf4fd05cdaa02cd67177252865097320b8d06f16e00473bbcb7b5e3d427656716529650fe630e574912400654da91ca79e74df3431397e62"
+  },
+  {
+    "path": "scripts/loadtest/client.py",
+    "bytes": 4387,
+    "content_fingerprint": "aec76e009d74e4931b4dd647370b6ddbd11cad9205b22acdd4bb146af61b53d0d6181b25863757e17f123ecfec3ef5c0519a155a2489117b2cb33750b994c2a2"
+  },
+  {
+    "path": "scripts/loadtest/faults.py",
+    "bytes": 21541,
+    "content_fingerprint": "768de7cd9461004a551076c627db052a95673c1bd3bceac1338c3f934fb9a1da706dc7ef0fc1180497581c9ff99865b63064652d4aacc12cebf3812036ff1b4a"
+  },
+  {
+    "path": "scripts/loadtest/hotspot.py",
+    "bytes": 5469,
+    "content_fingerprint": "b5793990d5da369e7cce400c7b9157adb4cde46959f71257f3b61f9298784894a5c1852ab31624b504a9de9ebfd9344b34f7a797f98eaf74629d50621632dcba"
+  },
+  {
+    "path": "scripts/loadtest/locustfile.py",
+    "bytes": 3257,
+    "content_fingerprint": "5d3d62c8507d58ec6bb17f2da8e5f7639a3e3f565f8c4e87baf2513a82b1878c1f542073b813cda0c463d66bbea59bee4489c01fdeae91d57afab6c7cda00a80"
+  },
+  {
+    "path": "scripts/loadtest/matrix.py",
+    "bytes": 10237,
+    "content_fingerprint": "376c3689efbd070a6b1acf3f5ff8efb2950044b42adc349d4a9a1b9c7db0aaa2e1e1fe7cf83dc5b7f9ea6de9e239c53d98444843c170eb923e0a8cefb09c465b"
+  },
+  {
+    "path": "scripts/loadtest/mock_llm.py",
+    "bytes": 7692,
+    "content_fingerprint": "b91809aff487755da1b244ce9e49f334b1c728f8c9f8baa65f6bd906e7fd92f127b01d1c3ef81572c4637f842dc624cd8fee0aff853a004c9d4703a2451de2fd"
+  },
+  {
+    "path": "scripts/loadtest/report_matrix.py",
+    "bytes": 12086,
+    "content_fingerprint": "5620c98bff13ec3534152ea56f73d82a7135ffa4eb4e7a8eec9b80ccc45422dff70300f7d8e713797be9ef499e88afb3f292a5b5658a2ce45ae4a7dca8a8be2f"
+  },
+  {
+    "path": "source-revision.txt",
+    "bytes": 41,
+    "content_fingerprint": "938ca8684f710ec08591258b4f80b3e7bf7ff6d31d4ebec2c1945e1c356e667439e1deb741bc01237e6bd25c884ae54284a02a1a4a2efb43200b56bb4d6bd3b6"
+  },
+  {
+    "path": "uv.lock",
+    "bytes": 521952,
+    "content_fingerprint": "b1b8a333e24d9b9347c8a58a2814565da711130732830bcaf14fbb165e5089d45239a12960a99d28fcb2ff7a20655665916f754b69e9fcde23f07e94fab00993"
+  }
+]

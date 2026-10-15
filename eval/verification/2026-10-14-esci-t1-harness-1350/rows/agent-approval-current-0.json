@@ -1,0 +1,586 @@
+{
+  "case_id": "agent-approval",
+  "layer": "agent",
+  "mode": "workflow",
+  "repetition": 0,
+  "checks": {
+    "confirmation_prepared": true,
+    "no_order_before_approval": true,
+    "state_restored": true,
+    "denial_persisted": true,
+    "denial_no_new_confirmation": true,
+    "no_unapproved_order": true,
+    "inventory_unchanged": true
+  },
+  "passed": true,
+  "error": null,
+  "usage": [
+    {
+      "kind": "business",
+      "input_tokens": 8105,
+      "output_tokens": 182,
+      "elapsed_ms": 3525.756416027434,
+      "request_context": {
+        "system_estimated_tokens": 4385,
+        "state_estimated_tokens": 0,
+        "product_estimated_tokens": 0,
+        "history_estimated_tokens": 465,
+        "tool_schema_estimated_tokens": 8191,
+        "reason": "buyer_request",
+        "visible_evidence_answer": false
+      },
+      "prompt_cache": {
+        "model": "gemini-3.8-flash-high",
+        "response_model": "gemini-3.8-flash-high",
+        "response_model_matches": true,
+        "response_model_conflict": false,
+        "protocol_status": "valid",
+        "cache_mode": "passthrough",
+        "cache_policy": "static",
+        "cache_marker_count": 0,
+        "cache_reason": "passthrough",
+        "cache_retry_without_markers": false,
+        "cache_read_tokens": null,
+        "cache_write_tokens": null,
+        "cache_usage_invalid": false,
+        "reported_cost": null,
+        "prefix_comparison": "first_request",
+        "prefix_scope_known": true,
+        "prefix_system_hash": "5b257fb883ec981426cf293110550e03b234934a5643f8c9201b5047efa2db3e",
+        "prefix_tools_hash": "13a7c4ccdaca07b3a45d7b0f4f4fc2cbc2ce0d9903a64f0b4793d77b6db27f81",
+        "prefix_message_count": 3,
+        "prefix_common_messages": null,
+        "prefix_common_message_bytes": null,
+        "prefix_first_changed_message": null,
+        "prefix_system_changed": null,
+        "prefix_tools_changed": null,
+        "prefix_parameters_changed": null
+      },
+      "model_execution": {
+        "identity": "gemini-3.8-flash-high|http://127.0.0.1:8917/v1/",
+        "requested_model": "gemini-3.8-flash-high",
+        "response_models": [
+          "gemini-3.8-flash-high"
+        ],
+        "response_model_matches": true,
+        "profile_id": null,
+        "profile_revision": null
+      },
+      "ttft_ms": null
+    },
+    {
+      "kind": "business",
+      "input_tokens": 8883,
+      "output_tokens": 547,
+      "elapsed_ms": 7764.855457935482,
+      "request_context": {
+        "system_estimated_tokens": 4385,
+        "state_estimated_tokens": 0,
+        "product_estimated_tokens": 1301,
+        "history_estimated_tokens": 180,
+        "tool_schema_estimated_tokens": 8191,
+        "reason": "tool_followup",
+        "visible_evidence_answer": false
+      },
+      "prompt_cache": {
+        "model": "gemini-3.8-flash-high",
+        "response_model": "gemini-3.8-flash-high",
+        "response_model_matches": true,
+        "response_model_conflict": false,
+        "protocol_status": "valid",
+        "cache_mode": "passthrough",
+        "cache_policy": "static",
+        "cache_marker_count": 0,
+        "cache_reason": "passthrough",
+        "cache_retry_without_markers": false,
+        "cache_read_tokens": null,
+        "cache_write_tokens": null,
+        "cache_usage_invalid": false,
+        "reported_cost": null,
+        "prefix_comparison": "append",
+        "prefix_scope_known": true,
+        "prefix_system_hash": "5b257fb883ec981426cf293110550e03b234934a5643f8c9201b5047efa2db3e",
+        "prefix_tools_hash": "13a7c4ccdaca07b3a45d7b0f4f4fc2cbc2ce0d9903a64f0b4793d77b6db27f81",
+        "prefix_message_count": 5,
+        "prefix_common_messages": 3,
+        "prefix_common_message_bytes": 11769,
+        "prefix_first_changed_message": 3,
+        "prefix_system_changed": false,
+        "prefix_tools_changed": false,
+        "prefix_parameters_changed": false
+      },
+      "model_execution": {
+        "identity": "gemini-3.8-flash-high|http://127.0.0.1:8917/v1/",
+        "requested_model": "gemini-3.8-flash-high",
+        "response_models": [
+          "gemini-3.8-flash-high"
+        ],
+        "response_model_matches": true,
+        "profile_id": null,
+        "profile_revision": null
+      },
+      "ttft_ms": 5969.019207987003
+    },
+    {
+      "kind": "business",
+      "input_tokens": 9324,
+      "output_tokens": 439,
+      "elapsed_ms": 7462.186416960321,
+      "request_context": {
+        "system_estimated_tokens": 4467,
+        "state_estimated_tokens": 0,
+        "product_estimated_tokens": 1652,
+        "history_estimated_tokens": 415,
+        "tool_schema_estimated_tokens": 8191,
+        "reason": "buyer_request",
+        "visible_evidence_answer": false
+      },
+      "prompt_cache": {
+        "model": "gemini-3.8-flash-high",
+        "response_model": "gemini-3.8-flash-high",
+        "response_model_matches": true,
+        "response_model_conflict": false,
+        "protocol_status": "valid",
+        "cache_mode": "passthrough",
+        "cache_policy": "static",
+        "cache_marker_count": 0,
+        "cache_reason": "passthrough",
+        "cache_retry_without_markers": false,
+        "cache_read_tokens": null,
+        "cache_write_tokens": null,
+        "cache_usage_invalid": false,
+        "reported_cost": null,
+        "prefix_comparison": "rewrite",
+        "prefix_scope_known": true,
+        "prefix_system_hash": "518cb1a7ed8b69e05ab79a6bf2c0ed457ffdd2427dc31d97203c9de71d12cf38",
+        "prefix_tools_hash": "13a7c4ccdaca07b3a45d7b0f4f4fc2cbc2ce0d9903a64f0b4793d77b6db27f81",
+        "prefix_message_count": 7,
+        "prefix_common_messages": 0,
+        "prefix_common_message_bytes": 0,
+        "prefix_first_changed_message": 0,
+        "prefix_system_changed": true,
+        "prefix_tools_changed": false,
+        "prefix_parameters_changed": false
+      },
+      "model_execution": {
+        "identity": "gemini-3.8-flash-high|http://127.0.0.1:8917/v1/",
+        "requested_model": "gemini-3.8-flash-high",
+        "response_models": [
+          "gemini-3.8-flash-high"
+        ],
+        "response_model_matches": true,
+        "profile_id": null,
+        "profile_revision": null
+      },
+      "ttft_ms": null
+    },
+    {
+      "kind": "business",
+      "input_tokens": 9937,
+      "output_tokens": 280,
+      "elapsed_ms": 5392.556666978635,
+      "request_context": {
+        "system_estimated_tokens": 4467,
+        "state_estimated_tokens": 0,
+        "product_estimated_tokens": 1652,
+        "history_estimated_tokens": 1293,
+        "tool_schema_estimated_tokens": 8191,
+        "reason": "tool_followup",
+        "visible_evidence_answer": false
+      },
+      "prompt_cache": {
+        "model": "gemini-3.8-flash-high",
+        "response_model": "gemini-3.8-flash-high",
+        "response_model_matches": true,
+        "response_model_conflict": false,
+        "protocol_status": "valid",
+        "cache_mode": "passthrough",
+        "cache_policy": "static",
+        "cache_marker_count": 0,
+        "cache_reason": "passthrough",
+        "cache_retry_without_markers": false,
+        "cache_read_tokens": null,
+        "cache_write_tokens": null,
+        "cache_usage_invalid": false,
+        "reported_cost": null,
+        "prefix_comparison": "append",
+        "prefix_scope_known": true,
+        "prefix_system_hash": "518cb1a7ed8b69e05ab79a6bf2c0ed457ffdd2427dc31d97203c9de71d12cf38",
+        "prefix_tools_hash": "13a7c4ccdaca07b3a45d7b0f4f4fc2cbc2ce0d9903a64f0b4793d77b6db27f81",
+        "prefix_message_count": 9,
+        "prefix_common_messages": 7,
+        "prefix_common_message_bytes": 15463,
+        "prefix_first_changed_message": 7,
+        "prefix_system_changed": false,
+        "prefix_tools_changed": false,
+        "prefix_parameters_changed": false
+      },
+      "model_execution": {
+        "identity": "gemini-3.8-flash-high|http://127.0.0.1:8917/v1/",
+        "requested_model": "gemini-3.8-flash-high",
+        "response_models": [
+          "gemini-3.8-flash-high"
+        ],
+        "response_model_matches": true,
+        "profile_id": null,
+        "profile_revision": null
+      },
+      "ttft_ms": 3500.750249950215
+    },
+    {
+      "kind": "business",
+      "input_tokens": 10173,
+      "output_tokens": 281,
+      "elapsed_ms": 4589.4562910543755,
+      "request_context": {
+        "system_estimated_tokens": 4418,
+        "state_estimated_tokens": 0,
+        "product_estimated_tokens": 1652,
+        "history_estimated_tokens": 1843,
+        "tool_schema_estimated_tokens": 8191,
+        "reason": "buyer_request",
+        "visible_evidence_answer": false
+      },
+      "prompt_cache": {
+        "model": "gemini-3.8-flash-high",
+        "response_model": "gemini-3.8-flash-high",
+        "response_model_matches": true,
+        "response_model_conflict": false,
+        "protocol_status": "valid",
+        "cache_mode": "passthrough",
+        "cache_policy": "static",
+        "cache_marker_count": 0,
+        "cache_reason": "passthrough",
+        "cache_retry_without_markers": false,
+        "cache_read_tokens": null,
+        "cache_write_tokens": null,
+        "cache_usage_invalid": false,
+        "reported_cost": null,
+        "prefix_comparison": "first_request",
+        "prefix_scope_known": true,
+        "prefix_system_hash": "cc45f7c3799e1fcc8957b35f097f835d8e1d4d6ac7b1022790e336783a56f36a",
+        "prefix_tools_hash": "55177dfbe4b6c275fd819319e5b175ba691f67d7f669b9e5a402985909d37d3f",
+        "prefix_message_count": 11,
+        "prefix_common_messages": null,
+        "prefix_common_message_bytes": null,
+        "prefix_first_changed_message": null,
+        "prefix_system_changed": null,
+        "prefix_tools_changed": null,
+        "prefix_parameters_changed": null
+      },
+      "model_execution": {
+        "identity": "gemini-3.8-flash-high|http://127.0.0.1:8917/v1/",
+        "requested_model": "gemini-3.8-flash-high",
+        "response_models": [
+          "gemini-3.8-flash-high"
+        ],
+        "response_model_matches": true,
+        "profile_id": null,
+        "profile_revision": null
+      },
+      "ttft_ms": 4469.967624987476
+    }
+  ],
+  "round_metrics": [
+    {
+      "elapsed_ms": 11306.920125032775,
+      "compacted": false,
+      "model_calls": 2
+    },
+    {
+      "elapsed_ms": 12886.611166992225,
+      "compacted": false,
+      "model_calls": 2
+    },
+    {
+      "elapsed_ms": 4598.51854108274,
+      "compacted": false,
+      "model_calls": 1
+    }
+  ],
+  "compaction_metrics": [],
+  "elapsed_ms": 28854.73283403553,
+  "transcript": [
+    {
+      "user": "先用商品工具核对 P1003-S1，寄到中国，数量1件。",
+      "assistant": "已为您通过商品检索工具核对 **P1003-S1** 寄往中国（CN）的最新信息：\n\n### 商品与规格信息\n* **商品名称**：Wanderlite 折叠旅行双肩包 35L（商品 ID: `P1003`）\n* **规格型号**：石墨黑（SKU ID: `P1003-S1`）\n* **当前库存**：80 件\n* **配送支持**：支持直邮中国（CN）\n\n### 价格与到手价明细（数量：1件）\n* **商品单价（小计）**：¥129.00 CNY\n* **跨境运费**：¥25.00 CNY\n* **预估关税**：¥0.00 CNY（已适用跨境免税额度）\n* **单件到手总价**：**¥154.00 CNY**\n\n---\n*注：商品结构化字段显示重量为 0.33 kg，宣传亮点提及“仅 380g 超轻”，快照数据存在一定差异。*\n\n如需直接下单准备确认单，请随时告知收货地址等信息。"
+    },
+    {
+      "user": "请为 P1003-S1 准备1件订单确认卡，商品是P1003。合成收件人为评测买家，国家CN，省市上海，地址评测街1号，邮编200000，电话00000000000。只准备确认，尚未批准。",
+      "assistant": "已为您准备好订单意向确认卡，当前为**待确认（pending）**状态，尚未创建订单或扣减库存：\n\n### 订单意向确认卡详情\n* **确认单号**：`0bfa1ba605234286aecb86405e6e4c88`\n* **商品信息**：Wanderlite 折叠旅行双肩包 35L（石墨黑）\n* **商品 ID / SKU ID**：`P1003` / `P1003-S1`\n* **购买数量**：1 件\n* **商品总计**：¥129.00 CNY（*仅含商品金额，不含运费及税费，不代表已付款*）\n* **收货信息**：\n  * **收件人**：评测买家\n  * **联系电话**：00000000000\n  * **地址**：中国 上海 上海 评测街1号（邮编：200000）\n\n请核对页面上的确认卡信息。如确认无误，请在页面上点击确认按钮以完成下单意向；对话中的文字同意无法替代页面确认操作。"
+    },
+    {
+      "user": "我在页面拒绝了确认，不要重试下单，也不要创建新的确认卡。请简短确认。",
+      "assistant": "收到，已确认您在页面拒绝了该订单意向，我不会重试下单，也不会生成新的确认卡。如有其他需要，请随时告诉我。"
+    }
+  ],
+  "events": [
+    {
+      "type": "tool.invoke",
+      "payload": {
+        "tool": "product_search_tool",
+        "args": {
+          "normalized_query": "",
+          "category": null,
+          "ship_to": "CN",
+          "top_k": 5,
+          "price_max_major": null,
+          "target_currency": "CNY",
+          "excluded_material_tags": [],
+          "required_material_tags": [],
+          "product_id": null,
+          "sku_id": "P1003-S1"
+        }
+      }
+    },
+    {
+      "type": "tool.result",
+      "payload": {
+        "tool": "product_search_tool",
+        "hit_count": 1,
+        "recall_strategy": "exact_id_lookup",
+        "total_candidates": 1,
+        "rerank_applied": false,
+        "hits": [
+          {
+            "product_id": "P1003",
+            "title": "Wanderlite 折叠旅行双肩包 35L",
+            "brand": "Wanderlite",
+            "category": "旅行装备",
+            "origin_country": "KR",
+            "price_major": 129.0,
+            "currency": "CNY",
+            "source_price_major": 129.0,
+            "source_currency": "CNY",
+            "highlights": [
+              "重量：仅 380g 超轻",
+              "收纳：可折叠成手掌大小"
+            ],
+            "skus": [
+              {
+                "sku_id": "P1003-S1",
+                "spec": "石墨黑",
+                "price_major": 129.0,
+                "currency": "CNY",
+                "stock": 80
+              }
+            ],
+            "score": 1.0,
+            "source_platform": "etsy",
+            "canonical_product_id": "CAN-LEGACY-002",
+            "material_tags": [
+              "合成聚合物"
+            ],
+            "weight_kg": 0.33,
+            "description": "防泼水尼龙 超轻 可折叠收纳 大容量 35升 徒步 城市通勤 便宜实惠 高性价比",
+            "rating_summary": {
+              "average": 4.2,
+              "review_count": 52
+            },
+            "rating_is_live": false,
+            "ships_to": [
+              "CN",
+              "JP",
+              "SG"
+            ],
+            "dimensions_cm": {
+              "height": 6,
+              "length": 14,
+              "width": 10
+            },
+            "updated_at": "2026-08-01",
+            "default_sku_id": "P1003-S1",
+            "image_url": "/products/wanderlite.png",
+            "image_kind": "illustration",
+            "image_alt": "Wanderlite 折叠旅行双肩包 35L：AI 生成示意图，非商品实拍",
+            "landed_price": {
+              "ship_to": "CN",
+              "subtotal_major": 129.0,
+              "freight_major": 25.0,
+              "tariff_major": 0.0,
+              "tariff_rate": 0.09,
+              "de_minimis_applied": true,
+              "landed_total_major": 154.0,
+              "currency": "CNY"
+            }
+          }
+        ],
+        "result_ref": "ctx_b4edd91bd7e14830a42afae1b86b56c7",
+        "filtered_out": []
+      }
+    },
+    {
+      "type": "tool.invoke",
+      "payload": {
+        "tool": "create_order_tool",
+        "args": {
+          "buyer_id": "harness-agent-approval-0",
+          "items": null
+        }
+      }
+    },
+    {
+      "type": "confirmation.required",
+      "payload": {
+        "confirmation": {
+          "confirmation_id": "0bfa1ba605234286aecb86405e6e4c88",
+          "operation_id": "operation-bd84409df46b49ac9577a47e948768e0",
+          "buyer_id": "harness-agent-approval-0",
+          "session_id": "session-agent-approval-0",
+          "action": "create",
+          "payload": {
+            "items": [
+              {
+                "product_id": "P1003",
+                "sku_id": "P1003-S1",
+                "title": "Wanderlite 折叠旅行双肩包 35L（石墨黑）",
+                "unit_price_minor": 12900,
+                "currency": "CNY",
+                "quantity": 1
+              }
+            ],
+            "shipping_address": {
+              "recipient_name": "评测买家",
+              "country": "CN",
+              "state": "上海",
+              "city": "上海",
+              "address_line": "评测街1号",
+              "postal_code": "200000",
+              "phone": "00000000000"
+            },
+            "currency": "CNY",
+            "total_amount_minor": 12900,
+            "amount_scope": "merchandise_only",
+            "order_kind": "purchase_intent"
+          },
+          "snapshot_hash": "9feb8b6cd7b4d28f7f766263c5720b7ad6f2ab752552d9f8af31ce19fbd433eb",
+          "expires_at": "2026-10-14T05:57:25.520853+00:00",
+          "status": "pending",
+          "result": null,
+          "created_at": "2026-10-14T05:52:25.523420+00:00",
+          "resolved_at": null,
+          "expired": false
+        }
+      }
+    },
+    {
+      "type": "tool.result",
+      "payload": {
+        "tool": "create_order_tool",
+        "confirmation_required": true,
+        "confirmation": {
+          "confirmation_id": "0bfa1ba605234286aecb86405e6e4c88",
+          "operation_id": "operation-bd84409df46b49ac9577a47e948768e0",
+          "buyer_id": "harness-agent-approval-0",
+          "session_id": "session-agent-approval-0",
+          "action": "create",
+          "payload": {
+            "items": [
+              {
+                "product_id": "P1003",
+                "sku_id": "P1003-S1",
+                "title": "Wanderlite 折叠旅行双肩包 35L（石墨黑）",
+                "unit_price_minor": 12900,
+                "currency": "CNY",
+                "quantity": 1
+              }
+            ],
+            "shipping_address": {
+              "recipient_name": "评测买家",
+              "country": "CN",
+              "state": "上海",
+              "city": "上海",
+              "address_line": "评测街1号",
+              "postal_code": "200000",
+              "phone": "00000000000"
+            },
+            "currency": "CNY",
+            "total_amount_minor": 12900,
+            "amount_scope": "merchandise_only",
+            "order_kind": "purchase_intent"
+          },
+          "snapshot_hash": "9feb8b6cd7b4d28f7f766263c5720b7ad6f2ab752552d9f8af31ce19fbd433eb",
+          "expires_at": "2026-10-14T05:57:25.520853+00:00",
+          "status": "pending",
+          "result": null,
+          "created_at": "2026-10-14T05:52:25.523420+00:00",
+          "resolved_at": null,
+          "expired": false
+        }
+      }
+    },
+    {
+      "type": "confirmation.resolved",
+      "payload": {
+        "confirmation": {
+          "confirmation_id": "0bfa1ba605234286aecb86405e6e4c88",
+          "operation_id": "operation-bd84409df46b49ac9577a47e948768e0",
+          "buyer_id": "harness-agent-approval-0",
+          "session_id": "session-agent-approval-0",
+          "action": "create",
+          "payload": {
+            "items": [
+              {
+                "product_id": "P1003",
+                "sku_id": "P1003-S1",
+                "title": "Wanderlite 折叠旅行双肩包 35L（石墨黑）",
+                "unit_price_minor": 12900,
+                "currency": "CNY",
+                "quantity": 1
+              }
+            ],
+            "shipping_address": {
+              "recipient_name": "评测买家",
+              "country": "CN",
+              "state": "上海",
+              "city": "上海",
+              "address_line": "评测街1号",
+              "postal_code": "200000",
+              "phone": "00000000000"
+            },
+            "currency": "CNY",
+            "total_amount_minor": 12900,
+            "amount_scope": "merchandise_only",
+            "order_kind": "purchase_intent"
+          },
+          "snapshot_hash": "9feb8b6cd7b4d28f7f766263c5720b7ad6f2ab752552d9f8af31ce19fbd433eb",
+          "expires_at": "2026-10-14T05:57:25.520853+00:00",
+          "status": "rejected",
+          "result": null,
+          "created_at": "2026-10-14T05:52:25.523420+00:00",
+          "resolved_at": "2026-10-14T05:52:30.934028+00:00",
+          "expired": false
+        }
+      }
+    }
+  ],
+  "tool_trace": [
+    {
+      "tool": "product_search_tool",
+      "elapsed_ms": 1.9193750340491533,
+      "state": "success"
+    },
+    {
+      "tool": "create_order_tool",
+      "elapsed_ms": 11.967708938755095,
+      "state": "success"
+    }
+  ],
+  "context_diagnostics": [],
+  "lookup_calls": 0,
+  "compactions": {
+    "policy_version": "layered-v4",
+    "reason": "pressure",
+    "before_tokens": 14399,
+    "after_tokens": 14399,
+    "archived_results": 0,
+    "summary_changed": false,
+    "elapsed_ms": 1,
+    "status": "noop"
+  },
+  "scope": "生产 MainAgentFactory 和真实本地交易工具；合成目录、隔离 SQLite；非浏览器/外部检索验收",
+  "strategy": "current",
+  "critical": true,
+  "title": "订单准备、拒绝和恢复",
+  "evidence_trace": "traces/agent-approval-current-0.jsonl"
+}

@@ -1,0 +1,12 @@
+{
+  "reason": "用户确认试运行评测目标为开发100、留出300、干扰100，冻结新参数后从缓存续跑",
+  "exit_code": 130,
+  "call_counts": {
+    "cache_hits": 162,
+    "candidate_count": 2000,
+    "completed_calls": 77,
+    "failed_outputs": 0,
+    "model_calls": 79
+  },
+  "unsettled_calls": 2
+}

@@ -1,0 +1,9 @@
+{
+  "status_code": 403,
+  "body": {
+    "detail": {
+      "code": "SESSION_OWNER_MISMATCH",
+      "message": "无权访问其他买家的会话"
+    }
+  }
+}

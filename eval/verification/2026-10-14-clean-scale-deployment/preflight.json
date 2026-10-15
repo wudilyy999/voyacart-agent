@@ -1,0 +1,87 @@
+[
+  {
+    "command": [
+      "lsof",
+      "-nP",
+      "-iTCP:8086",
+      "-sTCP:LISTEN"
+    ],
+    "exit_code": 1,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "docker",
+      "ps",
+      "-a",
+      "--filter",
+      "label=com.docker.compose.project=voyacart-clean-scale-20261014",
+      "--format",
+      "{{.ID}} {{.Names}} {{.Status}}"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "docker",
+      "volume",
+      "ls",
+      "--filter",
+      "label=com.docker.compose.project=voyacart-clean-scale-20261014",
+      "--format",
+      "{{.Name}}"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "docker",
+      "image",
+      "ls",
+      "voyacart-runtime:clean-20261014",
+      "--format",
+      "{{.ID}} {{.Repository}}:{{.Tag}}"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "docker",
+      "version",
+      "--format",
+      "{{.Server.Os}}/{{.Server.Arch}}"
+    ],
+    "exit_code": 0,
+    "stdout": "linux/arm64\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "docker",
+      "compose",
+      "version",
+      "--short"
+    ],
+    "exit_code": 0,
+    "stdout": "2.36.1\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "docker",
+      "info",
+      "--format",
+      "{{json .NCPU}} {{json .MemTotal}}"
+    ],
+    "exit_code": 0,
+    "stdout": "4 8308154368\n",
+    "stderr": ""
+  }
+]

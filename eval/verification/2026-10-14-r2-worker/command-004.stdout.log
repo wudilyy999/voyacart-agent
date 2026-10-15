@@ -1,0 +1,369 @@
+Compose can now delegate builds to bake for better performance.
+ To do so, set COMPOSE_BAKE=true.
+#0 building with "colima" instance using docker driver
+
+#1 [api internal] load build definition from Dockerfile
+#1 transferring dockerfile: 1.31kB done
+#1 DONE 0.0s
+
+#2 [mock-llm internal] load build definition from Dockerfile
+#2 transferring dockerfile: 1.31kB done
+#2 DONE 0.0s
+
+#3 [automation-worker internal] load build definition from Dockerfile
+#3 transferring dockerfile: 1.31kB done
+#3 DONE 0.0s
+
+#4 [worker internal] load build definition from Dockerfile
+#4 transferring dockerfile: 1.31kB done
+#4 DONE 0.0s
+
+#5 [worker] resolve image config for docker-image://docker.io/docker/dockerfile:1
+#5 DONE 1.8s
+
+#6 [api] docker-image://docker.io/docker/dockerfile:1@sha256:4edf897a3ffa55b89f906fc8cc78afdb3f1834cc9c7083565e611a8a7d5fe99e
+#6 CACHED
+
+#7 [worker internal] load metadata for docker.io/library/python:3.11-slim
+#7 DONE 0.0s
+
+#8 [worker internal] load metadata for ghcr.io/astral-sh/uv:latest
+#8 DONE 0.0s
+
+#9 [mock-llm internal] load .dockerignore
+#9 transferring context: 347B done
+#9 DONE 0.0s
+
+#10 [automation-worker internal] load .dockerignore
+#10 transferring context: 347B done
+#10 DONE 0.0s
+
+#11 [api internal] load .dockerignore
+#11 transferring context: 347B done
+#11 DONE 0.0s
+
+#12 [worker internal] load .dockerignore
+#12 transferring context: 347B done
+#12 DONE 0.0s
+
+#13 [mock-llm] FROM ghcr.io/astral-sh/uv:latest
+#13 DONE 0.0s
+
+#14 [mock-llm builder 1/6] FROM docker.io/library/python:3.11-slim
+#14 DONE 0.0s
+
+#15 [automation-worker internal] load build context
+#15 transferring context: 7.10MB 0.2s done
+#15 DONE 0.2s
+
+#16 [api internal] load build context
+#16 transferring context: 7.10MB 0.1s done
+#16 DONE 0.2s
+
+#17 [worker internal] load build context
+#17 transferring context: 7.10MB 0.1s done
+#17 DONE 0.2s
+
+#18 [automation-worker builder 2/6] COPY --from=ghcr.io/astral-sh/uv:latest /uv /usr/local/bin/uv
+#18 CACHED
+
+#19 [automation-worker builder 3/6] WORKDIR /app
+#19 CACHED
+
+#20 [automation-worker builder 4/6] COPY pyproject.toml uv.lock ./
+#20 CACHED
+
+#21 [mock-llm internal] load build context
+#21 transferring context: 7.10MB 0.2s done
+#21 DONE 0.2s
+
+#22 [automation-worker builder 5/6] RUN uv sync --frozen --no-install-project --no-dev --extra retrieval
+#22 ...
+
+#19 [mock-llm builder 3/6] WORKDIR /app
+#19 CACHED
+
+#18 [mock-llm builder 2/6] COPY --from=ghcr.io/astral-sh/uv:latest /uv /usr/local/bin/uv
+#18 CACHED
+
+#20 [mock-llm builder 4/6] COPY pyproject.toml uv.lock ./
+#20 CACHED
+
+#22 [mock-llm builder 5/6] RUN uv sync --frozen --no-install-project --no-dev --extra retrieval
+#22 0.231 Using CPython 3.11.17 interpreter at: /usr/local/bin/python3
+#22 0.231 Creating virtual environment at: .venv
+#22 0.938 Downloading pygments (1.2MiB)
+#22 0.940 Downloading sqlalchemy (3.2MiB)
+#22 0.941 Downloading dashscope (1.5MiB)
+#22 0.942 Downloading aiohttp (1.7MiB)
+#22 0.951 Downloading numpy (15.2MiB)
+#22 0.951 Downloading tokenizers (3.4MiB)
+#22 0.952 Downloading pydantic-core (1.9MiB)
+#22 0.953 Downloading agentscope (1.2MiB)
+#22 0.953 Downloading hf-xet (4.1MiB)
+#22 0.954 Downloading pillow (5.7MiB)
+#22 0.956 Downloading onnxruntime (20.3MiB)
+#22 0.957 Downloading cryptography (4.5MiB)
+#22 0.958 Downloading uvloop (3.6MiB)
+#22 0.964 Downloading grpcio (6.6MiB)
+#22 0.965 Downloading openai (1.6MiB)
+#22 2.771  Downloaded pygments
+#22 2.866  Downloaded agentscope
+#22 3.018  Downloaded dashscope
+#22 3.071  Downloaded openai
+#22 3.209  Downloaded aiohttp
+#22 3.212  Downloaded pydantic-core
+#22 3.898  Downloaded sqlalchemy
+#22 3.908  Downloaded tokenizers
+#22 3.963  Downloaded uvloop
+#22 4.118  Downloaded hf-xet
+#22 4.352  Downloaded cryptography
+#22 4.534  Downloaded pillow
+#22 4.765  Downloaded grpcio
+#22 5.569  Downloaded numpy
+#22 6.158  Downloaded onnxruntime
+#22 6.161 Prepared 120 packages in 5.91s
+#22 6.552 Installed 120 packages in 390ms
+#22 8.059 Bytecode compiled 7408 files in 1.50s
+#22 8.060  + ag-ui-protocol==0.1.22
+#22 8.060  + agentscope==2.0.8
+#22 8.060  + aiofiles==25.1.0
+#22 8.060  + aiohappyeyeballs==2.7.1
+#22 8.060  + aiohttp==3.14.3
+#22 8.060  + aioitertools==0.13.0
+#22 8.060  + aiosignal==1.4.0
+#22 8.060  + aiosqlite==0.22.1
+#22 8.060  + annotated-doc==0.0.5
+#22 8.060  + annotated-types==0.8.0
+#22 8.060  + anthropic==0.121.0
+#22 8.060  + anyio==4.14.2
+#22 8.060  + attrs==26.1.0
+#22 8.060  + bidict==0.23.1
+#22 8.060  + cached-property==2.0.1
+#22 8.060  + certifi==2026.7.22
+#22 8.060  + cffi==2.1.1
+#22 8.060  + charset-normalizer==3.4.9
+#22 8.060  + click==8.4.2
+#22 8.060  + croniter==6.2.4
+#22 8.060  + cryptography==50.0.0
+#22 8.060  + dashscope==1.26.6
+#22 8.060  + distro==1.9.0
+#22 8.060  + docstring-parser==0.18.0
+#22 8.060  + fastapi==0.141.1
+#22 8.060  + fastembed==0.7.4
+#22 8.060  + filelock==4.0.0
+#22 8.060  + filetype==1.2.0
+#22 8.060  + flatbuffers==25.12.19
+#22 8.060  + frozenlist==1.8.0
+#22 8.060  + fsspec==2026.7.0
+#22 8.060  + googleapis-common-protos==1.75.1
+#22 8.060  + greenlet==3.5.5
+#22 8.060  + grpcio==1.83.0
+#22 8.060  + h11==0.16.0
+#22 8.060  + h2==4.4.1
+#22 8.060  + hf-xet==1.6.0
+#22 8.060  + hpack==4.2.0
+#22 8.060  + httpcore==1.0.9
+#22 8.060  + httptools==0.8.0
+#22 8.060  + httpx==0.28.1
+#22 8.060  + httpx-sse==0.4.3
+#22 8.060  + huggingface-hub==1.32.0
+#22 8.060  + hyperframe==6.1.0
+#22 8.060  + idna==3.18
+#22 8.060  + jinja2==3.1.6
+#22 8.060  + jiter==0.16.0
+#22 8.060  + json-repair==0.63.4
+#22 8.060  + json5==0.15.0
+#22 8.060  + jsonschema==4.26.0
+#22 8.060  + jsonschema-specifications==2025.9.1
+#22 8.060  + loguru==0.7.3
+#22 8.060  + markdown-it-py==4.2.0
+#22 8.060  + markupsafe==3.0.3
+#22 8.060  + mcp==1.29.0
+#22 8.060  + mdurl==0.1.2
+#22 8.060  + mmh3==5.3.0
+#22 8.060  + multidict==6.7.1
+#22 8.060  + numpy==2.4.6
+#22 8.060  + onnxruntime==1.30.0
+#22 8.060  + openai==2.53.0
+#22 8.060  + opentelemetry-api==1.44.0
+#22 8.060  + opentelemetry-exporter-otlp==1.44.0
+#22 8.060  + opentelemetry-exporter-otlp-proto-common==1.44.0
+#22 8.060  + opentelemetry-exporter-otlp-proto-grpc==1.44.0
+#22 8.061  + opentelemetry-exporter-otlp-proto-http==1.44.0
+#22 8.061  + opentelemetry-proto==1.44.0
+#22 8.061  + opentelemetry-sdk==1.44.0
+#22 8.061  + opentelemetry-semantic-conventions==0.65b0
+#22 8.061  + packaging==26.3
+#22 8.061  + pillow==11.3.0
+#22 8.061  + portalocker==3.2.0
+#22 8.061  + propcache==0.5.2
+#22 8.061  + protobuf==7.35.1
+#22 8.061  + py-rust-stemmers==0.1.8
+#22 8.061  + pycparser==3.0
+#22 8.061  + pydantic==2.13.4
+#22 8.061  + pydantic-core==2.46.4
+#22 8.061  + pydantic-settings==2.15.0
+#22 8.061  + pygments==2.20.0
+#22 8.061  + pyjwt==2.13.0
+#22 8.061  + pypdf==6.19.0
+#22 8.061  + python-datauri==3.0.2
+#22 8.061  + python-dateutil==2.9.0.post0
+#22 8.061  + python-dotenv==1.2.2
+#22 8.061  + python-engineio==4.13.4
+#22 8.061  + python-frontmatter==1.3.0
+#22 8.061  + python-multipart==0.0.32
+#22 8.061  + python-socketio==5.16.4
+#22 8.061  + pyyaml==6.0.3
+#22 8.061  + qdrant-client==1.19.0
+#22 8.061  + redis==8.1.0
+#22 8.061  + referencing==0.37.0
+#22 8.061  + requests==2.34.2
+#22 8.061  + rich==15.0.0
+#22 8.061  + rpds-py==2026.6.3
+#22 8.061  + shellingham==1.5.4
+#22 8.061  + shortuuid==1.0.13
+#22 8.061  + simple-websocket==1.1.0
+#22 8.061  + six==1.17.0
+#22 8.061  + sniffio==1.3.1
+#22 8.061  + sqlalchemy==2.0.52
+#22 8.061  + sse-starlette==3.4.8
+#22 8.061  + starlette==1.6.0
+#22 8.061  + tokenizers==0.23.2
+#22 8.061  + tqdm==4.70.0
+#22 8.061  + tree-sitter==0.26.0
+#22 8.061  + tree-sitter-bash==0.25.1
+#22 8.061  + typer==0.27.1
+#22 8.061  + typing-extensions==4.16.0
+#22 8.061  + typing-inspection==0.4.3
+#22 8.061  + tzdata==2026.3
+#22 8.061  + urllib3==2.7.0
+#22 8.061  + uvicorn==0.52.1
+#22 8.061  + uvloop==0.22.1
+#22 8.061  + watchfiles==1.2.0
+#22 8.061  + websocket-client==1.9.0
+#22 8.061  + websockets==17.0.1
+#22 8.061  + wsproto==1.3.2
+#22 8.061  + yarl==1.24.5
+#22 DONE 8.4s
+
+#23 [automation-worker builder 6/6] COPY app ./app
+#23 DONE 0.0s
+
+#24 [automation-worker stage-1 2/9] WORKDIR /app
+#24 CACHED
+
+#24 [worker stage-1 2/9] WORKDIR /app
+#24 CACHED
+
+#25 [api stage-1 3/9] COPY --from=builder /app/.venv /app/.venv
+#25 DONE 1.9s
+
+#26 [automation-worker stage-1 4/9] COPY app ./app
+#26 DONE 0.0s
+
+#27 [mock-llm stage-1 5/9] COPY configs ./configs
+#27 DONE 0.0s
+
+#28 [automation-worker stage-1 6/9] COPY scripts/loadtest ./scripts/loadtest
+#28 DONE 0.0s
+
+#29 [mock-llm stage-1 7/9] COPY knowledge ./knowledge
+#29 DONE 0.0s
+
+#30 [mock-llm stage-1 8/9] COPY data/catalog-v3.jsonl ./catalog/catalog-v3.jsonl
+#30 DONE 0.0s
+
+#31 [api stage-1 9/9] RUN mkdir -p /app/data
+#31 DONE 0.1s
+
+#32 [automation-worker] exporting to image
+#32 exporting layers
+#32 exporting layers 1.0s done
+#32 writing image sha256:afd145cf0754c3d76d4ece619d4eb59cd2fe4f6d40227d792e3d3dd8acdef6cd done
+#32 naming to docker.io/library/voyacart-r2-worker-20261014-runtime done
+#32 DONE 1.0s
+
+#33 [api] resolving provenance for metadata file
+#33 DONE 0.0s
+
+#34 [automation-worker] resolving provenance for metadata file
+#34 DONE 0.0s
+
+#35 [worker] resolving provenance for metadata file
+#35 DONE 0.0s
+
+#36 [mock-llm] resolving provenance for metadata file
+#36 DONE 0.0s
+
+#37 [api] exporting to image
+#37 exporting layers 1.0s done
+#37 writing image sha256:afeaa85f0ffa4272b5500515bf28464f4213d3a56b45979d3007fc850d5be385 done
+#37 naming to docker.io/library/voyacart-r2-worker-20261014-runtime done
+#37 DONE 1.0s
+
+#38 [mock-llm] exporting to image
+#38 exporting layers 1.0s done
+#38 writing image sha256:d32a6c0c8c3b0a13217d4414b131715b8eada190415f90907047cc1b07b99ffd done
+#38 naming to docker.io/library/voyacart-r2-worker-20261014-runtime done
+#38 DONE 1.0s
+
+#39 [worker] exporting to image
+#39 exporting layers 1.0s done
+#39 writing image sha256:6dd541d2a394056a71bc66baef720edf45cb73e932eccab0bfe2fb7b7504d2ac done
+#39 naming to docker.io/library/voyacart-r2-worker-20261014-runtime done
+#39 DONE 1.0s
+
+#40 [nginx internal] load build definition from Dockerfile
+#40 transferring dockerfile: 439B done
+#40 DONE 0.0s
+
+#41 [nginx internal] load metadata for docker.io/library/node:22-alpine
+#41 DONE 1.6s
+
+#42 [nginx internal] load metadata for docker.io/library/nginx:stable-alpine
+#42 DONE 1.6s
+
+#43 [nginx internal] load .dockerignore
+#43 transferring context: 347B done
+#43 DONE 0.0s
+
+#44 [nginx build 1/6] FROM docker.io/library/node:22-alpine@sha256:0a7108bf6c7bf5de370ffb1a3ed6be93d405b43ff159f681a8d18c0e2bc2e402
+#44 DONE 0.0s
+
+#45 [nginx stage-1 1/3] FROM docker.io/library/nginx:stable-alpine@sha256:0985e772fb9f729e6fa0980da05fca5d9c468e870eed43071545afa9d2e27d94
+#45 CACHED
+
+#46 [nginx internal] load build context
+#46 transferring context: 12.23MB 0.1s done
+#46 DONE 0.1s
+
+#47 [nginx build 4/6] RUN npm ci
+#47 CACHED
+
+#48 [nginx build 5/6] COPY frontend/ .
+#48 CACHED
+
+#49 [nginx build 2/6] WORKDIR /workspace
+#49 CACHED
+
+#50 [nginx build 3/6] COPY frontend/package.json frontend/package-lock.json ./
+#50 CACHED
+
+#51 [nginx build 6/6] RUN npm run build
+#51 CACHED
+
+#52 [nginx stage-1 2/3] COPY .cache/r2/voyacart-r2-worker-20261014.conf /etc/nginx/conf.d/default.conf
+#52 DONE 0.0s
+
+#53 [nginx stage-1 3/3] COPY --from=build /workspace/dist /usr/share/nginx/html
+#53 DONE 0.1s
+
+#54 [nginx] exporting to image
+#54 exporting layers 0.0s done
+#54 writing image sha256:d740c1e99aa019de2dabb4954a639cecdc1c6d4c9da2fd26328eee705b5f759d done
+#54 naming to docker.io/library/voyacart-r2-worker-20261014-frontend done
+#54 DONE 0.0s
+
+#55 [nginx] resolving provenance for metadata file
+#55 DONE 0.0s

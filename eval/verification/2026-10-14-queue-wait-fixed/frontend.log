@@ -1,0 +1,81 @@
+
+> voyacart-frontend@0.3.0 test
+> vitest run --run tests/runRecovery.test.ts
+
+
+ RUN  v3.2.4 /private/tmp/voyacart-backend-frontend-20261014/frontend
+
+stderr | tests/runRecovery.test.ts > 排队等待超时保留恢复入口，恢复同一运行只订阅事件
+Agent execution failed: Error [QueueWaitError]: 仍在排队，请稍后恢复。
+    at Object.start (/private/tmp/voyacart-backend-frontend-20261014/frontend/src/lib/recoveringFetch.ts:57:35)
+
+ ❯ tests/runRecovery.test.ts (24 tests | 1 failed) 687ms
+   ✓ 重开本次新建的会话也查数据库，恢复超100条原文和运行记录 13ms
+   ✓ 完整历史续聊不消失，不把全部页面历史发给模型，也不保留被最终回答替换的草稿 9ms
+   ✓ 快速切换 A→B→A 时拒绝第一次迟到响应，恢复失败后再次打开可重试 15ms
+   ✓ 长历史恢复进行中的运行时只重连事件，不重复模型或丢掉早期原文 4ms
+   ✓ 持久运行恢复（使用官方 AG-UI SDK） > 网络断流按cursor重连，丢弃重复和乱序帧，不重新POST模型  603ms
+   ✓ 持久运行恢复（使用官方 AG-UI SDK） > 切页detach只断订阅，刷新后从服务端恢复运行和历史 7ms
+   ✓ 持久运行恢复（使用官方 AG-UI SDK） > 明确停止调用cancel API，带身份头；断网失败不能声称已停止 5ms
+   ✓ 持久运行恢复（使用官方 AG-UI SDK） > 服务重启中断态从历史读取，不伪造继续执行 0ms
+   ✓ 刷新时以服务端记录恢复，缓存仅用于加速 > 正文缓存为 null 时仍按当前会话恢复 0ms
+   ✓ 刷新时以服务端记录恢复，缓存仅用于加速 > 正文缓存为 {坏缓存 时仍按当前会话恢复 0ms
+   ✓ 刷新时以服务端记录恢复，缓存仅用于加速 > 正文缓存为 [] 时仍按当前会话恢复 0ms
+   ✓ 刷新时以服务端记录恢复，缓存仅用于加速 > 缺少当前会话指针时按服务端时间恢复最新记录 0ms
+   ✓ 刷新时以服务端记录恢复，缓存仅用于加速 > 空白草稿刷新后恢复买家最近持久会话 0ms
+   ✓ 刷新时以服务端记录恢复，缓存仅用于加速 > 买家切换时不读取上一个买家的本机记录和会话指针 0ms
+   ✓ 原生记忆审批通过 SDK resume 回传，不重发普通文本执行 2ms
+   ✓ 默认固定 pao-coder，忽略随机缓存身份并从数据库恢复 0ms
+   ✓ 版本过期保留旧历史并仅在新会话重试一次（再次过期=false） 1ms
+   ✓ 版本过期保留旧历史并仅在新会话重试一次（再次过期=true） 1ms
+   ✓ 首轮模型运行早于会话落库时，确认列表404不会成为交易报错 1ms
+   ✓ 自动化来源由服务端恢复，刷新及读取失败保留已知标记，不猜标题或ID 0ms
+   ✓ 自动化新增会话刷新目录后可以打开，不覆盖当前对话或重启模型 6ms
+   ✓ 排队时刷新可以恢复事件订阅，已有历史=false 6ms
+   ✓ 排队时刷新可以恢复事件订阅，已有历史=true 7ms
+   × 排队等待超时保留恢复入口，恢复同一运行只订阅事件 5ms
+     → expected '连接已中断，本轮尚未完成。请检查网络或服务后重试。' to contain '仍在排队'
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/runRecovery.test.ts > 排队等待超时保留恢复入口，恢复同一运行只订阅事件
+AssertionError: expected '连接已中断，本轮尚未完成。请检查网络或服务后重试。' to contain '仍在排队'
+
+Expected: "仍在排队"
+Received: "连接已中断，本轮尚未完成。请检查网络或服务后重试。"
+
+ ❯ tests/runRecovery.test.ts:425:38
+    423|   expect(client.getSnapshot().status).toBe("error");
+    424|   expect(client.getSnapshot().recoverableRunId).toBe(request.runId);
+    425|   expect(client.getSnapshot().error).toContain("仍在排队");
+       |                                      ^
+    426|   await client.resume();
+    427|   expect(posts).toBe(1);
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+⎯⎯⎯⎯⎯⎯ Unhandled Errors ⎯⎯⎯⎯⎯⎯
+
+Vitest caught 1 unhandled error during the test run.
+This might cause false positive tests. Resolve unhandled errors to make sure your tests are not affected.
+
+⎯⎯⎯⎯ Unhandled Rejection ⎯⎯⎯⎯⎯
+QueueWaitError: 仍在排队，请稍后恢复。
+ ❯ Object.start src/lib/recoveringFetch.ts:57:35
+     55|                   const event = JSON.parse(data) as { type?: string; m…
+     56|                   if (frame.split("\n").includes("event: transport-err…
+     57|                     const error = new Error(typeof event.message === "…
+       |                                   ^
+     58|                     error.name = "QueueWaitError";
+     59|                     throw error;
+
+This error originated in "tests/runRecovery.test.ts" test file. It doesn't mean the error was thrown inside the file itself, but while it was running.
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 23 passed (24)
+     Errors  1 error
+   Start at  17:34:43
+   Duration  1.09s (transform 65ms, setup 0ms, collect 169ms, tests 687ms, environment 0ms, prepare 39ms)
+

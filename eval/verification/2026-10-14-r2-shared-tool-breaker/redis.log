@@ -1,0 +1,11 @@
+4652:C 14 Oct 2026 21:44:22.869 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+4652:C 14 Oct 2026 21:44:22.869 * Redis version=8.0.1, bits=64, commit=00000000, modified=1, pid=4652, just started
+4652:C 14 Oct 2026 21:44:22.869 * Configuration loaded
+4652:M 14 Oct 2026 21:44:22.869 * monotonic clock: POSIX clock_gettime
+4652:M 14 Oct 2026 21:44:22.870 * Running mode=standalone, port=61294.
+4652:M 14 Oct 2026 21:44:22.870 # WARNING: The TCP backlog setting of 511 cannot be enforced because kern.ipc.somaxconn is set to the lower value of 128.
+4652:M 14 Oct 2026 21:44:22.870 * Server initialized
+4652:M 14 Oct 2026 21:44:22.870 * Ready to accept connections tcp
+4652:signal-handler (1791985524) Received SIGTERM scheduling shutdown...
+4652:M 14 Oct 2026 21:45:24.967 * User requested shutdown...
+4652:M 14 Oct 2026 21:45:24.967 # Redis is now ready to exit, bye bye...

@@ -1,0 +1,18 @@
+id: r2-redis-down-5ef22f43a9a64a29ba23c9e03f50b5de:1
+data: {"type": "RUN_STARTED", "threadId": "r2-redis-down-5ef22f43a9a64a29ba23c9e03f50b5de", "runId": "r2-redis-down-5ef22f43a9a64a29ba23c9e03f50b5de"}
+
+id: r2-redis-down-5ef22f43a9a64a29ba23c9e03f50b5de:2
+data: {"type": "STATE_SNAPSHOT", "snapshot": {"products": [], "shoppingForm": null, "confirmations": [], "toolApprovals": [], "skillUsages": [], "searchCompleted": false, "status": "queued", "progress": [], "activities": []}}
+
+id: r2-redis-down-5ef22f43a9a64a29ba23c9e03f50b5de:3
+data: {"type": "CUSTOM", "name": "runtime.degraded", "value": {"component": "queue", "fallback": "in_process"}}
+
+id: r2-redis-down-5ef22f43a9a64a29ba23c9e03f50b5de:4
+data: {"type": "STATE_SNAPSHOT", "snapshot": {"products": [], "shoppingForm": null, "confirmations": [], "toolApprovals": [], "skillUsages": [], "searchCompleted": false, "status": "queued", "progress": [], "activities": []}}
+
+id: r2-redis-down-5ef22f43a9a64a29ba23c9e03f50b5de:5
+data: {"type": "STATE_SNAPSHOT", "snapshot": {"products": [], "shoppingForm": null, "confirmations": [], "toolApprovals": [], "skillUsages": [], "searchCompleted": false, "status": "error", "progress": [], "activities": []}}
+
+id: r2-redis-down-5ef22f43a9a64a29ba23c9e03f50b5de:6
+data: {"type": "RUN_ERROR", "message": "本轮服务暂时未能完成请求，请重试。", "code": "AGENT_ERROR"}
+

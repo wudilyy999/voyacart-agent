@@ -1,0 +1,480 @@
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:1
+data: {"type": "RUN_STARTED", "threadId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b", "runId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:2
+data: {"type": "STATE_SNAPSHOT", "snapshot": {"products": [], "shoppingForm": null, "confirmations": [], "toolApprovals": [], "skillUsages": [], "searchCompleted": false, "status": "queued", "progress": [], "activities": []}}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:3
+data: {"type": "STATE_SNAPSHOT", "snapshot": {"products": [], "shoppingForm": null, "confirmations": [], "toolApprovals": [], "skillUsages": [], "searchCompleted": false, "status": "queued", "progress": [], "activities": []}}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:4
+data: {"type": "STATE_SNAPSHOT", "snapshot": {"products": [], "shoppingForm": null, "confirmations": [], "toolApprovals": [], "skillUsages": [], "searchCompleted": false, "status": "running", "progress": [], "activities": []}}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:5
+data: {"type": "CUSTOM", "name": "model.fallback", "value": {"from": "mock-primary", "to": "mock-fallback", "reason": "Error code: 503 - {'detail': '注入的模型故障'}"}}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:6
+data: {"type": "TOOL_CALL_START", "toolCallId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:tool:call_search_58d42a14d13a40649618866a0c23472d", "toolCallName": "product_search_tool"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:7
+data: {"type": "CUSTOM", "name": "activity.upsert", "value": {"id": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:tool:call_search_58d42a14d13a40649618866a0c23472d", "runId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b", "kind": "tool", "label": "检索商品", "status": "preparing", "sequence": 1, "startedAt": 1791980437724, "finishedAt": null, "source": "agentscope", "toolCallId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:tool:call_search_58d42a14d13a40649618866a0c23472d", "toolName": "product_search_tool"}}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:8
+data: {"type": "TOOL_CALL_ARGS", "toolCallId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:tool:call_search_58d42a14d13a40649618866a0c23472d", "delta": "{\"normalized_query\": \"旅行 背包\", \"category\": \"旅行装备\", \"ship_to\": \"CN\", \"target_currency\": \"CNY\", \"top_k\": 3, \"price_max_major\": 300}"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:9
+data: {"type": "TOOL_CALL_END", "toolCallId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:tool:call_search_58d42a14d13a40649618866a0c23472d"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:10
+data: {"type": "CUSTOM", "name": "activity.upsert", "value": {"id": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:tool:call_search_58d42a14d13a40649618866a0c23472d", "runId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b", "kind": "tool", "label": "检索商品", "status": "preparing", "sequence": 1, "startedAt": 1791980437724, "finishedAt": null, "source": "agentscope", "toolCallId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:tool:call_search_58d42a14d13a40649618866a0c23472d", "toolName": "product_search_tool", "inputSummary": "配送国家 CN · 币种 CNY · 预算上限 300 · 最多 3 件"}}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:11
+data: {"type": "CUSTOM", "name": "activity.upsert", "value": {"id": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:tool:call_search_58d42a14d13a40649618866a0c23472d", "runId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b", "kind": "tool", "label": "检索商品", "status": "running", "sequence": 1, "startedAt": 1791980437724, "finishedAt": null, "source": "agentscope", "toolCallId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:tool:call_search_58d42a14d13a40649618866a0c23472d", "toolName": "product_search_tool", "inputSummary": "配送国家 CN · 币种 CNY · 预算上限 300 · 最多 3 件"}}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:12
+data: {"type": "STATE_SNAPSHOT", "snapshot": {"products": [], "shoppingForm": null, "confirmations": [], "toolApprovals": [], "skillUsages": [], "searchCompleted": false, "status": "running", "progress": [{"id": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:tool:call_search_58d42a14d13a40649618866a0c23472d", "label": "检索商品", "status": "running"}], "activities": [{"id": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:tool:call_search_58d42a14d13a40649618866a0c23472d", "runId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b", "kind": "tool", "label": "检索商品", "status": "running", "sequence": 1, "startedAt": 1791980437724, "finishedAt": null, "source": "agentscope", "toolCallId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:tool:call_search_58d42a14d13a40649618866a0c23472d", "toolName": "product_search_tool", "inputSummary": "配送国家 CN · 币种 CNY · 预算上限 300 · 最多 3 件"}]}}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:13
+data: {"type": "STATE_SNAPSHOT", "snapshot": {"products": [{"product_id": "P1013", "title": "BlackoutPro 3D 真丝遮光眼罩", "brand": "BlackoutPro", "category": "旅行装备", "origin_country": "CN", "price_major": 89.0, "currency": "CNY", "source_price_major": 89.0, "source_currency": "CNY", "highlights": ["材质：6A 桑蚕丝，无塑料"], "skus": [{"sku_id": "P1013-S1", "spec": "豆沙色", "price_major": 89.0, "currency": "CNY", "stock": 90}], "score": 0.096, "source_platform": "amazon", "canonical_product_id": "CAN-LEGACY-012", "material_tags": ["合成聚合物"], "weight_kg": 1.23, "description": "真丝 遮光眼罩 3D立体 不压眼 天然材质 无塑料 睡眠 飞机 高铁", "rating_summary": {"average": 4.3, "review_count": 162}, "rating_is_live": false, "ships_to": ["CN", "US", "EU"], "dimensions_cm": {"height": 4, "length": 24, "width": 20}, "updated_at": "2026-08-01", "default_sku_id": "P1013-S1", "image_url": null, "image_kind": "placeholder", "image_alt": "BlackoutPro 3D 真丝遮光眼罩：暂无商品图片", "landed_price": {"ship_to": "CN", "subtotal_major": 89.0, "freight_major": 25.0, "tariff_major": 0.0, "tariff_rate": 0.09, "de_minimis_applied": true, "landed_total_major": 114.0, "currency": "CNY"}, "external_product_id": "amazon-P1013"}, {"product_id": "P41009", "title": "Lingua Almohada cervical de viaje — Peso: 160 g · ML-03-2", "brand": "Lingua", "category": "旅行装备", "origin_country": "CN", "price_major": 179.01, "currency": "CNY", "source_price_major": 22.95, "source_currency": "EUR", "highlights": ["Peso：160 g", "Material：Polímero sintético"], "skus": [{"sku_id": "P41009-S1", "spec": "Negro / Peso: 160 g", "price_major": 22.95, "currency": "EUR", "stock": 22}, {"sku_id": "P41009-S2", "spec": "Gris / Peso: 160 g", "price_major": 23.87, "currency": "EUR", "stock": 23}], "score": 0.0855, "source_platform": "walmart", "canonical_product_id": "CAN-ML-03-2", "material_tags": ["合成聚合物"], "weight_kg": 0.16, "description": "Apoya el cuello al viajar sentado. Peso: 160 g. Material: Polímero sintético. Modelo: ML-03-2.", "rating_summary": {"average": 4.1, "review_count": 34}, "rating_is_live": false, "ships_to": ["CN", "US", "EU", "JP", "SG"], "dimensions_cm": {"length": 30, "width": 25, "height": 10}, "updated_at": "2026-09-18", "default_sku_id": "P41009-S1", "image_url": null, "image_kind": "placeholder", "image_alt": "Lingua Almohada cervical de viaje — Peso: 160 g · ML-03-2：暂无商品图片", "landed_price": {"ship_to": "CN", "subtotal_major": 179.01, "freight_major": 25.0, "tariff_major": 0.0, "tariff_rate": 0.09, "de_minimis_applied": true, "landed_total_major": 204.01, "currency": "CNY"}, "source_language": "es", "source_locale": "es-MX", "external_product_id": "demo-walmart-es-MX-P41009", "data_provenance": "synthetic"}, {"product_id": "P31009", "title": "Lingua Almohada cervical de viaje — Peso: 160 g · ML-03-2", "brand": "Lingua", "category": "旅行装备", "origin_country": "CN", "price_major": 176.01, "currency": "CNY", "source_price_major": 24.79, "source_currency": "USD", "highlights": ["Peso：160 g", "Material：Polímero sintético"], "skus": [{"sku_id": "P31009-S1", "spec": "Negro / Peso: 160 g", "price_major": 24.79, "currency": "USD", "stock": 22}, {"sku_id": "P31009-S2", "spec": "Gris / Peso: 160 g", "price_major": 25.78, "currency": "USD", "stock": 23}], "score": 0.0855, "source_platform": "etsy", "canonical_product_id": "CAN-ML-03-2", "material_tags": ["合成聚合物"], "weight_kg": 0.16, "description": "Apoya el cuello al viajar sentado. Peso: 160 g. Material: Polímero sintético. Modelo: ML-03-2.", "rating_summary": {"average": 4.1, "review_count": 34}, "rating_is_live": false, "ships_to": ["CN", "US", "EU", "JP", "SG"], "dimensions_cm": {"length": 30, "width": 25, "height": 10}, "updated_at": "2026-09-18", "default_sku_id": "P31009-S1", "image_url": null, "image_kind": "placeholder", "image_alt": "Lingua Almohada cervical de viaje — Peso: 160 g · ML-03-2：暂无商品图片", "landed_price": {"ship_to": "CN", "subtotal_major": 176.01, "freight_major": 25.0, "tariff_major": 0.0, "tariff_rate": 0.09, "de_minimis_applied": true, "landed_total_major": 201.01, "currency": "CNY"}, "source_language": "es", "source_locale": "es-ES", "external_product_id": "demo-etsy-es-ES-P31009", "data_provenance": "synthetic"}], "shoppingForm": null, "confirmations": [], "toolApprovals": [], "skillUsages": [], "searchCompleted": true, "status": "running", "progress": [{"id": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:tool:call_search_58d42a14d13a40649618866a0c23472d", "label": "检索商品", "status": "running"}], "activities": [{"id": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:tool:call_search_58d42a14d13a40649618866a0c23472d", "runId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b", "kind": "tool", "label": "检索商品", "status": "running", "sequence": 1, "startedAt": 1791980437724, "finishedAt": null, "source": "agentscope", "toolCallId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:tool:call_search_58d42a14d13a40649618866a0c23472d", "toolName": "product_search_tool", "inputSummary": "配送国家 CN · 币种 CNY · 预算上限 300 · 最多 3 件"}]}}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:14
+data: {"type": "TOOL_CALL_RESULT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:result:call_search_58d42a14d13a40649618866a0c23472d", "toolCallId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:tool:call_search_58d42a14d13a40649618866a0c23472d", "content": "{\"hits\": [{\"product_id\": \"P1013\", \"title\": \"BlackoutPro 3D 真丝遮光眼罩\", \"brand\": \"BlackoutPro\", \"category\": \"旅行装备\", \"origin_country\": \"CN\", \"price_major\": 89.0, \"currency\": \"CNY\", \"source_price_major\": 89.0, \"source_currency\": \"CNY\", \"highlights\": [\"材质：6A 桑蚕丝，无塑料\"], \"skus\": [{\"sku_id\": \"P1013-S1\", \"spec\": \"豆沙色\", \"price_major\": 89.0, \"currency\": \"CNY\", \"stock\": 90}], \"score\": 0.096, \"source_platform\": \"amazon\", \"canonical_product_id\": \"CAN-LEGACY-012\", \"material_tags\": [\"合成聚合物\"], \"weight_kg\": 1.23, \"description\": \"真丝 遮光眼罩 3D立体 不压眼 天然材质 无塑料 睡眠 飞机 高铁\", \"rating_summary\": {\"average\": 4.3, \"review_count\": 162}, \"rating_is_live\": false, \"ships_to\": [\"CN\", \"US\", \"EU\"], \"dimensions_cm\": {\"height\": 4, \"length\": 24, \"width\": 20}, \"updated_at\": \"2026-08-01\", \"default_sku_id\": \"P1013-S1\", \"image_kind\": \"placeholder\", \"image_alt\": \"BlackoutPro 3D 真丝遮光眼罩：暂无商品图片\", \"landed_price\": {\"ship_to\": \"CN\", \"subtotal_major\": 89.0, \"freight_major\": 25.0, \"tariff_major\": 0.0, \"tariff_rate\": 0.09, \"de_minimis_applied\": true, \"landed_total_major\": 114.0, \"currency\": \"CNY\"}, \"external_product_id\": \"amazon-P1013\"}, {\"product_id\": \"P41009\", \"title\": \"Lingua Almohada cervical de viaje — Peso: 160 g · ML-03-2\", \"brand\": \"Lingua\", \"category\": \"旅行装备\", \"origin_country\": \"CN\", \"price_major\": 179.01, \"currency\": \"CNY\", \"source_price_major\": 22.95, \"source_currency\": \"EUR\", \"highlights\": [\"Peso：160 g\", \"Material：Polímero sintético\"], \"skus\": [{\"sku_id\": \"P41009-S1\", \"spec\": \"Negro / Peso: 160 g\", \"price_major\": 22.95, \"currency\": \"EUR\", \"stock\": 22}, {\"sku_id\": \"P41009-S2\", \"spec\": \"Gris / Peso: 160 g\", \"price_major\": 23.87, \"currency\": \"EUR\", \"stock\": 23}], \"score\": 0.0855, \"source_platform\": \"walmart\", \"canonical_product_id\": \"CAN-ML-03-2\", \"material_tags\": [\"合成聚合物\"], \"weight_kg\": 0.16, \"description\": \"Apoya el cuello al viajar sentado. Peso: 160 g. Material: Polímero sintético. Modelo: ML-03-2.\", \"rating_summary\": {\"average\": 4.1, \"review_count\": 34}, \"rating_is_live\": false, \"ships_to\": [\"CN\", \"US\", \"EU\", \"JP\", \"SG\"], \"dimensions_cm\": {\"length\": 30, \"width\": 25, \"height\": 10}, \"updated_at\": \"2026-09-18\", \"default_sku_id\": \"P41009-S1\", \"image_kind\": \"placeholder\", \"image_alt\": \"Lingua Almohada cervical de viaje — Peso: 160 g · ML-03-2：暂无商品图片\", \"landed_price\": {\"ship_to\": \"CN\", \"subtotal_major\": 179.01, \"freight_major\": 25.0, \"tariff_major\": 0.0, \"tariff_rate\": 0.09, \"de_minimis_applied\": true, \"landed_total_major\": 204.01, \"currency\": \"CNY\"}, \"source_language\": \"es\", \"source_locale\": \"es-MX\", \"external_product_id\": \"demo-walmart-es-MX-P41009\", \"data_provenance\": \"synthetic\"}, {\"product_id\": \"P31009\", \"title\": \"Lingua Almohada cervical de viaje — Peso: 160 g · ML-03-2\", \"brand\": \"Lingua\", \"category\": \"旅行装备\", \"origin_country\": \"CN\", \"price_major\": 176.01, \"currency\": \"CNY\", \"source_price_major\": 24.79, \"source_currency\": \"USD\", \"highlights\": [\"Peso：160 g\", \"Material：Polímero sintético\"], \"skus\": [{\"sku_id\": \"P31009-S1\", \"spec\": \"Negro / Peso: 160 g\", \"price_major\": 24.79, \"currency\": \"USD\", \"stock\": 22}, {\"sku_id\": \"P31009-S2\", \"spec\": \"Gris / Peso: 160 g\", \"price_major\": 25.78, \"currency\": \"USD\", \"stock\": 23}], \"score\": 0.0855, \"source_platform\": \"etsy\", \"canonical_product_id\": \"CAN-ML-03-2\", \"material_tags\": [\"合成聚合物\"], \"weight_kg\": 0.16, \"description\": \"Apoya el cuello al viajar sentado. Peso: 160 g. Material: Polímero sintético. Modelo: ML-03-2.\", \"rating_summary\": {\"average\": 4.1, \"review_count\": 34}, \"rating_is_live\": false, \"ships_to\": [\"CN\", \"US\", \"EU\", \"JP\", \"SG\"], \"dimensions_cm\": {\"length\": 30, \"width\": 25, \"height\": 10}, \"updated_at\": \"2026-09-18\", \"default_sku_id\": \"P31009-S1\", \"image_kind\": \"placeholder\", \"image_alt\": \"Lingua Almohada cervical de viaje — Peso: 160 g · ML-03-2：暂无商品图片\", \"landed_price\": {\"ship_to\": \"CN\", \"subtotal_major\": 176.01, \"freight_major\": 25.0, \"tariff_major\": 0.0, \"tariff_rate\": 0.09, \"de_minimis_applied\": true, \"landed_total_major\": 201.01, \"currency\": \"CNY\"}, \"source_language\": \"es\", \"source_locale\": \"es-ES\", \"external_product_id\": \"demo-etsy-es-ES-P31009\", \"data_provenance\": \"synthetic\"}], \"total_candidates\": 5, \"recall_strategy\": \"embedding_only\", \"rerank_applied\": false, \"filtered_out\": [{\"product_id\": \"P11060\", \"title\": \"Lingua Bolsas para alimentos — Piezas: 10 · ML-16-1\", \"category\": \"厨房餐饮\", \"price_major\": 274.56, \"currency\": \"CNY\", \"reason\": \"category_mismatch\"}, {\"product_id\": \"P41060\", \"title\": \"Lingua Bolsas para alimentos — Piezas: 10 · ML-16-1\", \"category\": \"厨房餐饮\", \"price_major\": 273.0, \"currency\": \"CNY\", \"reason\": \"category_mismatch\"}, {\"product_id\": \"P21060\", \"title\": \"Lingua Bolsas para alimentos — Piezas: 10 · ML-16-1\", \"category\": \"厨房餐饮\", \"price_major\": 266.99, \"currency\": \"CNY\", \"reason\": \"category_mismatch\"}], \"query_conditions\": {\"normalized_query\": \"旅行 背包\", \"category\": \"旅行装备\", \"ship_to\": \"CN\", \"top_k\": 3, \"price_max_major\": 300, \"target_currency\": \"CNY\", \"excluded_material_tags\": [], \"required_material_tags\": [], \"product_id\": null, \"sku_id\": null}, \"observed_at\": \"2026-10-14T12:20:37.775183+00:00\", \"result_ref\": \"ctx_20bc8f18c84c4eb79cd2b281f921633c\"}", "role": "tool"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:15
+data: {"type": "CUSTOM", "name": "activity.upsert", "value": {"id": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:tool:call_search_58d42a14d13a40649618866a0c23472d", "runId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b", "kind": "tool", "label": "检索商品", "status": "completed", "sequence": 1, "startedAt": 1791980437724, "finishedAt": 1791980437779, "source": "agentscope", "toolCallId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:tool:call_search_58d42a14d13a40649618866a0c23472d", "toolName": "product_search_tool", "inputSummary": "配送国家 CN · 币种 CNY · 预算上限 300 · 最多 3 件", "resultSummary": "检索返回 3 件商品。"}}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:16
+data: {"type": "STATE_SNAPSHOT", "snapshot": {"products": [{"product_id": "P1013", "title": "BlackoutPro 3D 真丝遮光眼罩", "brand": "BlackoutPro", "category": "旅行装备", "origin_country": "CN", "price_major": 89.0, "currency": "CNY", "source_price_major": 89.0, "source_currency": "CNY", "highlights": ["材质：6A 桑蚕丝，无塑料"], "skus": [{"sku_id": "P1013-S1", "spec": "豆沙色", "price_major": 89.0, "currency": "CNY", "stock": 90}], "score": 0.096, "source_platform": "amazon", "canonical_product_id": "CAN-LEGACY-012", "material_tags": ["合成聚合物"], "weight_kg": 1.23, "description": "真丝 遮光眼罩 3D立体 不压眼 天然材质 无塑料 睡眠 飞机 高铁", "rating_summary": {"average": 4.3, "review_count": 162}, "rating_is_live": false, "ships_to": ["CN", "US", "EU"], "dimensions_cm": {"height": 4, "length": 24, "width": 20}, "updated_at": "2026-08-01", "default_sku_id": "P1013-S1", "image_url": null, "image_kind": "placeholder", "image_alt": "BlackoutPro 3D 真丝遮光眼罩：暂无商品图片", "landed_price": {"ship_to": "CN", "subtotal_major": 89.0, "freight_major": 25.0, "tariff_major": 0.0, "tariff_rate": 0.09, "de_minimis_applied": true, "landed_total_major": 114.0, "currency": "CNY"}, "external_product_id": "amazon-P1013"}, {"product_id": "P41009", "title": "Lingua Almohada cervical de viaje — Peso: 160 g · ML-03-2", "brand": "Lingua", "category": "旅行装备", "origin_country": "CN", "price_major": 179.01, "currency": "CNY", "source_price_major": 22.95, "source_currency": "EUR", "highlights": ["Peso：160 g", "Material：Polímero sintético"], "skus": [{"sku_id": "P41009-S1", "spec": "Negro / Peso: 160 g", "price_major": 22.95, "currency": "EUR", "stock": 22}, {"sku_id": "P41009-S2", "spec": "Gris / Peso: 160 g", "price_major": 23.87, "currency": "EUR", "stock": 23}], "score": 0.0855, "source_platform": "walmart", "canonical_product_id": "CAN-ML-03-2", "material_tags": ["合成聚合物"], "weight_kg": 0.16, "description": "Apoya el cuello al viajar sentado. Peso: 160 g. Material: Polímero sintético. Modelo: ML-03-2.", "rating_summary": {"average": 4.1, "review_count": 34}, "rating_is_live": false, "ships_to": ["CN", "US", "EU", "JP", "SG"], "dimensions_cm": {"length": 30, "width": 25, "height": 10}, "updated_at": "2026-09-18", "default_sku_id": "P41009-S1", "image_url": null, "image_kind": "placeholder", "image_alt": "Lingua Almohada cervical de viaje — Peso: 160 g · ML-03-2：暂无商品图片", "landed_price": {"ship_to": "CN", "subtotal_major": 179.01, "freight_major": 25.0, "tariff_major": 0.0, "tariff_rate": 0.09, "de_minimis_applied": true, "landed_total_major": 204.01, "currency": "CNY"}, "source_language": "es", "source_locale": "es-MX", "external_product_id": "demo-walmart-es-MX-P41009", "data_provenance": "synthetic"}, {"product_id": "P31009", "title": "Lingua Almohada cervical de viaje — Peso: 160 g · ML-03-2", "brand": "Lingua", "category": "旅行装备", "origin_country": "CN", "price_major": 176.01, "currency": "CNY", "source_price_major": 24.79, "source_currency": "USD", "highlights": ["Peso：160 g", "Material：Polímero sintético"], "skus": [{"sku_id": "P31009-S1", "spec": "Negro / Peso: 160 g", "price_major": 24.79, "currency": "USD", "stock": 22}, {"sku_id": "P31009-S2", "spec": "Gris / Peso: 160 g", "price_major": 25.78, "currency": "USD", "stock": 23}], "score": 0.0855, "source_platform": "etsy", "canonical_product_id": "CAN-ML-03-2", "material_tags": ["合成聚合物"], "weight_kg": 0.16, "description": "Apoya el cuello al viajar sentado. Peso: 160 g. Material: Polímero sintético. Modelo: ML-03-2.", "rating_summary": {"average": 4.1, "review_count": 34}, "rating_is_live": false, "ships_to": ["CN", "US", "EU", "JP", "SG"], "dimensions_cm": {"length": 30, "width": 25, "height": 10}, "updated_at": "2026-09-18", "default_sku_id": "P31009-S1", "image_url": null, "image_kind": "placeholder", "image_alt": "Lingua Almohada cervical de viaje — Peso: 160 g · ML-03-2：暂无商品图片", "landed_price": {"ship_to": "CN", "subtotal_major": 176.01, "freight_major": 25.0, "tariff_major": 0.0, "tariff_rate": 0.09, "de_minimis_applied": true, "landed_total_major": 201.01, "currency": "CNY"}, "source_language": "es", "source_locale": "es-ES", "external_product_id": "demo-etsy-es-ES-P31009", "data_provenance": "synthetic"}], "shoppingForm": null, "confirmations": [], "toolApprovals": [], "skillUsages": [], "searchCompleted": true, "status": "running", "progress": [{"id": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:tool:call_search_58d42a14d13a40649618866a0c23472d", "label": "检索商品", "status": "completed"}], "activities": [{"id": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:tool:call_search_58d42a14d13a40649618866a0c23472d", "runId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b", "kind": "tool", "label": "检索商品", "status": "completed", "sequence": 1, "startedAt": 1791980437724, "finishedAt": 1791980437779, "source": "agentscope", "toolCallId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:tool:call_search_58d42a14d13a40649618866a0c23472d", "toolName": "product_search_tool", "inputSummary": "配送国家 CN · 币种 CNY · 预算上限 300 · 最多 3 件", "resultSummary": "检索返回 3 件商品。"}]}}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:17
+data: {"type": "CUSTOM", "name": "model.fallback", "value": {"from": "mock-primary", "to": "mock-fallback", "reason": "Error code: 503 - {'detail': '注入的模型故障'}"}}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:18
+data: {"type": "TEXT_MESSAGE_START", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "role": "assistant"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:19
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "已检"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:20
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "索旅"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:21
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "行商品"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:22
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "。请"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:23
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "查看商"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:24
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "品卡"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:25
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "中的"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:26
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "规格、"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:27
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "库存"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:28
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "与到"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:29
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "手价"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:30
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "，选"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:31
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "择商"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:32
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "品后"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:33
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "可继"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:34
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "续比"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:35
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "较或"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:36
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "准备"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:37
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "订单"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:38
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "确认"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:39
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "。不"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:40
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "同站"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:41
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "点保"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:42
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "留原"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:43
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "币价"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:44
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "格，"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:45
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "预算"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:46
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "筛选"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:47
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "使用"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:48
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "目标"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:49
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "币种"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:50
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "。请"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:51
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "核对"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:52
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "配送"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:53
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "目的"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:54
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "地、"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:55
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "材质"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:56
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "和数"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:57
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "量。"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:58
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "确认"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:59
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "卡准"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:60
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "备后"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:61
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "，订"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:62
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "单仍"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:63
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "需用"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:64
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "户点"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:65
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "击批"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:66
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "准才"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:67
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "能创"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:68
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "建。"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:69
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "此回"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:70
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "复用"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:71
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "于检"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:72
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "验流"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:73
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "式传"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:74
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "输、"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:75
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "页面"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:76
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "恢复"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:77
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "和并"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:78
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "发执"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:79
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "行。"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:80
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "已检"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:81
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "索旅"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:82
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "行商"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:83
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "品。请"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:84
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "查看"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:85
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "商品"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:86
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "卡中"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:87
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "的规格、库存与到"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:88
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "手价"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:89
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "，选择商品后可继续"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:90
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "比较"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:91
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "或准"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:92
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "备订单"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:93
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "确认"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:94
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "。不"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:95
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "同站"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:96
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "点保"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:97
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "留原"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:98
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "币价"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:99
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "格，"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:100
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "预算"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:101
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "筛选"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:102
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "使用"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:103
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "目标币种"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:104
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "。请"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:105
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "核对配"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:106
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "送目"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:107
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "的地"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:108
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "、材"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:109
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "质和"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:110
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "数量"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:111
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "。确认卡"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:112
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "准备"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:113
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "后，"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:114
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "订单"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:115
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "仍需"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:116
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "用户"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:117
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "点击"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:118
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "批准"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:119
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "才能"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:120
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "创建"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:121
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "。此"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:122
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "回复"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:123
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "用于"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:124
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "检验"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:125
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "流式"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:126
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "传输"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:127
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "、页"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:128
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "面恢"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:129
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "复和"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:130
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "并发"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:131
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "执行"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:132
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "。已"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:133
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "检索"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:134
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "旅行"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:135
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "商品"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:136
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "。请"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:137
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "查看"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:138
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "商品卡"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:139
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "中的"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:140
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "规格"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:141
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "、库"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:142
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "存与"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:143
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "到手"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:144
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "价，选"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:145
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "择商"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:146
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "品后"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:147
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "可继"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:148
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "续比较"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:149
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "或准"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:150
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "备订"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:151
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "单确"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:152
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "认。"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:153
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "不同"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:154
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "站点"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:155
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e", "delta": "保留"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:156
+data: {"type": "TEXT_MESSAGE_END", "messageId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:text:aac01ef92907402d8bad27c19086158e"}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:157
+data: {"type": "CUSTOM", "name": "usage.summary", "value": {"status": "success", "elapsed_ms": 23576.51277608238, "model_calls": 6, "input_tokens": null, "output_tokens": null, "observed_input_tokens": 200, "observed_output_tokens": 428, "unknown_usage_calls": 4, "active_attempts_at_finish": 0, "usage_complete": false, "ttft_p95_ms": 815.3073301073164, "model_elapsed_ms": 11393.150990013964, "tool_calls": 1, "tool_errors": 0, "fallbacks": 2, "cost_usd": null, "unknown_cost_calls": 6}}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:158
+data: {"type": "MESSAGES_SNAPSHOT", "messages": [{"id": "r2-model-503-0ac8825312f54849821aca7f6eb8897b-user", "role": "user", "content": "预算300元以内，找一个寄到中国的轻便背包", "runId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b"}, {"id": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:final:answer", "role": "assistant", "content": "已检索旅行商品。请查看商品卡中的规格、库存与到手价，选择商品后可继续比较或准备订单确认。不同站点保留原币价格，预算筛选使用目标币种。请核对配送目的地、材质和数量。确认卡准备后，订单仍需用户点击批准才能创建。此回复用于检验流式传输、页面恢复和并发执行。已检索旅行商品。请查看商品卡中的规格、库存与到手价，选择商品后可继续比较或准备订单确认。不同站点保留原币价格，预算筛选使用目标币种。请核对配送目的地、材质和数量。确认卡准备后，订单仍需用户点击批准才能创建。此回复用于检验流式传输、页面恢复和并发执行。已检索旅行商品。请查看商品卡中的规格、库存与到手价，选择商品后可继续比较或准备订单确认。不同站点保留"}]}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:159
+data: {"type": "STATE_SNAPSHOT", "snapshot": {"products": [{"product_id": "P1013", "title": "BlackoutPro 3D 真丝遮光眼罩", "brand": "BlackoutPro", "category": "旅行装备", "origin_country": "CN", "price_major": 89.0, "currency": "CNY", "source_price_major": 89.0, "source_currency": "CNY", "highlights": ["材质：6A 桑蚕丝，无塑料"], "skus": [{"sku_id": "P1013-S1", "spec": "豆沙色", "price_major": 89.0, "currency": "CNY", "stock": 90}], "score": 0.096, "source_platform": "amazon", "canonical_product_id": "CAN-LEGACY-012", "material_tags": ["合成聚合物"], "weight_kg": 1.23, "description": "真丝 遮光眼罩 3D立体 不压眼 天然材质 无塑料 睡眠 飞机 高铁", "rating_summary": {"average": 4.3, "review_count": 162}, "rating_is_live": false, "ships_to": ["CN", "US", "EU"], "dimensions_cm": {"height": 4, "length": 24, "width": 20}, "updated_at": "2026-08-01", "default_sku_id": "P1013-S1", "image_url": null, "image_kind": "placeholder", "image_alt": "BlackoutPro 3D 真丝遮光眼罩：暂无商品图片", "landed_price": {"ship_to": "CN", "subtotal_major": 89.0, "freight_major": 25.0, "tariff_major": 0.0, "tariff_rate": 0.09, "de_minimis_applied": true, "landed_total_major": 114.0, "currency": "CNY"}, "external_product_id": "amazon-P1013"}, {"product_id": "P41009", "title": "Lingua Almohada cervical de viaje — Peso: 160 g · ML-03-2", "brand": "Lingua", "category": "旅行装备", "origin_country": "CN", "price_major": 179.01, "currency": "CNY", "source_price_major": 22.95, "source_currency": "EUR", "highlights": ["Peso：160 g", "Material：Polímero sintético"], "skus": [{"sku_id": "P41009-S1", "spec": "Negro / Peso: 160 g", "price_major": 22.95, "currency": "EUR", "stock": 22}, {"sku_id": "P41009-S2", "spec": "Gris / Peso: 160 g", "price_major": 23.87, "currency": "EUR", "stock": 23}], "score": 0.0855, "source_platform": "walmart", "canonical_product_id": "CAN-ML-03-2", "material_tags": ["合成聚合物"], "weight_kg": 0.16, "description": "Apoya el cuello al viajar sentado. Peso: 160 g. Material: Polímero sintético. Modelo: ML-03-2.", "rating_summary": {"average": 4.1, "review_count": 34}, "rating_is_live": false, "ships_to": ["CN", "US", "EU", "JP", "SG"], "dimensions_cm": {"length": 30, "width": 25, "height": 10}, "updated_at": "2026-09-18", "default_sku_id": "P41009-S1", "image_url": null, "image_kind": "placeholder", "image_alt": "Lingua Almohada cervical de viaje — Peso: 160 g · ML-03-2：暂无商品图片", "landed_price": {"ship_to": "CN", "subtotal_major": 179.01, "freight_major": 25.0, "tariff_major": 0.0, "tariff_rate": 0.09, "de_minimis_applied": true, "landed_total_major": 204.01, "currency": "CNY"}, "source_language": "es", "source_locale": "es-MX", "external_product_id": "demo-walmart-es-MX-P41009", "data_provenance": "synthetic"}, {"product_id": "P31009", "title": "Lingua Almohada cervical de viaje — Peso: 160 g · ML-03-2", "brand": "Lingua", "category": "旅行装备", "origin_country": "CN", "price_major": 176.01, "currency": "CNY", "source_price_major": 24.79, "source_currency": "USD", "highlights": ["Peso：160 g", "Material：Polímero sintético"], "skus": [{"sku_id": "P31009-S1", "spec": "Negro / Peso: 160 g", "price_major": 24.79, "currency": "USD", "stock": 22}, {"sku_id": "P31009-S2", "spec": "Gris / Peso: 160 g", "price_major": 25.78, "currency": "USD", "stock": 23}], "score": 0.0855, "source_platform": "etsy", "canonical_product_id": "CAN-ML-03-2", "material_tags": ["合成聚合物"], "weight_kg": 0.16, "description": "Apoya el cuello al viajar sentado. Peso: 160 g. Material: Polímero sintético. Modelo: ML-03-2.", "rating_summary": {"average": 4.1, "review_count": 34}, "rating_is_live": false, "ships_to": ["CN", "US", "EU", "JP", "SG"], "dimensions_cm": {"length": 30, "width": 25, "height": 10}, "updated_at": "2026-09-18", "default_sku_id": "P31009-S1", "image_url": null, "image_kind": "placeholder", "image_alt": "Lingua Almohada cervical de viaje — Peso: 160 g · ML-03-2：暂无商品图片", "landed_price": {"ship_to": "CN", "subtotal_major": 176.01, "freight_major": 25.0, "tariff_major": 0.0, "tariff_rate": 0.09, "de_minimis_applied": true, "landed_total_major": 201.01, "currency": "CNY"}, "source_language": "es", "source_locale": "es-ES", "external_product_id": "demo-etsy-es-ES-P31009", "data_provenance": "synthetic"}], "shoppingForm": null, "confirmations": [], "toolApprovals": [], "skillUsages": [], "searchCompleted": true, "status": "completed", "progress": [{"id": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:tool:call_search_58d42a14d13a40649618866a0c23472d", "label": "检索商品", "status": "completed"}], "activities": [{"id": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:tool:call_search_58d42a14d13a40649618866a0c23472d", "runId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b", "kind": "tool", "label": "检索商品", "status": "completed", "sequence": 1, "startedAt": 1791980437724, "finishedAt": 1791980437779, "source": "agentscope", "toolCallId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b:tool:call_search_58d42a14d13a40649618866a0c23472d", "toolName": "product_search_tool", "inputSummary": "配送国家 CN · 币种 CNY · 预算上限 300 · 最多 3 件", "resultSummary": "检索返回 3 件商品。"}]}}
+
+id: r2-model-503-0ac8825312f54849821aca7f6eb8897b:160
+data: {"type": "RUN_FINISHED", "threadId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b", "runId": "r2-model-503-0ac8825312f54849821aca7f6eb8897b", "outcome": {"type": "success"}}
+

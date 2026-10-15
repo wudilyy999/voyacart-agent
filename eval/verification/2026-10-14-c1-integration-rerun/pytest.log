@@ -1,0 +1,78 @@
+........................................................................ [  3%]
+........................................................................ [  7%]
+........................................................................ [ 11%]
+........................................................................ [ 14%]
+........................................................................ [ 18%]
+........................................................................ [ 22%]
+........................................................................ [ 25%]
+........................................................................ [ 29%]
+........................................................................ [ 33%]
+........................................................................ [ 36%]
+........................................................................ [ 40%]
+........................................................................ [ 44%]
+........................................................................ [ 48%]
+........................................................................ [ 51%]
+........................................................................ [ 55%]
+........................................................................ [ 59%]
+........................................................................ [ 62%]
+........................................................................ [ 66%]
+........................................................................ [ 70%]
+........................................................................ [ 73%]
+...........................................F............................ [ 77%]
+........................................................................ [ 81%]
+........................................................................ [ 84%]
+........................................................................ [ 88%]
+........................................................................ [ 92%]
+........................................................................ [ 96%]
+........................................................................ [ 99%]
+.....                                                                    [100%]
+=================================== FAILURES ===================================
+_______ test_quota_wait_is_bounded_and_configuration_conflict_is_closed ________
+
+real_redis = <redis.asyncio.client.Redis(<redis.asyncio.connection.ConnectionPool(<redis.asyncio.connection.UnixDomainSocketConnection(decode_responses=True,path=/tmp/gbx-redis-kwsndl_a/redis.sock)>)>)>
+
+    async def test_quota_wait_is_bounded_and_configuration_conflict_is_closed(real_redis):
+        first = throttle(real_redis, concurrency=1)
+        waiting = RedisGatewayThrottle(real_redis, 1, 0, namespace="https://example.invalid/v1\nmodel-a",
+                                       wait_timeout_seconds=0.05)
+        conflict = throttle(real_redis, concurrency=2)
+        async with first.slot():
+            with pytest.raises(GatewayQuotaTimeout):
+>               async with waiting.slot():
+
+tests/test_shared_throttle.py:152: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+app/infrastructure/shared_throttle.py:151: in __aenter__
+    await asyncio.sleep(min(0.1, max(0.005, int(response[1]) / 1000), remaining))
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+delay = 0.04994387493934482, result = None
+
+    async def sleep(delay, result=None):
+        """Coroutine that completes after a given time (in seconds)."""
+        if delay <= 0:
+            await __sleep0()
+            return result
+    
+        loop = events.get_running_loop()
+        future = loop.create_future()
+        h = loop.call_later(delay,
+                            futures._set_result_unless_cancelled,
+                            future, result)
+        try:
+>           return await future
+                   ^^^^^^^^^^^^
+E           asyncio.exceptions.CancelledError
+
+/Users/liyuyang/.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/asyncio/tasks.py:649: CancelledError
+------------------------------ Captured log call -------------------------------
+WARNING  app.infrastructure.shared_throttle:shared_throttle.py:177 共享模型配额失效，中止上游请求：GatewayQuotaLeaseLost
+=============================== warnings summary ===============================
+.venv/lib/python3.11/site-packages/fastapi/testclient.py:1
+  /private/tmp/voyacart-backend-frontend-20261014/.venv/lib/python3.11/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/test_shared_throttle.py::test_quota_wait_is_bounded_and_configuration_conflict_is_closed
+1 failed, 1948 passed, 1 warning in 84.60s (0:01:24)

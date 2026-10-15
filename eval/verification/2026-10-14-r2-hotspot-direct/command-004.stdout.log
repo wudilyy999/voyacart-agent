@@ -1,0 +1,198 @@
+Compose can now delegate builds to bake for better performance.
+ To do so, set COMPOSE_BAKE=true.
+#0 building with "colima" instance using docker driver
+
+#1 [worker internal] load build definition from Dockerfile
+#1 transferring dockerfile: 1.31kB done
+#1 DONE 0.0s
+
+#2 [automation-worker internal] load build definition from Dockerfile
+#2 transferring dockerfile: 1.31kB done
+#2 DONE 0.0s
+
+#3 [mock-llm internal] load build definition from Dockerfile
+#3 transferring dockerfile: 1.31kB done
+#3 DONE 0.0s
+
+#4 [api internal] load build definition from Dockerfile
+#4 transferring dockerfile: 1.31kB done
+#4 DONE 0.0s
+
+#5 [mock-llm] resolve image config for docker-image://docker.io/docker/dockerfile:1
+#5 DONE 1.0s
+
+#6 [mock-llm] docker-image://docker.io/docker/dockerfile:1@sha256:4edf897a3ffa55b89f906fc8cc78afdb3f1834cc9c7083565e611a8a7d5fe99e
+#6 CACHED
+
+#7 [mock-llm internal] load metadata for ghcr.io/astral-sh/uv:latest
+#7 DONE 0.0s
+
+#8 [mock-llm internal] load metadata for docker.io/library/python:3.11-slim
+#8 DONE 0.0s
+
+#9 [automation-worker internal] load .dockerignore
+#9 transferring context: 347B done
+#9 DONE 0.0s
+
+#10 [worker internal] load .dockerignore
+#10 transferring context: 347B done
+#10 DONE 0.0s
+
+#11 [api internal] load .dockerignore
+#11 transferring context: 347B done
+#11 DONE 0.0s
+
+#12 [mock-llm internal] load .dockerignore
+#12 transferring context: 347B done
+#12 DONE 0.0s
+
+#13 [automation-worker] FROM ghcr.io/astral-sh/uv:latest
+#13 DONE 0.0s
+
+#14 [automation-worker builder 1/6] FROM docker.io/library/python:3.11-slim
+#14 DONE 0.0s
+
+#15 [mock-llm internal] load build context
+#15 transferring context: 25.39kB 0.0s done
+#15 DONE 0.0s
+
+#16 [automation-worker internal] load build context
+#16 transferring context: 25.39kB 0.0s done
+#16 DONE 0.0s
+
+#17 [worker internal] load build context
+#17 transferring context: 25.39kB 0.0s done
+#17 DONE 0.0s
+
+#18 [mock-llm stage-1 8/9] COPY data/catalog-v3.jsonl ./catalog/catalog-v3.jsonl
+#18 CACHED
+
+#19 [mock-llm builder 2/6] COPY --from=ghcr.io/astral-sh/uv:latest /uv /usr/local/bin/uv
+#19 CACHED
+
+#20 [mock-llm stage-1 5/9] COPY configs ./configs
+#20 CACHED
+
+#21 [mock-llm builder 3/6] WORKDIR /app
+#21 CACHED
+
+#22 [mock-llm builder 5/6] RUN uv sync --frozen --no-install-project --no-dev --extra retrieval
+#22 CACHED
+
+#23 [mock-llm builder 4/6] COPY pyproject.toml uv.lock ./
+#23 CACHED
+
+#24 [mock-llm stage-1 4/9] COPY app ./app
+#24 CACHED
+
+#25 [mock-llm stage-1 3/9] COPY --from=builder /app/.venv /app/.venv
+#25 CACHED
+
+#26 [mock-llm stage-1 2/9] WORKDIR /app
+#26 CACHED
+
+#27 [mock-llm stage-1 6/9] COPY scripts/loadtest ./scripts/loadtest
+#27 CACHED
+
+#28 [mock-llm builder 6/6] COPY app ./app
+#28 CACHED
+
+#29 [mock-llm stage-1 7/9] COPY knowledge ./knowledge
+#29 CACHED
+
+#30 [api stage-1 9/9] RUN mkdir -p /app/data
+#30 CACHED
+
+#31 [automation-worker] exporting to image
+#31 exporting layers done
+#31 writing image sha256:fd6d3a468e031def4156e46881abb037b3f9de346b52e04a2a7852ddcf5d9ab4 done
+#31 naming to docker.io/library/voyacart-r2-hotspot-direct-20261014-runtime 0.0s done
+#31 DONE 0.0s
+
+#32 [mock-llm] exporting to image
+#32 exporting layers done
+#32 writing image sha256:222df99df3402984570357b5612aa05ee68112e90e0a9fa69ff6834765a9a1d7 done
+#32 naming to docker.io/library/voyacart-r2-hotspot-direct-20261014-runtime done
+#32 DONE 0.0s
+
+#33 [api internal] load build context
+#33 transferring context: 7.10MB 0.1s done
+#33 DONE 0.1s
+
+#34 [worker] exporting to image
+#34 exporting layers done
+#34 writing image sha256:177b26be547e56b2067953bd02561df0004392e7a3e605570fba01eb154c909a done
+#34 naming to docker.io/library/voyacart-r2-hotspot-direct-20261014-runtime 0.0s done
+#34 DONE 0.0s
+
+#35 [api] exporting to image
+#35 exporting layers done
+#35 writing image sha256:7b199181fb501e9d75c1347e59803bc1388ec54aec89d337b490ecbbb2345e60 done
+#35 naming to docker.io/library/voyacart-r2-hotspot-direct-20261014-runtime done
+#35 DONE 0.0s
+
+#36 [automation-worker] resolving provenance for metadata file
+#36 DONE 0.0s
+
+#37 [worker] resolving provenance for metadata file
+#37 DONE 0.0s
+
+#38 [mock-llm] resolving provenance for metadata file
+#38 DONE 0.0s
+
+#39 [api] resolving provenance for metadata file
+#39 DONE 0.0s
+
+#40 [nginx internal] load build definition from Dockerfile
+#40 transferring dockerfile: 439B done
+#40 DONE 0.0s
+
+#41 [nginx internal] load metadata for docker.io/library/node:22-alpine
+#41 DONE 0.9s
+
+#42 [nginx internal] load metadata for docker.io/library/nginx:stable-alpine
+#42 DONE 0.9s
+
+#43 [nginx internal] load .dockerignore
+#43 transferring context: 347B done
+#43 DONE 0.0s
+
+#44 [nginx build 1/6] FROM docker.io/library/node:22-alpine@sha256:0a7108bf6c7bf5de370ffb1a3ed6be93d405b43ff159f681a8d18c0e2bc2e402
+#44 DONE 0.0s
+
+#45 [nginx stage-1 1/3] FROM docker.io/library/nginx:stable-alpine@sha256:0985e772fb9f729e6fa0980da05fca5d9c468e870eed43071545afa9d2e27d94
+#45 CACHED
+
+#46 [nginx internal] load build context
+#46 transferring context: 12.23MB 0.1s done
+#46 DONE 0.1s
+
+#47 [nginx build 2/6] WORKDIR /workspace
+#47 CACHED
+
+#48 [nginx build 4/6] RUN npm ci
+#48 CACHED
+
+#49 [nginx build 5/6] COPY frontend/ .
+#49 CACHED
+
+#50 [nginx build 3/6] COPY frontend/package.json frontend/package-lock.json ./
+#50 CACHED
+
+#51 [nginx build 6/6] RUN npm run build
+#51 CACHED
+
+#52 [nginx stage-1 2/3] COPY .cache/r2/voyacart-r2-hotspot-direct-20261014.conf /etc/nginx/conf.d/default.conf
+#52 DONE 0.0s
+
+#53 [nginx] resolving provenance for metadata file
+#53 DONE 0.0s
+
+#54 [nginx stage-1 3/3] COPY --from=build /workspace/dist /usr/share/nginx/html
+#54 DONE 0.0s
+
+#55 [nginx] exporting to image
+#55 exporting layers 0.0s done
+#55 writing image sha256:008140e26971f2e3581d9cf0e67d696cd9b449fde1ac8f9c1ba90e5fffec47f4 done
+#55 naming to docker.io/library/voyacart-r2-hotspot-direct-20261014-frontend done
+#55 DONE 0.0s

@@ -1,0 +1,26 @@
+{
+  "head": "5b16af0da006599d833021e931fd2de9bfdcb44a",
+  "source_fingerprints_blake2b": {
+    "app/infrastructure/persistence/seed_products.py": "172d096f632bf275d360ae83de2765ae76e665445a701a76f05c51757109455fa8761979ea7b8212ac4d4ff364bad83e528dd4880a29c61295a0bcfa139127e1",
+    "scripts/eval/run_product_recall.py": "4b944a2437514d4cfaa8c5eb4ce58b3412b33fc184345f71d21b7a49723846a4629d962914eb53284f3a321e19b6c6ac4c8bd014ba0e43527981cafd199ceede",
+    "tests/test_catalog_fixture.py": "f94c89af11f85cf7c910fc089898fe306c4b9897312cf8b32e081001d4ebaaaaa3d4391d813d92562f617d80ca664fbb1a034847e8ecee3e9794991d5ed8e531",
+    "tests/test_eval_selection_manifest.py": "61052fec26b47f05718fa5010b87b6189cab2fecb4ed95a71f80db7e9796da217b47f42a715b76aa22a7d4dd7310574343f02adcb2d62480331afafc44583de3"
+  },
+  "original_block_fingerprints_blake2b": {
+    "eval/verification/2026-10-14-integrated-v1-recall/recall-all-report-20261014-204556-951464.md": "0b1f9b8cc5a025f3f5db1caa0814bde71fe66bd4f7628f4de960f92a11e796981d4a6afb1cb0fd8cead7afa9f51901cc3c099ee2dbcdebb1fd8303b64567049e",
+    "eval/verification/2026-10-14-integrated-v1-recall/recall-all-report-20261014-204556-951464.manifest.json": "7a7007537a9e45092d519201a06508fd3779cc1f1c5030688308bcff10f417fb453bc6138a7394cc8641b285ec04782f875f047cf7bf0ef9d9084acfcbeb0d3d",
+    "eval/verification/2026-10-14-integrated-v1-recall/run.log": "0e22d319a965970b19838be0d7755881974671d6ebf70d6c7498555ddcd3d782824625c5a393e54c53ebb05881ef26b9da12bb1d60fc637fa765d763d3e9b1ef"
+  },
+  "command": [
+    "/private/tmp/voyacart-local-fallback-20261014/.venv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_catalog_fixture.py::test_explicit_v1_catalog_keeps_its_original_scope",
+    "tests/test_catalog_fixture.py::test_explicit_catalog_preserves_unicode_inside_json_records",
+    "tests/test_eval_selection_manifest.py::test_product_cli_uses_and_fingerprints_explicit_catalog",
+    "--junitxml=/private/tmp/voyacart-local-fallback-20261014/eval/verification/2026-10-14-t3-explicit-catalog/before/tests.xml"
+  ],
+  "exit_code": 1,
+  "duration_seconds": 0.9453647080808878
+}

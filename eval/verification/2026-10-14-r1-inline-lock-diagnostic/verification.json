@@ -1,0 +1,20 @@
+{
+  "verified_at_utc": "2026-10-14T13:47:41.722503+00:00",
+  "input_files": 230,
+  "changed_inputs": [],
+  "inputs_unchanged": true,
+  "all_report_latencies_recomputed_exactly": true,
+  "baseline_snapshot_files": 178,
+  "baseline_snapshot_mismatches": [],
+  "authored_lexical_check_hits": [],
+  "new_artifact_fingerprints_blake2b": {
+    "baseline-image-observation.json": "cd557a309790fab6ae10e62d5c07797459743a3e5c8f4d75b424bd0cf7a4c319b20b565843cfc05d582e07a92664d24f67307aa0bac9371ae7c3eb6cfd0ac67c",
+    "README.md": "a9c53125c61f9aaa1aa91b89bd83f1e226467951888d2616e5757062c9195b8c85fde37ef62e9e094a576fae799c98d7bcf969b3310d2c3dbf087b47e6406da4",
+    "diagnostic.json": "08b0f880fe6a656832bf03e08ae281c91664acbdbd5532a7fd2b0d916305f46aa9d6ad6b95b859d84dfc91c23b9046a41731cd109436ad897f8f3f620e93753e",
+    "analyze.py": "514b42444774210c13cc52b9bc2729695c88d62699836f8e8f6f8c44f79b601b8a79a89eaf7304646c1e71fa64bf7c1a4297fc46eaf9731c709d9a4a2624f152"
+  },
+  "tests_or_performance_runs_executed": false,
+  "container_start_or_stop_executed": false,
+  "production_files_modified": false,
+  "scope": "只读调查和当前镜像元数据检查；只写本新目录"
+}

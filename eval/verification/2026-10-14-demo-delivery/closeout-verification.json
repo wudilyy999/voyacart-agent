@@ -1,0 +1,13 @@
+{
+  "checked_evidence_files": 1763,
+  "known_credentials_checked": 2,
+  "known_credential_matches": [],
+  "new_markdown_files_checked": 11,
+  "prohibited_terms_in_markdown": [],
+  "broken_local_links": [],
+  "harness_archived_source_files": 373,
+  "harness_source_mismatches": [],
+  "production_code_changed_in_closeout": false,
+  "tests_reused": true,
+  "new_paid_model_calls": 0
+}

@@ -1,0 +1,17 @@
+{
+  "model": "gemini-3.8-flash-high",
+  "temperature": 0,
+  "response_format": {
+    "type": "json_object"
+  },
+  "messages": [
+    {
+      "role": "system",
+      "content": "你是商品查询分类器。仅输出一个合法 JSON 对象，结构为 {\"category\":\"类目\"}。类目只允许旅行装备、户外运动、数码配件、家居生活、美妆个护、厨房餐饮、办公学习、母婴宠物、其他。直接以左花括号开始，以右花括号结束。"
+    },
+    {
+      "role": "user",
+      "content": "{\"locale\":\"us\",\"query\":\"travel backpack\"}"
+    }
+  ]
+}

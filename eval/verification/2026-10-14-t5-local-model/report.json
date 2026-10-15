@@ -1,0 +1,128 @@
+{
+  "scope": "75 existing synthetic catalog products; operational diagnostic",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "dimension": 384,
+  "version": "mean-pooling-onnx-q-content-chunks-128-v1:bf56c26394a04b0b95aacf9d7fb695f13cdede47ae67ef845d793392fde7c871",
+  "model_load_seconds": 1.273142416961491,
+  "machine": "macOS-15.4.1-arm64-arm-64bit",
+  "processor": "arm",
+  "bootstrap": {
+    "total_products": 75,
+    "reused_products": 0,
+    "embedded_products": 75,
+    "written_products": 75,
+    "pending_products": 0,
+    "batches": 8,
+    "complete": true,
+    "vector_dimension": 384
+  },
+  "index_seconds": 2.120308708981611,
+  "bootstrap_reuse": {
+    "total_products": 75,
+    "reused_products": 75,
+    "embedded_products": 0,
+    "written_products": 0,
+    "pending_products": 0,
+    "batches": 0,
+    "complete": true
+  },
+  "queries": 30,
+  "query_seconds": [
+    0.009435625048354268,
+    0.008140416932292283,
+    0.009302791906520724,
+    0.00798354099970311,
+    0.007656208006665111,
+    0.007638499955646694,
+    0.007661791983991861,
+    0.007898167008534074,
+    0.007965833065100014,
+    0.007718916982412338,
+    0.008283416973426938,
+    0.007567208027467132,
+    0.00727662502322346,
+    0.0064018749399110675,
+    0.007163875037804246,
+    0.006516917026601732,
+    0.006511875079013407,
+    0.006446707993745804,
+    0.007090667029842734,
+    0.009424624964594841,
+    0.009783625020645559,
+    0.009454000042751431,
+    0.006840208079665899,
+    0.006338333012536168,
+    0.0063842079835012555,
+    0.006273584091104567,
+    0.007595332921482623,
+    0.008275458007119596,
+    0.006490624975413084,
+    0.006346249952912331
+  ],
+  "p50_seconds": 0.007616916438564658,
+  "p95_seconds": 0.009454000042751431,
+  "examples": [
+    {
+      "query": "轻便旅行背包",
+      "strategy": "local_embedding",
+      "hits": [
+        {
+          "id": "P11000",
+          "title": "Lingua Mochila de senderismo — Capacidad: 20 L · ML-01-1"
+        },
+        {
+          "id": "P10008",
+          "title": "Lingua Travel neck pillow — Weight: 120 g · ML-03-1"
+        },
+        {
+          "id": "P14004",
+          "title": "Lingua パッキングキューブ — 個数: 2 · ML-02-1"
+        }
+      ]
+    },
+    {
+      "query": "保温水杯",
+      "strategy": "local_embedding",
+      "hits": [
+        {
+          "id": "P14028",
+          "title": "Lingua 保温ボトル — 容量: 350 ml · ML-08-1"
+        },
+        {
+          "id": "P10048",
+          "title": "Lingua Ceramic mug — Capacity: 200 ml · ML-13-1"
+        },
+        {
+          "id": "P11028",
+          "title": "Lingua Botella térmica — Capacidad: 350 ml · ML-08-1"
+        }
+      ]
+    },
+    {
+      "query": "降噪耳机",
+      "strategy": "local_embedding",
+      "hits": [
+        {
+          "id": "P10016",
+          "title": "Lingua Noise-cancelling headphones — Noise reduction: 0 dB · ML-05-1"
+        },
+        {
+          "id": "P11016",
+          "title": "Lingua Auriculares con cancelación de ruido — Reducción de ruido: 0 dB · ML-05-1"
+        },
+        {
+          "id": "P14064",
+          "title": "Lingua デスクライト — 明るさ: 200 lm · ML-17-1"
+        }
+      ]
+    }
+  ],
+  "concurrent_long_texts": 4,
+  "source_fingerprints_blake2b": {
+    "app/infrastructure/embedding/local_multilingual.py": "fa38408731fc65c013764e90ffb7b4d2d83c8d830e1a32d95e027abd710069d0289acee55842f63145c52e212c17d5492e2699c88444270e16e981ed6a2e7009",
+    "app/application/usecases/catalog_search.py": "7ae4a5324a1665a54d8670a8958f8073a92e9953792a208bf9e7d99f48276c3463d120106d333cabc525bdd554ea0bee4d231ab4a7081a8c78d520f7d2bcfd61",
+    "app/composition.py": "30a3b4524eab62e6603b4908e98ec0a9b48b8e57c76b506eaf5e2d3baf5d47aa9b39a1e8794200e81209789ae5dbcd8c1f762f2e6e1f3636b2d28e195a383556",
+    "app/infrastructure/settings.py": "ebe5ef7c53c87c3ea9dfd96ed59d36f44fe0dbe6e8fa9f2950771d5580501fa974bfec0277ab8091d6ec9d71290ac22d9f63e52ff0c4d119875c684c70cd4389",
+    "data/catalog-v3.jsonl": "471f912eb5d74cd7e773db2e97f6b3095038a892d1e5e68a8a2f94e729a2be2446f7679b29211d3f32ef772a2b715a30ef79eb79ef4f392acc24574e91acc9d7"
+  }
+}

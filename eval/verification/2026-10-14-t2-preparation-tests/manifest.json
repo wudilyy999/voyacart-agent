@@ -1,0 +1,24 @@
+{
+  "status": "preparation_verified",
+  "model_calls": 0,
+  "completed": [
+    "fixed-seed product fields",
+    "stratified query preselection"
+  ],
+  "pending": [
+    "product enrichment",
+    "final query selection",
+    "catalog export",
+    "evaluation datasets",
+    "audit CSV"
+  ],
+  "source_fingerprints": {
+    "scripts/esci/build_catalog.py": "46b16ef96490303010cbc9e8d43e4b3f25aeda03302b345909504fea33c37104c3395f158308b21f6ce2c1fb898722c69f96666fae6c1e329f5ffb99029d85ae",
+    "scripts/esci/catalog_records.py": "5f7624bfc4d40984536b43c8c307e223fa96a25d6cdf3dcaeb01d2016ba04c108cf155a9533d5d357c4c2f0f5bc8bc4a7af5dab2565e7504202abaaf6e86773b",
+    "scripts/esci/download.py": "61e4cc9f9ee636845db90d563117c4fe5ec9cca2404237e6f7285093bcd72de76b5dddd07e766a44130b66417e2d624c52c0d73c771bfb5bc9e32bb625e05159",
+    "scripts/esci/prepare.py": "0969e95755ee64767d037c00aef164338e6a2ecb97c2199b5c94f659837e552f4987e8f2616d4e8f9997eb74bdabd8a6242e80cfaf360228e1d4a7d1de8be114",
+    "scripts/esci/test_build_catalog.py": "421553b357cee223924bf99c9c8b8d9e7edb5472146d7f177516d22c63aee9beda7a1b1131e5da55929f4922e41987404516574642fbf908842706227654d417",
+    "scripts/esci/test_catalog_records.py": "2906309fb15e550f807755df8383c79d72de646ce57fe80e233cf7dbee1a6d5f5b47af16848a60c43f50786a1bd624e6918367a8588a697d87aed4b181d05251",
+    "scripts/esci/test_prepare.py": "5c2a88b504bb6edd0ea5d55596bba0880da7458908c50782ea3aaeb8449b0b1af3453c02d7bf30288cf92866bd89b333b2ca6f0538605ed126ab1725bbfd6df4"
+  }
+}

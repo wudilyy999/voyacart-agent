@@ -1,0 +1,40 @@
+Compose can now delegate builds to bake for better performance.
+ To do so, set COMPOSE_BAKE=true.
+#0 building with "colima" instance using docker driver
+
+#1 [api internal] load build definition from Dockerfile
+#1 transferring dockerfile: 1.26kB done
+#1 DONE 0.0s
+
+#2 [api] resolve image config for docker-image://docker.io/docker/dockerfile:1
+#2 DONE 9.2s
+
+#3 [api] docker-image://docker.io/docker/dockerfile:1@sha256:4edf897a3ffa55b89f906fc8cc78afdb3f1834cc9c7083565e611a8a7d5fe99e
+#3 resolve docker.io/docker/dockerfile:1@sha256:4edf897a3ffa55b89f906fc8cc78afdb3f1834cc9c7083565e611a8a7d5fe99e 0.0s done
+#3 sha256:4edf897a3ffa55b89f906fc8cc78afdb3f1834cc9c7083565e611a8a7d5fe99e 9.08kB / 9.08kB done
+#3 sha256:e291cde6b1429712d3951bca77be92338719212df6654812f1a55874a481742d 1.13kB / 1.13kB done
+#3 sha256:6fd0aed5103f5db618989de6a2a3e801d8bd77dd60aee7194a696544ae33fe0a 1.41kB / 1.41kB done
+#3 sha256:c3fba84503b044ce5cd182dd0150892f3b0eff1350c4c5d7f5ca2066da594550 0B / 13.13MB 0.1s
+#3 sha256:c3fba84503b044ce5cd182dd0150892f3b0eff1350c4c5d7f5ca2066da594550 1.05MB / 13.13MB 1.0s
+#3 sha256:c3fba84503b044ce5cd182dd0150892f3b0eff1350c4c5d7f5ca2066da594550 2.10MB / 13.13MB 1.2s
+#3 sha256:c3fba84503b044ce5cd182dd0150892f3b0eff1350c4c5d7f5ca2066da594550 4.19MB / 13.13MB 1.4s
+#3 sha256:c3fba84503b044ce5cd182dd0150892f3b0eff1350c4c5d7f5ca2066da594550 8.39MB / 13.13MB 1.6s
+#3 sha256:c3fba84503b044ce5cd182dd0150892f3b0eff1350c4c5d7f5ca2066da594550 9.44MB / 13.13MB 1.7s
+#3 sha256:c3fba84503b044ce5cd182dd0150892f3b0eff1350c4c5d7f5ca2066da594550 13.13MB / 13.13MB 2.0s
+#3 sha256:c3fba84503b044ce5cd182dd0150892f3b0eff1350c4c5d7f5ca2066da594550 13.13MB / 13.13MB 2.0s done
+#3 extracting sha256:c3fba84503b044ce5cd182dd0150892f3b0eff1350c4c5d7f5ca2066da594550 0.1s
+#3 extracting sha256:c3fba84503b044ce5cd182dd0150892f3b0eff1350c4c5d7f5ca2066da594550 0.2s done
+#3 DONE 2.2s
+
+#4 [api internal] load metadata for ghcr.io/astral-sh/uv:latest
+#4 ...
+
+#5 [api internal] load metadata for docker.io/library/python:3.11-slim
+#5 DONE 4.2s
+
+#4 [api internal] load metadata for ghcr.io/astral-sh/uv:latest
+#4 ERROR: failed to authorize: failed to fetch anonymous token: Get "https://ghcr.io/token?scope=repository%3Aastral-sh%2Fuv%3Apull&service=ghcr.io": EOF
+------
+ > [api internal] load metadata for ghcr.io/astral-sh/uv:latest:
+------
+failed to solve: failed to authorize: failed to fetch anonymous token: Get "https://ghcr.io/token?scope=repository%3Aastral-sh%2Fuv%3Apull&service=ghcr.io": EOF

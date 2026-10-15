@@ -1,0 +1,3 @@
+{"attempt":1,"elapsed_seconds":6.558396853506565e-05,"error_type":"ReadTimeout","locale":"us","prompt_version":"query-class-v1","query":"backpack","query_id":1,"retry":true,"split":"test"}
+{"attempt":2,"elapsed_seconds":4.091695882380009e-05,"error_type":"ReadTimeout","locale":"us","prompt_version":"query-class-v1","query":"backpack","query_id":1,"retry":true,"split":"test"}
+{"attempt":3,"elapsed_seconds":3.462505992501974e-05,"error_type":"ReadTimeout","locale":"us","prompt_version":"query-class-v1","query":"backpack","query_id":1,"retry":false,"split":"test"}

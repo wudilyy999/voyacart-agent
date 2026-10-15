@@ -1,0 +1,295 @@
+{
+  "case_id": "h1-dev-cost",
+  "split": "dev",
+  "mode": "snapshot",
+  "strategy": "current",
+  "repetition": 0,
+  "answer": "根据第一批历史展示记录（寄送目的地为中国）：\n\n- **商品ID**：P28183（对应默认规格 SKU：P28183-S1）\n- **到手价**：222元（222 CNY）\n- **运费**：26元（26 CNY）",
+  "checks": {
+    "facts": true,
+    "current_lookup": true,
+    "no_error": true
+  },
+  "passed": true,
+  "error": null,
+  "usage": [
+    {
+      "kind": "business",
+      "input_tokens": 10510,
+      "output_tokens": 418,
+      "elapsed_ms": 6757.123249932192,
+      "request_context": {
+        "system_estimated_tokens": 1059,
+        "state_estimated_tokens": 0,
+        "product_estimated_tokens": 17669,
+        "history_estimated_tokens": 4597,
+        "tool_schema_estimated_tokens": 788,
+        "reason": "buyer_request",
+        "visible_evidence_answer": false,
+        "recovery_attempt": 0
+      },
+      "prompt_cache": {
+        "model": "gemini-3.8-flash-high",
+        "response_model": "gemini-3.8-flash-high",
+        "response_model_matches": true,
+        "response_model_conflict": false,
+        "protocol_status": "valid",
+        "cache_mode": "passthrough",
+        "cache_policy": "static",
+        "cache_marker_count": 0,
+        "cache_reason": "passthrough",
+        "cache_retry_without_markers": false,
+        "cache_read_tokens": null,
+        "cache_write_tokens": null,
+        "cache_usage_invalid": false,
+        "reported_cost": null,
+        "prefix_comparison": "first_request",
+        "prefix_scope_known": true,
+        "prefix_system_hash": "57a976b516feb3d927b3dfaf4fa169d924305b1027fea32f636ded595b875f91",
+        "prefix_tools_hash": "eaf50ba1a4f32e7830f0d6123e31dfd59927f3f011b3088296a81d2b5ec349b0",
+        "prefix_message_count": 99,
+        "prefix_common_messages": null,
+        "prefix_common_message_bytes": null,
+        "prefix_first_changed_message": null,
+        "prefix_system_changed": null,
+        "prefix_tools_changed": null,
+        "prefix_parameters_changed": null
+      },
+      "model_execution": {
+        "identity": "gemini-3.8-flash-high|http://127.0.0.1:8917/v1/",
+        "requested_model": "gemini-3.8-flash-high",
+        "response_models": [
+          "gemini-3.8-flash-high"
+        ],
+        "response_model_matches": true,
+        "profile_id": null,
+        "profile_revision": null
+      },
+      "ttft_ms": null
+    },
+    {
+      "kind": "business",
+      "input_tokens": 11815,
+      "output_tokens": 252,
+      "elapsed_ms": 5979.673917056061,
+      "request_context": {
+        "system_estimated_tokens": 1059,
+        "state_estimated_tokens": 0,
+        "product_estimated_tokens": 19129,
+        "history_estimated_tokens": 4316,
+        "tool_schema_estimated_tokens": 788,
+        "reason": "lookup_followup",
+        "visible_evidence_answer": false,
+        "recovery_attempt": 0
+      },
+      "prompt_cache": {
+        "model": "gemini-3.8-flash-high",
+        "response_model": "gemini-3.8-flash-high",
+        "response_model_matches": true,
+        "response_model_conflict": false,
+        "protocol_status": "valid",
+        "cache_mode": "passthrough",
+        "cache_policy": "static",
+        "cache_marker_count": 0,
+        "cache_reason": "passthrough",
+        "cache_retry_without_markers": false,
+        "cache_read_tokens": null,
+        "cache_write_tokens": null,
+        "cache_usage_invalid": false,
+        "reported_cost": null,
+        "prefix_comparison": "append",
+        "prefix_scope_known": true,
+        "prefix_system_hash": "57a976b516feb3d927b3dfaf4fa169d924305b1027fea32f636ded595b875f91",
+        "prefix_tools_hash": "eaf50ba1a4f32e7830f0d6123e31dfd59927f3f011b3088296a81d2b5ec349b0",
+        "prefix_message_count": 101,
+        "prefix_common_messages": 99,
+        "prefix_common_message_bytes": 37104,
+        "prefix_first_changed_message": 99,
+        "prefix_system_changed": false,
+        "prefix_tools_changed": false,
+        "prefix_parameters_changed": false
+      },
+      "model_execution": {
+        "identity": "gemini-3.8-flash-high|http://127.0.0.1:8917/v1/",
+        "requested_model": "gemini-3.8-flash-high",
+        "response_models": [
+          "gemini-3.8-flash-high"
+        ],
+        "response_model_matches": true,
+        "profile_id": null,
+        "profile_revision": null
+      },
+      "ttft_ms": null
+    },
+    {
+      "kind": "business",
+      "input_tokens": 11937,
+      "output_tokens": 406,
+      "elapsed_ms": 6736.813792027533,
+      "request_context": {
+        "system_estimated_tokens": 1059,
+        "state_estimated_tokens": 0,
+        "product_estimated_tokens": 19446,
+        "history_estimated_tokens": 4316,
+        "tool_schema_estimated_tokens": 788,
+        "reason": "tool_followup",
+        "visible_evidence_answer": false,
+        "recovery_attempt": 0
+      },
+      "prompt_cache": {
+        "model": "gemini-3.8-flash-high",
+        "response_model": "gemini-3.8-flash-high",
+        "response_model_matches": true,
+        "response_model_conflict": false,
+        "protocol_status": "valid",
+        "cache_mode": "passthrough",
+        "cache_policy": "static",
+        "cache_marker_count": 0,
+        "cache_reason": "passthrough",
+        "cache_retry_without_markers": false,
+        "cache_read_tokens": null,
+        "cache_write_tokens": null,
+        "cache_usage_invalid": false,
+        "reported_cost": null,
+        "prefix_comparison": "append",
+        "prefix_scope_known": true,
+        "prefix_system_hash": "57a976b516feb3d927b3dfaf4fa169d924305b1027fea32f636ded595b875f91",
+        "prefix_tools_hash": "eaf50ba1a4f32e7830f0d6123e31dfd59927f3f011b3088296a81d2b5ec349b0",
+        "prefix_message_count": 103,
+        "prefix_common_messages": 101,
+        "prefix_common_message_bytes": 39872,
+        "prefix_first_changed_message": 101,
+        "prefix_system_changed": false,
+        "prefix_tools_changed": false,
+        "prefix_parameters_changed": false
+      },
+      "model_execution": {
+        "identity": "gemini-3.8-flash-high|http://127.0.0.1:8917/v1/",
+        "requested_model": "gemini-3.8-flash-high",
+        "response_models": [
+          "gemini-3.8-flash-high"
+        ],
+        "response_model_matches": true,
+        "profile_id": null,
+        "profile_revision": null
+      },
+      "ttft_ms": null
+    }
+  ],
+  "input_tokens": 34262,
+  "output_tokens": 1076,
+  "model_calls": 3,
+  "lookup_calls": 1,
+  "lookup_events": [
+    {
+      "ref": "",
+      "batch": 1,
+      "position": 0,
+      "product_id": "P28183",
+      "sku_id": "",
+      "fields": "all",
+      "offset": 0,
+      "limit": 5,
+      "field_offset": 0
+    }
+  ],
+  "context_diagnostics": [
+    {
+      "type": "prune",
+      "before_tokens": 55128,
+      "after_tokens": 9621,
+      "high_watermark": 6000,
+      "next_high_watermark": 6000,
+      "low_watermark": 6000,
+      "archived_results": 21,
+      "protected_results": 2,
+      "below_target": false,
+      "trigger": "pressure"
+    },
+    {
+      "type": "lookup",
+      "batch": 1,
+      "position": 0,
+      "offset": 0,
+      "limit": 5,
+      "field_offset": 0,
+      "has_reference": false,
+      "has_query": false,
+      "has_product": true,
+      "has_sku": false,
+      "status": "success",
+      "error_code": null,
+      "returned_products": 1,
+      "effective_limit": 5,
+      "fields_normalized": false,
+      "limit_capped": false,
+      "effective_batch": 1,
+      "batch_inferred_from_user": false,
+      "records": 1,
+      "estimated_tokens": 821,
+      "has_more": false,
+      "elapsed_ms": 0.8192089153453708
+    },
+    {
+      "type": "prune",
+      "before_tokens": 7712,
+      "after_tokens": 7712,
+      "high_watermark": 6000,
+      "next_high_watermark": 6000,
+      "low_watermark": 6000,
+      "archived_results": 0,
+      "protected_results": 3,
+      "below_target": false,
+      "trigger": "pressure"
+    },
+    {
+      "type": "prune",
+      "before_tokens": 7712,
+      "after_tokens": 7712,
+      "high_watermark": 6000,
+      "next_high_watermark": 6000,
+      "low_watermark": 6000,
+      "archived_results": 0,
+      "protected_results": 4,
+      "below_target": false,
+      "trigger": "pressure"
+    }
+  ],
+  "current_calls": 1,
+  "elapsed_ms": 20157,
+  "compactions": [],
+  "round_metrics": [
+    {
+      "elapsed_ms": 19520,
+      "compacted": false,
+      "model_calls": 3
+    }
+  ],
+  "compaction_metrics": [],
+  "final_context_estimated_tokens": 26353,
+  "last_compaction": {
+    "policy_version": "layered-v4",
+    "reason": "pressure",
+    "before_tokens": 13105,
+    "after_tokens": 13105,
+    "archived_results": 0,
+    "summary_changed": false,
+    "elapsed_ms": 3,
+    "status": "noop"
+  },
+  "final_product_observations": 15,
+  "final_product_duplicate_ratio": 0.33333333333333337,
+  "association_check": {
+    "applicable": false,
+    "status": "not_applicable"
+  },
+  "original_checks": {
+    "facts": true,
+    "current_lookup": true,
+    "no_error": true
+  },
+  "layer": "context",
+  "critical": true,
+  "title": "费用组成",
+  "evidence_trace": "traces/h1-dev-cost-current-0.jsonl"
+}

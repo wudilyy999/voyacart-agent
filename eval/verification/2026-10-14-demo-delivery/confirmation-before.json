@@ -1,0 +1,43 @@
+{
+  "confirmations": [
+    {
+      "confirmation_id": "c3dc4993261b4783a940f02074f876b3",
+      "operation_id": "operation-875e44bf55d04ca2a66d28a146ced69c",
+      "buyer_id": "pao-coder",
+      "session_id": "1106e227-f99b-4921-a0fc-5dbe2e3a409a",
+      "action": "create",
+      "payload": {
+        "items": [
+          {
+            "product_id": "P1013",
+            "sku_id": "P1013-S1",
+            "title": "BlackoutPro 3D 真丝遮光眼罩（豆沙色）",
+            "unit_price_minor": 8900,
+            "currency": "CNY",
+            "quantity": 1
+          }
+        ],
+        "shipping_address": {
+          "recipient_name": "演示收件人",
+          "country": "CN",
+          "state": "演示省",
+          "city": "演示市",
+          "address_line": "演示路1号（测试数据）",
+          "postal_code": "000000",
+          "phone": "00000000000"
+        },
+        "currency": "CNY",
+        "total_amount_minor": 8900,
+        "amount_scope": "merchandise_only",
+        "order_kind": "purchase_intent"
+      },
+      "snapshot_hash": "dff85c1f6509a1c961b8727f00dfaaf6076d7a14d52e75b4476d535896ba1254",
+      "expires_at": "2026-10-14T14:44:21.065009+00:00",
+      "status": "pending",
+      "result": null,
+      "created_at": "2026-10-14T14:39:21.069475+00:00",
+      "resolved_at": null,
+      "expired": false
+    }
+  ]
+}

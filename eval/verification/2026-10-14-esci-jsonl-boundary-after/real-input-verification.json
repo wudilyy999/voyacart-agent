@@ -1,0 +1,46 @@
+{
+  "default_harness_source_unchanged": true,
+  "external_http_attempts": 0,
+  "input_bytes_unchanged": true,
+  "input_fingerprints": {
+    "data/esci/query-class-v1.jsonl": "133a06412ae33ae5877a990c093173ab955411a4aab9846e1faeeb65d0c69d46db1553aca44b843aa97962c25eab9e3fbd268cb6df0ddf32e81ee32816dff086",
+    "eval/verification/2026-10-14-t2-input-plan/enrichment-inputs.jsonl": "cdf58b27b7feea3289d3ac91e74f0fd0f4856cb99705b9a6aa5ff01a86c628e906b55c4ff5224bee698868d0c19c13cb62ee483f8b21811548b8b54ef60d0b9a",
+    "eval/verification/2026-10-14-t2-input-plan/examples.jsonl": "992c2293dd4402a7f51f2aca20b920d55f28edadc63988f3ac4d1362556ae1d5ed52941675f85cf6300255278ee07fe8ff4ec339120f536c3e28845b1b319fdc",
+    "eval/verification/2026-10-14-t2-input-plan/products.jsonl": "eadc9cc3931683119935e9eee4b2d062b550dde65610480280669fd630c05b52538a7d14f304001389e366e09f5549aef47cfda8d02a9c4f767e23b37d718651"
+  },
+  "model_calls": 0,
+  "record_counts": {
+    "data/esci/query-class-v1.jsonl": 2784,
+    "eval/verification/2026-10-14-t2-input-plan/enrichment-inputs.jsonl": 15860,
+    "eval/verification/2026-10-14-t2-input-plan/examples.jsonl": 15977,
+    "eval/verification/2026-10-14-t2-input-plan/products.jsonl": 15860
+  },
+  "source_fingerprints": {
+    "eval/verification/2026-10-14-esci-jsonl-boundary-after/verify_real_jsonl.py": "7d559d92c8e6cb1fe25a3251a79083798389485d3658b8914f85fb3e301181a2190a1b5303cf179c14fa640fd6a5bd6c8f31c00bd4c82a3cb0beee62e8c11cc8",
+    "scripts/esci/finalize_catalog.py": "5957687b021f059b12eb6c5caa840878322aa4c2ad7e80e2dde5ed17f350fafd8ad2be74b42a11a6957758ff4060b9c1a4bcfced6d22a4fcbe208e9f148bd40a",
+    "scripts/esci/prepare.py": "1384c7d7efcdc7ba58a26c260bb0f2196f3b2c9ec7a54176c18317c4d6aef85f35ef3082e5583146f70712c619e1f7ad6e1fb7eb20e64dcc40d89bb15aa0aadd"
+  },
+  "status": "passed",
+  "unicode_separator_counts": {
+    "data/esci/query-class-v1.jsonl": {
+      "U+0085": 0,
+      "U+2028": 0,
+      "U+2029": 0
+    },
+    "eval/verification/2026-10-14-t2-input-plan/enrichment-inputs.jsonl": {
+      "U+0085": 0,
+      "U+2028": 0,
+      "U+2029": 0
+    },
+    "eval/verification/2026-10-14-t2-input-plan/examples.jsonl": {
+      "U+0085": 0,
+      "U+2028": 0,
+      "U+2029": 0
+    },
+    "eval/verification/2026-10-14-t2-input-plan/products.jsonl": {
+      "U+0085": 1,
+      "U+2028": 24,
+      "U+2029": 0
+    }
+  }
+}

@@ -1,0 +1,3 @@
+Method,Name,Error,Occurrences,First Seen,Last Seen
+AGUI,run_complete,RuntimeError('SERVER_RESTART'),4,2026-10-14T11:19:25Z,2026-10-14T11:19:49Z
+AGUI,run_complete,RuntimeError('ChunkedEncodingError:Response ended prematurely'),1,2026-10-14T11:19:48Z,2026-10-14T11:19:48Z

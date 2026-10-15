@@ -1,0 +1,17 @@
+{
+  "observed_at_utc": "2026-10-14T13:45:16.259590+00:00",
+  "operation": [
+    "docker",
+    "image",
+    "inspect",
+    "--format",
+    "{{.Id}} {{.Created}}",
+    "voyacart-runtime:r1-baseline"
+  ],
+  "image_tag": "voyacart-runtime:r1-baseline",
+  "image_id_hex": "ad2e274d9016ba6c033b9b87b9f5167a86a9386e7d90e7c7a547a50d09d0d3f9",
+  "created_utc": "2026-10-14T11:09:47.047601421Z",
+  "build_log_id_prefix": "ad2e274d9016",
+  "matches_build_log_prefix": true,
+  "limitations": "只读核对当前 tag；历史每轮 tag 未记录 image ID；未启动容器或重新构建"
+}

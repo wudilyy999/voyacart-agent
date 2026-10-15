@@ -1,0 +1,12 @@
+{
+  "reason": "用户将预分类候选池调整为 2,000 条试运行",
+  "exit_code": 130,
+  "call_counts": {
+    "cache_hits": 645,
+    "candidate_count": 12000,
+    "completed_calls": 301,
+    "failed_outputs": 0,
+    "model_calls": 303
+  },
+  "unsettled_calls": 2
+}

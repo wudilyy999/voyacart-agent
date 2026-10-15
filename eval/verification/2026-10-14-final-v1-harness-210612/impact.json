@@ -1,0 +1,24 @@
+{
+  "harness_changed": true,
+  "files": [
+    "app/application/harness/assertions.py",
+    "app/composition.py",
+    "app/infrastructure/ag_ui_journal.py",
+    "app/infrastructure/harness_middleware.py",
+    "app/infrastructure/persistence/sql/session_store.py",
+    "app/infrastructure/settings.py",
+    "pyproject.toml",
+    "scripts/eval/full_catalog_retrieval.py",
+    "scripts/eval/local_multilingual_embedding.py",
+    "scripts/eval/metrics.py",
+    "scripts/eval/run_esci.py",
+    "scripts/eval/run_product_recall.py",
+    "tests/test_model_runtime_counting.py",
+    "uv.lock"
+  ],
+  "required": [
+    "contracts",
+    "smoke"
+  ],
+  "release": "参数、策略或模型调整上线前需 release --require-benefit"
+}

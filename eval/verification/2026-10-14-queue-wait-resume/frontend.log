@@ -1,0 +1,15 @@
+
+> voyacart-frontend@0.3.0 test
+> vitest run --run tests/runRecovery.test.ts
+
+
+ RUN  v3.2.4 /private/tmp/voyacart-backend-frontend-20261014/frontend
+
+ ✓ tests/runRecovery.test.ts (25 tests) 693ms
+   ✓ 持久运行恢复（使用官方 AG-UI SDK） > 网络断流按cursor重连，丢弃重复和乱序帧，不重新POST模型  605ms
+
+ Test Files  1 passed (1)
+      Tests  25 passed (25)
+   Start at  17:37:27
+   Duration  1.03s (transform 60ms, setup 0ms, collect 155ms, tests 693ms, environment 0ms, prepare 39ms)
+

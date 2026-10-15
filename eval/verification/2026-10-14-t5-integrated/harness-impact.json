@@ -1,0 +1,12 @@
+{
+  "harness_changed": true,
+  "files": [
+    "app/composition.py",
+    "app/infrastructure/settings.py"
+  ],
+  "required": [
+    "contracts",
+    "smoke"
+  ],
+  "release": "参数、策略或模型调整上线前需 release --require-benefit"
+}

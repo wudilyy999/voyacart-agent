@@ -1,0 +1,12 @@
+{
+  "reason": "用户授权提高并发至 8，主动中断后从缓存续跑",
+  "exit_code": 130,
+  "call_counts": {
+    "cache_hits": 0,
+    "candidate_count": 12000,
+    "completed_calls": 276,
+    "failed_outputs": 0,
+    "model_calls": 278
+  },
+  "unsettled_calls": 2
+}

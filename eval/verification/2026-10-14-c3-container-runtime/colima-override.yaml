@@ -1,0 +1,10 @@
+services:
+  api:
+    environment:
+      OPENSSL_armcap: "0"
+  worker:
+    environment:
+      OPENSSL_armcap: "0"
+  automation-worker:
+    environment:
+      OPENSSL_armcap: "0"

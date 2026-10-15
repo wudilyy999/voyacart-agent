@@ -1,0 +1,9 @@
+Command: HOMEBREW_NO_AUTO_UPDATE=1 brew install node@22
+Exit code: 1
+Installed dependency: libuv 1.53.0
+Failure while installing ca-certificates:
+Error: undefined method '[]' for nil
+/opt/homebrew/Library/Homebrew/utils/bottles.rb:127:in 'Utils::Bottles.load_tab'
+/opt/homebrew/Library/Homebrew/formula_installer.rb:1520:in 'FormulaInstaller#pour'
+
+本文件摘录原始工具输出；完整下载进度未保存。

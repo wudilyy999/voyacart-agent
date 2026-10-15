@@ -1,0 +1,180 @@
+diff --git a/app/infrastructure/transient.py b/app/infrastructure/transient.py
+index ec8a7e6..1eb9ff3 100644
+--- a/app/infrastructure/transient.py
++++ b/app/infrastructure/transient.py
+@@ -3,9 +3,9 @@
+ 
+ 上游瞬时故障判定。模型层与编排层共用同一份判据，避免两处标记表各自漂移。
+ 
+-为什么按 message 特征匹配而不是按异常类型：OpenAI 兼容网关把限流写在 SSE 流中间时，
+-抛出的是笼统的 openai.APIError，类型上无法与真实业务错误区分，只能看文案；
+-同一套判据还要覆盖 httpx 超时与网关 5xx。
++优先按结构化 HTTP 状态码识别请求超时、限流和服务故障。
++OpenAI 兼容网关在 SSE 流中返回限流时，异常可能只有消息；
++缺少状态码时沿用文案判据，覆盖流内限流和连接超时。
+ """
+ from __future__ import annotations
+ 
+@@ -30,5 +30,8 @@ _TRANSIENT_ERROR_MARKERS = (
+ 
+ def is_transient_error(error: BaseException) -> bool:
+     """判断异常是否属于可重试的上游瞬时故障。"""
++    status_code = getattr(error, "status_code", None)
++    if status_code is not None:
++        return status_code in (408, 429) or 500 <= status_code < 600
+     message = str(error).lower()
+     return any(marker in message for marker in _TRANSIENT_ERROR_MARKERS)
+diff --git a/tests/test_model_runtime_counting.py b/tests/test_model_runtime_counting.py
+index 00488d2..983ff65 100644
+--- a/tests/test_model_runtime_counting.py
++++ b/tests/test_model_runtime_counting.py
+@@ -8,6 +8,7 @@ from types import SimpleNamespace
+ 
+ import httpx
+ import pytest
++from openai import APIStatusError
+ from agentscope.message import UserMsg
+ from agentscope.model import ChatResponse, ChatUsage
+ from agentscope.state import AgentState
+@@ -58,7 +59,8 @@ def response(payload, *, returned_model=None, structured=False):
+         'usage': {'prompt_tokens': 80, 'completion_tokens': 10, 'total_tokens': 90}})
+ 
+ 
+-async def test_profile_fallback_uses_own_credentials_window_reasoning_and_usage(tmp_path):
++@pytest.mark.parametrize('status_code', [408, 429, 500, 502, 503, 504])
++async def test_profile_fallback_uses_own_credentials_window_reasoning_and_usage(tmp_path, status_code):
+     fallback = profile('backup', context_size=64000, max_input_tokens=50000,
+                        reasoning_parameters={'reasoning_effort': 'low'})
+     runtime = profile(fallback=fallback)
+@@ -70,10 +72,12 @@ async def test_profile_fallback_uses_own_credentials_window_reasoning_and_usage(
+         data = json.loads(request.content)
+         requests.append((data, request.url.host, request.headers['authorization']))
+         if data['model'] == 'primary':
+-            return httpx.Response(429, json={'error': {'message': 'rate limit', 'type': 'rate_limit'}})
++            return httpx.Response(status_code, json={'detail': '注入的模型故障'})
+         assert groups['primary']._semaphore.locked() and groups['backup']._semaphore.locked()
+         return response(data)
+     model = build(tmp_path, runtime, throttle_factory=throttle)
++    model._max_transient_retries = 1
++    model._retry_base_seconds = 0
+     token = context_usage_sink.set(samples.append)
+     try:
+         for candidate in (model, model._fallback):
+@@ -81,12 +85,14 @@ async def test_profile_fallback_uses_own_credentials_window_reasoning_and_usage(
+         result = await model([UserMsg('buyer', '挑选轻便背包')])
+         assert model.context_size == 128000 and model._fallback.context_size == 64000
+         assert requests[0][1:] == ('primary.invalid', 'Bearer primary-fixture-key')
+-        assert requests[1][1:] == ('backup.invalid', 'Bearer backup-fixture-key')
++        assert [request[0]['model'] for request in requests] == ['primary', 'primary', 'backup']
++        assert requests[1][1:] == ('primary.invalid', 'Bearer primary-fixture-key')
++        assert requests[2][1:] == ('backup.invalid', 'Bearer backup-fixture-key')
+         assert requests[0][0]['enable_thinking'] is True
+         assert 'extra_body' not in requests[0][0]
+-        assert requests[1][0]['reasoning_effort'] == 'low' and 'enable_thinking' not in requests[1][0]
++        assert requests[2][0]['reasoning_effort'] == 'low' and 'enable_thinking' not in requests[2][0]
+         assert result.metadata['model_execution']['profile_id'] == 'backup'
+-        assert [s['model_execution']['requested_model'] for s in samples] == ['primary', 'backup']
++        assert [s['model_execution']['requested_model'] for s in samples] == ['primary', 'primary', 'backup']
+         assert samples[-1]['model_execution']['response_model_matches'] is True
+         assert not any(g._semaphore.locked() for g in groups.values())
+         assert runtime == original
+@@ -96,6 +102,52 @@ async def test_profile_fallback_uses_own_credentials_window_reasoning_and_usage(
+         await model._fallback.client.close()
+ 
+ 
++@pytest.mark.parametrize('status_code', [408, 429, 500, 502, 503, 504])
++async def test_http_status_retries_then_primary_succeeds_without_fallback(tmp_path, status_code):
++    model = build(tmp_path, profile(fallback=profile('backup')))
++    model._max_transient_retries = 1
++    model._retry_base_seconds = 0
++    requests = []
++    def handler(request):
++        payload = json.loads(request.content)
++        requests.append(payload['model'])
++        return httpx.Response(status_code, json={'detail': '注入的模型故障'}) if len(requests) == 1 else response(payload)
++    try:
++        for candidate in (model, model._fallback):
++            await mock_client(candidate, handler)
++        result = await model([UserMsg('buyer', '挑选轻便背包')])
++        assert requests == ['primary', 'primary']
++        assert result.metadata['model_execution']['profile_id'] == 'primary'
++        assert not model._throttle._semaphore.locked()
++        assert not model._fallback_throttle._semaphore.locked()
++    finally:
++        await model.client.close()
++        await model._fallback.client.close()
++
++
++@pytest.mark.parametrize('status_code', [400, 401, 403, 404, 422])
++async def test_nontransient_http_status_raises_without_retry_or_fallback(tmp_path, status_code):
++    model = build(tmp_path, profile(fallback=profile('backup')))
++    model._max_transient_retries = 1
++    model._retry_base_seconds = 0
++    requests = []
++    def handler(request):
++        requests.append(json.loads(request.content)['model'])
++        return httpx.Response(status_code, json={'detail': '注入的模型故障'})
++    try:
++        for candidate in (model, model._fallback):
++            await mock_client(candidate, handler)
++        with pytest.raises(APIStatusError) as error:
++            await model([UserMsg('buyer', '挑选轻便背包')])
++        assert error.value.status_code == status_code
++        assert requests == ['primary']
++        assert not model._throttle._semaphore.locked()
++        assert not model._fallback_throttle._semaphore.locked()
++    finally:
++        await model.client.close()
++        await model._fallback.client.close()
++
++
+ async def test_small_fallback_capacity_rejected_before_network(tmp_path):
+     runtime = profile(fallback=profile('backup', context_size=16000, max_input_tokens=16000))
+     model = build(tmp_path, runtime)
+diff --git a/tests/test_phase3.py b/tests/test_phase3.py
+index a6daea3..e2e22ca 100644
+--- a/tests/test_phase3.py
++++ b/tests/test_phase3.py
+@@ -6,7 +6,9 @@
+ import asyncio
+ import json
+ 
++import httpx
+ import pytest
++from openai import APIStatusError
+ from agentscope.credential import OpenAICredential
+ from agentscope.embedding import EmbeddingModelBase, EmbeddingResponse
+ from agentscope.message import TextBlock, ToolResultState
+@@ -174,9 +176,32 @@ class TestTransientRetryPolicy:
+             "429 Too Many Requests",
+             "Service Unavailable",
+             "Read timeout",
++            "Throttling.Concurrency",
+         ):
+             assert _is_transient(RuntimeError(message)), message
+ 
++    @pytest.mark.parametrize("status_code,expected", [
++        (408, True), (429, True), (500, True), (502, True), (503, True),
++        (504, True), (599, True), (400, False), (401, False), (403, False),
++        (404, False), (422, False),
++    ])
++    def test_structured_http_status_with_neutral_message(self, status_code, expected):
++        error = APIStatusError(
++            "注入的模型故障",
++            response=httpx.Response(status_code, request=httpx.Request("POST", "https://fixture.invalid/v1/chat/completions")),
++            body={"detail": "注入的模型故障"},
++        )
++        assert _is_transient(error) is expected
++
++    @pytest.mark.parametrize("status_code", [400, 401, 403, 404, 422])
++    def test_nontransient_http_status_takes_priority_over_message(self, status_code):
++        error = APIStatusError(
++            "timeout 429 rate limit",
++            response=httpx.Response(status_code, request=httpx.Request("POST", "https://fixture.invalid/v1/chat/completions")),
++            body={"detail": "timeout 429 rate limit"},
++        )
++        assert not _is_transient(error)
++
+     def test_business_errors_are_not_transient(self):
+         for message in (
+             "商品不存在：P9999",

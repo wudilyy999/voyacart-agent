@@ -1,0 +1,16 @@
+{
+  "model_calls": 0,
+  "test_count": 16,
+  "actual_catalog_complete": false,
+  "source_fingerprints": {
+    "scripts/esci/build_catalog.py": "75423600271914b6e873aac154d68926dee826bedc24f3e347f7123cd608cfa5afd1c56a721e1ed05ca9dd3240082980e14e9e956059be78f37d49ee3d49c31a",
+    "scripts/esci/catalog_records.py": "5f7624bfc4d40984536b43c8c307e223fa96a25d6cdf3dcaeb01d2016ba04c108cf155a9533d5d357c4c2f0f5bc8bc4a7af5dab2565e7504202abaaf6e86773b",
+    "scripts/esci/download.py": "61e4cc9f9ee636845db90d563117c4fe5ec9cca2404237e6f7285093bcd72de76b5dddd07e766a44130b66417e2d624c52c0d73c771bfb5bc9e32bb625e05159",
+    "scripts/esci/finalize_catalog.py": "f8c5f5256509d65957b0757bbb77a1d9df981c768f38bed87cd26ffc36471e058961a37ab40d7e71078e9ad0e18f65edddbaeb35eeb39ba16116a4677b9560d8",
+    "scripts/esci/prepare.py": "0969e95755ee64767d037c00aef164338e6a2ecb97c2199b5c94f659837e552f4987e8f2616d4e8f9997eb74bdabd8a6242e80cfaf360228e1d4a7d1de8be114",
+    "scripts/esci/test_build_catalog.py": "421553b357cee223924bf99c9c8b8d9e7edb5472146d7f177516d22c63aee9beda7a1b1131e5da55929f4922e41987404516574642fbf908842706227654d417",
+    "scripts/esci/test_catalog_records.py": "2906309fb15e550f807755df8383c79d72de646ce57fe80e233cf7dbee1a6d5f5b47af16848a60c43f50786a1bd624e6918367a8588a697d87aed4b181d05251",
+    "scripts/esci/test_finalize_catalog.py": "46c52bb5c5961e24eb768a440e65ad9a414be113ff838be405b8a31c418d90d5a17dd3dcff4d96ceacf5c54d87d3839954d6e4705a88841fccd036b24940f531",
+    "scripts/esci/test_prepare.py": "5c2a88b504bb6edd0ea5d55596bba0880da7458908c50782ea3aaeb8449b0b1af3453c02d7bf30288cf92866bd89b333b2ca6f0538605ed126ab1725bbfd6df4"
+  }
+}

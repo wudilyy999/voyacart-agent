@@ -1,0 +1,13 @@
+{
+  "baseline_commit": "b1d6f8ff1be7c5b7ac2c4b664767f16224739ed3",
+  "fingerprint_method": "blake2b",
+  "source_fingerprints": {
+    "app/presentation/ag_ui.py": "cff82b8b22986c4ee5f0b42efdf23053b4909a65c609ca0baea9b42ca8ec5e6c085254af7ca58ca3cbc3a4b51567b2e271041e9f16a8dbcfe86dda9c80614df1",
+    "frontend/src/lib/recoveringFetch.ts": "d8031418261d3fa1463789f167abc33dfcbf4d387386ec449f7ffaae7070b793dd929554d0340a6e2528bfd27fc48ebd47c8cb35c65e7c9b7b13b49b029690f4",
+    "tests/test_ag_ui_queue.py": "2ff3264663a1b97d3b8b7c49e310c6f5c29219ad75e39b2c92ccd6478433d7c5d306d2e04d9379d545f2c033e7e454579c7e88d8692109f40ce07d82dd540935",
+    "frontend/tests/runRecovery.test.ts": "969105d8c393e753ef13f8442c7b8c45d47bae69ee4ad5a6d3444e7e358e06b5283f92ebd0250b8aa9c5a0499863f762760cc33f5340e3810ff91e6b1d32c572"
+  },
+  "backend_tests": 27,
+  "frontend_full_tests": 249,
+  "frontend_recovery_tests": 25
+}

@@ -1,0 +1,52 @@
+{
+  "services": {
+    "api": {
+      "image": "voyacart-r2-embedding-20261014-runtime",
+      "environment": {
+        "OPENSSL_armcap": "0",
+        "LOCAL_EMBEDDING_FALLBACK": "1"
+      }
+    },
+    "worker": {
+      "image": "voyacart-r2-embedding-20261014-runtime",
+      "environment": {
+        "OPENSSL_armcap": "0",
+        "LOCAL_EMBEDDING_FALLBACK": "1"
+      }
+    },
+    "automation-worker": {
+      "image": "voyacart-r2-embedding-20261014-runtime",
+      "environment": {
+        "OPENSSL_armcap": "0",
+        "LOCAL_EMBEDDING_FALLBACK": "1"
+      }
+    },
+    "mock-llm": {
+      "image": "voyacart-r2-embedding-20261014-runtime",
+      "environment": {
+        "MOCK_FAULT_CONTROL": "1"
+      }
+    },
+    "mock-embedding": {
+      "image": "voyacart-r2-embedding-20261014-runtime",
+      "command": [
+        "uvicorn",
+        "--app-dir",
+        "/app/scripts/loadtest",
+        "mock_llm:app",
+        "--host",
+        "0.0.0.0",
+        "--port",
+        "8081"
+      ]
+    },
+    "nginx": {
+      "image": "voyacart-r2-embedding-20261014-frontend",
+      "build": {
+        "args": {
+          "NGINX_CONFIG": ".cache/r2/voyacart-r2-embedding-20261014.conf"
+        }
+      }
+    }
+  }
+}

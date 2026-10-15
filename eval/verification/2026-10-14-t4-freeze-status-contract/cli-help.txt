@@ -1,0 +1,19 @@
+usage: run_esci.py [-h] [--catalog CATALOG] [--dataset-dir DATASET_DIR]
+                   [--strategies {keyword_2gram,bm25,embedding_only,embedding_rerank,hybrid_only,hybrid_rerank} [{keyword_2gram,bm25,embedding_only,embedding_rerank,hybrid_only,hybrid_rerank} ...]]
+                   [--profile {dev,holdout}] [--frozen FROZEN]
+                   [--freeze-from FREEZE_FROM] [--index-dir INDEX_DIR]
+                   --output OUTPUT
+
+ESCI 评测：开发选策与参数冻结后，一次执行留出及中文派生集。
+
+options:
+  -h, --help            show this help message and exit
+  --catalog CATALOG
+  --dataset-dir DATASET_DIR
+  --strategies {keyword_2gram,bm25,embedding_only,embedding_rerank,hybrid_only,hybrid_rerank} [{keyword_2gram,bm25,embedding_only,embedding_rerank,hybrid_only,hybrid_rerank} ...]
+  --profile {dev,holdout}
+  --frozen FROZEN       留出档使用的完整开发参数清单
+  --freeze-from FREEZE_FROM
+                        从完整开发证据选策并写入 --output 指定的新清单文件
+  --index-dir INDEX_DIR
+  --output OUTPUT

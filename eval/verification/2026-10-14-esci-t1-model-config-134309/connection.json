@@ -1,0 +1,21 @@
+{
+  "checked_at": "2026-10-14T13:43:09.206997+08:00",
+  "provider": "1",
+  "model": "gemini-3.8-flash-high",
+  "env_permissions": "0o600",
+  "request": {
+    "model": "gemini-3.8-flash-high",
+    "temperature": 0,
+    "response_format": {
+      "type": "json_object"
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "请输出 JSON：{\"category\":\"旅行装备\"}"
+      }
+    ]
+  },
+  "http_status": 200,
+  "error_type": "JSONDecodeError"
+}

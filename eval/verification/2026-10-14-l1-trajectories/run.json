@@ -1,0 +1,348 @@
+{
+  "runId": "l1-order-run",
+  "threadId": "l1-order-session",
+  "status": "completed",
+  "cursor": 40,
+  "stopRequested": false,
+  "input": {
+    "threadId": "l1-order-session",
+    "runId": "l1-order-run",
+    "state": {},
+    "messages": [
+      {
+        "id": "l1-user",
+        "role": "user",
+        "content": "L1 轨迹检查：预算300元以内，找一个寄到中国的轻便背包并准备确认卡",
+        "runId": "l1-order-run"
+      }
+    ],
+    "tools": [],
+    "context": [],
+    "forwardedProps": {
+      "buyerId": "l1-review",
+      "locale": "zh-CN",
+      "currency": "CNY"
+    }
+  },
+  "messages": [
+    {
+      "id": "l1-user",
+      "role": "user",
+      "content": "L1 轨迹检查：预算300元以内，找一个寄到中国的轻便背包并准备确认卡",
+      "runId": "l1-order-run"
+    },
+    {
+      "id": "l1-order-run:final:answer",
+      "role": "assistant",
+      "content": "本轮已执行下单确认准备，请以确认卡显示的状态为准，核对规格、数量、地址与金额后自行批准。已检索旅行商品。请查看商品卡中的规格、库存与到手价，选择商品后可继续比较或准备订单确认。不同站点保留原币价格，预算筛选使用目标币种。请核对配送目的地、材质和数量。确认卡准备后，订单仍需用户点击批准才能创建。此回复用于检验流式传输、页面恢复和并发执行。本轮已执行下单确认准备，请以确认卡显示的状态为准，核对规格、数量、地址与金额后自行批准。已检索旅行商品。请查看商品卡中的规格、库存与到手价，选择商品后可继续比较或准备订单确认。不同站点保留原币价格，预算筛选使用目标币种。请核对配送目的地、材质和数量。确认卡准备后",
+      "runId": "l1-order-run"
+    }
+  ],
+  "state": {
+    "products": [
+      {
+        "product_id": "P1013",
+        "title": "BlackoutPro 3D 真丝遮光眼罩",
+        "brand": "BlackoutPro",
+        "category": "旅行装备",
+        "origin_country": "CN",
+        "price_major": 89.0,
+        "currency": "CNY",
+        "source_price_major": 89.0,
+        "source_currency": "CNY",
+        "highlights": [
+          "材质：6A 桑蚕丝，无塑料"
+        ],
+        "skus": [
+          {
+            "sku_id": "P1013-S1",
+            "spec": "豆沙色",
+            "price_major": 89.0,
+            "currency": "CNY",
+            "stock": 90
+          }
+        ],
+        "score": 0.096,
+        "source_platform": "amazon",
+        "canonical_product_id": "CAN-LEGACY-012",
+        "material_tags": [
+          "合成聚合物"
+        ],
+        "weight_kg": 1.23,
+        "description": "真丝 遮光眼罩 3D立体 不压眼 天然材质 无塑料 睡眠 飞机 高铁",
+        "rating_summary": {
+          "average": 4.3,
+          "review_count": 162
+        },
+        "rating_is_live": false,
+        "ships_to": [
+          "CN",
+          "US",
+          "EU"
+        ],
+        "dimensions_cm": {
+          "height": 4,
+          "length": 24,
+          "width": 20
+        },
+        "updated_at": "2026-08-01",
+        "default_sku_id": "P1013-S1",
+        "image_url": null,
+        "image_kind": "placeholder",
+        "image_alt": "BlackoutPro 3D 真丝遮光眼罩：暂无商品图片",
+        "landed_price": {
+          "ship_to": "CN",
+          "subtotal_major": 89.0,
+          "freight_major": 25.0,
+          "tariff_major": 0.0,
+          "tariff_rate": 0.09,
+          "de_minimis_applied": true,
+          "landed_total_major": 114.0,
+          "currency": "CNY"
+        },
+        "external_product_id": "amazon-P1013"
+      },
+      {
+        "product_id": "P31009",
+        "title": "Lingua Almohada cervical de viaje — Peso: 160 g · ML-03-2",
+        "brand": "Lingua",
+        "category": "旅行装备",
+        "origin_country": "CN",
+        "price_major": 176.01,
+        "currency": "CNY",
+        "source_price_major": 24.79,
+        "source_currency": "USD",
+        "highlights": [
+          "Peso：160 g",
+          "Material：Polímero sintético"
+        ],
+        "skus": [
+          {
+            "sku_id": "P31009-S1",
+            "spec": "Negro / Peso: 160 g",
+            "price_major": 24.79,
+            "currency": "USD",
+            "stock": 22
+          },
+          {
+            "sku_id": "P31009-S2",
+            "spec": "Gris / Peso: 160 g",
+            "price_major": 25.78,
+            "currency": "USD",
+            "stock": 23
+          }
+        ],
+        "score": 0.0855,
+        "source_platform": "etsy",
+        "canonical_product_id": "CAN-ML-03-2",
+        "material_tags": [
+          "合成聚合物"
+        ],
+        "weight_kg": 0.16,
+        "description": "Apoya el cuello al viajar sentado. Peso: 160 g. Material: Polímero sintético. Modelo: ML-03-2.",
+        "rating_summary": {
+          "average": 4.1,
+          "review_count": 34
+        },
+        "rating_is_live": false,
+        "ships_to": [
+          "CN",
+          "US",
+          "EU",
+          "JP",
+          "SG"
+        ],
+        "dimensions_cm": {
+          "length": 30,
+          "width": 25,
+          "height": 10
+        },
+        "updated_at": "2026-09-18",
+        "default_sku_id": "P31009-S1",
+        "image_url": null,
+        "image_kind": "placeholder",
+        "image_alt": "Lingua Almohada cervical de viaje — Peso: 160 g · ML-03-2：暂无商品图片",
+        "landed_price": {
+          "ship_to": "CN",
+          "subtotal_major": 176.01,
+          "freight_major": 25.0,
+          "tariff_major": 0.0,
+          "tariff_rate": 0.09,
+          "de_minimis_applied": true,
+          "landed_total_major": 201.01,
+          "currency": "CNY"
+        },
+        "source_language": "es",
+        "source_locale": "es-ES",
+        "external_product_id": "demo-etsy-es-ES-P31009",
+        "data_provenance": "synthetic"
+      },
+      {
+        "product_id": "P41009",
+        "title": "Lingua Almohada cervical de viaje — Peso: 160 g · ML-03-2",
+        "brand": "Lingua",
+        "category": "旅行装备",
+        "origin_country": "CN",
+        "price_major": 179.01,
+        "currency": "CNY",
+        "source_price_major": 22.95,
+        "source_currency": "EUR",
+        "highlights": [
+          "Peso：160 g",
+          "Material：Polímero sintético"
+        ],
+        "skus": [
+          {
+            "sku_id": "P41009-S1",
+            "spec": "Negro / Peso: 160 g",
+            "price_major": 22.95,
+            "currency": "EUR",
+            "stock": 22
+          },
+          {
+            "sku_id": "P41009-S2",
+            "spec": "Gris / Peso: 160 g",
+            "price_major": 23.87,
+            "currency": "EUR",
+            "stock": 23
+          }
+        ],
+        "score": 0.0855,
+        "source_platform": "walmart",
+        "canonical_product_id": "CAN-ML-03-2",
+        "material_tags": [
+          "合成聚合物"
+        ],
+        "weight_kg": 0.16,
+        "description": "Apoya el cuello al viajar sentado. Peso: 160 g. Material: Polímero sintético. Modelo: ML-03-2.",
+        "rating_summary": {
+          "average": 4.1,
+          "review_count": 34
+        },
+        "rating_is_live": false,
+        "ships_to": [
+          "CN",
+          "US",
+          "EU",
+          "JP",
+          "SG"
+        ],
+        "dimensions_cm": {
+          "length": 30,
+          "width": 25,
+          "height": 10
+        },
+        "updated_at": "2026-09-18",
+        "default_sku_id": "P41009-S1",
+        "image_url": null,
+        "image_kind": "placeholder",
+        "image_alt": "Lingua Almohada cervical de viaje — Peso: 160 g · ML-03-2：暂无商品图片",
+        "landed_price": {
+          "ship_to": "CN",
+          "subtotal_major": 179.01,
+          "freight_major": 25.0,
+          "tariff_major": 0.0,
+          "tariff_rate": 0.09,
+          "de_minimis_applied": true,
+          "landed_total_major": 204.01,
+          "currency": "CNY"
+        },
+        "source_language": "es",
+        "source_locale": "es-MX",
+        "external_product_id": "demo-walmart-es-MX-P41009",
+        "data_provenance": "synthetic"
+      }
+    ],
+    "shoppingForm": null,
+    "confirmations": [
+      {
+        "confirmation_id": "e5409b3ab1fe474199a05bfcdedd5f93",
+        "operation_id": "operation-aa58c43524e24c288b1efbc93ded05ba",
+        "buyer_id": "l1-review",
+        "session_id": "l1-order-session",
+        "action": "create",
+        "payload": {
+          "items": [
+            {
+              "product_id": "P1013",
+              "sku_id": "P1013-S1",
+              "title": "BlackoutPro 3D 真丝遮光眼罩（豆沙色）",
+              "unit_price_minor": 8900,
+              "currency": "CNY",
+              "quantity": 1
+            }
+          ],
+          "shipping_address": {
+            "recipient_name": "压测收件人",
+            "country": "CN",
+            "state": "测试省",
+            "city": "测试市",
+            "address_line": "测试路1号",
+            "postal_code": "000000",
+            "phone": "00000000000"
+          },
+          "currency": "CNY",
+          "total_amount_minor": 8900,
+          "amount_scope": "merchandise_only",
+          "order_kind": "purchase_intent"
+        },
+        "snapshot_hash": "8b27e22627c76127bc4d7856490dcf492a32dd312c5a898276be35591a48f3e1",
+        "expires_at": "2026-10-14T10:27:22.599257+00:00",
+        "status": "pending",
+        "result": null,
+        "created_at": "2026-10-14T10:22:22.600045+00:00",
+        "resolved_at": null,
+        "expired": false
+      }
+    ],
+    "toolApprovals": [],
+    "skillUsages": [],
+    "searchCompleted": true,
+    "status": "completed",
+    "progress": [
+      {
+        "id": "l1-order-run:tool:call_order_path_6f712f19a68d45308688e09853156276",
+        "label": "检索商品",
+        "status": "completed"
+      },
+      {
+        "id": "l1-order-run:tool:call_confirmation_c85f113436504ad9af1680a969a913da",
+        "label": "准备订单意向",
+        "status": "completed"
+      }
+    ],
+    "activities": [
+      {
+        "id": "l1-order-run:tool:call_order_path_6f712f19a68d45308688e09853156276",
+        "runId": "l1-order-run",
+        "kind": "tool",
+        "label": "检索商品",
+        "status": "completed",
+        "sequence": 1,
+        "startedAt": 1791973342486,
+        "finishedAt": 1791973342520,
+        "source": "agentscope",
+        "toolCallId": "l1-order-run:tool:call_order_path_6f712f19a68d45308688e09853156276",
+        "toolName": "product_search_tool",
+        "inputSummary": "配送国家 CN · 币种 CNY · 预算上限 300 · 最多 3 件",
+        "resultSummary": "检索返回 3 件商品。"
+      },
+      {
+        "id": "l1-order-run:tool:call_confirmation_c85f113436504ad9af1680a969a913da",
+        "runId": "l1-order-run",
+        "kind": "tool",
+        "label": "准备订单意向",
+        "status": "completed",
+        "sequence": 2,
+        "startedAt": 1791973342590,
+        "finishedAt": 1791973342605,
+        "source": "agentscope",
+        "toolCallId": "l1-order-run:tool:call_confirmation_c85f113436504ad9af1680a969a913da",
+        "toolName": "create_order_tool",
+        "inputSummary": "1 件；具体规格和地址见确认卡",
+        "resultSummary": "已准备确认卡，等待你的决定。"
+      }
+    ]
+  },
+  "updatedAt": 1791973343090
+}

@@ -1,0 +1,68 @@
+{
+  "checked_at": "2026-10-14T15:25:48.329362+08:00",
+  "api_http_status": 200,
+  "api_health": {
+    "status": "ok",
+    "model": "gemini-3.8-flash-high",
+    "runtime": {
+      "app_source_sha256": "9c3d244e6547bdb6e65598a64ebac0d7f661e86bff6ef08c1d36ff3931e835b3"
+    },
+    "database": "sqlite",
+    "trade_database": "sqlite",
+    "redis": "ok",
+    "semantic_cache": true,
+    "queue": "enabled",
+    "queue_depth": 0,
+    "prompt_registry": {
+      "deployment_id": "pd-fc5d6ef0030d419387d3458bba680cb5",
+      "baseline": "p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548",
+      "candidate": null,
+      "candidate_bps": 0,
+      "experiment": "bootstrap",
+      "action": "bootstrap",
+      "created_at": "2026-10-14T07:22:59.737366+00:00",
+      "pinned_version": null,
+      "effective_version": {
+        "version_id": "p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548",
+        "content_sha256": "08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548",
+        "yaml_sha256": "6d79cbb8346d6d79e90dbb4bfe79a9ba7d1046c632eaf642f51ea977f838a3a5",
+        "toolset_sha256": "3c66916bcf7d6783842e2c33903df14275f75b785a06f4e519fd928a175dc64c",
+        "created_at": "2026-10-14T07:22:59.736748+00:00"
+      }
+    }
+  },
+  "observation_seconds": 75.14459387492388,
+  "frontend_http_status": 200,
+  "frontend_proxy_http_status": 200,
+  "frontend_proxy_health": {
+    "status": "ok",
+    "model": "gemini-3.8-flash-high",
+    "runtime": {
+      "app_source_sha256": "9c3d244e6547bdb6e65598a64ebac0d7f661e86bff6ef08c1d36ff3931e835b3"
+    },
+    "database": "sqlite",
+    "trade_database": "sqlite",
+    "redis": "ok",
+    "semantic_cache": true,
+    "queue": "enabled",
+    "queue_depth": 0,
+    "prompt_registry": {
+      "deployment_id": "pd-fc5d6ef0030d419387d3458bba680cb5",
+      "baseline": "p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548",
+      "candidate": null,
+      "candidate_bps": 0,
+      "experiment": "bootstrap",
+      "action": "bootstrap",
+      "created_at": "2026-10-14T07:22:59.737366+00:00",
+      "pinned_version": null,
+      "effective_version": {
+        "version_id": "p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548",
+        "content_sha256": "08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548",
+        "yaml_sha256": "6d79cbb8346d6d79e90dbb4bfe79a9ba7d1046c632eaf642f51ea977f838a3a5",
+        "toolset_sha256": "3c66916bcf7d6783842e2c33903df14275f75b785a06f4e519fd928a175dc64c",
+        "created_at": "2026-10-14T07:22:59.736748+00:00"
+      }
+    }
+  },
+  "checks_passed": true
+}

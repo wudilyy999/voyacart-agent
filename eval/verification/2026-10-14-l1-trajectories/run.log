@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/private/tmp/voyacart-local-fallback-20261014/eval/verification/2026-10-14-l1-trajectories/verify.py", line 30, in <module>
+    assert not run['state']['orders']
+               ~~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'orders'

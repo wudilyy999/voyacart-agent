@@ -1,0 +1,15 @@
+{
+  "base_commit": "339dab86af52f34e8b73f1e0285df82ddd3f46fb",
+  "source_fingerprints_blake2b": {
+    "scripts/loadtest/client.py": "190158a51301148812e0dbf5de985bdafa30e78354868eac0cdedce8eaf3cefd757a17725a9c66b52ead140c967fbee9c4fefab038fcd02fa273e3812b9e3288",
+    "scripts/loadtest/locustfile.py": "678c07998c79730cad1361a1feb9a2730e4779f43dcb1512468e91c8b49f8dea0351f1a13ef98ae025e79bad72f9fb454b1cc680f9f53fb5d62b8defd3487d55",
+    "scripts/loadtest/analyze.py": "0c4d654d4f6f046fbf4fd05cdaa02cd67177252865097320b8d06f16e00473bbcb7b5e3d427656716529650fe630e574912400654da91ca79e74df3431397e62",
+    "scripts/loadtest/hotspot.py": "e28587e1cd202ef3e4cc1440bf733d4f5204c68586edf33cf9bd26c97f62e268fb9db5d3e1f59f8d81477eaba2f95cc45b7a93bec18c1165248a894afdd1f066",
+    "tests/test_agui_loadtest.py": "c5a2e9d650841604cf69b414d78f72d80792b17b8257289ef70c6b5d78a4f981bc415189f2f931d9033dc5543c5c220b2df78048d409311a9361b29421a46529"
+  },
+  "related_tests": 21,
+  "collected_tests": 1990,
+  "production_code_changed": false,
+  "full_backend_repeated": false,
+  "format_only_change": "Removed extra blank line at end of client.py; measured-client.py preserves measured content."
+}

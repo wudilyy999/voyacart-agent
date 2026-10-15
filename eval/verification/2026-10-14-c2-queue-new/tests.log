@@ -1,0 +1,85 @@
+...F.                                                                    [100%]
+=================================== FAILURES ===================================
+___________ test_cancel_from_other_runtime_and_before_worker_starts ____________
+
+journal = <app.infrastructure.ag_ui_journal.AGUIJournal object at 0x1152b5cd0>
+run_id = 'r1', status = 'cancelled'
+
+    async def wait_status(journal, run_id, status):
+        async with asyncio.timeout(3):
+            while (await journal.run(run_id, "b1"))["status"] != status:
+>               await asyncio.sleep(0.01)
+
+tests/test_ag_ui_journal.py:60: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+delay = 0.01, result = None
+
+    async def sleep(delay, result=None):
+        """Coroutine that completes after a given time (in seconds)."""
+        if delay <= 0:
+            await __sleep0()
+            return result
+    
+        loop = events.get_running_loop()
+        future = loop.create_future()
+        h = loop.call_later(delay,
+                            futures._set_result_unless_cancelled,
+                            future, result)
+        try:
+>           return await future
+                   ^^^^^^^^^^^^
+E           asyncio.exceptions.CancelledError
+
+/Users/liyuyang/.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/asyncio/tasks.py:649: CancelledError
+
+The above exception was the direct cause of the following exception:
+
+tmp_path = PosixPath('/private/var/folders/j5/9jbbktk13f7bdrtssrkz58tw0000gn/T/pytest-of-liyuyang/pytest-56/test_cancel_from_other_runtime0')
+real_redis = <redis.asyncio.client.Redis(<redis.asyncio.connection.ConnectionPool(<redis.asyncio.connection.UnixDomainSocketConnection(decode_responses=True,path=/tmp/gbx-redis-ph7pl3c9/redis.sock)>)>)>
+
+    async def test_cancel_from_other_runtime_and_before_worker_starts(tmp_path, real_redis):
+        api, worker, queue = await runtime_pair(tmp_path, real_redis, block=True)
+        request = RunAgentInput.model_validate(body())
+        await api.submit(request, parse_intent(request))
+        stopping = asyncio.Event()
+        runner = consume(queue, lambda task: execute_ag_ui_task(task, worker), stopping)
+        await asyncio.wait_for(worker.orchestrator.entered.wait(), 3)
+        await api.cancel('r1','b1')
+>       await wait_status(api.journal, 'r1', 'cancelled')
+
+tests/test_ag_ui_queue.py:98: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_ag_ui_journal.py:58: in wait_status
+    async with asyncio.timeout(3):
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <Timeout [expired]>
+exc_type = <class 'asyncio.exceptions.CancelledError'>
+exc_val = CancelledError(), exc_tb = <traceback object at 0x11521e000>
+
+    async def __aexit__(
+        self,
+        exc_type: Optional[Type[BaseException]],
+        exc_val: Optional[BaseException],
+        exc_tb: Optional[TracebackType],
+    ) -> Optional[bool]:
+        assert self._state in (_State.ENTERED, _State.EXPIRING)
+    
+        if self._timeout_handler is not None:
+            self._timeout_handler.cancel()
+            self._timeout_handler = None
+    
+        if self._state is _State.EXPIRING:
+            self._state = _State.EXPIRED
+    
+            if self._task.uncancel() <= self._cancelling and exc_type is exceptions.CancelledError:
+                # Since there are no new cancel requests, we're
+                # handling this.
+>               raise TimeoutError from exc_val
+E               TimeoutError
+
+/Users/liyuyang/.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/asyncio/timeouts.py:115: TimeoutError
+=========================== short test summary info ============================
+FAILED tests/test_ag_ui_queue.py::test_cancel_from_other_runtime_and_before_worker_starts
+1 failed, 4 passed in 9.41s

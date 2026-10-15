@@ -1,0 +1,42 @@
+{
+  "requests": 85,
+  "successful": 85,
+  "errors": 0,
+  "error_rate": 0.0,
+  "error_codes": {},
+  "reconnections": 7,
+  "observed_seconds": 55.42196297645569,
+  "successful_runs_per_second": 1.533688008057557,
+  "latency_ms": {
+    "first_event_ms": {
+      "samples": 85,
+      "p50": 153.793792007491,
+      "p95": 1231.9808329921216,
+      "p99": 1549.3023749440908
+    },
+    "first_token_ms": {
+      "samples": 85,
+      "p50": 2499.120332999155,
+      "p95": 3885.8215840300545,
+      "p99": 4424.993458087556
+    },
+    "complete_ms": {
+      "samples": 85,
+      "p50": 11640.942958067171,
+      "p95": 12934.45470801089,
+      "p99": 13578.05000001099
+    }
+  },
+  "source": "runs.csv",
+  "latency_scope": "all observed runs; missing times excluded",
+  "users": 32,
+  "sqlite_lock_retries": {
+    "voyacart-r1-matrix-worker-2": 0,
+    "voyacart-r1-matrix-nginx-1": 0,
+    "voyacart-r1-matrix-api-1": 0,
+    "voyacart-r1-matrix-worker-1": 0,
+    "voyacart-r1-matrix-qdrant-1": 0,
+    "voyacart-r1-matrix-mock-llm-1": 0,
+    "voyacart-r1-matrix-redis-1": 0
+  }
+}

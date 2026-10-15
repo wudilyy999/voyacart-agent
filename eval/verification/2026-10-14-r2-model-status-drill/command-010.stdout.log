@@ -1,0 +1,1 @@
+{"fault":{"model":"mock-primary","status":503,"requests":-1},"requests":{"mock-primary":{"503":4},"mock-fallback":{"200":2}}}

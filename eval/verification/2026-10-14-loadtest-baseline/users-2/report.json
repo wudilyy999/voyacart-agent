@@ -1,0 +1,32 @@
+{
+  "requests": 5,
+  "successful": 5,
+  "errors": 0,
+  "error_rate": 0.0,
+  "error_codes": {},
+  "reconnections": 0,
+  "observed_seconds": 55.20427417755127,
+  "successful_runs_per_second": 0.09057269703281856,
+  "latency_ms": {
+    "first_event_ms": {
+      "samples": 5,
+      "p50": 63.55120800435543,
+      "p95": 273.9275840576738,
+      "p99": 273.9275840576738
+    },
+    "first_token_ms": {
+      "samples": 5,
+      "p50": 2269.4904999807477,
+      "p95": 4067.297709058039,
+      "p99": 4067.297709058039
+    },
+    "complete_ms": {
+      "samples": 5,
+      "p50": 11851.794124930166,
+      "p95": 13631.508124992251,
+      "p99": 13631.508124992251
+    }
+  },
+  "source": "runs.csv",
+  "latency_scope": "all observed runs; missing times excluded"
+}

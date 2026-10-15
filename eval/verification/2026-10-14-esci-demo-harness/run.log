@@ -1,0 +1,2 @@
+.venv/bin/python -m scripts.eval.harness run --suite eval/harness/v1/suite.json --profile smoke --strategies current,candidate --output eval/verification/2026-10-14-esci-demo-harness/run
+HTML: /private/tmp/voyacart-local-fallback-20261014/eval/verification/2026-10-14-esci-demo-harness/run/report.html

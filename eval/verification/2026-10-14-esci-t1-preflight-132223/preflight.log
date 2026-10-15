@@ -1,0 +1,16 @@
+main 与 origin/main：7f29c08
+初始工作区：干净
+GitHub 账号：wudilyy999
+Git 提交邮箱：3483820747@qq.com
+开放 PR：0
+.env：缺失
+LLM_BASE_URL：未设置
+LLM_API_KEY：未设置
+LLM_MODEL：未设置
+LLM_MAX_CONCURRENCY：未设置
+首次依赖探测：
+Using CPython 3.11.16
+Creating virtual environment at: .venv
+Traceback (most recent call last):
+  File "<stdin>", line 3, in <module>
+ModuleNotFoundError: No module named 'dotenv'

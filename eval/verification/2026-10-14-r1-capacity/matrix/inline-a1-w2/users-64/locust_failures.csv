@@ -1,0 +1,4 @@
+Method,Name,Error,Occurrences,First Seen,Last Seen
+AGUI,run_complete,RuntimeError('AGENT_ERROR'),49,2026-10-14T11:33:32Z,2026-10-14T11:33:48Z
+AGUI,run_complete,RuntimeError('SERVER_RESTART'),8,2026-10-14T11:33:32Z,2026-10-14T11:33:59Z
+AGUI,run_complete,RuntimeError('http_500'),48,2026-10-14T11:33:48Z,2026-10-14T11:34:06Z

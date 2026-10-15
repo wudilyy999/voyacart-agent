@@ -1,0 +1,5 @@
+Method,Name,Error,Occurrences,First Seen,Last Seen
+AGUI,run_complete,RuntimeError('GreenletExit:'),1,2026-10-14T13:21:39Z,2026-10-14T13:21:39Z
+AGUI,run_complete,RuntimeError('AGENT_ERROR'),17,2026-10-14T13:21:09Z,2026-10-14T13:21:32Z
+AGUI,run_complete,RuntimeError('SERVER_RESTART'),101,2026-10-14T13:21:17Z,2026-10-14T13:21:48Z
+AGUI,run_complete,RuntimeError('http_500'),104,2026-10-14T13:21:00Z,2026-10-14T13:21:55Z

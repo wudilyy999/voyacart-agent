@@ -1,0 +1,57 @@
+{
+  "head": "a6bb2d7bfda9b2f8bd4b1f6f320056fa14490d8f",
+  "make_exit_code": 0,
+  "verify_exit_code": 0,
+  "verify": {
+    "passed": true,
+    "reasons": [],
+    "report": "/private/tmp/voyacart-local-fallback-20261014/eval/verification/2026-10-14-final-v1-harness-210612/run/report.html"
+  },
+  "contracts": {
+    "tests": 869,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "exit_code": 0,
+    "missing_test_modules": [],
+    "passed": true,
+    "passed_count": 869,
+    "elapsed_ms": 15615.97945902031
+  },
+  "scenario_strategy_rows": 12,
+  "passed_rows": 12,
+  "model_request_count": 31,
+  "model_request_trace_count": 31,
+  "model_response_trace_count": 31,
+  "complete_usage_count": 31,
+  "unknown_usage_count": 0,
+  "input_tokens": 342700,
+  "output_tokens": 10054,
+  "actual_fee": null,
+  "fee_evidence": "供应商响应未提供实际计费金额；套件定价估算不作为账单",
+  "source_stable": true,
+  "current_source_matches_run": true,
+  "source_archive_files_verified": 373,
+  "duration_seconds": 238.63146941701416,
+  "request_count_by_case_strategy": {
+    "h1-dev-cost/current": 3,
+    "h1-dev-cost/candidate": 2,
+    "agent-sku/current": 4,
+    "agent-sku/candidate": 4,
+    "agent-approval/current": 5,
+    "agent-approval/candidate": 5,
+    "h1-dev-sku/current": 1,
+    "h1-dev-sku/candidate": 1,
+    "h1-dev-budget/current": 1,
+    "h1-dev-budget/candidate": 1,
+    "h1-dev-stock/current": 2,
+    "h1-dev-stock/candidate": 2
+  },
+  "failed_rows": [],
+  "feature_overrides": {
+    "LOCAL_EMBEDDING_FALLBACK": "0",
+    "AGUI_QUEUE_ENABLED": "0",
+    "AGUI_DELTA_COALESCE_MS": "0",
+    "SEQUENCING_PERSISTENCE_ENABLED": "0"
+  }
+}

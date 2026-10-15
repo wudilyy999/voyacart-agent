@@ -1,0 +1,41 @@
+{
+  "crosslingual": {
+    "reason": "derived_from_holdout_requires_frozen_parameters",
+    "status": "NOT_EXECUTED"
+  },
+  "default_strategy": {
+    "status": "NOT_SELECTED"
+  },
+  "holdout": {
+    "status": "NOT_EXECUTED"
+  },
+  "llm_calls": 0,
+  "metric_definitions": {
+    "category": "查询类目用于报告，全库及硬约束检索不传类目",
+    "constraints": "应为空用例独立统计空结果准确率，其余用例统计Recall@5、Precision@5",
+    "gains": {
+      "C": 0.01,
+      "E": 1.0,
+      "I": 0.0,
+      "S": 0.1
+    },
+    "judged_at_10": "前10条去重返回结果中有人工标注的比例，分母为实际返回数",
+    "latency": "复用固定查询向量后的检索耗时，查询编码耗时单独记录"
+  },
+  "parameters": {
+    "constraints_top_k": 5,
+    "full_catalog_top_k": 50,
+    "recall_candidates": 32,
+    "rrf_k": 60,
+    "rrf_weights": [
+      2,
+      1.0
+    ],
+    "strategies": [
+      "embedding_only"
+    ]
+  },
+  "samples": [],
+  "split": "holdout",
+  "status": "FAILED"
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="1" failures="0" skipped="0" tests="1" time="2.284" timestamp="2026-10-14T13:51:25.672625+08:00" hostname="liyuyangdeMacBook-Air.local"><testcase classname="" name="tests.test_queue_api" time="0.000"><error message="collection failure">tests/test_queue_api.py:19: in &lt;module&gt;
+    from app.presentation import server
+app/presentation/server.py:363: in &lt;module&gt;
+    app = build_app()
+          ^^^^^^^^^^^
+app/presentation/server.py:106: in build_app
+    settings_origins = build_container_origins()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^
+app/presentation/server.py:360: in build_container_origins
+    return load_settings().cors_origins
+           ^^^^^^^^^^^^^^^
+app/infrastructure/settings.py:156: in load_settings
+    raise RuntimeError(
+E   RuntimeError: 未配置 LLM_API_KEY，无法启动。请通过环境变量注入（推荐）：export LLM_API_KEY=&lt;你的密钥&gt;；或在项目根目录创建本地 .env 文件（参考 .env.example，该文件已被 gitignore，不会入库）。</error></testcase></testsuite></testsuites>

@@ -1,0 +1,39 @@
+/private/tmp/voyacart-local-fallback-20261014/app/infrastructure/embedding/local_multilingual.py:33: UserWarning: The model sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 now uses mean pooling instead of CLS embedding. In order to preserve the previous behaviour, consider either pinning fastembed version to 0.5.1 or using `add_custom_model` functionality.
+  self.model = TextEmbedding(model_name, cache_dir=str(cache_dir), threads=4, local_files_only=local_files_only)
+远端向量召回不可用，尝试降级召回：embedding 服务不可用
+远端向量召回不可用，尝试降级召回：embedding 服务不可用
+远端向量召回不可用，尝试降级召回：embedding 服务不可用
+远端向量召回不可用，尝试降级召回：embedding 服务不可用
+远端向量召回不可用，尝试降级召回：embedding 服务不可用
+远端向量召回不可用，尝试降级召回：embedding 服务不可用
+远端向量召回不可用，尝试降级召回：embedding 服务不可用
+远端向量召回不可用，尝试降级召回：embedding 服务不可用
+远端向量召回不可用，尝试降级召回：embedding 服务不可用
+远端向量召回不可用，尝试降级召回：embedding 服务不可用
+远端向量召回不可用，尝试降级召回：embedding 服务不可用
+远端向量召回不可用，尝试降级召回：embedding 服务不可用
+远端向量召回不可用，尝试降级召回：embedding 服务不可用
+远端向量召回不可用，尝试降级召回：embedding 服务不可用
+远端向量召回不可用，尝试降级召回：embedding 服务不可用
+远端向量召回不可用，尝试降级召回：embedding 服务不可用
+远端向量召回不可用，尝试降级召回：embedding 服务不可用
+远端向量召回不可用，尝试降级召回：embedding 服务不可用
+远端向量召回不可用，尝试降级召回：embedding 服务不可用
+远端向量召回不可用，尝试降级召回：embedding 服务不可用
+远端向量召回不可用，尝试降级召回：embedding 服务不可用
+远端向量召回不可用，尝试降级召回：embedding 服务不可用
+远端向量召回不可用，尝试降级召回：embedding 服务不可用
+远端向量召回不可用，尝试降级召回：embedding 服务不可用
+远端向量召回不可用，尝试降级召回：embedding 服务不可用
+远端向量召回不可用，尝试降级召回：embedding 服务不可用
+远端向量召回不可用，尝试降级召回：embedding 服务不可用
+远端向量召回不可用，尝试降级召回：embedding 服务不可用
+远端向量召回不可用，尝试降级召回：embedding 服务不可用
+远端向量召回不可用，尝试降级召回：embedding 服务不可用
+{
+  "index_seconds": 2.120308708981611,
+  "queries": 30,
+  "p50_seconds": 0.007616916438564658,
+  "p95_seconds": 0.009454000042751431,
+  "concurrent_long_texts": 4
+}

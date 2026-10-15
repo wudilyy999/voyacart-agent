@@ -1,0 +1,10 @@
+{
+  "llm_model": "mock-chat",
+  "llm_base_url": "http://voyacart-load-mock:8081/v1",
+  "llm_max_concurrency": 2,
+  "llm_min_interval_seconds": 1.0,
+  "database_url": "sqlite+aiosqlite:////app/data/voyacart.db",
+  "redis_url": "",
+  "queue_enabled": true,
+  "data_dir": "/app/data"
+}

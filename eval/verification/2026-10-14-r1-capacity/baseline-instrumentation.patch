@@ -1,0 +1,37 @@
+--- baseline/app/infrastructure/ag_ui_journal.py
++++ instrumented/app/infrastructure/ag_ui_journal.py
+@@ -7,6 +7,7 @@
+ from contextlib import asynccontextmanager
+ import hashlib
+ import json
++import logging
+ from pathlib import Path
+ import time
+ from typing import Any
+@@ -16,6 +17,8 @@
+ from app.domain.learning import PROCESSOR_VERSION, canonical, digest
+ from app.infrastructure.learning_store import LEARNING_SCHEMA, job_identity, terminal_source
+ from app.infrastructure.tool_product_view import tool_product_view
++
++logger = logging.getLogger(__name__)
+ 
+ 
+ class JournalConflict(ValueError):
+@@ -102,6 +105,7 @@
+                     if (not any(marker in str(err).lower() for marker in ("locked", "busy"))
+                             or attempt == 19 or time.monotonic() >= deadline):
+                         raise
++                    logger.warning("sqlite_lock_retry component=agui_initialize attempt=%d", attempt + 1)
+                     await asyncio.sleep(min(0.05, max(0, deadline - time.monotonic())))
+ 
+     @asynccontextmanager
+--- baseline/app/infrastructure/persistence/sql/repositories.py
++++ instrumented/app/infrastructure/persistence/sql/repositories.py
+@@ -81,6 +81,7 @@
+                     except sqlite3.OperationalError as err:
+                         if "locked" not in str(err).lower() or attempt == 3:
+                             raise
++                        logger.warning("sqlite_lock_retry component=wal_initialize attempt=%d", attempt + 1)
+                         await asyncio.sleep(0.05 * (2 ** attempt))
+             dbapi_conn.run_async(configure)
+ 

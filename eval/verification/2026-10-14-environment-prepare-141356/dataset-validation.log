@@ -1,0 +1,5 @@
+2026-10-14 14:22:33,556 | WARNING | _approx_token_chunker:__init__:109 - Passing ``chunk_size``, ``overlap`` to ApproxTokenChunker directly is deprecated, use ApproxTokenChunker.Parameters instead.
+eval/product_recall.jsonl：67 条
+eval/category_recall.jsonl：22 条
+
+标注集自检通过

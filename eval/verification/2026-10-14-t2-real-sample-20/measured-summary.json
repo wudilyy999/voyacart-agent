@@ -1,0 +1,54 @@
+{
+  "billing_amount": null,
+  "billing_status": "unknown_not_reported_by_gateway",
+  "failed_samples": [
+    {
+      "asin": "0825459656",
+      "error_type": "JSONDecodeError",
+      "locale": "es",
+      "markdown_fence": true
+    }
+  ],
+  "gateway_reported_batch_usage": {
+    "completion_tokens": {
+      "batch_total": 16213,
+      "reported_requests": 20,
+      "status": "reported_for_all_requests"
+    },
+    "prompt_tokens": {
+      "batch_total": 5516,
+      "reported_requests": 20,
+      "status": "reported_for_all_requests"
+    },
+    "total_tokens": {
+      "batch_total": 21729,
+      "reported_requests": 20,
+      "status": "reported_for_all_requests"
+    }
+  },
+  "gateway_usage_fields": [
+    "completion_tokens",
+    "completion_tokens_details",
+    "prompt_tokens",
+    "total_tokens"
+  ],
+  "http_statuses": {
+    "200": 20
+  },
+  "latency_seconds": {
+    "count": 20,
+    "max": 82.23622641689144,
+    "mean": 21.33774370008614,
+    "min": 4.818636624957435,
+    "p50": 9.648207082995214,
+    "p95": 70.12999708391726,
+    "percentile_method": "nearest_rank",
+    "scope": "从HTTP请求发起到收到响应；不含网关节流等待"
+  },
+  "model_calls": 20,
+  "outcomes": {
+    "failed": 1,
+    "ok": 19
+  },
+  "scope": "仅首次20件真实小批；不外推全量，不推算价格或总体账单"
+}

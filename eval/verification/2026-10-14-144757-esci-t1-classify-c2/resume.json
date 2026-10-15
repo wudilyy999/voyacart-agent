@@ -1,0 +1,9 @@
+{
+  "resumed_at": "2026-10-14T14:53:33.986993+08:00",
+  "authorization": "用户明确选择降到并发 2 从缓存续跑",
+  "starting_cache_count": 645,
+  "max_concurrency": 2,
+  "min_interval_seconds": 1.0,
+  "previous_evidence": "eval/verification/2026-10-14-141010-esci-t1-classify-c8",
+  "run_log_while_running": "/tmp/voyacart-2026-10-14-144757-esci-t1-classify-c2.log"
+}

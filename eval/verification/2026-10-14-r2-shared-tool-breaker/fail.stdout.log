@@ -1,0 +1,1 @@
+{"phase": "fail", "pid": 4653, "observed_at": 1791985463.9190102, "handler_calls": 3, "handler_observed_status": ["closed", "closed", "closed"], "results": ["error", "error", "error"], "status": "open", "redis_state": {"failures": 3, "opened_at": 1791985463.918179, "half_open": 0}}

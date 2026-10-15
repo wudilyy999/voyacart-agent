@@ -1,0 +1,1414 @@
+{
+  "scenario": "worker",
+  "passed": true,
+  "details": {
+    "calls_before_kill": {
+      "fault": {
+        "model": "mock-primary",
+        "status": 429,
+        "requests": 0
+      },
+      "requests": {
+        "mock-primary": {
+          "200": 2
+        }
+      }
+    },
+    "killed_at": 1791978698.7851489,
+    "lease_until": 1791978726.5860906,
+    "recovered_at_server": 1791978726.832,
+    "recovery_after_lease_seconds": 0.2459094524383545,
+    "redelivery_status": {
+      "payload_fingerprint": "f46f6ebc422db7fe589fd3baf416c9a24efc1d139bcbfd88ae20f738fc9d5b10",
+      "deliveries": 2,
+      "message_id": "1791978695845-0",
+      "task_id": "agui:r2-worker-599dce0b2a0940888654c02b4f69f008",
+      "state": "done",
+      "stream": "voyacart:intents",
+      "terminal_at": 1791978757.5787,
+      "final_text": "",
+      "error": "",
+      "task": {
+        "ag_ui_input": {
+          "state": {},
+          "messages": [
+            {
+              "id": "r2-worker-599dce0b2a0940888654c02b4f69f008-user",
+              "role": "user",
+              "content": "预算300元以内，找一个寄到中国的轻便背包"
+            }
+          ],
+          "runId": "r2-worker-599dce0b2a0940888654c02b4f69f008",
+          "tools": {},
+          "forwardedProps": {
+            "locale": "zh-CN",
+            "buyerId": "r2-worker-599dce0b2a0940888654c02b4f69f008",
+            "currency": "CNY"
+          },
+          "context": {},
+          "threadId": "r2-worker-599dce0b2a0940888654c02b4f69f008"
+        },
+        "buyer_id": "r2-worker-599dce0b2a0940888654c02b4f69f008",
+        "task_id": "agui:r2-worker-599dce0b2a0940888654c02b4f69f008",
+        "traceparent": "",
+        "locale": "zh-CN",
+        "currency": "CNY",
+        "enqueued_at": "2026-10-14T11:51:35.845386+00:00",
+        "priority": 0,
+        "raw_query": "预算300元以内，找一个寄到中国的轻便背包",
+        "tracestate": "",
+        "shopping_session_id": "r2-worker-599dce0b2a0940888654c02b4f69f008",
+        "request_id": ""
+      }
+    },
+    "calls_after_redelivery": {
+      "fault": {
+        "model": "mock-primary",
+        "status": 429,
+        "requests": 0
+      },
+      "requests": {
+        "mock-primary": {
+          "200": 2
+        }
+      }
+    },
+    "run": {
+      "run_id": "r2-worker-599dce0b2a0940888654c02b4f69f008",
+      "buyer": "r2-worker-599dce0b2a0940888654c02b4f69f008",
+      "records": [
+        {
+          "id": "r2-worker-599dce0b2a0940888654c02b4f69f008:1",
+          "event": {
+            "type": "RUN_STARTED",
+            "threadId": "r2-worker-599dce0b2a0940888654c02b4f69f008",
+            "runId": "r2-worker-599dce0b2a0940888654c02b4f69f008"
+          },
+          "observed_at": 1791978696.300767
+        },
+        {
+          "id": "r2-worker-599dce0b2a0940888654c02b4f69f008:2",
+          "event": {
+            "type": "STATE_SNAPSHOT",
+            "snapshot": {
+              "products": [],
+              "shoppingForm": null,
+              "confirmations": [],
+              "toolApprovals": [],
+              "skillUsages": [],
+              "searchCompleted": false,
+              "status": "queued",
+              "progress": [],
+              "activities": []
+            }
+          },
+          "observed_at": 1791978696.3007832
+        },
+        {
+          "id": "r2-worker-599dce0b2a0940888654c02b4f69f008:3",
+          "event": {
+            "type": "STATE_SNAPSHOT",
+            "snapshot": {
+              "products": [],
+              "shoppingForm": null,
+              "confirmations": [],
+              "toolApprovals": [],
+              "skillUsages": [],
+              "searchCompleted": false,
+              "status": "queued",
+              "progress": [],
+              "activities": []
+            }
+          },
+          "observed_at": 1791978696.303413
+        },
+        {
+          "id": "r2-worker-599dce0b2a0940888654c02b4f69f008:4",
+          "event": {
+            "type": "STATE_SNAPSHOT",
+            "snapshot": {
+              "products": [],
+              "shoppingForm": null,
+              "confirmations": [],
+              "toolApprovals": [],
+              "skillUsages": [],
+              "searchCompleted": false,
+              "status": "running",
+              "progress": [],
+              "activities": []
+            }
+          },
+          "observed_at": 1791978696.3676789
+        },
+        {
+          "id": "r2-worker-599dce0b2a0940888654c02b4f69f008:5",
+          "event": {
+            "type": "TOOL_CALL_START",
+            "toolCallId": "r2-worker-599dce0b2a0940888654c02b4f69f008:tool:call_search_e8b216723f004b97a5728f883e3770f8",
+            "toolCallName": "product_search_tool"
+          },
+          "observed_at": 1791978697.586211
+        },
+        {
+          "id": "r2-worker-599dce0b2a0940888654c02b4f69f008:6",
+          "event": {
+            "type": "CUSTOM",
+            "name": "activity.upsert",
+            "value": {
+              "id": "r2-worker-599dce0b2a0940888654c02b4f69f008:tool:call_search_e8b216723f004b97a5728f883e3770f8",
+              "runId": "r2-worker-599dce0b2a0940888654c02b4f69f008",
+              "kind": "tool",
+              "label": "检索商品",
+              "status": "preparing",
+              "sequence": 1,
+              "startedAt": 1791978697832,
+              "finishedAt": null,
+              "source": "agentscope",
+              "toolCallId": "r2-worker-599dce0b2a0940888654c02b4f69f008:tool:call_search_e8b216723f004b97a5728f883e3770f8",
+              "toolName": "product_search_tool"
+            }
+          },
+          "observed_at": 1791978697.586232
+        },
+        {
+          "id": "r2-worker-599dce0b2a0940888654c02b4f69f008:7",
+          "event": {
+            "type": "TOOL_CALL_ARGS",
+            "toolCallId": "r2-worker-599dce0b2a0940888654c02b4f69f008:tool:call_search_e8b216723f004b97a5728f883e3770f8",
+            "delta": "{\"normalized_query\": \"旅行 背包\", \"category\": \"旅行装备\", \"ship_to\": \"CN\", \"target_currency\": \"CNY\", \"top_k\": 3, \"price_max_major\": 300}"
+          },
+          "observed_at": 1791978697.586247
+        },
+        {
+          "id": "r2-worker-599dce0b2a0940888654c02b4f69f008:8",
+          "event": {
+            "type": "TOOL_CALL_END",
+            "toolCallId": "r2-worker-599dce0b2a0940888654c02b4f69f008:tool:call_search_e8b216723f004b97a5728f883e3770f8"
+          },
+          "observed_at": 1791978697.5862699
+        },
+        {
+          "id": "r2-worker-599dce0b2a0940888654c02b4f69f008:9",
+          "event": {
+            "type": "CUSTOM",
+            "name": "activity.upsert",
+            "value": {
+              "id": "r2-worker-599dce0b2a0940888654c02b4f69f008:tool:call_search_e8b216723f004b97a5728f883e3770f8",
+              "runId": "r2-worker-599dce0b2a0940888654c02b4f69f008",
+              "kind": "tool",
+              "label": "检索商品",
+              "status": "preparing",
+              "sequence": 1,
+              "startedAt": 1791978697832,
+              "finishedAt": null,
+              "source": "agentscope",
+              "toolCallId": "r2-worker-599dce0b2a0940888654c02b4f69f008:tool:call_search_e8b216723f004b97a5728f883e3770f8",
+              "toolName": "product_search_tool",
+              "inputSummary": "配送国家 CN · 币种 CNY · 预算上限 300 · 最多 3 件"
+            }
+          },
+          "observed_at": 1791978697.586283
+        },
+        {
+          "id": "r2-worker-599dce0b2a0940888654c02b4f69f008:10",
+          "event": {
+            "type": "CUSTOM",
+            "name": "activity.upsert",
+            "value": {
+              "id": "r2-worker-599dce0b2a0940888654c02b4f69f008:tool:call_search_e8b216723f004b97a5728f883e3770f8",
+              "runId": "r2-worker-599dce0b2a0940888654c02b4f69f008",
+              "kind": "tool",
+              "label": "检索商品",
+              "status": "running",
+              "sequence": 1,
+              "startedAt": 1791978697832,
+              "finishedAt": null,
+              "source": "agentscope",
+              "toolCallId": "r2-worker-599dce0b2a0940888654c02b4f69f008:tool:call_search_e8b216723f004b97a5728f883e3770f8",
+              "toolName": "product_search_tool",
+              "inputSummary": "配送国家 CN · 币种 CNY · 预算上限 300 · 最多 3 件"
+            }
+          },
+          "observed_at": 1791978697.596063
+        },
+        {
+          "id": "r2-worker-599dce0b2a0940888654c02b4f69f008:11",
+          "event": {
+            "type": "STATE_SNAPSHOT",
+            "snapshot": {
+              "products": [],
+              "shoppingForm": null,
+              "confirmations": [],
+              "toolApprovals": [],
+              "skillUsages": [],
+              "searchCompleted": false,
+              "status": "running",
+              "progress": [
+                {
+                  "id": "r2-worker-599dce0b2a0940888654c02b4f69f008:tool:call_search_e8b216723f004b97a5728f883e3770f8",
+                  "label": "检索商品",
+                  "status": "running"
+                }
+              ],
+              "activities": [
+                {
+                  "id": "r2-worker-599dce0b2a0940888654c02b4f69f008:tool:call_search_e8b216723f004b97a5728f883e3770f8",
+                  "runId": "r2-worker-599dce0b2a0940888654c02b4f69f008",
+                  "kind": "tool",
+                  "label": "检索商品",
+                  "status": "running",
+                  "sequence": 1,
+                  "startedAt": 1791978697832,
+                  "finishedAt": null,
+                  "source": "agentscope",
+                  "toolCallId": "r2-worker-599dce0b2a0940888654c02b4f69f008:tool:call_search_e8b216723f004b97a5728f883e3770f8",
+                  "toolName": "product_search_tool",
+                  "inputSummary": "配送国家 CN · 币种 CNY · 预算上限 300 · 最多 3 件"
+                }
+              ]
+            }
+          },
+          "observed_at": 1791978697.596079
+        },
+        {
+          "id": "r2-worker-599dce0b2a0940888654c02b4f69f008:12",
+          "event": {
+            "type": "STATE_SNAPSHOT",
+            "snapshot": {
+              "products": [
+                {
+                  "product_id": "P1013",
+                  "title": "BlackoutPro 3D 真丝遮光眼罩",
+                  "brand": "BlackoutPro",
+                  "category": "旅行装备",
+                  "origin_country": "CN",
+                  "price_major": 89.0,
+                  "currency": "CNY",
+                  "source_price_major": 89.0,
+                  "source_currency": "CNY",
+                  "highlights": [
+                    "材质：6A 桑蚕丝，无塑料"
+                  ],
+                  "skus": [
+                    {
+                      "sku_id": "P1013-S1",
+                      "spec": "豆沙色",
+                      "price_major": 89.0,
+                      "currency": "CNY",
+                      "stock": 90
+                    }
+                  ],
+                  "score": 0.096,
+                  "source_platform": "amazon",
+                  "canonical_product_id": "CAN-LEGACY-012",
+                  "material_tags": [
+                    "合成聚合物"
+                  ],
+                  "weight_kg": 1.23,
+                  "description": "真丝 遮光眼罩 3D立体 不压眼 天然材质 无塑料 睡眠 飞机 高铁",
+                  "rating_summary": {
+                    "average": 4.3,
+                    "review_count": 162
+                  },
+                  "rating_is_live": false,
+                  "ships_to": [
+                    "CN",
+                    "US",
+                    "EU"
+                  ],
+                  "dimensions_cm": {
+                    "height": 4,
+                    "length": 24,
+                    "width": 20
+                  },
+                  "updated_at": "2026-08-01",
+                  "default_sku_id": "P1013-S1",
+                  "image_url": null,
+                  "image_kind": "placeholder",
+                  "image_alt": "BlackoutPro 3D 真丝遮光眼罩：暂无商品图片",
+                  "landed_price": {
+                    "ship_to": "CN",
+                    "subtotal_major": 89.0,
+                    "freight_major": 25.0,
+                    "tariff_major": 0.0,
+                    "tariff_rate": 0.09,
+                    "de_minimis_applied": true,
+                    "landed_total_major": 114.0,
+                    "currency": "CNY"
+                  },
+                  "external_product_id": "amazon-P1013"
+                },
+                {
+                  "product_id": "P41009",
+                  "title": "Lingua Almohada cervical de viaje — Peso: 160 g · ML-03-2",
+                  "brand": "Lingua",
+                  "category": "旅行装备",
+                  "origin_country": "CN",
+                  "price_major": 179.01,
+                  "currency": "CNY",
+                  "source_price_major": 22.95,
+                  "source_currency": "EUR",
+                  "highlights": [
+                    "Peso：160 g",
+                    "Material：Polímero sintético"
+                  ],
+                  "skus": [
+                    {
+                      "sku_id": "P41009-S1",
+                      "spec": "Negro / Peso: 160 g",
+                      "price_major": 22.95,
+                      "currency": "EUR",
+                      "stock": 22
+                    },
+                    {
+                      "sku_id": "P41009-S2",
+                      "spec": "Gris / Peso: 160 g",
+                      "price_major": 23.87,
+                      "currency": "EUR",
+                      "stock": 23
+                    }
+                  ],
+                  "score": 0.0855,
+                  "source_platform": "walmart",
+                  "canonical_product_id": "CAN-ML-03-2",
+                  "material_tags": [
+                    "合成聚合物"
+                  ],
+                  "weight_kg": 0.16,
+                  "description": "Apoya el cuello al viajar sentado. Peso: 160 g. Material: Polímero sintético. Modelo: ML-03-2.",
+                  "rating_summary": {
+                    "average": 4.1,
+                    "review_count": 34
+                  },
+                  "rating_is_live": false,
+                  "ships_to": [
+                    "CN",
+                    "US",
+                    "EU",
+                    "JP",
+                    "SG"
+                  ],
+                  "dimensions_cm": {
+                    "length": 30,
+                    "width": 25,
+                    "height": 10
+                  },
+                  "updated_at": "2026-09-18",
+                  "default_sku_id": "P41009-S1",
+                  "image_url": null,
+                  "image_kind": "placeholder",
+                  "image_alt": "Lingua Almohada cervical de viaje — Peso: 160 g · ML-03-2：暂无商品图片",
+                  "landed_price": {
+                    "ship_to": "CN",
+                    "subtotal_major": 179.01,
+                    "freight_major": 25.0,
+                    "tariff_major": 0.0,
+                    "tariff_rate": 0.09,
+                    "de_minimis_applied": true,
+                    "landed_total_major": 204.01,
+                    "currency": "CNY"
+                  },
+                  "source_language": "es",
+                  "source_locale": "es-MX",
+                  "external_product_id": "demo-walmart-es-MX-P41009",
+                  "data_provenance": "synthetic"
+                },
+                {
+                  "product_id": "P31009",
+                  "title": "Lingua Almohada cervical de viaje — Peso: 160 g · ML-03-2",
+                  "brand": "Lingua",
+                  "category": "旅行装备",
+                  "origin_country": "CN",
+                  "price_major": 176.01,
+                  "currency": "CNY",
+                  "source_price_major": 24.79,
+                  "source_currency": "USD",
+                  "highlights": [
+                    "Peso：160 g",
+                    "Material：Polímero sintético"
+                  ],
+                  "skus": [
+                    {
+                      "sku_id": "P31009-S1",
+                      "spec": "Negro / Peso: 160 g",
+                      "price_major": 24.79,
+                      "currency": "USD",
+                      "stock": 22
+                    },
+                    {
+                      "sku_id": "P31009-S2",
+                      "spec": "Gris / Peso: 160 g",
+                      "price_major": 25.78,
+                      "currency": "USD",
+                      "stock": 23
+                    }
+                  ],
+                  "score": 0.0855,
+                  "source_platform": "etsy",
+                  "canonical_product_id": "CAN-ML-03-2",
+                  "material_tags": [
+                    "合成聚合物"
+                  ],
+                  "weight_kg": 0.16,
+                  "description": "Apoya el cuello al viajar sentado. Peso: 160 g. Material: Polímero sintético. Modelo: ML-03-2.",
+                  "rating_summary": {
+                    "average": 4.1,
+                    "review_count": 34
+                  },
+                  "rating_is_live": false,
+                  "ships_to": [
+                    "CN",
+                    "US",
+                    "EU",
+                    "JP",
+                    "SG"
+                  ],
+                  "dimensions_cm": {
+                    "length": 30,
+                    "width": 25,
+                    "height": 10
+                  },
+                  "updated_at": "2026-09-18",
+                  "default_sku_id": "P31009-S1",
+                  "image_url": null,
+                  "image_kind": "placeholder",
+                  "image_alt": "Lingua Almohada cervical de viaje — Peso: 160 g · ML-03-2：暂无商品图片",
+                  "landed_price": {
+                    "ship_to": "CN",
+                    "subtotal_major": 176.01,
+                    "freight_major": 25.0,
+                    "tariff_major": 0.0,
+                    "tariff_rate": 0.09,
+                    "de_minimis_applied": true,
+                    "landed_total_major": 201.01,
+                    "currency": "CNY"
+                  },
+                  "source_language": "es",
+                  "source_locale": "es-ES",
+                  "external_product_id": "demo-etsy-es-ES-P31009",
+                  "data_provenance": "synthetic"
+                }
+              ],
+              "shoppingForm": null,
+              "confirmations": [],
+              "toolApprovals": [],
+              "skillUsages": [],
+              "searchCompleted": true,
+              "status": "running",
+              "progress": [
+                {
+                  "id": "r2-worker-599dce0b2a0940888654c02b4f69f008:tool:call_search_e8b216723f004b97a5728f883e3770f8",
+                  "label": "检索商品",
+                  "status": "running"
+                }
+              ],
+              "activities": [
+                {
+                  "id": "r2-worker-599dce0b2a0940888654c02b4f69f008:tool:call_search_e8b216723f004b97a5728f883e3770f8",
+                  "runId": "r2-worker-599dce0b2a0940888654c02b4f69f008",
+                  "kind": "tool",
+                  "label": "检索商品",
+                  "status": "running",
+                  "sequence": 1,
+                  "startedAt": 1791978697832,
+                  "finishedAt": null,
+                  "source": "agentscope",
+                  "toolCallId": "r2-worker-599dce0b2a0940888654c02b4f69f008:tool:call_search_e8b216723f004b97a5728f883e3770f8",
+                  "toolName": "product_search_tool",
+                  "inputSummary": "配送国家 CN · 币种 CNY · 预算上限 300 · 最多 3 件"
+                }
+              ]
+            }
+          },
+          "observed_at": 1791978697.622391
+        },
+        {
+          "id": "r2-worker-599dce0b2a0940888654c02b4f69f008:13",
+          "event": {
+            "type": "TOOL_CALL_RESULT",
+            "messageId": "r2-worker-599dce0b2a0940888654c02b4f69f008:result:call_search_e8b216723f004b97a5728f883e3770f8",
+            "toolCallId": "r2-worker-599dce0b2a0940888654c02b4f69f008:tool:call_search_e8b216723f004b97a5728f883e3770f8",
+            "content": "{\"hits\": [{\"product_id\": \"P1013\", \"title\": \"BlackoutPro 3D 真丝遮光眼罩\", \"brand\": \"BlackoutPro\", \"category\": \"旅行装备\", \"origin_country\": \"CN\", \"price_major\": 89.0, \"currency\": \"CNY\", \"source_price_major\": 89.0, \"source_currency\": \"CNY\", \"highlights\": [\"材质：6A 桑蚕丝，无塑料\"], \"skus\": [{\"sku_id\": \"P1013-S1\", \"spec\": \"豆沙色\", \"price_major\": 89.0, \"currency\": \"CNY\", \"stock\": 90}], \"score\": 0.096, \"source_platform\": \"amazon\", \"canonical_product_id\": \"CAN-LEGACY-012\", \"material_tags\": [\"合成聚合物\"], \"weight_kg\": 1.23, \"description\": \"真丝 遮光眼罩 3D立体 不压眼 天然材质 无塑料 睡眠 飞机 高铁\", \"rating_summary\": {\"average\": 4.3, \"review_count\": 162}, \"rating_is_live\": false, \"ships_to\": [\"CN\", \"US\", \"EU\"], \"dimensions_cm\": {\"height\": 4, \"length\": 24, \"width\": 20}, \"updated_at\": \"2026-08-01\", \"default_sku_id\": \"P1013-S1\", \"image_kind\": \"placeholder\", \"image_alt\": \"BlackoutPro 3D 真丝遮光眼罩：暂无商品图片\", \"landed_price\": {\"ship_to\": \"CN\", \"subtotal_major\": 89.0, \"freight_major\": 25.0, \"tariff_major\": 0.0, \"tariff_rate\": 0.09, \"de_minimis_applied\": true, \"landed_total_major\": 114.0, \"currency\": \"CNY\"}, \"external_product_id\": \"amazon-P1013\"}, {\"product_id\": \"P41009\", \"title\": \"Lingua Almohada cervical de viaje — Peso: 160 g · ML-03-2\", \"brand\": \"Lingua\", \"category\": \"旅行装备\", \"origin_country\": \"CN\", \"price_major\": 179.01, \"currency\": \"CNY\", \"source_price_major\": 22.95, \"source_currency\": \"EUR\", \"highlights\": [\"Peso：160 g\", \"Material：Polímero sintético\"], \"skus\": [{\"sku_id\": \"P41009-S1\", \"spec\": \"Negro / Peso: 160 g\", \"price_major\": 22.95, \"currency\": \"EUR\", \"stock\": 22}, {\"sku_id\": \"P41009-S2\", \"spec\": \"Gris / Peso: 160 g\", \"price_major\": 23.87, \"currency\": \"EUR\", \"stock\": 23}], \"score\": 0.0855, \"source_platform\": \"walmart\", \"canonical_product_id\": \"CAN-ML-03-2\", \"material_tags\": [\"合成聚合物\"], \"weight_kg\": 0.16, \"description\": \"Apoya el cuello al viajar sentado. Peso: 160 g. Material: Polímero sintético. Modelo: ML-03-2.\", \"rating_summary\": {\"average\": 4.1, \"review_count\": 34}, \"rating_is_live\": false, \"ships_to\": [\"CN\", \"US\", \"EU\", \"JP\", \"SG\"], \"dimensions_cm\": {\"length\": 30, \"width\": 25, \"height\": 10}, \"updated_at\": \"2026-09-18\", \"default_sku_id\": \"P41009-S1\", \"image_kind\": \"placeholder\", \"image_alt\": \"Lingua Almohada cervical de viaje — Peso: 160 g · ML-03-2：暂无商品图片\", \"landed_price\": {\"ship_to\": \"CN\", \"subtotal_major\": 179.01, \"freight_major\": 25.0, \"tariff_major\": 0.0, \"tariff_rate\": 0.09, \"de_minimis_applied\": true, \"landed_total_major\": 204.01, \"currency\": \"CNY\"}, \"source_language\": \"es\", \"source_locale\": \"es-MX\", \"external_product_id\": \"demo-walmart-es-MX-P41009\", \"data_provenance\": \"synthetic\"}, {\"product_id\": \"P31009\", \"title\": \"Lingua Almohada cervical de viaje — Peso: 160 g · ML-03-2\", \"brand\": \"Lingua\", \"category\": \"旅行装备\", \"origin_country\": \"CN\", \"price_major\": 176.01, \"currency\": \"CNY\", \"source_price_major\": 24.79, \"source_currency\": \"USD\", \"highlights\": [\"Peso：160 g\", \"Material：Polímero sintético\"], \"skus\": [{\"sku_id\": \"P31009-S1\", \"spec\": \"Negro / Peso: 160 g\", \"price_major\": 24.79, \"currency\": \"USD\", \"stock\": 22}, {\"sku_id\": \"P31009-S2\", \"spec\": \"Gris / Peso: 160 g\", \"price_major\": 25.78, \"currency\": \"USD\", \"stock\": 23}], \"score\": 0.0855, \"source_platform\": \"etsy\", \"canonical_product_id\": \"CAN-ML-03-2\", \"material_tags\": [\"合成聚合物\"], \"weight_kg\": 0.16, \"description\": \"Apoya el cuello al viajar sentado. Peso: 160 g. Material: Polímero sintético. Modelo: ML-03-2.\", \"rating_summary\": {\"average\": 4.1, \"review_count\": 34}, \"rating_is_live\": false, \"ships_to\": [\"CN\", \"US\", \"EU\", \"JP\", \"SG\"], \"dimensions_cm\": {\"length\": 30, \"width\": 25, \"height\": 10}, \"updated_at\": \"2026-09-18\", \"default_sku_id\": \"P31009-S1\", \"image_kind\": \"placeholder\", \"image_alt\": \"Lingua Almohada cervical de viaje — Peso: 160 g · ML-03-2：暂无商品图片\", \"landed_price\": {\"ship_to\": \"CN\", \"subtotal_major\": 176.01, \"freight_major\": 25.0, \"tariff_major\": 0.0, \"tariff_rate\": 0.09, \"de_minimis_applied\": true, \"landed_total_major\": 201.01, \"currency\": \"CNY\"}, \"source_language\": \"es\", \"source_locale\": \"es-ES\", \"external_product_id\": \"demo-etsy-es-ES-P31009\", \"data_provenance\": \"synthetic\"}], \"total_candidates\": 5, \"recall_strategy\": \"embedding_only\", \"rerank_applied\": false, \"filtered_out\": [{\"product_id\": \"P11060\", \"title\": \"Lingua Bolsas para alimentos — Piezas: 10 · ML-16-1\", \"category\": \"厨房餐饮\", \"price_major\": 274.56, \"currency\": \"CNY\", \"reason\": \"category_mismatch\"}, {\"product_id\": \"P41060\", \"title\": \"Lingua Bolsas para alimentos — Piezas: 10 · ML-16-1\", \"category\": \"厨房餐饮\", \"price_major\": 273.0, \"currency\": \"CNY\", \"reason\": \"category_mismatch\"}, {\"product_id\": \"P21060\", \"title\": \"Lingua Bolsas para alimentos — Piezas: 10 · ML-16-1\", \"category\": \"厨房餐饮\", \"price_major\": 266.99, \"currency\": \"CNY\", \"reason\": \"category_mismatch\"}], \"query_conditions\": {\"normalized_query\": \"旅行 背包\", \"category\": \"旅行装备\", \"ship_to\": \"CN\", \"top_k\": 3, \"price_max_major\": 300, \"target_currency\": \"CNY\", \"excluded_material_tags\": [], \"required_material_tags\": [], \"product_id\": null, \"sku_id\": null}, \"observed_at\": \"2026-10-14T11:51:37.904640+00:00\", \"result_ref\": \"ctx_c3ba51b5b5364f59aed67607a829f30f\"}",
+            "role": "tool"
+          },
+          "observed_at": 1791978697.625109
+        },
+        {
+          "id": "r2-worker-599dce0b2a0940888654c02b4f69f008:14",
+          "event": {
+            "type": "CUSTOM",
+            "name": "activity.upsert",
+            "value": {
+              "id": "r2-worker-599dce0b2a0940888654c02b4f69f008:tool:call_search_e8b216723f004b97a5728f883e3770f8",
+              "runId": "r2-worker-599dce0b2a0940888654c02b4f69f008",
+              "kind": "tool",
+              "label": "检索商品",
+              "status": "completed",
+              "sequence": 1,
+              "startedAt": 1791978697832,
+              "finishedAt": 1791978697908,
+              "source": "agentscope",
+              "toolCallId": "r2-worker-599dce0b2a0940888654c02b4f69f008:tool:call_search_e8b216723f004b97a5728f883e3770f8",
+              "toolName": "product_search_tool",
+              "inputSummary": "配送国家 CN · 币种 CNY · 预算上限 300 · 最多 3 件",
+              "resultSummary": "检索返回 3 件商品。"
+            }
+          },
+          "observed_at": 1791978697.625122
+        },
+        {
+          "id": "r2-worker-599dce0b2a0940888654c02b4f69f008:15",
+          "event": {
+            "type": "STATE_SNAPSHOT",
+            "snapshot": {
+              "products": [
+                {
+                  "product_id": "P1013",
+                  "title": "BlackoutPro 3D 真丝遮光眼罩",
+                  "brand": "BlackoutPro",
+                  "category": "旅行装备",
+                  "origin_country": "CN",
+                  "price_major": 89.0,
+                  "currency": "CNY",
+                  "source_price_major": 89.0,
+                  "source_currency": "CNY",
+                  "highlights": [
+                    "材质：6A 桑蚕丝，无塑料"
+                  ],
+                  "skus": [
+                    {
+                      "sku_id": "P1013-S1",
+                      "spec": "豆沙色",
+                      "price_major": 89.0,
+                      "currency": "CNY",
+                      "stock": 90
+                    }
+                  ],
+                  "score": 0.096,
+                  "source_platform": "amazon",
+                  "canonical_product_id": "CAN-LEGACY-012",
+                  "material_tags": [
+                    "合成聚合物"
+                  ],
+                  "weight_kg": 1.23,
+                  "description": "真丝 遮光眼罩 3D立体 不压眼 天然材质 无塑料 睡眠 飞机 高铁",
+                  "rating_summary": {
+                    "average": 4.3,
+                    "review_count": 162
+                  },
+                  "rating_is_live": false,
+                  "ships_to": [
+                    "CN",
+                    "US",
+                    "EU"
+                  ],
+                  "dimensions_cm": {
+                    "height": 4,
+                    "length": 24,
+                    "width": 20
+                  },
+                  "updated_at": "2026-08-01",
+                  "default_sku_id": "P1013-S1",
+                  "image_url": null,
+                  "image_kind": "placeholder",
+                  "image_alt": "BlackoutPro 3D 真丝遮光眼罩：暂无商品图片",
+                  "landed_price": {
+                    "ship_to": "CN",
+                    "subtotal_major": 89.0,
+                    "freight_major": 25.0,
+                    "tariff_major": 0.0,
+                    "tariff_rate": 0.09,
+                    "de_minimis_applied": true,
+                    "landed_total_major": 114.0,
+                    "currency": "CNY"
+                  },
+                  "external_product_id": "amazon-P1013"
+                },
+                {
+                  "product_id": "P41009",
+                  "title": "Lingua Almohada cervical de viaje — Peso: 160 g · ML-03-2",
+                  "brand": "Lingua",
+                  "category": "旅行装备",
+                  "origin_country": "CN",
+                  "price_major": 179.01,
+                  "currency": "CNY",
+                  "source_price_major": 22.95,
+                  "source_currency": "EUR",
+                  "highlights": [
+                    "Peso：160 g",
+                    "Material：Polímero sintético"
+                  ],
+                  "skus": [
+                    {
+                      "sku_id": "P41009-S1",
+                      "spec": "Negro / Peso: 160 g",
+                      "price_major": 22.95,
+                      "currency": "EUR",
+                      "stock": 22
+                    },
+                    {
+                      "sku_id": "P41009-S2",
+                      "spec": "Gris / Peso: 160 g",
+                      "price_major": 23.87,
+                      "currency": "EUR",
+                      "stock": 23
+                    }
+                  ],
+                  "score": 0.0855,
+                  "source_platform": "walmart",
+                  "canonical_product_id": "CAN-ML-03-2",
+                  "material_tags": [
+                    "合成聚合物"
+                  ],
+                  "weight_kg": 0.16,
+                  "description": "Apoya el cuello al viajar sentado. Peso: 160 g. Material: Polímero sintético. Modelo: ML-03-2.",
+                  "rating_summary": {
+                    "average": 4.1,
+                    "review_count": 34
+                  },
+                  "rating_is_live": false,
+                  "ships_to": [
+                    "CN",
+                    "US",
+                    "EU",
+                    "JP",
+                    "SG"
+                  ],
+                  "dimensions_cm": {
+                    "length": 30,
+                    "width": 25,
+                    "height": 10
+                  },
+                  "updated_at": "2026-09-18",
+                  "default_sku_id": "P41009-S1",
+                  "image_url": null,
+                  "image_kind": "placeholder",
+                  "image_alt": "Lingua Almohada cervical de viaje — Peso: 160 g · ML-03-2：暂无商品图片",
+                  "landed_price": {
+                    "ship_to": "CN",
+                    "subtotal_major": 179.01,
+                    "freight_major": 25.0,
+                    "tariff_major": 0.0,
+                    "tariff_rate": 0.09,
+                    "de_minimis_applied": true,
+                    "landed_total_major": 204.01,
+                    "currency": "CNY"
+                  },
+                  "source_language": "es",
+                  "source_locale": "es-MX",
+                  "external_product_id": "demo-walmart-es-MX-P41009",
+                  "data_provenance": "synthetic"
+                },
+                {
+                  "product_id": "P31009",
+                  "title": "Lingua Almohada cervical de viaje — Peso: 160 g · ML-03-2",
+                  "brand": "Lingua",
+                  "category": "旅行装备",
+                  "origin_country": "CN",
+                  "price_major": 176.01,
+                  "currency": "CNY",
+                  "source_price_major": 24.79,
+                  "source_currency": "USD",
+                  "highlights": [
+                    "Peso：160 g",
+                    "Material：Polímero sintético"
+                  ],
+                  "skus": [
+                    {
+                      "sku_id": "P31009-S1",
+                      "spec": "Negro / Peso: 160 g",
+                      "price_major": 24.79,
+                      "currency": "USD",
+                      "stock": 22
+                    },
+                    {
+                      "sku_id": "P31009-S2",
+                      "spec": "Gris / Peso: 160 g",
+                      "price_major": 25.78,
+                      "currency": "USD",
+                      "stock": 23
+                    }
+                  ],
+                  "score": 0.0855,
+                  "source_platform": "etsy",
+                  "canonical_product_id": "CAN-ML-03-2",
+                  "material_tags": [
+                    "合成聚合物"
+                  ],
+                  "weight_kg": 0.16,
+                  "description": "Apoya el cuello al viajar sentado. Peso: 160 g. Material: Polímero sintético. Modelo: ML-03-2.",
+                  "rating_summary": {
+                    "average": 4.1,
+                    "review_count": 34
+                  },
+                  "rating_is_live": false,
+                  "ships_to": [
+                    "CN",
+                    "US",
+                    "EU",
+                    "JP",
+                    "SG"
+                  ],
+                  "dimensions_cm": {
+                    "length": 30,
+                    "width": 25,
+                    "height": 10
+                  },
+                  "updated_at": "2026-09-18",
+                  "default_sku_id": "P31009-S1",
+                  "image_url": null,
+                  "image_kind": "placeholder",
+                  "image_alt": "Lingua Almohada cervical de viaje — Peso: 160 g · ML-03-2：暂无商品图片",
+                  "landed_price": {
+                    "ship_to": "CN",
+                    "subtotal_major": 176.01,
+                    "freight_major": 25.0,
+                    "tariff_major": 0.0,
+                    "tariff_rate": 0.09,
+                    "de_minimis_applied": true,
+                    "landed_total_major": 201.01,
+                    "currency": "CNY"
+                  },
+                  "source_language": "es",
+                  "source_locale": "es-ES",
+                  "external_product_id": "demo-etsy-es-ES-P31009",
+                  "data_provenance": "synthetic"
+                }
+              ],
+              "shoppingForm": null,
+              "confirmations": [],
+              "toolApprovals": [],
+              "skillUsages": [],
+              "searchCompleted": true,
+              "status": "running",
+              "progress": [
+                {
+                  "id": "r2-worker-599dce0b2a0940888654c02b4f69f008:tool:call_search_e8b216723f004b97a5728f883e3770f8",
+                  "label": "检索商品",
+                  "status": "completed"
+                }
+              ],
+              "activities": [
+                {
+                  "id": "r2-worker-599dce0b2a0940888654c02b4f69f008:tool:call_search_e8b216723f004b97a5728f883e3770f8",
+                  "runId": "r2-worker-599dce0b2a0940888654c02b4f69f008",
+                  "kind": "tool",
+                  "label": "检索商品",
+                  "status": "completed",
+                  "sequence": 1,
+                  "startedAt": 1791978697832,
+                  "finishedAt": 1791978697908,
+                  "source": "agentscope",
+                  "toolCallId": "r2-worker-599dce0b2a0940888654c02b4f69f008:tool:call_search_e8b216723f004b97a5728f883e3770f8",
+                  "toolName": "product_search_tool",
+                  "inputSummary": "配送国家 CN · 币种 CNY · 预算上限 300 · 最多 3 件",
+                  "resultSummary": "检索返回 3 件商品。"
+                }
+              ]
+            }
+          },
+          "observed_at": 1791978697.625209
+        },
+        {
+          "id": "r2-worker-599dce0b2a0940888654c02b4f69f008:16",
+          "event": {
+            "type": "TEXT_MESSAGE_START",
+            "messageId": "r2-worker-599dce0b2a0940888654c02b4f69f008:text:f89668d0d5b549759967518a3a070835",
+            "role": "assistant"
+          },
+          "observed_at": 1791978698.504195
+        },
+        {
+          "id": "r2-worker-599dce0b2a0940888654c02b4f69f008:17",
+          "event": {
+            "type": "TEXT_MESSAGE_CONTENT",
+            "messageId": "r2-worker-599dce0b2a0940888654c02b4f69f008:text:f89668d0d5b549759967518a3a070835",
+            "delta": "已检"
+          },
+          "observed_at": 1791978698.504215
+        },
+        {
+          "id": "r2-worker-599dce0b2a0940888654c02b4f69f008:18",
+          "event": {
+            "type": "TEXT_MESSAGE_CONTENT",
+            "messageId": "r2-worker-599dce0b2a0940888654c02b4f69f008:text:f89668d0d5b549759967518a3a070835",
+            "delta": "索旅行"
+          },
+          "observed_at": 1791978698.969158
+        },
+        {
+          "id": "r2-worker-599dce0b2a0940888654c02b4f69f008:19",
+          "event": {
+            "type": "TEXT_MESSAGE_CONTENT",
+            "messageId": "r2-worker-599dce0b2a0940888654c02b4f69f008:text:f89668d0d5b549759967518a3a070835",
+            "delta": "商品"
+          },
+          "observed_at": 1791978698.969169
+        },
+        {
+          "id": "r2-worker-599dce0b2a0940888654c02b4f69f008:20",
+          "event": {
+            "type": "TEXT_MESSAGE_END",
+            "messageId": "r2-worker-599dce0b2a0940888654c02b4f69f008:text:f89668d0d5b549759967518a3a070835"
+          },
+          "observed_at": 1791978726.6057758
+        },
+        {
+          "id": "r2-worker-599dce0b2a0940888654c02b4f69f008:21",
+          "event": {
+            "type": "STATE_SNAPSHOT",
+            "snapshot": {
+              "products": [
+                {
+                  "product_id": "P1013",
+                  "title": "BlackoutPro 3D 真丝遮光眼罩",
+                  "brand": "BlackoutPro",
+                  "category": "旅行装备",
+                  "origin_country": "CN",
+                  "price_major": 89.0,
+                  "currency": "CNY",
+                  "source_price_major": 89.0,
+                  "source_currency": "CNY",
+                  "highlights": [
+                    "材质：6A 桑蚕丝，无塑料"
+                  ],
+                  "skus": [
+                    {
+                      "sku_id": "P1013-S1",
+                      "spec": "豆沙色",
+                      "price_major": 89.0,
+                      "currency": "CNY",
+                      "stock": 90
+                    }
+                  ],
+                  "score": 0.096,
+                  "source_platform": "amazon",
+                  "canonical_product_id": "CAN-LEGACY-012",
+                  "material_tags": [
+                    "合成聚合物"
+                  ],
+                  "weight_kg": 1.23,
+                  "description": "真丝 遮光眼罩 3D立体 不压眼 天然材质 无塑料 睡眠 飞机 高铁",
+                  "rating_summary": {
+                    "average": 4.3,
+                    "review_count": 162
+                  },
+                  "rating_is_live": false,
+                  "ships_to": [
+                    "CN",
+                    "US",
+                    "EU"
+                  ],
+                  "dimensions_cm": {
+                    "height": 4,
+                    "length": 24,
+                    "width": 20
+                  },
+                  "updated_at": "2026-08-01",
+                  "default_sku_id": "P1013-S1",
+                  "image_url": null,
+                  "image_kind": "placeholder",
+                  "image_alt": "BlackoutPro 3D 真丝遮光眼罩：暂无商品图片",
+                  "landed_price": {
+                    "ship_to": "CN",
+                    "subtotal_major": 89.0,
+                    "freight_major": 25.0,
+                    "tariff_major": 0.0,
+                    "tariff_rate": 0.09,
+                    "de_minimis_applied": true,
+                    "landed_total_major": 114.0,
+                    "currency": "CNY"
+                  },
+                  "external_product_id": "amazon-P1013"
+                },
+                {
+                  "product_id": "P41009",
+                  "title": "Lingua Almohada cervical de viaje — Peso: 160 g · ML-03-2",
+                  "brand": "Lingua",
+                  "category": "旅行装备",
+                  "origin_country": "CN",
+                  "price_major": 179.01,
+                  "currency": "CNY",
+                  "source_price_major": 22.95,
+                  "source_currency": "EUR",
+                  "highlights": [
+                    "Peso：160 g",
+                    "Material：Polímero sintético"
+                  ],
+                  "skus": [
+                    {
+                      "sku_id": "P41009-S1",
+                      "spec": "Negro / Peso: 160 g",
+                      "price_major": 22.95,
+                      "currency": "EUR",
+                      "stock": 22
+                    },
+                    {
+                      "sku_id": "P41009-S2",
+                      "spec": "Gris / Peso: 160 g",
+                      "price_major": 23.87,
+                      "currency": "EUR",
+                      "stock": 23
+                    }
+                  ],
+                  "score": 0.0855,
+                  "source_platform": "walmart",
+                  "canonical_product_id": "CAN-ML-03-2",
+                  "material_tags": [
+                    "合成聚合物"
+                  ],
+                  "weight_kg": 0.16,
+                  "description": "Apoya el cuello al viajar sentado. Peso: 160 g. Material: Polímero sintético. Modelo: ML-03-2.",
+                  "rating_summary": {
+                    "average": 4.1,
+                    "review_count": 34
+                  },
+                  "rating_is_live": false,
+                  "ships_to": [
+                    "CN",
+                    "US",
+                    "EU",
+                    "JP",
+                    "SG"
+                  ],
+                  "dimensions_cm": {
+                    "length": 30,
+                    "width": 25,
+                    "height": 10
+                  },
+                  "updated_at": "2026-09-18",
+                  "default_sku_id": "P41009-S1",
+                  "image_url": null,
+                  "image_kind": "placeholder",
+                  "image_alt": "Lingua Almohada cervical de viaje — Peso: 160 g · ML-03-2：暂无商品图片",
+                  "landed_price": {
+                    "ship_to": "CN",
+                    "subtotal_major": 179.01,
+                    "freight_major": 25.0,
+                    "tariff_major": 0.0,
+                    "tariff_rate": 0.09,
+                    "de_minimis_applied": true,
+                    "landed_total_major": 204.01,
+                    "currency": "CNY"
+                  },
+                  "source_language": "es",
+                  "source_locale": "es-MX",
+                  "external_product_id": "demo-walmart-es-MX-P41009",
+                  "data_provenance": "synthetic"
+                },
+                {
+                  "product_id": "P31009",
+                  "title": "Lingua Almohada cervical de viaje — Peso: 160 g · ML-03-2",
+                  "brand": "Lingua",
+                  "category": "旅行装备",
+                  "origin_country": "CN",
+                  "price_major": 176.01,
+                  "currency": "CNY",
+                  "source_price_major": 24.79,
+                  "source_currency": "USD",
+                  "highlights": [
+                    "Peso：160 g",
+                    "Material：Polímero sintético"
+                  ],
+                  "skus": [
+                    {
+                      "sku_id": "P31009-S1",
+                      "spec": "Negro / Peso: 160 g",
+                      "price_major": 24.79,
+                      "currency": "USD",
+                      "stock": 22
+                    },
+                    {
+                      "sku_id": "P31009-S2",
+                      "spec": "Gris / Peso: 160 g",
+                      "price_major": 25.78,
+                      "currency": "USD",
+                      "stock": 23
+                    }
+                  ],
+                  "score": 0.0855,
+                  "source_platform": "etsy",
+                  "canonical_product_id": "CAN-ML-03-2",
+                  "material_tags": [
+                    "合成聚合物"
+                  ],
+                  "weight_kg": 0.16,
+                  "description": "Apoya el cuello al viajar sentado. Peso: 160 g. Material: Polímero sintético. Modelo: ML-03-2.",
+                  "rating_summary": {
+                    "average": 4.1,
+                    "review_count": 34
+                  },
+                  "rating_is_live": false,
+                  "ships_to": [
+                    "CN",
+                    "US",
+                    "EU",
+                    "JP",
+                    "SG"
+                  ],
+                  "dimensions_cm": {
+                    "length": 30,
+                    "width": 25,
+                    "height": 10
+                  },
+                  "updated_at": "2026-09-18",
+                  "default_sku_id": "P31009-S1",
+                  "image_url": null,
+                  "image_kind": "placeholder",
+                  "image_alt": "Lingua Almohada cervical de viaje — Peso: 160 g · ML-03-2：暂无商品图片",
+                  "landed_price": {
+                    "ship_to": "CN",
+                    "subtotal_major": 176.01,
+                    "freight_major": 25.0,
+                    "tariff_major": 0.0,
+                    "tariff_rate": 0.09,
+                    "de_minimis_applied": true,
+                    "landed_total_major": 201.01,
+                    "currency": "CNY"
+                  },
+                  "source_language": "es",
+                  "source_locale": "es-ES",
+                  "external_product_id": "demo-etsy-es-ES-P31009",
+                  "data_provenance": "synthetic"
+                }
+              ],
+              "shoppingForm": null,
+              "confirmations": [],
+              "toolApprovals": [],
+              "skillUsages": [],
+              "searchCompleted": true,
+              "status": "error",
+              "progress": [
+                {
+                  "id": "r2-worker-599dce0b2a0940888654c02b4f69f008:tool:call_search_e8b216723f004b97a5728f883e3770f8",
+                  "label": "检索商品",
+                  "status": "completed"
+                }
+              ],
+              "activities": [
+                {
+                  "id": "r2-worker-599dce0b2a0940888654c02b4f69f008:tool:call_search_e8b216723f004b97a5728f883e3770f8",
+                  "runId": "r2-worker-599dce0b2a0940888654c02b4f69f008",
+                  "kind": "tool",
+                  "label": "检索商品",
+                  "status": "completed",
+                  "sequence": 1,
+                  "startedAt": 1791978697832,
+                  "finishedAt": 1791978697908,
+                  "source": "agentscope",
+                  "toolCallId": "r2-worker-599dce0b2a0940888654c02b4f69f008:tool:call_search_e8b216723f004b97a5728f883e3770f8",
+                  "toolName": "product_search_tool",
+                  "inputSummary": "配送国家 CN · 币种 CNY · 预算上限 300 · 最多 3 件",
+                  "resultSummary": "检索返回 3 件商品。"
+                }
+              ]
+            }
+          },
+          "observed_at": 1791978726.606067
+        },
+        {
+          "id": "r2-worker-599dce0b2a0940888654c02b4f69f008:22",
+          "event": {
+            "type": "RUN_ERROR",
+            "message": "服务重启或执行租约失效，本轮未完成；已恢复保存的内容，可重新提交需求。",
+            "code": "SERVER_RESTART"
+          },
+          "observed_at": 1791978726.606103
+        }
+      ],
+      "upstreams": [
+        "172.28.0.7:8000"
+      ],
+      "transport_errors": [],
+      "fault_injected": true,
+      "snapshot": {
+        "runId": "r2-worker-599dce0b2a0940888654c02b4f69f008",
+        "threadId": "r2-worker-599dce0b2a0940888654c02b4f69f008",
+        "status": "interrupted",
+        "cursor": 22,
+        "stopRequested": false,
+        "input": {
+          "threadId": "r2-worker-599dce0b2a0940888654c02b4f69f008",
+          "runId": "r2-worker-599dce0b2a0940888654c02b4f69f008",
+          "state": {},
+          "messages": [
+            {
+              "id": "r2-worker-599dce0b2a0940888654c02b4f69f008-user",
+              "role": "user",
+              "content": "预算300元以内，找一个寄到中国的轻便背包",
+              "runId": "r2-worker-599dce0b2a0940888654c02b4f69f008"
+            }
+          ],
+          "tools": [],
+          "context": [],
+          "forwardedProps": {
+            "buyerId": "r2-worker-599dce0b2a0940888654c02b4f69f008",
+            "locale": "zh-CN",
+            "currency": "CNY"
+          }
+        },
+        "messages": [
+          {
+            "id": "r2-worker-599dce0b2a0940888654c02b4f69f008-user",
+            "role": "user",
+            "content": "预算300元以内，找一个寄到中国的轻便背包",
+            "runId": "r2-worker-599dce0b2a0940888654c02b4f69f008"
+          },
+          {
+            "id": "r2-worker-599dce0b2a0940888654c02b4f69f008:text:f89668d0d5b549759967518a3a070835",
+            "role": "assistant",
+            "content": "已检索旅行商品",
+            "runId": "r2-worker-599dce0b2a0940888654c02b4f69f008"
+          }
+        ],
+        "state": {
+          "products": [
+            {
+              "product_id": "P1013",
+              "title": "BlackoutPro 3D 真丝遮光眼罩",
+              "brand": "BlackoutPro",
+              "category": "旅行装备",
+              "origin_country": "CN",
+              "price_major": 89.0,
+              "currency": "CNY",
+              "source_price_major": 89.0,
+              "source_currency": "CNY",
+              "highlights": [
+                "材质：6A 桑蚕丝，无塑料"
+              ],
+              "skus": [
+                {
+                  "sku_id": "P1013-S1",
+                  "spec": "豆沙色",
+                  "price_major": 89.0,
+                  "currency": "CNY",
+                  "stock": 90
+                }
+              ],
+              "score": 0.096,
+              "source_platform": "amazon",
+              "canonical_product_id": "CAN-LEGACY-012",
+              "material_tags": [
+                "合成聚合物"
+              ],
+              "weight_kg": 1.23,
+              "description": "真丝 遮光眼罩 3D立体 不压眼 天然材质 无塑料 睡眠 飞机 高铁",
+              "rating_summary": {
+                "average": 4.3,
+                "review_count": 162
+              },
+              "rating_is_live": false,
+              "ships_to": [
+                "CN",
+                "US",
+                "EU"
+              ],
+              "dimensions_cm": {
+                "height": 4,
+                "length": 24,
+                "width": 20
+              },
+              "updated_at": "2026-08-01",
+              "default_sku_id": "P1013-S1",
+              "image_url": null,
+              "image_kind": "placeholder",
+              "image_alt": "BlackoutPro 3D 真丝遮光眼罩：暂无商品图片",
+              "landed_price": {
+                "ship_to": "CN",
+                "subtotal_major": 89.0,
+                "freight_major": 25.0,
+                "tariff_major": 0.0,
+                "tariff_rate": 0.09,
+                "de_minimis_applied": true,
+                "landed_total_major": 114.0,
+                "currency": "CNY"
+              },
+              "external_product_id": "amazon-P1013"
+            },
+            {
+              "product_id": "P41009",
+              "title": "Lingua Almohada cervical de viaje — Peso: 160 g · ML-03-2",
+              "brand": "Lingua",
+              "category": "旅行装备",
+              "origin_country": "CN",
+              "price_major": 179.01,
+              "currency": "CNY",
+              "source_price_major": 22.95,
+              "source_currency": "EUR",
+              "highlights": [
+                "Peso：160 g",
+                "Material：Polímero sintético"
+              ],
+              "skus": [
+                {
+                  "sku_id": "P41009-S1",
+                  "spec": "Negro / Peso: 160 g",
+                  "price_major": 22.95,
+                  "currency": "EUR",
+                  "stock": 22
+                },
+                {
+                  "sku_id": "P41009-S2",
+                  "spec": "Gris / Peso: 160 g",
+                  "price_major": 23.87,
+                  "currency": "EUR",
+                  "stock": 23
+                }
+              ],
+              "score": 0.0855,
+              "source_platform": "walmart",
+              "canonical_product_id": "CAN-ML-03-2",
+              "material_tags": [
+                "合成聚合物"
+              ],
+              "weight_kg": 0.16,
+              "description": "Apoya el cuello al viajar sentado. Peso: 160 g. Material: Polímero sintético. Modelo: ML-03-2.",
+              "rating_summary": {
+                "average": 4.1,
+                "review_count": 34
+              },
+              "rating_is_live": false,
+              "ships_to": [
+                "CN",
+                "US",
+                "EU",
+                "JP",
+                "SG"
+              ],
+              "dimensions_cm": {
+                "length": 30,
+                "width": 25,
+                "height": 10
+              },
+              "updated_at": "2026-09-18",
+              "default_sku_id": "P41009-S1",
+              "image_url": null,
+              "image_kind": "placeholder",
+              "image_alt": "Lingua Almohada cervical de viaje — Peso: 160 g · ML-03-2：暂无商品图片",
+              "landed_price": {
+                "ship_to": "CN",
+                "subtotal_major": 179.01,
+                "freight_major": 25.0,
+                "tariff_major": 0.0,
+                "tariff_rate": 0.09,
+                "de_minimis_applied": true,
+                "landed_total_major": 204.01,
+                "currency": "CNY"
+              },
+              "source_language": "es",
+              "source_locale": "es-MX",
+              "external_product_id": "demo-walmart-es-MX-P41009",
+              "data_provenance": "synthetic"
+            },
+            {
+              "product_id": "P31009",
+              "title": "Lingua Almohada cervical de viaje — Peso: 160 g · ML-03-2",
+              "brand": "Lingua",
+              "category": "旅行装备",
+              "origin_country": "CN",
+              "price_major": 176.01,
+              "currency": "CNY",
+              "source_price_major": 24.79,
+              "source_currency": "USD",
+              "highlights": [
+                "Peso：160 g",
+                "Material：Polímero sintético"
+              ],
+              "skus": [
+                {
+                  "sku_id": "P31009-S1",
+                  "spec": "Negro / Peso: 160 g",
+                  "price_major": 24.79,
+                  "currency": "USD",
+                  "stock": 22
+                },
+                {
+                  "sku_id": "P31009-S2",
+                  "spec": "Gris / Peso: 160 g",
+                  "price_major": 25.78,
+                  "currency": "USD",
+                  "stock": 23
+                }
+              ],
+              "score": 0.0855,
+              "source_platform": "etsy",
+              "canonical_product_id": "CAN-ML-03-2",
+              "material_tags": [
+                "合成聚合物"
+              ],
+              "weight_kg": 0.16,
+              "description": "Apoya el cuello al viajar sentado. Peso: 160 g. Material: Polímero sintético. Modelo: ML-03-2.",
+              "rating_summary": {
+                "average": 4.1,
+                "review_count": 34
+              },
+              "rating_is_live": false,
+              "ships_to": [
+                "CN",
+                "US",
+                "EU",
+                "JP",
+                "SG"
+              ],
+              "dimensions_cm": {
+                "length": 30,
+                "width": 25,
+                "height": 10
+              },
+              "updated_at": "2026-09-18",
+              "default_sku_id": "P31009-S1",
+              "image_url": null,
+              "image_kind": "placeholder",
+              "image_alt": "Lingua Almohada cervical de viaje — Peso: 160 g · ML-03-2：暂无商品图片",
+              "landed_price": {
+                "ship_to": "CN",
+                "subtotal_major": 176.01,
+                "freight_major": 25.0,
+                "tariff_major": 0.0,
+                "tariff_rate": 0.09,
+                "de_minimis_applied": true,
+                "landed_total_major": 201.01,
+                "currency": "CNY"
+              },
+              "source_language": "es",
+              "source_locale": "es-ES",
+              "external_product_id": "demo-etsy-es-ES-P31009",
+              "data_provenance": "synthetic"
+            }
+          ],
+          "shoppingForm": null,
+          "confirmations": [],
+          "toolApprovals": [],
+          "skillUsages": [],
+          "searchCompleted": true,
+          "status": "error",
+          "progress": [
+            {
+              "id": "r2-worker-599dce0b2a0940888654c02b4f69f008:tool:call_search_e8b216723f004b97a5728f883e3770f8",
+              "label": "检索商品",
+              "status": "completed"
+            }
+          ],
+          "activities": [
+            {
+              "id": "r2-worker-599dce0b2a0940888654c02b4f69f008:tool:call_search_e8b216723f004b97a5728f883e3770f8",
+              "runId": "r2-worker-599dce0b2a0940888654c02b4f69f008",
+              "kind": "tool",
+              "label": "检索商品",
+              "status": "completed",
+              "sequence": 1,
+              "startedAt": 1791978697832,
+              "finishedAt": 1791978697908,
+              "source": "agentscope",
+              "toolCallId": "r2-worker-599dce0b2a0940888654c02b4f69f008:tool:call_search_e8b216723f004b97a5728f883e3770f8",
+              "toolName": "product_search_tool",
+              "inputSummary": "配送国家 CN · 币种 CNY · 预算上限 300 · 最多 3 件",
+              "resultSummary": "检索返回 3 件商品。"
+            }
+          ]
+        },
+        "updatedAt": 1791978726832
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "runtime": "existing voyacart-scale-review:8080",
+  "model": "mock-chat",
+  "paid_model_calls": 0,
+  "session_id": "1106e227-f99b-4921-a0fc-5dbe2e3a409a",
+  "run_id": "364da9ef-13cb-470f-b8c2-db4bfd988d2b",
+  "confirmation_id": "c3dc4993261b4783a940f02074f876b3",
+  "order_id": "1fccd03f3af5406b928faee223e496f3",
+  "product_id": "P1013",
+  "sku_id": "P1013-S1",
+  "orders_before": 0,
+  "orders_after": 1,
+  "orders_after_repeat": 1,
+  "inventory_before": 90,
+  "inventory_at_confirmation": 90,
+  "inventory_after_repeat": 89,
+  "wrong_buyer_session_status": 403,
+  "wrong_buyer_order_status": 404,
+  "continuous_sse_events": 29,
+  "workflow": [
+    "query",
+    "product_cards",
+    "detail",
+    "prepare_confirmation",
+    "approve_purchase_intent"
+  ],
+  "payment_and_shipping": "演示意向单，未支付、未安排发货"
+}

@@ -1,0 +1,1 @@
+{"targets": {"dev": 100, "holdout": 300, "distractors": 100}, "preselected_counts": {"dev": 131, "holdout": 391, "distractors": 131}, "products_to_enrich": 15860, "model_calls": 0}

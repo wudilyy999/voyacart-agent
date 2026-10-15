@@ -1,0 +1,21 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+____________ test_queue_wait_timeout_keeps_the_same_run_recoverable ____________
+
+tmp_path = PosixPath('/private/var/folders/j5/9jbbktk13f7bdrtssrkz58tw0000gn/T/pytest-of-liyuyang/pytest-63/test_queue_wait_timeout_keeps_0')
+real_redis = <redis.asyncio.client.Redis(<redis.asyncio.connection.ConnectionPool(<redis.asyncio.connection.UnixDomainSocketConnection(decode_responses=True,path=/tmp/gbx-redis-4fd61x4c/redis.sock)>)>)>
+
+    async def test_queue_wait_timeout_keeps_the_same_run_recoverable(tmp_path, real_redis):
+        api, worker, queue = await runtime_pair(tmp_path, real_redis)
+        api.queue_wait_seconds = 0
+        stopping = asyncio.Event()
+        async with httpx.AsyncClient(transport=httpx.ASGITransport(app=application(api)), base_url='http://test') as client:
+            response = await client.post('/commerce/ag-ui/run', json=body())
+>           assert 'event: transport-error\n' in response.text
+E           assert 'event: transport-error\n' in 'data: {"type": "RUN_ERROR", "message": "运行仍未启动，请稍后恢复或取消本轮。", "code": "QUEUE_WAIT_FAILED"}\n\n'
+E            +  where 'data: {"type": "RUN_ERROR", "message": "运行仍未启动，请稍后恢复或取消本轮。", "code": "QUEUE_WAIT_FAILED"}\n\n' = <Response [200 OK]>.text
+
+tests/test_ag_ui_queue.py:178: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_ag_ui_queue.py::test_queue_wait_timeout_keeps_the_same_run_recoverable
+1 failed, 5 deselected in 1.89s

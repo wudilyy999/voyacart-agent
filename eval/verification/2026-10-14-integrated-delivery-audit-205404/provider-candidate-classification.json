@@ -1,0 +1,67 @@
+[
+  {
+    "file": "eval/verification/2026-10-14-153457-esci-t1-timeout-harness/source.tar.gz::tests/test_ag_ui_activities.py",
+    "category": "provider_key_candidate",
+    "offset": 3975,
+    "line": 82,
+    "test_function": "test_tool_summaries_do_not_copy_addresses_preferences_skill_body_or_credentials",
+    "present_in_baseline_source": {
+      "origin_main": true,
+      "remote_pr": true
+    },
+    "matches_known_real_credential": false,
+    "classification": "preexisting_synthetic_test_literal"
+  },
+  {
+    "file": "eval/verification/2026-10-14-153457-esci-t1-timeout-harness/source.tar.gz::tests/test_harness_guards.py",
+    "category": "provider_key_candidate",
+    "offset": 2215,
+    "line": 60,
+    "test_function": "test_redacts_api_key",
+    "present_in_baseline_source": {
+      "origin_main": true,
+      "remote_pr": true
+    },
+    "matches_known_real_credential": false,
+    "classification": "preexisting_synthetic_test_literal"
+  },
+  {
+    "file": "eval/verification/2026-10-14-esci-t1-harness-1350/source.tar.gz::tests/test_ag_ui_activities.py",
+    "category": "provider_key_candidate",
+    "offset": 3975,
+    "line": 82,
+    "test_function": "test_tool_summaries_do_not_copy_addresses_preferences_skill_body_or_credentials",
+    "present_in_baseline_source": {
+      "origin_main": true,
+      "remote_pr": true
+    },
+    "matches_known_real_credential": false,
+    "classification": "preexisting_synthetic_test_literal"
+  },
+  {
+    "file": "eval/verification/2026-10-14-esci-t1-harness-1350/source.tar.gz::tests/test_harness_guards.py",
+    "category": "provider_key_candidate",
+    "offset": 2215,
+    "line": 60,
+    "test_function": "test_redacts_api_key",
+    "present_in_baseline_source": {
+      "origin_main": true,
+      "remote_pr": true
+    },
+    "matches_known_real_credential": false,
+    "classification": "preexisting_synthetic_test_literal"
+  },
+  {
+    "file": "tests/test_ag_ui_activities.py",
+    "category": "provider_key_candidate",
+    "offset": 3975,
+    "line": 82,
+    "test_function": "test_tool_summaries_do_not_copy_addresses_preferences_skill_body_or_credentials",
+    "present_in_baseline_source": {
+      "origin_main": true,
+      "remote_pr": true
+    },
+    "matches_known_real_credential": false,
+    "classification": "preexisting_synthetic_test_literal"
+  }
+]

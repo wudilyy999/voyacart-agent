@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="9" skipped="0" tests="9" time="0.346" timestamp="2026-10-14T20:51:21.587988+08:00" hostname="liyuyangdeMacBook-Air.local"><testcase classname="scripts.esci.test_prepare" name="test_query_cache_preserves_unicode_line_separators[\u2028]" time="0.001"><failure message="json.decoder.JSONDecodeError: Unterminated string starting at: line 1 column 76 (char 75)">tmp_path = PosixPath('/Users/liyuyang/Downloads/voyacart-agent/eval/verification/2026-10-14-esci-jsonl-boundary-before/fixtures/test_query_cache_preserves_uni0')
+separator = '\u2028'
+
+    @pytest.mark.parametrize('separator', ['\u2028', '\u2029', '\u0085'])
+    def test_query_cache_preserves_unicode_line_separators(tmp_path, separator):
+        row = {'locale': 'us', 'query_id': 1, 'prompt_version': PROMPT_VERSION,
+               'query': f'原文{separator}查询', 'split': 'train', 'status': 'ok', 'category': CATEGORIES[0]}
+        second = {**row, 'query_id': 2, 'query': '第二条查询'}
+        path = tmp_path / 'cache.jsonl'
+        path.write_text(json_line(row) + json.dumps(second, ensure_ascii=False))
+&gt;       assert read_cache(path) == {('us', 1, PROMPT_VERSION): row, ('us', 2, PROMPT_VERSION): second}
+               ^^^^^^^^^^^^^^^^
+
+scripts/esci/test_prepare.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+scripts/esci/prepare.py:85: in read_cache
+    row = json.loads(line)
+          ^^^^^^^^^^^^^^^^
+../../.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/json/__init__.py:346: in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/json/decoder.py:337: in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;json.decoder.JSONDecoder object at 0x1025bf610&gt;
+s = '{"category":"旅行装备","locale":"us","prompt_version":"query-class-v1","query":"原文'
+idx = 0
+
+    def raw_decode(self, s, idx=0):
+        """Decode a JSON document from ``s`` (a ``str`` beginning with
+        a JSON document) and return a 2-tuple of the Python
+        representation and the index in ``s`` where the document ended.
+    
+        This can be used to decode a JSON document from a string that may
+        have extraneous data at the end.
+    
+        """
+        try:
+&gt;           obj, end = self.scan_once(s, idx)
+                       ^^^^^^^^^^^^^^^^^^^^^^
+E           json.decoder.JSONDecodeError: Unterminated string starting at: line 1 column 76 (char 75)
+
+../../.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/json/decoder.py:353: JSONDecodeError</failure></testcase><testcase classname="scripts.esci.test_prepare" name="test_query_cache_preserves_unicode_line_separators[\u2029]" time="0.001"><failure message="json.decoder.JSONDecodeError: Unterminated string starting at: line 1 column 76 (char 75)">tmp_path = PosixPath('/Users/liyuyang/Downloads/voyacart-agent/eval/verification/2026-10-14-esci-jsonl-boundary-before/fixtures/test_query_cache_preserves_uni1')
+separator = '\u2029'
+
+    @pytest.mark.parametrize('separator', ['\u2028', '\u2029', '\u0085'])
+    def test_query_cache_preserves_unicode_line_separators(tmp_path, separator):
+        row = {'locale': 'us', 'query_id': 1, 'prompt_version': PROMPT_VERSION,
+               'query': f'原文{separator}查询', 'split': 'train', 'status': 'ok', 'category': CATEGORIES[0]}
+        second = {**row, 'query_id': 2, 'query': '第二条查询'}
+        path = tmp_path / 'cache.jsonl'
+        path.write_text(json_line(row) + json.dumps(second, ensure_ascii=False))
+&gt;       assert read_cache(path) == {('us', 1, PROMPT_VERSION): row, ('us', 2, PROMPT_VERSION): second}
+               ^^^^^^^^^^^^^^^^
+
+scripts/esci/test_prepare.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+scripts/esci/prepare.py:85: in read_cache
+    row = json.loads(line)
+          ^^^^^^^^^^^^^^^^
+../../.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/json/__init__.py:346: in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/json/decoder.py:337: in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;json.decoder.JSONDecoder object at 0x1025bf610&gt;
+s = '{"category":"旅行装备","locale":"us","prompt_version":"query-class-v1","query":"原文'
+idx = 0
+
+    def raw_decode(self, s, idx=0):
+        """Decode a JSON document from ``s`` (a ``str`` beginning with
+        a JSON document) and return a 2-tuple of the Python
+        representation and the index in ``s`` where the document ended.
+    
+        This can be used to decode a JSON document from a string that may
+        have extraneous data at the end.
+    
+        """
+        try:
+&gt;           obj, end = self.scan_once(s, idx)
+                       ^^^^^^^^^^^^^^^^^^^^^^
+E           json.decoder.JSONDecodeError: Unterminated string starting at: line 1 column 76 (char 75)
+
+../../.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/json/decoder.py:353: JSONDecodeError</failure></testcase><testcase classname="scripts.esci.test_prepare" name="test_query_cache_preserves_unicode_line_separators[\x85]" time="0.000"><failure message="json.decoder.JSONDecodeError: Unterminated string starting at: line 1 column 76 (char 75)">tmp_path = PosixPath('/Users/liyuyang/Downloads/voyacart-agent/eval/verification/2026-10-14-esci-jsonl-boundary-before/fixtures/test_query_cache_preserves_uni2')
+separator = '\x85'
+
+    @pytest.mark.parametrize('separator', ['\u2028', '\u2029', '\u0085'])
+    def test_query_cache_preserves_unicode_line_separators(tmp_path, separator):
+        row = {'locale': 'us', 'query_id': 1, 'prompt_version': PROMPT_VERSION,
+               'query': f'原文{separator}查询', 'split': 'train', 'status': 'ok', 'category': CATEGORIES[0]}
+        second = {**row, 'query_id': 2, 'query': '第二条查询'}
+        path = tmp_path / 'cache.jsonl'
+        path.write_text(json_line(row) + json.dumps(second, ensure_ascii=False))
+&gt;       assert read_cache(path) == {('us', 1, PROMPT_VERSION): row, ('us', 2, PROMPT_VERSION): second}
+               ^^^^^^^^^^^^^^^^
+
+scripts/esci/test_prepare.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+scripts/esci/prepare.py:85: in read_cache
+    row = json.loads(line)
+          ^^^^^^^^^^^^^^^^
+../../.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/json/__init__.py:346: in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/json/decoder.py:337: in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;json.decoder.JSONDecoder object at 0x1025bf610&gt;
+s = '{"category":"旅行装备","locale":"us","prompt_version":"query-class-v1","query":"原文'
+idx = 0
+
+    def raw_decode(self, s, idx=0):
+        """Decode a JSON document from ``s`` (a ``str`` beginning with
+        a JSON document) and return a 2-tuple of the Python
+        representation and the index in ``s`` where the document ended.
+    
+        This can be used to decode a JSON document from a string that may
+        have extraneous data at the end.
+    
+        """
+        try:
+&gt;           obj, end = self.scan_once(s, idx)
+                       ^^^^^^^^^^^^^^^^^^^^^^
+E           json.decoder.JSONDecodeError: Unterminated string starting at: line 1 column 76 (char 75)
+
+../../.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/json/decoder.py:353: JSONDecodeError</failure></testcase><testcase classname="scripts.esci.test_finalize_catalog" name="test_jsonl_reading_preserves_unicode_line_separators[\u2028]" time="0.000"><failure message="json.decoder.JSONDecodeError: Unterminated string starting at: line 1 column 10 (char 9)">tmp_path = PosixPath('/Users/liyuyang/Downloads/voyacart-agent/eval/verification/2026-10-14-esci-jsonl-boundary-before/fixtures/test_jsonl_reading_preserves_u0')
+separator = '\u2028'
+
+    @pytest.mark.parametrize('separator', ['\u2028', '\u2029', '\u0085'])
+    def test_jsonl_reading_preserves_unicode_line_separators(tmp_path, separator):
+        rows = [{'title': f'原文{separator}标题', 'query': f'中文{separator}查询'}, {'title': '第二件商品'}]
+        path = tmp_path / 'products.jsonl'
+        path.write_text(json_line(rows[0]) + json.dumps(rows[1], ensure_ascii=False))
+&gt;       assert load_rows(path) == rows
+               ^^^^^^^^^^^^^^^
+
+scripts/esci/test_finalize_catalog.py:21: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+scripts/esci/finalize_catalog.py:20: in load_rows
+    return [json.loads(line) for line in path.read_text().splitlines() if line.strip()]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+scripts/esci/finalize_catalog.py:20: in &lt;listcomp&gt;
+    return [json.loads(line) for line in path.read_text().splitlines() if line.strip()]
+            ^^^^^^^^^^^^^^^^
+../../.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/json/__init__.py:346: in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/json/decoder.py:337: in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;json.decoder.JSONDecoder object at 0x1025bf610&gt;, s = '{"query":"中文'
+idx = 0
+
+    def raw_decode(self, s, idx=0):
+        """Decode a JSON document from ``s`` (a ``str`` beginning with
+        a JSON document) and return a 2-tuple of the Python
+        representation and the index in ``s`` where the document ended.
+    
+        This can be used to decode a JSON document from a string that may
+        have extraneous data at the end.
+    
+        """
+        try:
+&gt;           obj, end = self.scan_once(s, idx)
+                       ^^^^^^^^^^^^^^^^^^^^^^
+E           json.decoder.JSONDecodeError: Unterminated string starting at: line 1 column 10 (char 9)
+
+../../.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/json/decoder.py:353: JSONDecodeError</failure></testcase><testcase classname="scripts.esci.test_finalize_catalog" name="test_jsonl_reading_preserves_unicode_line_separators[\u2029]" time="0.001"><failure message="json.decoder.JSONDecodeError: Unterminated string starting at: line 1 column 10 (char 9)">tmp_path = PosixPath('/Users/liyuyang/Downloads/voyacart-agent/eval/verification/2026-10-14-esci-jsonl-boundary-before/fixtures/test_jsonl_reading_preserves_u1')
+separator = '\u2029'
+
+    @pytest.mark.parametrize('separator', ['\u2028', '\u2029', '\u0085'])
+    def test_jsonl_reading_preserves_unicode_line_separators(tmp_path, separator):
+        rows = [{'title': f'原文{separator}标题', 'query': f'中文{separator}查询'}, {'title': '第二件商品'}]
+        path = tmp_path / 'products.jsonl'
+        path.write_text(json_line(rows[0]) + json.dumps(rows[1], ensure_ascii=False))
+&gt;       assert load_rows(path) == rows
+               ^^^^^^^^^^^^^^^
+
+scripts/esci/test_finalize_catalog.py:21: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+scripts/esci/finalize_catalog.py:20: in load_rows
+    return [json.loads(line) for line in path.read_text().splitlines() if line.strip()]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+scripts/esci/finalize_catalog.py:20: in &lt;listcomp&gt;
+    return [json.loads(line) for line in path.read_text().splitlines() if line.strip()]
+            ^^^^^^^^^^^^^^^^
+../../.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/json/__init__.py:346: in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/json/decoder.py:337: in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;json.decoder.JSONDecoder object at 0x1025bf610&gt;, s = '{"query":"中文'
+idx = 0
+
+    def raw_decode(self, s, idx=0):
+        """Decode a JSON document from ``s`` (a ``str`` beginning with
+        a JSON document) and return a 2-tuple of the Python
+        representation and the index in ``s`` where the document ended.
+    
+        This can be used to decode a JSON document from a string that may
+        have extraneous data at the end.
+    
+        """
+        try:
+&gt;           obj, end = self.scan_once(s, idx)
+                       ^^^^^^^^^^^^^^^^^^^^^^
+E           json.decoder.JSONDecodeError: Unterminated string starting at: line 1 column 10 (char 9)
+
+../../.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/json/decoder.py:353: JSONDecodeError</failure></testcase><testcase classname="scripts.esci.test_finalize_catalog" name="test_jsonl_reading_preserves_unicode_line_separators[\x85]" time="0.001"><failure message="json.decoder.JSONDecodeError: Unterminated string starting at: line 1 column 10 (char 9)">tmp_path = PosixPath('/Users/liyuyang/Downloads/voyacart-agent/eval/verification/2026-10-14-esci-jsonl-boundary-before/fixtures/test_jsonl_reading_preserves_u2')
+separator = '\x85'
+
+    @pytest.mark.parametrize('separator', ['\u2028', '\u2029', '\u0085'])
+    def test_jsonl_reading_preserves_unicode_line_separators(tmp_path, separator):
+        rows = [{'title': f'原文{separator}标题', 'query': f'中文{separator}查询'}, {'title': '第二件商品'}]
+        path = tmp_path / 'products.jsonl'
+        path.write_text(json_line(rows[0]) + json.dumps(rows[1], ensure_ascii=False))
+&gt;       assert load_rows(path) == rows
+               ^^^^^^^^^^^^^^^
+
+scripts/esci/test_finalize_catalog.py:21: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+scripts/esci/finalize_catalog.py:20: in load_rows
+    return [json.loads(line) for line in path.read_text().splitlines() if line.strip()]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+scripts/esci/finalize_catalog.py:20: in &lt;listcomp&gt;
+    return [json.loads(line) for line in path.read_text().splitlines() if line.strip()]
+            ^^^^^^^^^^^^^^^^
+../../.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/json/__init__.py:346: in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/json/decoder.py:337: in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;json.decoder.JSONDecoder object at 0x1025bf610&gt;, s = '{"query":"中文'
+idx = 0
+
+    def raw_decode(self, s, idx=0):
+        """Decode a JSON document from ``s`` (a ``str`` beginning with
+        a JSON document) and return a 2-tuple of the Python
+        representation and the index in ``s`` where the document ended.
+    
+        This can be used to decode a JSON document from a string that may
+        have extraneous data at the end.
+    
+        """
+        try:
+&gt;           obj, end = self.scan_once(s, idx)
+                       ^^^^^^^^^^^^^^^^^^^^^^
+E           json.decoder.JSONDecodeError: Unterminated string starting at: line 1 column 10 (char 9)
+
+../../.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/json/decoder.py:353: JSONDecodeError</failure></testcase><testcase classname="scripts.esci.test_enrich_catalog" name="test_translation_cache_preserves_unicode_line_separators[\u2028]" time="0.001"><failure message="json.decoder.JSONDecodeError: Unterminated string starting at: line 1 column 59 (char 58)">tmp_path = PosixPath('/Users/liyuyang/Downloads/voyacart-agent/eval/verification/2026-10-14-esci-jsonl-boundary-before/fixtures/test_translation_cache_preserv0')
+separator = '\u2028'
+
+    @pytest.mark.parametrize('separator', ['\u2028', '\u2029', '\u0085'])
+    def test_translation_cache_preserves_unicode_line_separators(tmp_path, separator):
+        row = {'locale': 'jp', 'query_id': 1, 'prompt_version': VERSIONS['translate'], 'status': 'ok',
+               'query': f'原文{separator}検索', 'translation': f'中文{separator}查询'}
+        path = tmp_path / 'translate.jsonl'
+        path.write_text(json_line(row))
+&gt;       assert read_cache(path, 'translate') == {('jp', 1, VERSIONS['translate']): row}
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+scripts/esci/test_enrich_catalog.py:42: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+scripts/esci/enrich_catalog.py:66: in read_cache
+    for row in load_rows(path):
+               ^^^^^^^^^^^^^^^
+scripts/esci/finalize_catalog.py:20: in load_rows
+    return [json.loads(line) for line in path.read_text().splitlines() if line.strip()]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+scripts/esci/finalize_catalog.py:20: in &lt;listcomp&gt;
+    return [json.loads(line) for line in path.read_text().splitlines() if line.strip()]
+            ^^^^^^^^^^^^^^^^
+../../.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/json/__init__.py:346: in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/json/decoder.py:337: in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;json.decoder.JSONDecoder object at 0x1025bf610&gt;
+s = '{"locale":"jp","prompt_version":"translate-zh-v1","query":"原文', idx = 0
+
+    def raw_decode(self, s, idx=0):
+        """Decode a JSON document from ``s`` (a ``str`` beginning with
+        a JSON document) and return a 2-tuple of the Python
+        representation and the index in ``s`` where the document ended.
+    
+        This can be used to decode a JSON document from a string that may
+        have extraneous data at the end.
+    
+        """
+        try:
+&gt;           obj, end = self.scan_once(s, idx)
+                       ^^^^^^^^^^^^^^^^^^^^^^
+E           json.decoder.JSONDecodeError: Unterminated string starting at: line 1 column 59 (char 58)
+
+../../.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/json/decoder.py:353: JSONDecodeError</failure></testcase><testcase classname="scripts.esci.test_enrich_catalog" name="test_translation_cache_preserves_unicode_line_separators[\u2029]" time="0.001"><failure message="json.decoder.JSONDecodeError: Unterminated string starting at: line 1 column 59 (char 58)">tmp_path = PosixPath('/Users/liyuyang/Downloads/voyacart-agent/eval/verification/2026-10-14-esci-jsonl-boundary-before/fixtures/test_translation_cache_preserv1')
+separator = '\u2029'
+
+    @pytest.mark.parametrize('separator', ['\u2028', '\u2029', '\u0085'])
+    def test_translation_cache_preserves_unicode_line_separators(tmp_path, separator):
+        row = {'locale': 'jp', 'query_id': 1, 'prompt_version': VERSIONS['translate'], 'status': 'ok',
+               'query': f'原文{separator}検索', 'translation': f'中文{separator}查询'}
+        path = tmp_path / 'translate.jsonl'
+        path.write_text(json_line(row))
+&gt;       assert read_cache(path, 'translate') == {('jp', 1, VERSIONS['translate']): row}
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+scripts/esci/test_enrich_catalog.py:42: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+scripts/esci/enrich_catalog.py:66: in read_cache
+    for row in load_rows(path):
+               ^^^^^^^^^^^^^^^
+scripts/esci/finalize_catalog.py:20: in load_rows
+    return [json.loads(line) for line in path.read_text().splitlines() if line.strip()]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+scripts/esci/finalize_catalog.py:20: in &lt;listcomp&gt;
+    return [json.loads(line) for line in path.read_text().splitlines() if line.strip()]
+            ^^^^^^^^^^^^^^^^
+../../.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/json/__init__.py:346: in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/json/decoder.py:337: in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;json.decoder.JSONDecoder object at 0x1025bf610&gt;
+s = '{"locale":"jp","prompt_version":"translate-zh-v1","query":"原文', idx = 0
+
+    def raw_decode(self, s, idx=0):
+        """Decode a JSON document from ``s`` (a ``str`` beginning with
+        a JSON document) and return a 2-tuple of the Python
+        representation and the index in ``s`` where the document ended.
+    
+        This can be used to decode a JSON document from a string that may
+        have extraneous data at the end.
+    
+        """
+        try:
+&gt;           obj, end = self.scan_once(s, idx)
+                       ^^^^^^^^^^^^^^^^^^^^^^
+E           json.decoder.JSONDecodeError: Unterminated string starting at: line 1 column 59 (char 58)
+
+../../.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/json/decoder.py:353: JSONDecodeError</failure></testcase><testcase classname="scripts.esci.test_enrich_catalog" name="test_translation_cache_preserves_unicode_line_separators[\x85]" time="0.001"><failure message="json.decoder.JSONDecodeError: Unterminated string starting at: line 1 column 59 (char 58)">tmp_path = PosixPath('/Users/liyuyang/Downloads/voyacart-agent/eval/verification/2026-10-14-esci-jsonl-boundary-before/fixtures/test_translation_cache_preserv2')
+separator = '\x85'
+
+    @pytest.mark.parametrize('separator', ['\u2028', '\u2029', '\u0085'])
+    def test_translation_cache_preserves_unicode_line_separators(tmp_path, separator):
+        row = {'locale': 'jp', 'query_id': 1, 'prompt_version': VERSIONS['translate'], 'status': 'ok',
+               'query': f'原文{separator}検索', 'translation': f'中文{separator}查询'}
+        path = tmp_path / 'translate.jsonl'
+        path.write_text(json_line(row))
+&gt;       assert read_cache(path, 'translate') == {('jp', 1, VERSIONS['translate']): row}
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+scripts/esci/test_enrich_catalog.py:42: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+scripts/esci/enrich_catalog.py:66: in read_cache
+    for row in load_rows(path):
+               ^^^^^^^^^^^^^^^
+scripts/esci/finalize_catalog.py:20: in load_rows
+    return [json.loads(line) for line in path.read_text().splitlines() if line.strip()]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+scripts/esci/finalize_catalog.py:20: in &lt;listcomp&gt;
+    return [json.loads(line) for line in path.read_text().splitlines() if line.strip()]
+            ^^^^^^^^^^^^^^^^
+../../.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/json/__init__.py:346: in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/json/decoder.py:337: in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;json.decoder.JSONDecoder object at 0x1025bf610&gt;
+s = '{"locale":"jp","prompt_version":"translate-zh-v1","query":"原文', idx = 0
+
+    def raw_decode(self, s, idx=0):
+        """Decode a JSON document from ``s`` (a ``str`` beginning with
+        a JSON document) and return a 2-tuple of the Python
+        representation and the index in ``s`` where the document ended.
+    
+        This can be used to decode a JSON document from a string that may
+        have extraneous data at the end.
+    
+        """
+        try:
+&gt;           obj, end = self.scan_once(s, idx)
+                       ^^^^^^^^^^^^^^^^^^^^^^
+E           json.decoder.JSONDecodeError: Unterminated string starting at: line 1 column 59 (char 58)
+
+../../.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/json/decoder.py:353: JSONDecodeError</failure></testcase></testsuite></testsuites>

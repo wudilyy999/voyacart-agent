@@ -1,0 +1,15 @@
+{
+  "http_status": 200,
+  "elapsed_seconds": 3.199,
+  "event_count": 22,
+  "last_event": {
+    "type": "RUN_FINISHED",
+    "threadId": "scale-session-1",
+    "runId": "scale-run-1",
+    "outcome": {
+      "type": "success"
+    }
+  },
+  "run_status": "completed",
+  "products": 3
+}

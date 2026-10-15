@@ -1,0 +1,38 @@
+{
+  "started_at": "2026-10-14T20:14:48.249456+08:00",
+  "head": "f72e87f827f7bddf04228ac7bd0cbed54cc33e7d",
+  "source_fingerprints": {
+    "app/infrastructure/transient.py": "70b3eb0612a3cdd80bc9d9dfb1a6991b94dcc3f1488e73492e2ee8529f8b506466a6d01038deea5329c25ac77ac94ba2f6d065e027556084b562775c2dc79f7d",
+    "tests/test_phase3.py": "660efec100bd3c677560f5240bb9104c6503988afcc541f5b963b0b275d779c2b40938b059b64d250dad4759cf7121a2ecd150db44f4b6adbd0f8f825bd09778",
+    "tests/test_model_runtime_counting.py": "6e65160947e714421cb94d894764bc966878ce42c7e30f4413df6e7c8e6396fafc53aec4517b626fecb30c4cb0267d13ddaf627e3f2c5e5e6867ba88e6abd0fe",
+    "tests/test_model_cancellation.py": "31bd93483db5672d527342036fa3f0cb86224815b14aaa2b6b8820fcc4340e47eec2c4b61e1921443ca794e3d8aaadf905d0de7a9e3b1cd4fa200d720cd285e0",
+    "tests/test_budget_settlement.py": "66203f43ae2bb752c2f81ad95cf9730f790622873a4c66894aa9611839795edcb2f775918ab7f366f4555789ee280b2113ae89880d3858387e95e1846f0178c0",
+    "tests/test_phase4_model.py": "7877dbcfb1f86e9c7d7fa218a3f92d3d1d3c5f504d39276879f79dfee5d8bed0c3494121eeec63cdd111a41a1c3c36e6b49f94d6c8b51737dd933ffe07feb16d"
+  },
+  "original_failure": {
+    "path": "eval/verification/2026-10-14-r2-model/command-010.stdout.log",
+    "fingerprint": "35e68fb6e0d6bb2b9776f3992047677116f1932fe2f806640bcf7c8e3fd39c654434f3f389a600487805716d9abc5320fa662ae245a0256405d490381b5a4cbb",
+    "lines": [
+      6576,
+      6786
+    ]
+  },
+  "versions": {
+    "openai": "2.53.0",
+    "httpx": "0.28.1",
+    "pytest": "9.1.1"
+  },
+  "command": [
+    "/private/tmp/voyacart-backend-frontend-20261014/.venv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_phase3.py::TestTransientRetryPolicy",
+    "tests/test_model_runtime_counting.py::test_profile_fallback_uses_own_credentials_window_reasoning_and_usage",
+    "tests/test_model_runtime_counting.py::test_http_status_retries_then_primary_succeeds_without_fallback",
+    "tests/test_model_runtime_counting.py::test_nontransient_http_status_raises_without_retry_or_fallback",
+    "--junitxml=/private/tmp/voyacart-backend-frontend-20261014/eval/verification/2026-10-14-r2-model-status/before/tests.xml"
+  ],
+  "exit_code": 1,
+  "duration_seconds": 2.9805263750022277
+}

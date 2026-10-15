@@ -1,0 +1,18 @@
+{
+  "candidates": 2000,
+  "total_existing_cache": 946,
+  "selected_cache_hits": 162,
+  "counts": {
+    "('es', 'test')": 250,
+    "('es', 'train')": 250,
+    "('jp', 'test')": 250,
+    "('jp', 'train')": 250,
+    "('us', 'test')": 500,
+    "('us', 'train')": 500
+  },
+  "source_fingerprints": {
+    "scripts/esci/download.py": "61e4cc9f9ee636845db90d563117c4fe5ec9cca2404237e6f7285093bcd72de76b5dddd07e766a44130b66417e2d624c52c0d73c771bfb5bc9e32bb625e05159",
+    "scripts/esci/test_prepare.py": "0eb057b107711872ee5ee34cbb0c7b5cdc5d0b1938e1346ca07003fc84379516e7cf0545c1ef34bdae8b0f075748df5ebbacf38220edb6df0fab8897631290e5",
+    "scripts/esci/prepare.py": "8ac4ee2177dec92568d7aa8268346b1fa878d51f55c02c922491d67b6e75ed39877642f0dada5848eee307664a0aed110f9d0a3c1a3e2a9b780f8f558a753199"
+  }
+}

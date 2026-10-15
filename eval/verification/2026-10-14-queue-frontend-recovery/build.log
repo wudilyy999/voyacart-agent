@@ -1,0 +1,15 @@
+
+> voyacart-frontend@0.3.0 build
+> tsc -b && vite build
+
+vite v5.4.21 building for production...
+transforming...
+✓ 620 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                      0.70 kB │ gzip:  0.47 kB
+dist/assets/index-CUArSRsv.css     157.67 kB │ gzip: 32.31 kB
+dist/assets/index-DMDRdBEy.js      179.14 kB │ gzip: 60.84 kB
+dist/assets/agent-CWWVwje9.js      203.99 kB │ gzip: 44.71 kB
+dist/assets/ui-vendor-CMif1nyE.js  318.45 kB │ gzip: 99.22 kB
+✓ built in 2.43s

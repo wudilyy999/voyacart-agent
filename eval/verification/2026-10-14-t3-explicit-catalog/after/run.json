@@ -1,0 +1,24 @@
+{
+  "head": "5b16af0da006599d833021e931fd2de9bfdcb44a",
+  "source_fingerprints_blake2b": {
+    "app/infrastructure/persistence/seed_products.py": "335c57b649ec7fcb86169b83da25419ff470d3799ee061ea1d27b6f75350d13faa32d5c9af635748126c5828025a02da8191e0e84611628ef7c2a7194257d610",
+    "scripts/eval/run_product_recall.py": "423518acfb0c40498438a401d65443995c9ed09ae02dc204a153b537594ae00eb8b14e0d13669dc4dfaf65d8e4992707faa54d6d77fdee2a024e325b4a511321",
+    "tests/test_catalog_fixture.py": "f94c89af11f85cf7c910fc089898fe306c4b9897312cf8b32e081001d4ebaaaaa3d4391d813d92562f617d80ca664fbb1a034847e8ecee3e9794991d5ed8e531",
+    "tests/test_eval_selection_manifest.py": "61052fec26b47f05718fa5010b87b6189cab2fecb4ed95a71f80db7e9796da217b47f42a715b76aa22a7d4dd7310574343f02adcb2d62480331afafc44583de3",
+    "tests/test_eval_product_runner.py": "10bf276c7317b50adb1fd31f04a9e049d1dcf62c840a2fcf5284feaa6d8c291e8c1ce4f6267e1cf8937496d4397701cb2d65fef497fb21f536fc56046755d9d2",
+    "tests/test_eval_profiles.py": "f851a489a66522a58f324f969c900a06b82eec2947f79a615a02b35cf0443fbb8a3294a53d8e0a23c20ea71097a0ee13d9f29cc654b4228d80afd38e1c7f0aa8"
+  },
+  "command": [
+    "/private/tmp/voyacart-local-fallback-20261014/.venv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_catalog_fixture.py",
+    "tests/test_eval_selection_manifest.py",
+    "tests/test_eval_product_runner.py",
+    "tests/test_eval_profiles.py",
+    "--junitxml=/private/tmp/voyacart-local-fallback-20261014/eval/verification/2026-10-14-t3-explicit-catalog/after/tests.xml"
+  ],
+  "exit_code": 0,
+  "duration_seconds": 2.0772351659834385
+}

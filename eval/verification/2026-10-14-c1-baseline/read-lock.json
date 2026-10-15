@@ -1,0 +1,7 @@
+{
+  "source_commit": "7f29c08725114b040e7f251e3cc21dceb0f5b596",
+  "writer_lock_seconds": 0.3,
+  "read_blocked_by_writer": true,
+  "read_elapsed_seconds": 0.3988003749400377,
+  "scope": "事件读路径的锁竞争基线；容量矩阵待后续执行"
+}

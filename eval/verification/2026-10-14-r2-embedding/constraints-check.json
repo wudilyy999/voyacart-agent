@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "budget_cny": 300,
+  "checks": [
+    {
+      "product_id": "P1052",
+      "ship_to": "CN",
+      "ships_to": [
+        "CN",
+        "US"
+      ],
+      "landed_cny": 70.0,
+      "positive_stock": true
+    },
+    {
+      "product_id": "P30000",
+      "ship_to": "CN",
+      "ships_to": [
+        "CN",
+        "US",
+        "EU",
+        "JP",
+        "SG"
+      ],
+      "landed_cny": 100.04,
+      "positive_stock": true
+    },
+    {
+      "product_id": "P20000",
+      "ship_to": "CN",
+      "ships_to": [
+        "CN",
+        "US",
+        "EU",
+        "JP",
+        "SG"
+      ],
+      "landed_cny": 99.9,
+      "positive_stock": true
+    }
+  ]
+}

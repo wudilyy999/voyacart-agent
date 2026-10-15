@@ -1,0 +1,14 @@
+{
+  "tests": "1 passed",
+  "exit_code": 0,
+  "scope": "temporary loopback HTTP server only; all proxy variables point to unused loopback port; no Docker or external service called",
+  "response_record": {
+    "index": 0,
+    "status": 503,
+    "body": "\n  injected gateway failure \r\n"
+  },
+  "source_fingerprints_blake2b": {
+    "scripts/loadtest/hotspot.py": "b5793990d5da369e7cce400c7b9157adb4cde46959f71257f3b61f9298784894a5c1852ab31624b504a9de9ebfd9344b34f7a797f98eaf74629d50621632dcba",
+    "tests/test_hotspot_client.py": "01763be2f53e131942462def853f27bb6b4e810c8fe95c46f2c3f4972dda75b014017dc6e23f1ccfadbd35420fad29355a0560723afcc14ccc014adec7b9ddf5"
+  }
+}

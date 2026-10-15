@@ -1,0 +1,8 @@
+{"category":"旅行装备","locale":"us","prompt_version":"query-class-v1","query":"backpack","query_id":0,"split":"train","status":"ok"}
+{"category":"旅行装备","locale":"us","prompt_version":"query-class-v1","query":"backpack","query_id":1,"split":"train","status":"ok"}
+{"category":"旅行装备","locale":"us","prompt_version":"query-class-v1","query":"backpack","query_id":2,"split":"train","status":"ok"}
+{"error_type":"ValueError","locale":"us","prompt_version":"query-class-v1","query":"invalid","query_id":3,"split":"train","status":"failed"}
+{"category":"旅行装备","locale":"us","prompt_version":"query-class-v1","query":"backpack","query_id":4,"split":"train","status":"ok"}
+{"category":"旅行装备","locale":"us","prompt_version":"query-class-v1","query":"backpack","query_id":5,"split":"train","status":"ok"}
+{"category":"旅行装备","locale":"us","prompt_version":"query-class-v1","query":"backpack","query_id":6,"split":"train","status":"ok"}
+{"category":"旅行装备","locale":"us","prompt_version":"query-class-v1","query":"backpack","query_id":7,"split":"train","status":"ok"}

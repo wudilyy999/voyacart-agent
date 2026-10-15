@@ -1,0 +1,12 @@
+{
+  "command": "uv run --extra esci python -m pytest -q scripts/esci/test_prepare.py",
+  "exit_code": 0,
+  "log_source": "工具返回的原始标准输出",
+  "source_fingerprints": {
+    "scripts/esci/download.py": "61e4cc9f9ee636845db90d563117c4fe5ec9cca2404237e6f7285093bcd72de76b5dddd07e766a44130b66417e2d624c52c0d73c771bfb5bc9e32bb625e05159",
+    "scripts/esci/prepare.py": "b6676a1c00aeb6bde7d48e99c368efb166673153b905ab8ba1cc9aed275938a0f06e17daa26ebaf0fc94c7d0689dc641255cbda8fa82f769a37963fa16f4435b",
+    "scripts/esci/test_prepare.py": "50fd11a67863cf8372d7819752ecd7a0dbeae6d91ef5672af8267d99912949253afff24b84014bf7e526a005f4f2f2837a56076f52a009ce5802df8faa6a2e18",
+    "pyproject.toml": "5adb60513ab863db1883217ab5b252d6183b6f7ff6d322a7f870f132e9e4d59b308e85ea914b69540b66ad9a7f90537fbace5af4edbaec5c49e6afc8a1be597e",
+    "uv.lock": "b1b8a333e24d9b9347c8a58a2814565da711130732830bcaf14fbb165e5089d45239a12960a99d28fcb2ff7a20655665916f754b69e9fcde23f07e94fab00993"
+  }
+}

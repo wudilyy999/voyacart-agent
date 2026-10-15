@@ -1,0 +1,36 @@
+INFO:     172.26.0.8:43268 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 14:20:01,113 INFO app.infrastructure.tracing request=6c7bd213537e4461a882a056400988c7 task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+INFO:     172.26.0.8:56896 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+INFO:     172.26.0.8:56900 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42756 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 14:20:02,563 INFO app.infrastructure.tracing request=8b5b90d93100429b94a0a3adcc95e0da task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+INFO:     127.0.0.1:42792 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 14:20:07,608 INFO app.infrastructure.tracing request=dfe95387ec704f3d85e0d535ffd73dbc task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+INFO:     127.0.0.1:47064 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 14:20:12,655 INFO app.infrastructure.tracing request=b4bfb1800cc24f4491958960a08f1fc7 task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+2026-10-14 14:20:13,559 INFO app.infrastructure.tracing request=f7df79afe04140479de875af7c5c158c task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+2026-10-14 14:20:13,588 INFO app.infrastructure.tracing request=1434541a9c2648fa83e0da84ae46194c task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+INFO:     127.0.0.1:47084 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 14:20:17,705 INFO app.infrastructure.tracing request=7378d30a4e1d4df3906c327a3b447582 task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+INFO:     172.26.0.8:52674 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+2026-10-14 14:20:22,759 INFO app.infrastructure.tracing request=4dc1c0e050d345ff951ceabdbbe00cd5 task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+INFO:     127.0.0.1:46394 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 14:20:27,823 INFO app.infrastructure.tracing request=d0dfcb79acc146a7a5de1b9d620a798d task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+INFO:     127.0.0.1:46424 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45406 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 14:20:32,879 INFO app.infrastructure.tracing request=25e8883efd314193ac9da3f0f9ee7870 task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+2026-10-14 14:20:36,148 INFO app.infrastructure.tracing request=285e0ff2520a42238ba37db3fece28d7 task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+INFO:     172.26.0.8:34274 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45428 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 14:20:37,955 INFO app.infrastructure.tracing request=6432a420308a4edb8b71ab3e72c0c101 task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+INFO:     172.26.0.8:55880 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45486 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 14:20:43,031 INFO app.infrastructure.tracing request=8f7644214a1447d999d4c0b4fd1ff81e task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+INFO:     127.0.0.1:45534 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 14:20:48,096 INFO app.infrastructure.tracing request=c75fe2179237477db8c256cf98aa7f95 task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+2026-10-14 14:20:50,590 INFO app.infrastructure.tracing request=d3a4fc4b668342d783df0b7891fe7d91 task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+INFO:     127.0.0.1:54892 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 14:20:53,182 INFO app.infrastructure.tracing request=1d75337872dd494d9d79d566b29053db task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+INFO:     127.0.0.1:54940 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 14:20:58,259 INFO app.infrastructure.tracing request=f9decc5af4be4816b173a4e41436c769 task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+2026-10-14 14:21:00,400 INFO app.infrastructure.tracing request=ef88e0d5ce924e5d931315fcb57cf4c3 task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200

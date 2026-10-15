@@ -1,0 +1,373 @@
+{
+  "matrix_complete": false,
+  "completed_configurations": 17,
+  "partial_configuration": {
+    "name": "queue-a4-w4",
+    "users": [
+      4,
+      8
+    ],
+    "later_users16_started": false
+  },
+  "stage_count": 80,
+  "observed_runs": 5102,
+  "observed_errors": 1410,
+  "matrix_process_exit_code": 1,
+  "matrix_exit_reason": "user-requested stop after complete current stage; existing freshness guard blocked next stage before Locust launch; intentional traceback retained",
+  "report_command_exit_code": 0,
+  "baseline_original_bytes_unchanged": true,
+  "manifest_source_fingerprints_match": {
+    "scripts/loadtest/client.py": true,
+    "scripts/loadtest/locustfile.py": true,
+    "scripts/loadtest/analyze.py": true,
+    "scripts/loadtest/mock_llm.py": true,
+    "scripts/loadtest/matrix.py": true,
+    "docker/docker-compose.load.yaml": true,
+    "app/infrastructure/ag_ui_journal.py": true,
+    "app/infrastructure/persistence/sql/repositories.py": true,
+    "app/infrastructure/persistence/sql/session_store.py": true,
+    "app/infrastructure/cache/redis_cache.py": true
+  },
+  "runtime_image_id": "sha256:43366a829fd8a8ac0ac891eb71ca18efa20bfd898614153fa9f4a6f2a2e21883",
+  "locust_stage_exits": [
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/inline-a1-w1/users-4",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/inline-a1-w1/users-8",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/inline-a1-w1/users-16",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/inline-a1-w1/users-32",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/inline-a1-w1/users-64",
+      "exit_code": 1
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/inline-a1-w2/users-4",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/inline-a1-w2/users-8",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/inline-a1-w2/users-16",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/inline-a1-w2/users-32",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/inline-a1-w2/users-64",
+      "exit_code": 1
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/inline-a1-w2/users-128",
+      "exit_code": 1
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/inline-a1-w4/users-4",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/inline-a1-w4/users-8",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/inline-a1-w4/users-16",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/inline-a1-w4/users-32",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/inline-a1-w4/users-64",
+      "exit_code": 1
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/inline-a2-w1/users-4",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/inline-a2-w1/users-8",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/inline-a2-w1/users-16",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/inline-a2-w1/users-32",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/inline-a2-w1/users-64",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/inline-a2-w1/users-128",
+      "exit_code": 1
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/inline-a2-w2/users-4",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/inline-a2-w2/users-8",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/inline-a2-w2/users-16",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/inline-a2-w2/users-32",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/inline-a2-w2/users-64",
+      "exit_code": 1
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/inline-a2-w2/users-128",
+      "exit_code": 1
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/inline-a2-w4/users-4",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/inline-a2-w4/users-8",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/inline-a2-w4/users-16",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/inline-a2-w4/users-32",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/inline-a2-w4/users-64",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/inline-a2-w4/users-128",
+      "exit_code": 1
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/inline-a4-w1/users-4",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/inline-a4-w1/users-8",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/inline-a4-w1/users-16",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/inline-a4-w1/users-32",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/inline-a4-w1/users-64",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/inline-a4-w1/users-128",
+      "exit_code": 1
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/inline-a4-w2/users-4",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/inline-a4-w2/users-8",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/inline-a4-w2/users-16",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/inline-a4-w2/users-32",
+      "exit_code": 1
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/inline-a4-w2/users-64",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/inline-a4-w2/users-128",
+      "exit_code": 1
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/inline-a4-w4/users-4",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/inline-a4-w4/users-8",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/inline-a4-w4/users-16",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/inline-a4-w4/users-32",
+      "exit_code": 1
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/inline-a4-w4/users-64",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/inline-a4-w4/users-128",
+      "exit_code": 1
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/queue-a1-w1/users-4",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/queue-a1-w1/users-8",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/queue-a1-w2/users-4",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/queue-a1-w2/users-8",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/queue-a1-w2/users-16",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/queue-a1-w2/users-32",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/queue-a1-w4/users-4",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/queue-a1-w4/users-8",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/queue-a1-w4/users-16",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/queue-a1-w4/users-32",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/queue-a2-w1/users-4",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/queue-a2-w1/users-8",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/queue-a2-w1/users-16",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/queue-a2-w2/users-4",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/queue-a2-w2/users-8",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/queue-a2-w2/users-16",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/queue-a2-w4/users-4",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/queue-a2-w4/users-8",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/queue-a2-w4/users-16",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/queue-a2-w4/users-32",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/queue-a4-w1/users-4",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/queue-a4-w1/users-8",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/queue-a4-w1/users-16",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/queue-a4-w2/users-4",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/queue-a4-w2/users-8",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/queue-a4-w2/users-16",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/queue-a4-w4/users-4",
+      "exit_code": 0
+    },
+    {
+      "stage": "eval/verification/2026-10-14-r1-final-matrix/queue-a4-w4/users-8",
+      "exit_code": 0
+    }
+  ],
+  "running_matrix_containers": [],
+  "matrix_and_locust_processes_remaining": [],
+  "preview_project_running_containers": [
+    "voyacart-scale-review-mock-llm-1",
+    "voyacart-scale-review-api-2",
+    "voyacart-scale-review-automation-worker-1",
+    "voyacart-scale-review-worker-2",
+    "voyacart-scale-review-api-1",
+    "voyacart-scale-review-worker-1",
+    "voyacart-scale-review-nginx-1",
+    "voyacart-scale-review-qdrant-1",
+    "voyacart-scale-review-redis-1"
+  ],
+  "measurement_window_seconds": 45,
+  "docker_cpu_count": 4,
+  "worker_concurrency": 2,
+  "data_storage": "shared SQLite on one machine",
+  "catalog": "old 3700-product synthetic catalogue",
+  "scope": "short single-run windows; observed threshold points retained; full performance acceptance and clean deployment deferred by user; no further load or deployment started"
+}

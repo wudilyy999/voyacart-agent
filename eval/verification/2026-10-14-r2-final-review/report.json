@@ -1,0 +1,54 @@
+{
+  "reviewed_at": "2026-10-14",
+  "base_commit": "f72e87f827f7bddf04228ac7bd0cbed54cc33e7d",
+  "six_drill_reports_passed": true,
+  "report_invariants_passed": true,
+  "original_evidence": {
+    "files": 743,
+    "bytes": 30632706,
+    "all_original_bytes_preserved": true
+  },
+  "credential_scan_findings": [],
+  "credential_scan_scope": "all R2 evidence and current authored code/documents; known local credentials and common provider key patterns; values retained only in memory",
+  "new_authored_forbidden_word_findings": [],
+  "relative_links": {
+    "checked": 193,
+    "missing": []
+  },
+  "fallback_entries": 35,
+  "original_readme_headings_preserved": true,
+  "required_readme_chapters_each_once": true,
+  "targeted_source_fingerprints_match": {
+    "scripts/loadtest/hotspot.py": true,
+    "tests/test_hotspot_client.py": true,
+    "app/infrastructure/transient.py": true,
+    "app/infrastructure/llm.py": true,
+    "app/infrastructure/model_recovery.py": true,
+    "app/application/agents/orchestrator.py": true,
+    "app/infrastructure/throttle.py": true,
+    "tests/test_phase3.py": true,
+    "tests/test_model_runtime_counting.py": true,
+    "tests/test_phase4_model.py": true,
+    "tests/test_model_cancellation.py": true,
+    "tests/test_budget_settlement.py": true,
+    "tests/test_context_prefix_recovery.py": true
+  },
+  "recorded_model_boundary_tests": {
+    "passed": 114,
+    "skipped": 0
+  },
+  "recorded_hotspot_loopback_test_passed": true,
+  "code_and_document_diff_check_exit_code": 0,
+  "initial_review_check": "table counter counted an unselected separator row; corrected the counter; preserved original assertion traceback",
+  "scope": "review of existing passing and failing evidence; no test, model request, or container operation performed",
+  "pending": "final integrated regressions, final capacity, full real-model Harness, tool breaker activation, ESCI quality, clean-machine deployment, user merge",
+  "staged_evidence_diff_check": {
+    "exit_code": 2,
+    "whitespace_findings": 1027,
+    "scope": "all retained original evidence; raw whitespace preserved byte-for-byte",
+    "all_findings_in_raw_evidence": true
+  },
+  "staged_authored_code_and_document_diff_check_exit_code": 0,
+  "staged_file_count_before_review_report_update": 751,
+  "staged_checker_first_attempt": "header matcher also selected added raw log content; corrected to select only diff-check headers; original assertion traceback retained"
+}

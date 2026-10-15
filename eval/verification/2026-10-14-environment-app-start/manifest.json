@@ -1,0 +1,12 @@
+{
+  "started_at": "2026-10-14T15:22:57.639882+08:00",
+  "catalog": "data/catalog-v3.jsonl",
+  "source_fingerprints": {
+    "app/composition.py": "51700ff49697f9bf7432c71cdf2fee8416375b082b26c74d345fa8c4dad849cd201399cd1acd31a4d1fcbb7ff72b65b6476e826aaa44f33d72ec50943a6f5bc8",
+    "app/infrastructure/settings.py": "361ba04fe2077b83583d052ca13c55c9f23ad4974e39bbf86331b2b6f99776f390bc2722e2e00103a23e43a03f2b17de21598ce0357cbf03bd077c794a57cf98",
+    "app/infrastructure/vector/index_bootstrap.py": "f318fac09deae216f3b8f01562cec3b1755f77179432bb655458813217c802d49551ba4243fc88b00ab975fecc203e4928a82190b4aac54c6d7553c09b0c2aca",
+    "app/infrastructure/persistence/seed_products.py": "172d096f632bf275d360ae83de2765ae76e665445a701a76f05c51757109455fa8761979ea7b8212ac4d4ff364bad83e528dd4880a29c61295a0bcfa139127e1",
+    "frontend/vite.config.ts": "a2986afc02c5f339282fc86f41d61e28527616e1fbee8a368aa3b7efdf6983ec161baf2d8506f291c2b051a0ba8ab3259ca898e84dac2611c70bf0a68267e082"
+  },
+  "checks": "本机现有目录的启动与依赖联通，ESCI 与并发改造验收另行执行"
+}

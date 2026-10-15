@@ -1,0 +1,1 @@
+["docker", "volume", "ls", "--filter", "label=com.docker.compose.project=voyacart-r2-worker-clock-20261014", "--format", "{{.Name}}"]

@@ -1,0 +1,8 @@
+{
+  "source_fingerprints": {
+    "scripts/esci/prepare.py": "0969e95755ee64767d037c00aef164338e6a2ecb97c2199b5c94f659837e552f4987e8f2616d4e8f9997eb74bdabd8a6242e80cfaf360228e1d4a7d1de8be114",
+    "scripts/esci/test_prepare.py": "5c2a88b504bb6edd0ea5d55596bba0880da7458908c50782ea3aaeb8449b0b1af3453c02d7bf30288cf92866bd89b333b2ca6f0538605ed126ab1725bbfd6df4"
+  },
+  "fingerprint_method": "blake2b",
+  "exit_code": 0
+}

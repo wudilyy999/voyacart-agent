@@ -1,0 +1,16 @@
+{
+  "services": {
+    "api": {
+      "image": "voyacart-runtime:clean-20261014"
+    },
+    "worker": {
+      "image": "voyacart-runtime:clean-20261014"
+    },
+    "automation-worker": {
+      "image": "voyacart-runtime:clean-20261014"
+    },
+    "mock-llm": {
+      "image": "voyacart-runtime:clean-20261014"
+    }
+  }
+}

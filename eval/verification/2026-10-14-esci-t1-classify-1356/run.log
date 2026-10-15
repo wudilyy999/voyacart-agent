@@ -1,0 +1,33 @@
+{"cache_hits":0,"candidate_count":12000,"completed_calls":100,"failed_outputs":0,"model_calls":101}
+{"cache_hits":0,"candidate_count":12000,"completed_calls":200,"failed_outputs":0,"model_calls":201}
+Traceback (most recent call last):
+  File "/Users/liyuyang/.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/liyuyang/.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/liyuyang/Downloads/voyacart-agent/scripts/esci/prepare.py", line 213, in main
+    report = await classify(rows, ROOT / "data/esci/query-class-v1.jsonl", args.output, settings, client)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/liyuyang/Downloads/voyacart-agent/scripts/esci/prepare.py", line 158, in classify
+    async with asyncio.TaskGroup() as group:
+  File "/Users/liyuyang/.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/asyncio/taskgroups.py", line 134, in __aexit__
+    raise propagate_cancellation_error
+  File "/Users/liyuyang/.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/asyncio/taskgroups.py", line 110, in __aexit__
+    await self._on_completed_fut
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/liyuyang/Downloads/voyacart-agent/scripts/esci/prepare.py", line 232, in <module>
+    asyncio.run(main())
+  File "/Users/liyuyang/.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Users/liyuyang/.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/asyncio/runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt

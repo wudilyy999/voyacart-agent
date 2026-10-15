@@ -1,0 +1,5 @@
+ Container voyacart-agent-qdrant-1  Running
+ Container voyacart-agent-redis-1  Recreate
+ Container voyacart-agent-redis-1  Recreated
+ Container voyacart-agent-redis-1  Starting
+ Container voyacart-agent-redis-1  Started

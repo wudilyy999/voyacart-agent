@@ -1,0 +1,15 @@
+{
+  "base": "d71cab7c40e55a4bbf64f6b369cd592c594df631",
+  "source_fingerprints_blake2b": {
+    "scripts/loadtest/mock_llm.py": "dafb83cd4437d0f35115f501ef5b0838951a76e8d8747ac7f0d10ada35824b7c4d05d84ad8487356d5e117ea7609d03e8d75c24290f37aa510cee9966cd3185c",
+    "tests/test_mock_llm.py": "62c3aee4bd3628c258c559ab03b057b197a8b4e2873c0556236547189fc6c545db5b35781184e66e97540f5ed6b47cfc4cd8c5f43d0cda9d360965f056e6b023",
+    "docker/docker-compose.scale.yaml": "8fb4a28231e132ef26fe339649f77ba25d5f77357b5193f18c40655ddbda4f4a795fa9af3d299ddfecd5ea58632968fbadff7837c34c66b23db9ad8fade7453a"
+  },
+  "tests_passed": 13,
+  "full_backend_repeated": false,
+  "production_code_changed": false,
+  "docker_build_exit": 0,
+  "timing_exit": 0,
+  "page_confirmation": "pending",
+  "orders_api_total": 0
+}

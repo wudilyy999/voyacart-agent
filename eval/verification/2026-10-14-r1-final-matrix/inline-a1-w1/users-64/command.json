@@ -1,0 +1,21 @@
+[
+  "/tmp/voyacart-loadtest-venv/bin/locust",
+  "-f",
+  "scripts/loadtest/locustfile.py",
+  "--headless",
+  "--host",
+  "http://127.0.0.1:8085",
+  "--users",
+  "64",
+  "--spawn-rate",
+  "64",
+  "--run-time",
+  "45s",
+  "--stop-timeout",
+  "190",
+  "--agui-output",
+  "/private/tmp/voyacart-local-fallback-20261014/eval/verification/2026-10-14-r1-final-matrix/inline-a1-w1/users-64",
+  "--csv",
+  "/private/tmp/voyacart-local-fallback-20261014/eval/verification/2026-10-14-r1-final-matrix/inline-a1-w1/users-64/locust",
+  "--csv-full-history"
+]

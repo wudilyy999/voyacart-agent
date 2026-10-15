@@ -1,0 +1,112 @@
+FFFF                                                                     [100%]
+=================================== FAILURES ===================================
+______________ test_explicit_v1_catalog_keeps_its_original_scope _______________
+
+    def test_explicit_v1_catalog_keeps_its_original_scope():
+        source = Path(__file__).resolve().parents[1] / "data/catalog-v1.jsonl"
+>       products = build_seed_products(source)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       TypeError: build_seed_products() takes 0 positional arguments but 1 was given
+
+tests/test_catalog_fixture.py:18: TypeError
+_____ test_explicit_catalog_preserves_unicode_inside_json_records[.jsonl] ______
+
+tmp_path = PosixPath('/private/var/folders/j5/9jbbktk13f7bdrtssrkz58tw0000gn/T/pytest-of-liyuyang/pytest-95/test_explicit_catalog_preserve0')
+suffix = '.jsonl'
+
+    @pytest.mark.parametrize("suffix", [".jsonl", ".jsonl.gz"])
+    def test_explicit_catalog_preserves_unicode_inside_json_records(tmp_path, suffix):
+        source = Path(__file__).resolve().parents[1] / "data/catalog-v1.jsonl"
+        with source.open(encoding="utf-8") as stream:
+            record = json.loads(next(stream))
+        record["title"] = "商品\u2028原文\u2029要点\u0085描述"
+        target = tmp_path / ("catalog" + suffix)
+        opener = gzip.open if suffix.endswith(".gz") else open
+        with opener(target, "wt", encoding="utf-8") as stream:
+            stream.write(json.dumps(record, ensure_ascii=False) + "\n\n")
+    
+>       products = build_seed_products(str(target))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       TypeError: build_seed_products() takes 0 positional arguments but 1 was given
+
+tests/test_catalog_fixture.py:34: TypeError
+____ test_explicit_catalog_preserves_unicode_inside_json_records[.jsonl.gz] ____
+
+tmp_path = PosixPath('/private/var/folders/j5/9jbbktk13f7bdrtssrkz58tw0000gn/T/pytest-of-liyuyang/pytest-95/test_explicit_catalog_preserve1')
+suffix = '.jsonl.gz'
+
+    @pytest.mark.parametrize("suffix", [".jsonl", ".jsonl.gz"])
+    def test_explicit_catalog_preserves_unicode_inside_json_records(tmp_path, suffix):
+        source = Path(__file__).resolve().parents[1] / "data/catalog-v1.jsonl"
+        with source.open(encoding="utf-8") as stream:
+            record = json.loads(next(stream))
+        record["title"] = "商品\u2028原文\u2029要点\u0085描述"
+        target = tmp_path / ("catalog" + suffix)
+        opener = gzip.open if suffix.endswith(".gz") else open
+        with opener(target, "wt", encoding="utf-8") as stream:
+            stream.write(json.dumps(record, ensure_ascii=False) + "\n\n")
+    
+>       products = build_seed_products(str(target))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       TypeError: build_seed_products() takes 0 positional arguments but 1 was given
+
+tests/test_catalog_fixture.py:34: TypeError
+___________ test_product_cli_uses_and_fingerprints_explicit_catalog ____________
+
+tmp_path = PosixPath('/private/var/folders/j5/9jbbktk13f7bdrtssrkz58tw0000gn/T/pytest-of-liyuyang/pytest-95/test_product_cli_uses_and_fing0')
+
+    async def test_product_cli_uses_and_fingerprints_explicit_catalog(tmp_path):
+        from app.infrastructure.persistence.seed_products import build_seed_products
+        source = Path(__file__).resolve().parents[1] / "data/catalog-v1.jsonl"
+        with source.open(encoding="utf-8") as stream:
+            record = json.loads(next(stream))
+        record["title"] = "显式目录独有灯具"
+        record["description"] = "显式目录独有灯具"
+        catalog = _dataset(tmp_path / "catalog.jsonl", [record])
+        dataset = _dataset(tmp_path / "cases.jsonl", [{
+            "id": "explicit", "query": "显式目录独有灯具", "relevant": [record["product_id"]],
+        }])
+        reports = tmp_path / "reports"
+    
+>       await product.main(["--dataset", str(dataset), "--catalog-file", str(catalog),
+                            "--strategy", "keyword_2gram", "--report-dir", str(reports)])
+
+tests/test_eval_selection_manifest.py:177: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+scripts/eval/run_product_recall.py:420: in main
+    args = parser.parse_args(argv)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+/Users/liyuyang/.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/argparse.py:1877: in parse_args
+    self.error(msg % ' '.join(argv))
+/Users/liyuyang/.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/argparse.py:2640: in error
+    self.exit(2, _('%(prog)s: error: %(message)s\n') % args)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = ArgumentParser(prog='__main__.py', usage=None, description='商品检索召回评测', formatter_class=<class 'argparse.HelpFormatter'>, conflict_handler='error', add_help=True)
+status = 2
+message = '__main__.py: error: unrecognized arguments: --catalog-file /private/var/folders/j5/9jbbktk13f7bdrtssrkz58tw0000gn/T/pytest-of-liyuyang/pytest-95/test_product_cli_uses_and_fing0/catalog.jsonl\n'
+
+    def exit(self, status=0, message=None):
+        if message:
+            self._print_message(message, _sys.stderr)
+>       _sys.exit(status)
+E       SystemExit: 2
+
+/Users/liyuyang/.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/argparse.py:2627: SystemExit
+----------------------------- Captured stderr call -----------------------------
+usage: __main__.py [-h] [--dataset DATASET] [--split {all,dev,release}]
+                   [--dry-run] [--top-k TOP_K]
+                   [--strategy {embedding_rerank,embedding_only,keyword_2gram,bm25,hybrid_rerank}]
+                   [--compare-strategies] [--min-recall MIN_RECALL]
+                   [--min-precision MIN_PRECISION] [--min-mrr MIN_MRR]
+                   [--min-ndcg MIN_NDCG]
+                   [--min-empty-accuracy MIN_EMPTY_ACCURACY] [--formal-gates]
+                   [--profile {online-main,offline-fallback,hybrid-experimental}]
+                   [--baseline-file BASELINE_FILE] [--report-dir REPORT_DIR]
+__main__.py: error: unrecognized arguments: --catalog-file /private/var/folders/j5/9jbbktk13f7bdrtssrkz58tw0000gn/T/pytest-of-liyuyang/pytest-95/test_product_cli_uses_and_fing0/catalog.jsonl
+=========================== short test summary info ============================
+FAILED tests/test_catalog_fixture.py::test_explicit_v1_catalog_keeps_its_original_scope
+FAILED tests/test_catalog_fixture.py::test_explicit_catalog_preserves_unicode_inside_json_records[.jsonl]
+FAILED tests/test_catalog_fixture.py::test_explicit_catalog_preserves_unicode_inside_json_records[.jsonl.gz]
+FAILED tests/test_eval_selection_manifest.py::test_product_cli_uses_and_fingerprints_explicit_catalog
+4 failed in 0.69s

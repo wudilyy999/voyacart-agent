@@ -1,0 +1,75 @@
+{
+  "requests": 23,
+  "successful": 23,
+  "errors": 0,
+  "error_rate": 0.0,
+  "error_codes": {},
+  "reconnections": 14,
+  "observed_seconds": 55.433769941329956,
+  "successful_runs_per_second": 0.4149095402377064,
+  "latency_ms": {
+    "first_event_ms": {
+      "samples": 23,
+      "p50": 59.395625023171306,
+      "p95": 236.02483293507248,
+      "p99": 276.85183309949934
+    },
+    "first_token_ms": {
+      "samples": 23,
+      "p50": 2187.575291027315,
+      "p95": 3513.741916976869,
+      "p99": 3615.7087499741465
+    },
+    "complete_ms": {
+      "samples": 23,
+      "p50": 11336.873750085942,
+      "p95": 12638.369583059102,
+      "p99": 12789.4148749765
+    }
+  },
+  "source": "runs.csv",
+  "latency_scope": "all observed runs; missing times excluded",
+  "users": 8,
+  "sqlite_lock_retries": {
+    "voyacart-r1-matrix-nginx-1": 0,
+    "voyacart-r1-matrix-api-4": 0,
+    "voyacart-r1-matrix-api-3": 0,
+    "voyacart-r1-matrix-worker-3": 0,
+    "voyacart-r1-matrix-api-1": 0,
+    "voyacart-r1-matrix-api-2": 0,
+    "voyacart-r1-matrix-worker-2": 0,
+    "voyacart-r1-matrix-worker-5": 0,
+    "voyacart-r1-matrix-worker-4": 0,
+    "voyacart-r1-matrix-qdrant-1": 0,
+    "voyacart-r1-matrix-redis-1": 0,
+    "voyacart-r1-matrix-mock-llm-1": 0
+  },
+  "sqlite_lock_error_log_occurrences": {
+    "voyacart-r1-matrix-nginx-1": 0,
+    "voyacart-r1-matrix-api-4": 0,
+    "voyacart-r1-matrix-api-3": 0,
+    "voyacart-r1-matrix-worker-3": 0,
+    "voyacart-r1-matrix-api-1": 0,
+    "voyacart-r1-matrix-api-2": 0,
+    "voyacart-r1-matrix-worker-2": 0,
+    "voyacart-r1-matrix-worker-5": 0,
+    "voyacart-r1-matrix-worker-4": 0,
+    "voyacart-r1-matrix-qdrant-1": 0,
+    "voyacart-r1-matrix-redis-1": 0,
+    "voyacart-r1-matrix-mock-llm-1": 0
+  },
+  "redis_pool_error_log_occurrences": {
+    "voyacart-r1-matrix-nginx-1": 0,
+    "voyacart-r1-matrix-api-4": 0,
+    "voyacart-r1-matrix-api-3": 0,
+    "voyacart-r1-matrix-worker-3": 0,
+    "voyacart-r1-matrix-api-1": 0,
+    "voyacart-r1-matrix-api-2": 0,
+    "voyacart-r1-matrix-worker-2": 0,
+    "voyacart-r1-matrix-worker-5": 0,
+    "voyacart-r1-matrix-worker-4": 0,
+    "voyacart-r1-matrix-qdrant-1": 0,
+    "voyacart-r1-matrix-redis-1": 0,
+    "voyacart-r1-matrix-mock-llm-1": 0
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "checked_at": "2026-10-14T22:42:52.522845+08:00",
+  "status": "DEFERRED_BY_USER",
+  "build_executed": false,
+  "up_executed": false,
+  "runtime_acceptance": "NOT_EXECUTED",
+  "command": [
+    "docker",
+    "ps",
+    "-a",
+    "--filter",
+    "label=com.docker.compose.project=voyacart-clean-scale-20261014",
+    "--format",
+    "{{.ID}} {{.Names}} {{.Status}}"
+  ],
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "",
+  "deployment_runner_started": false,
+  "note": "用户要求本轮约30分钟交付，干净部署留待后续。此前仅执行只读检查和配置解析；全部命令已结束。"
+}

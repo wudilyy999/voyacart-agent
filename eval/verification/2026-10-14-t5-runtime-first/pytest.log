@@ -1,0 +1,145 @@
+FFFF.................................................................... [ 81%]
+................                                                         [100%]
+=================================== FAILURES ===================================
+_______ test_local_fallback_preserves_all_hard_constraints[False-False] ________
+
+hybrid = False, remote_empty = False
+
+    @pytest.mark.parametrize("hybrid", [False, True])
+    @pytest.mark.parametrize("remote_empty", [False, True])
+    async def test_local_fallback_preserves_all_hard_constraints(hybrid, remote_empty):
+        products = constrained_products()
+        local = SimpleNamespace(embed=AsyncMock(return_value=[1.0, 0.0]))
+        index = SimpleNamespace(search=AsyncMock(return_value=[VectorHit(p.product_id, 1.0) for p in products]))
+        remote = SimpleNamespace(embed=AsyncMock(return_value=[1.0])) if remote_empty else BrokenEmbeddingClient()
+        usecase = CatalogSearchUseCase(InMemoryProductRepository(products), embedder=remote,
+            vector_index=SimpleNamespace(search=AsyncMock(return_value=[])),
+            local_embedder=local, local_vector_index=index, hybrid_enabled=hybrid)
+        result = await usecase.execute(ProductSearchSpec(normalized_query="轻便背包", ship_to="CN",
+            category="旅行装备", price_max_major=100, target_currency="CNY",
+            required_material_tags=["金属"], excluded_material_tags=["玻璃"]))
+        assert result["recall_strategy"] == "local_embedding"
+        assert result["rerank_applied"] is False
+        assert [h["product_id"] for h in result["hits"]] == ["OK"]
+>       assert {p["reason"] for p in result["filtered_out"]} == {
+            "out_of_stock", "ship_to_unavailable", "over_price_cap", "category_mismatch",
+            "material_required_missing", "material_excluded",
+        }
+E       AssertionError: assert {'out_of_stoc..._unavailable'} == {'category_mi..._unavailable'}
+E         
+E         Extra items in the right set:
+E         'material_excluded'
+E         'category_mismatch'
+E         'material_required_missing'
+E         Use -v to get more diff
+
+tests/test_local_embedding_fallback.py:50: AssertionError
+------------------------------ Captured log call -------------------------------
+WARNING  app.application.usecases.catalog_search:catalog_search.py:183 远端向量召回不可用，尝试降级召回：embedding 服务不可用
+________ test_local_fallback_preserves_all_hard_constraints[False-True] ________
+
+hybrid = True, remote_empty = False
+
+    @pytest.mark.parametrize("hybrid", [False, True])
+    @pytest.mark.parametrize("remote_empty", [False, True])
+    async def test_local_fallback_preserves_all_hard_constraints(hybrid, remote_empty):
+        products = constrained_products()
+        local = SimpleNamespace(embed=AsyncMock(return_value=[1.0, 0.0]))
+        index = SimpleNamespace(search=AsyncMock(return_value=[VectorHit(p.product_id, 1.0) for p in products]))
+        remote = SimpleNamespace(embed=AsyncMock(return_value=[1.0])) if remote_empty else BrokenEmbeddingClient()
+        usecase = CatalogSearchUseCase(InMemoryProductRepository(products), embedder=remote,
+            vector_index=SimpleNamespace(search=AsyncMock(return_value=[])),
+            local_embedder=local, local_vector_index=index, hybrid_enabled=hybrid)
+        result = await usecase.execute(ProductSearchSpec(normalized_query="轻便背包", ship_to="CN",
+            category="旅行装备", price_max_major=100, target_currency="CNY",
+            required_material_tags=["金属"], excluded_material_tags=["玻璃"]))
+        assert result["recall_strategy"] == "local_embedding"
+        assert result["rerank_applied"] is False
+        assert [h["product_id"] for h in result["hits"]] == ["OK"]
+>       assert {p["reason"] for p in result["filtered_out"]} == {
+            "out_of_stock", "ship_to_unavailable", "over_price_cap", "category_mismatch",
+            "material_required_missing", "material_excluded",
+        }
+E       AssertionError: assert {'out_of_stoc..._unavailable'} == {'category_mi..._unavailable'}
+E         
+E         Extra items in the right set:
+E         'material_excluded'
+E         'category_mismatch'
+E         'material_required_missing'
+E         Use -v to get more diff
+
+tests/test_local_embedding_fallback.py:50: AssertionError
+------------------------------ Captured log call -------------------------------
+WARNING  app.application.usecases.catalog_search:catalog_search.py:288 Hybrid 向量侧不可用：RuntimeError
+________ test_local_fallback_preserves_all_hard_constraints[True-False] ________
+
+hybrid = False, remote_empty = True
+
+    @pytest.mark.parametrize("hybrid", [False, True])
+    @pytest.mark.parametrize("remote_empty", [False, True])
+    async def test_local_fallback_preserves_all_hard_constraints(hybrid, remote_empty):
+        products = constrained_products()
+        local = SimpleNamespace(embed=AsyncMock(return_value=[1.0, 0.0]))
+        index = SimpleNamespace(search=AsyncMock(return_value=[VectorHit(p.product_id, 1.0) for p in products]))
+        remote = SimpleNamespace(embed=AsyncMock(return_value=[1.0])) if remote_empty else BrokenEmbeddingClient()
+        usecase = CatalogSearchUseCase(InMemoryProductRepository(products), embedder=remote,
+            vector_index=SimpleNamespace(search=AsyncMock(return_value=[])),
+            local_embedder=local, local_vector_index=index, hybrid_enabled=hybrid)
+        result = await usecase.execute(ProductSearchSpec(normalized_query="轻便背包", ship_to="CN",
+            category="旅行装备", price_max_major=100, target_currency="CNY",
+            required_material_tags=["金属"], excluded_material_tags=["玻璃"]))
+        assert result["recall_strategy"] == "local_embedding"
+        assert result["rerank_applied"] is False
+        assert [h["product_id"] for h in result["hits"]] == ["OK"]
+>       assert {p["reason"] for p in result["filtered_out"]} == {
+            "out_of_stock", "ship_to_unavailable", "over_price_cap", "category_mismatch",
+            "material_required_missing", "material_excluded",
+        }
+E       AssertionError: assert {'out_of_stoc..._unavailable'} == {'category_mi..._unavailable'}
+E         
+E         Extra items in the right set:
+E         'material_excluded'
+E         'category_mismatch'
+E         'material_required_missing'
+E         Use -v to get more diff
+
+tests/test_local_embedding_fallback.py:50: AssertionError
+________ test_local_fallback_preserves_all_hard_constraints[True-True] _________
+
+hybrid = True, remote_empty = True
+
+    @pytest.mark.parametrize("hybrid", [False, True])
+    @pytest.mark.parametrize("remote_empty", [False, True])
+    async def test_local_fallback_preserves_all_hard_constraints(hybrid, remote_empty):
+        products = constrained_products()
+        local = SimpleNamespace(embed=AsyncMock(return_value=[1.0, 0.0]))
+        index = SimpleNamespace(search=AsyncMock(return_value=[VectorHit(p.product_id, 1.0) for p in products]))
+        remote = SimpleNamespace(embed=AsyncMock(return_value=[1.0])) if remote_empty else BrokenEmbeddingClient()
+        usecase = CatalogSearchUseCase(InMemoryProductRepository(products), embedder=remote,
+            vector_index=SimpleNamespace(search=AsyncMock(return_value=[])),
+            local_embedder=local, local_vector_index=index, hybrid_enabled=hybrid)
+        result = await usecase.execute(ProductSearchSpec(normalized_query="轻便背包", ship_to="CN",
+            category="旅行装备", price_max_major=100, target_currency="CNY",
+            required_material_tags=["金属"], excluded_material_tags=["玻璃"]))
+        assert result["recall_strategy"] == "local_embedding"
+        assert result["rerank_applied"] is False
+        assert [h["product_id"] for h in result["hits"]] == ["OK"]
+>       assert {p["reason"] for p in result["filtered_out"]} == {
+            "out_of_stock", "ship_to_unavailable", "over_price_cap", "category_mismatch",
+            "material_required_missing", "material_excluded",
+        }
+E       AssertionError: assert {'out_of_stoc..._unavailable'} == {'category_mi..._unavailable'}
+E         
+E         Extra items in the right set:
+E         'material_excluded'
+E         'category_mismatch'
+E         'material_required_missing'
+E         Use -v to get more diff
+
+tests/test_local_embedding_fallback.py:50: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_local_embedding_fallback.py::test_local_fallback_preserves_all_hard_constraints[False-False]
+FAILED tests/test_local_embedding_fallback.py::test_local_fallback_preserves_all_hard_constraints[False-True]
+FAILED tests/test_local_embedding_fallback.py::test_local_fallback_preserves_all_hard_constraints[True-False]
+FAILED tests/test_local_embedding_fallback.py::test_local_fallback_preserves_all_hard_constraints[True-True]
+4 failed, 84 passed in 9.68s

@@ -1,0 +1,174 @@
+Compose can now delegate builds to bake for better performance.
+ To do so, set COMPOSE_BAKE=true.
+#0 building with "colima" instance using docker driver
+
+#1 [api internal] load build definition from Dockerfile
+#1 transferring dockerfile: 1.30kB done
+#1 DONE 0.0s
+
+#2 [api] resolve image config for docker-image://docker.io/docker/dockerfile:1
+#2 DONE 1.0s
+
+#3 [api] docker-image://docker.io/docker/dockerfile:1@sha256:4edf897a3ffa55b89f906fc8cc78afdb3f1834cc9c7083565e611a8a7d5fe99e
+#3 CACHED
+
+#4 [api internal] load metadata for ghcr.io/astral-sh/uv:latest
+#4 DONE 0.0s
+
+#5 [api internal] load metadata for docker.io/library/python:3.11-slim
+#5 DONE 1.0s
+
+#6 [api internal] load .dockerignore
+#6 transferring context: 347B done
+#6 DONE 0.0s
+
+#7 [api] FROM ghcr.io/astral-sh/uv:latest
+#7 DONE 0.0s
+
+#8 [api builder 1/6] FROM docker.io/library/python:3.11-slim@sha256:e88e9763f943ec1834f992a4b51e0f24500486803e8bc534e5767af9ea65f6ce
+#8 DONE 0.0s
+
+#9 [api internal] load build context
+#9 transferring context: 29.23kB 0.0s done
+#9 DONE 0.0s
+
+#10 [api builder 2/6] COPY --from=ghcr.io/astral-sh/uv:latest /uv /usr/local/bin/uv
+#10 CACHED
+
+#11 [api builder 6/6] COPY app ./app
+#11 CACHED
+
+#12 [api stage-1 4/9] COPY app ./app
+#12 CACHED
+
+#13 [api builder 3/6] WORKDIR /app
+#13 CACHED
+
+#14 [api builder 4/6] COPY pyproject.toml uv.lock ./
+#14 CACHED
+
+#15 [api stage-1 3/9] COPY --from=builder /app/.venv /app/.venv
+#15 CACHED
+
+#16 [api stage-1 2/9] WORKDIR /app
+#16 CACHED
+
+#17 [api builder 5/6] RUN uv sync --frozen --no-install-project --no-dev
+#17 CACHED
+
+#18 [api stage-1 5/9] COPY configs ./configs
+#18 CACHED
+
+#19 [api stage-1 6/9] COPY scripts/loadtest ./scripts/loadtest
+#19 DONE 0.0s
+
+#20 [api stage-1 7/9] COPY knowledge ./knowledge
+#20 DONE 0.0s
+
+#21 [api stage-1 8/9] COPY data/catalog-v3.jsonl ./catalog/catalog-v3.jsonl
+#21 DONE 0.0s
+
+#22 [api stage-1 9/9] RUN mkdir -p /app/data
+#22 DONE 0.1s
+
+#23 [api] resolving provenance for metadata file
+#23 DONE 0.0s
+
+#24 [api] exporting to image
+#24 exporting layers 0.0s done
+#24 writing image sha256:7ce4c932675ae681f841c74b682dc54311c3e8650bd13e99a3b36065e76fae80 done
+#24 naming to docker.io/library/voyacart-runtime:scale done
+#24 DONE 0.0s
+
+#25 [nginx internal] load build definition from Dockerfile
+#25 transferring dockerfile: 439B done
+#25 DONE 0.0s
+
+#26 [nginx internal] load metadata for docker.io/library/node:22-alpine
+#26 DONE 1.7s
+
+#27 [nginx internal] load metadata for docker.io/library/nginx:stable-alpine
+#27 DONE 1.7s
+
+#28 [nginx internal] load .dockerignore
+#28 transferring context: 347B done
+#28 DONE 0.0s
+
+#29 [nginx build 1/6] FROM docker.io/library/node:22-alpine@sha256:0a7108bf6c7bf5de370ffb1a3ed6be93d405b43ff159f681a8d18c0e2bc2e402
+#29 DONE 0.0s
+
+#30 [nginx stage-1 1/3] FROM docker.io/library/nginx:stable-alpine@sha256:0985e772fb9f729e6fa0980da05fca5d9c468e870eed43071545afa9d2e27d94
+#30 CACHED
+
+#31 [nginx internal] load build context
+#31 transferring context: 12.23MB 0.2s done
+#31 DONE 0.2s
+
+#32 [nginx build 2/6] WORKDIR /workspace
+#32 CACHED
+
+#33 [nginx build 3/6] COPY frontend/package.json frontend/package-lock.json ./
+#33 CACHED
+
+#34 [nginx stage-1 2/3] COPY docker/nginx.scale.conf /etc/nginx/conf.d/default.conf
+#34 DONE 0.1s
+
+#35 [nginx build 4/6] RUN npm ci
+#35 1.755 npm warn deprecated whatwg-encoding@3.1.1: Use @exodus/bytes instead for a more spec-conformant and faster implementation
+#35 5.331 
+#35 5.331 added 257 packages, and audited 258 packages in 5s
+#35 5.331 
+#35 5.331 113 packages are looking for funding
+#35 5.331   run `npm fund` for details
+#35 5.344 
+#35 5.344 6 vulnerabilities (2 moderate, 2 high, 2 critical)
+#35 5.344 
+#35 5.344 To address issues that do not require attention, run:
+#35 5.344   npm audit fix
+#35 5.344 
+#35 5.344 To address all issues (including breaking changes), run:
+#35 5.344   npm audit fix --force
+#35 5.344 
+#35 5.344 Run `npm audit` for details.
+#35 5.345 npm notice
+#35 5.345 npm notice New major version of npm available! 10.9.9 -> 12.2.0
+#35 5.345 npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
+#35 5.345 npm notice To update run: npm install -g npm@12.2.0
+#35 5.345 npm notice
+#35 DONE 5.6s
+
+#36 [nginx build 5/6] COPY frontend/ .
+#36 DONE 0.1s
+
+#37 [nginx build 6/6] RUN npm run build
+#37 0.234 
+#37 0.234 > voyacart-frontend@0.3.0 build
+#37 0.234 > tsc -b && vite build
+#37 0.234 
+#37 5.955 vite v5.4.21 building for production...
+#37 6.005 transforming...
+#37 8.679 ✓ 620 modules transformed.
+#37 9.006 rendering chunks...
+#37 9.053 computing gzip size...
+#37 9.067 dist/index.html                      0.70 kB │ gzip:  0.47 kB
+#37 9.067 dist/assets/index-CUArSRsv.css     157.67 kB │ gzip: 32.31 kB
+#37 9.067 dist/assets/index-BJIllAKN.js      178.88 kB │ gzip: 60.76 kB
+#37 9.067 dist/assets/agent-CWWVwje9.js      203.99 kB │ gzip: 44.71 kB
+#37 9.067 dist/assets/ui-vendor-CMif1nyE.js  318.45 kB │ gzip: 99.22 kB
+#37 9.068 ✓ built in 3.09s
+#37 DONE 9.2s
+
+#38 [nginx stage-1 3/3] COPY --from=build /workspace/dist /usr/share/nginx/html
+#38 DONE 0.0s
+
+#39 [nginx] exporting to image
+#39 exporting layers 0.0s done
+#39 writing image sha256:21fdee3df0b7b47aed45495923df20213f90efc244ad36651d197805692f61e9
+#39 writing image sha256:21fdee3df0b7b47aed45495923df20213f90efc244ad36651d197805692f61e9 done
+#39 naming to docker.io/library/voyacart-scale-review-nginx done
+#39 DONE 0.1s
+
+#40 [nginx] resolving provenance for metadata file
+#40 DONE 0.0s
+ api  Built
+ nginx  Built

@@ -1,0 +1,10 @@
+{
+  "purpose": "补齐旧目录的本机环境索引，复用已写入向量",
+  "fingerprint_method": "blake2b",
+  "source_fingerprints": {
+    "scripts/sync_product_vectors.py": "44b2744ddce87e144a4a854b201f7db3b811cc9d5d9ed005cdfbe513cad540f1d739ed217936ac542233fa2d1bc73eb128558995f9f9628dbdfa074a2fe29446",
+    "app/infrastructure/vector/index_bootstrap.py": "f318fac09deae216f3b8f01562cec3b1755f77179432bb655458813217c802d49551ba4243fc88b00ab975fecc203e4928a82190b4aac54c6d7553c09b0c2aca",
+    "app/infrastructure/vector/qdrant_product_index.py": "3cbcda01e06e7350d8e39c807eca0198a8ab5cf6e75db9674d41c2f60012848beec2432e186c44f14c73217ff2e3d3979bbb1772a4e6dc6cedace5279f9e4637",
+    "app/infrastructure/embedding/openai_embedding_client.py": "91c550aac5fc237d9c2848472021e8424c9ab0e39acf954266caf895fded5b5dc6212fa6da0fcd1e1032cf31e9ee0f59560ad84cec7b5610c08b52bef0495b83"
+  }
+}

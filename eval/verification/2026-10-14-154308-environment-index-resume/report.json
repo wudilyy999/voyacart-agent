@@ -1,0 +1,15 @@
+{
+  "model": "text-embedding-v4",
+  "model_version": "",
+  "model_key": "7ace48e6f7264054d03887d33857e2c25d591dfdfdedf3d9055fa650cf4053af",
+  "collection": "voyacart_products",
+  "total_products": 3700,
+  "reused_products": 330,
+  "embedded_products": 3340,
+  "written_products": 3340,
+  "pending_products": 30,
+  "batches": 334,
+  "complete": false,
+  "vector_dimension": 1024,
+  "error_type": "ConnectTimeout"
+}

@@ -1,0 +1,69 @@
+{
+  "requests": 11,
+  "successful": 11,
+  "errors": 0,
+  "error_rate": 0.0,
+  "error_codes": {},
+  "reconnections": 0,
+  "observed_seconds": 53.82178020477295,
+  "successful_runs_per_second": 0.2043782267726721,
+  "latency_ms": {
+    "first_event_ms": {
+      "samples": 11,
+      "p50": 62.91858304757625,
+      "p95": 334.51650000642985,
+      "p99": 334.51650000642985
+    },
+    "first_token_ms": {
+      "samples": 11,
+      "p50": 2198.1402080273256,
+      "p95": 3610.2118330309168,
+      "p99": 3610.2118330309168
+    },
+    "complete_ms": {
+      "samples": 11,
+      "p50": 11394.032333046198,
+      "p95": 12733.631749986671,
+      "p99": 12733.631749986671
+    }
+  },
+  "source": "runs.csv",
+  "latency_scope": "all observed runs; missing times excluded",
+  "users": 4,
+  "sqlite_lock_retries": {
+    "voyacart-r1-matrix-nginx-1": 0,
+    "voyacart-r1-matrix-worker-2": 0,
+    "voyacart-r1-matrix-api-1": 0,
+    "voyacart-r1-matrix-api-3": 0,
+    "voyacart-r1-matrix-worker-3": 0,
+    "voyacart-r1-matrix-api-4": 0,
+    "voyacart-r1-matrix-api-2": 0,
+    "voyacart-r1-matrix-qdrant-1": 0,
+    "voyacart-r1-matrix-redis-1": 0,
+    "voyacart-r1-matrix-mock-llm-1": 0
+  },
+  "sqlite_lock_error_log_occurrences": {
+    "voyacart-r1-matrix-nginx-1": 0,
+    "voyacart-r1-matrix-worker-2": 0,
+    "voyacart-r1-matrix-api-1": 0,
+    "voyacart-r1-matrix-api-3": 0,
+    "voyacart-r1-matrix-worker-3": 0,
+    "voyacart-r1-matrix-api-4": 0,
+    "voyacart-r1-matrix-api-2": 0,
+    "voyacart-r1-matrix-qdrant-1": 0,
+    "voyacart-r1-matrix-redis-1": 0,
+    "voyacart-r1-matrix-mock-llm-1": 0
+  },
+  "redis_pool_error_log_occurrences": {
+    "voyacart-r1-matrix-nginx-1": 0,
+    "voyacart-r1-matrix-worker-2": 0,
+    "voyacart-r1-matrix-api-1": 0,
+    "voyacart-r1-matrix-api-3": 0,
+    "voyacart-r1-matrix-worker-3": 0,
+    "voyacart-r1-matrix-api-4": 0,
+    "voyacart-r1-matrix-api-2": 0,
+    "voyacart-r1-matrix-qdrant-1": 0,
+    "voyacart-r1-matrix-redis-1": 0,
+    "voyacart-r1-matrix-mock-llm-1": 0
+  }
+}

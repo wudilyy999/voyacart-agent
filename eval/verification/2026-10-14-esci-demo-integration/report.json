@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "runtime_catalog_products": 5700,
+  "real_amazon_products": 2000,
+  "model": "gemini-3.8-flash-high",
+  "embedding_model": "text-embedding-v4",
+  "remaining_product_vectors": 0,
+  "session_id": "3b062f5f-7149-47d4-b4f9-7736456eb977",
+  "confirmation_id": "1a6f0dd0070947e9aa84d70bf9c3b5ba",
+  "order_id": "9bf2a3cb7d274a16b7ac0c951a688dd3",
+  "product_id": "P100472",
+  "asin": "B079439MQW",
+  "title": "SAIREIDER Travel Pillow 100% Memory Foam Airplanes Neck Pillows -Prevent The Heads from Falling Forward Travel Neck Pillows with Sleep Mask and Earplugs (Navy Blue)（Navy）",
+  "sku_id": "P100472-S1",
+  "initial_stock": 114,
+  "stock_after_repeat": 113,
+  "new_orders": 1,
+  "old_order_preserved": true,
+  "old_sku_stock_preserved": 89,
+  "wrong_buyer_status": 403,
+  "run": {
+    "run_id": "69e3a861-c8ac-4061-9592-716e4d680a09",
+    "status": "completed",
+    "event_count": 46,
+    "continuous": true
+  },
+  "payment_and_shipping": "local purchase intent; no payment or delivery",
+  "full_harness_status": "failed_native_process_exit; 869 assertions passed; real model stage not executed",
+  "catalog_tests_passed": 68,
+  "data_tests_passed": 6
+}

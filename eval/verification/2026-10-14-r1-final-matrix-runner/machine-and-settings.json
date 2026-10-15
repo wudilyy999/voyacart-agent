@@ -1,0 +1,33 @@
+{
+  "host_platform": "macOS-15.4.1-arm64-arm-64bit",
+  "host_machine": "arm64",
+  "docker_cpu_count": 4,
+  "docker_memory_bytes": 8308154368,
+  "locust_version": "locust 2.46.7 from /tmp/voyacart-loadtest-venv/lib/python3.11/site-packages/locust (Python 3.11.16)",
+  "first_configuration_safe_settings": {
+    "api": {
+      "AGUI_DELTA_COALESCE_MS": "50",
+      "AGUI_QUEUE_ENABLED": "0",
+      "QUEUE_ENABLED": "1",
+      "AGUI_QUEUE_MAX_PENDING": "200",
+      "WORKER_CONCURRENCY": null,
+      "LLM_MAX_CONCURRENCY": "10000",
+      "LLM_MIN_INTERVAL_SECONDS": "0",
+      "SEMANTIC_CACHE_ENABLED": "0",
+      "AUTOMATION_WORKER_MODE": "external",
+      "BREAKER_SHARED": "1"
+    },
+    "worker": {
+      "AGUI_DELTA_COALESCE_MS": "50",
+      "AGUI_QUEUE_ENABLED": "0",
+      "QUEUE_ENABLED": "1",
+      "AGUI_QUEUE_MAX_PENDING": "200",
+      "WORKER_CONCURRENCY": "2",
+      "LLM_MAX_CONCURRENCY": "10000",
+      "LLM_MIN_INTERVAL_SECONDS": "0",
+      "SEMANTIC_CACHE_ENABLED": "0",
+      "AUTOMATION_WORKER_MODE": "external",
+      "BREAKER_SHARED": "1"
+    }
+  }
+}

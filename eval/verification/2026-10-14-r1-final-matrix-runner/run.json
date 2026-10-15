@@ -1,0 +1,27 @@
+{
+  "started_local_time": "2026-10-14T21:10:30.135814+08:00",
+  "head": "a6bb2d7bfda9b2f8bd4b1f6f320056fa14490d8f",
+  "runtime_image_id": "sha256:43366a829fd8a8ac0ac891eb71ca18efa20bfd898614153fa9f4a6f2a2e21883",
+  "command": [
+    ".venv/bin/python",
+    "scripts/loadtest/matrix.py",
+    "--users",
+    "4,8,16,32,64,128,256",
+    "--output",
+    "eval/verification/2026-10-14-r1-final-matrix",
+    "--locust",
+    "/tmp/voyacart-loadtest-venv/bin/locust"
+  ],
+  "docker_cpus": 4,
+  "worker_concurrency": 2,
+  "storage": "shared SQLite on one machine",
+  "catalog": "old 3700-product synthetic catalogue, per final run configuration",
+  "measurement_window_seconds": 45,
+  "stop_rules": {
+    "error_rate_above": 0.05,
+    "adjacent_throughput_growth_at_most": 0.1
+  },
+  "baseline_path": "eval/verification/2026-10-14-r1-capacity/baseline-summary.json",
+  "baseline_fingerprint_blake2b_before": "be93f5666c6b8f78f632c7270de3f796cdfa4d238c1dec616a4287801d58b64b3bc3aa2344f8f9d275bbbd4016009d0369750116c8db8b7d767ba6213b25e12e",
+  "scope": "18 configurations serially; mock model and embedding; no source editing, image rebuild, environment editing, heavyweight test, user container operation, commit, or push"
+}

@@ -1,0 +1,20 @@
+.venv/bin/python -m scripts.eval.harness run --suite eval/harness/v1/suite.json --profile smoke --strategies current,candidate --output eval/verification/2026-10-14-final-v1-harness-210612/run
+{"case_id": "h1-dev-cost", "strategy": "current", "repetition": 0, "passed": true, "error": null}
+{"case_id": "h1-dev-cost", "strategy": "candidate", "repetition": 0, "passed": true, "error": null}
+{"case_id": "agent-sku", "strategy": "current", "repetition": 0, "passed": true, "error": null}
+{"case_id": "agent-sku", "strategy": "candidate", "repetition": 0, "passed": true, "error": null}
+{"case_id": "agent-approval", "strategy": "current", "repetition": 0, "passed": true, "error": null}
+{"case_id": "agent-approval", "strategy": "candidate", "repetition": 0, "passed": true, "error": null}
+{"case_id": "h1-dev-sku", "strategy": "current", "repetition": 0, "passed": true, "error": null}
+{"case_id": "h1-dev-sku", "strategy": "candidate", "repetition": 0, "passed": true, "error": null}
+{"case_id": "h1-dev-budget", "strategy": "current", "repetition": 0, "passed": true, "error": null}
+{"case_id": "h1-dev-budget", "strategy": "candidate", "repetition": 0, "passed": true, "error": null}
+{"case_id": "h1-dev-stock", "strategy": "current", "repetition": 0, "passed": true, "error": null}
+{"case_id": "h1-dev-stock", "strategy": "candidate", "repetition": 0, "passed": true, "error": null}
+HTML: /private/tmp/voyacart-local-fallback-20261014/eval/verification/2026-10-14-final-v1-harness-210612/run/report.html
+.venv/bin/python -m scripts.eval.harness verify eval/verification/2026-10-14-final-v1-harness-210612/run
+{
+  "passed": true,
+  "reasons": [],
+  "report": "eval/verification/2026-10-14-final-v1-harness-210612/run/report.html"
+}

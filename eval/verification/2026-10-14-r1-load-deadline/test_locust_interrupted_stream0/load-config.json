@@ -1,0 +1,12 @@
+{
+  "host": "http://test",
+  "reconnect_rate": 0,
+  "timeout_seconds": 0.08,
+  "think_seconds": [
+    5,
+    15
+  ],
+  "users": 1,
+  "spawn_rate": 1,
+  "started_at": 1791978454.228641
+}

@@ -1,0 +1,12 @@
+2026-10-14T14:34:01.584006Z  INFO actix_web::middleware::logger: 172.26.0.5 "POST /collections/voyacart_products/points/query HTTP/1.1" 200 2097 "-" "python-client/1.19.0 python/3.11.17" 0.004854
+2026-10-14T14:34:01.621402Z  INFO actix_web::middleware::logger: 172.26.0.5 "POST /collections/voyacart_products/points/query HTTP/1.1" 200 2099 "-" "python-client/1.19.0 python/3.11.17" 0.002726
+2026-10-14T14:34:12.851710Z  INFO actix_web::middleware::logger: 172.26.0.5 "POST /collections/voyacart_products/points/query HTTP/1.1" 200 2098 "-" "python-client/1.19.0 python/3.11.17" 0.010775
+2026-10-14T14:34:12.876849Z  INFO actix_web::middleware::logger: 172.26.0.5 "POST /collections/voyacart_products/points/query HTTP/1.1" 200 2098 "-" "python-client/1.19.0 python/3.11.17" 0.003900
+2026-10-14T14:34:24.137866Z  INFO actix_web::middleware::logger: 172.26.0.5 "POST /collections/voyacart_products/points/query HTTP/1.1" 200 2099 "-" "python-client/1.19.0 python/3.11.17" 0.003771
+2026-10-14T14:34:24.153425Z  INFO actix_web::middleware::logger: 172.26.0.5 "POST /collections/voyacart_products/points/query HTTP/1.1" 200 2098 "-" "python-client/1.19.0 python/3.11.17" 0.002375
+2026-10-14T14:34:35.371438Z  INFO actix_web::middleware::logger: 172.26.0.5 "POST /collections/voyacart_products/points/query HTTP/1.1" 200 2099 "-" "python-client/1.19.0 python/3.11.17" 0.004532
+2026-10-14T14:34:36.732815Z  INFO actix_web::middleware::logger: 172.26.0.5 "POST /collections/voyacart_products/points/query HTTP/1.1" 200 2098 "-" "python-client/1.19.0 python/3.11.17" 0.005550
+2026-10-14T14:34:46.664369Z  INFO actix_web::middleware::logger: 172.26.0.5 "POST /collections/voyacart_products/points/query HTTP/1.1" 200 2099 "-" "python-client/1.19.0 python/3.11.17" 0.004721
+2026-10-14T14:34:47.991532Z  INFO actix_web::middleware::logger: 172.26.0.5 "POST /collections/voyacart_products/points/query HTTP/1.1" 200 2097 "-" "python-client/1.19.0 python/3.11.17" 0.004611
+2026-10-14T14:34:57.856195Z  INFO actix_web::middleware::logger: 172.26.0.5 "POST /collections/voyacart_products/points/query HTTP/1.1" 200 2099 "-" "python-client/1.19.0 python/3.11.17" 0.003590
+2026-10-14T14:34:59.179388Z  INFO actix_web::middleware::logger: 172.26.0.5 "POST /collections/voyacart_products/points/query HTTP/1.1" 200 2099 "-" "python-client/1.19.0 python/3.11.17" 0.003205

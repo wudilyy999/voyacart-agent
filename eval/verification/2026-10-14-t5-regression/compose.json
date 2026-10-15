@@ -1,0 +1,384 @@
+{
+  "name": "docker",
+  "networks": {
+    "default": {
+      "name": "docker_default",
+      "ipam": {}
+    }
+  },
+  "services": {
+    "app": {
+      "build": {
+        "context": "/private/tmp/voyacart-local-fallback-20261014",
+        "dockerfile": "Dockerfile"
+      },
+      "command": null,
+      "depends_on": {
+        "qdrant": {
+          "condition": "service_started",
+          "required": true
+        },
+        "redis": {
+          "condition": "service_healthy",
+          "required": true
+        }
+      },
+      "entrypoint": null,
+      "environment": {
+        "BREAKER_SHARED": "0",
+        "CATEGORY_KB_COLLECTION": "voyacart_category_kb",
+        "CONTEXT_PRODUCT_TOKENS": "6000",
+        "CONTEXT_PRUNING_TIMING": "pressure",
+        "CONTEXT_SIZE": "128000",
+        "CONTEXT_STRATEGY": "layered",
+        "CONTEXT_TARGET_TOKENS": "48000",
+        "CORS_ORIGINS": "http://localhost:5173",
+        "DATABASE_URL": "sqlite+aiosqlite:////app/data/voyacart.db",
+        "DATA_DIR": "/app/data",
+        "DRIFT_DETECT_ENABLED": "0",
+        "EMBEDDING_API_KEY": "",
+        "EMBEDDING_BASE_URL": "",
+        "EMBEDDING_DIM": "1024",
+        "EMBEDDING_MODEL": "text-embedding-v4",
+        "HARNESS_ENABLED": "1",
+        "HYBRID_LEXICAL_WEIGHT": "1",
+        "HYBRID_RECALL_ENABLED": "0",
+        "HYBRID_VECTOR_WEIGHT": "1",
+        "IDENTITY_HMAC_SECRET": "",
+        "IDENTITY_MODE": "demo",
+        "LANGFUSE_BASE_URL": "",
+        "LANGFUSE_PUBLIC_KEY": "",
+        "LANGFUSE_SECRET_KEY": "",
+        "LLM_API_KEY": "unit-test",
+        "LLM_BASE_URL": "http://127.0.0.1:1/v1",
+        "LLM_ENABLE_THINKING": "",
+        "LLM_FALLBACK_CONTEXT_SIZE": "",
+        "LLM_FALLBACK_MODEL": "qwen-plus",
+        "LLM_MAX_CONCURRENCY": "2",
+        "LLM_MAX_RETRIES": "2",
+        "LLM_MIN_INTERVAL_SECONDS": "1.0",
+        "LLM_MODEL": "qwen3-max",
+        "LOCAL_EMBEDDING_FALLBACK": "0",
+        "LOOP_REPEAT_THRESHOLD": "3",
+        "METRICS_READER_BUYERS": "",
+        "MODEL_ADMIN_BUYERS": "",
+        "MODEL_ALLOWED_LOCAL_HOSTS": "",
+        "MODEL_MASTER_KEY": "",
+        "MODEL_RECOVERY_MODE": "off",
+        "OTEL_EXPORTER_OTLP_ENDPOINT": "",
+        "OTEL_EXPORTER_OTLP_HEADERS": "",
+        "OTEL_EXPORTER_OTLP_TRACES_ENDPOINT": "",
+        "OTEL_EXPORTER_OTLP_TRACES_HEADERS": "",
+        "OTEL_EXPORTER_OTLP_TRACES_TIMEOUT": "5",
+        "OTEL_SERVICE_NAME": "voyacart-api",
+        "OUTPUT_GUARD_ENABLED": "1",
+        "PREFERENCE_RELEVANCE_ENABLED": "0",
+        "PREFERENCE_SUBAGENT_INJECT": "1",
+        "PREFERENCE_TOP_K": "5",
+        "PROMPT_PIN_VERSION": "",
+        "QDRANT_COLLECTION": "voyacart_products",
+        "QDRANT_LOCAL_COLLECTION": "voyacart_products_local",
+        "QDRANT_URL": "http://qdrant:6333",
+        "QUEUE_ENABLED": "1",
+        "QUEUE_LARGE_REQUEST_TURNS": "30",
+        "QUEUE_PRIORITY_ENABLED": "1",
+        "QUEUE_WAIT_SECONDS": "300",
+        "RECALL_CANDIDATES": "32",
+        "REDIS_URL": "redis://redis:6379/0",
+        "REPLY_TOKEN_BUDGET": "0",
+        "RERANKER_API_KEY": "",
+        "RERANKER_BASE_URL": "",
+        "RERANKER_MODE": "http",
+        "RERANKER_MODEL": "",
+        "RERANKER_PROTOCOL": "flat",
+        "RERANKER_TIMEOUT_SECONDS": "15",
+        "SEMANTIC_CACHE_ENABLED": "1",
+        "SEMANTIC_CACHE_THRESHOLD": "0.95",
+        "SESSION_OWNER_BINDING": "1",
+        "TAVILY_API_KEY": "",
+        "TOKEN_BUDGET_TOTAL": "0",
+        "TOOL_RESULT_LIMIT": "20000"
+      },
+      "networks": {
+        "default": null
+      },
+      "ports": [
+        {
+          "mode": "ingress",
+          "target": 8000,
+          "published": "8000",
+          "protocol": "tcp"
+        }
+      ],
+      "restart": "unless-stopped",
+      "volumes": [
+        {
+          "type": "volume",
+          "source": "app-data",
+          "target": "/app/data",
+          "volume": {}
+        }
+      ]
+    },
+    "frontend": {
+      "build": {
+        "context": "/private/tmp/voyacart-local-fallback-20261014/frontend",
+        "dockerfile": "Dockerfile"
+      },
+      "command": null,
+      "depends_on": {
+        "app": {
+          "condition": "service_started",
+          "required": true
+        }
+      },
+      "entrypoint": null,
+      "networks": {
+        "default": null
+      },
+      "ports": [
+        {
+          "mode": "ingress",
+          "target": 80,
+          "published": "5173",
+          "protocol": "tcp"
+        }
+      ],
+      "restart": "unless-stopped"
+    },
+    "qdrant": {
+      "command": null,
+      "entrypoint": null,
+      "image": "qdrant/qdrant:v1.19.0",
+      "networks": {
+        "default": null
+      },
+      "ports": [
+        {
+          "mode": "ingress",
+          "target": 6333,
+          "published": "6333",
+          "protocol": "tcp"
+        }
+      ],
+      "restart": "unless-stopped",
+      "volumes": [
+        {
+          "type": "volume",
+          "source": "qdrant-data",
+          "target": "/qdrant/storage",
+          "volume": {}
+        }
+      ]
+    },
+    "redis": {
+      "command": [
+        "redis-server",
+        "--appendonly",
+        "yes",
+        "--appendfsync",
+        "always"
+      ],
+      "entrypoint": null,
+      "healthcheck": {
+        "test": [
+          "CMD",
+          "redis-cli",
+          "ping"
+        ],
+        "timeout": "3s",
+        "interval": "5s",
+        "retries": 10
+      },
+      "image": "redis:7-alpine",
+      "networks": {
+        "default": null
+      },
+      "ports": [
+        {
+          "mode": "ingress",
+          "target": 6379,
+          "published": "6379",
+          "protocol": "tcp"
+        }
+      ],
+      "restart": "unless-stopped",
+      "volumes": [
+        {
+          "type": "volume",
+          "source": "redis-data",
+          "target": "/data",
+          "volume": {}
+        }
+      ]
+    },
+    "worker": {
+      "build": {
+        "context": "/private/tmp/voyacart-local-fallback-20261014",
+        "dockerfile": "Dockerfile"
+      },
+      "command": [
+        "python",
+        "-m",
+        "app.worker"
+      ],
+      "depends_on": {
+        "qdrant": {
+          "condition": "service_started",
+          "required": true
+        },
+        "redis": {
+          "condition": "service_healthy",
+          "required": true
+        }
+      },
+      "entrypoint": null,
+      "environment": {
+        "BREAKER_SHARED": "0",
+        "CATEGORY_KB_COLLECTION": "voyacart_category_kb",
+        "CONTEXT_PRODUCT_TOKENS": "6000",
+        "CONTEXT_PRUNING_TIMING": "pressure",
+        "CONTEXT_SIZE": "128000",
+        "CONTEXT_STRATEGY": "layered",
+        "CONTEXT_TARGET_TOKENS": "48000",
+        "DATABASE_URL": "sqlite+aiosqlite:////app/data/voyacart.db",
+        "DATA_DIR": "/app/data",
+        "DRIFT_DETECT_ENABLED": "0",
+        "EMBEDDING_API_KEY": "",
+        "EMBEDDING_BASE_URL": "",
+        "EMBEDDING_DIM": "1024",
+        "EMBEDDING_MODEL": "text-embedding-v4",
+        "HARNESS_ENABLED": "1",
+        "HYBRID_LEXICAL_WEIGHT": "1",
+        "HYBRID_RECALL_ENABLED": "0",
+        "HYBRID_VECTOR_WEIGHT": "1",
+        "IDENTITY_HMAC_SECRET": "",
+        "IDENTITY_MODE": "demo",
+        "LANGFUSE_BASE_URL": "",
+        "LANGFUSE_PUBLIC_KEY": "",
+        "LANGFUSE_SECRET_KEY": "",
+        "LLM_API_KEY": "unit-test",
+        "LLM_BASE_URL": "http://127.0.0.1:1/v1",
+        "LLM_ENABLE_THINKING": "",
+        "LLM_FALLBACK_CONTEXT_SIZE": "",
+        "LLM_FALLBACK_MODEL": "qwen-plus",
+        "LLM_MAX_CONCURRENCY": "2",
+        "LLM_MAX_RETRIES": "2",
+        "LLM_MIN_INTERVAL_SECONDS": "1.0",
+        "LLM_MODEL": "qwen3-max",
+        "LOCAL_EMBEDDING_FALLBACK": "0",
+        "LOOP_REPEAT_THRESHOLD": "3",
+        "METRICS_READER_BUYERS": "",
+        "MODEL_ADMIN_BUYERS": "",
+        "MODEL_ALLOWED_LOCAL_HOSTS": "",
+        "MODEL_MASTER_KEY": "",
+        "MODEL_RECOVERY_MODE": "off",
+        "OTEL_EXPORTER_OTLP_ENDPOINT": "",
+        "OTEL_EXPORTER_OTLP_HEADERS": "",
+        "OTEL_EXPORTER_OTLP_TRACES_ENDPOINT": "",
+        "OTEL_EXPORTER_OTLP_TRACES_HEADERS": "",
+        "OTEL_EXPORTER_OTLP_TRACES_TIMEOUT": "5",
+        "OTEL_SERVICE_NAME": "voyacart-worker",
+        "OUTPUT_GUARD_ENABLED": "1",
+        "PREFERENCE_RELEVANCE_ENABLED": "0",
+        "PREFERENCE_SUBAGENT_INJECT": "1",
+        "PREFERENCE_TOP_K": "5",
+        "PROMPT_PIN_VERSION": "",
+        "QDRANT_COLLECTION": "voyacart_products",
+        "QDRANT_LOCAL_COLLECTION": "voyacart_products_local",
+        "QDRANT_URL": "http://qdrant:6333",
+        "QUEUE_ENABLED": "1",
+        "QUEUE_LARGE_REQUEST_TURNS": "30",
+        "QUEUE_PRIORITY_ENABLED": "1",
+        "RECALL_CANDIDATES": "32",
+        "REDIS_URL": "redis://redis:6379/0",
+        "REPLY_TOKEN_BUDGET": "0",
+        "RERANKER_API_KEY": "",
+        "RERANKER_BASE_URL": "",
+        "RERANKER_MODE": "http",
+        "RERANKER_MODEL": "",
+        "RERANKER_PROTOCOL": "flat",
+        "RERANKER_TIMEOUT_SECONDS": "15",
+        "SEMANTIC_CACHE_ENABLED": "1",
+        "SESSION_OWNER_BINDING": "1",
+        "TAVILY_API_KEY": "",
+        "TOKEN_BUDGET_TOTAL": "0",
+        "TOOL_RESULT_LIMIT": "20000",
+        "WORKER_CONCURRENCY": "2"
+      },
+      "networks": {
+        "default": null
+      },
+      "restart": "unless-stopped",
+      "volumes": [
+        {
+          "type": "volume",
+          "source": "app-data",
+          "target": "/app/data",
+          "volume": {}
+        }
+      ]
+    }
+  },
+  "volumes": {
+    "app-data": {
+      "name": "docker_app-data"
+    },
+    "qdrant-data": {
+      "name": "docker_qdrant-data"
+    },
+    "redis-data": {
+      "name": "docker_redis-data"
+    }
+  },
+  "x-agent-options": {
+    "BREAKER_SHARED": "0",
+    "CATEGORY_KB_COLLECTION": "voyacart_category_kb",
+    "CONTEXT_PRODUCT_TOKENS": "6000",
+    "CONTEXT_PRUNING_TIMING": "pressure",
+    "CONTEXT_SIZE": "128000",
+    "CONTEXT_STRATEGY": "layered",
+    "CONTEXT_TARGET_TOKENS": "48000",
+    "DRIFT_DETECT_ENABLED": "0",
+    "EMBEDDING_API_KEY": "",
+    "EMBEDDING_BASE_URL": "",
+    "EMBEDDING_DIM": "1024",
+    "HARNESS_ENABLED": "1",
+    "HYBRID_LEXICAL_WEIGHT": "1",
+    "HYBRID_RECALL_ENABLED": "0",
+    "HYBRID_VECTOR_WEIGHT": "1",
+    "IDENTITY_HMAC_SECRET": "",
+    "IDENTITY_MODE": "demo",
+    "LANGFUSE_BASE_URL": "",
+    "LANGFUSE_PUBLIC_KEY": "",
+    "LANGFUSE_SECRET_KEY": "",
+    "LLM_ENABLE_THINKING": "",
+    "LLM_FALLBACK_CONTEXT_SIZE": "",
+    "LLM_MAX_RETRIES": "2",
+    "LOCAL_EMBEDDING_FALLBACK": "0",
+    "LOOP_REPEAT_THRESHOLD": "3",
+    "METRICS_READER_BUYERS": "",
+    "MODEL_ADMIN_BUYERS": "",
+    "MODEL_ALLOWED_LOCAL_HOSTS": "",
+    "MODEL_MASTER_KEY": "",
+    "MODEL_RECOVERY_MODE": "off",
+    "OUTPUT_GUARD_ENABLED": "1",
+    "PREFERENCE_RELEVANCE_ENABLED": "0",
+    "PREFERENCE_SUBAGENT_INJECT": "1",
+    "PREFERENCE_TOP_K": "5",
+    "PROMPT_PIN_VERSION": "",
+    "QDRANT_LOCAL_COLLECTION": "voyacart_products_local",
+    "QUEUE_LARGE_REQUEST_TURNS": "30",
+    "QUEUE_PRIORITY_ENABLED": "1",
+    "RECALL_CANDIDATES": "32",
+    "REPLY_TOKEN_BUDGET": "0",
+    "RERANKER_API_KEY": "",
+    "RERANKER_MODE": "http",
+    "RERANKER_PROTOCOL": "flat",
+    "RERANKER_TIMEOUT_SECONDS": "15",
+    "SESSION_OWNER_BINDING": "1",
+    "TAVILY_API_KEY": "",
+    "TOKEN_BUDGET_TOTAL": "0",
+    "TOOL_RESULT_LIMIT": "20000"
+  }
+}

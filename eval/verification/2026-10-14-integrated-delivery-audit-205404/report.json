@@ -1,0 +1,166 @@
+{
+  "scan_local_time": "2026-10-14T20:54:04.772727+08:00",
+  "head_start": "5b16af0da006599d833021e931fd2de9bfdcb44a",
+  "head_end": "5b16af0da006599d833021e931fd2de9bfdcb44a",
+  "baselines": {
+    "origin_main": "7f29c08725114b040e7f251e3cc21dceb0f5b596",
+    "remote_pr": "d12206aa0321153442257fa14d3238259230a04d"
+  },
+  "comparison_path_counts": {
+    "origin_main": 1956,
+    "remote_pr": 1676
+  },
+  "files_scanned": 1963,
+  "file_bytes_scanned": 114039394,
+  "archive_regular_files_scanned": 718,
+  "archive_uncompressed_bytes_scanned": 11020994,
+  "archives": [
+    {
+      "file": "eval/verification/2026-10-14-153457-esci-t1-timeout-harness/source.tar.gz",
+      "members": 359,
+      "regular_files": 359,
+      "uncompressed_bytes": 5510497,
+      "credential_filename_members": [],
+      "links": []
+    },
+    {
+      "file": "eval/verification/2026-10-14-esci-t1-harness-1350/source.tar.gz",
+      "members": 359,
+      "regular_files": 359,
+      "uncompressed_bytes": 5510497,
+      "credential_filename_members": [],
+      "links": []
+    }
+  ],
+  "known_credential_source": "/Users/liyuyang/Downloads/voyacart-agent/.env",
+  "known_credential_value_count": 2,
+  "credential_findings": [
+    {
+      "file": "eval/verification/2026-10-14-153457-esci-t1-timeout-harness/source.tar.gz::tests/test_ag_ui_activities.py",
+      "category": "provider_key_candidate",
+      "offset": 3975
+    },
+    {
+      "file": "eval/verification/2026-10-14-153457-esci-t1-timeout-harness/source.tar.gz::tests/test_harness_guards.py",
+      "category": "provider_key_candidate",
+      "offset": 2215
+    },
+    {
+      "file": "eval/verification/2026-10-14-esci-t1-harness-1350/source.tar.gz::tests/test_ag_ui_activities.py",
+      "category": "provider_key_candidate",
+      "offset": 3975
+    },
+    {
+      "file": "eval/verification/2026-10-14-esci-t1-harness-1350/source.tar.gz::tests/test_harness_guards.py",
+      "category": "provider_key_candidate",
+      "offset": 2215
+    },
+    {
+      "file": "tests/test_ag_ui_activities.py",
+      "category": "provider_key_candidate",
+      "offset": 3975
+    }
+  ],
+  "recognized_fixture_key_locations": [],
+  "document_files_compared": {
+    "origin_main": 34,
+    "remote_pr": 24
+  },
+  "new_authored_document_forbidden_word_findings": [],
+  "retained_historical_evidence_word_locations": [],
+  "largest_files": [
+    {
+      "file": "eval/verification/2026-10-14-t2-input-plan/products.jsonl",
+      "bytes": 22952210
+    },
+    {
+      "file": "eval/verification/2026-10-14-t2-input-plan/enrichment-inputs.jsonl",
+      "bytes": 18877124
+    },
+    {
+      "file": "eval/verification/2026-10-14-r1-capacity/baseline-high/inline-a1-w1/users-128/voyacart-r1-baseline-api-1.log",
+      "bytes": 8237036
+    },
+    {
+      "file": "eval/verification/2026-10-14-r2-embedding/command-013.stdout.log",
+      "bytes": 4296184
+    },
+    {
+      "file": "eval/verification/2026-10-14-r2-hotspot-direct/command-012.stdout.log",
+      "bytes": 3249823
+    },
+    {
+      "file": "eval/verification/2026-10-14-r2-redis/command-018.stdout.log",
+      "bytes": 2662562
+    },
+    {
+      "file": "eval/verification/2026-10-14-r2-model-status-drill/command-013.stdout.log",
+      "bytes": 2652643
+    },
+    {
+      "file": "eval/verification/2026-10-14-r2-worker-clock/command-042.stdout.log",
+      "bytes": 2628909
+    },
+    {
+      "file": "eval/verification/2026-10-14-r2-worker/command-013.stdout.log",
+      "bytes": 2627097
+    },
+    {
+      "file": "eval/verification/2026-10-14-r2-model/command-010.stdout.log",
+      "bytes": 2599723
+    },
+    {
+      "file": "eval/verification/2026-10-14-r2-api/command-011.stdout.log",
+      "bytes": 2567522
+    },
+    {
+      "file": "eval/verification/2026-10-14-r2-hotspot/command-010.stdout.log",
+      "bytes": 2554089
+    },
+    {
+      "file": "eval/verification/2026-10-14-154100-esci-t1-pilot-2000-retry/requests.jsonl",
+      "bytes": 2504455
+    },
+    {
+      "file": "eval/verification/2026-10-14-r1-capacity/matrix/inline-a1-w2/users-64/voyacart-r1-matrix-api-1.log",
+      "bytes": 1622985
+    },
+    {
+      "file": "eval/verification/2026-10-14-t2-input-plan/examples.jsonl",
+      "bytes": 1590392
+    },
+    {
+      "file": "eval/verification/2026-10-14-153457-esci-t1-timeout-harness/source.tar.gz",
+      "bytes": 1029326
+    },
+    {
+      "file": "eval/verification/2026-10-14-esci-t1-harness-1350/source.tar.gz",
+      "bytes": 1029326
+    },
+    {
+      "file": "eval/verification/2026-10-14-141010-esci-t1-classify-c8/candidates.jsonl",
+      "bytes": 1000510
+    },
+    {
+      "file": "eval/verification/2026-10-14-144757-esci-t1-classify-c2/candidates.jsonl",
+      "bytes": 1000510
+    },
+    {
+      "file": "eval/verification/2026-10-14-esci-t1-classify-1356/candidates.jsonl",
+      "bytes": 1000510
+    }
+  ],
+  "files_over_50_mib": [],
+  "files_over_100_mib": [],
+  "files_changed_during_scan": [],
+  "files_removed_during_scan": [],
+  "scope": "working-tree snapshot of files changed against local origin/main and existing remote PR commit plus current untracked evidence; archive contents read directly in memory; no source, raw evidence, environment, index, or commit modified; no tests, containers, external calls",
+  "verification_boundary": "credential/document-word/file-size audit only; active concurrent integration is not frozen and this report establishes no final regression or model evaluation conclusion",
+  "known_real_credential_match_count": 0,
+  "preexisting_synthetic_test_literal_count": 5,
+  "unresolved_sensitive_findings": [],
+  "credential_candidate_classification": "provider-like strings occur only in baseline privacy/redaction test literals; same values present in origin/main and remote PR; full source archived without alteration",
+  "files_changed_after_scan_before_handoff": [],
+  "head_at_handoff": "5b16af0da006599d833021e931fd2de9bfdcb44a",
+  "scan_conclusion": "no known real credential match, no unresolved credential candidate, no newly authored document forbidden-word finding, no file above the audit 50 MiB threshold"
+}

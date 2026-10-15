@@ -1,0 +1,30 @@
+{
+  "started_at": "2026-10-14T14:51:43.105223+08:00",
+  "configuration_source": "aml-evidence-memory/private/releases/v0.6.0/.env.final",
+  "model": "text-embedding-v4",
+  "configured_dimensions": 1024,
+  "request_texts": [
+    "轻便旅行背包",
+    "lightweight travel backpack"
+  ],
+  "client": "app.infrastructure.embedding.openai_embedding_client.OpenAIEmbeddingClient",
+  "source_fingerprints": {
+    "app/infrastructure/embedding/openai_embedding_client.py": "91c550aac5fc237d9c2848472021e8424c9ab0e39acf954266caf895fded5b5dc6212fa6da0fcd1e1032cf31e9ee0f59560ad84cec7b5610c08b52bef0495b83",
+    "app/infrastructure/settings.py": "361ba04fe2077b83583d052ca13c55c9f23ad4974e39bbf86331b2b6f99776f390bc2722e2e00103a23e43a03f2b17de21598ce0357cbf03bd077c794a57cf98"
+  },
+  "status": "completed",
+  "http_status": 200,
+  "response_request_id": "dab5ee2f-03a6-9f9e-9af6-0f3f28b02752",
+  "dimensions": [
+    1024,
+    1024
+  ],
+  "finite": true,
+  "vector_norms": [
+    1.0000000249765733,
+    0.9999999578507616
+  ],
+  "passed": true,
+  "elapsed_seconds": 3.2483186250319704,
+  "env_permissions": "0o600"
+}

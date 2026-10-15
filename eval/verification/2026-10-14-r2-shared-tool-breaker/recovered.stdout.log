@@ -1,0 +1,1 @@
+{"phase": "recovered", "pid": 5089, "observed_at": 1791985524.836499, "handler_calls": 1, "handler_observed_status": ["half_open"], "results": ["success"], "status": "closed", "redis_state": null}

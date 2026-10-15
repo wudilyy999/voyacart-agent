@@ -1,0 +1,1 @@
+["docker", "inspect", "--format", "{{.State.Health.Status}}", "f898d70a862bdbbb816df5e6dcc074925c980e7df4e29c5e29b2cc0a362e60ba"]

@@ -1,0 +1,12 @@
+{
+  "app_files_checked": 182,
+  "app_file_mismatches": [],
+  "preview_matches_current_app_source": true,
+  "model": "gemini-3.8-flash-high",
+  "health": "ok",
+  "queue_depth": 0,
+  "image": "voyacart-runtime:esci-demo-2000-20261014",
+  "catalog": "catalog/catalog-demo.jsonl.gz",
+  "model_source": "existing provider 1 configuration; container host address adapted; local configuration unchanged",
+  "paid_embedding_usage": "unknown; provider accounting not captured"
+}

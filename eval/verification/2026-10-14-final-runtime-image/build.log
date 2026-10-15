@@ -1,0 +1,219 @@
+failed to fetch metadata: fork/exec /Users/liyuyang/.docker/cli-plugins/docker-buildx: no such file or directory
+
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon  25.84MB
+Step 1/20 : FROM python:3.11-slim AS builder
+ ---> 8129910271f9
+Step 2/20 : COPY --from=ghcr.io/astral-sh/uv:latest /uv /usr/local/bin/uv
+ ---> Using cache
+ ---> 0422c0ee4fa3
+Step 3/20 : WORKDIR /app
+ ---> Using cache
+ ---> 3c267e205412
+Step 4/20 : ENV UV_COMPILE_BYTECODE=1 UV_LINK_MODE=copy
+ ---> Using cache
+ ---> 7f4570d6700c
+Step 5/20 : COPY pyproject.toml uv.lock ./
+ ---> 92d4da5b955d
+Step 6/20 : RUN uv sync --frozen --no-install-project --no-dev --extra retrieval
+ ---> Running in 069ad6dbf9d4
+[91mUsing CPython 3.11.17 interpreter at: /usr/local/bin/python3
+[0m[91mCreating virtual environment at: .venv
+[0m[91mDownloading pygments (1.2MiB)
+[0m[91mDownloading aiohttp (1.7MiB)
+[0m[91mDownloading pillow (5.7MiB)
+[0m[91mDownloading onnxruntime (20.3MiB)
+[0m[91mDownloading grpcio (6.6MiB)
+[0m[91mDownloading hf-xet (4.1MiB)
+[0m[91mDownloading uvloop (3.6MiB)
+[0m[91mDownloading sqlalchemy (3.2MiB)
+[0m[91mDownloading openai (1.6MiB)
+[0m[91mDownloading cryptography (4.5MiB)
+[0m[91mDownloading dashscope (1.5MiB)
+[0m[91mDownloading numpy (15.2MiB)
+[0m[91mDownloading pydantic-core (1.9MiB)
+[0m[91mDownloading agentscope (1.2MiB)
+[0m[91mDownloading tokenizers (3.4MiB)
+[0m[91m Downloaded pygments
+[0m[91m Downloaded agentscope
+[0m[91m Downloaded dashscope
+[0m[91m Downloaded openai
+[0m[91m Downloaded aiohttp
+[0m[91m Downloaded pydantic-core
+[0m[91m Downloaded sqlalchemy
+[0m[91m Downloaded tokenizers
+[0m[91m Downloaded uvloop
+[0m[91m Downloaded hf-xet
+[0m[91m Downloaded cryptography
+[0m[91m Downloaded pillow
+[0m[91m Downloaded grpcio
+[0m[91m Downloaded numpy
+[0m[91m Downloaded onnxruntime
+[0m[91mPrepared 120 packages in 5.96s
+[0m[91mInstalled 120 packages in 367ms
+[0m[91mBytecode compiled 7408 files in 1.54s
+[0m[91m + ag-ui-protocol==[0m[91m0.1.22
+ + [0m[91magentscope==2.0[0m[91m.8
+ [0m[91m+ aiofiles[0m[91m==25.1[0m[91m.0
+ [0m[91m+ aiohappyeyeballs[0m[91m==2.[0m[91m7.1
+[0m[91m + [0m[91maiohttp==[0m[91m3.14.3[0m[91m
+ + aioitertools[0m[91m==0.13.0
+ + [0m[91maiosignal==1.4.0
+ + aiosqlite==0.22.1
+ + annotated-doc==0.0.5
+ + annotated-types==0.8.0
+ + anthropic==0.121.0
+ + anyio==4.14.2
+ + attrs[0m[91m==26.1.0
+ + bidict==0.23.1
+ + cached-property==2.0.1
+ + certifi==2026.7.22
+ + cffi==2.1.1
+ +[0m[91m charset-normalizer==3.4.9
+ + [0m[91mclick==8.4.2
+ + croniter==6.2.4
+ + cryptography==50.0.0
+ + dashscope==1.26.6
+ + distro==1.9.0
+ + docstring-parser[0m[91m==0.18.0
+ + fastapi==0.141.1
+ + fastembed==0.7.4
+ [0m[91m+ filelock==4.0.0
+ + filetype==1.2.0
+ + flatbuffers==25.12.19
+ + frozenlist==1.8.0
+ + fsspec==2026.7.0
+ + googleapis-common-protos==[0m[91m1.75.1
+[0m[91m + greenlet==3.5.5
+ +[0m[91m grpcio==1.83.0
+[0m[91m + h11==0.[0m[91m16.0
+ + h2[0m[91m==4.4.1
+ + hf-xet==1.6.0
+ + [0m[91mhpack==4.2.0
+ + httpcore==1.0.9
+ + httptools==0.8.0
+ + httpx==0.28.1
+ + httpx-sse==0.4.3
+ + huggingface-hub==1.32.0
+ + hyperframe==6.1.0
+ + idna==3.18
+ + jinja2==3.1.6
+ + jiter==0.16.0
+ + json-repair==0.63.4
+ + json5==0.15.0
+ + jsonschema==4.26.0
+ + jsonschema-specifications==2025.9.1
+ + loguru==0.7.3
+ + [0m[91mmarkdown-it-py==4.2.0
+ + markupsafe==3.0.3
+ + mcp==1.29.0
+ + mdurl==0.1.2
+ + mmh3==5.3.0
+ + multidict==6.7.1
+ + numpy==2.4.6
+ + onnxruntime==1.30.0
+ + openai==2.53.0
+ + opentelemetry-api==1.44.0
+ + opentelemetry-exporter-otlp==1.44.0
+ + opentelemetry-exporter-otlp-proto-common==1.44.[0m[91m0
+ + opentelemetry-exporter-otlp-proto-grpc==1.44.0
+ + opentelemetry-exporter-otlp-proto-http==1.44.0
+ + opentelemetry-proto==1.44.0
+ + opentelemetry-sdk==1.44.0
+ + opentelemetry-semantic-conventions==0.65b0
+ + packaging==26.3
+ + pillow==11.3.0
+ + portalocker==3.2.0
+ + propcache==0.5.2
+ + protobuf==7[0m[91m.35.1
+ + [0m[91mpy-rust-stemmers==0.1.8[0m[91m
+ +[0m[91m pycparser==[0m[91m3.0[0m[91m
+ +[0m[91m pydantic==2.13.4
+ + pydantic-core==2.[0m[91m46.4
+ +[0m[91m pydantic-settings==[0m[91m2.15.0[0m[91m
+ [0m[91m+ [0m[91mpygments==2[0m[91m.20.0[0m[91m
+ +[0m[91m pyjwt[0m[91m==2.[0m[91m13.0
+[0m[91m +[0m[91m pypdf[0m[91m==6.19[0m[91m.0[0m[91m
+ +[0m[91m python-datauri[0m[91m==3.0[0m[91m.2
+[0m[91m +[0m[91m python-dateutil[0m[91m==2[0m[91m.9.0[0m[91m.post0
+ + python-dotenv==1.2.2
+ + python-engineio==4.13.4
+ + python-frontmatter[0m[91m==1.3.0
+ + python-multipart==0.0.32
+ [0m[91m+ python-socketio[0m[91m==5.16.[0m[91m4
+ [0m[91m+ pyyaml[0m[91m==6.0[0m[91m.3[0m[91m
+ +[0m[91m qdrant-client[0m[91m==1.19.[0m[91m0
+ [0m[91m+ [0m[91mredis==8.1.0
+ + referencing==0.37.0
+ + requests==2.34.2
+ [0m[91m+ rich[0m[91m==15.[0m[91m0.0[0m[91m
+ [0m[91m+ rpds-py[0m[91m==2026.6[0m[91m.3
+ +[0m[91m shellingham[0m[91m==1.[0m[91m5.4[0m[91m
+ +[0m[91m shortuuid==1.0.13
+ [0m[91m+ simple-websocket==1.1.0
+ + six==1.17.0
+ + sniffio==1.3.1
+ + sqlalchemy==2.0.52
+ + sse-starlette[0m[91m==3.4.8
+ + starlette==1.6.0
+ + tokenizers==0.23.2
+ [0m[91m+ tqdm[0m[91m==4.[0m[91m70.0[0m[91m
+ + tree-sitter==0.[0m[91m26.0
+ + tree-sitter-bash==0[0m[91m.25.1
+ + typer==0.27.1
+ + typing-extensions[0m[91m==4.16[0m[91m.0
+[0m[91m + [0m[91mtyping-inspection==[0m[91m0.4.3[0m[91m
+ + [0m[91mtzdata==2026[0m[91m.3
+ [0m[91m+ [0m[91murllib3==[0m[91m2.7.[0m[91m0
+ [0m[91m+ uvicorn==0.52.1[0m[91m
+ + uvloop==0.22.1[0m[91m
+ + watchfiles==1.2.0
+ + websocket-client==1.9.0
+ + websockets==17.0.1
+ + wsproto==1.3.2
+ + yarl==1.24.5
+[0m ---> Removed intermediate container 069ad6dbf9d4
+ ---> 5fb4eee6489e
+Step 7/20 : COPY app ./app
+ ---> 8d1beaf652c4
+Step 8/20 : FROM python:3.11-slim
+ ---> 8129910271f9
+Step 9/20 : WORKDIR /app
+ ---> Using cache
+ ---> 75fe7f9b1c43
+Step 10/20 : ENV PATH="/app/.venv/bin:$PATH" PYTHONUNBUFFERED=1
+ ---> Using cache
+ ---> 43d60f20ccb0
+Step 11/20 : COPY --from=builder /app/.venv /app/.venv
+ ---> 0d24f45a3293
+Step 12/20 : COPY app ./app
+ ---> 00f252701494
+Step 13/20 : COPY configs ./configs
+ ---> 7c397f8b2687
+Step 14/20 : COPY scripts/loadtest ./scripts/loadtest
+ ---> 746d429d1a74
+Step 15/20 : COPY knowledge ./knowledge
+ ---> 003a3c0325f1
+Step 16/20 : COPY data/catalog-v3.jsonl ./catalog/catalog-v3.jsonl
+ ---> da0a8d76ed2a
+Step 17/20 : RUN mkdir -p /app/data
+ ---> Running in f7e8c8e63e41
+ ---> Removed intermediate container f7e8c8e63e41
+ ---> 856a26f1d375
+Step 18/20 : ENV DATA_DIR=/app/data
+ ---> Running in a2cc1da88e5f
+ ---> Removed intermediate container a2cc1da88e5f
+ ---> 41d29f023b8e
+Step 19/20 : EXPOSE 8000
+ ---> Running in 97fae8cbcf59
+ ---> Removed intermediate container 97fae8cbcf59
+ ---> 531f3de8e151
+Step 20/20 : CMD ["uvicorn", "app.presentation.server:app", "--host", "0.0.0.0", "--port", "8000"]
+ ---> Running in 2e0122a6b166
+ ---> Removed intermediate container 2e0122a6b166
+ ---> 43366a829fd8
+Successfully built 43366a829fd8
+Successfully tagged voyacart-runtime:r1

@@ -1,0 +1,58 @@
+{
+  "head": "139060b1639f3084994f1e23c749d53ab833f895",
+  "started_at": "2026-10-14T23:31:25.798838+08:00",
+  "configuration_source": "/Users/liyuyang/Downloads/voyacart-agent/.env",
+  "configuration_whitelist": [
+    "LLM_BASE_URL",
+    "LLM_API_KEY",
+    "LLM_MODEL",
+    "LLM_ENABLE_THINKING",
+    "EMBEDDING_BASE_URL",
+    "EMBEDDING_API_KEY",
+    "EMBEDDING_MODEL",
+    "EMBEDDING_DIM"
+  ],
+  "model": "gemini-3.8-flash-high",
+  "model_host": "127.0.0.1",
+  "embedding_model": "text-embedding-v4",
+  "embedding_host": "dashscope.aliyuncs.com",
+  "feature_overrides": {
+    "LOCAL_EMBEDDING_FALLBACK": "0",
+    "AGUI_QUEUE_ENABLED": "0",
+    "AGUI_DELTA_COALESCE_MS": "0",
+    "SEQUENCING_PERSISTENCE_ENABLED": "0"
+  },
+  "suite": "eval/harness/v1/suite.json",
+  "strategies": [
+    "current",
+    "candidate"
+  ],
+  "command": [
+    "make",
+    "eval-harness",
+    "HARNESS_PYTHON=.venv/bin/python",
+    "HARNESS_RUN_DIR=eval/verification/2026-10-14-esci-demo-harness/run"
+  ],
+  "paid_retries": 0,
+  "impact_command": [
+    "/private/tmp/voyacart-local-fallback-20261014/.venv/bin/python",
+    "-m",
+    "scripts.eval.harness",
+    "impact",
+    "--base",
+    "7f29c08"
+  ],
+  "impact_exit_code": 0,
+  "make_exit_code": 2,
+  "make_duration_seconds": 15.531804624944925,
+  "finished_at": "2026-10-14T23:31:41.558730+08:00",
+  "verify_command": [
+    "/private/tmp/voyacart-local-fallback-20261014/.venv/bin/python",
+    "-m",
+    "scripts.eval.harness",
+    "verify",
+    "/private/tmp/voyacart-local-fallback-20261014/eval/verification/2026-10-14-esci-demo-harness/run"
+  ],
+  "verify_exit_code": 2,
+  "verification_finished_at": "2026-10-14T23:34:18.945263+08:00"
+}

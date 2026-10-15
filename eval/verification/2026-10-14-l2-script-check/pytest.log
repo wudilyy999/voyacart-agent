@@ -1,0 +1,86 @@
+
+==================================== ERRORS ====================================
+_________________ ERROR collecting tests/test_agui_loadtest.py _________________
+tests/test_agui_loadtest.py:13: in <module>
+    spec.loader.exec_module(load)
+<frozen importlib._bootstrap_external>:940: in exec_module
+    ???
+<frozen importlib._bootstrap>:241: in _call_with_frames_removed
+    ???
+scripts/loadtest/locustfile.py:13: in <module>
+    from locust import User, between, events, task
+<frozen importlib._bootstrap>:1176: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:1147: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:690: in _load_unlocked
+    ???
+/tmp/voyacart-loadtest-venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:188: in exec_module
+    exec(co, module.__dict__)
+/tmp/voyacart-loadtest-venv/lib/python3.11/site-packages/locust/__init__.py:25: in <module>
+    from .contrib.fasthttp import FastHttpUser
+<frozen importlib._bootstrap>:1176: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:1147: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:690: in _load_unlocked
+    ???
+/tmp/voyacart-loadtest-venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:188: in exec_module
+    exec(co, module.__dict__)
+/tmp/voyacart-loadtest-venv/lib/python3.11/site-packages/locust/contrib/fasthttp.py:4: in <module>
+    from locust.user import User
+<frozen importlib._bootstrap>:1176: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:1147: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:690: in _load_unlocked
+    ???
+/tmp/voyacart-loadtest-venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:188: in exec_module
+    exec(co, module.__dict__)
+/tmp/voyacart-loadtest-venv/lib/python3.11/site-packages/locust/user/__init__.py:9: in <module>
+    from .users import HttpUser, User
+<frozen importlib._bootstrap>:1176: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:1147: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:690: in _load_unlocked
+    ???
+/tmp/voyacart-loadtest-venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:188: in exec_module
+    exec(co, module.__dict__)
+/tmp/voyacart-loadtest-venv/lib/python3.11/site-packages/locust/user/users.py:3: in <module>
+    from locust.clients import HttpSession, RestResponseContextManager
+<frozen importlib._bootstrap>:1176: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:1147: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:690: in _load_unlocked
+    ???
+/tmp/voyacart-loadtest-venv/lib/python3.11/site-packages/_pytest/assertion/rewrite.py:188: in exec_module
+    exec(co, module.__dict__)
+/tmp/voyacart-loadtest-venv/lib/python3.11/site-packages/locust/clients.py:61: in <module>
+    _preloaded_ssl_context = create_urllib3_context()
+                             ^^^^^^^^^^^^^^^^^^^^^^^^
+/tmp/voyacart-loadtest-venv/lib/python3.11/site-packages/urllib3/util/ssl_.py:260: in create_urllib3_context
+    context.minimum_version = TLSVersion.TLSv1_2
+    ^^^^^^^^^^^^^^^^^^^^^^^
+/Users/liyuyang/.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/ssl.py:620: in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+/Users/liyuyang/.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/ssl.py:620: in minimum_version
+    super(SSLContext, SSLContext).minimum_version.__set__(self, value)
+E   RecursionError: maximum recursion depth exceeded while calling a Python object
+!!! Recursion detected (same locals & position)
+=============================== warnings summary ===============================
+../../../tmp/voyacart-loadtest-venv/lib/python3.11/site-packages/_pytest/config/__init__.py:1464
+  /tmp/voyacart-loadtest-venv/lib/python3.11/site-packages/_pytest/config/__init__.py:1464: PytestConfigWarning: Unknown config option: asyncio_mode
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+../../../tmp/voyacart-loadtest-venv/lib/python3.11/site-packages/locust/__init__.py:16
+  /tmp/voyacart-loadtest-venv/lib/python3.11/site-packages/locust/__init__.py:16: MonkeyPatchWarning: Monkey-patching ssl after ssl has already been imported may lead to errors, including RecursionError on Python 3.6. It may also silently lead to incorrect behaviour on Python 3.7. Please monkey-patch earlier. See https://github.com/gevent/gevent/issues/1016. Modules that had direct imports (NOT patched): ['urllib3.util (/tmp/voyacart-loadtest-venv/lib/python3.11/site-packages/urllib3/util/__init__.py)', 'urllib3.util.ssl_ (/tmp/voyacart-loadtest-venv/lib/python3.11/site-packages/urllib3/util/ssl_.py)']. 
+    monkey.patch_all()
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+ERROR tests/test_agui_loadtest.py - RecursionError: maximum recursion depth e...
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+2 warnings, 1 error in 0.21s

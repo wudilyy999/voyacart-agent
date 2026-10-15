@@ -1,0 +1,16 @@
+usage: enrich_catalog.py [-h] (--enrich | --translate) --prepared PREPARED
+                         [--enrichment ENRICHMENT] [--cache CACHE] --output
+                         OUTPUT
+
+T2 显式运行商品增强或最终留出查询翻译；逐条缓存，服务故障后可续跑。
+
+options:
+  -h, --help            show this help message and exit
+  --enrich              启用商品增强模型调用
+  --translate           启用最终留出 200 条查询的翻译模型调用
+  --prepared PREPARED   包含预选计划、商品和标注的准备目录
+  --enrichment ENRICHMENT
+                        翻译前读取的完整商品增强缓存
+  --cache CACHE         输出缓存；默认 data/esci/enrichment-v1.jsonl 或 translate-
+                        zh-v1.jsonl
+  --output OUTPUT       本次运行的新证据目录

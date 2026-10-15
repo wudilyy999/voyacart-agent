@@ -1,0 +1,5 @@
+1:M 14 Oct 2026 13:52:31.046 * 100 changes in 300 seconds. Saving...
+1:M 14 Oct 2026 13:52:31.049 * Background saving started by pid 442
+442:C 14 Oct 2026 13:52:31.290 * DB saved on disk
+442:C 14 Oct 2026 13:52:31.290 * Fork CoW for RDB: current 1 MB, peak 1 MB, average 1 MB
+1:M 14 Oct 2026 13:52:31.353 * Background saving terminated with success

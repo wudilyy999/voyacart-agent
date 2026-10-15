@@ -1,0 +1,36 @@
+{
+  "make_exit_code": 2,
+  "verify_exit_code": 2,
+  "verify": {
+    "passed": false,
+    "reasons": [
+      "运行未完整完成或源码不稳定",
+      "场景缺失或失败",
+      "安全契约未通过"
+    ],
+    "report": "/private/tmp/voyacart-local-fallback-20261014/eval/verification/2026-10-14-esci-demo-harness-rerun/run/report.html"
+  },
+  "manifest_status": "failed",
+  "contracts": {
+    "tests": 869,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "exit_code": -6,
+    "missing_test_modules": [],
+    "passed": false,
+    "passed_count": 869,
+    "elapsed_ms": 15272.237750003114
+  },
+  "scenario_strategy_rows": 0,
+  "model_request_count": 0,
+  "model_request_trace_count": 0,
+  "model_response_trace_count": 0,
+  "source_stable": true,
+  "current_source_matches_run": true,
+  "source_archive_files_verified": 373,
+  "source_archive_mismatches": [],
+  "duration_seconds": 15.54964179196395,
+  "failure": "pytest_native_process_exit_after_all_assertions_passed",
+  "additional_runs": "stopped_after_authorized_same_parameter_rerun"
+}

@@ -1,0 +1,14 @@
+{
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_loadtest_matrix_report.py"
+  ],
+  "exit_code": 0,
+  "source_fingerprints_blake2b": {
+    "scripts/loadtest/report_matrix.py": "4b8d83125aa75294110835dc16fdb362fe3fec2470129261b4b4a617636855119032d60bd9b9a9395c25aad10011d316d9b04ea58beee8f2722aef7d00fa221a",
+    "tests/test_loadtest_matrix_report.py": "a271ad4e168b58aca6a7434b6dff9e57c7d311fb7e280f8a998403850ad0253db369f0b1f11e728d14e50505553acc25cd501857a2ee04c761e25ad5ce3cb755"
+  }
+}

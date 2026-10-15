@@ -1,0 +1,1 @@
+["docker", "cp", "/Users/liyuyang/Downloads/voyacart-agent/.cache/fastembed/.", "voyacart-r2-embedding-20261014-model-seed:/app/data/local_embedding/model/"]

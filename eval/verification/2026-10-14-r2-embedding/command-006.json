@@ -1,0 +1,1 @@
+["docker", "inspect", "--format", "{{index .Config.Labels \"com.docker.compose.project\"}}", "voyacart-r2-embedding-20261014-model-seed"]

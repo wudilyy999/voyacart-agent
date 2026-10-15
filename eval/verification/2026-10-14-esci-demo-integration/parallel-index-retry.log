@@ -1,0 +1,42 @@
+{"written": 100, "pending_at_start": 1650}
+{"written": 200, "pending_at_start": 1650}
+{"written": 300, "pending_at_start": 1650}
+{"written": 400, "pending_at_start": 1650}
+{"written": 500, "pending_at_start": 1650}
+{"written": 600, "pending_at_start": 1650}
+{"written": 700, "pending_at_start": 1650}
+{"written": 800, "pending_at_start": 1650}
+{"written": 900, "pending_at_start": 1650}
+{"written": 1000, "pending_at_start": 1650}
+{"written": 1100, "pending_at_start": 1650}
+  + Exception Group Traceback (most recent call last):
+  |   File "<stdin>", line 44, in <module>
+  |   File "/usr/local/lib/python3.11/asyncio/runners.py", line 190, in run
+  |     return runner.run(main)
+  |            ^^^^^^^^^^^^^^^^
+  |   File "/usr/local/lib/python3.11/asyncio/runners.py", line 118, in run
+  |     return self._loop.run_until_complete(task)
+  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "/usr/local/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+  |     return future.result()
+  |            ^^^^^^^^^^^^^^^
+  |   File "<stdin>", line 34, in main
+  |   File "/usr/local/lib/python3.11/asyncio/taskgroups.py", line 145, in __aexit__
+  |     raise me from None
+  | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "<stdin>", line 27, in worker
+    |   File "/app/app/infrastructure/cache/cached_embedding_client.py", line 72, in embed_batch
+    |     fresh = await self._inner.embed_batch([text for _, text in pending])
+    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/app/app/infrastructure/embedding/openai_embedding_client.py", line 47, in embed_batch
+    |     vectors.extend(await self._embed_chunk(client, chunk))
+    |                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/app/app/infrastructure/embedding/openai_embedding_client.py", line 58, in _embed_chunk
+    |     response.raise_for_status()
+    |   File "/app/.venv/lib/python3.11/site-packages/httpx/_models.py", line 829, in raise_for_status
+    |     raise HTTPStatusError(message, request=request, response=self)
+    | httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+    +------------------------------------

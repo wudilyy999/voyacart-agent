@@ -1,0 +1,131 @@
+
+> voyacart-frontend@0.3.0 test
+> vitest run
+
+
+ RUN  v3.2.4 /private/tmp/voyacart-backend-frontend-20261014/frontend
+
+ ✓ tests/toolApprovals.test.tsx (1 test) 18ms
+ ✓ tests/shoppingForm.test.tsx (9 tests) 104ms
+ ✓ tests/contextWorkspace.test.tsx (15 tests) 131ms
+ ✓ tests/historySearch.test.tsx (9 tests) 492ms
+   ✓ 选购历史搜索弹窗 > 完整检索超过100条的摘要，标题或会话ID忽略大小写和首尾空白  311ms
+ ❯ tests/conversationDensity.test.tsx (16 tests | 3 failed) 259ms
+   ✓ 已完成的紧凑过程默认折叠，展开轮次不会提前请求商品 58ms
+   ✓ 展开工具才按运行与调用读取；同名并行结果乱序返回也不会串卡 54ms
+   × 流式消息替换为最终消息且运行结束后，手动展开的步骤和全部小卡仍保留 42ms
+     → expected  to have a length of 6 but got +0
+   ✓ 用户手动收起运行中的过程后，后续事件与完成状态不会重新展开 10ms
+   ✓ 有真实 Think 时可展开查看正文，思考行不会加载商品 12ms
+   ✓ 本轮没有 Think 时如实提示，不从工具摘要生成思考正文 10ms
+   ✓ 旧历史没有活动记录时提示记录缺失，不能宣称进行了零次调用 14ms
+   ✓ 小卡空态区分：'分页片段为空' 6ms
+   ✓ 小卡空态区分：'字段不完整被过滤' 2ms
+   ✓ 小卡空态区分：'真实零命中' 2ms
+   ✓ 小卡空态区分：'旧调用没有可读结果' 2ms
+   × 等待保存的商品结果可以重新读取，而不要求刷新整个会话 12ms
+     → expected  to have a length of 1 but got +0
+   × 请求失败只显示友好提示，重试仍绑定原来的运行和调用 19ms
+     → expected  to have a length of 1 but got +0
+   ✓ 拒绝返回了错误关联的商品：'other' / 'r:tool:a' 5ms
+   ✓ 拒绝返回了错误关联的商品：'r' / 'other:tool' 2ms
+   ✓ 切换调用后迟到的旧请求不能覆盖新调用结果 6ms
+ ✓ tests/catalogMedia.test.tsx (2 tests) 94ms
+ ✓ tests/productCards.test.tsx (5 tests) 128ms
+ ✓ tests/myOrders.test.tsx (2 tests) 218ms
+ ✓ tests/productContract.test.ts (37 tests) 35ms
+ ✓ tests/skillSlashInteraction.test.tsx (8 tests) 645ms
+stderr | tests/commerceClient.test.ts > 通过官方 SDK 消费真实 AG-UI 协议 > HTTP 错误显示可恢复提示，不把服务器错误页直接渲染给用户
+Agent execution failed: Error: HTTP 503: <html>internal traceback</html>
+    at file:///Users/liyuyang/Downloads/voyacart-agent/frontend/node_modules/@ag-ui/client/src/run/http-request.ts:37:77
+    at doInnerSub (/Users/liyuyang/Downloads/voyacart-agent/frontend/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:15)
+    at outerNext (/Users/liyuyang/Downloads/voyacart-agent/frontend/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/liyuyang/Downloads/voyacart-agent/frontend/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/liyuyang/Downloads/voyacart-agent/frontend/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/liyuyang/Downloads/voyacart-agent/frontend/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at processTicksAndRejections (node:internal/process/task_queues:103:5) {
+  status: 503,
+  payload: '<html>internal traceback</html>'
+}
+
+ ✓ tests/commerceClient.test.ts (13 tests) 62ms
+ ✓ tests/activities.test.tsx (7 tests) 63ms
+ ✓ tests/confirmationCards.test.tsx (11 tests) 52ms
+ ✓ tests/confirmations.test.ts (8 tests) 7ms
+ ✓ tests/buyerWorkspace.test.tsx (11 tests) 908ms
+ ✓ tests/shoppingPlans.test.tsx (14 tests) 21ms
+ ✓ tests/modelPicker.test.tsx (49 tests) 1462ms
+ ✓ tests/runRecovery.test.ts (21 tests) 693ms
+   ✓ 持久运行恢复（使用官方 AG-UI SDK） > 网络断流按cursor重连，丢弃重复和乱序帧，不重新POST模型  605ms
+ ✓ tests/automations.test.tsx (8 tests) 1853ms
+   ✓ 模板先填表，独立输出与明确授权按模型版本提交，创建不附带执行  434ms
+   ✓ 编辑携带当前 revision，保持合并输出及关闭自动开始的选择  333ms
+   ✓ 保存失败重试沿用 request_id，不能因网络错误重复创建  325ms
+   ✓ 非法时间预览禁止保存，错误显示在时间设置附近  314ms
+   ✓ 自动化复用聊天选择器：分组、搜索、思考与版本进入草稿，取消不修改聊天或默认模型  335ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 3 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/conversationDensity.test.tsx > 流式消息替换为最终消息且运行结束后，手动展开的步骤和全部小卡仍保留
+AssertionError: expected  to have a length of 6 but got +0
+
+- Expected
++ Received
+
+- 6
++ 0
+
+ ❯ tests/conversationDensity.test.tsx:97:55
+     95|   const row = host.querySelector<HTMLDetailsElement>(".execution-row d…
+     96|   expect(run.open).toBe(true); await toggle(row); expect(row.open).toB…
+     97|   expect(host.querySelectorAll(".tool-product-mini")).toHaveLength(6);
+       |                                                       ^
+     98|   await click(button(host, "查看全部 8 件")); expect(host.querySelectorAll(…
+     99|   await render(renderTurns([...messages, { id: "stream:1", role: "assi…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/3]⎯
+
+ FAIL  tests/conversationDensity.test.tsx > 等待保存的商品结果可以重新读取，而不要求刷新整个会话
+AssertionError: expected  to have a length of 1 but got +0
+
+- Expected
++ Received
+
+- 1
++ 0
+
+ ❯ tests/conversationDensity.test.tsx:165:55
+    163|   const { host } = await mount(<ToolProductResult runId="r" toolCallId…
+    164|   expect(host.textContent).toContain("商品结果尚未保存"); await click(button(h…
+    165|   expect(host.querySelectorAll(".tool-product-mini")).toHaveLength(1);…
+       |                                                       ^
+    166|   expect(load.mock.calls).toEqual([["r", "r:tool:a"], ["r", "r:tool:a"…
+    167| });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/3]⎯
+
+ FAIL  tests/conversationDensity.test.tsx > 请求失败只显示友好提示，重试仍绑定原来的运行和调用
+AssertionError: expected  to have a length of 1 but got +0
+
+- Expected
++ Received
+
+- 1
++ 0
+
+ ❯ tests/conversationDensity.test.tsx:173:88
+    171|   const { host } = await mount(<ToolProductResult runId="r" toolCallId…
+    172|   expect(host.querySelector('[role="status"]')?.textContent).toContain…
+    173|   await click(button(host, "重试")); expect(host.querySelectorAll(".tool…
+       |                                                                                        ^
+    174|   expect(load.mock.calls).toEqual([["r", "r:tool:a"], ["r", "r:tool:a"…
+    175| });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/3]⎯
+
+
+ Test Files  1 failed | 18 passed (19)
+      Tests  3 failed | 243 passed (246)
+   Start at  16:24:46
+   Duration  3.10s (transform 969ms, setup 0ms, collect 4.50s, tests 7.24s, environment 7.10s, prepare 1.28s)
+

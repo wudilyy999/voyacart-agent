@@ -1,0 +1,41 @@
+{
+  "api": {
+    "model": "mock-chat",
+    "embedding": "mock-embedding",
+    "database": "sqlite+aiosqlite:////app/data/voyacart.db",
+    "data": "/app/data",
+    "queue": "1",
+    "qdrant": "http://qdrant:6333",
+    "redis": "redis://redis:6379/0",
+    "openssl": "0",
+    "optional_external_services_empty": true,
+    "local_fallback": "0",
+    "prompt_pin_empty": true
+  },
+  "worker": {
+    "model": "mock-chat",
+    "embedding": "mock-embedding",
+    "database": "sqlite+aiosqlite:////app/data/voyacart.db",
+    "data": "/app/data",
+    "queue": "1",
+    "qdrant": "http://qdrant:6333",
+    "redis": "redis://redis:6379/0",
+    "openssl": "0",
+    "optional_external_services_empty": true,
+    "local_fallback": "0",
+    "prompt_pin_empty": true
+  },
+  "automation-worker": {
+    "model": "mock-chat",
+    "embedding": "mock-embedding",
+    "database": "sqlite+aiosqlite:////app/data/voyacart.db",
+    "data": "/app/data",
+    "queue": "1",
+    "qdrant": "http://qdrant:6333",
+    "redis": "redis://redis:6379/0",
+    "openssl": "0",
+    "optional_external_services_empty": true,
+    "local_fallback": "0",
+    "prompt_pin_empty": true
+  }
+}

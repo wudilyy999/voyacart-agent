@@ -1,0 +1,7 @@
+{
+  "redis_ping": true,
+  "redis_version": "7.4.11",
+  "qdrant_health_status": 200,
+  "qdrant_health_response": "healthz check passed",
+  "qdrant_version": "1.19.0"
+}

@@ -1,0 +1,419 @@
+{
+  "crosslingual": {
+    "reason": "derived_from_holdout_requires_frozen_parameters",
+    "status": "NOT_EXECUTED"
+  },
+  "default_strategy": {
+    "status": "NOT_SELECTED"
+  },
+  "holdout": {
+    "status": "NOT_EXECUTED"
+  },
+  "llm_calls": 0,
+  "metric_definitions": {
+    "category": "查询类目用于报告，全库及硬约束检索不传类目",
+    "constraints": "应为空用例独立统计空结果准确率，其余用例统计Recall@5、Precision@5",
+    "gains": {
+      "C": 0.01,
+      "E": 1.0,
+      "I": 0.0,
+      "S": 0.1
+    },
+    "judged_at_10": "前10条去重返回结果中有人工标注的比例，分母为实际返回数",
+    "latency": "复用固定查询向量后的检索耗时，查询编码耗时单独记录"
+  },
+  "parameters": {
+    "constraints_top_k": 5,
+    "full_catalog_top_k": 50,
+    "recall_candidates": 32,
+    "rrf_k": 60,
+    "rrf_weights": [
+      1,
+      1
+    ],
+    "strategies": [
+      "keyword_2gram",
+      "bm25"
+    ]
+  },
+  "query_encoding": {
+    "seconds": 0.0,
+    "unique_queries": 0
+  },
+  "samples": [
+    {
+      "actual_strategy": "candidate_keyword_2gram",
+      "elapsed_ms": 0.0404169550165534,
+      "empty_ok": null,
+      "execution_errors": [],
+      "kind": "ranking",
+      "locale": "us",
+      "metrics": {
+        "ndcg": 1.0,
+        "ndcg_at_10": 1.0
+      },
+      "query": "metal backpack",
+      "query_id": 1,
+      "rerank_applied": false,
+      "retrieved": [
+        "P100000",
+        "P100001",
+        "P100002",
+        "P100003"
+      ],
+      "returned_count": 4,
+      "strategy": "keyword_2gram",
+      "violations": {}
+    },
+    {
+      "actual_strategy": "keyword_2gram",
+      "elapsed_ms": 0.07395807188004255,
+      "empty_ok": null,
+      "execution_errors": [],
+      "kind": "retrieval",
+      "locale": "us",
+      "metrics": {
+        "judged_at_10": 0.75,
+        "ndcg_at_10": 0.9870926875333095,
+        "recall_at_10": 1.0,
+        "recall_at_50": 1.0
+      },
+      "query": "metal backpack",
+      "query_id": 1,
+      "rerank_applied": false,
+      "retrieved": [
+        "P100000",
+        "P100004",
+        "P100001",
+        "P100002"
+      ],
+      "returned_count": 4,
+      "strategy": "keyword_2gram",
+      "violations": {}
+    },
+    {
+      "actual_strategy": "keyword_2gram",
+      "elapsed_ms": 0.0504170311614871,
+      "empty_ok": null,
+      "execution_errors": [],
+      "kind": "constraints",
+      "locale": "us",
+      "metrics": {
+        "precision_at_5": 1.0,
+        "recall_at_5": 1.0
+      },
+      "query": "metal backpack",
+      "query_id": 1,
+      "rerank_applied": false,
+      "retrieved": [
+        "P100000"
+      ],
+      "returned_count": 1,
+      "strategy": "keyword_2gram",
+      "violations": {}
+    },
+    {
+      "actual_strategy": "keyword_2gram",
+      "elapsed_ms": 0.026458059437572956,
+      "empty_ok": true,
+      "execution_errors": [],
+      "kind": "constraints",
+      "locale": "us",
+      "metrics": {
+        "precision_at_5": null,
+        "recall_at_5": null
+      },
+      "query": "metal backpack",
+      "query_id": 2,
+      "rerank_applied": false,
+      "retrieved": [],
+      "returned_count": 0,
+      "strategy": "keyword_2gram",
+      "violations": {}
+    },
+    {
+      "actual_strategy": "candidate_bm25",
+      "elapsed_ms": 0.06254203617572784,
+      "empty_ok": null,
+      "execution_errors": [],
+      "kind": "ranking",
+      "locale": "us",
+      "metrics": {
+        "ndcg": 1.0,
+        "ndcg_at_10": 1.0
+      },
+      "query": "metal backpack",
+      "query_id": 1,
+      "rerank_applied": false,
+      "retrieved": [
+        "P100000",
+        "P100001",
+        "P100002",
+        "P100003"
+      ],
+      "returned_count": 4,
+      "strategy": "bm25",
+      "violations": {}
+    },
+    {
+      "actual_strategy": "bm25",
+      "elapsed_ms": 0.19995903130620718,
+      "empty_ok": null,
+      "execution_errors": [],
+      "kind": "retrieval",
+      "locale": "us",
+      "metrics": {
+        "judged_at_10": 0.75,
+        "ndcg_at_10": 0.9870926875333095,
+        "recall_at_10": 1.0,
+        "recall_at_50": 1.0
+      },
+      "query": "metal backpack",
+      "query_id": 1,
+      "rerank_applied": false,
+      "retrieved": [
+        "P100000",
+        "P100004",
+        "P100001",
+        "P100002"
+      ],
+      "returned_count": 4,
+      "strategy": "bm25",
+      "violations": {}
+    },
+    {
+      "actual_strategy": "bm25",
+      "elapsed_ms": 0.11095800437033176,
+      "empty_ok": null,
+      "execution_errors": [],
+      "kind": "constraints",
+      "locale": "us",
+      "metrics": {
+        "precision_at_5": 1.0,
+        "recall_at_5": 1.0
+      },
+      "query": "metal backpack",
+      "query_id": 1,
+      "rerank_applied": false,
+      "retrieved": [
+        "P100000"
+      ],
+      "returned_count": 1,
+      "strategy": "bm25",
+      "violations": {}
+    },
+    {
+      "actual_strategy": "bm25",
+      "elapsed_ms": 0.09899993892759085,
+      "empty_ok": true,
+      "execution_errors": [],
+      "kind": "constraints",
+      "locale": "us",
+      "metrics": {
+        "precision_at_5": null,
+        "recall_at_5": null
+      },
+      "query": "metal backpack",
+      "query_id": 2,
+      "rerank_applied": false,
+      "retrieved": [],
+      "returned_count": 0,
+      "strategy": "bm25",
+      "violations": {}
+    }
+  ],
+  "split": "dev",
+  "status": "COMPLETED",
+  "strategies": {
+    "bm25": {
+      "status": "COMPLETED"
+    },
+    "keyword_2gram": {
+      "status": "COMPLETED"
+    }
+  },
+  "summary": {
+    "constraints": {
+      "bm25": {
+        "all": {
+          "actual_strategies": [
+            "bm25"
+          ],
+          "constraint_violations": 0,
+          "empty_accuracy": 1.0,
+          "mean_returned_count": 0.5,
+          "metrics": {
+            "precision_at_5": 1.0,
+            "recall_at_5": 1.0
+          },
+          "queries": 2
+        },
+        "us": {
+          "actual_strategies": [
+            "bm25"
+          ],
+          "constraint_violations": 0,
+          "empty_accuracy": 1.0,
+          "mean_returned_count": 0.5,
+          "metrics": {
+            "precision_at_5": 1.0,
+            "recall_at_5": 1.0
+          },
+          "queries": 2
+        }
+      },
+      "keyword_2gram": {
+        "all": {
+          "actual_strategies": [
+            "keyword_2gram"
+          ],
+          "constraint_violations": 0,
+          "empty_accuracy": 1.0,
+          "mean_returned_count": 0.5,
+          "metrics": {
+            "precision_at_5": 1.0,
+            "recall_at_5": 1.0
+          },
+          "queries": 2
+        },
+        "us": {
+          "actual_strategies": [
+            "keyword_2gram"
+          ],
+          "constraint_violations": 0,
+          "empty_accuracy": 1.0,
+          "mean_returned_count": 0.5,
+          "metrics": {
+            "precision_at_5": 1.0,
+            "recall_at_5": 1.0
+          },
+          "queries": 2
+        }
+      }
+    },
+    "ranking": {
+      "bm25": {
+        "all": {
+          "actual_strategies": [
+            "candidate_bm25"
+          ],
+          "constraint_violations": 0,
+          "empty_accuracy": null,
+          "mean_returned_count": 4.0,
+          "metrics": {
+            "ndcg": 1.0,
+            "ndcg_at_10": 1.0
+          },
+          "queries": 1
+        },
+        "us": {
+          "actual_strategies": [
+            "candidate_bm25"
+          ],
+          "constraint_violations": 0,
+          "empty_accuracy": null,
+          "mean_returned_count": 4.0,
+          "metrics": {
+            "ndcg": 1.0,
+            "ndcg_at_10": 1.0
+          },
+          "queries": 1
+        }
+      },
+      "keyword_2gram": {
+        "all": {
+          "actual_strategies": [
+            "candidate_keyword_2gram"
+          ],
+          "constraint_violations": 0,
+          "empty_accuracy": null,
+          "mean_returned_count": 4.0,
+          "metrics": {
+            "ndcg": 1.0,
+            "ndcg_at_10": 1.0
+          },
+          "queries": 1
+        },
+        "us": {
+          "actual_strategies": [
+            "candidate_keyword_2gram"
+          ],
+          "constraint_violations": 0,
+          "empty_accuracy": null,
+          "mean_returned_count": 4.0,
+          "metrics": {
+            "ndcg": 1.0,
+            "ndcg_at_10": 1.0
+          },
+          "queries": 1
+        }
+      }
+    },
+    "retrieval": {
+      "bm25": {
+        "all": {
+          "actual_strategies": [
+            "bm25"
+          ],
+          "constraint_violations": 0,
+          "empty_accuracy": null,
+          "mean_returned_count": 4.0,
+          "metrics": {
+            "judged_at_10": 0.75,
+            "ndcg_at_10": 0.9870926875333095,
+            "recall_at_10": 1.0,
+            "recall_at_50": 1.0
+          },
+          "queries": 1
+        },
+        "us": {
+          "actual_strategies": [
+            "bm25"
+          ],
+          "constraint_violations": 0,
+          "empty_accuracy": null,
+          "mean_returned_count": 4.0,
+          "metrics": {
+            "judged_at_10": 0.75,
+            "ndcg_at_10": 0.9870926875333095,
+            "recall_at_10": 1.0,
+            "recall_at_50": 1.0
+          },
+          "queries": 1
+        }
+      },
+      "keyword_2gram": {
+        "all": {
+          "actual_strategies": [
+            "keyword_2gram"
+          ],
+          "constraint_violations": 0,
+          "empty_accuracy": null,
+          "mean_returned_count": 4.0,
+          "metrics": {
+            "judged_at_10": 0.75,
+            "ndcg_at_10": 0.9870926875333095,
+            "recall_at_10": 1.0,
+            "recall_at_50": 1.0
+          },
+          "queries": 1
+        },
+        "us": {
+          "actual_strategies": [
+            "keyword_2gram"
+          ],
+          "constraint_violations": 0,
+          "empty_accuracy": null,
+          "mean_returned_count": 4.0,
+          "metrics": {
+            "judged_at_10": 0.75,
+            "ndcg_at_10": 0.9870926875333095,
+            "recall_at_10": 1.0,
+            "recall_at_50": 1.0
+          },
+          "queries": 1
+        }
+      }
+    }
+  }
+}

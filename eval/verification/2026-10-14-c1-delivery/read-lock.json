@@ -1,0 +1,5 @@
+{
+  "read_completed_while_writer_locked": true,
+  "read_elapsed_seconds": 0.0005551250651478767,
+  "scope": "与基线相同事件读路径，完整容量矩阵延后"
+}

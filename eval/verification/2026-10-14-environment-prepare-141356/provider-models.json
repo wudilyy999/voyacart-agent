@@ -1,0 +1,7 @@
+{
+  "http_status": 200,
+  "configured_chat_model_available": true,
+  "configured_embedding_model": "text-embedding-v4",
+  "configured_embedding_model_available": false,
+  "embedding_model_candidates": []
+}

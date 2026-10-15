@@ -1,0 +1,1047 @@
+INFO:     172.26.0.10:59572 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+INFO:     172.26.0.10:59564 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+INFO:     172.26.0.10:59634 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+INFO:     172.26.0.10:59646 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+INFO:     172.26.0.10:59560 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+INFO:     172.26.0.10:59592 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+2026-10-14 13:51:44,698 INFO httpx request=b034f0db1ae840b1a28bf820c48ba0be task=- session=sha256:5dad407bcd7548c946bc9894 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:51:44,706 INFO httpx request=91a0856aa165408797fa2729e08be2c5 task=- session=sha256:6707186dd096101bd8d491d9 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:     172.26.0.10:59666 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+INFO:     172.26.0.10:59744 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+INFO:     172.26.0.10:59522 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+2026-10-14 13:51:44,974 INFO httpx request=1ee92674309c4e57a643a65779956cc7 task=- session=sha256:49b8aec0db90f97e8257b2ba trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:51:45,011 INFO httpx request=494a0a1d9b3042c7951f1f6e7fdb6de9 task=- session=sha256:66935894de470d1802617a3e trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:     172.26.0.10:59568 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+2026-10-14 13:51:45,043 INFO httpx request=18d6371f8c72448b8db37b8995d7b0e9 task=- session=sha256:396559ddc34c14826886074c trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:     172.26.0.10:59726 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+INFO:     172.26.0.10:59754 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+INFO:     172.26.0.10:59672 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+INFO:     172.26.0.10:59714 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49284 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 13:51:45,371 INFO app.infrastructure.tracing request=0be19a2a93ae4638a66efbcb9026c554 task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+2026-10-14 13:51:45,427 INFO httpx request=dad39b6862f04d129837d7c10a6f3a3b task=- session=sha256:c92718e972da49ca526cdce0 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:     172.26.0.10:59688 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+2026-10-14 13:51:45,446 INFO httpx request=b219ab5d604d4067be5424ca37f5f7d3 task=- session=sha256:37fb785cd3788af4ff56ee9d trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:51:45,462 INFO httpx request=21965834311b4500b3ce946c36c352e5 task=- session=sha256:a34598acca1b1db1e3e01861 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:51:45,566 INFO httpx request=00dbf55bbf044467a44abe23f88dd593 task=- session=sha256:c7417e719982df72b8fe1f11 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:     172.26.0.10:59764 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+2026-10-14 13:51:45,649 INFO httpx request=358a5ce378dd4da197c0397478211e5a task=- session=sha256:4bf62463c49d8a6a45536851 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:51:45,655 INFO httpx request=c02db96d370b4a6c9c18a54ba2f2fb4e task=- session=sha256:9b322227ab26c9679d6ba910 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:51:45,717 INFO httpx request=0c18faa4c9244900848a137086090598 task=- session=sha256:fe44be46ea2c9ea2ff8c75ed trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:     172.26.0.10:59706 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+INFO:     172.26.0.10:59776 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+2026-10-14 13:51:45,894 INFO httpx request=91a0856aa165408797fa2729e08be2c5 task=- session=sha256:6707186dd096101bd8d491d9 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:51:45,902 WARNING app.application.usecases.catalog_search request=91a0856aa165408797fa2729e08be2c5 task=- session=sha256:6707186dd096101bd8d491d9 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:51:45,906 INFO httpx request=b034f0db1ae840b1a28bf820c48ba0be task=- session=sha256:5dad407bcd7548c946bc9894 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:51:45,919 WARNING app.application.usecases.catalog_search request=b034f0db1ae840b1a28bf820c48ba0be task=- session=sha256:5dad407bcd7548c946bc9894 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:51:45,938 INFO httpx request=91a0856aa165408797fa2729e08be2c5 task=- session=sha256:6707186dd096101bd8d491d9 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:51:45,955 INFO httpx request=b034f0db1ae840b1a28bf820c48ba0be task=- session=sha256:5dad407bcd7548c946bc9894 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:     172.26.0.10:59650 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+INFO:     172.26.0.10:59642 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+2026-10-14 13:51:46,062 INFO httpx request=ac284650b30b4616acf950bea3cf114d task=- session=sha256:62d5bde37f05b836256ee08d trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:51:46,179 INFO httpx request=6ad1ef35557d455e90ff5ee635b16394 task=- session=sha256:db7ed0f711abd1a9729e165a trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:51:46,195 INFO httpx request=494a0a1d9b3042c7951f1f6e7fdb6de9 task=- session=sha256:66935894de470d1802617a3e trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:51:46,202 INFO httpx request=1ee92674309c4e57a643a65779956cc7 task=- session=sha256:49b8aec0db90f97e8257b2ba trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:51:46,211 WARNING app.application.usecases.catalog_search request=494a0a1d9b3042c7951f1f6e7fdb6de9 task=- session=sha256:66935894de470d1802617a3e trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:51:46,232 INFO httpx request=cf6393c2df43471bbede3f66c850e99a task=- session=sha256:44331e9df1278d2c6d0da8ee trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:51:46,238 WARNING app.application.usecases.catalog_search request=1ee92674309c4e57a643a65779956cc7 task=- session=sha256:49b8aec0db90f97e8257b2ba trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:51:46,253 INFO httpx request=494a0a1d9b3042c7951f1f6e7fdb6de9 task=- session=sha256:66935894de470d1802617a3e trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:51:46,278 INFO httpx request=1ee92674309c4e57a643a65779956cc7 task=- session=sha256:49b8aec0db90f97e8257b2ba trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:51:46,286 INFO httpx request=18d6371f8c72448b8db37b8995d7b0e9 task=- session=sha256:396559ddc34c14826886074c trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:51:46,290 WARNING app.application.usecases.catalog_search request=18d6371f8c72448b8db37b8995d7b0e9 task=- session=sha256:396559ddc34c14826886074c trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:51:46,325 INFO httpx request=94e9dfb3664a41a7aa688395bf57e5a1 task=- session=sha256:fb0ff70d7b6f49ea9ea7cf5b trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:51:46,326 INFO httpx request=18d6371f8c72448b8db37b8995d7b0e9 task=- session=sha256:396559ddc34c14826886074c trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:     172.26.0.10:59540 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+2026-10-14 13:51:46,622 INFO httpx request=7c7bbdc69a4941d7b8ada57d12297e1c task=- session=sha256:f3034b0bc4a3f1aa7a00a99a trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:51:46,677 INFO httpx request=dad39b6862f04d129837d7c10a6f3a3b task=- session=sha256:c92718e972da49ca526cdce0 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:51:46,685 WARNING app.application.usecases.catalog_search request=dad39b6862f04d129837d7c10a6f3a3b task=- session=sha256:c92718e972da49ca526cdce0 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:51:46,707 INFO httpx request=dad39b6862f04d129837d7c10a6f3a3b task=- session=sha256:c92718e972da49ca526cdce0 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:51:46,904 INFO httpx request=00dbf55bbf044467a44abe23f88dd593 task=- session=sha256:c7417e719982df72b8fe1f11 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:51:46,910 WARNING app.application.usecases.catalog_search request=00dbf55bbf044467a44abe23f88dd593 task=- session=sha256:c7417e719982df72b8fe1f11 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:51:46,927 INFO httpx request=00dbf55bbf044467a44abe23f88dd593 task=- session=sha256:c7417e719982df72b8fe1f11 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:     172.26.0.10:59618 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+2026-10-14 13:51:47,065 INFO httpx request=358a5ce378dd4da197c0397478211e5a task=- session=sha256:4bf62463c49d8a6a45536851 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:51:47,075 WARNING app.application.usecases.catalog_search request=358a5ce378dd4da197c0397478211e5a task=- session=sha256:4bf62463c49d8a6a45536851 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+INFO:     172.26.0.10:59712 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+2026-10-14 13:51:47,152 INFO httpx request=358a5ce378dd4da197c0397478211e5a task=- session=sha256:4bf62463c49d8a6a45536851 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:51:47,195 INFO httpx request=1c1a06451170441b87e631ce357c23ae task=- session=sha256:0b6b97f0b897aa90ccdc9162 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:51:47,241 INFO httpx request=2fcc3718915e4dc5897aa828c35d8a57 task=- session=sha256:5fbf4b899c70fce8264a4b0d trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:     172.26.0.10:59538 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+2026-10-14 13:51:47,285 INFO httpx request=ac284650b30b4616acf950bea3cf114d task=- session=sha256:62d5bde37f05b836256ee08d trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:51:47,291 WARNING app.application.usecases.catalog_search request=ac284650b30b4616acf950bea3cf114d task=- session=sha256:62d5bde37f05b836256ee08d trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:51:47,329 INFO httpx request=ac284650b30b4616acf950bea3cf114d task=- session=sha256:62d5bde37f05b836256ee08d trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:51:47,350 INFO httpx request=25dd84f7181e4b708ded0b45de648106 task=- session=sha256:11273e020347dec1388bbac3 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:     172.26.0.10:59578 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+2026-10-14 13:51:47,390 INFO httpx request=6ad1ef35557d455e90ff5ee635b16394 task=- session=sha256:db7ed0f711abd1a9729e165a trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:51:47,407 WARNING app.application.usecases.catalog_search request=6ad1ef35557d455e90ff5ee635b16394 task=- session=sha256:db7ed0f711abd1a9729e165a trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:51:47,415 INFO httpx request=0c18faa4c9244900848a137086090598 task=- session=sha256:fe44be46ea2c9ea2ff8c75ed trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:51:47,435 INFO httpx request=6ad1ef35557d455e90ff5ee635b16394 task=- session=sha256:db7ed0f711abd1a9729e165a trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:51:47,436 WARNING app.application.usecases.catalog_search request=0c18faa4c9244900848a137086090598 task=- session=sha256:fe44be46ea2c9ea2ff8c75ed trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:51:47,446 INFO httpx request=cf6393c2df43471bbede3f66c850e99a task=- session=sha256:44331e9df1278d2c6d0da8ee trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:51:47,461 INFO httpx request=0c18faa4c9244900848a137086090598 task=- session=sha256:fe44be46ea2c9ea2ff8c75ed trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:51:47,464 WARNING app.application.usecases.catalog_search request=cf6393c2df43471bbede3f66c850e99a task=- session=sha256:44331e9df1278d2c6d0da8ee trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:51:47,480 INFO httpx request=21965834311b4500b3ce946c36c352e5 task=- session=sha256:a34598acca1b1db1e3e01861 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:51:47,499 INFO httpx request=cf6393c2df43471bbede3f66c850e99a task=- session=sha256:44331e9df1278d2c6d0da8ee trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:51:47,510 WARNING app.application.usecases.catalog_search request=21965834311b4500b3ce946c36c352e5 task=- session=sha256:a34598acca1b1db1e3e01861 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:51:47,550 INFO httpx request=21965834311b4500b3ce946c36c352e5 task=- session=sha256:a34598acca1b1db1e3e01861 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:51:47,581 INFO httpx request=94e9dfb3664a41a7aa688395bf57e5a1 task=- session=sha256:fb0ff70d7b6f49ea9ea7cf5b trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:51:47,585 WARNING app.application.usecases.catalog_search request=94e9dfb3664a41a7aa688395bf57e5a1 task=- session=sha256:fb0ff70d7b6f49ea9ea7cf5b trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:51:47,623 INFO httpx request=7846523294c641f7a3c4f54c4732ed73 task=- session=sha256:23be475f4dd2b75c093217a1 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:51:47,625 INFO httpx request=94e9dfb3664a41a7aa688395bf57e5a1 task=- session=sha256:fb0ff70d7b6f49ea9ea7cf5b trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:     172.26.0.10:59702 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+2026-10-14 13:51:47,645 INFO httpx request=765195732e244ef2a6b222566bdc5e52 task=- session=sha256:972671eba650ad6c5a235a6e trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:51:47,750 INFO httpx request=7c7bbdc69a4941d7b8ada57d12297e1c task=- session=sha256:f3034b0bc4a3f1aa7a00a99a trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:51:47,754 WARNING app.application.usecases.catalog_search request=7c7bbdc69a4941d7b8ada57d12297e1c task=- session=sha256:f3034b0bc4a3f1aa7a00a99a trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:51:47,786 INFO httpx request=7c7bbdc69a4941d7b8ada57d12297e1c task=- session=sha256:f3034b0bc4a3f1aa7a00a99a trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:     172.26.0.10:59730 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+2026-10-14 13:51:48,352 INFO httpx request=9670a7ffc2014842a4dc0621944a6520 task=- session=sha256:5485c2ec4ffc2b04babb4c31 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:51:48,364 INFO httpx request=1c1a06451170441b87e631ce357c23ae task=- session=sha256:0b6b97f0b897aa90ccdc9162 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:51:48,370 WARNING app.application.usecases.catalog_search request=1c1a06451170441b87e631ce357c23ae task=- session=sha256:0b6b97f0b897aa90ccdc9162 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:51:48,418 INFO httpx request=1c1a06451170441b87e631ce357c23ae task=- session=sha256:0b6b97f0b897aa90ccdc9162 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:51:48,438 INFO httpx request=2fcc3718915e4dc5897aa828c35d8a57 task=- session=sha256:5fbf4b899c70fce8264a4b0d trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:51:48,440 WARNING app.application.usecases.catalog_search request=2fcc3718915e4dc5897aa828c35d8a57 task=- session=sha256:5fbf4b899c70fce8264a4b0d trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:51:48,471 INFO httpx request=2fcc3718915e4dc5897aa828c35d8a57 task=- session=sha256:5fbf4b899c70fce8264a4b0d trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:51:48,552 INFO httpx request=c02db96d370b4a6c9c18a54ba2f2fb4e task=- session=sha256:9b322227ab26c9679d6ba910 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:51:48,555 WARNING app.application.usecases.catalog_search request=c02db96d370b4a6c9c18a54ba2f2fb4e task=- session=sha256:9b322227ab26c9679d6ba910 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:51:48,632 INFO httpx request=c02db96d370b4a6c9c18a54ba2f2fb4e task=- session=sha256:9b322227ab26c9679d6ba910 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:     172.26.0.10:59506 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+2026-10-14 13:51:48,910 INFO httpx request=ce274d28abac4b0ab22c65694d4c7b89 task=- session=sha256:c1e8affb29457143daeaa4d6 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:51:49,177 INFO httpx request=ac284650b30b4616acf950bea3cf114d task=- session=sha256:62d5bde37f05b836256ee08d trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:51:49,352 INFO app.infrastructure.tracing request=2e9a47f20a0b445c9383405840766924 task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=500
+INFO:     172.26.0.10:59544 - "POST /commerce/ag-ui/run HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/dialects/sqlite/aiosqlite.py", line 213, in execute
+    self._adapt_connection._handle_exception(error)
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/dialects/sqlite/aiosqlite.py", line 373, in _handle_exception
+    raise error
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/dialects/sqlite/aiosqlite.py", line 195, in execute
+    self.await_(_cursor.execute(operation, parameters))
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/aiosqlite/cursor.py", line 40, in execute
+    await self._execute(self._cursor.execute, sql, parameters)
+  File "/app/.venv/lib/python3.11/site-packages/aiosqlite/cursor.py", line 32, in _execute
+    return await self._conn._execute(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/aiosqlite/core.py", line 160, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/aiosqlite/core.py", line 63, in _connection_worker_thread
+    result = function()
+             ^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/uvicorn/protocols/http/httptools_impl.py", line 422, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/uvicorn/middleware/proxy_headers.py", line 63, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/fastapi/applications.py", line 1163, in __call__
+    await super().__call__(scope, receive, send)
+  File "/app/.venv/lib/python3.11/site-packages/starlette/applications.py", line 96, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/app/.venv/lib/python3.11/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/app/.venv/lib/python3.11/site-packages/starlette/middleware/cors.py", line 88, in __call__
+    await self.app(scope, receive, send)
+  File "/app/app/infrastructure/tracing.py", line 423, in __call__
+    await self.app(scope, receive, traced_send)
+  File "/app/.venv/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/app/.venv/lib/python3.11/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/app/.venv/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/app/.venv/lib/python3.11/site-packages/starlette/routing.py", line 670, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/app/.venv/lib/python3.11/site-packages/fastapi/routing.py", line 2734, in app
+    await route.handle(scope, receive, send)
+  File "/app/.venv/lib/python3.11/site-packages/fastapi/routing.py", line 1281, in handle
+    await super().handle(scope, receive, send)
+  File "/app/.venv/lib/python3.11/site-packages/starlette/routing.py", line 280, in handle
+    await self.app(scope, receive, send)
+  File "/app/.venv/lib/python3.11/site-packages/fastapi/routing.py", line 158, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/app/.venv/lib/python3.11/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/app/.venv/lib/python3.11/site-packages/fastapi/routing.py", line 144, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/fastapi/routing.py", line 706, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/fastapi/routing.py", line 352, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/presentation/ag_ui.py", line 204, in run_agent
+    await require_session(request, intent.buyer_id, intent.shopping_session_id, create=True)
+  File "/app/app/presentation/identity.py", line 62, in require_session
+    await store.assert_owner(session_id, buyer_id, create=create,
+  File "/app/app/infrastructure/persistence/sql/session_store.py", line 186, in assert_owner
+    async with self._transaction() as db:
+  File "/usr/local/lib/python3.11/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/infrastructure/persistence/sql/session_store.py", line 132, in _transaction
+    await db.execute(text("BEGIN IMMEDIATE"))
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/ext/asyncio/session.py", line 448, in execute
+    result = await greenlet_spawn(
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 201, in greenlet_spawn
+    result = context.throw(*sys.exc_info())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2373, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2280, in _execute_internal
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1421, in execute
+    return meth(
+           ^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/sql/elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2365, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/dialects/sqlite/aiosqlite.py", line 213, in execute
+    self._adapt_connection._handle_exception(error)
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/dialects/sqlite/aiosqlite.py", line 373, in _handle_exception
+    raise error
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/dialects/sqlite/aiosqlite.py", line 195, in execute
+    self.await_(_cursor.execute(operation, parameters))
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/aiosqlite/cursor.py", line 40, in execute
+    await self._execute(self._cursor.execute, sql, parameters)
+  File "/app/.venv/lib/python3.11/site-packages/aiosqlite/cursor.py", line 32, in _execute
+    return await self._conn._execute(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/aiosqlite/core.py", line 160, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/aiosqlite/core.py", line 63, in _connection_worker_thread
+    result = function()
+             ^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) database is locked
+[SQL: BEGIN IMMEDIATE]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-10-14 13:51:49,360 INFO app.infrastructure.tracing request=ee8618bc56f44bc8988af0cfa472b6c0 task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=500
+INFO:     172.26.0.10:59600 - "POST /commerce/ag-ui/run HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/dialects/sqlite/aiosqlite.py", line 213, in execute
+    self._adapt_connection._handle_exception(error)
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/dialects/sqlite/aiosqlite.py", line 373, in _handle_exception
+    raise error
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/dialects/sqlite/aiosqlite.py", line 195, in execute
+    self.await_(_cursor.execute(operation, parameters))
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/aiosqlite/cursor.py", line 40, in execute
+    await self._execute(self._cursor.execute, sql, parameters)
+  File "/app/.venv/lib/python3.11/site-packages/aiosqlite/cursor.py", line 32, in _execute
+    return await self._conn._execute(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/aiosqlite/core.py", line 160, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/aiosqlite/core.py", line 63, in _connection_worker_thread
+    result = function()
+             ^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/uvicorn/protocols/http/httptools_impl.py", line 422, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/uvicorn/middleware/proxy_headers.py", line 63, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/fastapi/applications.py", line 1163, in __call__
+    await super().__call__(scope, receive, send)
+  File "/app/.venv/lib/python3.11/site-packages/starlette/applications.py", line 96, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/app/.venv/lib/python3.11/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/app/.venv/lib/python3.11/site-packages/starlette/middleware/cors.py", line 88, in __call__
+    await self.app(scope, receive, send)
+  File "/app/app/infrastructure/tracing.py", line 423, in __call__
+    await self.app(scope, receive, traced_send)
+  File "/app/.venv/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/app/.venv/lib/python3.11/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/app/.venv/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/app/.venv/lib/python3.11/site-packages/starlette/routing.py", line 670, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/app/.venv/lib/python3.11/site-packages/fastapi/routing.py", line 2734, in app
+    await route.handle(scope, receive, send)
+  File "/app/.venv/lib/python3.11/site-packages/fastapi/routing.py", line 1281, in handle
+    await super().handle(scope, receive, send)
+  File "/app/.venv/lib/python3.11/site-packages/starlette/routing.py", line 280, in handle
+    await self.app(scope, receive, send)
+  File "/app/.venv/lib/python3.11/site-packages/fastapi/routing.py", line 158, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/app/.venv/lib/python3.11/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/app/.venv/lib/python3.11/site-packages/fastapi/routing.py", line 144, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/fastapi/routing.py", line 706, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/fastapi/routing.py", line 352, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/presentation/ag_ui.py", line 204, in run_agent
+    await require_session(request, intent.buyer_id, intent.shopping_session_id, create=True)
+  File "/app/app/presentation/identity.py", line 62, in require_session
+    await store.assert_owner(session_id, buyer_id, create=create,
+  File "/app/app/infrastructure/persistence/sql/session_store.py", line 186, in assert_owner
+    async with self._transaction() as db:
+  File "/usr/local/lib/python3.11/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/infrastructure/persistence/sql/session_store.py", line 132, in _transaction
+    await db.execute(text("BEGIN IMMEDIATE"))
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/ext/asyncio/session.py", line 448, in execute
+    result = await greenlet_spawn(
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 201, in greenlet_spawn
+    result = context.throw(*sys.exc_info())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2373, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2280, in _execute_internal
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1421, in execute
+    return meth(
+           ^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/sql/elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2365, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/dialects/sqlite/aiosqlite.py", line 213, in execute
+    self._adapt_connection._handle_exception(error)
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/dialects/sqlite/aiosqlite.py", line 373, in _handle_exception
+    raise error
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/dialects/sqlite/aiosqlite.py", line 195, in execute
+    self.await_(_cursor.execute(operation, parameters))
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/aiosqlite/cursor.py", line 40, in execute
+    await self._execute(self._cursor.execute, sql, parameters)
+  File "/app/.venv/lib/python3.11/site-packages/aiosqlite/cursor.py", line 32, in _execute
+    return await self._conn._execute(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/aiosqlite/core.py", line 160, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/aiosqlite/core.py", line 63, in _connection_worker_thread
+    result = function()
+             ^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) database is locked
+[SQL: BEGIN IMMEDIATE]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-10-14 13:51:49,369 INFO app.infrastructure.tracing request=0e2f6c531f4f45ae99bb0e9cf2d68de2 task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=500
+INFO:     172.26.0.10:59612 - "POST /commerce/ag-ui/run HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/dialects/sqlite/aiosqlite.py", line 213, in execute
+    self._adapt_connection._handle_exception(error)
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/dialects/sqlite/aiosqlite.py", line 373, in _handle_exception
+    raise error
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/dialects/sqlite/aiosqlite.py", line 195, in execute
+    self.await_(_cursor.execute(operation, parameters))
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/aiosqlite/cursor.py", line 40, in execute
+    await self._execute(self._cursor.execute, sql, parameters)
+  File "/app/.venv/lib/python3.11/site-packages/aiosqlite/cursor.py", line 32, in _execute
+    return await self._conn._execute(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/aiosqlite/core.py", line 160, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/aiosqlite/core.py", line 63, in _connection_worker_thread
+    result = function()
+             ^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/uvicorn/protocols/http/httptools_impl.py", line 422, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/uvicorn/middleware/proxy_headers.py", line 63, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/fastapi/applications.py", line 1163, in __call__
+    await super().__call__(scope, receive, send)
+  File "/app/.venv/lib/python3.11/site-packages/starlette/applications.py", line 96, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/app/.venv/lib/python3.11/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/app/.venv/lib/python3.11/site-packages/starlette/middleware/cors.py", line 88, in __call__
+    await self.app(scope, receive, send)
+  File "/app/app/infrastructure/tracing.py", line 423, in __call__
+    await self.app(scope, receive, traced_send)
+  File "/app/.venv/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/app/.venv/lib/python3.11/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/app/.venv/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/app/.venv/lib/python3.11/site-packages/starlette/routing.py", line 670, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/app/.venv/lib/python3.11/site-packages/fastapi/routing.py", line 2734, in app
+    await route.handle(scope, receive, send)
+  File "/app/.venv/lib/python3.11/site-packages/fastapi/routing.py", line 1281, in handle
+    await super().handle(scope, receive, send)
+  File "/app/.venv/lib/python3.11/site-packages/starlette/routing.py", line 280, in handle
+    await self.app(scope, receive, send)
+  File "/app/.venv/lib/python3.11/site-packages/fastapi/routing.py", line 158, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/app/.venv/lib/python3.11/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/app/.venv/lib/python3.11/site-packages/fastapi/routing.py", line 144, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/fastapi/routing.py", line 706, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/fastapi/routing.py", line 352, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/presentation/ag_ui.py", line 204, in run_agent
+    await require_session(request, intent.buyer_id, intent.shopping_session_id, create=True)
+  File "/app/app/presentation/identity.py", line 62, in require_session
+    await store.assert_owner(session_id, buyer_id, create=create,
+  File "/app/app/infrastructure/persistence/sql/session_store.py", line 186, in assert_owner
+    async with self._transaction() as db:
+  File "/usr/local/lib/python3.11/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/infrastructure/persistence/sql/session_store.py", line 132, in _transaction
+    await db.execute(text("BEGIN IMMEDIATE"))
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/ext/asyncio/session.py", line 448, in execute
+    result = await greenlet_spawn(
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 201, in greenlet_spawn
+    result = context.throw(*sys.exc_info())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2373, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2280, in _execute_internal
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1421, in execute
+    return meth(
+           ^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/sql/elements.py", line 526, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1643, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2365, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/dialects/sqlite/aiosqlite.py", line 213, in execute
+    self._adapt_connection._handle_exception(error)
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/dialects/sqlite/aiosqlite.py", line 373, in _handle_exception
+    raise error
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/dialects/sqlite/aiosqlite.py", line 195, in execute
+    self.await_(_cursor.execute(operation, parameters))
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/aiosqlite/cursor.py", line 40, in execute
+    await self._execute(self._cursor.execute, sql, parameters)
+  File "/app/.venv/lib/python3.11/site-packages/aiosqlite/cursor.py", line 32, in _execute
+    return await self._conn._execute(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/aiosqlite/core.py", line 160, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/aiosqlite/core.py", line 63, in _connection_worker_thread
+    result = function()
+             ^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) database is locked
+[SQL: BEGIN IMMEDIATE]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-10-14 13:51:49,507 INFO httpx request=25dd84f7181e4b708ded0b45de648106 task=- session=sha256:11273e020347dec1388bbac3 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:51:49,548 INFO httpx request=9670a7ffc2014842a4dc0621944a6520 task=- session=sha256:5485c2ec4ffc2b04babb4c31 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:51:49,551 WARNING app.application.usecases.catalog_search request=25dd84f7181e4b708ded0b45de648106 task=- session=sha256:11273e020347dec1388bbac3 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:51:49,593 WARNING app.application.usecases.catalog_search request=9670a7ffc2014842a4dc0621944a6520 task=- session=sha256:5485c2ec4ffc2b04babb4c31 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:51:49,602 INFO httpx request=e1d2460432834053a5dbffac48d04765 task=- session=sha256:3870e551cbfd3851028c743a trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:51:49,604 INFO httpx request=25dd84f7181e4b708ded0b45de648106 task=- session=sha256:11273e020347dec1388bbac3 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:51:49,647 INFO httpx request=9670a7ffc2014842a4dc0621944a6520 task=- session=sha256:5485c2ec4ffc2b04babb4c31 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:51:49,870 INFO httpx request=b219ab5d604d4067be5424ca37f5f7d3 task=- session=sha256:37fb785cd3788af4ff56ee9d trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:51:49,884 WARNING app.application.usecases.catalog_search request=b219ab5d604d4067be5424ca37f5f7d3 task=- session=sha256:37fb785cd3788af4ff56ee9d trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:51:49,931 INFO httpx request=b219ab5d604d4067be5424ca37f5f7d3 task=- session=sha256:37fb785cd3788af4ff56ee9d trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:51:49,969 INFO httpx request=346a1b6c538b48db9cd9e4ce75a870f3 task=- session=sha256:c856817f3c6457b06c6a1bd1 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:51:50,221 INFO httpx request=2fcc3718915e4dc5897aa828c35d8a57 task=- session=sha256:5fbf4b899c70fce8264a4b0d trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:51:50,222 INFO httpx request=765195732e244ef2a6b222566bdc5e52 task=- session=sha256:972671eba650ad6c5a235a6e trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:51:50,245 INFO httpx request=ce274d28abac4b0ab22c65694d4c7b89 task=- session=sha256:c1e8affb29457143daeaa4d6 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:51:50,277 WARNING app.application.usecases.catalog_search request=765195732e244ef2a6b222566bdc5e52 task=- session=sha256:972671eba650ad6c5a235a6e trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:51:50,286 INFO httpx request=e91e51aa824f4cde84a50eb1d5a91845 task=- session=sha256:db77674de97a3a16ca869aac trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:51:50,311 WARNING app.application.usecases.catalog_search request=ce274d28abac4b0ab22c65694d4c7b89 task=- session=sha256:c1e8affb29457143daeaa4d6 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:51:50,396 INFO httpx request=765195732e244ef2a6b222566bdc5e52 task=- session=sha256:972671eba650ad6c5a235a6e trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:51:50,417 INFO httpx request=ce274d28abac4b0ab22c65694d4c7b89 task=- session=sha256:c1e8affb29457143daeaa4d6 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:49378 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 13:51:50,494 INFO app.infrastructure.tracing request=42c982c5f8a3407c94ff8d9f77e03ff5 task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+2026-10-14 13:51:51,279 INFO httpx request=7846523294c641f7a3c4f54c4732ed73 task=- session=sha256:23be475f4dd2b75c093217a1 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+INFO:     172.26.0.10:59502 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+2026-10-14 13:51:51,307 INFO httpx request=e1d2460432834053a5dbffac48d04765 task=- session=sha256:3870e551cbfd3851028c743a trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:51:51,320 WARNING app.application.usecases.catalog_search request=7846523294c641f7a3c4f54c4732ed73 task=- session=sha256:23be475f4dd2b75c093217a1 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:51:51,324 WARNING app.application.usecases.catalog_search request=e1d2460432834053a5dbffac48d04765 task=- session=sha256:3870e551cbfd3851028c743a trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:51:51,328 INFO httpx request=346a1b6c538b48db9cd9e4ce75a870f3 task=- session=sha256:c856817f3c6457b06c6a1bd1 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:51:51,403 WARNING app.application.usecases.catalog_search request=346a1b6c538b48db9cd9e4ce75a870f3 task=- session=sha256:c856817f3c6457b06c6a1bd1 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:51:51,458 INFO httpx request=7846523294c641f7a3c4f54c4732ed73 task=- session=sha256:23be475f4dd2b75c093217a1 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:51:51,493 INFO httpx request=e1d2460432834053a5dbffac48d04765 task=- session=sha256:3870e551cbfd3851028c743a trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:51:51,533 INFO httpx request=346a1b6c538b48db9cd9e4ce75a870f3 task=- session=sha256:c856817f3c6457b06c6a1bd1 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:51:51,569 INFO httpx request=21965834311b4500b3ce946c36c352e5 task=- session=sha256:a34598acca1b1db1e3e01861 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:51:51,802 INFO httpx request=36d30af2018d4f61887a4ed569ab482f task=- session=sha256:552b279fb7a4d9927acdf2c0 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:51:52,309 INFO httpx request=1c1a06451170441b87e631ce357c23ae task=- session=sha256:0b6b97f0b897aa90ccdc9162 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:51:52,326 INFO httpx request=e91e51aa824f4cde84a50eb1d5a91845 task=- session=sha256:db77674de97a3a16ca869aac trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:51:52,328 WARNING app.application.usecases.catalog_search request=e91e51aa824f4cde84a50eb1d5a91845 task=- session=sha256:db77674de97a3a16ca869aac trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:51:52,429 INFO httpx request=e91e51aa824f4cde84a50eb1d5a91845 task=- session=sha256:db77674de97a3a16ca869aac trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:51:52,860 INFO httpx request=646f9a4dc4ae44f9b8dff9289bd69857 task=- session=sha256:ec0dfc204669df0d66d6dd70 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:51:53,470 INFO httpx request=36d30af2018d4f61887a4ed569ab482f task=- session=sha256:552b279fb7a4d9927acdf2c0 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:51:53,472 WARNING app.application.usecases.catalog_search request=36d30af2018d4f61887a4ed569ab482f task=- session=sha256:552b279fb7a4d9927acdf2c0 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:51:53,540 INFO httpx request=36d30af2018d4f61887a4ed569ab482f task=- session=sha256:552b279fb7a4d9927acdf2c0 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:51:54,047 INFO httpx request=646f9a4dc4ae44f9b8dff9289bd69857 task=- session=sha256:ec0dfc204669df0d66d6dd70 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:51:54,076 WARNING app.application.usecases.catalog_search request=646f9a4dc4ae44f9b8dff9289bd69857 task=- session=sha256:ec0dfc204669df0d66d6dd70 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:51:54,165 INFO httpx request=646f9a4dc4ae44f9b8dff9289bd69857 task=- session=sha256:ec0dfc204669df0d66d6dd70 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:51:54,843 ERROR app.application.agent_runtime request=494a0a1d9b3042c7951f1f6e7fdb6de9 task=- session=- trace=- prompt=- AG-UI 日志写入失败，等待持久租约过期后标记中断：load-c1b9446255b94dca835c088c24badfee
+Traceback (most recent call last):
+  File "/app/app/application/agent_runtime.py", line 269, in _produce
+    await writer
+  File "/app/app/application/agent_runtime.py", line 202, in write_events
+    await self.journal.append(body.run_id, entry.owner, payloads)
+  File "/app/app/infrastructure/ag_ui_journal.py", line 302, in append
+    async with self._db(True) as db:
+  File "/usr/local/lib/python3.11/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/infrastructure/ag_ui_journal.py", line 117, in _db
+    await db.execute("BEGIN IMMEDIATE" if write else "BEGIN")
+  File "/app/.venv/lib/python3.11/site-packages/aiosqlite/core.py", line 223, in execute
+    cursor = await self._execute(self._conn.execute, sql, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/aiosqlite/core.py", line 160, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/aiosqlite/core.py", line 63, in _connection_worker_thread
+    result = function()
+             ^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+2026-10-14 13:51:55,182 INFO app.infrastructure.tracing request=ac284650b30b4616acf950bea3cf114d task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+INFO:     172.26.0.10:37762 - "GET /commerce/ag-ui/runs/load-0d8656c2d00143988e7bf24fe89c523c/events?buyer_id=load-0d8656c2d00143988e7bf24fe89c523c HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54634 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 13:51:55,690 INFO app.infrastructure.tracing request=ac572bba7e4d49e8a0da47ccffb26701 task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+2026-10-14 13:51:55,969 ERROR app.application.agent_runtime request=94e9dfb3664a41a7aa688395bf57e5a1 task=- session=- trace=- prompt=- AG-UI 日志写入失败，等待持久租约过期后标记中断：load-97f9ad79006841dabb833c1919c346d2
+Traceback (most recent call last):
+  File "/app/app/application/agent_runtime.py", line 269, in _produce
+    await writer
+  File "/app/app/application/agent_runtime.py", line 202, in write_events
+    await self.journal.append(body.run_id, entry.owner, payloads)
+  File "/app/app/infrastructure/ag_ui_journal.py", line 302, in append
+    async with self._db(True) as db:
+  File "/usr/local/lib/python3.11/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/infrastructure/ag_ui_journal.py", line 117, in _db
+    await db.execute("BEGIN IMMEDIATE" if write else "BEGIN")
+  File "/app/.venv/lib/python3.11/site-packages/aiosqlite/core.py", line 223, in execute
+    cursor = await self._execute(self._conn.execute, sql, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/aiosqlite/core.py", line 160, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/aiosqlite/core.py", line 63, in _connection_worker_thread
+    result = function()
+             ^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+2026-10-14 13:51:56,535 INFO app.infrastructure.tracing request=e1d2460432834053a5dbffac48d04765 task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+2026-10-14 13:51:57,167 ERROR app.application.agent_runtime request=1ee92674309c4e57a643a65779956cc7 task=- session=- trace=- prompt=- AG-UI 日志写入失败，等待持久租约过期后标记中断：load-d35f826636ad421f9612c74a8bbdae70
+Traceback (most recent call last):
+  File "/app/app/application/agent_runtime.py", line 269, in _produce
+    await writer
+  File "/app/app/application/agent_runtime.py", line 202, in write_events
+    await self.journal.append(body.run_id, entry.owner, payloads)
+  File "/app/app/infrastructure/ag_ui_journal.py", line 302, in append
+    async with self._db(True) as db:
+  File "/usr/local/lib/python3.11/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/infrastructure/ag_ui_journal.py", line 117, in _db
+    await db.execute("BEGIN IMMEDIATE" if write else "BEGIN")
+  File "/app/.venv/lib/python3.11/site-packages/aiosqlite/core.py", line 223, in execute
+    cursor = await self._execute(self._conn.execute, sql, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/aiosqlite/core.py", line 160, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/aiosqlite/core.py", line 63, in _connection_worker_thread
+    result = function()
+             ^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+2026-10-14 13:51:58,427 INFO app.infrastructure.tracing request=91a0856aa165408797fa2729e08be2c5 task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+2026-10-14 13:51:58,962 INFO app.infrastructure.tracing request=6ad1ef35557d455e90ff5ee635b16394 task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+2026-10-14 13:51:58,978 ERROR app.application.agent_runtime request=ce274d28abac4b0ab22c65694d4c7b89 task=- session=- trace=- prompt=- AG-UI 日志写入失败，等待持久租约过期后标记中断：load-16d27778486b4604909cd18cc1652b42
+Traceback (most recent call last):
+  File "/app/app/application/agent_runtime.py", line 269, in _produce
+    await writer
+  File "/app/app/application/agent_runtime.py", line 202, in write_events
+    await self.journal.append(body.run_id, entry.owner, payloads)
+  File "/app/app/infrastructure/ag_ui_journal.py", line 302, in append
+    async with self._db(True) as db:
+  File "/usr/local/lib/python3.11/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/infrastructure/ag_ui_journal.py", line 117, in _db
+    await db.execute("BEGIN IMMEDIATE" if write else "BEGIN")
+  File "/app/.venv/lib/python3.11/site-packages/aiosqlite/core.py", line 223, in execute
+    cursor = await self._execute(self._conn.execute, sql, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/aiosqlite/core.py", line 160, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/aiosqlite/core.py", line 63, in _connection_worker_thread
+    result = function()
+             ^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+2026-10-14 13:52:00,149 INFO app.infrastructure.tracing request=dad39b6862f04d129837d7c10a6f3a3b task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+2026-10-14 13:52:00,347 INFO app.infrastructure.tracing request=c02db96d370b4a6c9c18a54ba2f2fb4e task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+2026-10-14 13:52:00,485 INFO app.infrastructure.tracing request=7c7bbdc69a4941d7b8ada57d12297e1c task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+2026-10-14 13:52:00,580 ERROR app.application.agent_runtime request=9670a7ffc2014842a4dc0621944a6520 task=- session=- trace=- prompt=- AG-UI 日志写入失败，等待持久租约过期后标记中断：load-3d04e1550b924465ac7639f7a5ecba2f
+Traceback (most recent call last):
+  File "/app/app/application/agent_runtime.py", line 269, in _produce
+    await writer
+  File "/app/app/application/agent_runtime.py", line 202, in write_events
+    await self.journal.append(body.run_id, entry.owner, payloads)
+  File "/app/app/infrastructure/ag_ui_journal.py", line 302, in append
+    async with self._db(True) as db:
+  File "/usr/local/lib/python3.11/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/infrastructure/ag_ui_journal.py", line 117, in _db
+    await db.execute("BEGIN IMMEDIATE" if write else "BEGIN")
+  File "/app/.venv/lib/python3.11/site-packages/aiosqlite/core.py", line 223, in execute
+    cursor = await self._execute(self._conn.execute, sql, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/aiosqlite/core.py", line 160, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/aiosqlite/core.py", line 63, in _connection_worker_thread
+    result = function()
+             ^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+2026-10-14 13:52:00,602 INFO app.infrastructure.tracing request=2c2c1b3010b94216ae16e50671fc0091 task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+2026-10-14 13:52:00,731 INFO app.infrastructure.tracing request=18d6371f8c72448b8db37b8995d7b0e9 task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+INFO:     127.0.0.1:54660 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 13:52:00,797 INFO app.infrastructure.tracing request=ff70aaa2719c41f397be2e42c81a3c5d task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+2026-10-14 13:52:01,121 INFO app.infrastructure.tracing request=358a5ce378dd4da197c0397478211e5a task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+2026-10-14 13:52:01,192 INFO app.infrastructure.tracing request=25dd84f7181e4b708ded0b45de648106 task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+2026-10-14 13:52:01,236 ERROR app.application.agent_runtime request=765195732e244ef2a6b222566bdc5e52 task=- session=- trace=- prompt=- AG-UI 日志写入失败，等待持久租约过期后标记中断：load-21d967c7a2e8497788e23418b6549833
+Traceback (most recent call last):
+  File "/app/app/application/agent_runtime.py", line 269, in _produce
+    await writer
+  File "/app/app/application/agent_runtime.py", line 202, in write_events
+    await self.journal.append(body.run_id, entry.owner, payloads)
+  File "/app/app/infrastructure/ag_ui_journal.py", line 302, in append
+    async with self._db(True) as db:
+  File "/usr/local/lib/python3.11/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/infrastructure/ag_ui_journal.py", line 117, in _db
+    await db.execute("BEGIN IMMEDIATE" if write else "BEGIN")
+  File "/app/.venv/lib/python3.11/site-packages/aiosqlite/core.py", line 223, in execute
+    cursor = await self._execute(self._conn.execute, sql, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/aiosqlite/core.py", line 160, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/aiosqlite/core.py", line 63, in _connection_worker_thread
+    result = function()
+             ^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+2026-10-14 13:52:01,376 INFO app.infrastructure.tracing request=00dbf55bbf044467a44abe23f88dd593 task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+2026-10-14 13:52:01,445 INFO app.infrastructure.tracing request=7846523294c641f7a3c4f54c4732ed73 task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+2026-10-14 13:52:01,448 INFO app.infrastructure.tracing request=1c1a06451170441b87e631ce357c23ae task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+2026-10-14 13:52:01,533 INFO app.infrastructure.tracing request=2fcc3718915e4dc5897aa828c35d8a57 task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+INFO:     172.26.0.10:54168 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+INFO:     172.26.0.10:54158 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+2026-10-14 13:52:01,652 INFO httpx request=f2ad41a0639848e48b810d2ce80e4c4a task=- session=sha256:09ff26919353ab3759b13df4 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:52:01,715 INFO httpx request=bbdcf96eccca4f07b62b9f46d0bb80cb task=- session=sha256:0799059368ba12908bb0d7ad trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:52:01,722 INFO app.infrastructure.tracing request=21965834311b4500b3ce946c36c352e5 task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+INFO:     172.26.0.10:54176 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+2026-10-14 13:52:02,041 INFO httpx request=8126bf5e61cb4ab899488a1b573078f0 task=- session=sha256:35f58709166e9e2fbf196d1a trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:52:02,232 INFO app.infrastructure.tracing request=346a1b6c538b48db9cd9e4ce75a870f3 task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+2026-10-14 13:52:02,246 INFO app.infrastructure.tracing request=b034f0db1ae840b1a28bf820c48ba0be task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+2026-10-14 13:52:02,384 INFO app.infrastructure.tracing request=b219ab5d604d4067be5424ca37f5f7d3 task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+2026-10-14 13:52:02,510 INFO app.infrastructure.tracing request=e91e51aa824f4cde84a50eb1d5a91845 task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+2026-10-14 13:52:02,623 INFO app.infrastructure.tracing request=cf6393c2df43471bbede3f66c850e99a task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+2026-10-14 13:52:02,811 INFO httpx request=f2ad41a0639848e48b810d2ce80e4c4a task=- session=sha256:09ff26919353ab3759b13df4 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:52:02,817 WARNING app.application.usecases.catalog_search request=f2ad41a0639848e48b810d2ce80e4c4a task=- session=sha256:09ff26919353ab3759b13df4 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:52:02,841 INFO httpx request=f2ad41a0639848e48b810d2ce80e4c4a task=- session=sha256:09ff26919353ab3759b13df4 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:52:02,872 INFO httpx request=bbdcf96eccca4f07b62b9f46d0bb80cb task=- session=sha256:0799059368ba12908bb0d7ad trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:52:02,879 WARNING app.application.usecases.catalog_search request=bbdcf96eccca4f07b62b9f46d0bb80cb task=- session=sha256:0799059368ba12908bb0d7ad trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:52:02,904 INFO httpx request=bbdcf96eccca4f07b62b9f46d0bb80cb task=- session=sha256:0799059368ba12908bb0d7ad trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:52:03,216 INFO httpx request=8126bf5e61cb4ab899488a1b573078f0 task=- session=sha256:35f58709166e9e2fbf196d1a trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:52:03,219 WARNING app.application.usecases.catalog_search request=8126bf5e61cb4ab899488a1b573078f0 task=- session=sha256:35f58709166e9e2fbf196d1a trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:52:03,247 INFO httpx request=8126bf5e61cb4ab899488a1b573078f0 task=- session=sha256:35f58709166e9e2fbf196d1a trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:52:03,448 INFO app.infrastructure.tracing request=36d30af2018d4f61887a4ed569ab482f task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+2026-10-14 13:52:04,067 INFO app.infrastructure.tracing request=646f9a4dc4ae44f9b8dff9289bd69857 task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+INFO:     127.0.0.1:33910 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 13:52:05,856 INFO app.infrastructure.tracing request=613fe126ca8849e8b358bc430acf39a1 task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+INFO:     172.26.0.10:54182 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+2026-10-14 13:52:07,057 INFO httpx request=393523958d6b4a7f85014ddef15e302f task=- session=sha256:b0111905fc274f46d2859acc trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:     172.26.0.10:54194 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+2026-10-14 13:52:07,989 INFO httpx request=299651b10df443c3bda761561e8a3387 task=- session=sha256:b1aaaef50d87ff2bde7928bb trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:52:08,209 INFO httpx request=393523958d6b4a7f85014ddef15e302f task=- session=sha256:b0111905fc274f46d2859acc trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:52:08,213 WARNING app.application.usecases.catalog_search request=393523958d6b4a7f85014ddef15e302f task=- session=sha256:b0111905fc274f46d2859acc trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:52:08,232 INFO httpx request=393523958d6b4a7f85014ddef15e302f task=- session=sha256:b0111905fc274f46d2859acc trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:     172.26.0.10:54202 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+2026-10-14 13:52:08,955 INFO httpx request=91cf0f9130ee422aa85ef9823a3feb63 task=- session=sha256:77c8f8fa71659fe19c1a0230 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:     172.26.0.10:54206 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+2026-10-14 13:52:09,056 INFO httpx request=9b1d89c6674046d5820cd9459707fcf1 task=- session=sha256:cf14676a7ddec527f310cb0b trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:52:09,143 INFO httpx request=299651b10df443c3bda761561e8a3387 task=- session=sha256:b1aaaef50d87ff2bde7928bb trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:52:09,146 WARNING app.application.usecases.catalog_search request=299651b10df443c3bda761561e8a3387 task=- session=sha256:b1aaaef50d87ff2bde7928bb trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:52:09,181 INFO httpx request=299651b10df443c3bda761561e8a3387 task=- session=sha256:b1aaaef50d87ff2bde7928bb trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:     172.26.0.10:54216 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+2026-10-14 13:52:09,535 INFO httpx request=de7a248e84e041dc9b9c330c29b5f52f task=- session=sha256:a13bc472c4ad1a4fea69eac3 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:     172.26.0.10:54200 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+2026-10-14 13:52:09,696 INFO httpx request=39b65b08f8394f0492207a247894e586 task=- session=sha256:f8004b9d6502d57151341bfc trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:     172.26.0.10:54226 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+2026-10-14 13:52:09,892 INFO httpx request=213fe96da7554285a190f06a98353b0c task=- session=sha256:a808b9dec639c68fcecf5503 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:52:10,108 INFO httpx request=91cf0f9130ee422aa85ef9823a3feb63 task=- session=sha256:77c8f8fa71659fe19c1a0230 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:52:10,110 WARNING app.application.usecases.catalog_search request=91cf0f9130ee422aa85ef9823a3feb63 task=- session=sha256:77c8f8fa71659fe19c1a0230 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:52:10,136 INFO httpx request=91cf0f9130ee422aa85ef9823a3feb63 task=- session=sha256:77c8f8fa71659fe19c1a0230 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:     172.26.0.10:54234 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+2026-10-14 13:52:10,222 INFO httpx request=9b1d89c6674046d5820cd9459707fcf1 task=- session=sha256:cf14676a7ddec527f310cb0b trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:52:10,231 WARNING app.application.usecases.catalog_search request=9b1d89c6674046d5820cd9459707fcf1 task=- session=sha256:cf14676a7ddec527f310cb0b trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:52:10,259 INFO httpx request=9b1d89c6674046d5820cd9459707fcf1 task=- session=sha256:cf14676a7ddec527f310cb0b trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:52:10,316 INFO httpx request=cc65b6ff570a443699b860e16afa6158 task=- session=sha256:9d6b057b3345fadc5ce75d6f trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:     172.26.0.10:54244 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33980 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 13:52:11,148 INFO app.infrastructure.tracing request=ba42d1a5b0b84811b3c8e06a58d80300 task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+2026-10-14 13:52:11,209 INFO httpx request=916a20828a58479f8bfe6a0ad2a9ce2a task=- session=sha256:d915fb8ad3ecc39ea258f71b trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:52:11,581 INFO httpx request=cc65b6ff570a443699b860e16afa6158 task=- session=sha256:9d6b057b3345fadc5ce75d6f trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:52:11,585 WARNING app.application.usecases.catalog_search request=cc65b6ff570a443699b860e16afa6158 task=- session=sha256:9d6b057b3345fadc5ce75d6f trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:52:11,612 INFO httpx request=cc65b6ff570a443699b860e16afa6158 task=- session=sha256:9d6b057b3345fadc5ce75d6f trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:     172.26.0.10:54256 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+INFO:     172.26.0.10:58736 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+2026-10-14 13:52:11,940 INFO httpx request=132c3f833c9849be9725bdb8f184a8f0 task=- session=sha256:ad7461e67ddc5092c733a45f trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:52:12,024 INFO httpx request=512e6e1699fd4fdfb8568a0973cf069a task=- session=sha256:65bc9e20b21d885c5ce38421 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:52:12,087 INFO httpx request=213fe96da7554285a190f06a98353b0c task=- session=sha256:a808b9dec639c68fcecf5503 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:52:12,090 WARNING app.application.usecases.catalog_search request=213fe96da7554285a190f06a98353b0c task=- session=sha256:a808b9dec639c68fcecf5503 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:52:12,130 INFO httpx request=213fe96da7554285a190f06a98353b0c task=- session=sha256:a808b9dec639c68fcecf5503 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:52:12,178 INFO app.infrastructure.tracing request=9b1d89c6674046d5820cd9459707fcf1 task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+2026-10-14 13:52:12,294 INFO httpx request=de7a248e84e041dc9b9c330c29b5f52f task=- session=sha256:a13bc472c4ad1a4fea69eac3 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:52:12,296 WARNING app.application.usecases.catalog_search request=de7a248e84e041dc9b9c330c29b5f52f task=- session=sha256:a13bc472c4ad1a4fea69eac3 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:52:12,327 INFO httpx request=de7a248e84e041dc9b9c330c29b5f52f task=- session=sha256:a13bc472c4ad1a4fea69eac3 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:52:12,403 INFO httpx request=916a20828a58479f8bfe6a0ad2a9ce2a task=- session=sha256:d915fb8ad3ecc39ea258f71b trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:52:12,409 WARNING app.application.usecases.catalog_search request=916a20828a58479f8bfe6a0ad2a9ce2a task=- session=sha256:d915fb8ad3ecc39ea258f71b trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:52:12,436 INFO httpx request=916a20828a58479f8bfe6a0ad2a9ce2a task=- session=sha256:d915fb8ad3ecc39ea258f71b trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:52:12,508 INFO httpx request=39b65b08f8394f0492207a247894e586 task=- session=sha256:f8004b9d6502d57151341bfc trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:52:12,513 WARNING app.application.usecases.catalog_search request=39b65b08f8394f0492207a247894e586 task=- session=sha256:f8004b9d6502d57151341bfc trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:52:12,563 INFO httpx request=39b65b08f8394f0492207a247894e586 task=- session=sha256:f8004b9d6502d57151341bfc trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:52:13,218 INFO httpx request=512e6e1699fd4fdfb8568a0973cf069a task=- session=sha256:65bc9e20b21d885c5ce38421 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:52:13,246 WARNING app.application.usecases.catalog_search request=512e6e1699fd4fdfb8568a0973cf069a task=- session=sha256:65bc9e20b21d885c5ce38421 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+INFO:     172.26.0.10:58740 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+2026-10-14 13:52:13,286 INFO httpx request=512e6e1699fd4fdfb8568a0973cf069a task=- session=sha256:65bc9e20b21d885c5ce38421 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:52:13,517 INFO httpx request=132c3f833c9849be9725bdb8f184a8f0 task=- session=sha256:ad7461e67ddc5092c733a45f trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:52:13,523 WARNING app.application.usecases.catalog_search request=132c3f833c9849be9725bdb8f184a8f0 task=- session=sha256:ad7461e67ddc5092c733a45f trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:52:13,586 INFO httpx request=132c3f833c9849be9725bdb8f184a8f0 task=- session=sha256:ad7461e67ddc5092c733a45f trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:52:13,813 INFO app.infrastructure.tracing request=f2ad41a0639848e48b810d2ce80e4c4a task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+INFO:     172.26.0.10:58764 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+2026-10-14 13:52:14,186 INFO httpx request=83f4dad7c2a241c1830c1714a9dd7476 task=- session=sha256:a6b04a7d8106906e290ea030 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:52:14,356 INFO httpx request=a54177f026fb445d981bacfd0f79eb18 task=- session=sha256:61f89f19ac2615054093d9a9 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:52:14,600 INFO app.infrastructure.tracing request=8126bf5e61cb4ab899488a1b573078f0 task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+INFO:     172.26.0.10:58750 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+INFO:     172.26.0.10:58800 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+INFO:     172.26.0.10:58790 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+2026-10-14 13:52:15,354 INFO httpx request=83f4dad7c2a241c1830c1714a9dd7476 task=- session=sha256:a6b04a7d8106906e290ea030 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:52:15,362 WARNING app.application.usecases.catalog_search request=83f4dad7c2a241c1830c1714a9dd7476 task=- session=sha256:a6b04a7d8106906e290ea030 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:52:15,434 INFO httpx request=83f4dad7c2a241c1830c1714a9dd7476 task=- session=sha256:a6b04a7d8106906e290ea030 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:52:15,517 INFO httpx request=e0f057b8544245aaa032b303f581f5ed task=- session=sha256:5571cac341c334908927ff67 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:     172.26.0.10:58786 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+2026-10-14 13:52:15,540 INFO httpx request=511ae98fc6484a6ba508dd5207343f79 task=- session=sha256:020ee7ee553ab7ca90de0848 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:52:15,550 INFO httpx request=a54177f026fb445d981bacfd0f79eb18 task=- session=sha256:61f89f19ac2615054093d9a9 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:52:15,554 WARNING app.application.usecases.catalog_search request=a54177f026fb445d981bacfd0f79eb18 task=- session=sha256:61f89f19ac2615054093d9a9 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:52:15,588 INFO httpx request=a54177f026fb445d981bacfd0f79eb18 task=- session=sha256:61f89f19ac2615054093d9a9 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:52:15,684 INFO httpx request=eb44df5d67d94bf18cddbdaa9fccbe08 task=- session=sha256:fb1e0bc13453bbd68c5e45b8 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:     172.26.0.10:58814 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+2026-10-14 13:52:16,124 INFO app.infrastructure.tracing request=765195732e244ef2a6b222566bdc5e52 task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+2026-10-14 13:52:16,419 INFO app.infrastructure.tracing request=e2d0f7f06d2a4142a0a6aecfa02d48e8 task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+INFO:     127.0.0.1:51130 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 13:52:16,776 INFO httpx request=511ae98fc6484a6ba508dd5207343f79 task=- session=sha256:020ee7ee553ab7ca90de0848 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:52:16,778 WARNING app.application.usecases.catalog_search request=511ae98fc6484a6ba508dd5207343f79 task=- session=sha256:020ee7ee553ab7ca90de0848 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:52:16,897 INFO httpx request=511ae98fc6484a6ba508dd5207343f79 task=- session=sha256:020ee7ee553ab7ca90de0848 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:52:16,964 INFO httpx request=eb44df5d67d94bf18cddbdaa9fccbe08 task=- session=sha256:fb1e0bc13453bbd68c5e45b8 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:52:16,969 WARNING app.application.usecases.catalog_search request=eb44df5d67d94bf18cddbdaa9fccbe08 task=- session=sha256:fb1e0bc13453bbd68c5e45b8 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:52:17,010 INFO httpx request=eb44df5d67d94bf18cddbdaa9fccbe08 task=- session=sha256:fb1e0bc13453bbd68c5e45b8 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:52:17,192 INFO httpx request=e0f057b8544245aaa032b303f581f5ed task=- session=sha256:5571cac341c334908927ff67 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:52:17,211 WARNING app.application.usecases.catalog_search request=e0f057b8544245aaa032b303f581f5ed task=- session=sha256:5571cac341c334908927ff67 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:52:17,260 INFO httpx request=e0f057b8544245aaa032b303f581f5ed task=- session=sha256:5571cac341c334908927ff67 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:     172.26.0.10:58738 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+2026-10-14 13:52:17,291 INFO httpx request=e6bd9073fdde41dabb1ce36b76266512 task=- session=sha256:ed21ab1d1995d0286bfe552d trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:52:17,987 INFO httpx request=76cfb2cc86624629905b6ebcebbf4dac task=- session=sha256:d539a21438cb408f6f860955 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:     172.26.0.10:58826 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+2026-10-14 13:52:18,358 INFO httpx request=dba19bd99210422e896efc2d75c4b545 task=- session=sha256:03aa8ddf1f513cea58f5fe5e trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:52:18,474 INFO httpx request=e6bd9073fdde41dabb1ce36b76266512 task=- session=sha256:ed21ab1d1995d0286bfe552d trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:52:18,481 WARNING app.application.usecases.catalog_search request=e6bd9073fdde41dabb1ce36b76266512 task=- session=sha256:ed21ab1d1995d0286bfe552d trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:52:18,561 INFO httpx request=e6bd9073fdde41dabb1ce36b76266512 task=- session=sha256:ed21ab1d1995d0286bfe552d trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:     172.26.0.10:58782 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+2026-10-14 13:52:19,192 INFO httpx request=76cfb2cc86624629905b6ebcebbf4dac task=- session=sha256:d539a21438cb408f6f860955 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:52:19,195 WARNING app.application.usecases.catalog_search request=76cfb2cc86624629905b6ebcebbf4dac task=- session=sha256:d539a21438cb408f6f860955 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:52:19,227 INFO httpx request=76cfb2cc86624629905b6ebcebbf4dac task=- session=sha256:d539a21438cb408f6f860955 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:52:19,554 INFO httpx request=dba19bd99210422e896efc2d75c4b545 task=- session=sha256:03aa8ddf1f513cea58f5fe5e trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:52:19,559 WARNING app.application.usecases.catalog_search request=dba19bd99210422e896efc2d75c4b545 task=- session=sha256:03aa8ddf1f513cea58f5fe5e trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:52:19,601 INFO httpx request=dba19bd99210422e896efc2d75c4b545 task=- session=sha256:03aa8ddf1f513cea58f5fe5e trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:52:19,834 INFO httpx request=a16feace1d7f4da0ad9843e0f17b36d3 task=- session=sha256:5f3c582b02109155eeb59487 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:52:19,916 INFO httpx request=083a327c294943f0a9c19e4aae1bed3b task=- session=sha256:6525fc04668f811f8bf4c365 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:52:20,145 INFO app.infrastructure.tracing request=299651b10df443c3bda761561e8a3387 task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+2026-10-14 13:52:20,429 INFO app.infrastructure.tracing request=91cf0f9130ee422aa85ef9823a3feb63 task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+INFO:     172.26.0.10:58766 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+2026-10-14 13:52:20,673 INFO httpx request=93964ba75e0a442a8d5091b52c172146 task=- session=sha256:3c4cb15ddfee4e5ceedce2e3 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:52:20,688 INFO httpx request=76cfb2cc86624629905b6ebcebbf4dac task=- session=sha256:d539a21438cb408f6f860955 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:52:20,779 INFO app.infrastructure.tracing request=0c18faa4c9244900848a137086090598 task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+INFO:     172.26.0.10:58804 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+2026-10-14 13:52:21,018 INFO httpx request=a16feace1d7f4da0ad9843e0f17b36d3 task=- session=sha256:5f3c582b02109155eeb59487 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:52:21,029 WARNING app.application.usecases.catalog_search request=a16feace1d7f4da0ad9843e0f17b36d3 task=- session=sha256:5f3c582b02109155eeb59487 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:52:21,087 INFO httpx request=a16feace1d7f4da0ad9843e0f17b36d3 task=- session=sha256:5f3c582b02109155eeb59487 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:52:21,244 INFO httpx request=083a327c294943f0a9c19e4aae1bed3b task=- session=sha256:6525fc04668f811f8bf4c365 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:52:21,253 WARNING app.application.usecases.catalog_search request=083a327c294943f0a9c19e4aae1bed3b task=- session=sha256:6525fc04668f811f8bf4c365 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:52:21,342 INFO httpx request=12d74362d5fb4fd2b69b77a8f03af5b3 task=- session=sha256:221621aded50b58a3c675c46 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:52:21,354 INFO httpx request=083a327c294943f0a9c19e4aae1bed3b task=- session=sha256:6525fc04668f811f8bf4c365 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:53454 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 13:52:21,665 INFO app.infrastructure.tracing request=1f035161effe4890bcf101a7601ce4fb task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+2026-10-14 13:52:21,894 INFO httpx request=93964ba75e0a442a8d5091b52c172146 task=- session=sha256:3c4cb15ddfee4e5ceedce2e3 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:52:21,903 WARNING app.application.usecases.catalog_search request=93964ba75e0a442a8d5091b52c172146 task=- session=sha256:3c4cb15ddfee4e5ceedce2e3 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:52:21,936 INFO httpx request=93964ba75e0a442a8d5091b52c172146 task=- session=sha256:3c4cb15ddfee4e5ceedce2e3 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:52:22,335 INFO app.infrastructure.tracing request=94e9dfb3664a41a7aa688395bf57e5a1 task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+2026-10-14 13:52:22,390 INFO app.infrastructure.tracing request=1ee92674309c4e57a643a65779956cc7 task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+2026-10-14 13:52:22,553 INFO httpx request=12d74362d5fb4fd2b69b77a8f03af5b3 task=- session=sha256:221621aded50b58a3c675c46 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:52:22,573 WARNING app.application.usecases.catalog_search request=12d74362d5fb4fd2b69b77a8f03af5b3 task=- session=sha256:221621aded50b58a3c675c46 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:52:22,608 INFO httpx request=12d74362d5fb4fd2b69b77a8f03af5b3 task=- session=sha256:221621aded50b58a3c675c46 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:52:22,667 INFO httpx request=a16feace1d7f4da0ad9843e0f17b36d3 task=- session=sha256:5f3c582b02109155eeb59487 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:52:22,878 ERROR app.application.agent_runtime request=bbdcf96eccca4f07b62b9f46d0bb80cb task=- session=- trace=- prompt=- AG-UI 日志写入失败，等待持久租约过期后标记中断：load-93eb12d0430c409da0fcffc1dfdcf98c
+Traceback (most recent call last):
+  File "/app/app/application/agent_runtime.py", line 269, in _produce
+    await writer
+  File "/app/app/application/agent_runtime.py", line 202, in write_events
+    await self.journal.append(body.run_id, entry.owner, payloads)
+  File "/app/app/infrastructure/ag_ui_journal.py", line 302, in append
+    async with self._db(True) as db:
+  File "/usr/local/lib/python3.11/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/infrastructure/ag_ui_journal.py", line 117, in _db
+    await db.execute("BEGIN IMMEDIATE" if write else "BEGIN")
+  File "/app/.venv/lib/python3.11/site-packages/aiosqlite/core.py", line 223, in execute
+    cursor = await self._execute(self._conn.execute, sql, parameters)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/aiosqlite/core.py", line 160, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/aiosqlite/core.py", line 63, in _connection_worker_thread
+    result = function()
+             ^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+2026-10-14 13:52:23,093 INFO app.infrastructure.tracing request=393523958d6b4a7f85014ddef15e302f task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+2026-10-14 13:52:23,534 INFO app.infrastructure.tracing request=de7a248e84e041dc9b9c330c29b5f52f task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+2026-10-14 13:52:23,926 INFO app.infrastructure.tracing request=132c3f833c9849be9725bdb8f184a8f0 task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+2026-10-14 13:52:24,798 INFO app.infrastructure.tracing request=494a0a1d9b3042c7951f1f6e7fdb6de9 task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+2026-10-14 13:52:24,826 INFO app.infrastructure.tracing request=213fe96da7554285a190f06a98353b0c task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+2026-10-14 13:52:24,850 INFO app.infrastructure.tracing request=9670a7ffc2014842a4dc0621944a6520 task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+2026-10-14 13:52:24,927 INFO app.infrastructure.tracing request=512e6e1699fd4fdfb8568a0973cf069a task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+2026-10-14 13:52:25,350 INFO app.infrastructure.tracing request=916a20828a58479f8bfe6a0ad2a9ce2a task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+2026-10-14 13:52:25,589 INFO app.infrastructure.tracing request=83f4dad7c2a241c1830c1714a9dd7476 task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+2026-10-14 13:52:26,370 INFO app.infrastructure.tracing request=a54177f026fb445d981bacfd0f79eb18 task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+2026-10-14 13:52:26,376 INFO app.infrastructure.tracing request=39b65b08f8394f0492207a247894e586 task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+2026-10-14 13:52:26,575 INFO app.infrastructure.tracing request=ce274d28abac4b0ab22c65694d4c7b89 task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+INFO:     172.26.0.10:34486 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53510 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 13:52:26,786 INFO app.infrastructure.tracing request=8c1e46a6ac4b487a8c6451c96bc9c525 task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+2026-10-14 13:52:26,897 INFO httpx request=cfdc1fa31bff41d6b744eb5ecb4a9184 task=- session=sha256:116d42d3a1161c00aef1502d trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:52:26,977 INFO app.infrastructure.tracing request=511ae98fc6484a6ba508dd5207343f79 task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+INFO:     172.26.0.10:34488 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+2026-10-14 13:52:27,222 INFO httpx request=cdbcbbcb9e8b4aa689faa81c09a523f2 task=- session=sha256:386e19b2c0d54ef1dfa3a64a trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:52:27,359 INFO app.infrastructure.tracing request=e0f057b8544245aaa032b303f581f5ed task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+2026-10-14 13:52:28,055 INFO httpx request=cfdc1fa31bff41d6b744eb5ecb4a9184 task=- session=sha256:116d42d3a1161c00aef1502d trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:52:28,061 WARNING app.application.usecases.catalog_search request=cfdc1fa31bff41d6b744eb5ecb4a9184 task=- session=sha256:116d42d3a1161c00aef1502d trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:52:28,062 INFO app.infrastructure.tracing request=cc65b6ff570a443699b860e16afa6158 task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+2026-10-14 13:52:28,084 INFO httpx request=cfdc1fa31bff41d6b744eb5ecb4a9184 task=- session=sha256:116d42d3a1161c00aef1502d trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:52:28,147 INFO app.infrastructure.tracing request=eb44df5d67d94bf18cddbdaa9fccbe08 task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+2026-10-14 13:52:28,378 INFO httpx request=cdbcbbcb9e8b4aa689faa81c09a523f2 task=- session=sha256:386e19b2c0d54ef1dfa3a64a trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:52:28,381 WARNING app.application.usecases.catalog_search request=cdbcbbcb9e8b4aa689faa81c09a523f2 task=- session=sha256:386e19b2c0d54ef1dfa3a64a trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:52:28,401 INFO httpx request=cdbcbbcb9e8b4aa689faa81c09a523f2 task=- session=sha256:386e19b2c0d54ef1dfa3a64a trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:52:28,943 INFO app.infrastructure.tracing request=e6bd9073fdde41dabb1ce36b76266512 task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+INFO:     172.26.0.10:34492 - "GET /commerce/ag-ui/runs/load-b8ed62da7da8436698c022aaa4cad1e3/events?buyer_id=load-b8ed62da7da8436698c022aaa4cad1e3 HTTP/1.1" 200 OK
+2026-10-14 13:52:29,574 INFO app.infrastructure.tracing request=dba19bd99210422e896efc2d75c4b545 task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+2026-10-14 13:52:30,654 INFO app.infrastructure.tracing request=76cfb2cc86624629905b6ebcebbf4dac task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+2026-10-14 13:52:31,516 INFO app.infrastructure.tracing request=083a327c294943f0a9c19e4aae1bed3b task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+INFO:     127.0.0.1:41062 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 13:52:31,925 INFO app.infrastructure.tracing request=f8cecc4cf03840798d1b7c6734a46ff2 task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+2026-10-14 13:52:32,349 INFO app.infrastructure.tracing request=93964ba75e0a442a8d5091b52c172146 task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+2026-10-14 13:52:32,615 INFO app.infrastructure.tracing request=12d74362d5fb4fd2b69b77a8f03af5b3 task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+2026-10-14 13:52:32,685 INFO app.infrastructure.tracing request=a16feace1d7f4da0ad9843e0f17b36d3 task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+2026-10-14 13:52:36,821 INFO app.infrastructure.tracing request=bbdcf96eccca4f07b62b9f46d0bb80cb task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+2026-10-14 13:52:36,990 INFO app.infrastructure.tracing request=e1ee5860abae4b1d9f8408bd046ef688 task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+INFO:     127.0.0.1:41110 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 13:52:37,977 INFO app.infrastructure.tracing request=cfdc1fa31bff41d6b744eb5ecb4a9184 task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+2026-10-14 13:52:38,109 INFO app.infrastructure.tracing request=c674d24577254eac830fd140ae7f2c75 task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+2026-10-14 13:52:38,290 INFO app.infrastructure.tracing request=cdbcbbcb9e8b4aa689faa81c09a523f2 task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+INFO:     127.0.0.1:35524 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 13:52:42,045 INFO app.infrastructure.tracing request=6ef1f5d4a25f48c1aaf591e9db192d08 task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+INFO:     127.0.0.1:35578 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 13:52:47,099 INFO app.infrastructure.tracing request=010b3fe8d8f44970b0d97b4c039bb2df task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+INFO:     127.0.0.1:56792 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 13:52:52,157 INFO app.infrastructure.tracing request=1f654bf3b7d24ea4a5fe3f58acd41c6d task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+INFO:     127.0.0.1:56820 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 13:52:57,246 INFO app.infrastructure.tracing request=6d26385c8650456a9dbea5b5bc4ba446 task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+INFO:     127.0.0.1:54560 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 13:53:02,325 INFO app.infrastructure.tracing request=343e0a8093b044b09a322b0675addcd3 task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+INFO:     127.0.0.1:54634 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 13:53:07,429 INFO app.infrastructure.tracing request=0607625dff544530ba38d459de2a4b8b task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+INFO:     127.0.0.1:57170 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 13:53:12,519 INFO app.infrastructure.tracing request=0e66f4a2947f4e94a97fd50958aa6438 task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+INFO:     127.0.0.1:57232 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 13:53:17,638 INFO app.infrastructure.tracing request=8092c53515904c9b9626444d4f239b23 task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+INFO:     127.0.0.1:55342 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 13:53:22,734 INFO app.infrastructure.tracing request=f36fb874c7b445d8a16b1dbf0226ee7d task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+INFO:     127.0.0.1:55376 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 13:53:27,841 INFO app.infrastructure.tracing request=d0411832780a4a32b724a071dda692ac task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+INFO:     127.0.0.1:45778 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 13:53:32,941 INFO app.infrastructure.tracing request=0ba9f863e2f042d6a699768bbab8d8c3 task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+INFO:     127.0.0.1:45842 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 13:53:38,062 INFO app.infrastructure.tracing request=b36d98fdb11b4448988ab5e3d20c150d task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+INFO:     127.0.0.1:48938 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 13:53:43,160 INFO app.infrastructure.tracing request=186b7e6d5b4f4597aae4011d97473abe task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+INFO:     127.0.0.1:48968 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 13:53:48,276 INFO app.infrastructure.tracing request=fe8f4ec3f3a44f91a790854bd860c28d task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+INFO:     127.0.0.1:38686 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 13:53:53,371 INFO app.infrastructure.tracing request=f27a5007d0c14d66bacb10b2b84a0793 task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+INFO:     127.0.0.1:38744 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 13:53:58,508 INFO app.infrastructure.tracing request=e29ed6a1e37d432e9641a626711d812a task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+INFO:     127.0.0.1:34750 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 13:54:03,611 INFO app.infrastructure.tracing request=350e0595d52a490da03bbaab38371d36 task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+INFO:     127.0.0.1:34792 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 13:54:08,709 INFO app.infrastructure.tracing request=49fb7ec6b2d544c98a34b147de36a6b6 task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+INFO:     127.0.0.1:32960 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 13:54:13,838 INFO app.infrastructure.tracing request=5d221aef8867431b9d252f5380005b93 task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+INFO:     127.0.0.1:33006 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 13:54:18,934 INFO app.infrastructure.tracing request=a39a133df07f4c2c8cd33ef1716ccee7 task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+INFO:     127.0.0.1:39202 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 13:54:24,046 INFO app.infrastructure.tracing request=48c75e0a02c844949e7417c9e28d7bba task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+INFO:     127.0.0.1:39276 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 13:54:29,163 INFO app.infrastructure.tracing request=1a90f1563ec44bf08a26d1124750e7ca task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+INFO:     127.0.0.1:39624 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 13:54:34,255 INFO app.infrastructure.tracing request=0934e0883143472bacdb2551b295813e task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+INFO:     127.0.0.1:39688 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 13:54:39,355 INFO app.infrastructure.tracing request=2a05120d2fd14fdf9bc11869e6692bbf task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+2026-10-14 13:54:44,454 INFO app.infrastructure.tracing request=437fab1359f147719bbe6299f289dca1 task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+INFO:     127.0.0.1:36048 - "GET /health HTTP/1.1" 200 OK

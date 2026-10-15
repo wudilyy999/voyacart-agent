@@ -1,0 +1,15 @@
+{
+  "total_products": 12123,
+  "reused_products": 0,
+  "embedded_products": 270,
+  "written_products": 270,
+  "pending_products": 11853,
+  "batches": 27,
+  "complete": false,
+  "vector_dimension": 1024,
+  "error_type": "ReadTimeout",
+  "seconds": 84.03752304089721,
+  "products": 12123,
+  "embedding_model": "text-embedding-v4",
+  "qdrant_url_configured": false
+}

@@ -1,0 +1,17 @@
+uv run --no-sync python -m scripts.eval.harness run --suite eval/harness/v1/suite.json --profile smoke --strategies current,candidate --output eval/verification/2026-10-14-153457-esci-t1-timeout-harness
+2026-10-14 15:35:57,178 | WARNING | _base:__call__:241 - All 1 attempt(s) failed for model gemini-3.8-flash-high.
+2026-10-14 15:35:57,180 | WARNING | _agent:_call_model:3383 - Model gemini-3.8-flash-high exhausted all 1 attempt(s) for agent commerce.
+{"case_id": "h1-dev-cost", "strategy": "current", "repetition": 0, "passed": false, "error": "APITimeoutError"}
+{"case_id": "h1-dev-cost", "strategy": "candidate", "repetition": 0, "passed": true, "error": null}
+{"case_id": "agent-sku", "strategy": "current", "repetition": 0, "passed": true, "error": null}
+{"case_id": "agent-sku", "strategy": "candidate", "repetition": 0, "passed": true, "error": null}
+{"case_id": "agent-approval", "strategy": "current", "repetition": 0, "passed": true, "error": null}
+{"case_id": "agent-approval", "strategy": "candidate", "repetition": 0, "passed": true, "error": null}
+{"case_id": "h1-dev-sku", "strategy": "current", "repetition": 0, "passed": true, "error": null}
+{"case_id": "h1-dev-sku", "strategy": "candidate", "repetition": 0, "passed": true, "error": null}
+{"case_id": "h1-dev-budget", "strategy": "current", "repetition": 0, "passed": true, "error": null}
+{"case_id": "h1-dev-budget", "strategy": "candidate", "repetition": 0, "passed": true, "error": null}
+{"case_id": "h1-dev-stock", "strategy": "current", "repetition": 0, "passed": true, "error": null}
+{"case_id": "h1-dev-stock", "strategy": "candidate", "repetition": 0, "passed": true, "error": null}
+HTML: /Users/liyuyang/Downloads/voyacart-agent/eval/verification/2026-10-14-153457-esci-t1-timeout-harness/report.html
+make: *** [eval-harness] Error 2

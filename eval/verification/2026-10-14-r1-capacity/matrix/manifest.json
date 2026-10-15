@@ -1,0 +1,36 @@
+{
+  "base_commit": "d12206aa0321153442257fa14d3238259230a04d",
+  "image": "voyacart-runtime:r1",
+  "project": "voyacart-r1-matrix",
+  "load_seconds": 45,
+  "users": [
+    4,
+    8,
+    16,
+    32,
+    64,
+    128,
+    256
+  ],
+  "plateau_relative_gain": 0.1,
+  "max_error_rate": 0.05,
+  "source_fingerprints_blake2b": {
+    "scripts/loadtest/client.py": "190158a51301148812e0dbf5de985bdafa30e78354868eac0cdedce8eaf3cefd757a17725a9c66b52ead140c967fbee9c4fefab038fcd02fa273e3812b9e3288",
+    "scripts/loadtest/locustfile.py": "678c07998c79730cad1361a1feb9a2730e4779f43dcb1512468e91c8b49f8dea0351f1a13ef98ae025e79bad72f9fb454b1cc680f9f53fb5d62b8defd3487d55",
+    "scripts/loadtest/analyze.py": "0c4d654d4f6f046fbf4fd05cdaa02cd67177252865097320b8d06f16e00473bbcb7b5e3d427656716529650fe630e574912400654da91ca79e74df3431397e62",
+    "scripts/loadtest/mock_llm.py": "dafb83cd4437d0f35115f501ef5b0838951a76e8d8747ac7f0d10ada35824b7c4d05d84ad8487356d5e117ea7609d03e8d75c24290f37aa510cee9966cd3185c",
+    "scripts/loadtest/matrix.py": "a48011fc42be125bbc2bd934413ef2ebb5c8ff37145de3ebbca46c9a0c03b348bb97f39a2750ea4d66f50e56eaf9937e27ec4ce7b8372f70ac2139c96a361188",
+    "docker/docker-compose.load.yaml": "d6dbea609f1d888818dc54a4c0707dad1111e00fe6123e2e97e0f1a61a4ddf2fdfb2576890dc8d86c8e85a50af440faadb42001a6c7f0300cf875a52f1f74cb9",
+    "app/infrastructure/ag_ui_journal.py": "9d4a6b97cce47802205bedd4b5f5ffbc5f49aa126b398f323446a08c1ec37c6c5dd00d7f4dfa4b707acebf75874f01c24fe8857588f2b24cfb0bf5522c28c5f3",
+    "app/infrastructure/persistence/sql/repositories.py": "3143610431f31bad344b3b8892086f33caf4b0c6323eb083e237d432234995133080564886a5eec12309a5d919af704e4d1dfc9892ec2fe6f20edccae27422dc"
+  },
+  "model_concurrency_limit": 10000,
+  "model_min_interval_seconds": 0,
+  "mock": {
+    "MOCK_TTFT_SECONDS": "0.8",
+    "MOCK_TOKEN_SECONDS": "0.03",
+    "MOCK_RESPONSE_TOKENS": "300",
+    "MOCK_ORDER_RATE": "0.1",
+    "MOCK_ERROR_RATE": "0"
+  }
+}

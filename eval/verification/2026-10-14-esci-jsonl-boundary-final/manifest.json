@@ -1,0 +1,14 @@
+{
+  "phase": "final_regression",
+  "model_calls": 0,
+  "external_http_attempts": 0,
+  "exit_code": 0,
+  "source_fingerprints": {
+    "scripts/esci/prepare.py": "1384c7d7efcdc7ba58a26c260bb0f2196f3b2c9ec7a54176c18317c4d6aef85f35ef3082e5583146f70712c619e1f7ad6e1fb7eb20e64dcc40d89bb15aa0aadd",
+    "scripts/esci/finalize_catalog.py": "5957687b021f059b12eb6c5caa840878322aa4c2ad7e80e2dde5ed17f350fafd8ad2be74b42a11a6957758ff4060b9c1a4bcfced6d22a4fcbe208e9f148bd40a",
+    "scripts/esci/test_prepare.py": "295e1d67e19d8e41c9380bb6e7e5954591f5e78cb015be078962be53aee49f086426ce6bfa07e683c31c8d8237c21ee0f7618428a53f75461e336dd2c1cec44d",
+    "scripts/esci/test_finalize_catalog.py": "da1115c6bccb7f6fbd1162a0ef0c88107d88a57cf7a86dda8c9c95f3829cd2b9644988db2115abe3835f51d86be7e8173538c841198ba392dfc59afb7a112f03",
+    "scripts/esci/test_enrich_catalog.py": "cf8b24ee3b536105e170842fb6d4631540fd866b2968fb7e43dfaafa770d30852a3d6f12f4de2bb5ea9261182379c6c18892ecc2022af14bdd08af83bf0793f9"
+  },
+  "full_harness": "not_run"
+}

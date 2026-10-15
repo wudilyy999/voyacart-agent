@@ -1,0 +1,173 @@
+{
+  "stages": [
+    {
+      "requests": 2,
+      "successful": 2,
+      "errors": 0,
+      "error_rate": 0.0,
+      "error_codes": {},
+      "reconnections": 0,
+      "observed_seconds": 37.18246817588806,
+      "successful_runs_per_second": 0.053788790742432535,
+      "latency_ms": {
+        "first_event_ms": {
+          "samples": 2,
+          "p50": 54.21916604973376,
+          "p95": 94.03345792088658,
+          "p99": 94.03345792088658
+        },
+        "first_token_ms": {
+          "samples": 2,
+          "p50": 2275.988000095822,
+          "p95": 4052.1739169489592,
+          "p99": 4052.1739169489592
+        },
+        "complete_ms": {
+          "samples": 2,
+          "p50": 11918.07700006757,
+          "p95": 13652.942916960455,
+          "p99": 13652.942916960455
+        }
+      },
+      "source": "runs.csv",
+      "latency_scope": "all observed runs; missing times excluded",
+      "users": 1,
+      "cpu_peak_percent": 41.94,
+      "memory_peak_mib": 249.7
+    },
+    {
+      "requests": 5,
+      "successful": 5,
+      "errors": 0,
+      "error_rate": 0.0,
+      "error_codes": {},
+      "reconnections": 0,
+      "observed_seconds": 55.20427417755127,
+      "successful_runs_per_second": 0.09057269703281856,
+      "latency_ms": {
+        "first_event_ms": {
+          "samples": 5,
+          "p50": 63.55120800435543,
+          "p95": 273.9275840576738,
+          "p99": 273.9275840576738
+        },
+        "first_token_ms": {
+          "samples": 5,
+          "p50": 2269.4904999807477,
+          "p95": 4067.297709058039,
+          "p99": 4067.297709058039
+        },
+        "complete_ms": {
+          "samples": 5,
+          "p50": 11851.794124930166,
+          "p95": 13631.508124992251,
+          "p99": 13631.508124992251
+        }
+      },
+      "source": "runs.csv",
+      "latency_scope": "all observed runs; missing times excluded",
+      "users": 2,
+      "cpu_peak_percent": 26.19,
+      "memory_peak_mib": 250.7
+    },
+    {
+      "requests": 8,
+      "successful": 8,
+      "errors": 0,
+      "error_rate": 0.0,
+      "error_codes": {},
+      "reconnections": 2,
+      "observed_seconds": 53.96974778175354,
+      "successful_runs_per_second": 0.14823119115455075,
+      "latency_ms": {
+        "first_event_ms": {
+          "samples": 8,
+          "p50": 110.94216699711978,
+          "p95": 304.597583017312,
+          "p99": 304.597583017312
+        },
+        "first_token_ms": {
+          "samples": 8,
+          "p50": 4999.91387501359,
+          "p95": 17171.39750008937,
+          "p99": 17171.39750008937
+        },
+        "complete_ms": {
+          "samples": 8,
+          "p50": 14575.641625095159,
+          "p95": 26873.229958000593,
+          "p99": 26873.229958000593
+        }
+      },
+      "source": "runs.csv",
+      "latency_scope": "all observed runs; missing times excluded",
+      "users": 4,
+      "cpu_peak_percent": 27.49,
+      "memory_peak_mib": 263.1
+    },
+    {
+      "requests": 12,
+      "successful": 12,
+      "errors": 0,
+      "error_rate": 0.0,
+      "error_codes": {},
+      "reconnections": 0,
+      "observed_seconds": 77.11128687858582,
+      "successful_runs_per_second": 0.15561924182246348,
+      "latency_ms": {
+        "first_event_ms": {
+          "samples": 12,
+          "p50": 254.49608301278204,
+          "p95": 518.6662920750678,
+          "p99": 518.6662920750678
+        },
+        "first_token_ms": {
+          "samples": 12,
+          "p50": 20267.51575001981,
+          "p95": 44461.680875043385,
+          "p99": 44461.680875043385
+        },
+        "complete_ms": {
+          "samples": 12,
+          "p50": 29731.946583022363,
+          "p95": 53854.498458094895,
+          "p99": 53854.498458094895
+        }
+      },
+      "source": "runs.csv",
+      "latency_scope": "all observed runs; missing times excluded",
+      "users": 8,
+      "cpu_peak_percent": 29.85,
+      "memory_peak_mib": 284.5
+    }
+  ],
+  "observed_saturation_user_range": [
+    4,
+    8
+  ],
+  "throughput_growth_4_to_8": 0.049841403893258196,
+  "scope": "short default-quota historical baseline; long steady-state capacity not measured",
+  "gateway_max_concurrency": 2,
+  "write_lock_retry_count": null,
+  "journal_completed": {
+    "completed": 27
+  },
+  "hotspot": {
+    "buyer_id": "hotspot-099b36f945b84c4e87c0415e2d61f467",
+    "sku": "P1005-S1",
+    "initial_stock_expected": 100,
+    "confirmations": 500,
+    "approval_requests": 500,
+    "approved": 100,
+    "orders": 100,
+    "orders_before_approval": 0,
+    "errors": {
+      "INSUFFICIENT_STOCK": 400
+    },
+    "approve_seconds": 6.692787333042361,
+    "expected_approved": 100
+  },
+  "final_stock": {
+    "P1005-S1": 0
+  }
+}

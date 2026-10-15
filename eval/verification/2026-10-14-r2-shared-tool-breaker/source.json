@@ -1,0 +1,11 @@
+{
+  "commit": "70b455ad2dbc848edfabd544da576614a8e3866d",
+  "content_fingerprints_blake2b": {
+    "app/infrastructure/resilience.py": "93232bfd44eb650b29675b59af9109fc5a6de7ff222f3442267f69346f45818e8bae0cbb6ca93a84f8cae9363c9abb21a8f78fefd477889f9a7032819787be95",
+    "app/infrastructure/shared_breaker.py": "6f438fc49c594d3481346af5455a1909bccd98bc373acd33c0fdcbf356585b5c2e913071c32990a35587b324a17285a157f05d5cd7fed27903e964bbf79ded77",
+    "app/infrastructure/cache/redis_cache.py": "60bac2403cbc116035dc38de56503008addfbf3db44a1cabe1f429f77ff662fbe31d4178f1e349199cda7f166b99820a1e0a0b7694c610d09a181dab0c546ec8"
+  },
+  "failure_threshold": 3,
+  "reset_seconds": 60,
+  "model_requests": 0
+}

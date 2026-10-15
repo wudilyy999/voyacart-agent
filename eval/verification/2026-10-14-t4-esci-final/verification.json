@@ -1,0 +1,36 @@
+{
+  "artifact_fingerprints": {
+    "fixtures/test_all_strategies_use_real_s0/fake-services.json": "49d83909026cf4478438d6cb825598a0760bb17b952666c9f85dc98ec39939ef13010c0f052f158e4956496f30baec692d9a6eb55c560d7c24487c90e9683ce7",
+    "fixtures/test_all_strategies_use_real_s0/fixture-cases.json": "8d8c84c668889eeb86042fba1dbc26d4889eedd59953be4c90b888ebbf7cd500b249f0bef5e3e75ade9d3ff589c12bb5d7dce0ed6dbf3e576c39170f65c73b2d",
+    "fixtures/test_all_strategies_use_real_s0/fixture-catalog.jsonl": "69f8d6a56184c018295ee4b529d70122d6b1ec50fdb5629b75ecc196ed322b9a5e7d84c8865dd9bd21240fbf1dac591e0e2ad062e131c6a4959a6a040a45bbf8",
+    "fixtures/test_all_strategies_use_real_s0/report.json": "c5fd0c289723418be3c5163ee86b5aaee3f4b13603a9769910cb0fe4946f2c012f0c776aa967b8805c97e6ede10d28b966ccfc67e9e634aa8f6369349e4fb877",
+    "fixtures/test_development_cli_keeps_hol0/catalog.jsonl.gz": "c36ac588a39fd8109ca7adffce2e1ec764fb0ced55194e80c4ebe85ac48ab6d62aed5978bb47e2284362ac06044f61c07cc82b33c9c7a2b778beec4374c02ecf",
+    "fixtures/test_development_cli_keeps_hol0/constraints-dev.jsonl": "7ba880624abd2f98fa384252105d7b708bf70d786441915fb72cd1c7758353de591ee4d86167d2bd76523a43da44667304cde6cb364ef7baadd72b9ce6e5dfd6",
+    "fixtures/test_development_cli_keeps_hol0/crosslingual-dev.jsonl": "7c7c3c312a2830eaf708fd1c57ab3bc3036ee57813ffb83fe21ba01e50de4dcda4c6fb5fa312facfc3cff1650f3ce990cf26e774b3d145c760b0b181a26da983",
+    "fixtures/test_development_cli_keeps_hol0/crosslingual-zh.jsonl": "0f1f3187d4ea8cdd79f9563e5669a0f16ad7271521ebab9f63ad90529e84725bc64b1eb4113291800555e4037c7ec5a1a77215c17604e1b41af6abfb64239bb4",
+    "fixtures/test_development_cli_keeps_hol0/evaluation/failures.jsonl": "469f551fbc8db167dc63e8df3704e9d71b5cc08870aa6c99b9b6ee0d184a81f51cc885e278f39f6b611ab220ebc5bc4bb13129add5df6d4d6c5879d68d1cb2fd",
+    "fixtures/test_development_cli_keeps_hol0/evaluation/manifest.json": "eb1fba3df83a3a43b1bbf9d7f517795d8807835ff9db1e90cf3d06bf918c019b70e93e22b70475fab933306e3742e80e353143d0e300efb5efa90b8d4c32956f",
+    "fixtures/test_development_cli_keeps_hol0/evaluation/report.json": "d0e3053ed0efdd9ad890df70eab69d8923abc20e2c52417a7e4a51563d4a0204f62ead1ae75eff69da8d1312192014cdffa39da392e99bc668ee527967ed1478",
+    "fixtures/test_development_cli_keeps_hol0/evaluation/report.md": "1c9d091c1e10c2c60a4f5302ede1c6f435adddb2b8417d49565cb36588387bc3f883dffce96e3fffda95d98229edc9b42fba441467b34f306e152990bf5cb7b5",
+    "fixtures/test_development_cli_keeps_hol0/ranking-dev.jsonl": "957faca13e79d1b6f47a1ba3c0d8236e0f84ae0b99c2cc0c15a3d0f8bb03f4cc27cc833745f9f2d7cdd1b0c533c065237de35a7c58ee401a337a5afee7a679de",
+    "fixtures/test_development_cli_keeps_hol0/retrieval-dev.jsonl": "f446da5ad16aa972b6936f222fc5a605ad19034fa989a558c5b52882df6857fd6c1275352a2ba167ade4f5f0fada26c2b00839193ba540efe0ac0b4bcbacfb40",
+    "fixtures/test_development_cli_keeps_hol0/retrieval-holdout.jsonl": "3d244ea55dd96f9bceee592b172b3d7bf34a8a48b6421d3a6e949d98b1bb6b09fc7f2d7317e6dee44ac778d592619511226356eb7b3df7ad80339bc90d70e994",
+    "fixtures/test_rerank_failure_is_visible0/expected-failure.json": "1afc92c2772a8d9531dbb54fee2ea79b124968cbb08b37e37d1b36ee21580c9a493e603cbf613ec5729162c878520a11973ed9ad7c745837d1be6b37f5558628",
+    "fixtures/test_rerank_failure_is_visible1/expected-failure.json": "95bd00dc3665d821e6b7554d67a742653c9f1cc3157000dbab5477c321924637f9e9b338541c9df0783d86e7721e5c29705d206491fb2572e133f305b43315fa",
+    "fixtures/test_vector_failure_is_recorde0/expected-failure.json": "68f035f0ca24b2fd68ebc5b48bb332743657d1084b5884fa08df8a8d4f06985de9e7a7ce1ebf99c6220dd06f78dd2bd0dc3c53da00c8c6f3d7e885860fdbe965"
+  },
+  "command": "LLM_API_KEY=unit-test-key LLM_BASE_URL=http://127.0.0.1:1/v1 LLM_MODEL=unit-test .venv/bin/python -m pytest -q tests/test_esci_metrics.py tests/test_esci_evaluation.py tests/test_recall_metrics.py --basetemp eval/verification/2026-10-14-t4-esci-final/fixtures",
+  "data_kind": "constructed_fixture",
+  "exit_code": 0,
+  "fingerprint_method": "blake2b",
+  "real_model_calls": 0,
+  "source_commit": "31944b26cf6aa4540d34a67418f5c20fe6eeb30c",
+  "source_fingerprints": {
+    "scripts/eval/metrics.py": "03609d3113f04b5ae3b53319f01ab284ce0eb2e5cca046face8f1d5563c59c45697c0a539f2eda5086046cd25d0584d6334baf3dd2fc8ae9103450d89a02349a",
+    "scripts/eval/run_esci.py": "2e959c663792490e9c0ef03725b56ef7e45b80028480f51bc0b0fb444a8a82b52aa1483e1444df292450cf0373da9ed74254c06d7ff8cbd95718a92bfa7b0b2f",
+    "tests/test_esci_evaluation.py": "dadfe55a57beafd7fb0791a95b2844a1ec9477c252a19971db37750a0076d0ba320eab3be9af5169fcf8f7b759f22de37135ab8e24315ba1c0793963df8af546",
+    "tests/test_esci_metrics.py": "8c85451d46340a026c5a5babb60def7093aeccad267a4d02a84deb3aedc544d2c0caa4b7c0dc5df82fb756eb91f375e92c2abbe75ebd0edb8a49724d96f8a8e4",
+    "tests/test_recall_metrics.py": "61721e4989b15dfe9be794c804d0f0b47788aed95aa2612a8d1196ebbcfe3a89584559fc5305c306cda5d8fa48a4e04621321ecf5ab5704d29c2f9c6acb30529"
+  },
+  "tests_passed": 58
+}

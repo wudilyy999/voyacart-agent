@@ -1,0 +1,24 @@
+id: r2-model-503-9fe235a311da4dd98dc9c452c8696a47:1
+data: {"type": "RUN_STARTED", "threadId": "r2-model-503-9fe235a311da4dd98dc9c452c8696a47", "runId": "r2-model-503-9fe235a311da4dd98dc9c452c8696a47"}
+
+id: r2-model-503-9fe235a311da4dd98dc9c452c8696a47:2
+data: {"type": "STATE_SNAPSHOT", "snapshot": {"products": [], "shoppingForm": null, "confirmations": [], "toolApprovals": [], "skillUsages": [], "searchCompleted": false, "status": "queued", "progress": [], "activities": []}}
+
+id: r2-model-503-9fe235a311da4dd98dc9c452c8696a47:3
+data: {"type": "STATE_SNAPSHOT", "snapshot": {"products": [], "shoppingForm": null, "confirmations": [], "toolApprovals": [], "skillUsages": [], "searchCompleted": false, "status": "queued", "progress": [], "activities": []}}
+
+id: r2-model-503-9fe235a311da4dd98dc9c452c8696a47:4
+data: {"type": "STATE_SNAPSHOT", "snapshot": {"products": [], "shoppingForm": null, "confirmations": [], "toolApprovals": [], "skillUsages": [], "searchCompleted": false, "status": "running", "progress": [], "activities": []}}
+
+id: r2-model-503-9fe235a311da4dd98dc9c452c8696a47:5
+data: {"type": "CUSTOM", "name": "error", "value": {"message": "Error code: 503 - {'detail': '注入的模型故障'}"}}
+
+id: r2-model-503-9fe235a311da4dd98dc9c452c8696a47:6
+data: {"type": "CUSTOM", "name": "usage.summary", "value": {"status": "error", "elapsed_ms": 86.4805419696495, "model_calls": 1, "input_tokens": null, "output_tokens": null, "observed_input_tokens": 0, "observed_output_tokens": 0, "unknown_usage_calls": 1, "active_attempts_at_finish": 0, "usage_complete": false, "ttft_p95_ms": null, "model_elapsed_ms": 5.7453119661659, "tool_calls": 0, "tool_errors": 0, "fallbacks": 0, "cost_usd": null, "unknown_cost_calls": 1}}
+
+id: r2-model-503-9fe235a311da4dd98dc9c452c8696a47:7
+data: {"type": "STATE_SNAPSHOT", "snapshot": {"products": [], "shoppingForm": null, "confirmations": [], "toolApprovals": [], "skillUsages": [], "searchCompleted": false, "status": "error", "progress": [], "activities": []}}
+
+id: r2-model-503-9fe235a311da4dd98dc9c452c8696a47:8
+data: {"type": "RUN_ERROR", "message": "本轮服务暂时未能完成请求，请重试。", "code": "AGENT_ERROR"}
+

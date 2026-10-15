@@ -1,0 +1,2 @@
+/Users/liyuyang/Downloads/voyacart-esci-eval/app/infrastructure/embedding/local_multilingual.py:33: UserWarning: The model sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 now uses mean pooling instead of CLS embedding. In order to preserve the previous behaviour, consider either pinning fastembed version to 0.5.1 or using `add_custom_model` functionality.
+  self.model = TextEmbedding(model_name, cache_dir=str(cache_dir), threads=4, local_files_only=local_files_only)

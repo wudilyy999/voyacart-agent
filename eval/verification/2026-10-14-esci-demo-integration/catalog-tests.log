@@ -1,0 +1,97 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.11.16, pytest-9.1.1, pluggy-1.6.0
+rootdir: /private/tmp/voyacart-local-fallback-20261014
+configfile: pyproject.toml
+plugins: asyncio-1.4.0, anyio-4.14.2
+asyncio: mode=Mode.AUTO, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function
+collected 68 items
+
+tests/test_catalog_fixture.py .........                                  [ 13%]
+tests/test_catalog_data_quality.py ...                                   [ 17%]
+tests/test_multilingual_retrieval.py ..................F..               [ 48%]
+tests/test_retrieval_v2.py ..F..                                         [ 55%]
+tests/test_eval_selection_manifest.py ........................           [ 91%]
+tests/test_runtime_distribution.py ......                                [100%]
+
+=================================== FAILURES ===================================
+______________ test_evaluation_rejects_substitute_reranker_model _______________
+
+tmp_path = PosixPath('/private/var/folders/j5/9jbbktk13f7bdrtssrkz58tw0000gn/T/pytest-of-liyuyang/pytest-103/test_evaluation_rejects_substi0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x1160b0790>
+
+    async def test_evaluation_rejects_substitute_reranker_model(tmp_path, monkeypatch):
+        from scripts.eval.retrieval_multilingual import evaluate
+        monkeypatch.setenv('RERANKER_MODEL','not-qwen-text-rerank')
+        with pytest.raises(ValueError,match='qwen-text-rerank'):
+>           await evaluate(tmp_path/'substitute',live=True)
+
+tests/test_multilingual_retrieval.py:129: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+scripts/eval/retrieval_multilingual.py:68: in evaluate
+    settings = load_settings()
+               ^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+require_llm_key = True
+
+    def load_settings(*, require_llm_key: bool = True) -> Settings:
+        """服务启动默认校验密钥；离线评测可先读取配置，再按运行档位校验。"""
+        llm_base_url = os.getenv("LLM_BASE_URL", "https://dashscope.aliyuncs.com/compatible-mode/v1")
+        llm_api_key = os.getenv("LLM_API_KEY", "")
+        if require_llm_key and not llm_api_key:
+>           raise RuntimeError(
+                "未配置 LLM_API_KEY，无法启动。请通过环境变量注入（推荐）："
+                "export LLM_API_KEY=<你的密钥>；或在项目根目录创建本地 .env 文件"
+                "（参考 .env.example，该文件已被 gitignore，不会入库）。"
+            )
+E           RuntimeError: 未配置 LLM_API_KEY，无法启动。请通过环境变量注入（推荐）：export LLM_API_KEY=<你的密钥>；或在项目根目录创建本地 .env 文件（参考 .env.example，该文件已被 gitignore，不会入库）。
+
+app/infrastructure/settings.py:162: RuntimeError
+______________ test_blocked_services_never_count_as_live_success _______________
+
+tmp_path = PosixPath('/private/var/folders/j5/9jbbktk13f7bdrtssrkz58tw0000gn/T/pytest-of-liyuyang/pytest-103/test_blocked_services_never_co0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x1105c3d50>
+
+    async def test_blocked_services_never_count_as_live_success(tmp_path, monkeypatch):
+        from scripts.eval import retrieval_v2
+    
+        monkeypatch.setattr(
+            retrieval_v2,
+            "check",
+            AsyncMock(
+                return_value={
+                    "embedding": {"status": "BLOCKED"},
+                    "reranker": {"status": "BLOCKED"},
+                }
+            ),
+        )
+>       r = await evaluate(tmp_path / "report", "dev", live=True)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_retrieval_v2.py:63: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+scripts/eval/retrieval_v2.py:84: in evaluate
+    settings = load_settings()
+               ^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+require_llm_key = True
+
+    def load_settings(*, require_llm_key: bool = True) -> Settings:
+        """服务启动默认校验密钥；离线评测可先读取配置，再按运行档位校验。"""
+        llm_base_url = os.getenv("LLM_BASE_URL", "https://dashscope.aliyuncs.com/compatible-mode/v1")
+        llm_api_key = os.getenv("LLM_API_KEY", "")
+        if require_llm_key and not llm_api_key:
+>           raise RuntimeError(
+                "未配置 LLM_API_KEY，无法启动。请通过环境变量注入（推荐）："
+                "export LLM_API_KEY=<你的密钥>；或在项目根目录创建本地 .env 文件"
+                "（参考 .env.example，该文件已被 gitignore，不会入库）。"
+            )
+E           RuntimeError: 未配置 LLM_API_KEY，无法启动。请通过环境变量注入（推荐）：export LLM_API_KEY=<你的密钥>；或在项目根目录创建本地 .env 文件（参考 .env.example，该文件已被 gitignore，不会入库）。
+
+app/infrastructure/settings.py:162: RuntimeError
+- generated xml file: /private/tmp/voyacart-local-fallback-20261014/eval/verification/2026-10-14-esci-demo-integration/catalog-tests.xml -
+=========================== short test summary info ============================
+FAILED tests/test_multilingual_retrieval.py::test_evaluation_rejects_substitute_reranker_model
+FAILED tests/test_retrieval_v2.py::test_blocked_services_never_count_as_live_success
+========================= 2 failed, 66 passed in 3.68s =========================

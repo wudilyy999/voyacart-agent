@@ -1,0 +1,12 @@
+{
+  "result": "29 passed",
+  "exit_code": 0,
+  "scope": "in-memory protocol tests only; no Docker, network services or real faults executed",
+  "source_fingerprints_blake2b": {
+    "scripts/loadtest/faults.py": "4ae6163105577666168a50e956f37bbfd16f457536c6ec06ef31b62128464a06adedd30a86ce29edd2637186b7af3fe1d575eab7501a15bca6a1234f68013d4a",
+    "scripts/loadtest/mock_llm.py": "b91809aff487755da1b244ce9e49f334b1c728f8c9f8baa65f6bd906e7fd92f127b01d1c3ef81572c4637f842dc624cd8fee0aff853a004c9d4703a2451de2fd",
+    "tests/test_fault_drills.py": "40c5ce194d37ceeff7cebb5425408a2eedb8c8216462c458e558a350d5e330cc41d51a14789d2e320c0a3ed211c5e22d36308644c0b3d1ad3a93c3beb941b041",
+    "tests/test_mock_llm.py": "4d16883bfb30afb755f78b44e29eae198fbf8b618bd8dabea553dd256b71eb20b1eb051654d89290a3c408282ffa6fe587eb16a62600b417b09470bc32a4287e",
+    "tests/test_agui_loadtest.py": "c5a2e9d650841604cf69b414d78f72d80792b17b8257289ef70c6b5d78a4f981bc415189f2f931d9033dc5543c5c220b2df78048d409311a9361b29421a46529"
+  }
+}

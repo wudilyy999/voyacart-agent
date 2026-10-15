@@ -1,0 +1,9 @@
+voyacart-scale-review-nginx-1	Up 3 minutes
+voyacart-scale-review-worker-1	Up 3 minutes
+voyacart-scale-review-api-2	Up 3 minutes (healthy)
+voyacart-scale-review-api-1	Up 3 minutes (healthy)
+voyacart-scale-review-automation-worker-1	Up 3 minutes
+voyacart-scale-review-worker-2	Up 3 minutes
+voyacart-scale-review-mock-llm-1	Up 3 minutes
+voyacart-scale-review-qdrant-1	Up 16 minutes
+voyacart-scale-review-redis-1	Up 16 minutes (healthy)

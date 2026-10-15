@@ -1,0 +1,8 @@
+{
+  "checked_files": 281,
+  "known_credentials_found": false,
+  "forbidden_terms_found": false,
+  "initial_submission_scan": "directory_symlink_required_file_only_scan",
+  "raw_failure_log_whitespace": "preserved",
+  "fixture_archive_bytes_verified": true
+}

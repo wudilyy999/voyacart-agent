@@ -1,0 +1,17 @@
+{
+  "previous_queue_depth": 0,
+  "existing_runtime_stopped": true,
+  "backup_path": "/tmp/voyacart-esci-preview-backup-20261014",
+  "backup_local_only": true,
+  "volumes_preserved": [
+    "voyacart-scale-review_app-data",
+    "voyacart-scale-review_qdrant-data",
+    "voyacart-scale-review_redis-data"
+  ],
+  "new_image": "voyacart-runtime:esci-demo-2000-20261014",
+  "model": "gemini-3.8-flash-high",
+  "embedding_model": "text-embedding-v4",
+  "new_vector_collection": "voyacart_products_esci_demo_5700",
+  "api_first_for_indexing": true,
+  "configuration_file_modified": false
+}

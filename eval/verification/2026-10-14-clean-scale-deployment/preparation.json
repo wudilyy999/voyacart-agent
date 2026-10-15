@@ -1,0 +1,91 @@
+{
+  "source_directory": "/tmp/voyacart-clean-scale-source-20261014.9zLyGo",
+  "source_revision": "70b455ad2dbc848edfabd544da576614a8e3866d",
+  "project": "voyacart-clean-scale-20261014",
+  "port": 8086,
+  "same_docker_host": true,
+  "new_project_and_volumes": true,
+  "build_not_started": true,
+  "existing_docker_layer_cache": true,
+  "retained_environment_names": [
+    "HOME",
+    "PATH",
+    "TMPDIR",
+    "USER"
+  ],
+  "application_environment": {
+    "LLM_BASE_URL": "http://mock-llm:8081/v1",
+    "LLM_API_KEY": "local-model",
+    "LLM_MODEL": "mock-chat",
+    "LLM_FALLBACK_MODEL": "",
+    "EMBEDDING_BASE_URL": "http://mock-llm:8081/v1",
+    "EMBEDDING_API_KEY": "local-model",
+    "EMBEDDING_MODEL": "mock-embedding",
+    "EMBEDDING_DIM": "1024",
+    "VOYACART_SCALE_PORT": "8086",
+    "MOCK_ORDER_RATE": "1"
+  },
+  "compose_command": [
+    "docker",
+    "compose",
+    "--env-file",
+    "/dev/null",
+    "-p",
+    "voyacart-clean-scale-20261014",
+    "-f",
+    "docker/docker-compose.scale.yaml",
+    "-f",
+    "eval/verification/2026-10-14-c3-container-runtime/colima-override.yaml",
+    "-f",
+    "/tmp/voyacart-local-fallback-20261014/eval/verification/2026-10-14-clean-scale-deployment/isolated-image-override.json",
+    "--profile",
+    "mock"
+  ],
+  "checks": [
+    {
+      "name": "config-quiet",
+      "command": [
+        "docker",
+        "compose",
+        "--env-file",
+        "/dev/null",
+        "-p",
+        "voyacart-clean-scale-20261014",
+        "-f",
+        "docker/docker-compose.scale.yaml",
+        "-f",
+        "eval/verification/2026-10-14-c3-container-runtime/colima-override.yaml",
+        "-f",
+        "/tmp/voyacart-local-fallback-20261014/eval/verification/2026-10-14-clean-scale-deployment/isolated-image-override.json",
+        "--profile",
+        "mock",
+        "config",
+        "--quiet"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "config-json",
+      "command": [
+        "docker",
+        "compose",
+        "--env-file",
+        "/dev/null",
+        "-p",
+        "voyacart-clean-scale-20261014",
+        "-f",
+        "docker/docker-compose.scale.yaml",
+        "-f",
+        "eval/verification/2026-10-14-c3-container-runtime/colima-override.yaml",
+        "-f",
+        "/tmp/voyacart-local-fallback-20261014/eval/verification/2026-10-14-clean-scale-deployment/isolated-image-override.json",
+        "--profile",
+        "mock",
+        "config",
+        "--format",
+        "json"
+      ],
+      "exit_code": 0
+    }
+  ]
+}

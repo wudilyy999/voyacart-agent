@@ -1,0 +1,11 @@
+latest: Pulling from astral-sh/uv
+c3e9ced48c37: Pulling fs layer
+52bc5eaf5677: Pulling fs layer
+52bc5eaf5677: Verifying Checksum
+52bc5eaf5677: Download complete
+c3e9ced48c37: Download complete
+c3e9ced48c37: Pull complete
+52bc5eaf5677: Pull complete
+Digest: sha256:4a1f3666816dafadd20ceb71eac9a7d56d7ef30279f7d64048519ab901ada336
+Status: Downloaded newer image for ghcr.io/astral-sh/uv:latest
+ghcr.io/astral-sh/uv:latest

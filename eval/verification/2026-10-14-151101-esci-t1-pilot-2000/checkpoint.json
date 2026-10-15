@@ -1,0 +1,16 @@
+{
+  "exit_code": 1,
+  "cached_candidates": 462,
+  "candidate_count": 2000,
+  "cached_format_failures": 0,
+  "call_counts": {
+    "cache_hits": 239,
+    "candidate_count": 2000,
+    "completed_calls": 223,
+    "failed_outputs": 0,
+    "model_calls": 226
+  },
+  "failure_types": [
+    "ReadTimeout"
+  ]
+}

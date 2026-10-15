@@ -1,0 +1,12 @@
+{
+  "host": "http://127.0.0.1:8085",
+  "reconnect_rate": 0.1,
+  "timeout_seconds": 180,
+  "think_seconds": [
+    5,
+    15
+  ],
+  "users": 4,
+  "spawn_rate": 4.0,
+  "started_at": 1791976523.448065
+}

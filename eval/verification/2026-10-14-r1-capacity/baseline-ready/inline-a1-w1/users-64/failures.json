@@ -1,0 +1,62 @@
+[
+  {
+    "run_id": "load-c3adf095cffe4e34b715c635173621e6",
+    "started_at": "1791976753.513092",
+    "finished_at": "1791976765.0775611",
+    "first_event_ms": "6369.878624915145",
+    "first_token_ms": "6407.851916970685",
+    "complete_ms": "11564.906582934782",
+    "status_code": "200",
+    "error_code": "SERVER_RESTART",
+    "events": "284",
+    "reconnected": "False"
+  },
+  {
+    "run_id": "load-de49b699e65d471d8074cca90f18baa7",
+    "started_at": "1791976753.51231",
+    "finished_at": "1791976767.477242",
+    "first_event_ms": "5425.8219168987125",
+    "first_token_ms": "5475.420583970845",
+    "complete_ms": "13965.460749925114",
+    "status_code": "200",
+    "error_code": "SERVER_RESTART",
+    "events": "284",
+    "reconnected": "False"
+  },
+  {
+    "run_id": "load-d19412882d7b442d94b3881c369a31a3",
+    "started_at": "1791976774.653567",
+    "finished_at": "1791976787.0339851",
+    "first_event_ms": "186.8711250135675",
+    "first_token_ms": "2067.270625033416",
+    "complete_ms": "12380.888334009796",
+    "status_code": "200",
+    "error_code": "SERVER_RESTART",
+    "events": "298",
+    "reconnected": "False"
+  },
+  {
+    "run_id": "load-a3a4aa465d1b4fd0a5c411c03970ca38",
+    "started_at": "1791976775.610164",
+    "finished_at": "1791976788.521984",
+    "first_event_ms": "70.47545805107802",
+    "first_token_ms": "2272.9780001100153",
+    "complete_ms": "12912.311583058909",
+    "status_code": "200",
+    "error_code": "ChunkedEncodingError:Response ended prematurely",
+    "events": "36",
+    "reconnected": "False"
+  },
+  {
+    "run_id": "load-de1a1b36c9cf4bbd87f984d7ec17f629",
+    "started_at": "1791976774.5816362",
+    "finished_at": "1791976789.7976",
+    "first_event_ms": "42.043125024065375",
+    "first_token_ms": "2227.7863330673426",
+    "complete_ms": "15216.542041045614",
+    "status_code": "200",
+    "error_code": "SERVER_RESTART",
+    "events": "300",
+    "reconnected": "True"
+  }
+]

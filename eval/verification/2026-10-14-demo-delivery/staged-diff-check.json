@@ -1,0 +1,14 @@
+{
+  "full_staged_diff_check_exit_code": 2,
+  "markdown_diff_check_exit_code": 0,
+  "markdown_findings": "",
+  "raw_evidence_whitespace_findings": 24246,
+  "raw_evidence_extensions": {
+    ".sse": 1,
+    ".log": 129,
+    ".csv": 23040,
+    ".svg": 1076
+  },
+  "original_evidence_bytes_preserved": true,
+  "action": "Raw CSV line endings, SSE terminators and generated log/chart whitespace retained; Markdown check passed."
+}

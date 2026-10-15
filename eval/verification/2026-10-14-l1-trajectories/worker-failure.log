@@ -1,0 +1,151 @@
+2026-10-14 10:36:41,525 INFO httpx request=- task=- session=sha256:b8c5691e6cf8187ccfa9e83b trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 10:36:41,591 INFO httpx request=- task=- session=sha256:b8c5691e6cf8187ccfa9e83b trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 10:36:41,594 WARNING app.application.usecases.catalog_search request=- task=- session=sha256:b8c5691e6cf8187ccfa9e83b trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 10:36:41,621 INFO httpx request=- task=- session=sha256:b8c5691e6cf8187ccfa9e83b trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 500 Internal Server Error"
+2026-10-14 10:36:41,621 | WARNING | _base:__call__:241 - All 1 attempt(s) failed for model mock-chat.
+2026-10-14 10:36:41,622 WARNING app.infrastructure.llm request=- task=- session=sha256:b8c5691e6cf8187ccfa9e83b trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 模型 mock-chat 遇上游瞬时故障，6s 后重试（第 1/2 次）：Internal Server Error
+2026-10-14 10:36:47,650 INFO httpx request=- task=- session=sha256:b8c5691e6cf8187ccfa9e83b trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 500 Internal Server Error"
+2026-10-14 10:36:47,652 | WARNING | _base:__call__:241 - All 1 attempt(s) failed for model mock-chat.
+2026-10-14 10:36:47,652 WARNING app.infrastructure.llm request=- task=- session=sha256:b8c5691e6cf8187ccfa9e83b trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 模型 mock-chat 遇上游瞬时故障，18s 后重试（第 2/2 次）：Internal Server Error
+2026-10-14 10:37:05,692 INFO httpx request=- task=- session=sha256:b8c5691e6cf8187ccfa9e83b trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 500 Internal Server Error"
+2026-10-14 10:37:05,696 | WARNING | _base:__call__:241 - All 1 attempt(s) failed for model mock-chat.
+2026-10-14 10:37:05,701 | WARNING | _agent:_call_model:3383 - Model mock-chat exhausted all 1 attempt(s) for agent commerce_concierge.
+2026-10-14 10:37:05,701 WARNING app.application.agents.orchestrator request=- task=- session=sha256:b8c5691e6cf8187ccfa9e83b trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 上游瞬时故障，6s 后重试（第 1/2 次）：Internal Server Error
+2026-10-14 10:37:11,741 INFO httpx request=- task=- session=sha256:b8c5691e6cf8187ccfa9e83b trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 500 Internal Server Error"
+2026-10-14 10:37:11,741 | WARNING | _base:__call__:241 - All 1 attempt(s) failed for model mock-chat.
+2026-10-14 10:37:11,741 WARNING app.infrastructure.llm request=- task=- session=sha256:b8c5691e6cf8187ccfa9e83b trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 模型 mock-chat 遇上游瞬时故障，6s 后重试（第 1/2 次）：Internal Server Error
+2026-10-14 10:37:17,768 INFO httpx request=- task=- session=sha256:b8c5691e6cf8187ccfa9e83b trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 500 Internal Server Error"
+2026-10-14 10:37:17,769 | WARNING | _base:__call__:241 - All 1 attempt(s) failed for model mock-chat.
+2026-10-14 10:37:17,769 WARNING app.infrastructure.llm request=- task=- session=sha256:b8c5691e6cf8187ccfa9e83b trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 模型 mock-chat 遇上游瞬时故障，18s 后重试（第 2/2 次）：Internal Server Error
+2026-10-14 10:37:35,798 INFO httpx request=- task=- session=sha256:b8c5691e6cf8187ccfa9e83b trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 500 Internal Server Error"
+2026-10-14 10:37:35,799 | WARNING | _base:__call__:241 - All 1 attempt(s) failed for model mock-chat.
+2026-10-14 10:37:35,804 | WARNING | _agent:_call_model:3383 - Model mock-chat exhausted all 1 attempt(s) for agent commerce_concierge.
+2026-10-14 10:37:35,805 WARNING app.application.agents.orchestrator request=- task=- session=sha256:b8c5691e6cf8187ccfa9e83b trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 上游瞬时故障，18s 后重试（第 2/2 次）：Internal Server Error
+2026-10-14 10:37:53,836 INFO httpx request=- task=- session=sha256:b8c5691e6cf8187ccfa9e83b trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 500 Internal Server Error"
+2026-10-14 10:37:53,836 | WARNING | _base:__call__:241 - All 1 attempt(s) failed for model mock-chat.
+2026-10-14 10:37:53,837 WARNING app.infrastructure.llm request=- task=- session=sha256:b8c5691e6cf8187ccfa9e83b trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 模型 mock-chat 遇上游瞬时故障，6s 后重试（第 1/2 次）：Internal Server Error
+2026-10-14 10:37:59,864 INFO httpx request=- task=- session=sha256:b8c5691e6cf8187ccfa9e83b trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 500 Internal Server Error"
+2026-10-14 10:37:59,866 | WARNING | _base:__call__:241 - All 1 attempt(s) failed for model mock-chat.
+2026-10-14 10:37:59,866 WARNING app.infrastructure.llm request=- task=- session=sha256:b8c5691e6cf8187ccfa9e83b trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 模型 mock-chat 遇上游瞬时故障，18s 后重试（第 2/2 次）：Internal Server Error
+2026-10-14 10:38:17,879 INFO httpx request=- task=- session=sha256:b8c5691e6cf8187ccfa9e83b trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 500 Internal Server Error"
+2026-10-14 10:38:17,879 | WARNING | _base:__call__:241 - All 1 attempt(s) failed for model mock-chat.
+2026-10-14 10:38:17,881 | WARNING | _agent:_call_model:3383 - Model mock-chat exhausted all 1 attempt(s) for agent commerce_concierge.
+2026-10-14 10:38:17,882 ERROR app.application.agents.orchestrator request=- task=- session=sha256:b8c5691e6cf8187ccfa9e83b trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 MainAgent 异常
+Traceback (most recent call last):
+  File "/app/app/application/agents/orchestrator.py", line 335, in _handle_intent
+    final_text = await self._reply_with_retry(session_id, agent, inputs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/application/agents/orchestrator.py", line 529, in _reply_with_retry
+    return await self._consume_reply(session_id, agent, inputs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/application/agents/orchestrator.py", line 561, in _consume_reply
+    async for event in events:
+  File "/app/.venv/lib/python3.11/site-packages/agentscope/agent/_agent.py", line 324, in reply_stream
+    async for chunk in self._reply(
+  File "/app/.venv/lib/python3.11/site-packages/agentscope/agent/_agent.py", line 945, in _reply
+    async for item in agen:
+  File "/app/.venv/lib/python3.11/site-packages/agentscope/agent/_agent.py", line 935, in execute_chain
+    async for item in mw.on_reply(
+  File "/app/.venv/lib/python3.11/site-packages/agentscope/middleware/_tracing/_trace.py", line 144, in on_reply
+    async for item in next_handler(**input_kwargs):
+  File "/app/.venv/lib/python3.11/site-packages/agentscope/agent/_agent.py", line 929, in next_handler
+    async for item in execute_chain(
+  File "/app/.venv/lib/python3.11/site-packages/agentscope/agent/_agent.py", line 935, in execute_chain
+    async for item in mw.on_reply(
+  File "/app/app/infrastructure/context_governance.py", line 397, in on_reply
+    async for event in next_handler(**input_kwargs): yield event
+  File "/app/.venv/lib/python3.11/site-packages/agentscope/agent/_agent.py", line 929, in next_handler
+    async for item in execute_chain(
+  File "/app/.venv/lib/python3.11/site-packages/agentscope/agent/_agent.py", line 935, in execute_chain
+    async for item in mw.on_reply(
+  File "/app/app/application/memory/middleware.py", line 28, in on_reply
+    async for event in next_handler(**input_kwargs):yield event
+  File "/app/.venv/lib/python3.11/site-packages/agentscope/agent/_agent.py", line 929, in next_handler
+    async for item in execute_chain(
+  File "/app/.venv/lib/python3.11/site-packages/agentscope/agent/_agent.py", line 914, in execute_chain
+    async for item in self._reply_impl(
+  File "/app/.venv/lib/python3.11/site-packages/agentscope/agent/_agent.py", line 1175, in _reply_impl
+    async for evt in self._reasoning(
+  File "/app/.venv/lib/python3.11/site-packages/agentscope/agent/_agent.py", line 1657, in _reasoning
+    async for item in self._reasoning_impl(tool_choice=tool_choice):
+  File "/app/.venv/lib/python3.11/site-packages/agentscope/agent/_agent.py", line 1724, in _reasoning_impl
+    res = await self._call_model(
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/infrastructure/context_governance.py", line 223, in _call_model
+    response = await super()._call_model(messages, tools, tool_choice)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/agentscope/agent/_agent.py", line 3392, in _call_model
+    raise last_exception from None
+  File "/app/.venv/lib/python3.11/site-packages/agentscope/agent/_agent.py", line 3366, in _call_model
+    return await execute_chain()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/agentscope/agent/_agent.py", line 3360, in execute_chain
+    return await mw.on_model_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/agentscope/middleware/_tracing/_trace.py", line 269, in on_model_call
+    return await next_handler(**input_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/agentscope/agent/_agent.py", line 3355, in next_handler
+    return await execute_chain(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/agentscope/agent/_agent.py", line 3360, in execute_chain
+    return await mw.on_model_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/infrastructure/context_governance.py", line 497, in on_model_call
+    response = await next_handler(messages=messages, **overrides)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/agentscope/agent/_agent.py", line 3355, in next_handler
+    return await execute_chain(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/agentscope/agent/_agent.py", line 3334, in execute_chain
+    return await current_model(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/infrastructure/llm.py", line 408, in __call__
+    return await recover_response(self, messages, tools, tool_choice, kwargs,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/infrastructure/model_recovery.py", line 97, in recover_response
+    raise first[2]
+  File "/app/app/infrastructure/model_recovery.py", line 83, in attempt
+    response = await model._call_once(rows, tools, choice, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/infrastructure/llm.py", line 413, in _call_once
+    return await self._call_throttled(messages, tools, tool_choice, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/infrastructure/llm.py", line 448, in _call_throttled
+    result = await self._call_with_fallback(messages, tools, tool_choice, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/infrastructure/llm.py", line 628, in _call_with_fallback
+    raise last_error  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^
+  File "/app/app/infrastructure/llm.py", line 608, in _call_with_fallback
+    return await self._invoke_upstream(messages, tools, tool_choice, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/infrastructure/llm.py", line 526, in _invoke_upstream
+    return await super().__call__(messages, tools, tool_choice, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/agentscope/model/_base.py", line 248, in __call__
+    raise last_error
+  File "/app/.venv/lib/python3.11/site-packages/agentscope/model/_base.py", line 211, in __call__
+    res = await self._call_api(
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/infrastructure/llm.py", line 354, in _call_api
+    return await super()._call_api(model_name, messages, tools, tool_choice, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/infrastructure/llm.py", line 241, in _call_api
+    return await super()._call_api(model_name, messages, tools, tool_choice, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/agentscope/model/_openai_chat/_model.py", line 277, in _call_api
+    response = await self.client.chat.completions.create(**kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/infrastructure/llm.py", line 189, in observed_create
+    response = await create(*args, **request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 2907, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/openai/_base_client.py", line 1992, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/openai/_base_client.py", line 1777, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.InternalServerError: Internal Server Error

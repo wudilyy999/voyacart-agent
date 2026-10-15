@@ -1,0 +1,301 @@
+{
+  "runId": "scale-run-1",
+  "threadId": "scale-session-1",
+  "status": "completed",
+  "cursor": 22,
+  "stopRequested": false,
+  "input": {
+    "threadId": "scale-session-1",
+    "runId": "scale-run-1",
+    "state": {},
+    "messages": [
+      {
+        "id": "scale-user-1",
+        "role": "user",
+        "content": "预算300元以内，找一个寄到中国的轻便背包",
+        "runId": "scale-run-1"
+      }
+    ],
+    "tools": [],
+    "context": [],
+    "forwardedProps": {
+      "buyerId": "scale-review",
+      "locale": "zh-CN",
+      "currency": "CNY"
+    }
+  },
+  "messages": [
+    {
+      "id": "scale-user-1",
+      "role": "user",
+      "content": "预算300元以内，找一个寄到中国的轻便背包",
+      "runId": "scale-run-1"
+    },
+    {
+      "id": "scale-run-1:final:answer",
+      "role": "assistant",
+      "content": "已检索旅行背包。请查看商品卡中的规格、库存与到手价，选择商品后可继续比较或准备订单确认。",
+      "runId": "scale-run-1"
+    }
+  ],
+  "state": {
+    "products": [
+      {
+        "product_id": "P31060",
+        "title": "Lingua Bolsas para alimentos — Piezas: 10 · ML-16-1",
+        "brand": "Lingua",
+        "category": "厨房餐饮",
+        "origin_country": "CN",
+        "price_major": 270.0,
+        "currency": "CNY",
+        "source_price_major": 5625.0,
+        "source_currency": "JPY",
+        "highlights": [
+          "Piezas：10",
+          "Material：Polímero sintético"
+        ],
+        "skus": [
+          {
+            "sku_id": "P31060-S1",
+            "spec": "Negro / Piezas: 10",
+            "price_major": 5625.0,
+            "currency": "JPY",
+            "stock": 20
+          },
+          {
+            "sku_id": "P31060-S2",
+            "spec": "Gris / Piezas: 10",
+            "price_major": 5850.0,
+            "currency": "JPY",
+            "stock": 21
+          }
+        ],
+        "score": 0.1104,
+        "source_platform": "etsy",
+        "canonical_product_id": "CAN-ML-16-1",
+        "material_tags": [
+          "合成聚合物"
+        ],
+        "weight_kg": 0.1,
+        "description": "Separa porciones en la nevera. Piezas: 10. Material: Polímero sintético. Modelo: ML-16-1.",
+        "rating_summary": {
+          "average": 4.0,
+          "review_count": 125
+        },
+        "rating_is_live": false,
+        "ships_to": [
+          "CN",
+          "US",
+          "EU",
+          "JP",
+          "SG"
+        ],
+        "dimensions_cm": {
+          "length": 20,
+          "width": 15,
+          "height": 4
+        },
+        "updated_at": "2026-09-18",
+        "default_sku_id": "P31060-S1",
+        "image_url": null,
+        "image_kind": "placeholder",
+        "image_alt": "Lingua Bolsas para alimentos — Piezas: 10 · ML-16-1：暂无商品图片",
+        "landed_price": {
+          "ship_to": "CN",
+          "subtotal_major": 270.0,
+          "freight_major": 25.0,
+          "tariff_major": 0.0,
+          "tariff_rate": 0.09,
+          "de_minimis_applied": true,
+          "landed_total_major": 295.0,
+          "currency": "CNY"
+        },
+        "source_language": "es",
+        "source_locale": "es-ES",
+        "external_product_id": "demo-etsy-es-ES-P31060",
+        "data_provenance": "synthetic"
+      },
+      {
+        "product_id": "P21060",
+        "title": "Lingua Bolsas para alimentos — Piezas: 10 · ML-16-1",
+        "brand": "Lingua",
+        "category": "厨房餐饮",
+        "origin_country": "CN",
+        "price_major": 266.99,
+        "currency": "CNY",
+        "source_price_major": 34.23,
+        "source_currency": "EUR",
+        "highlights": [
+          "Piezas：10",
+          "Material：Polímero sintético"
+        ],
+        "skus": [
+          {
+            "sku_id": "P21060-S1",
+            "spec": "Negro / Piezas: 10",
+            "price_major": 34.23,
+            "currency": "EUR",
+            "stock": 20
+          },
+          {
+            "sku_id": "P21060-S2",
+            "spec": "Gris / Piezas: 10",
+            "price_major": 35.6,
+            "currency": "EUR",
+            "stock": 21
+          }
+        ],
+        "score": 0.1104,
+        "source_platform": "ebay",
+        "canonical_product_id": "CAN-ML-16-1",
+        "material_tags": [
+          "合成聚合物"
+        ],
+        "weight_kg": 0.1,
+        "description": "Separa porciones en la nevera. Piezas: 10. Material: Polímero sintético. Modelo: ML-16-1.",
+        "rating_summary": {
+          "average": 4.0,
+          "review_count": 125
+        },
+        "rating_is_live": false,
+        "ships_to": [
+          "CN",
+          "US",
+          "EU",
+          "JP",
+          "SG"
+        ],
+        "dimensions_cm": {
+          "length": 20,
+          "width": 15,
+          "height": 4
+        },
+        "updated_at": "2026-09-18",
+        "default_sku_id": "P21060-S1",
+        "image_url": null,
+        "image_kind": "placeholder",
+        "image_alt": "Lingua Bolsas para alimentos — Piezas: 10 · ML-16-1：暂无商品图片",
+        "landed_price": {
+          "ship_to": "CN",
+          "subtotal_major": 266.99,
+          "freight_major": 25.0,
+          "tariff_major": 0.0,
+          "tariff_rate": 0.09,
+          "de_minimis_applied": true,
+          "landed_total_major": 291.99,
+          "currency": "CNY"
+        },
+        "source_language": "es",
+        "source_locale": "es-ES",
+        "external_product_id": "demo-ebay-es-ES-P21060",
+        "data_provenance": "synthetic"
+      },
+      {
+        "product_id": "P11060",
+        "title": "Lingua Bolsas para alimentos — Piezas: 10 · ML-16-1",
+        "brand": "Lingua",
+        "category": "厨房餐饮",
+        "origin_country": "CN",
+        "price_major": 274.56,
+        "currency": "CNY",
+        "source_price_major": 38.67,
+        "source_currency": "USD",
+        "highlights": [
+          "Piezas：10",
+          "Material：Polímero sintético"
+        ],
+        "skus": [
+          {
+            "sku_id": "P11060-S1",
+            "spec": "Negro / Piezas: 10",
+            "price_major": 37.18,
+            "currency": "USD",
+            "stock": 0
+          },
+          {
+            "sku_id": "P11060-S2",
+            "spec": "Gris / Piezas: 10",
+            "price_major": 38.67,
+            "currency": "USD",
+            "stock": 21
+          }
+        ],
+        "score": 0.1104,
+        "source_platform": "amazon",
+        "canonical_product_id": "CAN-ML-16-1",
+        "material_tags": [
+          "合成聚合物"
+        ],
+        "weight_kg": 0.1,
+        "description": "Separa porciones en la nevera. Piezas: 10. Material: Polímero sintético. Modelo: ML-16-1.",
+        "rating_summary": {
+          "average": 4.0,
+          "review_count": 125
+        },
+        "rating_is_live": false,
+        "ships_to": [
+          "CN",
+          "US",
+          "EU",
+          "JP",
+          "SG"
+        ],
+        "dimensions_cm": {
+          "length": 20,
+          "width": 15,
+          "height": 4
+        },
+        "updated_at": "2026-09-18",
+        "default_sku_id": "P11060-S2",
+        "image_url": null,
+        "image_kind": "placeholder",
+        "image_alt": "Lingua Bolsas para alimentos — Piezas: 10 · ML-16-1：暂无商品图片",
+        "landed_price": {
+          "ship_to": "CN",
+          "subtotal_major": 274.56,
+          "freight_major": 25.0,
+          "tariff_major": 0.0,
+          "tariff_rate": 0.09,
+          "de_minimis_applied": true,
+          "landed_total_major": 299.56,
+          "currency": "CNY"
+        },
+        "source_language": "es",
+        "source_locale": "es-ES",
+        "external_product_id": "demo-amazon-es-ES-P11060",
+        "data_provenance": "synthetic"
+      }
+    ],
+    "shoppingForm": null,
+    "confirmations": [],
+    "toolApprovals": [],
+    "skillUsages": [],
+    "searchCompleted": true,
+    "status": "completed",
+    "progress": [
+      {
+        "id": "scale-run-1:tool:call_302a35db5e3d41f0b432671f6a356cf4",
+        "label": "检索商品",
+        "status": "completed"
+      }
+    ],
+    "activities": [
+      {
+        "id": "scale-run-1:tool:call_302a35db5e3d41f0b432671f6a356cf4",
+        "runId": "scale-run-1",
+        "kind": "tool",
+        "label": "检索商品",
+        "status": "completed",
+        "sequence": 1,
+        "startedAt": 1791969129577,
+        "finishedAt": 1791969130122,
+        "source": "agentscope",
+        "toolCallId": "scale-run-1:tool:call_302a35db5e3d41f0b432671f6a356cf4",
+        "toolName": "product_search_tool",
+        "inputSummary": "配送国家 CN · 币种 CNY · 预算上限 300 · 最多 3 件",
+        "resultSummary": "检索返回 3 件商品。"
+      }
+    ]
+  },
+  "updatedAt": 1791969130729
+}

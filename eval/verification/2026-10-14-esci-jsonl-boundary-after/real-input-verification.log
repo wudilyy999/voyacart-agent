@@ -1,0 +1,1 @@
+{"status": "passed", "record_counts": {"eval/verification/2026-10-14-t2-input-plan/products.jsonl": 15860, "eval/verification/2026-10-14-t2-input-plan/examples.jsonl": 15977, "eval/verification/2026-10-14-t2-input-plan/enrichment-inputs.jsonl": 15860, "data/esci/query-class-v1.jsonl": 2784}, "input_bytes_unchanged": true, "model_calls": 0, "external_http_attempts": 0}

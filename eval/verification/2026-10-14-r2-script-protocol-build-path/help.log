@@ -1,0 +1,15 @@
+usage: faults.py [-h] --project PROJECT --port PORT --output OUTPUT
+                 [--model-cache MODEL_CACHE]
+                 {worker,api,redis,embedding,model,hotspot}
+
+在全新 voyacart-r2-* Docker 项目逐项演练；证据目录保留服务与原始传输日志。
+
+positional arguments:
+  {worker,api,redis,embedding,model,hotspot}
+
+options:
+  -h, --help            show this help message and exit
+  --project PROJECT
+  --port PORT
+  --output OUTPUT
+  --model-cache MODEL_CACHE

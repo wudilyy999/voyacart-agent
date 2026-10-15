@@ -1,0 +1,18 @@
+{
+  "files": {
+    "shopping_queries_dataset_examples.parquet": {
+      "bytes": 13,
+      "content_fingerprint": "565887b0f8d10b5157fe3afb3e86843cd191cfb3f9eca27fbcb3cfecd92ef80f064ec43f903c380a1412ea00fc8bb26899e0c4ba1fcfec97ea20de62c430cb59",
+      "upstream_content_fingerprint": "565887b0f8d10b5157fe3afb3e86843cd191cfb3f9eca27fbcb3cfecd92ef80f064ec43f903c380a1412ea00fc8bb26899e0c4ba1fcfec97ea20de62c430cb59",
+      "url": "https://media.githubusercontent.com/media/amazon-science/esci-data/main/shopping_queries_dataset/shopping_queries_dataset_examples.parquet"
+    },
+    "shopping_queries_dataset_products.parquet": {
+      "bytes": 13,
+      "content_fingerprint": "565887b0f8d10b5157fe3afb3e86843cd191cfb3f9eca27fbcb3cfecd92ef80f064ec43f903c380a1412ea00fc8bb26899e0c4ba1fcfec97ea20de62c430cb59",
+      "upstream_content_fingerprint": "565887b0f8d10b5157fe3afb3e86843cd191cfb3f9eca27fbcb3cfecd92ef80f064ec43f903c380a1412ea00fc8bb26899e0c4ba1fcfec97ea20de62c430cb59",
+      "url": "https://media.githubusercontent.com/media/amazon-science/esci-data/main/shopping_queries_dataset/shopping_queries_dataset_products.parquet"
+    }
+  },
+  "fingerprint_method": "blake2b",
+  "source_commit": "frozen-revision"
+}

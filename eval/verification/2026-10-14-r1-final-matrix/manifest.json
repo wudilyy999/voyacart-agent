@@ -1,0 +1,40 @@
+{
+  "base_commit": "a6bb2d7bfda9b2f8bd4b1f6f320056fa14490d8f",
+  "image": "voyacart-runtime:r1",
+  "image_id": "sha256:43366a829fd8a8ac0ac891eb71ca18efa20bfd898614153fa9f4a6f2a2e21883",
+  "project": "voyacart-r1-matrix",
+  "load_seconds": 45,
+  "users": [
+    4,
+    8,
+    16,
+    32,
+    64,
+    128,
+    256
+  ],
+  "plateau_relative_gain": 0.1,
+  "max_error_rate": 0.05,
+  "source_fingerprints_blake2b": {
+    "scripts/loadtest/client.py": "aec76e009d74e4931b4dd647370b6ddbd11cad9205b22acdd4bb146af61b53d0d6181b25863757e17f123ecfec3ef5c0519a155a2489117b2cb33750b994c2a2",
+    "scripts/loadtest/locustfile.py": "5d3d62c8507d58ec6bb17f2da8e5f7639a3e3f565f8c4e87baf2513a82b1878c1f542073b813cda0c463d66bbea59bee4489c01fdeae91d57afab6c7cda00a80",
+    "scripts/loadtest/analyze.py": "0c4d654d4f6f046fbf4fd05cdaa02cd67177252865097320b8d06f16e00473bbcb7b5e3d427656716529650fe630e574912400654da91ca79e74df3431397e62",
+    "scripts/loadtest/mock_llm.py": "b91809aff487755da1b244ce9e49f334b1c728f8c9f8baa65f6bd906e7fd92f127b01d1c3ef81572c4637f842dc624cd8fee0aff853a004c9d4703a2451de2fd",
+    "scripts/loadtest/matrix.py": "376c3689efbd070a6b1acf3f5ff8efb2950044b42adc349d4a9a1b9c7db0aaa2e1e1fe7cf83dc5b7f9ea6de9e239c53d98444843c170eb923e0a8cefb09c465b",
+    "docker/docker-compose.load.yaml": "9b7522794f5129aae8f7cb36671f448163b6190bf3d67b04e8b5f83bf9d21b80378fbe3d1c7e8c192299cb060338d7246a1299e504a375da2e972c8398f15095",
+    "app/infrastructure/ag_ui_journal.py": "9d4a6b97cce47802205bedd4b5f5ffbc5f49aa126b398f323446a08c1ec37c6c5dd00d7f4dfa4b707acebf75874f01c24fe8857588f2b24cfb0bf5522c28c5f3",
+    "app/infrastructure/persistence/sql/repositories.py": "3143610431f31bad344b3b8892086f33caf4b0c6323eb083e237d432234995133080564886a5eec12309a5d919af704e4d1dfc9892ec2fe6f20edccae27422dc",
+    "app/infrastructure/persistence/sql/session_store.py": "ae96518148de87a9ebd5c8495f19fbfeb45ac1a51b81f8372ece124fba4f29353fdc8a4043f798f64735607cde2e37d504ea8edd60a36e1df6b38c621ee30ba6",
+    "app/infrastructure/cache/redis_cache.py": "60bac2403cbc116035dc38de56503008addfbf3db44a1cabe1f429f77ff662fbe31d4178f1e349199cda7f166b99820a1e0a0b7694c610d09a181dab0c546ec8"
+  },
+  "model_concurrency_limit": 10000,
+  "model_min_interval_seconds": 0,
+  "worker_concurrency": 2,
+  "mock": {
+    "MOCK_TTFT_SECONDS": "0.8",
+    "MOCK_TOKEN_SECONDS": "0.03",
+    "MOCK_RESPONSE_TOKENS": "300",
+    "MOCK_ORDER_RATE": "0.1",
+    "MOCK_ERROR_RATE": "0"
+  }
+}

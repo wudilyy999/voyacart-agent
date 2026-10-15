@@ -1,0 +1,22 @@
+{
+  "scope": "2026-10-15 中文派生集 200 条翻译；从发起 HTTP 请求计到收到响应，不含网关节流等待",
+  "requests": 200,
+  "http_statuses": {
+    "200": 200
+  },
+  "latency_seconds": {
+    "min": 2.31033204193227,
+    "mean": 5.943403358152718,
+    "p50": 4.305811458034441,
+    "p95": 14.234447832917795,
+    "max": 36.73043387499638,
+    "percentile_method": "nearest_rank"
+  },
+  "gateway_reported_usage": {
+    "prompt_tokens": 22956,
+    "completion_tokens": 75260,
+    "total_tokens": 98216
+  },
+  "usage_reported_requests": 200,
+  "billing": "网关未返回费用，记为未知"
+}

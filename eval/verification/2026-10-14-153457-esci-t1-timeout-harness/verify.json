@@ -1,0 +1,7 @@
+{
+  "passed": false,
+  "reasons": [
+    "场景缺失或失败"
+  ],
+  "report": "eval/verification/2026-10-14-153457-esci-t1-timeout-harness/report.html"
+}

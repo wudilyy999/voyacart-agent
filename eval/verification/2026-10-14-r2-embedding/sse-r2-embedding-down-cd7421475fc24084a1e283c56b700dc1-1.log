@@ -1,0 +1,498 @@
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:1
+data: {"type": "RUN_STARTED", "threadId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1", "runId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:2
+data: {"type": "STATE_SNAPSHOT", "snapshot": {"products": [], "shoppingForm": null, "confirmations": [], "toolApprovals": [], "skillUsages": [], "searchCompleted": false, "status": "queued", "progress": [], "activities": []}}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:3
+data: {"type": "STATE_SNAPSHOT", "snapshot": {"products": [], "shoppingForm": null, "confirmations": [], "toolApprovals": [], "skillUsages": [], "searchCompleted": false, "status": "queued", "progress": [], "activities": []}}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:4
+data: {"type": "STATE_SNAPSHOT", "snapshot": {"products": [], "shoppingForm": null, "confirmations": [], "toolApprovals": [], "skillUsages": [], "searchCompleted": false, "status": "running", "progress": [], "activities": []}}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:5
+data: {"type": "TOOL_CALL_START", "toolCallId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:tool:call_search_04c3e8d0731e48f6a261e74928e3f4fc", "toolCallName": "product_search_tool"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:6
+data: {"type": "CUSTOM", "name": "activity.upsert", "value": {"id": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:tool:call_search_04c3e8d0731e48f6a261e74928e3f4fc", "runId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1", "kind": "tool", "label": "检索商品", "status": "preparing", "sequence": 1, "startedAt": 1791979381566, "finishedAt": null, "source": "agentscope", "toolCallId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:tool:call_search_04c3e8d0731e48f6a261e74928e3f4fc", "toolName": "product_search_tool"}}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:7
+data: {"type": "TOOL_CALL_ARGS", "toolCallId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:tool:call_search_04c3e8d0731e48f6a261e74928e3f4fc", "delta": "{\"normalized_query\": \"旅行 背包\", \"category\": \"旅行装备\", \"ship_to\": \"CN\", \"target_currency\": \"CNY\", \"top_k\": 3, \"price_max_major\": 300}"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:8
+data: {"type": "TOOL_CALL_END", "toolCallId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:tool:call_search_04c3e8d0731e48f6a261e74928e3f4fc"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:9
+data: {"type": "CUSTOM", "name": "activity.upsert", "value": {"id": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:tool:call_search_04c3e8d0731e48f6a261e74928e3f4fc", "runId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1", "kind": "tool", "label": "检索商品", "status": "preparing", "sequence": 1, "startedAt": 1791979381566, "finishedAt": null, "source": "agentscope", "toolCallId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:tool:call_search_04c3e8d0731e48f6a261e74928e3f4fc", "toolName": "product_search_tool", "inputSummary": "配送国家 CN · 币种 CNY · 预算上限 300 · 最多 3 件"}}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:10
+data: {"type": "CUSTOM", "name": "activity.upsert", "value": {"id": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:tool:call_search_04c3e8d0731e48f6a261e74928e3f4fc", "runId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1", "kind": "tool", "label": "检索商品", "status": "running", "sequence": 1, "startedAt": 1791979381566, "finishedAt": null, "source": "agentscope", "toolCallId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:tool:call_search_04c3e8d0731e48f6a261e74928e3f4fc", "toolName": "product_search_tool", "inputSummary": "配送国家 CN · 币种 CNY · 预算上限 300 · 最多 3 件"}}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:11
+data: {"type": "STATE_SNAPSHOT", "snapshot": {"products": [], "shoppingForm": null, "confirmations": [], "toolApprovals": [], "skillUsages": [], "searchCompleted": false, "status": "running", "progress": [{"id": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:tool:call_search_04c3e8d0731e48f6a261e74928e3f4fc", "label": "检索商品", "status": "running"}], "activities": [{"id": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:tool:call_search_04c3e8d0731e48f6a261e74928e3f4fc", "runId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1", "kind": "tool", "label": "检索商品", "status": "running", "sequence": 1, "startedAt": 1791979381566, "finishedAt": null, "source": "agentscope", "toolCallId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:tool:call_search_04c3e8d0731e48f6a261e74928e3f4fc", "toolName": "product_search_tool", "inputSummary": "配送国家 CN · 币种 CNY · 预算上限 300 · 最多 3 件"}]}}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:12
+data: {"type": "STATE_SNAPSHOT", "snapshot": {"products": [{"product_id": "P1052", "title": "TravelScale 便携行李称", "brand": "TravelScale", "category": "旅行装备", "origin_country": "CN", "price_major": 45.0, "currency": "CNY", "source_price_major": 45.0, "source_currency": "CNY", "highlights": ["量程：最大 50kg"], "skus": [{"sku_id": "P1052-S1", "spec": "黑色", "price_major": 45.0, "currency": "CNY", "stock": 200}], "score": 0.6277, "source_platform": "etsy", "canonical_product_id": "CAN-LEGACY-022", "material_tags": ["天然材料"], "weight_kg": 0.33, "description": "行李称 50kg 电子称 便携 避免超重 背带式", "rating_summary": {"average": 4.4, "review_count": 272}, "rating_is_live": false, "ships_to": ["CN", "US"], "dimensions_cm": {"height": 14, "length": 34, "width": 15}, "updated_at": "2026-08-01", "default_sku_id": "P1052-S1", "image_url": null, "image_kind": "placeholder", "image_alt": "TravelScale 便携行李称：暂无商品图片", "landed_price": {"ship_to": "CN", "subtotal_major": 45.0, "freight_major": 25.0, "tariff_major": 0.0, "tariff_rate": 0.09, "de_minimis_applied": true, "landed_total_major": 70.0, "currency": "CNY"}, "external_product_id": "etsy-P1052"}, {"product_id": "P30000", "title": "Lingua Hiking backpack — Capacity: 20 L · ML-01-1", "brand": "Lingua", "category": "旅行装备", "origin_country": "CN", "price_major": 75.04, "currency": "CNY", "source_price_major": 9.62, "source_currency": "EUR", "highlights": ["Capacity：20 L", "Material：Synthetic polymer"], "skus": [{"sku_id": "P30000-S1", "spec": "Black / Capacity: 20 L", "price_major": 9.62, "currency": "EUR", "stock": 15}, {"sku_id": "P30000-S2", "spec": "Grey / Capacity: 20 L", "price_major": 10.0, "currency": "EUR", "stock": 16}], "score": 0.6109, "source_platform": "etsy", "canonical_product_id": "CAN-ML-01-1", "material_tags": ["合成聚合物"], "weight_kg": 0.6, "description": "Carry equipment on day hikes. Capacity: 20 L. Material: Synthetic polymer. Model: ML-01-1.", "rating_summary": {"average": 4.0, "review_count": 20}, "rating_is_live": false, "ships_to": ["CN", "US", "EU", "JP", "SG"], "dimensions_cm": {"length": 45, "width": 28, "height": 16}, "updated_at": "2026-09-18", "default_sku_id": "P30000-S1", "image_url": null, "image_kind": "placeholder", "image_alt": "Lingua Hiking backpack — Capacity: 20 L · ML-01-1：暂无商品图片", "landed_price": {"ship_to": "CN", "subtotal_major": 75.04, "freight_major": 25.0, "tariff_major": 0.0, "tariff_rate": 0.09, "de_minimis_applied": true, "landed_total_major": 100.04, "currency": "CNY"}, "source_language": "en", "source_locale": "en-US", "external_product_id": "demo-etsy-en-US-P30000", "data_provenance": "synthetic"}, {"product_id": "P20000", "title": "Lingua Hiking backpack — Capacity: 20 L · ML-01-1", "brand": "Lingua", "category": "旅行装备", "origin_country": "CN", "price_major": 74.9, "currency": "CNY", "source_price_major": 10.55, "source_currency": "USD", "highlights": ["Capacity：20 L", "Material：Synthetic polymer"], "skus": [{"sku_id": "P20000-S1", "spec": "Black / Capacity: 20 L", "price_major": 10.14, "currency": "USD", "stock": 0}, {"sku_id": "P20000-S2", "spec": "Grey / Capacity: 20 L", "price_major": 10.55, "currency": "USD", "stock": 16}], "score": 0.6109, "source_platform": "ebay", "canonical_product_id": "CAN-ML-01-1", "material_tags": ["合成聚合物"], "weight_kg": 0.6, "description": "Carry equipment on day hikes. Capacity: 20 L. Material: Synthetic polymer. Model: ML-01-1.", "rating_summary": {"average": 4.0, "review_count": 20}, "rating_is_live": false, "ships_to": ["CN", "US", "EU", "JP", "SG"], "dimensions_cm": {"length": 45, "width": 28, "height": 16}, "updated_at": "2026-09-18", "default_sku_id": "P20000-S2", "image_url": null, "image_kind": "placeholder", "image_alt": "Lingua Hiking backpack — Capacity: 20 L · ML-01-1：暂无商品图片", "landed_price": {"ship_to": "CN", "subtotal_major": 74.9, "freight_major": 25.0, "tariff_major": 0.0, "tariff_rate": 0.09, "de_minimis_applied": true, "landed_total_major": 99.9, "currency": "CNY"}, "source_language": "en", "source_locale": "en-US", "external_product_id": "demo-ebay-en-US-P20000", "data_provenance": "synthetic"}], "shoppingForm": null, "confirmations": [], "toolApprovals": [], "skillUsages": [], "searchCompleted": true, "status": "running", "progress": [{"id": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:tool:call_search_04c3e8d0731e48f6a261e74928e3f4fc", "label": "检索商品", "status": "running"}], "activities": [{"id": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:tool:call_search_04c3e8d0731e48f6a261e74928e3f4fc", "runId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1", "kind": "tool", "label": "检索商品", "status": "running", "sequence": 1, "startedAt": 1791979381566, "finishedAt": null, "source": "agentscope", "toolCallId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:tool:call_search_04c3e8d0731e48f6a261e74928e3f4fc", "toolName": "product_search_tool", "inputSummary": "配送国家 CN · 币种 CNY · 预算上限 300 · 最多 3 件"}]}}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:13
+data: {"type": "TOOL_CALL_RESULT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:result:call_search_04c3e8d0731e48f6a261e74928e3f4fc", "toolCallId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:tool:call_search_04c3e8d0731e48f6a261e74928e3f4fc", "content": "{\"hits\": [{\"product_id\": \"P1052\", \"title\": \"TravelScale 便携行李称\", \"brand\": \"TravelScale\", \"category\": \"旅行装备\", \"origin_country\": \"CN\", \"price_major\": 45.0, \"currency\": \"CNY\", \"source_price_major\": 45.0, \"source_currency\": \"CNY\", \"highlights\": [\"量程：最大 50kg\"], \"skus\": [{\"sku_id\": \"P1052-S1\", \"spec\": \"黑色\", \"price_major\": 45.0, \"currency\": \"CNY\", \"stock\": 200}], \"score\": 0.6277, \"source_platform\": \"etsy\", \"canonical_product_id\": \"CAN-LEGACY-022\", \"material_tags\": [\"天然材料\"], \"weight_kg\": 0.33, \"description\": \"行李称 50kg 电子称 便携 避免超重 背带式\", \"rating_summary\": {\"average\": 4.4, \"review_count\": 272}, \"rating_is_live\": false, \"ships_to\": [\"CN\", \"US\"], \"dimensions_cm\": {\"height\": 14, \"length\": 34, \"width\": 15}, \"updated_at\": \"2026-08-01\", \"default_sku_id\": \"P1052-S1\", \"image_kind\": \"placeholder\", \"image_alt\": \"TravelScale 便携行李称：暂无商品图片\", \"landed_price\": {\"ship_to\": \"CN\", \"subtotal_major\": 45.0, \"freight_major\": 25.0, \"tariff_major\": 0.0, \"tariff_rate\": 0.09, \"de_minimis_applied\": true, \"landed_total_major\": 70.0, \"currency\": \"CNY\"}, \"external_product_id\": \"etsy-P1052\"}, {\"product_id\": \"P30000\", \"title\": \"Lingua Hiking backpack — Capacity: 20 L · ML-01-1\", \"brand\": \"Lingua\", \"category\": \"旅行装备\", \"origin_country\": \"CN\", \"price_major\": 75.04, \"currency\": \"CNY\", \"source_price_major\": 9.62, \"source_currency\": \"EUR\", \"highlights\": [\"Capacity：20 L\", \"Material：Synthetic polymer\"], \"skus\": [{\"sku_id\": \"P30000-S1\", \"spec\": \"Black / Capacity: 20 L\", \"price_major\": 9.62, \"currency\": \"EUR\", \"stock\": 15}, {\"sku_id\": \"P30000-S2\", \"spec\": \"Grey / Capacity: 20 L\", \"price_major\": 10.0, \"currency\": \"EUR\", \"stock\": 16}], \"score\": 0.6109, \"source_platform\": \"etsy\", \"canonical_product_id\": \"CAN-ML-01-1\", \"material_tags\": [\"合成聚合物\"], \"weight_kg\": 0.6, \"description\": \"Carry equipment on day hikes. Capacity: 20 L. Material: Synthetic polymer. Model: ML-01-1.\", \"rating_summary\": {\"average\": 4.0, \"review_count\": 20}, \"rating_is_live\": false, \"ships_to\": [\"CN\", \"US\", \"EU\", \"JP\", \"SG\"], \"dimensions_cm\": {\"length\": 45, \"width\": 28, \"height\": 16}, \"updated_at\": \"2026-09-18\", \"default_sku_id\": \"P30000-S1\", \"image_kind\": \"placeholder\", \"image_alt\": \"Lingua Hiking backpack — Capacity: 20 L · ML-01-1：暂无商品图片\", \"landed_price\": {\"ship_to\": \"CN\", \"subtotal_major\": 75.04, \"freight_major\": 25.0, \"tariff_major\": 0.0, \"tariff_rate\": 0.09, \"de_minimis_applied\": true, \"landed_total_major\": 100.04, \"currency\": \"CNY\"}, \"source_language\": \"en\", \"source_locale\": \"en-US\", \"external_product_id\": \"demo-etsy-en-US-P30000\", \"data_provenance\": \"synthetic\"}, {\"product_id\": \"P20000\", \"title\": \"Lingua Hiking backpack — Capacity: 20 L · ML-01-1\", \"brand\": \"Lingua\", \"category\": \"旅行装备\", \"origin_country\": \"CN\", \"price_major\": 74.9, \"currency\": \"CNY\", \"source_price_major\": 10.55, \"source_currency\": \"USD\", \"highlights\": [\"Capacity：20 L\", \"Material：Synthetic polymer\"], \"skus\": [{\"sku_id\": \"P20000-S1\", \"spec\": \"Black / Capacity: 20 L\", \"price_major\": 10.14, \"currency\": \"USD\", \"stock\": 0}, {\"sku_id\": \"P20000-S2\", \"spec\": \"Grey / Capacity: 20 L\", \"price_major\": 10.55, \"currency\": \"USD\", \"stock\": 16}], \"score\": 0.6109, \"source_platform\": \"ebay\", \"canonical_product_id\": \"CAN-ML-01-1\", \"material_tags\": [\"合成聚合物\"], \"weight_kg\": 0.6, \"description\": \"Carry equipment on day hikes. Capacity: 20 L. Material: Synthetic polymer. Model: ML-01-1.\", \"rating_summary\": {\"average\": 4.0, \"review_count\": 20}, \"rating_is_live\": false, \"ships_to\": [\"CN\", \"US\", \"EU\", \"JP\", \"SG\"], \"dimensions_cm\": {\"length\": 45, \"width\": 28, \"height\": 16}, \"updated_at\": \"2026-09-18\", \"default_sku_id\": \"P20000-S2\", \"image_kind\": \"placeholder\", \"image_alt\": \"Lingua Hiking backpack — Capacity: 20 L · ML-01-1：暂无商品图片\", \"landed_price\": {\"ship_to\": \"CN\", \"subtotal_major\": 74.9, \"freight_major\": 25.0, \"tariff_major\": 0.0, \"tariff_rate\": 0.09, \"de_minimis_applied\": true, \"landed_total_major\": 99.9, \"currency\": \"CNY\"}, \"source_language\": \"en\", \"source_locale\": \"en-US\", \"external_product_id\": \"demo-ebay-en-US-P20000\", \"data_provenance\": \"synthetic\"}], \"total_candidates\": 28, \"recall_strategy\": \"local_embedding\", \"rerank_applied\": false, \"filtered_out\": [{\"product_id\": \"P10000\", \"title\": \"Lingua Hiking backpack — Capacity: 20 L · ML-01-1\", \"category\": \"旅行装备\", \"price_major\": 69.0, \"currency\": \"CNY\", \"reason\": \"out_of_stock\"}, {\"product_id\": \"P40003\", \"title\": \"Lingua Hiking backpack — Capacity: 50 L · ML-01-4\", \"category\": \"旅行装备\", \"price_major\": 303.03, \"currency\": \"CNY\", \"reason\": \"over_price_cap\"}, {\"product_id\": \"P38000\", \"title\": \"Lingua Zaino da escursionismo — Capacità: 20 L · ML-01-1\", \"category\": \"旅行装备\", \"price_major\": 75.0, \"currency\": \"CNY\", \"reason\": \"out_of_stock\"}], \"query_conditions\": {\"normalized_query\": \"旅行 背包\", \"category\": \"旅行装备\", \"ship_to\": \"CN\", \"top_k\": 3, \"price_max_major\": 300, \"target_currency\": \"CNY\", \"excluded_material_tags\": [], \"required_material_tags\": [], \"product_id\": null, \"sku_id\": null}, \"observed_at\": \"2026-10-14T12:03:01.664729+00:00\", \"result_ref\": \"ctx_4b5f5263a0f24314a16028f0ee3ca2c1\"}", "role": "tool"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:14
+data: {"type": "CUSTOM", "name": "activity.upsert", "value": {"id": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:tool:call_search_04c3e8d0731e48f6a261e74928e3f4fc", "runId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1", "kind": "tool", "label": "检索商品", "status": "completed", "sequence": 1, "startedAt": 1791979381566, "finishedAt": 1791979381669, "source": "agentscope", "toolCallId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:tool:call_search_04c3e8d0731e48f6a261e74928e3f4fc", "toolName": "product_search_tool", "inputSummary": "配送国家 CN · 币种 CNY · 预算上限 300 · 最多 3 件", "resultSummary": "检索返回 3 件商品。"}}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:15
+data: {"type": "STATE_SNAPSHOT", "snapshot": {"products": [{"product_id": "P1052", "title": "TravelScale 便携行李称", "brand": "TravelScale", "category": "旅行装备", "origin_country": "CN", "price_major": 45.0, "currency": "CNY", "source_price_major": 45.0, "source_currency": "CNY", "highlights": ["量程：最大 50kg"], "skus": [{"sku_id": "P1052-S1", "spec": "黑色", "price_major": 45.0, "currency": "CNY", "stock": 200}], "score": 0.6277, "source_platform": "etsy", "canonical_product_id": "CAN-LEGACY-022", "material_tags": ["天然材料"], "weight_kg": 0.33, "description": "行李称 50kg 电子称 便携 避免超重 背带式", "rating_summary": {"average": 4.4, "review_count": 272}, "rating_is_live": false, "ships_to": ["CN", "US"], "dimensions_cm": {"height": 14, "length": 34, "width": 15}, "updated_at": "2026-08-01", "default_sku_id": "P1052-S1", "image_url": null, "image_kind": "placeholder", "image_alt": "TravelScale 便携行李称：暂无商品图片", "landed_price": {"ship_to": "CN", "subtotal_major": 45.0, "freight_major": 25.0, "tariff_major": 0.0, "tariff_rate": 0.09, "de_minimis_applied": true, "landed_total_major": 70.0, "currency": "CNY"}, "external_product_id": "etsy-P1052"}, {"product_id": "P30000", "title": "Lingua Hiking backpack — Capacity: 20 L · ML-01-1", "brand": "Lingua", "category": "旅行装备", "origin_country": "CN", "price_major": 75.04, "currency": "CNY", "source_price_major": 9.62, "source_currency": "EUR", "highlights": ["Capacity：20 L", "Material：Synthetic polymer"], "skus": [{"sku_id": "P30000-S1", "spec": "Black / Capacity: 20 L", "price_major": 9.62, "currency": "EUR", "stock": 15}, {"sku_id": "P30000-S2", "spec": "Grey / Capacity: 20 L", "price_major": 10.0, "currency": "EUR", "stock": 16}], "score": 0.6109, "source_platform": "etsy", "canonical_product_id": "CAN-ML-01-1", "material_tags": ["合成聚合物"], "weight_kg": 0.6, "description": "Carry equipment on day hikes. Capacity: 20 L. Material: Synthetic polymer. Model: ML-01-1.", "rating_summary": {"average": 4.0, "review_count": 20}, "rating_is_live": false, "ships_to": ["CN", "US", "EU", "JP", "SG"], "dimensions_cm": {"length": 45, "width": 28, "height": 16}, "updated_at": "2026-09-18", "default_sku_id": "P30000-S1", "image_url": null, "image_kind": "placeholder", "image_alt": "Lingua Hiking backpack — Capacity: 20 L · ML-01-1：暂无商品图片", "landed_price": {"ship_to": "CN", "subtotal_major": 75.04, "freight_major": 25.0, "tariff_major": 0.0, "tariff_rate": 0.09, "de_minimis_applied": true, "landed_total_major": 100.04, "currency": "CNY"}, "source_language": "en", "source_locale": "en-US", "external_product_id": "demo-etsy-en-US-P30000", "data_provenance": "synthetic"}, {"product_id": "P20000", "title": "Lingua Hiking backpack — Capacity: 20 L · ML-01-1", "brand": "Lingua", "category": "旅行装备", "origin_country": "CN", "price_major": 74.9, "currency": "CNY", "source_price_major": 10.55, "source_currency": "USD", "highlights": ["Capacity：20 L", "Material：Synthetic polymer"], "skus": [{"sku_id": "P20000-S1", "spec": "Black / Capacity: 20 L", "price_major": 10.14, "currency": "USD", "stock": 0}, {"sku_id": "P20000-S2", "spec": "Grey / Capacity: 20 L", "price_major": 10.55, "currency": "USD", "stock": 16}], "score": 0.6109, "source_platform": "ebay", "canonical_product_id": "CAN-ML-01-1", "material_tags": ["合成聚合物"], "weight_kg": 0.6, "description": "Carry equipment on day hikes. Capacity: 20 L. Material: Synthetic polymer. Model: ML-01-1.", "rating_summary": {"average": 4.0, "review_count": 20}, "rating_is_live": false, "ships_to": ["CN", "US", "EU", "JP", "SG"], "dimensions_cm": {"length": 45, "width": 28, "height": 16}, "updated_at": "2026-09-18", "default_sku_id": "P20000-S2", "image_url": null, "image_kind": "placeholder", "image_alt": "Lingua Hiking backpack — Capacity: 20 L · ML-01-1：暂无商品图片", "landed_price": {"ship_to": "CN", "subtotal_major": 74.9, "freight_major": 25.0, "tariff_major": 0.0, "tariff_rate": 0.09, "de_minimis_applied": true, "landed_total_major": 99.9, "currency": "CNY"}, "source_language": "en", "source_locale": "en-US", "external_product_id": "demo-ebay-en-US-P20000", "data_provenance": "synthetic"}], "shoppingForm": null, "confirmations": [], "toolApprovals": [], "skillUsages": [], "searchCompleted": true, "status": "running", "progress": [{"id": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:tool:call_search_04c3e8d0731e48f6a261e74928e3f4fc", "label": "检索商品", "status": "completed"}], "activities": [{"id": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:tool:call_search_04c3e8d0731e48f6a261e74928e3f4fc", "runId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1", "kind": "tool", "label": "检索商品", "status": "completed", "sequence": 1, "startedAt": 1791979381566, "finishedAt": 1791979381669, "source": "agentscope", "toolCallId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:tool:call_search_04c3e8d0731e48f6a261e74928e3f4fc", "toolName": "product_search_tool", "inputSummary": "配送国家 CN · 币种 CNY · 预算上限 300 · 最多 3 件", "resultSummary": "检索返回 3 件商品。"}]}}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:16
+data: {"type": "TEXT_MESSAGE_START", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "role": "assistant"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:17
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "已检"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:18
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "索旅"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:19
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "行商"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:20
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "品。"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:21
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "请查"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:22
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "看商"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:23
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "品卡"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:24
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "中的"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:25
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "规格"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:26
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "、库"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:27
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "存与"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:28
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "到手"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:29
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "价，"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:30
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "选择"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:31
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "商品后"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:32
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "可继"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:33
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "续比"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:34
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "较或"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:35
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "准备订"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:36
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "单确"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:37
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "认。"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:38
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "不同站"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:39
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "点保"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:40
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "留原"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:41
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "币价"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:42
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "格，"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:43
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "预算"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:44
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "筛选"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:45
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "使用"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:46
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "目标"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:47
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "币种"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:48
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "。请"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:49
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "核对"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:50
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "配送"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:51
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "目的"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:52
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "地、"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:53
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "材质和"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:54
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "数量"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:55
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "。确"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:56
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "认卡"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:57
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "准备"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:58
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "后，"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:59
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "订单"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:60
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "仍需"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:61
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "用户"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:62
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "点击"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:63
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "批准"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:64
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "才能创"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:65
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "建。"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:66
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "此回"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:67
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "复用"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:68
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "于检验"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:69
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "流式"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:70
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "传输"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:71
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "、页"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:72
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "面恢"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:73
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "复和"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:74
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "并发"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:75
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "执行"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:76
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "。已"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:77
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "检索"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:78
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "旅行"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:79
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "商品"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:80
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "。请"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:81
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "查看"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:82
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "商品"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:83
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "卡中"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:84
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "的规"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:85
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "格、"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:86
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "库存"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:87
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "与到"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:88
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "手价"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:89
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "，选"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:90
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "择商"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:91
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "品后可"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:92
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "继续"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:93
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "比较"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:94
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "或准"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:95
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "备订"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:96
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "单确"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:97
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "认。"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:98
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "不同"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:99
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "站点"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:100
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "保留"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:101
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "原币"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:102
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "价格"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:103
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "，预"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:104
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "算筛"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:105
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "选使"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:106
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "用目"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:107
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "标币"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:108
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "种。"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:109
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "请核"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:110
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "对配"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:111
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "送目"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:112
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "的地"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:113
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "、材"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:114
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "质和"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:115
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "数量"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:116
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "。确"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:117
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "认卡"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:118
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "准备"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:119
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "后，"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:120
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "订单"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:121
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "仍需"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:122
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "用户"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:123
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "点击"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:124
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "批准"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:125
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "才能"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:126
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "创建"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:127
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "。此"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:128
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "回复"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:129
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "用于"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:130
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "检验"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:131
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "流式"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:132
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "传输"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:133
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "、页"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:134
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "面恢"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:135
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "复和"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:136
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "并发"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:137
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "执行"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:138
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "。已检"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:139
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "索旅"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:140
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "行商品"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:141
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "。请"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:142
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "查看"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:143
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "商品"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:144
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "卡中"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:145
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "的规"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:146
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "格、"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:147
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "库存与"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:148
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "到手"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:149
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "价，"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:150
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "选择"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:151
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "商品"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:152
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "后可"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:153
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "继续"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:154
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "比较"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:155
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "或准"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:156
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "备订"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:157
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "单确"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:158
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "认。"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:159
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "不同"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:160
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "站点"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:161
+data: {"type": "TEXT_MESSAGE_CONTENT", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf", "delta": "保留"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:162
+data: {"type": "TEXT_MESSAGE_END", "messageId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:text:34c099d8094640ef8717a15cc8afbddf"}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:163
+data: {"type": "CUSTOM", "name": "usage.summary", "value": {"status": "success", "elapsed_ms": 12061.874419916421, "model_calls": 2, "input_tokens": 200, "output_tokens": 428, "observed_input_tokens": 200, "observed_output_tokens": 428, "unknown_usage_calls": 0, "active_attempts_at_finish": 0, "usage_complete": true, "ttft_p95_ms": 808.1370599102229, "model_elapsed_ms": 11534.580505103804, "tool_calls": 1, "tool_errors": 0, "fallbacks": 0, "cost_usd": null, "unknown_cost_calls": 2}}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:164
+data: {"type": "MESSAGES_SNAPSHOT", "messages": [{"id": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1-user", "role": "user", "content": "预算300元以内，找一个寄到中国的轻便背包", "runId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1"}, {"id": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:final:answer", "role": "assistant", "content": "已检索旅行商品。请查看商品卡中的规格、库存与到手价，选择商品后可继续比较或准备订单确认。不同站点保留原币价格，预算筛选使用目标币种。请核对配送目的地、材质和数量。确认卡准备后，订单仍需用户点击批准才能创建。此回复用于检验流式传输、页面恢复和并发执行。已检索旅行商品。请查看商品卡中的规格、库存与到手价，选择商品后可继续比较或准备订单确认。不同站点保留原币价格，预算筛选使用目标币种。请核对配送目的地、材质和数量。确认卡准备后，订单仍需用户点击批准才能创建。此回复用于检验流式传输、页面恢复和并发执行。已检索旅行商品。请查看商品卡中的规格、库存与到手价，选择商品后可继续比较或准备订单确认。不同站点保留"}]}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:165
+data: {"type": "STATE_SNAPSHOT", "snapshot": {"products": [{"product_id": "P1052", "title": "TravelScale 便携行李称", "brand": "TravelScale", "category": "旅行装备", "origin_country": "CN", "price_major": 45.0, "currency": "CNY", "source_price_major": 45.0, "source_currency": "CNY", "highlights": ["量程：最大 50kg"], "skus": [{"sku_id": "P1052-S1", "spec": "黑色", "price_major": 45.0, "currency": "CNY", "stock": 200}], "score": 0.6277, "source_platform": "etsy", "canonical_product_id": "CAN-LEGACY-022", "material_tags": ["天然材料"], "weight_kg": 0.33, "description": "行李称 50kg 电子称 便携 避免超重 背带式", "rating_summary": {"average": 4.4, "review_count": 272}, "rating_is_live": false, "ships_to": ["CN", "US"], "dimensions_cm": {"height": 14, "length": 34, "width": 15}, "updated_at": "2026-08-01", "default_sku_id": "P1052-S1", "image_url": null, "image_kind": "placeholder", "image_alt": "TravelScale 便携行李称：暂无商品图片", "landed_price": {"ship_to": "CN", "subtotal_major": 45.0, "freight_major": 25.0, "tariff_major": 0.0, "tariff_rate": 0.09, "de_minimis_applied": true, "landed_total_major": 70.0, "currency": "CNY"}, "external_product_id": "etsy-P1052"}, {"product_id": "P30000", "title": "Lingua Hiking backpack — Capacity: 20 L · ML-01-1", "brand": "Lingua", "category": "旅行装备", "origin_country": "CN", "price_major": 75.04, "currency": "CNY", "source_price_major": 9.62, "source_currency": "EUR", "highlights": ["Capacity：20 L", "Material：Synthetic polymer"], "skus": [{"sku_id": "P30000-S1", "spec": "Black / Capacity: 20 L", "price_major": 9.62, "currency": "EUR", "stock": 15}, {"sku_id": "P30000-S2", "spec": "Grey / Capacity: 20 L", "price_major": 10.0, "currency": "EUR", "stock": 16}], "score": 0.6109, "source_platform": "etsy", "canonical_product_id": "CAN-ML-01-1", "material_tags": ["合成聚合物"], "weight_kg": 0.6, "description": "Carry equipment on day hikes. Capacity: 20 L. Material: Synthetic polymer. Model: ML-01-1.", "rating_summary": {"average": 4.0, "review_count": 20}, "rating_is_live": false, "ships_to": ["CN", "US", "EU", "JP", "SG"], "dimensions_cm": {"length": 45, "width": 28, "height": 16}, "updated_at": "2026-09-18", "default_sku_id": "P30000-S1", "image_url": null, "image_kind": "placeholder", "image_alt": "Lingua Hiking backpack — Capacity: 20 L · ML-01-1：暂无商品图片", "landed_price": {"ship_to": "CN", "subtotal_major": 75.04, "freight_major": 25.0, "tariff_major": 0.0, "tariff_rate": 0.09, "de_minimis_applied": true, "landed_total_major": 100.04, "currency": "CNY"}, "source_language": "en", "source_locale": "en-US", "external_product_id": "demo-etsy-en-US-P30000", "data_provenance": "synthetic"}, {"product_id": "P20000", "title": "Lingua Hiking backpack — Capacity: 20 L · ML-01-1", "brand": "Lingua", "category": "旅行装备", "origin_country": "CN", "price_major": 74.9, "currency": "CNY", "source_price_major": 10.55, "source_currency": "USD", "highlights": ["Capacity：20 L", "Material：Synthetic polymer"], "skus": [{"sku_id": "P20000-S1", "spec": "Black / Capacity: 20 L", "price_major": 10.14, "currency": "USD", "stock": 0}, {"sku_id": "P20000-S2", "spec": "Grey / Capacity: 20 L", "price_major": 10.55, "currency": "USD", "stock": 16}], "score": 0.6109, "source_platform": "ebay", "canonical_product_id": "CAN-ML-01-1", "material_tags": ["合成聚合物"], "weight_kg": 0.6, "description": "Carry equipment on day hikes. Capacity: 20 L. Material: Synthetic polymer. Model: ML-01-1.", "rating_summary": {"average": 4.0, "review_count": 20}, "rating_is_live": false, "ships_to": ["CN", "US", "EU", "JP", "SG"], "dimensions_cm": {"length": 45, "width": 28, "height": 16}, "updated_at": "2026-09-18", "default_sku_id": "P20000-S2", "image_url": null, "image_kind": "placeholder", "image_alt": "Lingua Hiking backpack — Capacity: 20 L · ML-01-1：暂无商品图片", "landed_price": {"ship_to": "CN", "subtotal_major": 74.9, "freight_major": 25.0, "tariff_major": 0.0, "tariff_rate": 0.09, "de_minimis_applied": true, "landed_total_major": 99.9, "currency": "CNY"}, "source_language": "en", "source_locale": "en-US", "external_product_id": "demo-ebay-en-US-P20000", "data_provenance": "synthetic"}], "shoppingForm": null, "confirmations": [], "toolApprovals": [], "skillUsages": [], "searchCompleted": true, "status": "completed", "progress": [{"id": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:tool:call_search_04c3e8d0731e48f6a261e74928e3f4fc", "label": "检索商品", "status": "completed"}], "activities": [{"id": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:tool:call_search_04c3e8d0731e48f6a261e74928e3f4fc", "runId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1", "kind": "tool", "label": "检索商品", "status": "completed", "sequence": 1, "startedAt": 1791979381566, "finishedAt": 1791979381669, "source": "agentscope", "toolCallId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:tool:call_search_04c3e8d0731e48f6a261e74928e3f4fc", "toolName": "product_search_tool", "inputSummary": "配送国家 CN · 币种 CNY · 预算上限 300 · 最多 3 件", "resultSummary": "检索返回 3 件商品。"}]}}
+
+id: r2-embedding-down-cd7421475fc24084a1e283c56b700dc1:166
+data: {"type": "RUN_FINISHED", "threadId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1", "runId": "r2-embedding-down-cd7421475fc24084a1e283c56b700dc1", "outcome": {"type": "success"}}
+

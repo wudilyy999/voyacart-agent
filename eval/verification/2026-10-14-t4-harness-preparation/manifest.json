@@ -1,0 +1,12 @@
+{
+  "stage": "initial_fixture_validation",
+  "passed": 7,
+  "model_calls": 0,
+  "http_attempts": 0,
+  "full_harness": "not_run",
+  "source_fingerprints": {
+    "scripts/eval/prepare_esci_harness.py": "73d0f9a40bd6299956f13a990b104b28f8de172f4f35ec490183c359434d7bf30a22aefc73618ff2b2dad709d5383e69e542e8af7f29ab69cb81dac31eb26dba",
+    "tests/test_esci_harness_preparation.py": "063387bd2ea30a63a4064c43c90452b08f40a6c607a8822465529d37e8140b07c923da8860b6b0959cebc5910d4e29615d50c9b9f4c76f8444ec1ee57c3dd7ba"
+  },
+  "source_snapshots": "eval/verification/2026-10-14-t4-harness-preparation/initial-source"
+}

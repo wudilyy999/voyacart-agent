@@ -1,0 +1,132 @@
+{
+  "byte_identical_regeneration": true,
+  "cases_verified": [
+    {
+      "case_id": "esci-zh-us",
+      "checks": {
+        "exact_labels_match": true,
+        "final_ids_pending": true,
+        "query_is_train": true,
+        "query_text_matches": true,
+        "titles_match": true
+      }
+    },
+    {
+      "case_id": "esci-zh-es",
+      "checks": {
+        "exact_labels_match": true,
+        "final_ids_pending": true,
+        "query_is_train": true,
+        "query_text_matches": true,
+        "titles_match": true
+      }
+    },
+    {
+      "case_id": "esci-zh-jp",
+      "checks": {
+        "exact_labels_match": true,
+        "final_ids_pending": true,
+        "query_is_train": true,
+        "query_text_matches": true,
+        "titles_match": true
+      }
+    },
+    {
+      "case_id": "esci-destination",
+      "checks": {
+        "exact_labels_match": true,
+        "final_ids_pending": true,
+        "query_is_train": true,
+        "query_text_matches": true,
+        "titles_match": true
+      }
+    },
+    {
+      "case_id": "esci-budget",
+      "checks": {
+        "exact_labels_match": true,
+        "final_ids_pending": true,
+        "query_is_train": true,
+        "query_text_matches": true,
+        "titles_match": true
+      }
+    },
+    {
+      "case_id": "esci-stock",
+      "checks": {
+        "exact_labels_match": true,
+        "final_ids_pending": true,
+        "query_is_train": true,
+        "query_text_matches": true,
+        "titles_match": true
+      }
+    },
+    {
+      "case_id": "esci-comparison",
+      "checks": {
+        "exact_labels_match": true,
+        "final_ids_pending": true,
+        "query_is_train": true,
+        "query_text_matches": true,
+        "titles_match": true
+      }
+    },
+    {
+      "case_id": "esci-awaiting-confirmation",
+      "checks": {
+        "exact_labels_match": true,
+        "final_ids_pending": true,
+        "query_is_train": true,
+        "query_text_matches": true,
+        "titles_match": true
+      }
+    },
+    {
+      "case_id": "esci-approved-order",
+      "checks": {
+        "exact_labels_match": true,
+        "final_ids_pending": true,
+        "query_is_train": true,
+        "query_text_matches": true,
+        "titles_match": true
+      }
+    },
+    {
+      "case_id": "esci-embedding-unavailable",
+      "checks": {
+        "exact_labels_match": true,
+        "final_ids_pending": true,
+        "query_is_train": true,
+        "query_text_matches": true,
+        "titles_match": true
+      }
+    }
+  ],
+  "default_harness_source_unchanged": true,
+  "full_harness": "not_run",
+  "http_attempts": 0,
+  "input_fingerprints": {
+    "examples.jsonl": "992c2293dd4402a7f51f2aca20b920d55f28edadc63988f3ac4d1362556ae1d5ed52941675f85cf6300255278ee07fe8ff4ec339120f536c3e28845b1b319fdc",
+    "products.jsonl": "eadc9cc3931683119935e9eee4b2d062b550dde65610480280669fd630c05b52538a7d14f304001389e366e09f5549aef47cfda8d02a9c4f767e23b37d718651",
+    "selection-plan.json": "22d2016a2eec7d36edd137a9316f033871a5167c1a3afc579fb11635de6e663d518600b71a674680e12ce388b80b520813a3e9acfd406e200877c5110b0f4b63"
+  },
+  "missing_files": [
+    "data/catalog-esci-v1.jsonl.gz",
+    "data/esci/selection-v1.json",
+    "eval/esci/ranking-dev.jsonl"
+  ],
+  "model_calls": 0,
+  "pending_other_requirements": [
+    "独立 train 中文译文缓存",
+    "显式 esci-v1 开发合同与真实目录工作流"
+  ],
+  "runnable": false,
+  "source_commit": "4f448e8804862664b9934dfe0b61345bb1c7f8a9",
+  "source_fingerprints": {
+    "eval/harness/esci-v1/preparation.json": "3c6a902c60d5c3ee01ae3904812b04eb6d4d94fbb3f87ebfeeb4140d71ab47f0997f21e9ae818963090389cc06ca4417b58b3ef4bddbdda6f0a2f09ca9169976",
+    "eval/harness/esci-v1/prepare.py": "3193afdef7406881140d633685b5427ed5479b0d4b2ce8ddd4cb1220be69b04af578f312e5d35b227c31a428c75c1ee8532b27c9fea0c089a6099d959abb2b44",
+    "eval/verification/2026-10-14-t4-harness-preparation-final/test_preparation.py": "7c8bd21669f3977bc8061f94f978d81094a1392b77f48c8b5599aa6990a3b67ff0b625b40bad03438dbcf649aeefcaef1214cf946023873eb2d2c01fcbd6db0b",
+    "eval/verification/2026-10-14-t4-harness-source-verified/verify_real_plan.py": "4dcafd5fe926c1d8f15b11bad14d68b8f1e2dd94810517a07e089472ea9c328bd8457a5b0bcae84c45e0f58cbff1ace6ad27a94393acd1771d4be46df622ea7b"
+  },
+  "status": "verified_preparation"
+}

@@ -1,0 +1,51 @@
+
+> voyacart-frontend@0.3.0 test
+> vitest run
+
+
+ RUN  v3.2.4 /private/tmp/voyacart-local-fallback-20261014/frontend
+
+ ✓ tests/shoppingForm.test.tsx (9 tests) 109ms
+ ✓ tests/contextWorkspace.test.tsx (15 tests) 191ms
+ ✓ tests/myOrders.test.tsx (2 tests) 165ms
+ ✓ tests/historySearch.test.tsx (9 tests) 426ms
+ ✓ tests/conversationDensity.test.tsx (16 tests) 284ms
+ ✓ tests/productCards.test.tsx (5 tests) 110ms
+ ✓ tests/catalogMedia.test.tsx (2 tests) 42ms
+ ✓ tests/toolApprovals.test.tsx (1 test) 16ms
+ ✓ tests/activities.test.tsx (7 tests) 150ms
+ ✓ tests/skillSlashInteraction.test.tsx (8 tests) 516ms
+stderr | tests/commerceClient.test.ts > 通过官方 SDK 消费真实 AG-UI 协议 > HTTP 错误显示可恢复提示，不把服务器错误页直接渲染给用户
+Agent execution failed: Error: HTTP 503: <html>internal traceback</html>
+    at file:///Users/liyuyang/Downloads/voyacart-agent/frontend/node_modules/@ag-ui/client/src/run/http-request.ts:37:77
+    at doInnerSub (/Users/liyuyang/Downloads/voyacart-agent/frontend/node_modules/rxjs/src/internal/operators/mergeInternals.ts:71:15)
+    at outerNext (/Users/liyuyang/Downloads/voyacart-agent/frontend/node_modules/rxjs/src/internal/operators/mergeInternals.ts:53:58)
+    at OperatorSubscriber._this._next (/Users/liyuyang/Downloads/voyacart-agent/frontend/node_modules/rxjs/src/internal/operators/OperatorSubscriber.ts:70:13)
+    at OperatorSubscriber.Subscriber.next (/Users/liyuyang/Downloads/voyacart-agent/frontend/node_modules/rxjs/src/internal/Subscriber.ts:75:12)
+    at /Users/liyuyang/Downloads/voyacart-agent/frontend/node_modules/rxjs/src/internal/observable/innerFrom.ts:90:24
+    at processTicksAndRejections (node:internal/process/task_queues:104:5) {
+  status: 503,
+  payload: '<html>internal traceback</html>'
+}
+
+ ✓ tests/confirmationCards.test.tsx (11 tests) 32ms
+ ✓ tests/commerceClient.test.ts (13 tests) 92ms
+ ✓ tests/shoppingPlans.test.tsx (14 tests) 38ms
+ ✓ tests/productContract.test.ts (37 tests) 28ms
+ ✓ tests/modelPicker.test.tsx (49 tests) 1280ms
+ ✓ tests/buyerWorkspace.test.tsx (11 tests) 759ms
+ ✓ tests/confirmations.test.ts (8 tests) 8ms
+ ✓ tests/runRecovery.test.ts (25 tests) 697ms
+   ✓ 持久运行恢复（使用官方 AG-UI SDK） > 网络断流按cursor重连，丢弃重复和乱序帧，不重新POST模型  607ms
+ ✓ tests/automations.test.tsx (8 tests) 1746ms
+   ✓ 模板先填表，独立输出与明确授权按模型版本提交，创建不附带执行  379ms
+   ✓ 编辑携带当前 revision，保持合并输出及关闭自动开始的选择  325ms
+   ✓ 保存失败重试沿用 request_id，不能因网络错误重复创建  327ms
+   ✓ 非法时间预览禁止保存，错误显示在时间设置附近  316ms
+   ✓ 自动化复用聊天选择器：分组、搜索、思考与版本进入草稿，取消不修改聊天或默认模型  323ms
+
+ Test Files  19 passed (19)
+      Tests  250 passed (250)
+   Start at  21:02:16
+   Duration  2.79s (transform 1.19s, setup 0ms, collect 4.93s, tests 6.69s, environment 5.16s, prepare 1.33s)
+

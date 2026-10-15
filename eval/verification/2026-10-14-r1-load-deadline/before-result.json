@@ -1,0 +1,12 @@
+{
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_agui_loadtest.py",
+    "-k",
+    "total_deadline_counts"
+  ],
+  "exit_code": 1
+}

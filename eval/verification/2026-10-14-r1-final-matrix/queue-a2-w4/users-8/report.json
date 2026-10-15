@@ -1,0 +1,69 @@
+{
+  "requests": 24,
+  "successful": 24,
+  "errors": 0,
+  "error_rate": 0.0,
+  "error_codes": {},
+  "reconnections": 3,
+  "observed_seconds": 55.36668109893799,
+  "successful_runs_per_second": 0.4334736979649003,
+  "latency_ms": {
+    "first_event_ms": {
+      "samples": 24,
+      "p50": 303.18183300551027,
+      "p95": 1035.104624927044,
+      "p99": 1084.0839170850813
+    },
+    "first_token_ms": {
+      "samples": 24,
+      "p50": 2379.2894169455394,
+      "p95": 4279.076208011247,
+      "p99": 4503.446540911682
+    },
+    "complete_ms": {
+      "samples": 24,
+      "p50": 11479.579541948624,
+      "p95": 13366.064624977298,
+      "p99": 13611.664457945153
+    }
+  },
+  "source": "runs.csv",
+  "latency_scope": "all observed runs; missing times excluded",
+  "users": 8,
+  "sqlite_lock_retries": {
+    "voyacart-r1-matrix-nginx-1": 0,
+    "voyacart-r1-matrix-worker-3": 0,
+    "voyacart-r1-matrix-api-5": 0,
+    "voyacart-r1-matrix-worker-4": 0,
+    "voyacart-r1-matrix-api-4": 0,
+    "voyacart-r1-matrix-worker-5": 0,
+    "voyacart-r1-matrix-worker-6": 0,
+    "voyacart-r1-matrix-qdrant-1": 0,
+    "voyacart-r1-matrix-redis-1": 0,
+    "voyacart-r1-matrix-mock-llm-1": 0
+  },
+  "sqlite_lock_error_log_occurrences": {
+    "voyacart-r1-matrix-nginx-1": 0,
+    "voyacart-r1-matrix-worker-3": 0,
+    "voyacart-r1-matrix-api-5": 0,
+    "voyacart-r1-matrix-worker-4": 0,
+    "voyacart-r1-matrix-api-4": 0,
+    "voyacart-r1-matrix-worker-5": 0,
+    "voyacart-r1-matrix-worker-6": 0,
+    "voyacart-r1-matrix-qdrant-1": 0,
+    "voyacart-r1-matrix-redis-1": 0,
+    "voyacart-r1-matrix-mock-llm-1": 0
+  },
+  "redis_pool_error_log_occurrences": {
+    "voyacart-r1-matrix-nginx-1": 0,
+    "voyacart-r1-matrix-worker-3": 0,
+    "voyacart-r1-matrix-api-5": 0,
+    "voyacart-r1-matrix-worker-4": 0,
+    "voyacart-r1-matrix-api-4": 0,
+    "voyacart-r1-matrix-worker-5": 0,
+    "voyacart-r1-matrix-worker-6": 0,
+    "voyacart-r1-matrix-qdrant-1": 0,
+    "voyacart-r1-matrix-redis-1": 0,
+    "voyacart-r1-matrix-mock-llm-1": 0
+  }
+}

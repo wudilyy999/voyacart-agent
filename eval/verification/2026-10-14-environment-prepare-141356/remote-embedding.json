@@ -1,0 +1,6 @@
+{
+  "http_status": 404,
+  "model": "text-embedding-v4",
+  "requested_dimensions": 1024,
+  "error_response": "{\"error\":{\"message\":\"Model \\\"text-embedding-v4\\\" is not supported by any configured account in this group\",\"type\":\"model_not_found\"}}"
+}

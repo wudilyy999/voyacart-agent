@@ -1,0 +1,137 @@
+{
+  "case_id": "h1-dev-sku",
+  "split": "dev",
+  "mode": "snapshot",
+  "strategy": "current",
+  "repetition": 0,
+  "answer": "第一批商品中符合条件的全部黑色规格如下（数据来源于第一批历史展示记录）：\n\n1. **商品 ID**: P28102\n   - **SKU ID**: `P28102-S2`（规格：黑色 / 20寸）\n   - **历史单价**: 899.0\n   - **原报价币种**: CNY\n\n2. **商品 ID**: P28103\n   - **SKU ID**: `P28103-S1`（规格：石墨黑）\n   - **历史单价**: 165\n   - **原报价币种**: CNY\n\n3. **商品 ID**: P28104\n   - **SKU ID**: `P28104-S1`（规格：曜石黑）\n   - **历史单价**: 219.0\n   - **原报价币种**: USD",
+  "checks": {
+    "facts": true,
+    "current_lookup": true,
+    "no_error": true,
+    "complete_black_sku_set": true,
+    "sku_price_currency_associations": true
+  },
+  "passed": true,
+  "error": null,
+  "usage": [
+    {
+      "kind": "business",
+      "input_tokens": 17445,
+      "output_tokens": 759,
+      "elapsed_ms": 7053.259208099917,
+      "request_context": {
+        "system_estimated_tokens": 1558,
+        "state_estimated_tokens": 0,
+        "product_estimated_tokens": 0,
+        "history_estimated_tokens": 28886,
+        "tool_schema_estimated_tokens": 1,
+        "reason": "buyer_request",
+        "visible_evidence_answer": true,
+        "recovery_attempt": 0
+      },
+      "prompt_cache": {
+        "model": "gemini-3.8-flash-high",
+        "response_model": "gemini-3.8-flash-high",
+        "response_model_matches": true,
+        "response_model_conflict": false,
+        "protocol_status": "valid",
+        "cache_mode": "passthrough",
+        "cache_policy": "static",
+        "cache_marker_count": 0,
+        "cache_reason": "passthrough",
+        "cache_retry_without_markers": false,
+        "cache_read_tokens": null,
+        "cache_write_tokens": null,
+        "cache_usage_invalid": false,
+        "reported_cost": null,
+        "prefix_comparison": "first_request",
+        "prefix_scope_known": true,
+        "prefix_system_hash": "af19be9d996b4b5a54068a5a1c636c77d5dbc14704509001f0b86bd7d4541f87",
+        "prefix_tools_hash": "e724952c7dfa0bef10b91e466e7929c26f617f9bd0b160369a9397df1292cb58",
+        "prefix_message_count": 54,
+        "prefix_common_messages": null,
+        "prefix_common_message_bytes": null,
+        "prefix_first_changed_message": null,
+        "prefix_system_changed": null,
+        "prefix_tools_changed": null,
+        "prefix_parameters_changed": null
+      },
+      "model_execution": {
+        "identity": "gemini-3.8-flash-high|http://127.0.0.1:8917/v1/",
+        "requested_model": "gemini-3.8-flash-high",
+        "response_models": [
+          "gemini-3.8-flash-high"
+        ],
+        "response_model_matches": true,
+        "profile_id": null,
+        "profile_revision": null
+      },
+      "ttft_ms": null
+    }
+  ],
+  "input_tokens": 17445,
+  "output_tokens": 759,
+  "model_calls": 1,
+  "lookup_calls": 0,
+  "lookup_events": [],
+  "context_diagnostics": [
+    {
+      "type": "prune",
+      "before_tokens": 55128,
+      "after_tokens": 55128,
+      "high_watermark": 6000,
+      "next_high_watermark": 6000,
+      "low_watermark": 6000,
+      "archived_results": 0,
+      "protected_results": 2,
+      "below_target": false,
+      "trigger": "pressure"
+    },
+    {
+      "type": "visible_evidence",
+      "covered": true,
+      "batch": 1,
+      "product_count": 5,
+      "historical_lookup_required": false,
+      "prefix_preserved": false
+    }
+  ],
+  "current_calls": 0,
+  "elapsed_ms": 7139,
+  "compactions": [],
+  "round_metrics": [
+    {
+      "elapsed_ms": 7071,
+      "compacted": false,
+      "model_calls": 1
+    }
+  ],
+  "compaction_metrics": [],
+  "final_context_estimated_tokens": 74959,
+  "last_compaction": {
+    "policy_version": "layered-v4",
+    "reason": "pressure",
+    "before_tokens": 15080,
+    "after_tokens": 15080,
+    "archived_results": 0,
+    "summary_changed": false,
+    "elapsed_ms": 8,
+    "status": "noop"
+  },
+  "final_product_observations": 120,
+  "final_product_duplicate_ratio": 0.9166666666666666,
+  "association_check": {
+    "applicable": false,
+    "status": "not_applicable"
+  },
+  "original_checks": {
+    "facts": true,
+    "current_lookup": true,
+    "no_error": true
+  },
+  "layer": "context",
+  "critical": true,
+  "title": "不同SKU价格",
+  "evidence_trace": "traces/h1-dev-sku-current-0.jsonl"
+}

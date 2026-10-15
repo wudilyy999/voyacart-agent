@@ -1,0 +1,25 @@
+{
+  "command": [
+    "/private/tmp/voyacart-local-fallback-20261014/.venv/bin/python",
+    "-m",
+    "scripts.eval.run_product_recall",
+    "--dataset",
+    "eval/v1/product_retrieval.jsonl",
+    "--catalog-file",
+    "data/catalog-v1.jsonl",
+    "--strategy",
+    "keyword_2gram",
+    "--profile",
+    "offline-fallback",
+    "--baseline-file",
+    "eval/v1/baselines/keyword_2gram.json",
+    "--report-dir",
+    "/private/tmp/voyacart-local-fallback-20261014/eval/verification/2026-10-14-integrated-v1-explicit-catalog"
+  ],
+  "exit_code": 0,
+  "duration_seconds": 1.6526611250592396,
+  "head": "5b16af0da006599d833021e931fd2de9bfdcb44a",
+  "catalog_file": "data/catalog-v1.jsonl",
+  "catalog_fingerprint_blake2b": "5c8bdc5ec62167310eb3f1dc14bfe47277a8765e1ff8be223507b389be09f3184e87fd440d57e35cca09f25ca05a31cb18bb2d83e55ec1b53de7c91df952a0b6",
+  "baseline_fingerprint_blake2b": "81434720a009f36c449ea1f25f7648ff115b003f2d75c7b7ff0a7fc803ba16d78aadbe65075fc278ab0b9217383ebafcd5684a1d222f85445e7b8b08f14ebbca"
+}

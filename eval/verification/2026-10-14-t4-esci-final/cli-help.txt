@@ -1,0 +1,13 @@
+usage: run_esci.py [-h] [--catalog CATALOG] [--dataset-dir DATASET_DIR]
+                   [--strategies {keyword_2gram,bm25,embedding_only,embedding_rerank,hybrid_only,hybrid_rerank} [{keyword_2gram,bm25,embedding_only,embedding_rerank,hybrid_only,hybrid_rerank} ...]]
+                   [--index-dir INDEX_DIR] --output OUTPUT
+
+ESCI 开发档评测入口：人工候选排序、全库召回与硬约束，保留实际策略证据。
+
+options:
+  -h, --help            show this help message and exit
+  --catalog CATALOG
+  --dataset-dir DATASET_DIR
+  --strategies {keyword_2gram,bm25,embedding_only,embedding_rerank,hybrid_only,hybrid_rerank} [{keyword_2gram,bm25,embedding_only,embedding_rerank,hybrid_only,hybrid_rerank} ...]
+  --index-dir INDEX_DIR
+  --output OUTPUT

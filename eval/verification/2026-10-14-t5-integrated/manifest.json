@@ -1,0 +1,29 @@
+{
+  "source_commit": "4027c4c266c80745afddbd877046a40f521498c5",
+  "backend_passed": 1976,
+  "backend_exit": 0,
+  "docker_build_exit": 0,
+  "offline_container_exit": 0,
+  "source_fingerprints_blake2b": {
+    "Dockerfile": "92c441b1f9d2773d00149f212d5992f86a0f65875132f875180512e53aaf871ba0f3daec8fa34ed3951893c38a6260c1035cc3e8f733d4ed40837b78cea2b5e0",
+    "app/application/agent_runtime.py": "cfb1e741a4dea144ba0a96d7202a1a8e63895aa67a526825803494d9dff52cb8eba59283b5019b353bef92c4b5c88523fd64580d128cfe16cc6e351fbf4145c0",
+    "app/application/harness/assertions.py": "0773a19d1bca761668c009a1dbda87dea32ad00d2830dbbac9fb5b2058b87f64d9fb31e1c8d7ffc56b428a596cb0aa8ca0f038f5c3387fc8466d4017d595e37e",
+    "app/application/usecases/catalog_search.py": "1b2b3882463ba4753f8938a4bae4f329e4ffdad0e7c82b1f90f2b33f2216223d1760ee67378366b669298e754076f075a9210ee10fa1aaa274fd7b9590da3670",
+    "app/composition.py": "f9e225762423dd0497c8cc842f57e577bbb857ed9b6b48cff80642cddddf010fd95ce2864a17bbf7a9285bdaeadc55608422323cbdbcac0efad0bff3efa987fe",
+    "app/domain/queue/ports/task_queue.py": "3fd69a278d8623258602e617f27c301a8910be6d50c171c6d4367e5228105315e956b8512f9f657dc89ff0997c696db3d21008ca1668a5fde0e679a4358a6a66",
+    "app/infrastructure/ag_ui_journal.py": "8ef2d0e1a509d0cef3bbab7bef3c9da1141f741b3f9fe0379b2ddf4a1b24f7f4b94513a7d0d64732bb56cdc5df74945358a99f1bd7ea58f94bc7e2ac4376351f",
+    "app/infrastructure/ag_ui_signals.py": "bedb5fe225688cf9b9ea22b8c6b7a555dfe051ca59537018e9c93c5e3cf77b3d84693a9a019b0baf73bfc960124008b9ef4e18b129b409af0558189b16f9df1d",
+    "app/infrastructure/embedding/local_multilingual.py": "fa38408731fc65c013764e90ffb7b4d2d83c8d830e1a32d95e027abd710069d0289acee55842f63145c52e212c17d5492e2699c88444270e16e981ed6a2e7009",
+    "app/infrastructure/harness_middleware.py": "861658871f2ccc31020dbb302b574d5de6247dd38b7f62ee44e9fa4f968c0f07a7bdc47f8fe4c92a8896b318bc636de1505cc2fa7c2a5cfa9c3a49e12785be53",
+    "app/infrastructure/persistence/json_file_stores.py": "ea7b393862030e5283c30c71b77215cab2d863b60e9ff914bd733a6dd2f2b3dad805c27ca787d2951848e13d3e106ae02522a650d2f59b33db1adbfe84cdf0a1",
+    "app/infrastructure/persistence/sql/session_store.py": "8072ab288bccf73027da84c4c40ad5f26f1df3324cf1b25ed22422589a5589210f4eeec0462d8611047aa8b9d39dfc8e5db89678f9850f51673dde6fb0ad5359",
+    "app/infrastructure/queue/redis_stream_queue.py": "38b8d24f0d774e997106d8631453481fd9ca13b597ca863d43053700fe1ffb65d3862acc5267e716ad9eef7b4ef28b9ff5ad8ffd26fdbcad49b6bc80caecc6c5",
+    "app/infrastructure/settings.py": "5558af5ce273892c2252b04e2a68b77f035b17152e6d94ac1d30b10fcf182d601550dafb23aa8760173c18ec8b406295c60536bf2c0c9a5441f4b5d61d6f7976",
+    "app/presentation/ag_ui.py": "cff82b8b22986c4ee5f0b42efdf23053b4909a65c609ca0baea9b42ca8ec5e6c085254af7ca58ca3cbc3a4b51567b2e271041e9f16a8dbcfe86dda9c80614df1",
+    "app/presentation/server.py": "d6039c60074bc169d3687b23e951509f25c647f77d9316f3f8f2e1f51ead76f9946e6df608de4369fe635da6e551cbbc5b6fa71d8120e8f1ae6408fea696d626",
+    "app/worker.py": "ef07fc76d5ae49c2d9d81529e25bfcc116f9bc59291d5f0018b9725fd83af5c322f75945741dca3d340cdf943de01433c9d616b465b8afa6230b41b2bfbd2fa6",
+    "docker/docker-compose.scale.yaml": "f35fcfee39fda935e8b8f414e2b4eb3db04d531a96047cedb764b2a42d85621ef2b0697887a7c866c848c90e740f0c52138c86db6bef63e2415d1c2e39f092b9",
+    "docker/docker-compose.yaml": "368f5daf0b676e3f33c12a0e8d1893807d1417e98a78bf7e084c8125f34d938f397a4683ebc9f9814ebec19a08097f8be6004325a9c86452cb3e1da7b4645809",
+    "docker/nginx.scale.conf": "2b57196cb67df38e95da99bcc14bc5d3f28b213f492327e043eaeec994588587f9833637d3d14c81c1e1ad3208648bc60ce923eb8f451c8875934f922e56d2b9"
+  }
+}

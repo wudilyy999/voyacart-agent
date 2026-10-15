@@ -1,0 +1,1703 @@
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:6333/collections/voyacart_products/points "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:6333/collections/voyacart_products/points "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:6333/collections/voyacart_products/points "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:6333/collections/voyacart_products/points "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:6333/collections/voyacart_products/points "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:6333/collections/voyacart_products/points "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:6333/collections/voyacart_products/points "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:6333/collections/voyacart_products/points "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:6333/collections/voyacart_products/points "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:6333/collections/voyacart_products/points "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:6333/collections/voyacart_products/points "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:6333/collections/voyacart_products/points "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:6333/collections/voyacart_products/points "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:6333/collections/voyacart_products/points "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:6333/collections/voyacart_products/points "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 10，待完成 3360
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 20，待完成 3350
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 30，待完成 3340
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 40，待完成 3330
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 50，待完成 3320
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 60，待完成 3310
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 70，待完成 3300
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 80，待完成 3290
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 90，待完成 3280
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 100，待完成 3270
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 110，待完成 3260
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 120，待完成 3250
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 130，待完成 3240
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 140，待完成 3230
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 150，待完成 3220
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 160，待完成 3210
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 170，待完成 3200
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 180，待完成 3190
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 190，待完成 3180
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 200，待完成 3170
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 210，待完成 3160
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 220，待完成 3150
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 230，待完成 3140
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 240，待完成 3130
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 250，待完成 3120
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 260，待完成 3110
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 270，待完成 3100
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 280，待完成 3090
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 290，待完成 3080
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 300，待完成 3070
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 310，待完成 3060
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 320，待完成 3050
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 330，待完成 3040
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 340，待完成 3030
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 350，待完成 3020
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 360，待完成 3010
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 370，待完成 3000
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 380，待完成 2990
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 390，待完成 2980
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 400，待完成 2970
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 410，待完成 2960
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 420，待完成 2950
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 430，待完成 2940
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 440，待完成 2930
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 450，待完成 2920
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 460，待完成 2910
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 470，待完成 2900
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 480，待完成 2890
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 490，待完成 2880
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 500，待完成 2870
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 510，待完成 2860
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 520，待完成 2850
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 530，待完成 2840
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 540，待完成 2830
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 550，待完成 2820
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 560，待完成 2810
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 570，待完成 2800
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 580，待完成 2790
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 590，待完成 2780
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 600，待完成 2770
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 610，待完成 2760
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 620，待完成 2750
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 630，待完成 2740
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 640，待完成 2730
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 650，待完成 2720
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 660，待完成 2710
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 670，待完成 2700
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 680，待完成 2690
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 690，待完成 2680
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 700，待完成 2670
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 710，待完成 2660
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 720，待完成 2650
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 730，待完成 2640
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 740，待完成 2630
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 750，待完成 2620
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 760，待完成 2610
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 770，待完成 2600
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 780，待完成 2590
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 790，待完成 2580
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 800，待完成 2570
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 810，待完成 2560
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 820，待完成 2550
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 830，待完成 2540
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 840，待完成 2530
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 850，待完成 2520
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 860，待完成 2510
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 870，待完成 2500
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 880，待完成 2490
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 890，待完成 2480
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 900，待完成 2470
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 910，待完成 2460
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 920，待完成 2450
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 930，待完成 2440
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 940，待完成 2430
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 950，待完成 2420
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 960，待完成 2410
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 970，待完成 2400
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 980，待完成 2390
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 990，待完成 2380
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1000，待完成 2370
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1010，待完成 2360
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1020，待完成 2350
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1030，待完成 2340
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1040，待完成 2330
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1050，待完成 2320
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1060，待完成 2310
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1070，待完成 2300
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1080，待完成 2290
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1090，待完成 2280
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1100，待完成 2270
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1110，待完成 2260
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1120，待完成 2250
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1130，待完成 2240
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1140，待完成 2230
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1150，待完成 2220
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1160，待完成 2210
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1170，待完成 2200
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1180，待完成 2190
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1190，待完成 2180
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1200，待完成 2170
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1210，待完成 2160
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1220，待完成 2150
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1230，待完成 2140
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1240，待完成 2130
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1250，待完成 2120
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1260，待完成 2110
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1270，待完成 2100
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1280，待完成 2090
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1290，待完成 2080
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1300，待完成 2070
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1310，待完成 2060
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1320，待完成 2050
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1330，待完成 2040
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1340，待完成 2030
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1350，待完成 2020
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1360，待完成 2010
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1370，待完成 2000
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1380，待完成 1990
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1390，待完成 1980
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1400，待完成 1970
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1410，待完成 1960
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1420，待完成 1950
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1430，待完成 1940
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1440，待完成 1930
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1450，待完成 1920
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1460，待完成 1910
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1470，待完成 1900
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1480，待完成 1890
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1490，待完成 1880
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1500，待完成 1870
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1510，待完成 1860
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1520，待完成 1850
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1530，待完成 1840
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1540，待完成 1830
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1550，待完成 1820
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1560，待完成 1810
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1570，待完成 1800
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1580，待完成 1790
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1590，待完成 1780
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1600，待完成 1770
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1610，待完成 1760
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1620，待完成 1750
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1630，待完成 1740
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1640，待完成 1730
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1650，待完成 1720
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1660，待完成 1710
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1670，待完成 1700
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1680，待完成 1690
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1690，待完成 1680
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1700，待完成 1670
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1710，待完成 1660
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1720，待完成 1650
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1730，待完成 1640
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1740，待完成 1630
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1750，待完成 1620
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1760，待完成 1610
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1770，待完成 1600
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1780，待完成 1590
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1790，待完成 1580
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1800，待完成 1570
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1810，待完成 1560
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1820，待完成 1550
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1830，待完成 1540
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1840，待完成 1530
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1850，待完成 1520
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1860，待完成 1510
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1870，待完成 1500
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1880，待完成 1490
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1890，待完成 1480
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1900，待完成 1470
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1910，待完成 1460
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1920，待完成 1450
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1930，待完成 1440
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1940，待完成 1430
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1950，待完成 1420
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1960，待完成 1410
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1970，待完成 1400
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1980，待完成 1390
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 1990，待完成 1380
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2000，待完成 1370
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2010，待完成 1360
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2020，待完成 1350
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2030，待完成 1340
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2040，待完成 1330
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2050，待完成 1320
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2060，待完成 1310
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2070，待完成 1300
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2080，待完成 1290
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2090，待完成 1280
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2100，待完成 1270
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2110，待完成 1260
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2120，待完成 1250
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2130，待完成 1240
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2140，待完成 1230
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2150，待完成 1220
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2160，待完成 1210
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2170，待完成 1200
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2180，待完成 1190
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2190，待完成 1180
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2200，待完成 1170
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2210，待完成 1160
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2220，待完成 1150
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2230，待完成 1140
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2240，待完成 1130
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2250，待完成 1120
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2260，待完成 1110
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2270，待完成 1100
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2280，待完成 1090
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2290，待完成 1080
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2300，待完成 1070
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2310，待完成 1060
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2320，待完成 1050
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2330，待完成 1040
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2340，待完成 1030
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2350，待完成 1020
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2360，待完成 1010
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2370，待完成 1000
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2380，待完成 990
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2390，待完成 980
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2400，待完成 970
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2410，待完成 960
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2420，待完成 950
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2430，待完成 940
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2440，待完成 930
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2450，待完成 920
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2460，待完成 910
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2470，待完成 900
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2480，待完成 890
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2490，待完成 880
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2500，待完成 870
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2510，待完成 860
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2520，待完成 850
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2530，待完成 840
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2540，待完成 830
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2550，待完成 820
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2560，待完成 810
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2570，待完成 800
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2580，待完成 790
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2590，待完成 780
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2600，待完成 770
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2610，待完成 760
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2620，待完成 750
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2630，待完成 740
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2640，待完成 730
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2650，待完成 720
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2660，待完成 710
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2670，待完成 700
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2680，待完成 690
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2690，待完成 680
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2700，待完成 670
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2710，待完成 660
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2720，待完成 650
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2730，待完成 640
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2740，待完成 630
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2750，待完成 620
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2760，待完成 610
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2770，待完成 600
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2780，待完成 590
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2790，待完成 580
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2800，待完成 570
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2810，待完成 560
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2820，待完成 550
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2830，待完成 540
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2840，待完成 530
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2850，待完成 520
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2860，待完成 510
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2870，待完成 500
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2880，待完成 490
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2890，待完成 480
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2900，待完成 470
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2910，待完成 460
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2920，待完成 450
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2930，待完成 440
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2940，待完成 430
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2950，待完成 420
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2960，待完成 410
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2970，待完成 400
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2980，待完成 390
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 2990，待完成 380
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 3000，待完成 370
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 3010，待完成 360
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 3020，待完成 350
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 3030，待完成 340
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 3040，待完成 330
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 3050，待完成 320
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 3060，待完成 310
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 3070，待完成 300
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 3080，待完成 290
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 3090，待完成 280
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 3100，待完成 270
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 3110，待完成 260
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 3120，待完成 250
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 3130，待完成 240
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 3140，待完成 230
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 3150，待完成 220
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 3160，待完成 210
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 3170，待完成 200
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 3180，待完成 190
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 3190，待完成 180
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 3200，待完成 170
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 3210，待完成 160
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 3220，待完成 150
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 3230，待完成 140
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 3240，待完成 130
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 3250，待完成 120
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 3260，待完成 110
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 3270，待完成 100
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 3280，待完成 90
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 3290，待完成 80
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 3300，待完成 70
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 3310，待完成 60
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 3320，待完成 50
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 3330，待完成 40
+INFO:httpx:HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET http://127.0.0.1:6333/collections/voyacart_products "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: PUT http://127.0.0.1:6333/collections/voyacart_products/points?wait=true "HTTP/1.1 200 OK"
+INFO:app.infrastructure.vector.index_bootstrap:商品向量同步：复用 330，写入 3340，待完成 30
+WARNING:app.infrastructure.vector.index_bootstrap:商品向量同步未完成，已写入批次保留，检索可能降级：
+{
+  "model": "text-embedding-v4",
+  "model_version": "",
+  "model_key": "7ace48e6f7264054d03887d33857e2c25d591dfdfdedf3d9055fa650cf4053af",
+  "collection": "voyacart_products",
+  "total_products": 3700,
+  "reused_products": 330,
+  "embedded_products": 3340,
+  "written_products": 3340,
+  "pending_products": 30,
+  "batches": 334,
+  "complete": false,
+  "vector_dimension": 1024,
+  "error_type": "ConnectTimeout"
+}

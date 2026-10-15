@@ -1,0 +1,1 @@
+{"id":"resp_6i_PapfYN8XR1e8Pj_bN2AE","object":"chat.completion","created":1791963116,"model":"gemini-3.8-flash-high","choices":[{"index":0,"message":{"role":"assistant","content":"{\"category\":\"数码配件\"}"},"finish_reason":"stop"}],"usage":{"prompt_tokens":192,"completion_tokens":128,"total_tokens":320,"completion_tokens_details":{"reasoning_tokens":121}}}

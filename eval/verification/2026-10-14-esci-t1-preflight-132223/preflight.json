@@ -1,0 +1,29 @@
+{
+  "task": "T1",
+  "status": "等待用户配置",
+  "checked_at": "2026-10-14T13:22:23.822376+08:00",
+  "branch": "feat/T1-esci-query-classification",
+  "base_commit": "7f29c08725114b040e7f251e3cc21dceb0f5b596",
+  "env_file_exists": false,
+  "missing_configuration": [
+    "LLM_BASE_URL",
+    "LLM_API_KEY",
+    "LLM_MODEL"
+  ],
+  "model_calls": 0,
+  "download_executed": false,
+  "classification_executed": false,
+  "fingerprint_method": "blake2b",
+  "source_fingerprints": {
+    "AGENTS.md": "16233e8629af0ea8d39bc9357ec6cc6fdb1ca0487702760e492486485e50075d76a8e3403f45b956bf5229e3a878966761ce59cfe9fe30b7cf09cfc2320295b6",
+    "docs/PLAN.md": "de1545483253c0c5d3495e5171bb97a07526ad744a441b0af8fe38077330ce0a0f74fd63abfe48293f50a96ce2a44e69f856962cd9e39f1181159f939862d25f",
+    "docs/DESIGN.md": "297f1528877a0098f9b39ad7372fe7cb4b38507a3df879ff770563b837a28ed6a7bb42c7bb6cbad79da0a1ec3fbe604e90bf41d94b4baf4870abc5c7b2f7c585",
+    "pyproject.toml": "5fccf18ea57b5e4deebcfef6bbd5b8c4ca4b0111aa2dbf94c26380cf10f15e68d8d878c3e7da30bece66f833fbed5748efc4b3fab6de16e1b058d8f9e59aa6f5",
+    "uv.lock": "e818409ae36e82ac989ecad67cd876f411e9ff3d5e3cf66ab6e42de7ceb88c7a30a7cb513abe2bfb4ae3efd7b23e2a90fe05835987a371815c55ed141ca38e6f"
+  },
+  "dependency_probe": {
+    "command": "uv run --no-sync python",
+    "exit_code": 1,
+    "error": "ModuleNotFoundError: No module named 'dotenv'"
+  }
+}

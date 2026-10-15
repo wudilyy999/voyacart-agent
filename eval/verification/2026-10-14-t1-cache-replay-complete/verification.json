@@ -1,0 +1,8 @@
+{
+  "exit_code": 0,
+  "model_calls": 0,
+  "cache_hits": 2000,
+  "cached_failures": 6,
+  "cache_unchanged": true,
+  "coverage_shortfall": 0
+}

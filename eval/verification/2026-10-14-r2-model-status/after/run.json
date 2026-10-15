@@ -1,0 +1,38 @@
+{
+  "started_at": "2026-10-14T20:16:24.127813+08:00",
+  "head": "f72e87f827f7bddf04228ac7bd0cbed54cc33e7d",
+  "source_fingerprints": {
+    "app/infrastructure/transient.py": "546785b5f565f454284dcb366074c29b73e7624023c583175f82841b215775f7ac788decee43118ba71f338c559db15f4a2c57e75eafa18a6c4789377c589608",
+    "app/infrastructure/llm.py": "e500b870617bd6190dfd54a361d0265fe309746641fd7ae18b8312a9c8a29f1f71ebc42bd8ee9053c4ed4658a62f8bef0e47b226c68ec25da2e92a9e3f88c0c1",
+    "app/infrastructure/model_recovery.py": "196f29896401b7824e1f323077ba773567c1aa884597f961f4d2916948a6bb2216a618b0f3d07a7e3c02b925beeac78443b89bb975b4d4225c6eed7eb2ab1418",
+    "app/application/agents/orchestrator.py": "b2be8b2e1da987f4c1c8030f97d7e53ceb240d9219710aa88079afd9ac66c37349c935f134e2617beca403ec5e69f298f7d6ed47ddd877334a606f741e5ec7a1",
+    "app/infrastructure/throttle.py": "cc9bdffa7f7dc1e690ce82ea1a9576b2ba173e8bc517d600748707838c4effb52f364852e0a879beb15e9f321f13d6cdeb68d214f6fe4deae306e2619424b37e",
+    "tests/test_phase3.py": "660efec100bd3c677560f5240bb9104c6503988afcc541f5b963b0b275d779c2b40938b059b64d250dad4759cf7121a2ecd150db44f4b6adbd0f8f825bd09778",
+    "tests/test_model_runtime_counting.py": "6e65160947e714421cb94d894764bc966878ce42c7e30f4413df6e7c8e6396fafc53aec4517b626fecb30c4cb0267d13ddaf627e3f2c5e5e6867ba88e6abd0fe",
+    "tests/test_phase4_model.py": "7877dbcfb1f86e9c7d7fa218a3f92d3d1d3c5f504d39276879f79dfee5d8bed0c3494121eeec63cdd111a41a1c3c36e6b49f94d6c8b51737dd933ffe07feb16d",
+    "tests/test_model_cancellation.py": "31bd93483db5672d527342036fa3f0cb86224815b14aaa2b6b8820fcc4340e47eec2c4b61e1921443ca794e3d8aaadf905d0de7a9e3b1cd4fa200d720cd285e0",
+    "tests/test_budget_settlement.py": "66203f43ae2bb752c2f81ad95cf9730f790622873a4c66894aa9611839795edcb2f775918ab7f366f4555789ee280b2113ae89880d3858387e95e1846f0178c0",
+    "tests/test_context_prefix_recovery.py": "84d876d78ea70f77f50ae379d586614950c1cd67cc6b804f675e4aa3652f46d91965c214b17bde076aa887d620851768c27cf1667b36ef37d5ca8fc483b070a6"
+  },
+  "versions": {
+    "openai": "2.53.0",
+    "httpx": "0.28.1",
+    "pytest": "9.1.1"
+  },
+  "network_boundary": "SDK HTTP requests use httpx.MockTransport; no real model requests",
+  "command": [
+    "/private/tmp/voyacart-backend-frontend-20261014/.venv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_phase3.py",
+    "tests/test_model_runtime_counting.py",
+    "tests/test_phase4_model.py",
+    "tests/test_model_cancellation.py",
+    "tests/test_budget_settlement.py",
+    "tests/test_context_prefix_recovery.py",
+    "--junitxml=/private/tmp/voyacart-backend-frontend-20261014/eval/verification/2026-10-14-r2-model-status/after/tests.xml"
+  ],
+  "exit_code": 0,
+  "duration_seconds": 3.740877709002234
+}

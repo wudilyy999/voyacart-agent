@@ -1,0 +1,28 @@
+{
+  "source_and_original_block_unchanged": {
+    "app/infrastructure/persistence/seed_products.py": true,
+    "scripts/eval/run_product_recall.py": true,
+    "tests/test_catalog_fixture.py": true,
+    "tests/test_eval_selection_manifest.py": true,
+    "tests/test_eval_product_runner.py": true,
+    "tests/test_eval_profiles.py": true,
+    "eval/verification/2026-10-14-integrated-v1-recall/recall-all-report-20261014-204556-951464.md": true,
+    "eval/verification/2026-10-14-integrated-v1-recall/recall-all-report-20261014-204556-951464.manifest.json": true,
+    "eval/verification/2026-10-14-integrated-v1-recall/run.log": true
+  },
+  "passed": 38,
+  "offline_gate": "PASS",
+  "empty_correct": 25,
+  "empty_total": 25,
+  "metrics": {
+    "recall": 0.88,
+    "precision": 0.6365,
+    "mrr": 0.888,
+    "ndcg": 0.8797,
+    "empty_accuracy": 1.0,
+    "filter_accuracy": 1.0
+  },
+  "diff_check_exit_code": 0,
+  "catalog_products": 500,
+  "default_products": 3700
+}

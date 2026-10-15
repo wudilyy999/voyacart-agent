@@ -1,0 +1,11 @@
+{
+  "requested_at": "2026-10-14T22:43:02.303088+08:00",
+  "user_direction": "finish active user stage including drain, CSV, report, failure logs and resource samples; stop subsequent stages and configurations",
+  "matrix_pid": 85564,
+  "completed_configurations_at_request": 17,
+  "active_configuration": "queue-a4-w4",
+  "active_users": 8,
+  "next_stage_guard": "eval/verification/2026-10-14-r1-final-matrix/queue-a4-w4/users-16",
+  "stop_mechanism": "existing stage-directory freshness guard stops before users-16 is launched; main runner finally stops only its own compose project",
+  "scope": "no source modification and no interruption of active Locust requests; no deployment starts"
+}

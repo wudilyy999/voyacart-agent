@@ -1,0 +1,11 @@
+{
+  "runtime_products": 5700,
+  "legacy_products": 3700,
+  "real_amazon_products": 2000,
+  "legacy_original_bytes_preserved": true,
+  "unique_product_ids": 5700,
+  "unique_sku_ids": 9105,
+  "catalog_file": "data/catalog-demo.jsonl.gz",
+  "compressed_bytes": 1287455,
+  "content_fingerprint": "2ef61e96172723a8fedacb50b105aaff8b9ddebd956411a23143bc2146f9648264cf7eb782aecd390b4445d418969af58a1a0ba9831a6b3fabbb22332bc39b56"
+}

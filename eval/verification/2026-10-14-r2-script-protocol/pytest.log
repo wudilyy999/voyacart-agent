@@ -1,0 +1,23 @@
+.......F.....................                                            [100%]
+=================================== FAILURES ===================================
+_____ test_stopped_api_resumes_with_original_cursor_and_keeps_raw_failures _____
+
+drills = <module 'r2_faults' from '/private/tmp/voyacart-backend-frontend-20261014/scripts/loadtest/faults.py'>
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x10671f1d0>
+tmp_path = PosixPath('/private/var/folders/j5/9jbbktk13f7bdrtssrkz58tw0000gn/T/pytest-of-liyuyang/pytest-82/test_stopped_api_resumes_with_0')
+
+    def test_stopped_api_resumes_with_original_cursor_and_keeps_raw_failures(drills, monkeypatch, tmp_path):
+        monkeypatch.setattr(drills.time, 'sleep', Mock())
+        action = Mock()
+        session = Mock()
+        session.request.side_effect = [
+            Response([(1, 'RUN_STARTED'), (2, 'TEXT_MESSAGE_CONTENT')], 'api-one:8000',
+>               requests.ChunkedEncodingError('API stopped')),
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+            Response([(3, 'TEXT_MESSAGE_CONTENT'), (4, 'RUN_FINISHED')], 'api-two:8000')]
+E       AttributeError: module 'requests' has no attribute 'ChunkedEncodingError'
+
+tests/test_fault_drills.py:83: AttributeError
+=========================== short test summary info ============================
+FAILED tests/test_fault_drills.py::test_stopped_api_resumes_with_original_cursor_and_keeps_raw_failures
+1 failed, 28 passed in 0.88s

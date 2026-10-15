@@ -1,0 +1,27 @@
+
+==================================== ERRORS ====================================
+___________________ ERROR collecting tests/test_queue_api.py ___________________
+tests/test_queue_api.py:19: in <module>
+    from app.presentation import server
+app/presentation/server.py:363: in <module>
+    app = build_app()
+          ^^^^^^^^^^^
+app/presentation/server.py:106: in build_app
+    settings_origins = build_container_origins()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^
+app/presentation/server.py:360: in build_container_origins
+    return load_settings().cors_origins
+           ^^^^^^^^^^^^^^^
+app/infrastructure/settings.py:156: in load_settings
+    raise RuntimeError(
+E   RuntimeError: 未配置 LLM_API_KEY，无法启动。请通过环境变量注入（推荐）：export LLM_API_KEY=<你的密钥>；或在项目根目录创建本地 .env 文件（参考 .env.example，该文件已被 gitignore，不会入库）。
+=============================== warnings summary ===============================
+.venv/lib/python3.11/site-packages/fastapi/testclient.py:1
+  /Users/liyuyang/Downloads/voyacart-agent/.venv/lib/python3.11/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+ERROR tests/test_queue_api.py - RuntimeError: 未配置 LLM_API_KEY，无法启动。...
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 warning, 1 error in 2.28s

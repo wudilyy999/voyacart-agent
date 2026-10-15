@@ -1,0 +1,1152 @@
+{
+  "crosslingual": {
+    "reason": "derived_from_holdout_requires_frozen_parameters",
+    "status": "NOT_EXECUTED"
+  },
+  "default_strategy": {
+    "status": "NOT_SELECTED"
+  },
+  "holdout": {
+    "status": "NOT_EXECUTED"
+  },
+  "index_build": {
+    "seconds": 1.0167015716433525e-05
+  },
+  "llm_calls": 0,
+  "metric_definitions": {
+    "category": "查询类目用于报告，全库及硬约束检索不传类目",
+    "constraints": "应为空用例独立统计空结果准确率，其余用例统计Recall@5、Precision@5",
+    "gains": {
+      "C": 0.01,
+      "E": 1.0,
+      "I": 0.0,
+      "S": 0.1
+    },
+    "judged_at_10": "前10条去重返回结果中有人工标注的比例，分母为实际返回数",
+    "latency": "复用固定查询向量后的检索耗时，查询编码耗时单独记录"
+  },
+  "parameters": {
+    "constraints_top_k": 5,
+    "full_catalog_top_k": 50,
+    "recall_candidates": 32,
+    "rrf_k": 60,
+    "rrf_weights": [
+      1.0,
+      1.0
+    ],
+    "strategies": [
+      "keyword_2gram",
+      "bm25",
+      "embedding_only",
+      "embedding_rerank",
+      "hybrid_only",
+      "hybrid_rerank"
+    ]
+  },
+  "query_encoding": {
+    "seconds": 8.750008419156075e-06,
+    "unique_queries": 1
+  },
+  "samples": [
+    {
+      "actual_strategy": "candidate_keyword_2gram",
+      "elapsed_ms": 0.053292023949325085,
+      "empty_ok": null,
+      "execution_errors": [],
+      "kind": "ranking",
+      "locale": "us",
+      "metrics": {
+        "ndcg": 1.0,
+        "ndcg_at_10": 1.0
+      },
+      "query": "metal backpack",
+      "query_id": 1,
+      "rerank_applied": false,
+      "retrieved": [
+        "P100000",
+        "P100001",
+        "P100002",
+        "P100003"
+      ],
+      "returned_count": 4,
+      "strategy": "keyword_2gram",
+      "violations": {}
+    },
+    {
+      "actual_strategy": "keyword_2gram",
+      "elapsed_ms": 0.0950000248849392,
+      "empty_ok": null,
+      "execution_errors": [],
+      "kind": "retrieval",
+      "locale": "us",
+      "metrics": {
+        "judged_at_10": 0.75,
+        "ndcg_at_10": 0.43067655807339306,
+        "recall_at_10": 1.0,
+        "recall_at_50": 1.0
+      },
+      "query": "metal backpack",
+      "query_id": 1,
+      "rerank_applied": false,
+      "retrieved": [
+        "P100000",
+        "P100004",
+        "P100001",
+        "P100002"
+      ],
+      "returned_count": 4,
+      "strategy": "keyword_2gram",
+      "violations": {}
+    },
+    {
+      "actual_strategy": "keyword_2gram",
+      "elapsed_ms": 0.0654999166727066,
+      "empty_ok": null,
+      "execution_errors": [],
+      "kind": "constraints",
+      "locale": "us",
+      "metrics": {
+        "precision_at_5": 1.0,
+        "recall_at_5": 1.0
+      },
+      "query": "metal backpack",
+      "query_id": 1,
+      "rerank_applied": false,
+      "retrieved": [
+        "P100000"
+      ],
+      "returned_count": 1,
+      "strategy": "keyword_2gram",
+      "violations": {}
+    },
+    {
+      "actual_strategy": "keyword_2gram",
+      "elapsed_ms": 0.02804200630635023,
+      "empty_ok": true,
+      "execution_errors": [],
+      "kind": "constraints",
+      "locale": "us",
+      "metrics": {
+        "precision_at_5": null,
+        "recall_at_5": null
+      },
+      "query": "metal backpack",
+      "query_id": 2,
+      "rerank_applied": false,
+      "retrieved": [],
+      "returned_count": 0,
+      "strategy": "keyword_2gram",
+      "violations": {}
+    },
+    {
+      "actual_strategy": "candidate_bm25",
+      "elapsed_ms": 0.0992499990388751,
+      "empty_ok": null,
+      "execution_errors": [],
+      "kind": "ranking",
+      "locale": "us",
+      "metrics": {
+        "ndcg": 1.0,
+        "ndcg_at_10": 1.0
+      },
+      "query": "metal backpack",
+      "query_id": 1,
+      "rerank_applied": false,
+      "retrieved": [
+        "P100000",
+        "P100001",
+        "P100002",
+        "P100003"
+      ],
+      "returned_count": 4,
+      "strategy": "bm25",
+      "violations": {}
+    },
+    {
+      "actual_strategy": "bm25",
+      "elapsed_ms": 0.43641601223498583,
+      "empty_ok": null,
+      "execution_errors": [],
+      "kind": "retrieval",
+      "locale": "us",
+      "metrics": {
+        "judged_at_10": 0.75,
+        "ndcg_at_10": 0.43067655807339306,
+        "recall_at_10": 1.0,
+        "recall_at_50": 1.0
+      },
+      "query": "metal backpack",
+      "query_id": 1,
+      "rerank_applied": false,
+      "retrieved": [
+        "P100000",
+        "P100004",
+        "P100001",
+        "P100002"
+      ],
+      "returned_count": 4,
+      "strategy": "bm25",
+      "violations": {}
+    },
+    {
+      "actual_strategy": "bm25",
+      "elapsed_ms": 0.3809999907389283,
+      "empty_ok": null,
+      "execution_errors": [],
+      "kind": "constraints",
+      "locale": "us",
+      "metrics": {
+        "precision_at_5": 1.0,
+        "recall_at_5": 1.0
+      },
+      "query": "metal backpack",
+      "query_id": 1,
+      "rerank_applied": false,
+      "retrieved": [
+        "P100000"
+      ],
+      "returned_count": 1,
+      "strategy": "bm25",
+      "violations": {}
+    },
+    {
+      "actual_strategy": "bm25",
+      "elapsed_ms": 0.23324997164309025,
+      "empty_ok": true,
+      "execution_errors": [],
+      "kind": "constraints",
+      "locale": "us",
+      "metrics": {
+        "precision_at_5": null,
+        "recall_at_5": null
+      },
+      "query": "metal backpack",
+      "query_id": 2,
+      "rerank_applied": false,
+      "retrieved": [],
+      "returned_count": 0,
+      "strategy": "bm25",
+      "violations": {}
+    },
+    {
+      "actual_strategy": "candidate_embedding_only",
+      "elapsed_ms": 0.04583294503390789,
+      "empty_ok": null,
+      "execution_errors": [],
+      "kind": "ranking",
+      "locale": "us",
+      "metrics": {
+        "ndcg": 1.0,
+        "ndcg_at_10": 1.0
+      },
+      "query": "metal backpack",
+      "query_id": 1,
+      "rerank_applied": false,
+      "retrieved": [
+        "P100000",
+        "P100001",
+        "P100002",
+        "P100003"
+      ],
+      "returned_count": 4,
+      "strategy": "embedding_only",
+      "violations": {}
+    },
+    {
+      "actual_strategy": "embedding_only",
+      "elapsed_ms": 0.29204203747212887,
+      "empty_ok": null,
+      "execution_errors": [],
+      "kind": "retrieval",
+      "locale": "us",
+      "metrics": {
+        "judged_at_10": 0.75,
+        "ndcg_at_10": 0.43067655807339306,
+        "recall_at_10": 1.0,
+        "recall_at_50": 1.0
+      },
+      "query": "metal backpack",
+      "query_id": 1,
+      "rerank_applied": false,
+      "retrieved": [
+        "P100000",
+        "P100001",
+        "P100004",
+        "P100002"
+      ],
+      "returned_count": 4,
+      "strategy": "embedding_only",
+      "violations": {}
+    },
+    {
+      "actual_strategy": "embedding_only",
+      "elapsed_ms": 0.08116709068417549,
+      "empty_ok": null,
+      "execution_errors": [],
+      "kind": "constraints",
+      "locale": "us",
+      "metrics": {
+        "precision_at_5": 1.0,
+        "recall_at_5": 1.0
+      },
+      "query": "metal backpack",
+      "query_id": 1,
+      "rerank_applied": false,
+      "retrieved": [
+        "P100000"
+      ],
+      "returned_count": 1,
+      "strategy": "embedding_only",
+      "violations": {}
+    },
+    {
+      "actual_strategy": "embedding_only",
+      "elapsed_ms": 0.03645801916718483,
+      "empty_ok": true,
+      "execution_errors": [],
+      "kind": "constraints",
+      "locale": "us",
+      "metrics": {
+        "precision_at_5": null,
+        "recall_at_5": null
+      },
+      "query": "metal backpack",
+      "query_id": 2,
+      "rerank_applied": false,
+      "retrieved": [],
+      "returned_count": 0,
+      "strategy": "embedding_only",
+      "violations": {}
+    },
+    {
+      "actual_strategy": "candidate_embedding_rerank",
+      "elapsed_ms": 0.029165996238589287,
+      "empty_ok": null,
+      "execution_errors": [],
+      "kind": "ranking",
+      "locale": "us",
+      "metrics": {
+        "ndcg": 0.6468816568524164,
+        "ndcg_at_10": 0.6468816568524164
+      },
+      "query": "metal backpack",
+      "query_id": 1,
+      "rerank_applied": true,
+      "retrieved": [
+        "P100002",
+        "P100000",
+        "P100001",
+        "P100003"
+      ],
+      "returned_count": 4,
+      "strategy": "embedding_rerank",
+      "violations": {}
+    },
+    {
+      "actual_strategy": "embedding_rerank",
+      "elapsed_ms": 0.04683306906372309,
+      "empty_ok": null,
+      "execution_errors": [],
+      "kind": "retrieval",
+      "locale": "us",
+      "metrics": {
+        "judged_at_10": 0.75,
+        "ndcg_at_10": 1.0,
+        "recall_at_10": 1.0,
+        "recall_at_50": 1.0
+      },
+      "query": "metal backpack",
+      "query_id": 1,
+      "rerank_applied": true,
+      "retrieved": [
+        "P100002",
+        "P100000",
+        "P100001",
+        "P100004"
+      ],
+      "returned_count": 4,
+      "strategy": "embedding_rerank",
+      "violations": {}
+    },
+    {
+      "actual_strategy": "embedding_rerank",
+      "elapsed_ms": 0.03466696944087744,
+      "empty_ok": null,
+      "execution_errors": [],
+      "kind": "constraints",
+      "locale": "us",
+      "metrics": {
+        "precision_at_5": 1.0,
+        "recall_at_5": 1.0
+      },
+      "query": "metal backpack",
+      "query_id": 1,
+      "rerank_applied": true,
+      "retrieved": [
+        "P100000"
+      ],
+      "returned_count": 1,
+      "strategy": "embedding_rerank",
+      "violations": {}
+    },
+    {
+      "actual_strategy": "embedding_rerank",
+      "elapsed_ms": 0.019458006136119366,
+      "empty_ok": true,
+      "execution_errors": [],
+      "kind": "constraints",
+      "locale": "us",
+      "metrics": {
+        "precision_at_5": null,
+        "recall_at_5": null
+      },
+      "query": "metal backpack",
+      "query_id": 2,
+      "rerank_applied": true,
+      "retrieved": [],
+      "returned_count": 0,
+      "strategy": "embedding_rerank",
+      "violations": {}
+    },
+    {
+      "actual_strategy": "candidate_hybrid_only",
+      "elapsed_ms": 0.054709031246602535,
+      "empty_ok": null,
+      "execution_errors": [],
+      "kind": "ranking",
+      "locale": "us",
+      "metrics": {
+        "ndcg": 1.0,
+        "ndcg_at_10": 1.0
+      },
+      "query": "metal backpack",
+      "query_id": 1,
+      "rerank_applied": false,
+      "retrieved": [
+        "P100000",
+        "P100001",
+        "P100002",
+        "P100003"
+      ],
+      "returned_count": 4,
+      "strategy": "hybrid_only",
+      "violations": {}
+    },
+    {
+      "actual_strategy": "hybrid_only",
+      "elapsed_ms": 0.1747080823406577,
+      "empty_ok": null,
+      "execution_errors": [],
+      "kind": "retrieval",
+      "locale": "us",
+      "metrics": {
+        "judged_at_10": 0.75,
+        "ndcg_at_10": 0.43067655807339306,
+        "recall_at_10": 1.0,
+        "recall_at_50": 1.0
+      },
+      "query": "metal backpack",
+      "query_id": 1,
+      "rerank_applied": false,
+      "retrieved": [
+        "P100000",
+        "P100001",
+        "P100004",
+        "P100002"
+      ],
+      "returned_count": 4,
+      "strategy": "hybrid_only",
+      "violations": {}
+    },
+    {
+      "actual_strategy": "hybrid_only",
+      "elapsed_ms": 0.11329201515763998,
+      "empty_ok": null,
+      "execution_errors": [],
+      "kind": "constraints",
+      "locale": "us",
+      "metrics": {
+        "precision_at_5": 1.0,
+        "recall_at_5": 1.0
+      },
+      "query": "metal backpack",
+      "query_id": 1,
+      "rerank_applied": false,
+      "retrieved": [
+        "P100000"
+      ],
+      "returned_count": 1,
+      "strategy": "hybrid_only",
+      "violations": {}
+    },
+    {
+      "actual_strategy": "hybrid_only",
+      "elapsed_ms": 0.1836250303313136,
+      "empty_ok": true,
+      "execution_errors": [],
+      "kind": "constraints",
+      "locale": "us",
+      "metrics": {
+        "precision_at_5": null,
+        "recall_at_5": null
+      },
+      "query": "metal backpack",
+      "query_id": 2,
+      "rerank_applied": false,
+      "retrieved": [],
+      "returned_count": 0,
+      "strategy": "hybrid_only",
+      "violations": {}
+    },
+    {
+      "actual_strategy": "candidate_hybrid_rerank",
+      "elapsed_ms": 0.10595796629786491,
+      "empty_ok": null,
+      "execution_errors": [],
+      "kind": "ranking",
+      "locale": "us",
+      "metrics": {
+        "ndcg": 0.6468816568524164,
+        "ndcg_at_10": 0.6468816568524164
+      },
+      "query": "metal backpack",
+      "query_id": 1,
+      "rerank_applied": true,
+      "retrieved": [
+        "P100002",
+        "P100000",
+        "P100001",
+        "P100003"
+      ],
+      "returned_count": 4,
+      "strategy": "hybrid_rerank",
+      "violations": {}
+    },
+    {
+      "actual_strategy": "hybrid_rerank",
+      "elapsed_ms": 0.2793329767882824,
+      "empty_ok": null,
+      "execution_errors": [],
+      "kind": "retrieval",
+      "locale": "us",
+      "metrics": {
+        "judged_at_10": 0.75,
+        "ndcg_at_10": 1.0,
+        "recall_at_10": 1.0,
+        "recall_at_50": 1.0
+      },
+      "query": "metal backpack",
+      "query_id": 1,
+      "rerank_applied": true,
+      "retrieved": [
+        "P100002",
+        "P100000",
+        "P100001",
+        "P100004"
+      ],
+      "returned_count": 4,
+      "strategy": "hybrid_rerank",
+      "violations": {}
+    },
+    {
+      "actual_strategy": "hybrid_rerank",
+      "elapsed_ms": 0.23562496062368155,
+      "empty_ok": null,
+      "execution_errors": [],
+      "kind": "constraints",
+      "locale": "us",
+      "metrics": {
+        "precision_at_5": 1.0,
+        "recall_at_5": 1.0
+      },
+      "query": "metal backpack",
+      "query_id": 1,
+      "rerank_applied": true,
+      "retrieved": [
+        "P100000"
+      ],
+      "returned_count": 1,
+      "strategy": "hybrid_rerank",
+      "violations": {}
+    },
+    {
+      "actual_strategy": "hybrid_only",
+      "elapsed_ms": 0.158625072799623,
+      "empty_ok": true,
+      "execution_errors": [],
+      "kind": "constraints",
+      "locale": "us",
+      "metrics": {
+        "precision_at_5": null,
+        "recall_at_5": null
+      },
+      "query": "metal backpack",
+      "query_id": 2,
+      "rerank_applied": false,
+      "retrieved": [],
+      "returned_count": 0,
+      "strategy": "hybrid_rerank",
+      "violations": {}
+    }
+  ],
+  "split": "dev",
+  "status": "COMPLETED",
+  "strategies": {
+    "bm25": {
+      "status": "COMPLETED"
+    },
+    "embedding_only": {
+      "status": "COMPLETED"
+    },
+    "embedding_rerank": {
+      "status": "COMPLETED"
+    },
+    "hybrid_only": {
+      "status": "COMPLETED"
+    },
+    "hybrid_rerank": {
+      "status": "COMPLETED"
+    },
+    "keyword_2gram": {
+      "status": "COMPLETED"
+    }
+  },
+  "summary": {
+    "constraints": {
+      "bm25": {
+        "all": {
+          "actual_strategies": [
+            "bm25"
+          ],
+          "constraint_violations": 0,
+          "empty_accuracy": 1.0,
+          "mean_returned_count": 0.5,
+          "metrics": {
+            "precision_at_5": 1.0,
+            "recall_at_5": 1.0
+          },
+          "queries": 2
+        },
+        "us": {
+          "actual_strategies": [
+            "bm25"
+          ],
+          "constraint_violations": 0,
+          "empty_accuracy": 1.0,
+          "mean_returned_count": 0.5,
+          "metrics": {
+            "precision_at_5": 1.0,
+            "recall_at_5": 1.0
+          },
+          "queries": 2
+        }
+      },
+      "embedding_only": {
+        "all": {
+          "actual_strategies": [
+            "embedding_only"
+          ],
+          "constraint_violations": 0,
+          "empty_accuracy": 1.0,
+          "mean_returned_count": 0.5,
+          "metrics": {
+            "precision_at_5": 1.0,
+            "recall_at_5": 1.0
+          },
+          "queries": 2
+        },
+        "us": {
+          "actual_strategies": [
+            "embedding_only"
+          ],
+          "constraint_violations": 0,
+          "empty_accuracy": 1.0,
+          "mean_returned_count": 0.5,
+          "metrics": {
+            "precision_at_5": 1.0,
+            "recall_at_5": 1.0
+          },
+          "queries": 2
+        }
+      },
+      "embedding_rerank": {
+        "all": {
+          "actual_strategies": [
+            "embedding_rerank"
+          ],
+          "constraint_violations": 0,
+          "empty_accuracy": 1.0,
+          "mean_returned_count": 0.5,
+          "metrics": {
+            "precision_at_5": 1.0,
+            "recall_at_5": 1.0
+          },
+          "queries": 2
+        },
+        "us": {
+          "actual_strategies": [
+            "embedding_rerank"
+          ],
+          "constraint_violations": 0,
+          "empty_accuracy": 1.0,
+          "mean_returned_count": 0.5,
+          "metrics": {
+            "precision_at_5": 1.0,
+            "recall_at_5": 1.0
+          },
+          "queries": 2
+        }
+      },
+      "hybrid_only": {
+        "all": {
+          "actual_strategies": [
+            "hybrid_only"
+          ],
+          "constraint_violations": 0,
+          "empty_accuracy": 1.0,
+          "mean_returned_count": 0.5,
+          "metrics": {
+            "precision_at_5": 1.0,
+            "recall_at_5": 1.0
+          },
+          "queries": 2
+        },
+        "us": {
+          "actual_strategies": [
+            "hybrid_only"
+          ],
+          "constraint_violations": 0,
+          "empty_accuracy": 1.0,
+          "mean_returned_count": 0.5,
+          "metrics": {
+            "precision_at_5": 1.0,
+            "recall_at_5": 1.0
+          },
+          "queries": 2
+        }
+      },
+      "hybrid_rerank": {
+        "all": {
+          "actual_strategies": [
+            "hybrid_only",
+            "hybrid_rerank"
+          ],
+          "constraint_violations": 0,
+          "empty_accuracy": 1.0,
+          "mean_returned_count": 0.5,
+          "metrics": {
+            "precision_at_5": 1.0,
+            "recall_at_5": 1.0
+          },
+          "queries": 2
+        },
+        "us": {
+          "actual_strategies": [
+            "hybrid_only",
+            "hybrid_rerank"
+          ],
+          "constraint_violations": 0,
+          "empty_accuracy": 1.0,
+          "mean_returned_count": 0.5,
+          "metrics": {
+            "precision_at_5": 1.0,
+            "recall_at_5": 1.0
+          },
+          "queries": 2
+        }
+      },
+      "keyword_2gram": {
+        "all": {
+          "actual_strategies": [
+            "keyword_2gram"
+          ],
+          "constraint_violations": 0,
+          "empty_accuracy": 1.0,
+          "mean_returned_count": 0.5,
+          "metrics": {
+            "precision_at_5": 1.0,
+            "recall_at_5": 1.0
+          },
+          "queries": 2
+        },
+        "us": {
+          "actual_strategies": [
+            "keyword_2gram"
+          ],
+          "constraint_violations": 0,
+          "empty_accuracy": 1.0,
+          "mean_returned_count": 0.5,
+          "metrics": {
+            "precision_at_5": 1.0,
+            "recall_at_5": 1.0
+          },
+          "queries": 2
+        }
+      }
+    },
+    "ranking": {
+      "bm25": {
+        "all": {
+          "actual_strategies": [
+            "candidate_bm25"
+          ],
+          "constraint_violations": 0,
+          "empty_accuracy": null,
+          "mean_returned_count": 4.0,
+          "metrics": {
+            "ndcg": 1.0,
+            "ndcg_at_10": 1.0
+          },
+          "queries": 1
+        },
+        "us": {
+          "actual_strategies": [
+            "candidate_bm25"
+          ],
+          "constraint_violations": 0,
+          "empty_accuracy": null,
+          "mean_returned_count": 4.0,
+          "metrics": {
+            "ndcg": 1.0,
+            "ndcg_at_10": 1.0
+          },
+          "queries": 1
+        }
+      },
+      "embedding_only": {
+        "all": {
+          "actual_strategies": [
+            "candidate_embedding_only"
+          ],
+          "constraint_violations": 0,
+          "empty_accuracy": null,
+          "mean_returned_count": 4.0,
+          "metrics": {
+            "ndcg": 1.0,
+            "ndcg_at_10": 1.0
+          },
+          "queries": 1
+        },
+        "us": {
+          "actual_strategies": [
+            "candidate_embedding_only"
+          ],
+          "constraint_violations": 0,
+          "empty_accuracy": null,
+          "mean_returned_count": 4.0,
+          "metrics": {
+            "ndcg": 1.0,
+            "ndcg_at_10": 1.0
+          },
+          "queries": 1
+        }
+      },
+      "embedding_rerank": {
+        "all": {
+          "actual_strategies": [
+            "candidate_embedding_rerank"
+          ],
+          "constraint_violations": 0,
+          "empty_accuracy": null,
+          "mean_returned_count": 4.0,
+          "metrics": {
+            "ndcg": 0.6468816568524164,
+            "ndcg_at_10": 0.6468816568524164
+          },
+          "queries": 1
+        },
+        "us": {
+          "actual_strategies": [
+            "candidate_embedding_rerank"
+          ],
+          "constraint_violations": 0,
+          "empty_accuracy": null,
+          "mean_returned_count": 4.0,
+          "metrics": {
+            "ndcg": 0.6468816568524164,
+            "ndcg_at_10": 0.6468816568524164
+          },
+          "queries": 1
+        }
+      },
+      "hybrid_only": {
+        "all": {
+          "actual_strategies": [
+            "candidate_hybrid_only"
+          ],
+          "constraint_violations": 0,
+          "empty_accuracy": null,
+          "mean_returned_count": 4.0,
+          "metrics": {
+            "ndcg": 1.0,
+            "ndcg_at_10": 1.0
+          },
+          "queries": 1
+        },
+        "us": {
+          "actual_strategies": [
+            "candidate_hybrid_only"
+          ],
+          "constraint_violations": 0,
+          "empty_accuracy": null,
+          "mean_returned_count": 4.0,
+          "metrics": {
+            "ndcg": 1.0,
+            "ndcg_at_10": 1.0
+          },
+          "queries": 1
+        }
+      },
+      "hybrid_rerank": {
+        "all": {
+          "actual_strategies": [
+            "candidate_hybrid_rerank"
+          ],
+          "constraint_violations": 0,
+          "empty_accuracy": null,
+          "mean_returned_count": 4.0,
+          "metrics": {
+            "ndcg": 0.6468816568524164,
+            "ndcg_at_10": 0.6468816568524164
+          },
+          "queries": 1
+        },
+        "us": {
+          "actual_strategies": [
+            "candidate_hybrid_rerank"
+          ],
+          "constraint_violations": 0,
+          "empty_accuracy": null,
+          "mean_returned_count": 4.0,
+          "metrics": {
+            "ndcg": 0.6468816568524164,
+            "ndcg_at_10": 0.6468816568524164
+          },
+          "queries": 1
+        }
+      },
+      "keyword_2gram": {
+        "all": {
+          "actual_strategies": [
+            "candidate_keyword_2gram"
+          ],
+          "constraint_violations": 0,
+          "empty_accuracy": null,
+          "mean_returned_count": 4.0,
+          "metrics": {
+            "ndcg": 1.0,
+            "ndcg_at_10": 1.0
+          },
+          "queries": 1
+        },
+        "us": {
+          "actual_strategies": [
+            "candidate_keyword_2gram"
+          ],
+          "constraint_violations": 0,
+          "empty_accuracy": null,
+          "mean_returned_count": 4.0,
+          "metrics": {
+            "ndcg": 1.0,
+            "ndcg_at_10": 1.0
+          },
+          "queries": 1
+        }
+      }
+    },
+    "retrieval": {
+      "bm25": {
+        "all": {
+          "actual_strategies": [
+            "bm25"
+          ],
+          "constraint_violations": 0,
+          "empty_accuracy": null,
+          "mean_returned_count": 4.0,
+          "metrics": {
+            "judged_at_10": 0.75,
+            "ndcg_at_10": 0.43067655807339306,
+            "recall_at_10": 1.0,
+            "recall_at_50": 1.0
+          },
+          "queries": 1
+        },
+        "us": {
+          "actual_strategies": [
+            "bm25"
+          ],
+          "constraint_violations": 0,
+          "empty_accuracy": null,
+          "mean_returned_count": 4.0,
+          "metrics": {
+            "judged_at_10": 0.75,
+            "ndcg_at_10": 0.43067655807339306,
+            "recall_at_10": 1.0,
+            "recall_at_50": 1.0
+          },
+          "queries": 1
+        }
+      },
+      "embedding_only": {
+        "all": {
+          "actual_strategies": [
+            "embedding_only"
+          ],
+          "constraint_violations": 0,
+          "empty_accuracy": null,
+          "mean_returned_count": 4.0,
+          "metrics": {
+            "judged_at_10": 0.75,
+            "ndcg_at_10": 0.43067655807339306,
+            "recall_at_10": 1.0,
+            "recall_at_50": 1.0
+          },
+          "queries": 1
+        },
+        "us": {
+          "actual_strategies": [
+            "embedding_only"
+          ],
+          "constraint_violations": 0,
+          "empty_accuracy": null,
+          "mean_returned_count": 4.0,
+          "metrics": {
+            "judged_at_10": 0.75,
+            "ndcg_at_10": 0.43067655807339306,
+            "recall_at_10": 1.0,
+            "recall_at_50": 1.0
+          },
+          "queries": 1
+        }
+      },
+      "embedding_rerank": {
+        "all": {
+          "actual_strategies": [
+            "embedding_rerank"
+          ],
+          "constraint_violations": 0,
+          "empty_accuracy": null,
+          "mean_returned_count": 4.0,
+          "metrics": {
+            "judged_at_10": 0.75,
+            "ndcg_at_10": 1.0,
+            "recall_at_10": 1.0,
+            "recall_at_50": 1.0
+          },
+          "queries": 1
+        },
+        "us": {
+          "actual_strategies": [
+            "embedding_rerank"
+          ],
+          "constraint_violations": 0,
+          "empty_accuracy": null,
+          "mean_returned_count": 4.0,
+          "metrics": {
+            "judged_at_10": 0.75,
+            "ndcg_at_10": 1.0,
+            "recall_at_10": 1.0,
+            "recall_at_50": 1.0
+          },
+          "queries": 1
+        }
+      },
+      "hybrid_only": {
+        "all": {
+          "actual_strategies": [
+            "hybrid_only"
+          ],
+          "constraint_violations": 0,
+          "empty_accuracy": null,
+          "mean_returned_count": 4.0,
+          "metrics": {
+            "judged_at_10": 0.75,
+            "ndcg_at_10": 0.43067655807339306,
+            "recall_at_10": 1.0,
+            "recall_at_50": 1.0
+          },
+          "queries": 1
+        },
+        "us": {
+          "actual_strategies": [
+            "hybrid_only"
+          ],
+          "constraint_violations": 0,
+          "empty_accuracy": null,
+          "mean_returned_count": 4.0,
+          "metrics": {
+            "judged_at_10": 0.75,
+            "ndcg_at_10": 0.43067655807339306,
+            "recall_at_10": 1.0,
+            "recall_at_50": 1.0
+          },
+          "queries": 1
+        }
+      },
+      "hybrid_rerank": {
+        "all": {
+          "actual_strategies": [
+            "hybrid_rerank"
+          ],
+          "constraint_violations": 0,
+          "empty_accuracy": null,
+          "mean_returned_count": 4.0,
+          "metrics": {
+            "judged_at_10": 0.75,
+            "ndcg_at_10": 1.0,
+            "recall_at_10": 1.0,
+            "recall_at_50": 1.0
+          },
+          "queries": 1
+        },
+        "us": {
+          "actual_strategies": [
+            "hybrid_rerank"
+          ],
+          "constraint_violations": 0,
+          "empty_accuracy": null,
+          "mean_returned_count": 4.0,
+          "metrics": {
+            "judged_at_10": 0.75,
+            "ndcg_at_10": 1.0,
+            "recall_at_10": 1.0,
+            "recall_at_50": 1.0
+          },
+          "queries": 1
+        }
+      },
+      "keyword_2gram": {
+        "all": {
+          "actual_strategies": [
+            "keyword_2gram"
+          ],
+          "constraint_violations": 0,
+          "empty_accuracy": null,
+          "mean_returned_count": 4.0,
+          "metrics": {
+            "judged_at_10": 0.75,
+            "ndcg_at_10": 0.43067655807339306,
+            "recall_at_10": 1.0,
+            "recall_at_50": 1.0
+          },
+          "queries": 1
+        },
+        "us": {
+          "actual_strategies": [
+            "keyword_2gram"
+          ],
+          "constraint_violations": 0,
+          "empty_accuracy": null,
+          "mean_returned_count": 4.0,
+          "metrics": {
+            "judged_at_10": 0.75,
+            "ndcg_at_10": 0.43067655807339306,
+            "recall_at_10": 1.0,
+            "recall_at_50": 1.0
+          },
+          "queries": 1
+        }
+      }
+    }
+  }
+}

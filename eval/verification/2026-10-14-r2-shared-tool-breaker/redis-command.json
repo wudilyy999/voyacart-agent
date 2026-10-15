@@ -1,0 +1,1 @@
+["redis-server", "--bind", "127.0.0.1", "--port", "61294", "--save", "", "--appendonly", "no", "--dir", "/private/tmp/voyacart-local-fallback-20261014/eval/verification/2026-10-14-r2-shared-tool-breaker"]

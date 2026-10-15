@@ -1,0 +1,373 @@
+{
+  "name": "voyacart-r1-baseline",
+  "networks": {
+    "default": {
+      "name": "voyacart-r1-baseline_default",
+      "ipam": {}
+    }
+  },
+  "services": {
+    "api": {
+      "build": {
+        "context": "/private/tmp/voyacart-local-fallback-20261014",
+        "dockerfile": "Dockerfile"
+      },
+      "command": null,
+      "depends_on": {
+        "qdrant": {
+          "condition": "service_started",
+          "required": true
+        },
+        "redis": {
+          "condition": "service_healthy",
+          "required": true
+        }
+      },
+      "entrypoint": null,
+      "environment": {
+        "AGUI_DELTA_COALESCE_MS": "50",
+        "AGUI_QUEUE_ENABLED": "0",
+        "AGUI_QUEUE_MAX_PENDING": "200",
+        "AUTOMATION_WORKER_MODE": "external",
+        "BREAKER_SHARED": "1",
+        "CATEGORY_KB_COLLECTION": "voyacart_category_kb",
+        "CONTEXT_PRODUCT_TOKENS": "6000",
+        "CONTEXT_PRUNING_TIMING": "pressure",
+        "CONTEXT_SIZE": "128000",
+        "CONTEXT_STRATEGY": "layered",
+        "CONTEXT_TARGET_TOKENS": "48000",
+        "CORS_ORIGINS": "http://localhost:5173",
+        "DATABASE_URL": "sqlite+aiosqlite:////app/data/voyacart.db",
+        "DATA_DIR": "/app/data",
+        "DRIFT_DETECT_ENABLED": "0",
+        "EMBEDDING_API_KEY": "local-model",
+        "EMBEDDING_BASE_URL": "http://mock-llm:8081/v1",
+        "EMBEDDING_DIM": "1024",
+        "EMBEDDING_MODEL": "text-embedding-v4",
+        "HARNESS_ENABLED": "1",
+        "HYBRID_LEXICAL_WEIGHT": "1",
+        "HYBRID_RECALL_ENABLED": "0",
+        "HYBRID_VECTOR_WEIGHT": "1",
+        "IDENTITY_HMAC_SECRET": "",
+        "IDENTITY_MODE": "demo",
+        "LANGFUSE_BASE_URL": "",
+        "LANGFUSE_PUBLIC_KEY": "",
+        "LANGFUSE_SECRET_KEY": "",
+        "LLM_API_KEY": "local-model",
+        "LLM_BASE_URL": "http://mock-llm:8081/v1",
+        "LLM_ENABLE_THINKING": "",
+        "LLM_FALLBACK_CONTEXT_SIZE": "",
+        "LLM_FALLBACK_MODEL": "",
+        "LLM_MAX_CONCURRENCY": "10000",
+        "LLM_MAX_RETRIES": "2",
+        "LLM_MIN_INTERVAL_SECONDS": "0",
+        "LLM_MODEL": "mock-chat",
+        "LOCAL_EMBEDDING_FALLBACK": "0",
+        "LOOP_REPEAT_THRESHOLD": "3",
+        "METRICS_READER_BUYERS": "",
+        "MODEL_ADMIN_BUYERS": "",
+        "MODEL_ALLOWED_LOCAL_HOSTS": "",
+        "MODEL_MASTER_KEY": "",
+        "MODEL_RECOVERY_MODE": "off",
+        "OPENSSL_armcap": "0",
+        "OTEL_EXPORTER_OTLP_ENDPOINT": "",
+        "OTEL_EXPORTER_OTLP_HEADERS": "",
+        "OTEL_EXPORTER_OTLP_TRACES_ENDPOINT": "",
+        "OTEL_EXPORTER_OTLP_TRACES_HEADERS": "",
+        "OTEL_EXPORTER_OTLP_TRACES_TIMEOUT": "5",
+        "OTEL_SERVICE_NAME": "voyacart-api",
+        "OUTPUT_GUARD_ENABLED": "1",
+        "PREFERENCE_RELEVANCE_ENABLED": "0",
+        "PREFERENCE_SUBAGENT_INJECT": "1",
+        "PREFERENCE_TOP_K": "5",
+        "PROMPT_PIN_VERSION": "",
+        "QDRANT_COLLECTION": "voyacart_products",
+        "QDRANT_LOCAL_COLLECTION": "voyacart_products_local",
+        "QDRANT_URL": "http://qdrant:6333",
+        "QUEUE_ENABLED": "1",
+        "QUEUE_LARGE_REQUEST_TURNS": "30",
+        "QUEUE_PRIORITY_ENABLED": "1",
+        "QUEUE_WAIT_SECONDS": "300",
+        "RECALL_CANDIDATES": "32",
+        "REDIS_URL": "redis://redis:6379/0",
+        "REPLY_TOKEN_BUDGET": "0",
+        "RERANKER_API_KEY": "",
+        "RERANKER_BASE_URL": "",
+        "RERANKER_MODE": "http",
+        "RERANKER_MODEL": "",
+        "RERANKER_PROTOCOL": "flat",
+        "RERANKER_TIMEOUT_SECONDS": "15",
+        "SEMANTIC_CACHE_ENABLED": "0",
+        "SEMANTIC_CACHE_THRESHOLD": "0.95",
+        "SEQUENCING_PERSISTENCE_ENABLED": "1",
+        "SESSION_OWNER_BINDING": "1",
+        "TAVILY_API_KEY": "",
+        "TOKEN_BUDGET_TOTAL": "0",
+        "TOOL_RESULT_LIMIT": "20000"
+      },
+      "healthcheck": {
+        "test": [
+          "CMD",
+          "python",
+          "-c",
+          "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=3)"
+        ],
+        "timeout": "4s",
+        "interval": "5s",
+        "retries": 60,
+        "start_period": "10s"
+      },
+      "image": "voyacart-runtime:r1-baseline",
+      "networks": {
+        "default": null
+      },
+      "restart": "unless-stopped",
+      "volumes": [
+        {
+          "type": "volume",
+          "source": "app-data",
+          "target": "/app/data",
+          "volume": {}
+        }
+      ]
+    },
+    "mock-llm": {
+      "profiles": [
+        "mock"
+      ],
+      "build": {
+        "context": "/private/tmp/voyacart-local-fallback-20261014",
+        "dockerfile": "Dockerfile"
+      },
+      "command": [
+        "uvicorn",
+        "--app-dir",
+        "/app/scripts/loadtest",
+        "mock_llm:app",
+        "--host",
+        "0.0.0.0",
+        "--port",
+        "8081"
+      ],
+      "entrypoint": null,
+      "environment": {
+        "MOCK_ERROR_RATE": "0",
+        "MOCK_ORDER_RATE": "0.1",
+        "MOCK_RESPONSE_TOKENS": "300",
+        "MOCK_TOKEN_SECONDS": "0.03",
+        "MOCK_TTFT_SECONDS": "0.8"
+      },
+      "image": "voyacart-runtime:r1",
+      "networks": {
+        "default": null
+      }
+    },
+    "nginx": {
+      "build": {
+        "context": "/private/tmp/voyacart-local-fallback-20261014",
+        "dockerfile": "frontend/Dockerfile",
+        "args": {
+          "FRONTEND_DIR": "frontend",
+          "NGINX_CONFIG": "docker/nginx.scale.conf"
+        }
+      },
+      "command": null,
+      "depends_on": {
+        "api": {
+          "condition": "service_healthy",
+          "required": true
+        }
+      },
+      "entrypoint": null,
+      "image": "voyacart-frontend:load",
+      "networks": {
+        "default": null
+      },
+      "ports": [
+        {
+          "mode": "ingress",
+          "host_ip": "127.0.0.1",
+          "target": 80,
+          "published": "8085",
+          "protocol": "tcp"
+        }
+      ],
+      "restart": "unless-stopped"
+    },
+    "qdrant": {
+      "command": null,
+      "entrypoint": null,
+      "image": "qdrant/qdrant:v1.19.0",
+      "networks": {
+        "default": null
+      },
+      "restart": "unless-stopped",
+      "volumes": [
+        {
+          "type": "volume",
+          "source": "qdrant-data",
+          "target": "/qdrant/storage",
+          "volume": {}
+        }
+      ]
+    },
+    "redis": {
+      "command": [
+        "redis-server",
+        "--appendonly",
+        "yes",
+        "--appendfsync",
+        "always"
+      ],
+      "entrypoint": null,
+      "healthcheck": {
+        "test": [
+          "CMD",
+          "redis-cli",
+          "ping"
+        ],
+        "timeout": "3s",
+        "interval": "5s",
+        "retries": 10
+      },
+      "image": "redis:7-alpine",
+      "networks": {
+        "default": null
+      },
+      "restart": "unless-stopped",
+      "volumes": [
+        {
+          "type": "volume",
+          "source": "redis-data",
+          "target": "/data",
+          "volume": {}
+        }
+      ]
+    },
+    "worker": {
+      "build": {
+        "context": "/private/tmp/voyacart-local-fallback-20261014",
+        "dockerfile": "Dockerfile"
+      },
+      "command": [
+        "python",
+        "-m",
+        "app.worker"
+      ],
+      "depends_on": {
+        "qdrant": {
+          "condition": "service_started",
+          "required": true
+        },
+        "redis": {
+          "condition": "service_healthy",
+          "required": true
+        }
+      },
+      "entrypoint": null,
+      "environment": {
+        "AGUI_DELTA_COALESCE_MS": "50",
+        "AGUI_QUEUE_ENABLED": "0",
+        "AGUI_QUEUE_MAX_PENDING": "200",
+        "AUTOMATION_WORKER_MODE": "external",
+        "BREAKER_SHARED": "1",
+        "CATEGORY_KB_COLLECTION": "voyacart_category_kb",
+        "CONTEXT_PRODUCT_TOKENS": "6000",
+        "CONTEXT_PRUNING_TIMING": "pressure",
+        "CONTEXT_SIZE": "128000",
+        "CONTEXT_STRATEGY": "layered",
+        "CONTEXT_TARGET_TOKENS": "48000",
+        "DATABASE_URL": "sqlite+aiosqlite:////app/data/voyacart.db",
+        "DATA_DIR": "/app/data",
+        "DRIFT_DETECT_ENABLED": "0",
+        "EMBEDDING_API_KEY": "local-model",
+        "EMBEDDING_BASE_URL": "http://mock-llm:8081/v1",
+        "EMBEDDING_DIM": "1024",
+        "EMBEDDING_MODEL": "text-embedding-v4",
+        "HARNESS_ENABLED": "1",
+        "HYBRID_LEXICAL_WEIGHT": "1",
+        "HYBRID_RECALL_ENABLED": "0",
+        "HYBRID_VECTOR_WEIGHT": "1",
+        "IDENTITY_HMAC_SECRET": "",
+        "IDENTITY_MODE": "demo",
+        "LANGFUSE_BASE_URL": "",
+        "LANGFUSE_PUBLIC_KEY": "",
+        "LANGFUSE_SECRET_KEY": "",
+        "LLM_API_KEY": "local-model",
+        "LLM_BASE_URL": "http://mock-llm:8081/v1",
+        "LLM_ENABLE_THINKING": "",
+        "LLM_FALLBACK_CONTEXT_SIZE": "",
+        "LLM_FALLBACK_MODEL": "",
+        "LLM_MAX_CONCURRENCY": "10000",
+        "LLM_MAX_RETRIES": "2",
+        "LLM_MIN_INTERVAL_SECONDS": "0",
+        "LLM_MODEL": "mock-chat",
+        "LOCAL_EMBEDDING_FALLBACK": "0",
+        "LOOP_REPEAT_THRESHOLD": "3",
+        "METRICS_READER_BUYERS": "",
+        "MODEL_ADMIN_BUYERS": "",
+        "MODEL_ALLOWED_LOCAL_HOSTS": "",
+        "MODEL_MASTER_KEY": "",
+        "MODEL_RECOVERY_MODE": "off",
+        "OPENSSL_armcap": "0",
+        "OTEL_EXPORTER_OTLP_ENDPOINT": "",
+        "OTEL_EXPORTER_OTLP_HEADERS": "",
+        "OTEL_EXPORTER_OTLP_TRACES_ENDPOINT": "",
+        "OTEL_EXPORTER_OTLP_TRACES_HEADERS": "",
+        "OTEL_EXPORTER_OTLP_TRACES_TIMEOUT": "5",
+        "OTEL_SERVICE_NAME": "voyacart-worker",
+        "OUTPUT_GUARD_ENABLED": "1",
+        "PREFERENCE_RELEVANCE_ENABLED": "0",
+        "PREFERENCE_SUBAGENT_INJECT": "1",
+        "PREFERENCE_TOP_K": "5",
+        "PROMPT_PIN_VERSION": "",
+        "QDRANT_COLLECTION": "voyacart_products",
+        "QDRANT_LOCAL_COLLECTION": "voyacart_products_local",
+        "QDRANT_URL": "http://qdrant:6333",
+        "QUEUE_ENABLED": "1",
+        "QUEUE_LARGE_REQUEST_TURNS": "30",
+        "QUEUE_PRIORITY_ENABLED": "1",
+        "RECALL_CANDIDATES": "32",
+        "REDIS_URL": "redis://redis:6379/0",
+        "REPLY_TOKEN_BUDGET": "0",
+        "RERANKER_API_KEY": "",
+        "RERANKER_BASE_URL": "",
+        "RERANKER_MODE": "http",
+        "RERANKER_MODEL": "",
+        "RERANKER_PROTOCOL": "flat",
+        "RERANKER_TIMEOUT_SECONDS": "15",
+        "SEMANTIC_CACHE_ENABLED": "0",
+        "SEQUENCING_PERSISTENCE_ENABLED": "1",
+        "SESSION_OWNER_BINDING": "1",
+        "TAVILY_API_KEY": "",
+        "TOKEN_BUDGET_TOTAL": "0",
+        "TOOL_RESULT_LIMIT": "20000",
+        "WORKER_CONCURRENCY": "2"
+      },
+      "image": "voyacart-runtime:r1-baseline",
+      "networks": {
+        "default": null
+      },
+      "restart": "unless-stopped",
+      "volumes": [
+        {
+          "type": "volume",
+          "source": "app-data",
+          "target": "/app/data",
+          "volume": {}
+        }
+      ]
+    }
+  },
+  "volumes": {
+    "app-data": {
+      "name": "voyacart-r1-baseline_app-data"
+    },
+    "qdrant-data": {
+      "name": "voyacart-r1-baseline_qdrant-data"
+    },
+    "redis-data": {
+      "name": "voyacart-r1-baseline_redis-data"
+    }
+  }
+}

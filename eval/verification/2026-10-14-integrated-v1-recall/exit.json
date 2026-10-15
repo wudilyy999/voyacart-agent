@@ -1,0 +1,9 @@
+{
+  "exit_code": 1,
+  "purpose": "默认 v3 商品目录与 v1 标注口径核对",
+  "catalog_file": "data/catalog-v3.jsonl",
+  "catalog_products": 3700,
+  "dataset": "eval/v1/product_retrieval.jsonl",
+  "profile": "offline-fallback",
+  "paid_model_calls": 0
+}

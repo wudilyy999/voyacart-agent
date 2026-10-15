@@ -1,0 +1,28 @@
+2026-10-14 11:29:19,782 INFO httpx request=- task=- session=- trace=- prompt=- HTTP Request: GET http://qdrant:6333 "HTTP/1.1 200 OK"
+2026-10-14 11:29:19,809 INFO app.composition request=- task=- session=- trace=- prompt=- 队列已启用（Redis Stream），事件走跨进程背板
+2026-10-14 11:29:19,813 INFO app.composition request=- task=- session=- trace=- prompt=- 持久化形态：sqlite
+2026-10-14 11:29:19,813 INFO app.composition request=- task=- session=- trace=- prompt=- 熔断状态：Redis 跨实例共享
+2026-10-14 11:29:19,836 INFO app.worker request=- task=- session=- trace=- prompt=- worker 启动：7fa20d6ce0b6-1-1b92（并发度 2）
+2026-10-14 11:29:20,053 INFO httpx request=- task=- session=- trace=- prompt=- HTTP Request: GET http://qdrant:6333/collections/voyacart_products/exists "HTTP/1.1 200 OK"
+2026-10-14 11:29:20,056 INFO httpx request=- task=- session=- trace=- prompt=- HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points "HTTP/1.1 200 OK"
+2026-10-14 11:29:20,058 INFO httpx request=- task=- session=- trace=- prompt=- HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points "HTTP/1.1 200 OK"
+2026-10-14 11:29:20,060 INFO httpx request=- task=- session=- trace=- prompt=- HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points "HTTP/1.1 200 OK"
+2026-10-14 11:29:20,062 INFO httpx request=- task=- session=- trace=- prompt=- HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points "HTTP/1.1 200 OK"
+2026-10-14 11:29:20,064 INFO httpx request=- task=- session=- trace=- prompt=- HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points "HTTP/1.1 200 OK"
+2026-10-14 11:29:20,066 INFO httpx request=- task=- session=- trace=- prompt=- HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points "HTTP/1.1 200 OK"
+2026-10-14 11:29:20,068 INFO httpx request=- task=- session=- trace=- prompt=- HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points "HTTP/1.1 200 OK"
+2026-10-14 11:29:20,070 INFO httpx request=- task=- session=- trace=- prompt=- HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points "HTTP/1.1 200 OK"
+2026-10-14 11:29:20,073 INFO httpx request=- task=- session=- trace=- prompt=- HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points "HTTP/1.1 200 OK"
+2026-10-14 11:29:20,075 INFO httpx request=- task=- session=- trace=- prompt=- HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points "HTTP/1.1 200 OK"
+2026-10-14 11:29:20,077 INFO httpx request=- task=- session=- trace=- prompt=- HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points "HTTP/1.1 200 OK"
+2026-10-14 11:29:20,079 INFO httpx request=- task=- session=- trace=- prompt=- HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points "HTTP/1.1 200 OK"
+2026-10-14 11:29:20,081 INFO httpx request=- task=- session=- trace=- prompt=- HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points "HTTP/1.1 200 OK"
+2026-10-14 11:29:20,083 INFO httpx request=- task=- session=- trace=- prompt=- HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points "HTTP/1.1 200 OK"
+2026-10-14 11:29:20,084 INFO httpx request=- task=- session=- trace=- prompt=- HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points "HTTP/1.1 200 OK"
+2026-10-14 11:29:20,121 INFO app.infrastructure.vector.index_bootstrap request=- task=- session=- trace=- prompt=- 商品向量就绪：共 3700，复用 3700，新推理 0
+2026-10-14 11:29:20,130 INFO httpx request=- task=- session=- trace=- prompt=- HTTP Request: GET http://qdrant:6333/collections/voyacart_category_kb/exists "HTTP/1.1 200 OK"
+2026-10-14 11:29:20,133 INFO httpx request=- task=- session=- trace=- prompt=- HTTP Request: GET http://qdrant:6333 "HTTP/1.1 200 OK"
+2026-10-14 11:29:20,135 INFO httpx request=- task=- session=- trace=- prompt=- HTTP Request: POST http://qdrant:6333/collections/voyacart_category_kb/points/scroll "HTTP/1.1 200 OK"
+2026-10-14 11:29:20,137 | WARNING | _approx_token_chunker:__init__:109 - Passing ``chunk_size``, ``overlap`` to ApproxTokenChunker directly is deprecated, use ApproxTokenChunker.Parameters instead.
+2026-10-14 11:29:20,142 INFO httpx request=- task=- session=- trace=- prompt=- HTTP Request: POST http://qdrant:6333/collections/voyacart_category_kb/points/scroll "HTTP/1.1 200 OK"
+2026-10-14 11:29:20,185 INFO app.infrastructure.rag.category_knowledge request=- task=- session=- trace=- prompt=- 品类知识库就绪：写入或更新 0 篇，累计 45 篇

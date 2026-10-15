@@ -1,0 +1,23 @@
+failed to fetch metadata: fork/exec /Users/liyuyang/.docker/cli-plugins/docker-buildx: no such file or directory
+
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon  6.727MB
+Step 1/6 : FROM voyacart-runtime:r1
+ ---> e994a8b76f26
+Step 2/6 : RUN rm -rf /app/app
+ ---> Running in 0c5293073b9c
+ ---> Removed intermediate container 0c5293073b9c
+ ---> b55f36e65428
+Step 3/6 : COPY app /app/app
+ ---> c0355231d0b9
+Step 4/6 : COPY configs /app/configs
+ ---> 5f77e39deaa2
+Step 5/6 : COPY knowledge /app/knowledge
+ ---> 3ddeca27ca53
+Step 6/6 : COPY data/catalog-v3.jsonl /app/catalog/catalog-v3.jsonl
+ ---> ad2e274d9016
+Successfully built ad2e274d9016
+Successfully tagged voyacart-runtime:r1-baseline

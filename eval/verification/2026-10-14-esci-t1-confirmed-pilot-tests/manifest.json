@@ -1,0 +1,13 @@
+{
+  "command": "uv run --no-sync python -m pytest -q scripts/esci/test_prepare.py",
+  "exit_code": 0,
+  "passed": 6,
+  "source_fingerprints": {
+    "scripts/esci/download.py": "61e4cc9f9ee636845db90d563117c4fe5ec9cca2404237e6f7285093bcd72de76b5dddd07e766a44130b66417e2d624c52c0d73c771bfb5bc9e32bb625e05159",
+    "scripts/esci/test_prepare.py": "e01c724e2980a819290ae052ffc2036d5c5ad966a7f8cc40fc0934f82d228f45dff1806e2165b296655b8a96334c126f884b2a079afa51e0609bff5032f49cf7",
+    "scripts/esci/prepare.py": "582f8c47d466aa8444b285988456f18925d542a4cff10b45801fc7a072593a6b227fff37f82e0113e43d90e67b40b73cf08c2cdf97774ea442ff86884e526a76",
+    "pyproject.toml": "5adb60513ab863db1883217ab5b252d6183b6f7ff6d322a7f870f132e9e4d59b308e85ea914b69540b66ad9a7f90537fbace5af4edbaec5c49e6afc8a1be597e",
+    "uv.lock": "b1b8a333e24d9b9347c8a58a2814565da711130732830bcaf14fbb165e5089d45239a12960a99d28fcb2ff7a20655665916f754b69e9fcde23f07e94fab00993",
+    "docs/PLAN.md": "b1d8082cdab27eff78602175b28ef726c1c0fe50e7f5be43c9b8263baa93c87f96de72c719d00c2f4c1165b88f4e8e4d86b652344dbe95d55f184b4312001272"
+  }
+}

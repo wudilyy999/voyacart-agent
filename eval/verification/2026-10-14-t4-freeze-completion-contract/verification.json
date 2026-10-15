@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "test_count": 20,
+  "input_scope": "独立构造目录与标注，完整检索组件及假外部端口",
+  "real_esci_holdout_read": false,
+  "real_esci_quality_verified": false,
+  "model_calls": 0,
+  "external_http_calls": 0,
+  "known_credential_hits": [],
+  "source_content_fingerprints_blake2b": {
+    "scripts/eval/run_esci.py": "21dc06d99cea0d4fc09645bf8fc0a5ecae2ea5ae0503cdf1b086432542761aa62de23416bf7e78314332da7caa0b110966562adb4b32ae373e727c218e233881",
+    "tests/test_esci_evaluation.py": "c39b61f3523704c05216af96279605c711c25cc374b1b6535698332839d429e5b24345fb63bb21d4162a3ccbb22ffd4f6d7a8c82dd0fc82cfcad02bab9e90772"
+  },
+  "full_harness_gate": "pending_integration"
+}

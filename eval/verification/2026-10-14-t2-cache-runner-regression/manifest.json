@@ -1,0 +1,24 @@
+{
+  "command": "LLM_API_KEY=unit-test-key LLM_BASE_URL=http://127.0.0.1:1/v1 LLM_MODEL=unit-test .venv/bin/python -m pytest -q scripts/esci",
+  "data_kind": "constructed_fixture",
+  "exit_code": 0,
+  "fingerprint_method": "blake2b",
+  "real_model_calls": 0,
+  "source_commit": "33607e14db79d0bedcd184e653cb8978d940bb0c",
+  "source_fingerprints": {
+    "app/infrastructure/settings.py": "361ba04fe2077b83583d052ca13c55c9f23ad4974e39bbf86331b2b6f99776f390bc2722e2e00103a23e43a03f2b17de21598ce0357cbf03bd077c794a57cf98",
+    "app/infrastructure/throttle.py": "cc9bdffa7f7dc1e690ce82ea1a9576b2ba173e8bc517d600748707838c4effb52f364852e0a879beb15e9f321f13d6cdeb68d214f6fe4deae306e2619424b37e",
+    "scripts/esci/build_catalog.py": "75423600271914b6e873aac154d68926dee826bedc24f3e347f7123cd608cfa5afd1c56a721e1ed05ca9dd3240082980e14e9e956059be78f37d49ee3d49c31a",
+    "scripts/esci/catalog_records.py": "5f7624bfc4d40984536b43c8c307e223fa96a25d6cdf3dcaeb01d2016ba04c108cf155a9533d5d357c4c2f0f5bc8bc4a7af5dab2565e7504202abaaf6e86773b",
+    "scripts/esci/download.py": "61e4cc9f9ee636845db90d563117c4fe5ec9cca2404237e6f7285093bcd72de76b5dddd07e766a44130b66417e2d624c52c0d73c771bfb5bc9e32bb625e05159",
+    "scripts/esci/enrich_catalog.py": "469a1425bf0fc8a63dffeb0ba69898c9c9f93505e8165ebdabd1c6ce407d13ca9add9368d1f7a712434157a3d6864fd4bbf3769efe8e6bf7098ec7d68792384d",
+    "scripts/esci/finalize_catalog.py": "c1cde02963f07defcd12ae01886e92bcd1cc41edf9b9c6db6e632a7f3e7f9fa00b754a4561289a5a9cc754e5e5debedafaa4a35b91862f7eaebe6331474d5f9b",
+    "scripts/esci/prepare.py": "0969e95755ee64767d037c00aef164338e6a2ecb97c2199b5c94f659837e552f4987e8f2616d4e8f9997eb74bdabd8a6242e80cfaf360228e1d4a7d1de8be114",
+    "scripts/esci/test_build_catalog.py": "421553b357cee223924bf99c9c8b8d9e7edb5472146d7f177516d22c63aee9beda7a1b1131e5da55929f4922e41987404516574642fbf908842706227654d417",
+    "scripts/esci/test_catalog_records.py": "2906309fb15e550f807755df8383c79d72de646ce57fe80e233cf7dbee1a6d5f5b47af16848a60c43f50786a1bd624e6918367a8588a697d87aed4b181d05251",
+    "scripts/esci/test_enrich_catalog.py": "30e5814c57a61303a66311f4355baecc100c86196dc0ebeb5b267c77d52cd273717091e6f464361c41c4146b5f31e3fb79766c79c5d455656c366e7a948f9979",
+    "scripts/esci/test_finalize_catalog.py": "46dd0cf36becc13259cabe45c36ae746614c754f78e14c72185b9fb708509417b2decfd27ef5db701b18744b865674696090ce53abf1fd20a8ab1d4931b55a67",
+    "scripts/esci/test_prepare.py": "5c2a88b504bb6edd0ea5d55596bba0880da7458908c50782ea3aaeb8449b0b1af3453c02d7bf30288cf92866bd89b333b2ca6f0538605ed126ab1725bbfd6df4"
+  },
+  "tests_passed": 29
+}

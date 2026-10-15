@@ -1,0 +1,20 @@
+{
+  "status": "failed",
+  "exit_code": 1,
+  "cached_total": 645,
+  "cached_status_counts": {
+    "ok": 645
+  },
+  "call_counts": {
+    "cache_hits": 276,
+    "candidate_count": 12000,
+    "completed_calls": 369,
+    "failed_outputs": 0,
+    "model_calls": 378
+  },
+  "failure_types": {
+    "ReadTimeout": 1
+  },
+  "source_stable": true,
+  "pending_user_decision": "模型单次请求超时后，等待用户决定续跑。"
+}

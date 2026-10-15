@@ -1,0 +1,17 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.11.16, pytest-9.1.1, pluggy-1.6.0
+rootdir: /private/tmp/voyacart-local-fallback-20261014
+configfile: pyproject.toml
+plugins: asyncio-1.4.0, anyio-4.14.2
+asyncio: mode=Mode.AUTO, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function
+collected 68 items
+
+tests/test_catalog_fixture.py .........                                  [ 13%]
+tests/test_catalog_data_quality.py ...                                   [ 17%]
+tests/test_multilingual_retrieval.py .....................               [ 48%]
+tests/test_retrieval_v2.py .....                                         [ 55%]
+tests/test_eval_selection_manifest.py ........................           [ 91%]
+tests/test_runtime_distribution.py ......                                [100%]
+
+- generated xml file: /private/tmp/voyacart-local-fallback-20261014/eval/verification/2026-10-14-esci-demo-integration/catalog-tests-configured.xml -
+============================== 68 passed in 3.50s ==============================

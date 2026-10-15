@@ -1,0 +1,57 @@
+{
+  "python": "3.11.16",
+  "python_packages": {
+    "pyarrow": "23.0.1",
+    "fastembed": "0.7.4",
+    "gepa": "0.1.4",
+    "redis": "8.1.0",
+    "qdrant-client": "1.19.0",
+    "openai": "2.53.0"
+  },
+  "host_cpu_count": 10,
+  "host_memory_bytes": 17179869184,
+  "docker": {
+    "cpus": 4,
+    "memory_bytes": 8308154368,
+    "server_version": "27.4.0"
+  },
+  "redis_url": "redis://127.0.0.1:16379/0",
+  "qdrant_url": "http://127.0.0.1:6333",
+  "source_fingerprints": {
+    "pyproject.toml": "5adb60513ab863db1883217ab5b252d6183b6f7ff6d322a7f870f132e9e4d59b308e85ea914b69540b66ad9a7f90537fbace5af4edbaec5c49e6afc8a1be597e",
+    "uv.lock": "b1b8a333e24d9b9347c8a58a2814565da711130732830bcaf14fbb165e5089d45239a12960a99d28fcb2ff7a20655665916f754b69e9fcde23f07e94fab00993",
+    "frontend/package.json": "a23dd881be61f4c13a233c36a4eb857678b68ac5c968c4db32aad1bd39e38fec644b89350367538fde5157a007eaf739b0dedead3c7c7537d18062688776eb18",
+    "frontend/package-lock.json": "f05b4eb49b97b4c2ddc1aa911c1efdb3402c71b6519b7e1d20d92a0f6e658bfa2667c3a7ca4f77649553df5074184bd1782831c4688ab83b1b2df5c82f334ed4",
+    "docker/docker-compose.yaml": "3d92fb85f7f9c125f5e934f2d7db0db2f4e97ff231c1c8d2f00732e026f709db9468e03ba9211b0731f8739326c83a77d912e861ff2a590df44a9452b4c447de",
+    "scripts/eval/local_multilingual_embedding.py": "5e8907eaf44d86e328fbff4e6a9be767f0698ba3fbf3307f47eb365d99878a37fdb26253b3e73c30bcd919390186329a600f88c19d1be3084f210769cbf1067c"
+  },
+  "frontend_tests": {
+    "files": 18,
+    "passed": 240,
+    "exit_code": 0
+  },
+  "frontend_build": {
+    "exit_code": 0
+  },
+  "gepa_test": {
+    "passed": 1,
+    "exit_code": 0
+  },
+  "dataset_validation": {
+    "exit_code": 0
+  },
+  "npm_audit": {
+    "exit_code": 1,
+    "moderate": 2,
+    "high": 2,
+    "critical": 2,
+    "total": 6
+  },
+  "source_stable": true,
+  "locust": {
+    "version": "2.46.7",
+    "python": "3.11.16",
+    "installation_status": "completed",
+    "version_output": "locust 2.46.7 from /Users/liyuyang/.local/share/uv/tools/locust/lib/python3.11/site-packages/locust (Python 3.11.16)"
+  }
+}

@@ -1,0 +1,2 @@
+{"category":"办公学习","expected_empty":false,"in_stock":true,"locale":"us","price_max_major":90,"query":"metal backpack","query_id":1,"relevant_product_ids":["P100000"],"required_material_tags":["金属"],"ship_to":"CN","target_currency":"CNY"}
+{"category":"办公学习","expected_empty":true,"in_stock":true,"locale":"us","price_max_major":0,"query":"metal backpack","query_id":2,"relevant_product_ids":[],"required_material_tags":["金属"],"ship_to":"CN","target_currency":"CNY"}

@@ -1,0 +1,6 @@
+{"error_type":"KeyError","locale":"jp","prompt_version":"query-class-v1","query":"西 鋭夫","query_id":129415,"split":"train","status":"failed"}
+{"error_type":"KeyError","locale":"us","prompt_version":"query-class-v1","query":"dr bronners peppermint soap","query_id":35130,"split":"test","status":"failed"}
+{"error_type":"KeyError","locale":"us","prompt_version":"query-class-v1","query":"metal saga ps2","query_id":68422,"split":"test","status":"failed"}
+{"error_type":"KeyError","locale":"us","prompt_version":"query-class-v1","query":"the new normal jennifer ashton","query_id":102234,"split":"test","status":"failed"}
+{"error_type":"KeyError","locale":"us","prompt_version":"query-class-v1","query":"guess polarized sunglasses","query_id":47902,"split":"train","status":"failed"}
+{"error_type":"KeyError","locale":"us","prompt_version":"query-class-v1","query":"knitters pride zing alu dpn size 0","query_id":58896,"split":"train","status":"failed"}

@@ -1,0 +1,34 @@
+{
+  "categories": {
+    "办公学习": 60,
+    "厨房餐饮": 61,
+    "家居生活": 61,
+    "户外运动": 65,
+    "数码配件": 63,
+    "旅行装备": 69,
+    "母婴宠物": 60,
+    "美妆个护": 61
+  },
+  "chinese_queries": 200,
+  "destination_coverage": {
+    "CN": 0.82,
+    "EU": 0.512,
+    "JP": 0.464,
+    "SG": 0.282,
+    "US": 0.632
+  },
+  "locales": {
+    "es": 125,
+    "jp": 125,
+    "us": 250
+  },
+  "manual_audit": "pending",
+  "model_calls": 0,
+  "out_of_stock_ratio": 0.11,
+  "products": 500,
+  "queries": {
+    "dev": 100,
+    "distractors": 100,
+    "holdout": 300
+  }
+}

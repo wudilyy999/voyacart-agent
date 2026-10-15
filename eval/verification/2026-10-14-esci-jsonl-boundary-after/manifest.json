@@ -1,0 +1,14 @@
+{
+  "phase": "after_fix",
+  "model_calls": 0,
+  "external_http_attempts": 0,
+  "exit_code": 0,
+  "source_fingerprints": {
+    "scripts/esci/prepare.py": "1384c7d7efcdc7ba58a26c260bb0f2196f3b2c9ec7a54176c18317c4d6aef85f35ef3082e5583146f70712c619e1f7ad6e1fb7eb20e64dcc40d89bb15aa0aadd",
+    "scripts/esci/finalize_catalog.py": "5957687b021f059b12eb6c5caa840878322aa4c2ad7e80e2dde5ed17f350fafd8ad2be74b42a11a6957758ff4060b9c1a4bcfced6d22a4fcbe208e9f148bd40a",
+    "scripts/esci/test_prepare.py": "3adb4d55597f75b2855ddabfd82cb671625fc0582334c8dbdebffb6b330376f4667ace840d6dc6ec4c557eefeeb42566f08164bbd784c5ad2ded0bc03fcd88c6",
+    "scripts/esci/test_finalize_catalog.py": "ad034a2a104661e0104811165992cf77185f0e6394463681abd49af32f66c084f5ab3e2e0f366136791ddb11bfed39656b8948d68494af8068ddefaf74168d97",
+    "scripts/esci/test_enrich_catalog.py": "7000ba9d724d335ca4208e9495c83dc21b164803f75ad1b5cde2909f45f7bde9d849a9619782f6e32e6aa3c5daa57d9a3c636d693f793c12ae8be19b760fb845"
+  },
+  "full_harness": "not_run"
+}

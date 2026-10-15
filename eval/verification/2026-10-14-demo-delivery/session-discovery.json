@@ -1,0 +1,25 @@
+{
+  "sessions": [
+    {
+      "id": "1106e227-f99b-4921-a0fc-5dbe2e3a409a",
+      "title": "本轮交付演示：找寄到中国、300元以内的旅行商品，我想查看详情后准备1件商品的下单确认。",
+      "updatedAt": 1791988608172,
+      "runId": "364da9ef-13cb-470f-b8c2-db4bfd988d2b",
+      "source": "server"
+    },
+    {
+      "id": "ba85109a-9221-4b28-bddf-6409d8fbc4b3",
+      "title": "预算300元以内，找一个寄到中国的轻便背包",
+      "updatedAt": 1791974350402,
+      "runId": "30fca0be-af8e-40e9-9400-beedfbf8ef50",
+      "source": "server"
+    },
+    {
+      "id": "04c002ce-c42a-4c4d-a9a7-5c2e7e0f3244",
+      "title": "预算300元以内，找一个寄到中国的轻便背包",
+      "updatedAt": 1791969249975,
+      "runId": "3e93c68d-2587-4131-b1f7-08e50392ae84",
+      "source": "server"
+    }
+  ]
+}

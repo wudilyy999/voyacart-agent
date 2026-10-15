@@ -1,0 +1,1 @@
+["docker", "inspect", "--format", "{{index .Config.Labels \"com.docker.compose.project\"}}", "b5c97b514833e32709c1b98c1ec5b08ae2412440676076a2be9d512840cd5e74"]

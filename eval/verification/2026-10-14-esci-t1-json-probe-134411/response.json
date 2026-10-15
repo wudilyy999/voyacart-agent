@@ -1,0 +1,1 @@
+{"id":"resp_rxbPateNFtygvr0Pm7m9wA8","object":"chat.completion","created":1791956656,"model":"gemini-3.8-flash-high","choices":[{"index":0,"message":{"role":"assistant","content":"{\"category\":\"旅行装备\"}"},"finish_reason":"stop"}],"usage":{"prompt_tokens":80,"completion_tokens":272,"total_tokens":352,"completion_tokens_details":{"reasoning_tokens":266}}}

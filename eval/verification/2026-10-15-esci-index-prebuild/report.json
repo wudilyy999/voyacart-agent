@@ -1,0 +1,9 @@
+{
+  "products": 12123,
+  "concurrency": 16,
+  "timeout_retries": 92,
+  "embedded_products": 11853,
+  "reused_products": 270,
+  "remaining_after": 0,
+  "seconds": 440.5225462919334
+}

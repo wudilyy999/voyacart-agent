@@ -1,0 +1,40 @@
+INFO:     172.26.0.10:55580 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+INFO:     172.26.0.10:55594 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37914 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 14:34:01,424 INFO app.infrastructure.tracing request=52233c2490614b07aaada4c7d83b1027 task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+INFO:     127.0.0.1:37966 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 14:34:06,496 INFO app.infrastructure.tracing request=36c23190437c490dbd1ab1e2688d6248 task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+INFO:     127.0.0.1:42514 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 14:34:11,590 INFO app.infrastructure.tracing request=f2062ac301aa4eec8d5b56c8cfe68115 task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+2026-10-14 14:34:11,640 INFO app.infrastructure.tracing request=664458bc26f04b1696840b66dcb45454 task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+2026-10-14 14:34:13,762 INFO app.infrastructure.tracing request=d24ff5eb07b24a0f8f4b6571f68696fb task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+INFO:     172.26.0.10:43990 - "GET /commerce/ag-ui/runs/load-15b51412bd1a44a1a6adcc8a1a987e09/events?buyer_id=load-15b51412bd1a44a1a6adcc8a1a987e09 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42566 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 14:34:16,669 INFO app.infrastructure.tracing request=e5afb6cfbebe4dce8098350cee3df3fc task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+2026-10-14 14:34:21,735 INFO app.infrastructure.tracing request=654e1cbf201248ae9087e8cf14c707e0 task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+INFO:     127.0.0.1:49294 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 14:34:22,863 INFO app.infrastructure.tracing request=3de11bdd24074e2ca9dde373837fe603 task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+INFO:     172.26.0.10:34780 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49358 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 14:34:26,810 INFO app.infrastructure.tracing request=e30b0ba63f9f41e3905aaf9dfd05b6d7 task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+INFO:     127.0.0.1:57342 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 14:34:31,878 INFO app.infrastructure.tracing request=71b45e42887b465d891416e69de72286 task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+INFO:     172.26.0.10:60458 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57372 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 14:34:36,961 INFO app.infrastructure.tracing request=a9bc3d7c453a475abb8ff8dc7859b4ad task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+INFO:     127.0.0.1:42232 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 14:34:42,039 INFO app.infrastructure.tracing request=b598ee8c5e614b76ac3f9b02bcf4ef25 task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+INFO:     127.0.0.1:42270 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 14:34:47,108 INFO app.infrastructure.tracing request=cb5bf4ee7b744dcbb0e5212bd0f8ecdd task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+INFO:     127.0.0.1:48780 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 14:34:52,169 INFO app.infrastructure.tracing request=38bd24fbb3a94645a60af7144bacf1e3 task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+2026-10-14 14:34:57,216 INFO app.infrastructure.tracing request=c2067bf8fa5a4318b0b502b1a4bad3ae task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+INFO:     127.0.0.1:48808 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 14:34:57,949 INFO app.infrastructure.tracing request=f759ef4c8a674d64a5308b21d3cc0481 task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+INFO:     127.0.0.1:37710 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 14:35:02,286 INFO app.infrastructure.tracing request=3a6b044c73864e73a0d97ca3d370843b task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+2026-10-14 14:35:07,349 INFO app.infrastructure.tracing request=96366b83a6454c8e8c5fb03dbc9d6735 task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+INFO:     127.0.0.1:37760 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 14:35:10,662 INFO app.infrastructure.tracing request=172607c4195b43a38134f23b14afb5de task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+INFO:     127.0.0.1:33272 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 14:35:12,429 INFO app.infrastructure.tracing request=034e06ee43c74ae1baf163607e07864e task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200

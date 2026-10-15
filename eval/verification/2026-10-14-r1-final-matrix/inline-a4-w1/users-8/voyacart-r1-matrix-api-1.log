@@ -1,0 +1,54 @@
+INFO:     172.26.0.10:58194 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+2026-10-14 13:47:40,785 INFO httpx request=a3a09b3b405f4e4c95c43038d09db541 task=- session=sha256:cd3a0f0c9bb692154035f974 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:47:40,787 INFO app.infrastructure.tracing request=488b6fcc86a04986b0c69c45e2892289 task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+INFO:     127.0.0.1:58278 - "GET /health HTTP/1.1" 200 OK
+INFO:     172.26.0.10:58198 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+2026-10-14 13:47:40,966 INFO httpx request=325bdf9f683c4ad4a6b48db14a4e552a task=- session=sha256:8aefe456c49011dfb4e183db trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:47:41,966 INFO httpx request=a3a09b3b405f4e4c95c43038d09db541 task=- session=sha256:cd3a0f0c9bb692154035f974 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:47:41,972 WARNING app.application.usecases.catalog_search request=a3a09b3b405f4e4c95c43038d09db541 task=- session=sha256:cd3a0f0c9bb692154035f974 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:47:41,996 INFO httpx request=a3a09b3b405f4e4c95c43038d09db541 task=- session=sha256:cd3a0f0c9bb692154035f974 trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:47:42,123 INFO httpx request=325bdf9f683c4ad4a6b48db14a4e552a task=- session=sha256:8aefe456c49011dfb4e183db trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:47:42,124 WARNING app.application.usecases.catalog_search request=325bdf9f683c4ad4a6b48db14a4e552a task=- session=sha256:8aefe456c49011dfb4e183db trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:47:42,140 INFO httpx request=325bdf9f683c4ad4a6b48db14a4e552a task=- session=sha256:8aefe456c49011dfb4e183db trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-14 13:47:42,856 INFO app.infrastructure.tracing request=a3a09b3b405f4e4c95c43038d09db541 task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+INFO:     172.26.0.10:47726 - "GET /commerce/ag-ui/runs/load-b0cfd48ff04d4d80a40951bbc2c52df6/events?buyer_id=load-b0cfd48ff04d4d80a40951bbc2c52df6 HTTP/1.1" 200 OK
+2026-10-14 13:47:43,000 INFO app.infrastructure.tracing request=325bdf9f683c4ad4a6b48db14a4e552a task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+INFO:     172.26.0.10:47736 - "GET /commerce/ag-ui/runs/load-d703851b4fff4422b2da473e02ea194b/events?buyer_id=load-d703851b4fff4422b2da473e02ea194b HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42158 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 13:47:45,849 INFO app.infrastructure.tracing request=bd64985376f3487e8c56f0fafe8e2421 task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+INFO:     127.0.0.1:42198 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 13:47:50,916 INFO app.infrastructure.tracing request=7e44d0ea7fba4c3ebcbf0825bf805848 task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+2026-10-14 13:47:51,941 INFO app.infrastructure.tracing request=a1d2b6c27a604e57950981d51c76457c task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+2026-10-14 13:47:52,070 INFO app.infrastructure.tracing request=26544e1881d248ae98fa396ca74febfe task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+INFO:     127.0.0.1:44132 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 13:47:56,024 INFO app.infrastructure.tracing request=89d4fc6964aa425ab68eaede63b01af2 task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+INFO:     172.26.0.10:40628 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+2026-10-14 13:48:00,434 INFO httpx request=c7b1b4c51253434dad714668d30689a0 task=- session=sha256:20e544c45af1404614b261df trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:44204 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 13:48:01,147 INFO app.infrastructure.tracing request=412468a81baf4aa08bd53def21f04885 task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+2026-10-14 13:48:01,645 INFO httpx request=c7b1b4c51253434dad714668d30689a0 task=- session=sha256:20e544c45af1404614b261df trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:48:01,651 WARNING app.application.usecases.catalog_search request=c7b1b4c51253434dad714668d30689a0 task=- session=sha256:20e544c45af1404614b261df trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:48:01,670 INFO httpx request=c7b1b4c51253434dad714668d30689a0 task=- session=sha256:20e544c45af1404614b261df trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:56256 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 13:48:06,230 INFO app.infrastructure.tracing request=c0ae091fc70f4627a20f529bfd2549e4 task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+INFO:     172.26.0.10:43178 - "GET /commerce/ag-ui/runs/load-fef579f92e5b42968754dd6740fe422a/events?buyer_id=load-fef579f92e5b42968754dd6740fe422a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56298 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 13:48:11,298 INFO app.infrastructure.tracing request=445b1cda83e545559c3051d249e9b03d task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+2026-10-14 13:48:11,660 INFO app.infrastructure.tracing request=c7b1b4c51253434dad714668d30689a0 task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+2026-10-14 13:48:16,205 INFO app.infrastructure.tracing request=f8609fa766b14f86bd409ec1c8d322fb task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+INFO:     127.0.0.1:59508 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 13:48:16,382 INFO app.infrastructure.tracing request=07447819287b4dfcb34a17f976a214b0 task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+INFO:     172.26.0.10:51314 - "POST /commerce/ag-ui/run HTTP/1.1" 200 OK
+2026-10-14 13:48:20,691 INFO httpx request=0e32619718b04324804330b87884a3a1 task=- session=sha256:465eb596a4ceddb0851c6a6d trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:38800 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 13:48:21,481 INFO app.infrastructure.tracing request=4a4d44d5aadd4ac48279dbac82d5510c task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+2026-10-14 13:48:21,907 INFO httpx request=0e32619718b04324804330b87884a3a1 task=- session=sha256:465eb596a4ceddb0851c6a6d trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://qdrant:6333/collections/voyacart_products/points/query "HTTP/1.1 200 OK"
+2026-10-14 13:48:21,912 WARNING app.application.usecases.catalog_search request=0e32619718b04324804330b87884a3a1 task=- session=sha256:465eb596a4ceddb0851c6a6d trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 rerank 不可用，按向量分排序：Reranker 未配置
+2026-10-14 13:48:21,933 INFO httpx request=0e32619718b04324804330b87884a3a1 task=- session=sha256:465eb596a4ceddb0851c6a6d trace=- prompt=p-08e47bfc1a2e0a94d9e48282222db8e5f3d096a7f3659deeb371e6379361f548 HTTP Request: POST http://mock-llm:8081/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:38832 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 13:48:26,556 INFO app.infrastructure.tracing request=d61fab8534f6483485cc51090cbcb1c9 task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+2026-10-14 13:48:31,639 INFO app.infrastructure.tracing request=a92841e5e2314a85b7021d5010094828 task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+INFO:     127.0.0.1:60752 - "GET /health HTTP/1.1" 200 OK
+2026-10-14 13:48:32,082 INFO app.infrastructure.tracing request=0e32619718b04324804330b87884a3a1 task=- session=- trace=- prompt=- HTTP 请求结束 method=POST status=200
+2026-10-14 13:48:36,765 INFO app.infrastructure.tracing request=b2d29bc43bcf474d80a03c4ad027c136 task=- session=- trace=- prompt=- HTTP 请求结束 method=GET status=200
+INFO:     127.0.0.1:60846 - "GET /health HTTP/1.1" 200 OK

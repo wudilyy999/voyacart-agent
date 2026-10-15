@@ -1,0 +1,205 @@
+Compose can now delegate builds to bake for better performance.
+ To do so, set COMPOSE_BAKE=true.
+#0 building with "colima" instance using docker driver
+
+#1 [api internal] load build definition from Dockerfile
+#1 transferring dockerfile: 1.31kB done
+#1 DONE 0.0s
+
+#2 [automation-worker internal] load build definition from Dockerfile
+#2 transferring dockerfile: 1.31kB done
+#2 DONE 0.0s
+
+#3 [mock-llm internal] load build definition from Dockerfile
+#3 transferring dockerfile: 1.31kB done
+#3 DONE 0.0s
+
+#4 [worker internal] load build definition from Dockerfile
+#4 transferring dockerfile: 1.31kB done
+#4 DONE 0.0s
+
+#5 [worker] resolve image config for docker-image://docker.io/docker/dockerfile:1
+#5 DONE 1.5s
+
+#6 [worker] docker-image://docker.io/docker/dockerfile:1@sha256:4edf897a3ffa55b89f906fc8cc78afdb3f1834cc9c7083565e611a8a7d5fe99e
+#6 CACHED
+
+#7 [automation-worker internal] load metadata for ghcr.io/astral-sh/uv:latest
+#7 DONE 0.0s
+
+#8 [automation-worker internal] load metadata for docker.io/library/python:3.11-slim
+#8 DONE 0.0s
+
+#7 [mock-llm internal] load metadata for ghcr.io/astral-sh/uv:latest
+#7 DONE 0.0s
+
+#9 [automation-worker internal] load .dockerignore
+#9 transferring context: 347B done
+#9 DONE 0.0s
+
+#10 [api internal] load .dockerignore
+#10 transferring context: 347B done
+#10 DONE 0.0s
+
+#11 [worker internal] load .dockerignore
+#11 transferring context: 347B done
+#11 DONE 0.0s
+
+#12 [mock-llm internal] load .dockerignore
+#12 transferring context: 347B done
+#12 DONE 0.0s
+
+#13 [worker] FROM ghcr.io/astral-sh/uv:latest
+#13 DONE 0.0s
+
+#14 [worker builder 1/6] FROM docker.io/library/python:3.11-slim
+#14 DONE 0.0s
+
+#15 [mock-llm internal] load build context
+#15 transferring context: 25.39kB 0.0s done
+#15 DONE 0.0s
+
+#16 [api internal] load build context
+#16 transferring context: 25.39kB 0.0s done
+#16 DONE 0.0s
+
+#17 [worker internal] load build context
+#17 transferring context: 25.39kB 0.0s done
+#17 DONE 0.0s
+
+#18 [automation-worker internal] load build context
+#18 transferring context: 7.10MB 0.1s done
+#18 DONE 0.1s
+
+#19 [mock-llm stage-1 7/9] COPY knowledge ./knowledge
+#19 CACHED
+
+#20 [mock-llm stage-1 6/9] COPY scripts/loadtest ./scripts/loadtest
+#20 CACHED
+
+#21 [mock-llm stage-1 8/9] COPY data/catalog-v3.jsonl ./catalog/catalog-v3.jsonl
+#21 CACHED
+
+#22 [mock-llm builder 6/6] COPY app ./app
+#22 CACHED
+
+#23 [mock-llm stage-1 5/9] COPY configs ./configs
+#23 CACHED
+
+#24 [mock-llm builder 5/6] RUN uv sync --frozen --no-install-project --no-dev --extra retrieval
+#24 CACHED
+
+#25 [mock-llm stage-1 4/9] COPY app ./app
+#25 CACHED
+
+#26 [mock-llm builder 2/6] COPY --from=ghcr.io/astral-sh/uv:latest /uv /usr/local/bin/uv
+#26 CACHED
+
+#27 [mock-llm stage-1 2/9] WORKDIR /app
+#27 CACHED
+
+#28 [mock-llm builder 3/6] WORKDIR /app
+#28 CACHED
+
+#29 [mock-llm stage-1 3/9] COPY --from=builder /app/.venv /app/.venv
+#29 CACHED
+
+#30 [mock-llm builder 4/6] COPY pyproject.toml uv.lock ./
+#30 CACHED
+
+#31 [automation-worker stage-1 9/9] RUN mkdir -p /app/data
+#31 CACHED
+
+#32 [mock-llm] exporting to image
+#32 exporting layers done
+#32 writing image sha256:36a7314fc6b8b8815b5f56c65cfa71c090d760e495a5b0901e14cb13b0701b11 done
+#32 naming to docker.io/library/voyacart-r2-api-20261014-runtime done
+#32 DONE 0.0s
+
+#33 [api] exporting to image
+#33 exporting layers done
+#33 writing image sha256:cda1d362ba1f6e33e206b698665447ed0f2c30b7ea7e162fdbf4feda0ab5ddae done
+#33 naming to docker.io/library/voyacart-r2-api-20261014-runtime done
+#33 DONE 0.0s
+
+#34 [worker] exporting to image
+#34 exporting layers done
+#34 writing image sha256:e27d250a5c5a0838222a97dc9a6d58e80a89fa6b7f5e86c731726e69ba37d652 0.0s done
+#34 naming to docker.io/library/voyacart-r2-api-20261014-runtime done
+#34 DONE 0.0s
+
+#35 [automation-worker] exporting to image
+#35 exporting layers done
+#35 writing image sha256:50bf4f40999ae20b71ffa98d46ea313113fd7399888e0cc900a46b8c530b0d09 done
+#35 naming to docker.io/library/voyacart-r2-api-20261014-runtime done
+#35 DONE 0.0s
+
+#36 [api] resolving provenance for metadata file
+#36 DONE 0.0s
+
+#37 [worker] resolving provenance for metadata file
+#37 DONE 0.0s
+
+#38 [automation-worker] resolving provenance for metadata file
+#38 DONE 0.0s
+
+#39 [mock-llm] resolving provenance for metadata file
+#39 DONE 0.0s
+
+#40 [nginx internal] load build definition from Dockerfile
+#40 transferring dockerfile: 439B done
+#40 DONE 0.0s
+
+#41 [nginx internal] load metadata for docker.io/library/node:22-alpine
+#41 ...
+
+#42 [nginx internal] load metadata for docker.io/library/nginx:stable-alpine
+#42 DONE 1.2s
+
+#41 [nginx internal] load metadata for docker.io/library/node:22-alpine
+#41 DONE 1.2s
+
+#43 [nginx internal] load .dockerignore
+#43 transferring context: 347B done
+#43 DONE 0.0s
+
+#44 [nginx build 1/6] FROM docker.io/library/node:22-alpine@sha256:0a7108bf6c7bf5de370ffb1a3ed6be93d405b43ff159f681a8d18c0e2bc2e402
+#44 DONE 0.0s
+
+#45 [nginx stage-1 1/3] FROM docker.io/library/nginx:stable-alpine@sha256:0985e772fb9f729e6fa0980da05fca5d9c468e870eed43071545afa9d2e27d94
+#45 CACHED
+
+#46 [nginx internal] load build context
+#46 transferring context: 12.23MB 0.1s done
+#46 DONE 0.1s
+
+#47 [nginx build 3/6] COPY frontend/package.json frontend/package-lock.json ./
+#47 CACHED
+
+#48 [nginx build 5/6] COPY frontend/ .
+#48 CACHED
+
+#49 [nginx build 2/6] WORKDIR /workspace
+#49 CACHED
+
+#50 [nginx build 4/6] RUN npm ci
+#50 CACHED
+
+#51 [nginx build 6/6] RUN npm run build
+#51 CACHED
+
+#52 [nginx stage-1 2/3] COPY .cache/r2/voyacart-r2-api-20261014.conf /etc/nginx/conf.d/default.conf
+#52 DONE 0.0s
+
+#53 [nginx stage-1 3/3] COPY --from=build /workspace/dist /usr/share/nginx/html
+#53 DONE 0.0s
+
+#54 [nginx] exporting to image
+#54 exporting layers 0.0s done
+#54 writing image sha256:7ae816587fa2e1f96e13e9b684c98d8a53af3d562a4327561df0cba9832a0179 done
+#54 naming to docker.io/library/voyacart-r2-api-20261014-frontend
+#54 naming to docker.io/library/voyacart-r2-api-20261014-frontend done
+#54 DONE 0.0s
+
+#55 [nginx] resolving provenance for metadata file
+#55 DONE 0.0s

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/tmp/voyacart-loadtest-venv/bin/python",
+    "scripts/loadtest/report_matrix.py",
+    "--matrix",
+    "eval/verification/2026-10-14-r1-capacity/matrix",
+    "--baseline",
+    "eval/verification/2026-10-14-r1-capacity/baseline-summary.json",
+    "--output",
+    "eval/verification/2026-10-14-r1-report-script/diagnostic-final"
+  ],
+  "exit_code": 0,
+  "inputs_unchanged": true,
+  "verified_inputs": 29
+}

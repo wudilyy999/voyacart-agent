@@ -1,0 +1,17 @@
+{
+  "run_status": "completed",
+  "tools": [
+    "product_search_tool",
+    "create_order_tool"
+  ],
+  "products": 3,
+  "pending_confirmations": 1,
+  "orders": 0,
+  "events": 40,
+  "seconds": 0.15298391599208117,
+  "order_rate_for_check": 1,
+  "ttft_seconds_for_check": 0.02,
+  "token_seconds_for_check": 0.001,
+  "response_tokens": 300,
+  "scope": "fixed trajectory correctness; capacity unmeasured"
+}

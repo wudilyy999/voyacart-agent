@@ -1,0 +1,13 @@
+{
+  "http_status": 200,
+  "run_status": "completed",
+  "products": 3,
+  "category": "旅行装备",
+  "ordered_events": 23,
+  "cursor_replay": true,
+  "duplicate_replay": true,
+  "model": "mock-chat",
+  "api_replicas": 2,
+  "worker_replicas": 2,
+  "full_capacity_evaluation": false
+}

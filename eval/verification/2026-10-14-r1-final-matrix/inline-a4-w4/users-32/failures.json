@@ -1,0 +1,14 @@
+[
+  {
+    "run_id": "load-4cc1cc10102c45cbb2ac69b6f2530bb5",
+    "started_at": "1791986678.52197",
+    "finished_at": "1791986678.524323",
+    "first_event_ms": "",
+    "first_token_ms": "",
+    "complete_ms": "2.3552499478682876",
+    "status_code": "",
+    "error_code": "GreenletExit:",
+    "events": "0",
+    "reconnected": "False"
+  }
+]

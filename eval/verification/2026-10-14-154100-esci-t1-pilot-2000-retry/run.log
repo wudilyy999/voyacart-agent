@@ -1,0 +1,16 @@
+{"cache_hits":462,"candidate_count":2000,"completed_calls":100,"failed_outputs":0,"model_calls":101}
+{"cache_hits":462,"candidate_count":2000,"completed_calls":200,"failed_outputs":0,"model_calls":201}
+{"cache_hits":462,"candidate_count":2000,"completed_calls":300,"failed_outputs":0,"model_calls":301}
+{"cache_hits":462,"candidate_count":2000,"completed_calls":400,"failed_outputs":0,"model_calls":401}
+{"cache_hits":462,"candidate_count":2000,"completed_calls":500,"failed_outputs":0,"model_calls":501}
+{"cache_hits":462,"candidate_count":2000,"completed_calls":600,"failed_outputs":1,"model_calls":601}
+{"cache_hits":462,"candidate_count":2000,"completed_calls":700,"failed_outputs":2,"model_calls":701}
+{"cache_hits":462,"candidate_count":2000,"completed_calls":800,"failed_outputs":2,"model_calls":801}
+{"cache_hits":462,"candidate_count":2000,"completed_calls":900,"failed_outputs":3,"model_calls":901}
+{"cache_hits":462,"candidate_count":2000,"completed_calls":1000,"failed_outputs":4,"model_calls":1001}
+{"cache_hits":462,"candidate_count":2000,"completed_calls":1100,"failed_outputs":4,"model_calls":1101}
+{"cache_hits":462,"candidate_count":2000,"completed_calls":1200,"failed_outputs":4,"model_calls":1201}
+{"cache_hits":462,"candidate_count":2000,"completed_calls":1300,"failed_outputs":5,"model_calls":1301}
+{"cache_hits":462,"candidate_count":2000,"completed_calls":1400,"failed_outputs":6,"model_calls":1401}
+{"cache_hits":462,"candidate_count":2000,"completed_calls":1500,"failed_outputs":6,"model_calls":1501}
+{"cache_hits":462,"cached_failure_count":6,"candidate_count":2000,"completed_calls":1538,"coverage":[{"available":311,"locale":"us","required":130,"shortfall":0,"split":"train","target":100},{"available":302,"locale":"us","required":195,"shortfall":0,"split":"test","target":150},{"available":165,"locale":"es","required":65,"shortfall":0,"split":"train","target":50},{"available":167,"locale":"es","required":98,"shortfall":0,"split":"test","target":75},{"available":147,"locale":"jp","required":65,"shortfall":0,"split":"train","target":50},{"available":152,"locale":"jp","required":98,"shortfall":0,"split":"test","target":75}],"failed_outputs":6,"model_calls":1538}

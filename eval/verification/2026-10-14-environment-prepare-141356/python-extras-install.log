@@ -1,0 +1,16 @@
+uv sync --frozen --extra esci --extra retrieval --extra optimization
+Prepared 5 packages in 4.15s
+Installed 13 packages in 47ms
+ + fastembed==0.7.4
+ + filelock==4.0.0
+ + flatbuffers==25.12.19
+ + fsspec==2026.7.0
+ + gepa==0.1.4
+ + hf-xet==1.6.0
+ + huggingface-hub==1.32.0
+ + loguru==0.7.3
+ + mmh3==5.3.0
+ + onnxruntime==1.30.0
+ + pillow==11.3.0
+ + py-rust-stemmers==0.1.8
+ + tokenizers==0.23.2

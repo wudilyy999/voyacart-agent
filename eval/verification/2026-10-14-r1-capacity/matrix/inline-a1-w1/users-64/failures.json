@@ -1,0 +1,110 @@
+[
+  {
+    "run_id": "load-30938e51a25b4891ab396d83fdc796f5",
+    "started_at": "1791977296.2434828",
+    "finished_at": "1791977309.859048",
+    "first_event_ms": "269.10304196644574",
+    "first_token_ms": "9728.014916996472",
+    "complete_ms": "13616.080499952659",
+    "status_code": "200",
+    "error_code": "SERVER_RESTART",
+    "events": "31",
+    "reconnected": "False"
+  },
+  {
+    "run_id": "load-a0bcb59ce4944bbb9dd00ba4f4cc4407",
+    "started_at": "1791977296.248804",
+    "finished_at": "1791977310.092156",
+    "first_event_ms": "276.446208008565",
+    "first_token_ms": "4973.430708050728",
+    "complete_ms": "13843.876707949676",
+    "status_code": "200",
+    "error_code": "SERVER_RESTART",
+    "events": "29",
+    "reconnected": "False"
+  },
+  {
+    "run_id": "load-117dac1d07de4beebaa958bb6984b039",
+    "started_at": "1791977296.2422311",
+    "finished_at": "1791977310.367601",
+    "first_event_ms": "2563.1440839497373",
+    "first_token_ms": "9035.871917032637",
+    "complete_ms": "14125.904666958377",
+    "status_code": "200",
+    "error_code": "SERVER_RESTART",
+    "events": "31",
+    "reconnected": "False"
+  },
+  {
+    "run_id": "load-4639047ef27b4de19a2f782d5f1029aa",
+    "started_at": "1791977296.2414238",
+    "finished_at": "1791977311.00495",
+    "first_event_ms": "2452.999333036132",
+    "first_token_ms": "7949.455499998294",
+    "complete_ms": "14764.085125061683",
+    "status_code": "200",
+    "error_code": "SERVER_RESTART",
+    "events": "34",
+    "reconnected": "False"
+  },
+  {
+    "run_id": "load-6d03e8ccf36c44f1a244bf54384080e7",
+    "started_at": "1791977317.812532",
+    "finished_at": "1791977330.878646",
+    "first_event_ms": "32.19175001140684",
+    "first_token_ms": "2082.165625062771",
+    "complete_ms": "13066.61116599571",
+    "status_code": "200",
+    "error_code": "SERVER_RESTART",
+    "events": "58",
+    "reconnected": "False"
+  },
+  {
+    "run_id": "load-9b5e1a8dcbde446ca2cc69c2ed25364c",
+    "started_at": "1791977317.7723541",
+    "finished_at": "1791977332.054837",
+    "first_event_ms": "25.082499952986836",
+    "first_token_ms": "2175.462167011574",
+    "complete_ms": "14283.030083985068",
+    "status_code": "200",
+    "error_code": "SERVER_RESTART",
+    "events": "46",
+    "reconnected": "False"
+  },
+  {
+    "run_id": "load-5a4ddd95114e417c93bcc7a4a084bdf6",
+    "started_at": "1791977296.243625",
+    "finished_at": "1791977334.441779",
+    "first_event_ms": "948.0699580162764",
+    "first_token_ms": "",
+    "complete_ms": "38199.60050005466",
+    "status_code": "200",
+    "error_code": "SERVER_RESTART",
+    "events": "4",
+    "reconnected": "False"
+  },
+  {
+    "run_id": "load-f1b051c4f226456695ed01a339ca2d2f",
+    "started_at": "1791977296.2438731",
+    "finished_at": "1791977334.445289",
+    "first_event_ms": "38202.27429200895",
+    "first_token_ms": "",
+    "complete_ms": "38202.86299998406",
+    "status_code": "200",
+    "error_code": "SERVER_RESTART",
+    "events": "3",
+    "reconnected": "False"
+  },
+  {
+    "run_id": "load-76c380e6b699467b9165f439549c7ad7",
+    "started_at": "1791977325.830751",
+    "finished_at": "1791977336.103113",
+    "first_event_ms": "2878.6436249502003",
+    "first_token_ms": "3006.9974999642",
+    "complete_ms": "10272.755666985177",
+    "status_code": "200",
+    "error_code": "SERVER_RESTART",
+    "events": "74",
+    "reconnected": "False"
+  }
+]

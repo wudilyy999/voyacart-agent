@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/tmp/voyacart-loadtest-venv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_agui_loadtest.py"
+  ],
+  "exit_code": 0,
+  "source_fingerprints_blake2b": {
+    "scripts/loadtest/client.py": "aec76e009d74e4931b4dd647370b6ddbd11cad9205b22acdd4bb146af61b53d0d6181b25863757e17f123ecfec3ef5c0519a155a2489117b2cb33750b994c2a2",
+    "scripts/loadtest/locustfile.py": "5d3d62c8507d58ec6bb17f2da8e5f7639a3e3f565f8c4e87baf2513a82b1878c1f542073b813cda0c463d66bbea59bee4489c01fdeae91d57afab6c7cda00a80",
+    "tests/test_agui_loadtest.py": "9f7dbeff53800b00a308c692fb27365ec5201a9a0a59839da3d442c6aec9fbb7b4e327bf700ae866afb28585d76b7ad5799e2ef4f1b8eb7ac4c24bfadba63d0b"
+  }
+}

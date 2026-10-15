@@ -1,0 +1,67 @@
+failed to fetch metadata: fork/exec /Users/liyuyang/.docker/cli-plugins/docker-buildx: no such file or directory
+
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon  27.16MB
+Step 1/21 : FROM python:3.11-slim AS builder
+ ---> 8129910271f9
+Step 2/21 : COPY --from=ghcr.io/astral-sh/uv:latest /uv /usr/local/bin/uv
+ ---> Using cache
+ ---> 0422c0ee4fa3
+Step 3/21 : WORKDIR /app
+ ---> Using cache
+ ---> 3c267e205412
+Step 4/21 : ENV UV_COMPILE_BYTECODE=1 UV_LINK_MODE=copy
+ ---> Using cache
+ ---> 7f4570d6700c
+Step 5/21 : COPY pyproject.toml uv.lock ./
+ ---> Using cache
+ ---> 92d4da5b955d
+Step 6/21 : RUN uv sync --frozen --no-install-project --no-dev --extra retrieval
+ ---> Using cache
+ ---> 5fb4eee6489e
+Step 7/21 : COPY app ./app
+ ---> c3df81bc72a4
+Step 8/21 : FROM python:3.11-slim
+ ---> 8129910271f9
+Step 9/21 : WORKDIR /app
+ ---> Using cache
+ ---> 75fe7f9b1c43
+Step 10/21 : ENV PATH="/app/.venv/bin:$PATH" PYTHONUNBUFFERED=1
+ ---> Using cache
+ ---> 43d60f20ccb0
+Step 11/21 : COPY --from=builder /app/.venv /app/.venv
+ ---> Using cache
+ ---> 0d24f45a3293
+Step 12/21 : COPY app ./app
+ ---> c3ae5550a983
+Step 13/21 : COPY configs ./configs
+ ---> 12e2ab7ff00f
+Step 14/21 : COPY scripts/loadtest ./scripts/loadtest
+ ---> 12f5d97c7898
+Step 15/21 : COPY knowledge ./knowledge
+ ---> 34977239377f
+Step 16/21 : COPY data/catalog-v3.jsonl ./catalog/catalog-v3.jsonl
+ ---> 3687ee766a53
+Step 17/21 : COPY data/catalog-demo.jsonl.gz ./catalog/catalog-demo.jsonl.gz
+ ---> db3139c9d7d9
+Step 18/21 : RUN mkdir -p /app/data
+ ---> Running in 06cf715f7439
+ ---> Removed intermediate container 06cf715f7439
+ ---> f66fbd2ebbfe
+Step 19/21 : ENV DATA_DIR=/app/data
+ ---> Running in ff56edf7bba4
+ ---> Removed intermediate container ff56edf7bba4
+ ---> 07d009bce8b7
+Step 20/21 : EXPOSE 8000
+ ---> Running in 3f34cd4da3d6
+ ---> Removed intermediate container 3f34cd4da3d6
+ ---> abdcb93e44d7
+Step 21/21 : CMD ["uvicorn", "app.presentation.server:app", "--host", "0.0.0.0", "--port", "8000"]
+ ---> Running in a03e9f2f3649
+ ---> Removed intermediate container a03e9f2f3649
+ ---> 4cfa0af0f6ba
+Successfully built 4cfa0af0f6ba
+Successfully tagged voyacart-runtime:esci-demo-2000-20261014

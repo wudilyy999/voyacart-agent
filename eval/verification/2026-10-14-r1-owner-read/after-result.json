@@ -1,0 +1,15 @@
+{
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_session_fencing.py",
+    "tests/test_identity.py"
+  ],
+  "exit_code": 0,
+  "source_fingerprints_blake2b": {
+    "app/infrastructure/persistence/sql/session_store.py": "ae96518148de87a9ebd5c8495f19fbfeb45ac1a51b81f8372ece124fba4f29353fdc8a4043f798f64735607cde2e37d504ea8edd60a36e1df6b38c621ee30ba6",
+    "tests/test_session_fencing.py": "3d1ba19a87f109cad0be07eea52a9780ef7d5b441ab2947fe20e3e8c75bfa4e08dfa0bede777bbf9b0f9280975ae195733a66f4bff1f077c8ca62ed3f68db2eb"
+  }
+}

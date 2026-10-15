@@ -1,0 +1,95 @@
+{
+  "run_id": "r2-redis-down-5ef22f43a9a64a29ba23c9e03f50b5de",
+  "buyer": "r2-redis-down-5ef22f43a9a64a29ba23c9e03f50b5de",
+  "records": [
+    {
+      "id": "r2-redis-down-5ef22f43a9a64a29ba23c9e03f50b5de:1",
+      "event": {
+        "type": "RUN_STARTED",
+        "threadId": "r2-redis-down-5ef22f43a9a64a29ba23c9e03f50b5de",
+        "runId": "r2-redis-down-5ef22f43a9a64a29ba23c9e03f50b5de"
+      },
+      "observed_at": 1791978970.984801
+    },
+    {
+      "id": "r2-redis-down-5ef22f43a9a64a29ba23c9e03f50b5de:2",
+      "event": {
+        "type": "STATE_SNAPSHOT",
+        "snapshot": {
+          "products": [],
+          "shoppingForm": null,
+          "confirmations": [],
+          "toolApprovals": [],
+          "skillUsages": [],
+          "searchCompleted": false,
+          "status": "queued",
+          "progress": [],
+          "activities": []
+        }
+      },
+      "observed_at": 1791978970.984813
+    },
+    {
+      "id": "r2-redis-down-5ef22f43a9a64a29ba23c9e03f50b5de:3",
+      "event": {
+        "type": "CUSTOM",
+        "name": "runtime.degraded",
+        "value": {
+          "component": "queue",
+          "fallback": "in_process"
+        }
+      },
+      "observed_at": 1791978970.984823
+    },
+    {
+      "id": "r2-redis-down-5ef22f43a9a64a29ba23c9e03f50b5de:4",
+      "event": {
+        "type": "STATE_SNAPSHOT",
+        "snapshot": {
+          "products": [],
+          "shoppingForm": null,
+          "confirmations": [],
+          "toolApprovals": [],
+          "skillUsages": [],
+          "searchCompleted": false,
+          "status": "queued",
+          "progress": [],
+          "activities": []
+        }
+      },
+      "observed_at": 1791978970.988745
+    },
+    {
+      "id": "r2-redis-down-5ef22f43a9a64a29ba23c9e03f50b5de:5",
+      "event": {
+        "type": "STATE_SNAPSHOT",
+        "snapshot": {
+          "products": [],
+          "shoppingForm": null,
+          "confirmations": [],
+          "toolApprovals": [],
+          "skillUsages": [],
+          "searchCompleted": false,
+          "status": "error",
+          "progress": [],
+          "activities": []
+        }
+      },
+      "observed_at": 1791978970.9887512
+    },
+    {
+      "id": "r2-redis-down-5ef22f43a9a64a29ba23c9e03f50b5de:6",
+      "event": {
+        "type": "RUN_ERROR",
+        "message": "本轮服务暂时未能完成请求，请重试。",
+        "code": "AGENT_ERROR"
+      },
+      "observed_at": 1791978970.98876
+    }
+  ],
+  "upstreams": [
+    "172.30.0.9:8000"
+  ],
+  "transport_errors": [],
+  "fault_injected": false
+}

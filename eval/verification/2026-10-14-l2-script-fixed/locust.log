@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "/tmp/voyacart-loadtest-venv/bin/locust", line 10, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/tmp/voyacart-loadtest-venv/lib/python3.11/site-packages/locust/main.py", line 161, in main
+    ) = merge_locustfiles_content(locustfiles)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/voyacart-loadtest-venv/lib/python3.11/site-packages/locust/main.py", line 135, in merge_locustfiles_content
+    user_classes, shape_classes = load_locustfile(_locustfile)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/voyacart-loadtest-venv/lib/python3.11/site-packages/locust/util/load_locustfile.py", line 71, in load_locustfile
+    loader.exec_module(imported)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/private/tmp/voyacart-local-fallback-20261014/scripts/loadtest/locustfile.py", line 16, in <module>
+    from scripts.loadtest.client import FIELDS, consume_run
+  File "/private/tmp/voyacart-local-fallback-20261014/scripts/loadtest.py", line 16, in <module>
+    import httpx
+ModuleNotFoundError: No module named 'httpx'

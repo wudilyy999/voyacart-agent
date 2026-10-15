@@ -1,0 +1,26 @@
+[
+  {
+    "run_id": "load-85c1940187274a1f8a50f4d194171d7d",
+    "started_at": "1791983994.85774",
+    "finished_at": "1791984033.138179",
+    "first_event_ms": "38278.992749983445",
+    "first_token_ms": "",
+    "complete_ms": "38279.291249928065",
+    "status_code": "200",
+    "error_code": "SERVER_RESTART",
+    "events": "3",
+    "reconnected": "False"
+  },
+  {
+    "run_id": "load-4e5677641abb45daa06c82609c88fcd2",
+    "started_at": "1791983994.85627",
+    "finished_at": "1791984037.240909",
+    "first_event_ms": "326.29070803523064",
+    "first_token_ms": "",
+    "complete_ms": "42383.36745800916",
+    "status_code": "200",
+    "error_code": "SERVER_RESTART",
+    "events": "6",
+    "reconnected": "False"
+  }
+]

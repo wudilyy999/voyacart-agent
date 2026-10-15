@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "scenarios": [
+    {
+      "evidence": "2026-10-14-r2-worker-clock",
+      "scenario": "worker"
+    },
+    {
+      "evidence": "2026-10-14-r2-api",
+      "scenario": "api"
+    },
+    {
+      "evidence": "2026-10-14-r2-redis",
+      "scenario": "redis"
+    },
+    {
+      "evidence": "2026-10-14-r2-embedding",
+      "scenario": "embedding"
+    },
+    {
+      "evidence": "2026-10-14-r2-model-status-drill",
+      "scenario": "model"
+    },
+    {
+      "evidence": "2026-10-14-r2-hotspot-direct",
+      "scenario": "hotspot"
+    }
+  ]
+}

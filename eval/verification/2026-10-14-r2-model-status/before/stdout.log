@@ -1,0 +1,2266 @@
+..FFFFFFF.....FFFFF.F.FFFFF.FFFF.....                                    [100%]
+=================================== FAILURES ===================================
+_ TestTransientRetryPolicy.test_structured_http_status_with_neutral_message[408-True] _
+
+self = <tests.test_phase3.TestTransientRetryPolicy object at 0x1143a1d90>
+status_code = 408, expected = True
+
+    @pytest.mark.parametrize("status_code,expected", [
+        (408, True), (429, True), (500, True), (502, True), (503, True),
+        (504, True), (599, True), (400, False), (401, False), (403, False),
+        (404, False), (422, False),
+    ])
+    def test_structured_http_status_with_neutral_message(self, status_code, expected):
+        error = APIStatusError(
+            "注入的模型故障",
+            response=httpx.Response(status_code, request=httpx.Request("POST", "https://fixture.invalid/v1/chat/completions")),
+            body={"detail": "注入的模型故障"},
+        )
+>       assert _is_transient(error) is expected
+E       AssertionError: assert False is True
+E        +  where False = _is_transient(APIStatusError('注入的模型故障'))
+
+tests/test_phase3.py:194: AssertionError
+_ TestTransientRetryPolicy.test_structured_http_status_with_neutral_message[429-True] _
+
+self = <tests.test_phase3.TestTransientRetryPolicy object at 0x1143a0ed0>
+status_code = 429, expected = True
+
+    @pytest.mark.parametrize("status_code,expected", [
+        (408, True), (429, True), (500, True), (502, True), (503, True),
+        (504, True), (599, True), (400, False), (401, False), (403, False),
+        (404, False), (422, False),
+    ])
+    def test_structured_http_status_with_neutral_message(self, status_code, expected):
+        error = APIStatusError(
+            "注入的模型故障",
+            response=httpx.Response(status_code, request=httpx.Request("POST", "https://fixture.invalid/v1/chat/completions")),
+            body={"detail": "注入的模型故障"},
+        )
+>       assert _is_transient(error) is expected
+E       AssertionError: assert False is True
+E        +  where False = _is_transient(APIStatusError('注入的模型故障'))
+
+tests/test_phase3.py:194: AssertionError
+_ TestTransientRetryPolicy.test_structured_http_status_with_neutral_message[500-True] _
+
+self = <tests.test_phase3.TestTransientRetryPolicy object at 0x1143a0850>
+status_code = 500, expected = True
+
+    @pytest.mark.parametrize("status_code,expected", [
+        (408, True), (429, True), (500, True), (502, True), (503, True),
+        (504, True), (599, True), (400, False), (401, False), (403, False),
+        (404, False), (422, False),
+    ])
+    def test_structured_http_status_with_neutral_message(self, status_code, expected):
+        error = APIStatusError(
+            "注入的模型故障",
+            response=httpx.Response(status_code, request=httpx.Request("POST", "https://fixture.invalid/v1/chat/completions")),
+            body={"detail": "注入的模型故障"},
+        )
+>       assert _is_transient(error) is expected
+E       AssertionError: assert False is True
+E        +  where False = _is_transient(APIStatusError('注入的模型故障'))
+
+tests/test_phase3.py:194: AssertionError
+_ TestTransientRetryPolicy.test_structured_http_status_with_neutral_message[502-True] _
+
+self = <tests.test_phase3.TestTransientRetryPolicy object at 0x1143a0050>
+status_code = 502, expected = True
+
+    @pytest.mark.parametrize("status_code,expected", [
+        (408, True), (429, True), (500, True), (502, True), (503, True),
+        (504, True), (599, True), (400, False), (401, False), (403, False),
+        (404, False), (422, False),
+    ])
+    def test_structured_http_status_with_neutral_message(self, status_code, expected):
+        error = APIStatusError(
+            "注入的模型故障",
+            response=httpx.Response(status_code, request=httpx.Request("POST", "https://fixture.invalid/v1/chat/completions")),
+            body={"detail": "注入的模型故障"},
+        )
+>       assert _is_transient(error) is expected
+E       AssertionError: assert False is True
+E        +  where False = _is_transient(APIStatusError('注入的模型故障'))
+
+tests/test_phase3.py:194: AssertionError
+_ TestTransientRetryPolicy.test_structured_http_status_with_neutral_message[503-True] _
+
+self = <tests.test_phase3.TestTransientRetryPolicy object at 0x1143a2f90>
+status_code = 503, expected = True
+
+    @pytest.mark.parametrize("status_code,expected", [
+        (408, True), (429, True), (500, True), (502, True), (503, True),
+        (504, True), (599, True), (400, False), (401, False), (403, False),
+        (404, False), (422, False),
+    ])
+    def test_structured_http_status_with_neutral_message(self, status_code, expected):
+        error = APIStatusError(
+            "注入的模型故障",
+            response=httpx.Response(status_code, request=httpx.Request("POST", "https://fixture.invalid/v1/chat/completions")),
+            body={"detail": "注入的模型故障"},
+        )
+>       assert _is_transient(error) is expected
+E       AssertionError: assert False is True
+E        +  where False = _is_transient(APIStatusError('注入的模型故障'))
+
+tests/test_phase3.py:194: AssertionError
+_ TestTransientRetryPolicy.test_structured_http_status_with_neutral_message[504-True] _
+
+self = <tests.test_phase3.TestTransientRetryPolicy object at 0x1143a30d0>
+status_code = 504, expected = True
+
+    @pytest.mark.parametrize("status_code,expected", [
+        (408, True), (429, True), (500, True), (502, True), (503, True),
+        (504, True), (599, True), (400, False), (401, False), (403, False),
+        (404, False), (422, False),
+    ])
+    def test_structured_http_status_with_neutral_message(self, status_code, expected):
+        error = APIStatusError(
+            "注入的模型故障",
+            response=httpx.Response(status_code, request=httpx.Request("POST", "https://fixture.invalid/v1/chat/completions")),
+            body={"detail": "注入的模型故障"},
+        )
+>       assert _is_transient(error) is expected
+E       AssertionError: assert False is True
+E        +  where False = _is_transient(APIStatusError('注入的模型故障'))
+
+tests/test_phase3.py:194: AssertionError
+_ TestTransientRetryPolicy.test_structured_http_status_with_neutral_message[599-True] _
+
+self = <tests.test_phase3.TestTransientRetryPolicy object at 0x1143a3210>
+status_code = 599, expected = True
+
+    @pytest.mark.parametrize("status_code,expected", [
+        (408, True), (429, True), (500, True), (502, True), (503, True),
+        (504, True), (599, True), (400, False), (401, False), (403, False),
+        (404, False), (422, False),
+    ])
+    def test_structured_http_status_with_neutral_message(self, status_code, expected):
+        error = APIStatusError(
+            "注入的模型故障",
+            response=httpx.Response(status_code, request=httpx.Request("POST", "https://fixture.invalid/v1/chat/completions")),
+            body={"detail": "注入的模型故障"},
+        )
+>       assert _is_transient(error) is expected
+E       AssertionError: assert False is True
+E        +  where False = _is_transient(APIStatusError('注入的模型故障'))
+
+tests/test_phase3.py:194: AssertionError
+_ TestTransientRetryPolicy.test_nontransient_http_status_takes_priority_over_message[400] _
+
+self = <tests.test_phase3.TestTransientRetryPolicy object at 0x1143a8650>
+status_code = 400
+
+    @pytest.mark.parametrize("status_code", [400, 401, 403, 404, 422])
+    def test_nontransient_http_status_takes_priority_over_message(self, status_code):
+        error = APIStatusError(
+            "timeout 429 rate limit",
+            response=httpx.Response(status_code, request=httpx.Request("POST", "https://fixture.invalid/v1/chat/completions")),
+            body={"detail": "timeout 429 rate limit"},
+        )
+>       assert not _is_transient(error)
+E       AssertionError: assert not True
+E        +  where True = _is_transient(APIStatusError('timeout 429 rate limit'))
+
+tests/test_phase3.py:203: AssertionError
+_ TestTransientRetryPolicy.test_nontransient_http_status_takes_priority_over_message[401] _
+
+self = <tests.test_phase3.TestTransientRetryPolicy object at 0x1143a8890>
+status_code = 401
+
+    @pytest.mark.parametrize("status_code", [400, 401, 403, 404, 422])
+    def test_nontransient_http_status_takes_priority_over_message(self, status_code):
+        error = APIStatusError(
+            "timeout 429 rate limit",
+            response=httpx.Response(status_code, request=httpx.Request("POST", "https://fixture.invalid/v1/chat/completions")),
+            body={"detail": "timeout 429 rate limit"},
+        )
+>       assert not _is_transient(error)
+E       AssertionError: assert not True
+E        +  where True = _is_transient(APIStatusError('timeout 429 rate limit'))
+
+tests/test_phase3.py:203: AssertionError
+_ TestTransientRetryPolicy.test_nontransient_http_status_takes_priority_over_message[403] _
+
+self = <tests.test_phase3.TestTransientRetryPolicy object at 0x1143a8ad0>
+status_code = 403
+
+    @pytest.mark.parametrize("status_code", [400, 401, 403, 404, 422])
+    def test_nontransient_http_status_takes_priority_over_message(self, status_code):
+        error = APIStatusError(
+            "timeout 429 rate limit",
+            response=httpx.Response(status_code, request=httpx.Request("POST", "https://fixture.invalid/v1/chat/completions")),
+            body={"detail": "timeout 429 rate limit"},
+        )
+>       assert not _is_transient(error)
+E       AssertionError: assert not True
+E        +  where True = _is_transient(APIStatusError('timeout 429 rate limit'))
+
+tests/test_phase3.py:203: AssertionError
+_ TestTransientRetryPolicy.test_nontransient_http_status_takes_priority_over_message[404] _
+
+self = <tests.test_phase3.TestTransientRetryPolicy object at 0x1143a8d10>
+status_code = 404
+
+    @pytest.mark.parametrize("status_code", [400, 401, 403, 404, 422])
+    def test_nontransient_http_status_takes_priority_over_message(self, status_code):
+        error = APIStatusError(
+            "timeout 429 rate limit",
+            response=httpx.Response(status_code, request=httpx.Request("POST", "https://fixture.invalid/v1/chat/completions")),
+            body={"detail": "timeout 429 rate limit"},
+        )
+>       assert not _is_transient(error)
+E       AssertionError: assert not True
+E        +  where True = _is_transient(APIStatusError('timeout 429 rate limit'))
+
+tests/test_phase3.py:203: AssertionError
+_ TestTransientRetryPolicy.test_nontransient_http_status_takes_priority_over_message[422] _
+
+self = <tests.test_phase3.TestTransientRetryPolicy object at 0x1143a8f90>
+status_code = 422
+
+    @pytest.mark.parametrize("status_code", [400, 401, 403, 404, 422])
+    def test_nontransient_http_status_takes_priority_over_message(self, status_code):
+        error = APIStatusError(
+            "timeout 429 rate limit",
+            response=httpx.Response(status_code, request=httpx.Request("POST", "https://fixture.invalid/v1/chat/completions")),
+            body={"detail": "timeout 429 rate limit"},
+        )
+>       assert not _is_transient(error)
+E       AssertionError: assert not True
+E        +  where True = _is_transient(APIStatusError('timeout 429 rate limit'))
+
+tests/test_phase3.py:203: AssertionError
+__ test_profile_fallback_uses_own_credentials_window_reasoning_and_usage[408] __
+
+tmp_path = PosixPath('/private/var/folders/j5/9jbbktk13f7bdrtssrkz58tw0000gn/T/pytest-of-liyuyang/pytest-90/test_profile_fallback_uses_own0')
+status_code = 408
+
+    @pytest.mark.parametrize('status_code', [408, 429, 500, 502, 503, 504])
+    async def test_profile_fallback_uses_own_credentials_window_reasoning_and_usage(tmp_path, status_code):
+        fallback = profile('backup', context_size=64000, max_input_tokens=50000,
+                           reasoning_parameters={'reasoning_effort': 'low'})
+        runtime = profile(fallback=fallback)
+        original = deepcopy(runtime)
+        groups, requests, samples = {}, [], []
+        def throttle(group):
+            return groups.setdefault(group, GatewayThrottle(1, 0))
+        def handler(request):
+            data = json.loads(request.content)
+            requests.append((data, request.url.host, request.headers['authorization']))
+            if data['model'] == 'primary':
+                return httpx.Response(status_code, json={'detail': '注入的模型故障'})
+            assert groups['primary']._semaphore.locked() and groups['backup']._semaphore.locked()
+            return response(data)
+        model = build(tmp_path, runtime, throttle_factory=throttle)
+        model._max_transient_retries = 1
+        model._retry_base_seconds = 0
+        token = context_usage_sink.set(samples.append)
+        try:
+            for candidate in (model, model._fallback):
+                await mock_client(candidate, handler)
+>           result = await model([UserMsg('buyer', '挑选轻便背包')])
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_model_runtime_counting.py:85: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+app/infrastructure/llm.py:408: in __call__
+    return await recover_response(self, messages, tools, tool_choice, kwargs,
+app/infrastructure/model_recovery.py:97: in recover_response
+    raise first[2]
+app/infrastructure/model_recovery.py:83: in attempt
+    response = await model._call_once(rows, tools, choice, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:413: in _call_once
+    return await self._call_throttled(messages, tools, tool_choice, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:448: in _call_throttled
+    result = await self._call_with_fallback(messages, tools, tool_choice, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:608: in _call_with_fallback
+    return await self._invoke_upstream(messages, tools, tool_choice, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:526: in _invoke_upstream
+    return await super().__call__(messages, tools, tool_choice, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/agentscope/model/_base.py:211: in __call__
+    res = await self._call_api(
+app/infrastructure/llm.py:354: in _call_api
+    return await super()._call_api(model_name, messages, tools, tool_choice, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:241: in _call_api
+    return await super()._call_api(model_name, messages, tools, tool_choice, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/agentscope/model/_openai_chat/_model.py:277: in _call_api
+    response = await self.client.chat.completions.create(**kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:189: in observed_create
+    response = await create(*args, **request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py:2907: in create
+    return await self._post(
+.venv/lib/python3.11/site-packages/openai/_base_client.py:1992: in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <openai.AsyncOpenAI object at 0x116334050>
+cast_to = <class 'openai.types.chat.chat_completion.ChatCompletion'>
+options = FinalRequestOptions(method='post', url='/chat/completions', params={}, headers=NOT_GIVEN, max_retries=NOT_GIVEN, timeo...挑选轻便背包'}]}], 'model': 'primary', 'max_completion_tokens': 4096, 'stream': False}, extra_json={'enable_thinking': True})
+stream = False
+stream_cls = openai.AsyncStream[openai.types.chat.chat_completion_chunk.ChatCompletionChunk]
+
+    async def request(
+        self,
+        cast_to: Type[ResponseT],
+        options: FinalRequestOptions,
+        *,
+        stream: bool = False,
+        stream_cls: type[_AsyncStreamT] | None = None,
+    ) -> ResponseT | _AsyncStreamT:
+        if self._platform is None:
+            # `get_platform` can make blocking IO calls so we
+            # execute it earlier while we are in an async context
+            self._platform = await asyncify(get_platform)()
+    
+        cast_to = self._maybe_override_cast_to(cast_to, options)
+    
+        # create a copy of the options we were given so that if the
+        # options are mutated later & we then retry, the retries are
+        # given the original options
+        input_options = model_copy(options)
+        if input_options.idempotency_key is None and input_options.method.lower() != "get":
+            # ensure the idempotency key is reused between requests
+            input_options.idempotency_key = self._idempotency_key()
+    
+        response: httpx.Response | None = None
+        max_retries = input_options.get_max_retries(self.max_retries)
+    
+        retries_taken = 0
+        for retries_taken in range(max_retries + 1):
+            options = model_copy(input_options)
+            options = await self._prepare_options(options)
+    
+            remaining_retries = max_retries - retries_taken
+            request = self._build_request(options, retries_taken=retries_taken)
+            await self._prepare_request(request)
+    
+            kwargs: HttpxSendArgs = {}
+            if self.custom_auth is not None:
+                kwargs["auth"] = (
+                    normalize_httpx2_auth(self.custom_auth)
+                    if is_httpx2_async_client(self._client)
+                    else self.custom_auth
+                )
+    
+            if options.follow_redirects is not None:
+                kwargs["follow_redirects"] = options.follow_redirects
+    
+            log.debug("Sending HTTP Request: %s %s", request.method, request.url)
+    
+            response = None
+            try:
+                response = await self._send_request(
+                    request,
+                    stream=stream or self._should_stream_response_body(request=request),
+                    **kwargs,
+                )
+            except timeout_exceptions() as err:
+                log.debug("Encountered a timeout exception", exc_info=True)
+    
+                if remaining_retries > 0:
+                    await self._sleep_for_retry(
+                        retries_taken=retries_taken,
+                        max_retries=max_retries,
+                        options=input_options,
+                        response=None,
+                    )
+                    continue
+    
+                log.debug("Raising timeout error")
+                raise APITimeoutError(request=request) from err
+            except OpenAIError as err:
+                # Propagate OpenAIErrors as-is, without retrying or wrapping in APIConnectionError
+                raise err
+            except Exception as err:
+                log.debug("Encountered Exception", exc_info=True)
+    
+                if remaining_retries > 0:
+                    await self._sleep_for_retry(
+                        retries_taken=retries_taken,
+                        max_retries=max_retries,
+                        options=input_options,
+                        response=None,
+                    )
+                    continue
+    
+                log.debug("Raising connection error")
+                raise APIConnectionError(request=request) from err
+    
+            log.debug(
+                'HTTP Response: %s %s "%i %s" %s',
+                request.method,
+                request.url,
+                response.status_code,
+                response.reason_phrase,
+                response.headers,
+            )
+            log.debug("request_id: %s", response.headers.get("x-request-id"))
+    
+            try:
+                response.raise_for_status()
+            except status_exceptions() as err:  # thrown on 4xx and 5xx status code
+                log.debug("Encountered an HTTP status error", exc_info=True)
+    
+                if remaining_retries > 0 and self._should_retry(err.response):
+                    await err.response.aclose()
+                    await self._sleep_for_retry(
+                        retries_taken=retries_taken,
+                        max_retries=max_retries,
+                        options=input_options,
+                        response=response,
+                    )
+                    continue
+    
+                # If the response is streamed then we need to explicitly read the response
+                # to completion before attempting to access the response text.
+                if not err.response.is_closed:
+                    await err.response.aread()
+    
+                log.debug("Re-raising status error")
+>               raise self._make_status_error_from_response(err.response) from None
+E               openai.APIStatusError: Error code: 408 - {'detail': '注入的模型故障'}
+
+.venv/lib/python3.11/site-packages/openai/_base_client.py:1777: APIStatusError
+__ test_profile_fallback_uses_own_credentials_window_reasoning_and_usage[500] __
+
+tmp_path = PosixPath('/private/var/folders/j5/9jbbktk13f7bdrtssrkz58tw0000gn/T/pytest-of-liyuyang/pytest-90/test_profile_fallback_uses_own2')
+status_code = 500
+
+    @pytest.mark.parametrize('status_code', [408, 429, 500, 502, 503, 504])
+    async def test_profile_fallback_uses_own_credentials_window_reasoning_and_usage(tmp_path, status_code):
+        fallback = profile('backup', context_size=64000, max_input_tokens=50000,
+                           reasoning_parameters={'reasoning_effort': 'low'})
+        runtime = profile(fallback=fallback)
+        original = deepcopy(runtime)
+        groups, requests, samples = {}, [], []
+        def throttle(group):
+            return groups.setdefault(group, GatewayThrottle(1, 0))
+        def handler(request):
+            data = json.loads(request.content)
+            requests.append((data, request.url.host, request.headers['authorization']))
+            if data['model'] == 'primary':
+                return httpx.Response(status_code, json={'detail': '注入的模型故障'})
+            assert groups['primary']._semaphore.locked() and groups['backup']._semaphore.locked()
+            return response(data)
+        model = build(tmp_path, runtime, throttle_factory=throttle)
+        model._max_transient_retries = 1
+        model._retry_base_seconds = 0
+        token = context_usage_sink.set(samples.append)
+        try:
+            for candidate in (model, model._fallback):
+                await mock_client(candidate, handler)
+>           result = await model([UserMsg('buyer', '挑选轻便背包')])
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_model_runtime_counting.py:85: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+app/infrastructure/llm.py:408: in __call__
+    return await recover_response(self, messages, tools, tool_choice, kwargs,
+app/infrastructure/model_recovery.py:97: in recover_response
+    raise first[2]
+app/infrastructure/model_recovery.py:83: in attempt
+    response = await model._call_once(rows, tools, choice, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:413: in _call_once
+    return await self._call_throttled(messages, tools, tool_choice, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:448: in _call_throttled
+    result = await self._call_with_fallback(messages, tools, tool_choice, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:608: in _call_with_fallback
+    return await self._invoke_upstream(messages, tools, tool_choice, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:526: in _invoke_upstream
+    return await super().__call__(messages, tools, tool_choice, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/agentscope/model/_base.py:248: in __call__
+    raise last_error
+.venv/lib/python3.11/site-packages/agentscope/model/_base.py:211: in __call__
+    res = await self._call_api(
+app/infrastructure/llm.py:354: in _call_api
+    return await super()._call_api(model_name, messages, tools, tool_choice, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:241: in _call_api
+    return await super()._call_api(model_name, messages, tools, tool_choice, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/agentscope/model/_openai_chat/_model.py:277: in _call_api
+    response = await self.client.chat.completions.create(**kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:189: in observed_create
+    response = await create(*args, **request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py:2907: in create
+    return await self._post(
+.venv/lib/python3.11/site-packages/openai/_base_client.py:1992: in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <openai.AsyncOpenAI object at 0x106707110>
+cast_to = <class 'openai.types.chat.chat_completion.ChatCompletion'>
+options = FinalRequestOptions(method='post', url='/chat/completions', params={}, headers=NOT_GIVEN, max_retries=NOT_GIVEN, timeo...挑选轻便背包'}]}], 'model': 'primary', 'max_completion_tokens': 4096, 'stream': False}, extra_json={'enable_thinking': True})
+stream = False
+stream_cls = openai.AsyncStream[openai.types.chat.chat_completion_chunk.ChatCompletionChunk]
+
+    async def request(
+        self,
+        cast_to: Type[ResponseT],
+        options: FinalRequestOptions,
+        *,
+        stream: bool = False,
+        stream_cls: type[_AsyncStreamT] | None = None,
+    ) -> ResponseT | _AsyncStreamT:
+        if self._platform is None:
+            # `get_platform` can make blocking IO calls so we
+            # execute it earlier while we are in an async context
+            self._platform = await asyncify(get_platform)()
+    
+        cast_to = self._maybe_override_cast_to(cast_to, options)
+    
+        # create a copy of the options we were given so that if the
+        # options are mutated later & we then retry, the retries are
+        # given the original options
+        input_options = model_copy(options)
+        if input_options.idempotency_key is None and input_options.method.lower() != "get":
+            # ensure the idempotency key is reused between requests
+            input_options.idempotency_key = self._idempotency_key()
+    
+        response: httpx.Response | None = None
+        max_retries = input_options.get_max_retries(self.max_retries)
+    
+        retries_taken = 0
+        for retries_taken in range(max_retries + 1):
+            options = model_copy(input_options)
+            options = await self._prepare_options(options)
+    
+            remaining_retries = max_retries - retries_taken
+            request = self._build_request(options, retries_taken=retries_taken)
+            await self._prepare_request(request)
+    
+            kwargs: HttpxSendArgs = {}
+            if self.custom_auth is not None:
+                kwargs["auth"] = (
+                    normalize_httpx2_auth(self.custom_auth)
+                    if is_httpx2_async_client(self._client)
+                    else self.custom_auth
+                )
+    
+            if options.follow_redirects is not None:
+                kwargs["follow_redirects"] = options.follow_redirects
+    
+            log.debug("Sending HTTP Request: %s %s", request.method, request.url)
+    
+            response = None
+            try:
+                response = await self._send_request(
+                    request,
+                    stream=stream or self._should_stream_response_body(request=request),
+                    **kwargs,
+                )
+            except timeout_exceptions() as err:
+                log.debug("Encountered a timeout exception", exc_info=True)
+    
+                if remaining_retries > 0:
+                    await self._sleep_for_retry(
+                        retries_taken=retries_taken,
+                        max_retries=max_retries,
+                        options=input_options,
+                        response=None,
+                    )
+                    continue
+    
+                log.debug("Raising timeout error")
+                raise APITimeoutError(request=request) from err
+            except OpenAIError as err:
+                # Propagate OpenAIErrors as-is, without retrying or wrapping in APIConnectionError
+                raise err
+            except Exception as err:
+                log.debug("Encountered Exception", exc_info=True)
+    
+                if remaining_retries > 0:
+                    await self._sleep_for_retry(
+                        retries_taken=retries_taken,
+                        max_retries=max_retries,
+                        options=input_options,
+                        response=None,
+                    )
+                    continue
+    
+                log.debug("Raising connection error")
+                raise APIConnectionError(request=request) from err
+    
+            log.debug(
+                'HTTP Response: %s %s "%i %s" %s',
+                request.method,
+                request.url,
+                response.status_code,
+                response.reason_phrase,
+                response.headers,
+            )
+            log.debug("request_id: %s", response.headers.get("x-request-id"))
+    
+            try:
+                response.raise_for_status()
+            except status_exceptions() as err:  # thrown on 4xx and 5xx status code
+                log.debug("Encountered an HTTP status error", exc_info=True)
+    
+                if remaining_retries > 0 and self._should_retry(err.response):
+                    await err.response.aclose()
+                    await self._sleep_for_retry(
+                        retries_taken=retries_taken,
+                        max_retries=max_retries,
+                        options=input_options,
+                        response=response,
+                    )
+                    continue
+    
+                # If the response is streamed then we need to explicitly read the response
+                # to completion before attempting to access the response text.
+                if not err.response.is_closed:
+                    await err.response.aread()
+    
+                log.debug("Re-raising status error")
+>               raise self._make_status_error_from_response(err.response) from None
+E               openai.InternalServerError: Error code: 500 - {'detail': '注入的模型故障'}
+
+.venv/lib/python3.11/site-packages/openai/_base_client.py:1777: InternalServerError
+----------------------------- Captured stderr call -----------------------------
+2026-10-14 20:14:49,924 | WARNING | _base:__call__:241 - All 1 attempt(s) failed for model primary.
+------------------------------ Captured log call -------------------------------
+WARNING  as:_base.py:241 All 1 attempt(s) failed for model primary.
+__ test_profile_fallback_uses_own_credentials_window_reasoning_and_usage[502] __
+
+tmp_path = PosixPath('/private/var/folders/j5/9jbbktk13f7bdrtssrkz58tw0000gn/T/pytest-of-liyuyang/pytest-90/test_profile_fallback_uses_own3')
+status_code = 502
+
+    @pytest.mark.parametrize('status_code', [408, 429, 500, 502, 503, 504])
+    async def test_profile_fallback_uses_own_credentials_window_reasoning_and_usage(tmp_path, status_code):
+        fallback = profile('backup', context_size=64000, max_input_tokens=50000,
+                           reasoning_parameters={'reasoning_effort': 'low'})
+        runtime = profile(fallback=fallback)
+        original = deepcopy(runtime)
+        groups, requests, samples = {}, [], []
+        def throttle(group):
+            return groups.setdefault(group, GatewayThrottle(1, 0))
+        def handler(request):
+            data = json.loads(request.content)
+            requests.append((data, request.url.host, request.headers['authorization']))
+            if data['model'] == 'primary':
+                return httpx.Response(status_code, json={'detail': '注入的模型故障'})
+            assert groups['primary']._semaphore.locked() and groups['backup']._semaphore.locked()
+            return response(data)
+        model = build(tmp_path, runtime, throttle_factory=throttle)
+        model._max_transient_retries = 1
+        model._retry_base_seconds = 0
+        token = context_usage_sink.set(samples.append)
+        try:
+            for candidate in (model, model._fallback):
+                await mock_client(candidate, handler)
+>           result = await model([UserMsg('buyer', '挑选轻便背包')])
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_model_runtime_counting.py:85: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+app/infrastructure/llm.py:408: in __call__
+    return await recover_response(self, messages, tools, tool_choice, kwargs,
+app/infrastructure/model_recovery.py:97: in recover_response
+    raise first[2]
+app/infrastructure/model_recovery.py:83: in attempt
+    response = await model._call_once(rows, tools, choice, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:413: in _call_once
+    return await self._call_throttled(messages, tools, tool_choice, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:448: in _call_throttled
+    result = await self._call_with_fallback(messages, tools, tool_choice, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:608: in _call_with_fallback
+    return await self._invoke_upstream(messages, tools, tool_choice, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:526: in _invoke_upstream
+    return await super().__call__(messages, tools, tool_choice, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/agentscope/model/_base.py:248: in __call__
+    raise last_error
+.venv/lib/python3.11/site-packages/agentscope/model/_base.py:211: in __call__
+    res = await self._call_api(
+app/infrastructure/llm.py:354: in _call_api
+    return await super()._call_api(model_name, messages, tools, tool_choice, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:241: in _call_api
+    return await super()._call_api(model_name, messages, tools, tool_choice, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/agentscope/model/_openai_chat/_model.py:277: in _call_api
+    response = await self.client.chat.completions.create(**kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:189: in observed_create
+    response = await create(*args, **request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py:2907: in create
+    return await self._post(
+.venv/lib/python3.11/site-packages/openai/_base_client.py:1992: in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <openai.AsyncOpenAI object at 0x116a55390>
+cast_to = <class 'openai.types.chat.chat_completion.ChatCompletion'>
+options = FinalRequestOptions(method='post', url='/chat/completions', params={}, headers=NOT_GIVEN, max_retries=NOT_GIVEN, timeo...挑选轻便背包'}]}], 'model': 'primary', 'max_completion_tokens': 4096, 'stream': False}, extra_json={'enable_thinking': True})
+stream = False
+stream_cls = openai.AsyncStream[openai.types.chat.chat_completion_chunk.ChatCompletionChunk]
+
+    async def request(
+        self,
+        cast_to: Type[ResponseT],
+        options: FinalRequestOptions,
+        *,
+        stream: bool = False,
+        stream_cls: type[_AsyncStreamT] | None = None,
+    ) -> ResponseT | _AsyncStreamT:
+        if self._platform is None:
+            # `get_platform` can make blocking IO calls so we
+            # execute it earlier while we are in an async context
+            self._platform = await asyncify(get_platform)()
+    
+        cast_to = self._maybe_override_cast_to(cast_to, options)
+    
+        # create a copy of the options we were given so that if the
+        # options are mutated later & we then retry, the retries are
+        # given the original options
+        input_options = model_copy(options)
+        if input_options.idempotency_key is None and input_options.method.lower() != "get":
+            # ensure the idempotency key is reused between requests
+            input_options.idempotency_key = self._idempotency_key()
+    
+        response: httpx.Response | None = None
+        max_retries = input_options.get_max_retries(self.max_retries)
+    
+        retries_taken = 0
+        for retries_taken in range(max_retries + 1):
+            options = model_copy(input_options)
+            options = await self._prepare_options(options)
+    
+            remaining_retries = max_retries - retries_taken
+            request = self._build_request(options, retries_taken=retries_taken)
+            await self._prepare_request(request)
+    
+            kwargs: HttpxSendArgs = {}
+            if self.custom_auth is not None:
+                kwargs["auth"] = (
+                    normalize_httpx2_auth(self.custom_auth)
+                    if is_httpx2_async_client(self._client)
+                    else self.custom_auth
+                )
+    
+            if options.follow_redirects is not None:
+                kwargs["follow_redirects"] = options.follow_redirects
+    
+            log.debug("Sending HTTP Request: %s %s", request.method, request.url)
+    
+            response = None
+            try:
+                response = await self._send_request(
+                    request,
+                    stream=stream or self._should_stream_response_body(request=request),
+                    **kwargs,
+                )
+            except timeout_exceptions() as err:
+                log.debug("Encountered a timeout exception", exc_info=True)
+    
+                if remaining_retries > 0:
+                    await self._sleep_for_retry(
+                        retries_taken=retries_taken,
+                        max_retries=max_retries,
+                        options=input_options,
+                        response=None,
+                    )
+                    continue
+    
+                log.debug("Raising timeout error")
+                raise APITimeoutError(request=request) from err
+            except OpenAIError as err:
+                # Propagate OpenAIErrors as-is, without retrying or wrapping in APIConnectionError
+                raise err
+            except Exception as err:
+                log.debug("Encountered Exception", exc_info=True)
+    
+                if remaining_retries > 0:
+                    await self._sleep_for_retry(
+                        retries_taken=retries_taken,
+                        max_retries=max_retries,
+                        options=input_options,
+                        response=None,
+                    )
+                    continue
+    
+                log.debug("Raising connection error")
+                raise APIConnectionError(request=request) from err
+    
+            log.debug(
+                'HTTP Response: %s %s "%i %s" %s',
+                request.method,
+                request.url,
+                response.status_code,
+                response.reason_phrase,
+                response.headers,
+            )
+            log.debug("request_id: %s", response.headers.get("x-request-id"))
+    
+            try:
+                response.raise_for_status()
+            except status_exceptions() as err:  # thrown on 4xx and 5xx status code
+                log.debug("Encountered an HTTP status error", exc_info=True)
+    
+                if remaining_retries > 0 and self._should_retry(err.response):
+                    await err.response.aclose()
+                    await self._sleep_for_retry(
+                        retries_taken=retries_taken,
+                        max_retries=max_retries,
+                        options=input_options,
+                        response=response,
+                    )
+                    continue
+    
+                # If the response is streamed then we need to explicitly read the response
+                # to completion before attempting to access the response text.
+                if not err.response.is_closed:
+                    await err.response.aread()
+    
+                log.debug("Re-raising status error")
+>               raise self._make_status_error_from_response(err.response) from None
+E               openai.InternalServerError: Error code: 502 - {'detail': '注入的模型故障'}
+
+.venv/lib/python3.11/site-packages/openai/_base_client.py:1777: InternalServerError
+----------------------------- Captured stderr call -----------------------------
+2026-10-14 20:14:50,037 | WARNING | _base:__call__:241 - All 1 attempt(s) failed for model primary.
+------------------------------ Captured log call -------------------------------
+WARNING  as:_base.py:241 All 1 attempt(s) failed for model primary.
+__ test_profile_fallback_uses_own_credentials_window_reasoning_and_usage[503] __
+
+tmp_path = PosixPath('/private/var/folders/j5/9jbbktk13f7bdrtssrkz58tw0000gn/T/pytest-of-liyuyang/pytest-90/test_profile_fallback_uses_own4')
+status_code = 503
+
+    @pytest.mark.parametrize('status_code', [408, 429, 500, 502, 503, 504])
+    async def test_profile_fallback_uses_own_credentials_window_reasoning_and_usage(tmp_path, status_code):
+        fallback = profile('backup', context_size=64000, max_input_tokens=50000,
+                           reasoning_parameters={'reasoning_effort': 'low'})
+        runtime = profile(fallback=fallback)
+        original = deepcopy(runtime)
+        groups, requests, samples = {}, [], []
+        def throttle(group):
+            return groups.setdefault(group, GatewayThrottle(1, 0))
+        def handler(request):
+            data = json.loads(request.content)
+            requests.append((data, request.url.host, request.headers['authorization']))
+            if data['model'] == 'primary':
+                return httpx.Response(status_code, json={'detail': '注入的模型故障'})
+            assert groups['primary']._semaphore.locked() and groups['backup']._semaphore.locked()
+            return response(data)
+        model = build(tmp_path, runtime, throttle_factory=throttle)
+        model._max_transient_retries = 1
+        model._retry_base_seconds = 0
+        token = context_usage_sink.set(samples.append)
+        try:
+            for candidate in (model, model._fallback):
+                await mock_client(candidate, handler)
+>           result = await model([UserMsg('buyer', '挑选轻便背包')])
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_model_runtime_counting.py:85: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+app/infrastructure/llm.py:408: in __call__
+    return await recover_response(self, messages, tools, tool_choice, kwargs,
+app/infrastructure/model_recovery.py:97: in recover_response
+    raise first[2]
+app/infrastructure/model_recovery.py:83: in attempt
+    response = await model._call_once(rows, tools, choice, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:413: in _call_once
+    return await self._call_throttled(messages, tools, tool_choice, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:448: in _call_throttled
+    result = await self._call_with_fallback(messages, tools, tool_choice, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:608: in _call_with_fallback
+    return await self._invoke_upstream(messages, tools, tool_choice, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:526: in _invoke_upstream
+    return await super().__call__(messages, tools, tool_choice, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/agentscope/model/_base.py:248: in __call__
+    raise last_error
+.venv/lib/python3.11/site-packages/agentscope/model/_base.py:211: in __call__
+    res = await self._call_api(
+app/infrastructure/llm.py:354: in _call_api
+    return await super()._call_api(model_name, messages, tools, tool_choice, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:241: in _call_api
+    return await super()._call_api(model_name, messages, tools, tool_choice, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/agentscope/model/_openai_chat/_model.py:277: in _call_api
+    response = await self.client.chat.completions.create(**kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:189: in observed_create
+    response = await create(*args, **request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py:2907: in create
+    return await self._post(
+.venv/lib/python3.11/site-packages/openai/_base_client.py:1992: in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <openai.AsyncOpenAI object at 0x116337150>
+cast_to = <class 'openai.types.chat.chat_completion.ChatCompletion'>
+options = FinalRequestOptions(method='post', url='/chat/completions', params={}, headers=NOT_GIVEN, max_retries=NOT_GIVEN, timeo...挑选轻便背包'}]}], 'model': 'primary', 'max_completion_tokens': 4096, 'stream': False}, extra_json={'enable_thinking': True})
+stream = False
+stream_cls = openai.AsyncStream[openai.types.chat.chat_completion_chunk.ChatCompletionChunk]
+
+    async def request(
+        self,
+        cast_to: Type[ResponseT],
+        options: FinalRequestOptions,
+        *,
+        stream: bool = False,
+        stream_cls: type[_AsyncStreamT] | None = None,
+    ) -> ResponseT | _AsyncStreamT:
+        if self._platform is None:
+            # `get_platform` can make blocking IO calls so we
+            # execute it earlier while we are in an async context
+            self._platform = await asyncify(get_platform)()
+    
+        cast_to = self._maybe_override_cast_to(cast_to, options)
+    
+        # create a copy of the options we were given so that if the
+        # options are mutated later & we then retry, the retries are
+        # given the original options
+        input_options = model_copy(options)
+        if input_options.idempotency_key is None and input_options.method.lower() != "get":
+            # ensure the idempotency key is reused between requests
+            input_options.idempotency_key = self._idempotency_key()
+    
+        response: httpx.Response | None = None
+        max_retries = input_options.get_max_retries(self.max_retries)
+    
+        retries_taken = 0
+        for retries_taken in range(max_retries + 1):
+            options = model_copy(input_options)
+            options = await self._prepare_options(options)
+    
+            remaining_retries = max_retries - retries_taken
+            request = self._build_request(options, retries_taken=retries_taken)
+            await self._prepare_request(request)
+    
+            kwargs: HttpxSendArgs = {}
+            if self.custom_auth is not None:
+                kwargs["auth"] = (
+                    normalize_httpx2_auth(self.custom_auth)
+                    if is_httpx2_async_client(self._client)
+                    else self.custom_auth
+                )
+    
+            if options.follow_redirects is not None:
+                kwargs["follow_redirects"] = options.follow_redirects
+    
+            log.debug("Sending HTTP Request: %s %s", request.method, request.url)
+    
+            response = None
+            try:
+                response = await self._send_request(
+                    request,
+                    stream=stream or self._should_stream_response_body(request=request),
+                    **kwargs,
+                )
+            except timeout_exceptions() as err:
+                log.debug("Encountered a timeout exception", exc_info=True)
+    
+                if remaining_retries > 0:
+                    await self._sleep_for_retry(
+                        retries_taken=retries_taken,
+                        max_retries=max_retries,
+                        options=input_options,
+                        response=None,
+                    )
+                    continue
+    
+                log.debug("Raising timeout error")
+                raise APITimeoutError(request=request) from err
+            except OpenAIError as err:
+                # Propagate OpenAIErrors as-is, without retrying or wrapping in APIConnectionError
+                raise err
+            except Exception as err:
+                log.debug("Encountered Exception", exc_info=True)
+    
+                if remaining_retries > 0:
+                    await self._sleep_for_retry(
+                        retries_taken=retries_taken,
+                        max_retries=max_retries,
+                        options=input_options,
+                        response=None,
+                    )
+                    continue
+    
+                log.debug("Raising connection error")
+                raise APIConnectionError(request=request) from err
+    
+            log.debug(
+                'HTTP Response: %s %s "%i %s" %s',
+                request.method,
+                request.url,
+                response.status_code,
+                response.reason_phrase,
+                response.headers,
+            )
+            log.debug("request_id: %s", response.headers.get("x-request-id"))
+    
+            try:
+                response.raise_for_status()
+            except status_exceptions() as err:  # thrown on 4xx and 5xx status code
+                log.debug("Encountered an HTTP status error", exc_info=True)
+    
+                if remaining_retries > 0 and self._should_retry(err.response):
+                    await err.response.aclose()
+                    await self._sleep_for_retry(
+                        retries_taken=retries_taken,
+                        max_retries=max_retries,
+                        options=input_options,
+                        response=response,
+                    )
+                    continue
+    
+                # If the response is streamed then we need to explicitly read the response
+                # to completion before attempting to access the response text.
+                if not err.response.is_closed:
+                    await err.response.aread()
+    
+                log.debug("Re-raising status error")
+>               raise self._make_status_error_from_response(err.response) from None
+E               openai.InternalServerError: Error code: 503 - {'detail': '注入的模型故障'}
+
+.venv/lib/python3.11/site-packages/openai/_base_client.py:1777: InternalServerError
+----------------------------- Captured stderr call -----------------------------
+2026-10-14 20:14:50,106 | WARNING | _base:__call__:241 - All 1 attempt(s) failed for model primary.
+------------------------------ Captured log call -------------------------------
+WARNING  as:_base.py:241 All 1 attempt(s) failed for model primary.
+__ test_profile_fallback_uses_own_credentials_window_reasoning_and_usage[504] __
+
+tmp_path = PosixPath('/private/var/folders/j5/9jbbktk13f7bdrtssrkz58tw0000gn/T/pytest-of-liyuyang/pytest-90/test_profile_fallback_uses_own5')
+status_code = 504
+
+    @pytest.mark.parametrize('status_code', [408, 429, 500, 502, 503, 504])
+    async def test_profile_fallback_uses_own_credentials_window_reasoning_and_usage(tmp_path, status_code):
+        fallback = profile('backup', context_size=64000, max_input_tokens=50000,
+                           reasoning_parameters={'reasoning_effort': 'low'})
+        runtime = profile(fallback=fallback)
+        original = deepcopy(runtime)
+        groups, requests, samples = {}, [], []
+        def throttle(group):
+            return groups.setdefault(group, GatewayThrottle(1, 0))
+        def handler(request):
+            data = json.loads(request.content)
+            requests.append((data, request.url.host, request.headers['authorization']))
+            if data['model'] == 'primary':
+                return httpx.Response(status_code, json={'detail': '注入的模型故障'})
+            assert groups['primary']._semaphore.locked() and groups['backup']._semaphore.locked()
+            return response(data)
+        model = build(tmp_path, runtime, throttle_factory=throttle)
+        model._max_transient_retries = 1
+        model._retry_base_seconds = 0
+        token = context_usage_sink.set(samples.append)
+        try:
+            for candidate in (model, model._fallback):
+                await mock_client(candidate, handler)
+>           result = await model([UserMsg('buyer', '挑选轻便背包')])
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_model_runtime_counting.py:85: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+app/infrastructure/llm.py:408: in __call__
+    return await recover_response(self, messages, tools, tool_choice, kwargs,
+app/infrastructure/model_recovery.py:97: in recover_response
+    raise first[2]
+app/infrastructure/model_recovery.py:83: in attempt
+    response = await model._call_once(rows, tools, choice, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:413: in _call_once
+    return await self._call_throttled(messages, tools, tool_choice, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:448: in _call_throttled
+    result = await self._call_with_fallback(messages, tools, tool_choice, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:608: in _call_with_fallback
+    return await self._invoke_upstream(messages, tools, tool_choice, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:526: in _invoke_upstream
+    return await super().__call__(messages, tools, tool_choice, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/agentscope/model/_base.py:248: in __call__
+    raise last_error
+.venv/lib/python3.11/site-packages/agentscope/model/_base.py:211: in __call__
+    res = await self._call_api(
+app/infrastructure/llm.py:354: in _call_api
+    return await super()._call_api(model_name, messages, tools, tool_choice, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:241: in _call_api
+    return await super()._call_api(model_name, messages, tools, tool_choice, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/agentscope/model/_openai_chat/_model.py:277: in _call_api
+    response = await self.client.chat.completions.create(**kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:189: in observed_create
+    response = await create(*args, **request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py:2907: in create
+    return await self._post(
+.venv/lib/python3.11/site-packages/openai/_base_client.py:1992: in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <openai.AsyncOpenAI object at 0x116968990>
+cast_to = <class 'openai.types.chat.chat_completion.ChatCompletion'>
+options = FinalRequestOptions(method='post', url='/chat/completions', params={}, headers=NOT_GIVEN, max_retries=NOT_GIVEN, timeo...挑选轻便背包'}]}], 'model': 'primary', 'max_completion_tokens': 4096, 'stream': False}, extra_json={'enable_thinking': True})
+stream = False
+stream_cls = openai.AsyncStream[openai.types.chat.chat_completion_chunk.ChatCompletionChunk]
+
+    async def request(
+        self,
+        cast_to: Type[ResponseT],
+        options: FinalRequestOptions,
+        *,
+        stream: bool = False,
+        stream_cls: type[_AsyncStreamT] | None = None,
+    ) -> ResponseT | _AsyncStreamT:
+        if self._platform is None:
+            # `get_platform` can make blocking IO calls so we
+            # execute it earlier while we are in an async context
+            self._platform = await asyncify(get_platform)()
+    
+        cast_to = self._maybe_override_cast_to(cast_to, options)
+    
+        # create a copy of the options we were given so that if the
+        # options are mutated later & we then retry, the retries are
+        # given the original options
+        input_options = model_copy(options)
+        if input_options.idempotency_key is None and input_options.method.lower() != "get":
+            # ensure the idempotency key is reused between requests
+            input_options.idempotency_key = self._idempotency_key()
+    
+        response: httpx.Response | None = None
+        max_retries = input_options.get_max_retries(self.max_retries)
+    
+        retries_taken = 0
+        for retries_taken in range(max_retries + 1):
+            options = model_copy(input_options)
+            options = await self._prepare_options(options)
+    
+            remaining_retries = max_retries - retries_taken
+            request = self._build_request(options, retries_taken=retries_taken)
+            await self._prepare_request(request)
+    
+            kwargs: HttpxSendArgs = {}
+            if self.custom_auth is not None:
+                kwargs["auth"] = (
+                    normalize_httpx2_auth(self.custom_auth)
+                    if is_httpx2_async_client(self._client)
+                    else self.custom_auth
+                )
+    
+            if options.follow_redirects is not None:
+                kwargs["follow_redirects"] = options.follow_redirects
+    
+            log.debug("Sending HTTP Request: %s %s", request.method, request.url)
+    
+            response = None
+            try:
+                response = await self._send_request(
+                    request,
+                    stream=stream or self._should_stream_response_body(request=request),
+                    **kwargs,
+                )
+            except timeout_exceptions() as err:
+                log.debug("Encountered a timeout exception", exc_info=True)
+    
+                if remaining_retries > 0:
+                    await self._sleep_for_retry(
+                        retries_taken=retries_taken,
+                        max_retries=max_retries,
+                        options=input_options,
+                        response=None,
+                    )
+                    continue
+    
+                log.debug("Raising timeout error")
+                raise APITimeoutError(request=request) from err
+            except OpenAIError as err:
+                # Propagate OpenAIErrors as-is, without retrying or wrapping in APIConnectionError
+                raise err
+            except Exception as err:
+                log.debug("Encountered Exception", exc_info=True)
+    
+                if remaining_retries > 0:
+                    await self._sleep_for_retry(
+                        retries_taken=retries_taken,
+                        max_retries=max_retries,
+                        options=input_options,
+                        response=None,
+                    )
+                    continue
+    
+                log.debug("Raising connection error")
+                raise APIConnectionError(request=request) from err
+    
+            log.debug(
+                'HTTP Response: %s %s "%i %s" %s',
+                request.method,
+                request.url,
+                response.status_code,
+                response.reason_phrase,
+                response.headers,
+            )
+            log.debug("request_id: %s", response.headers.get("x-request-id"))
+    
+            try:
+                response.raise_for_status()
+            except status_exceptions() as err:  # thrown on 4xx and 5xx status code
+                log.debug("Encountered an HTTP status error", exc_info=True)
+    
+                if remaining_retries > 0 and self._should_retry(err.response):
+                    await err.response.aclose()
+                    await self._sleep_for_retry(
+                        retries_taken=retries_taken,
+                        max_retries=max_retries,
+                        options=input_options,
+                        response=response,
+                    )
+                    continue
+    
+                # If the response is streamed then we need to explicitly read the response
+                # to completion before attempting to access the response text.
+                if not err.response.is_closed:
+                    await err.response.aread()
+    
+                log.debug("Re-raising status error")
+>               raise self._make_status_error_from_response(err.response) from None
+E               openai.InternalServerError: Error code: 504 - {'detail': '注入的模型故障'}
+
+.venv/lib/python3.11/site-packages/openai/_base_client.py:1777: InternalServerError
+----------------------------- Captured stderr call -----------------------------
+2026-10-14 20:14:50,221 | WARNING | _base:__call__:241 - All 1 attempt(s) failed for model primary.
+------------------------------ Captured log call -------------------------------
+WARNING  as:_base.py:241 All 1 attempt(s) failed for model primary.
+_____ test_http_status_retries_then_primary_succeeds_without_fallback[408] _____
+
+tmp_path = PosixPath('/private/var/folders/j5/9jbbktk13f7bdrtssrkz58tw0000gn/T/pytest-of-liyuyang/pytest-90/test_http_status_retries_then_0')
+status_code = 408
+
+    @pytest.mark.parametrize('status_code', [408, 429, 500, 502, 503, 504])
+    async def test_http_status_retries_then_primary_succeeds_without_fallback(tmp_path, status_code):
+        model = build(tmp_path, profile(fallback=profile('backup')))
+        model._max_transient_retries = 1
+        model._retry_base_seconds = 0
+        requests = []
+        def handler(request):
+            payload = json.loads(request.content)
+            requests.append(payload['model'])
+            return httpx.Response(status_code, json={'detail': '注入的模型故障'}) if len(requests) == 1 else response(payload)
+        try:
+            for candidate in (model, model._fallback):
+                await mock_client(candidate, handler)
+>           result = await model([UserMsg('buyer', '挑选轻便背包')])
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_model_runtime_counting.py:118: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+app/infrastructure/llm.py:408: in __call__
+    return await recover_response(self, messages, tools, tool_choice, kwargs,
+app/infrastructure/model_recovery.py:97: in recover_response
+    raise first[2]
+app/infrastructure/model_recovery.py:83: in attempt
+    response = await model._call_once(rows, tools, choice, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:413: in _call_once
+    return await self._call_throttled(messages, tools, tool_choice, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:448: in _call_throttled
+    result = await self._call_with_fallback(messages, tools, tool_choice, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:608: in _call_with_fallback
+    return await self._invoke_upstream(messages, tools, tool_choice, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:526: in _invoke_upstream
+    return await super().__call__(messages, tools, tool_choice, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/agentscope/model/_base.py:211: in __call__
+    res = await self._call_api(
+app/infrastructure/llm.py:354: in _call_api
+    return await super()._call_api(model_name, messages, tools, tool_choice, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:241: in _call_api
+    return await super()._call_api(model_name, messages, tools, tool_choice, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/agentscope/model/_openai_chat/_model.py:277: in _call_api
+    response = await self.client.chat.completions.create(**kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:189: in observed_create
+    response = await create(*args, **request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py:2907: in create
+    return await self._post(
+.venv/lib/python3.11/site-packages/openai/_base_client.py:1992: in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <openai.AsyncOpenAI object at 0x116759510>
+cast_to = <class 'openai.types.chat.chat_completion.ChatCompletion'>
+options = FinalRequestOptions(method='post', url='/chat/completions', params={}, headers=NOT_GIVEN, max_retries=NOT_GIVEN, timeo...挑选轻便背包'}]}], 'model': 'primary', 'max_completion_tokens': 4096, 'stream': False}, extra_json={'enable_thinking': True})
+stream = False
+stream_cls = openai.AsyncStream[openai.types.chat.chat_completion_chunk.ChatCompletionChunk]
+
+    async def request(
+        self,
+        cast_to: Type[ResponseT],
+        options: FinalRequestOptions,
+        *,
+        stream: bool = False,
+        stream_cls: type[_AsyncStreamT] | None = None,
+    ) -> ResponseT | _AsyncStreamT:
+        if self._platform is None:
+            # `get_platform` can make blocking IO calls so we
+            # execute it earlier while we are in an async context
+            self._platform = await asyncify(get_platform)()
+    
+        cast_to = self._maybe_override_cast_to(cast_to, options)
+    
+        # create a copy of the options we were given so that if the
+        # options are mutated later & we then retry, the retries are
+        # given the original options
+        input_options = model_copy(options)
+        if input_options.idempotency_key is None and input_options.method.lower() != "get":
+            # ensure the idempotency key is reused between requests
+            input_options.idempotency_key = self._idempotency_key()
+    
+        response: httpx.Response | None = None
+        max_retries = input_options.get_max_retries(self.max_retries)
+    
+        retries_taken = 0
+        for retries_taken in range(max_retries + 1):
+            options = model_copy(input_options)
+            options = await self._prepare_options(options)
+    
+            remaining_retries = max_retries - retries_taken
+            request = self._build_request(options, retries_taken=retries_taken)
+            await self._prepare_request(request)
+    
+            kwargs: HttpxSendArgs = {}
+            if self.custom_auth is not None:
+                kwargs["auth"] = (
+                    normalize_httpx2_auth(self.custom_auth)
+                    if is_httpx2_async_client(self._client)
+                    else self.custom_auth
+                )
+    
+            if options.follow_redirects is not None:
+                kwargs["follow_redirects"] = options.follow_redirects
+    
+            log.debug("Sending HTTP Request: %s %s", request.method, request.url)
+    
+            response = None
+            try:
+                response = await self._send_request(
+                    request,
+                    stream=stream or self._should_stream_response_body(request=request),
+                    **kwargs,
+                )
+            except timeout_exceptions() as err:
+                log.debug("Encountered a timeout exception", exc_info=True)
+    
+                if remaining_retries > 0:
+                    await self._sleep_for_retry(
+                        retries_taken=retries_taken,
+                        max_retries=max_retries,
+                        options=input_options,
+                        response=None,
+                    )
+                    continue
+    
+                log.debug("Raising timeout error")
+                raise APITimeoutError(request=request) from err
+            except OpenAIError as err:
+                # Propagate OpenAIErrors as-is, without retrying or wrapping in APIConnectionError
+                raise err
+            except Exception as err:
+                log.debug("Encountered Exception", exc_info=True)
+    
+                if remaining_retries > 0:
+                    await self._sleep_for_retry(
+                        retries_taken=retries_taken,
+                        max_retries=max_retries,
+                        options=input_options,
+                        response=None,
+                    )
+                    continue
+    
+                log.debug("Raising connection error")
+                raise APIConnectionError(request=request) from err
+    
+            log.debug(
+                'HTTP Response: %s %s "%i %s" %s',
+                request.method,
+                request.url,
+                response.status_code,
+                response.reason_phrase,
+                response.headers,
+            )
+            log.debug("request_id: %s", response.headers.get("x-request-id"))
+    
+            try:
+                response.raise_for_status()
+            except status_exceptions() as err:  # thrown on 4xx and 5xx status code
+                log.debug("Encountered an HTTP status error", exc_info=True)
+    
+                if remaining_retries > 0 and self._should_retry(err.response):
+                    await err.response.aclose()
+                    await self._sleep_for_retry(
+                        retries_taken=retries_taken,
+                        max_retries=max_retries,
+                        options=input_options,
+                        response=response,
+                    )
+                    continue
+    
+                # If the response is streamed then we need to explicitly read the response
+                # to completion before attempting to access the response text.
+                if not err.response.is_closed:
+                    await err.response.aread()
+    
+                log.debug("Re-raising status error")
+>               raise self._make_status_error_from_response(err.response) from None
+E               openai.APIStatusError: Error code: 408 - {'detail': '注入的模型故障'}
+
+.venv/lib/python3.11/site-packages/openai/_base_client.py:1777: APIStatusError
+_____ test_http_status_retries_then_primary_succeeds_without_fallback[500] _____
+
+tmp_path = PosixPath('/private/var/folders/j5/9jbbktk13f7bdrtssrkz58tw0000gn/T/pytest-of-liyuyang/pytest-90/test_http_status_retries_then_2')
+status_code = 500
+
+    @pytest.mark.parametrize('status_code', [408, 429, 500, 502, 503, 504])
+    async def test_http_status_retries_then_primary_succeeds_without_fallback(tmp_path, status_code):
+        model = build(tmp_path, profile(fallback=profile('backup')))
+        model._max_transient_retries = 1
+        model._retry_base_seconds = 0
+        requests = []
+        def handler(request):
+            payload = json.loads(request.content)
+            requests.append(payload['model'])
+            return httpx.Response(status_code, json={'detail': '注入的模型故障'}) if len(requests) == 1 else response(payload)
+        try:
+            for candidate in (model, model._fallback):
+                await mock_client(candidate, handler)
+>           result = await model([UserMsg('buyer', '挑选轻便背包')])
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_model_runtime_counting.py:118: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+app/infrastructure/llm.py:408: in __call__
+    return await recover_response(self, messages, tools, tool_choice, kwargs,
+app/infrastructure/model_recovery.py:97: in recover_response
+    raise first[2]
+app/infrastructure/model_recovery.py:83: in attempt
+    response = await model._call_once(rows, tools, choice, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:413: in _call_once
+    return await self._call_throttled(messages, tools, tool_choice, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:448: in _call_throttled
+    result = await self._call_with_fallback(messages, tools, tool_choice, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:608: in _call_with_fallback
+    return await self._invoke_upstream(messages, tools, tool_choice, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:526: in _invoke_upstream
+    return await super().__call__(messages, tools, tool_choice, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/agentscope/model/_base.py:248: in __call__
+    raise last_error
+.venv/lib/python3.11/site-packages/agentscope/model/_base.py:211: in __call__
+    res = await self._call_api(
+app/infrastructure/llm.py:354: in _call_api
+    return await super()._call_api(model_name, messages, tools, tool_choice, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:241: in _call_api
+    return await super()._call_api(model_name, messages, tools, tool_choice, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/agentscope/model/_openai_chat/_model.py:277: in _call_api
+    response = await self.client.chat.completions.create(**kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:189: in observed_create
+    response = await create(*args, **request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py:2907: in create
+    return await self._post(
+.venv/lib/python3.11/site-packages/openai/_base_client.py:1992: in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <openai.AsyncOpenAI object at 0x116a86c50>
+cast_to = <class 'openai.types.chat.chat_completion.ChatCompletion'>
+options = FinalRequestOptions(method='post', url='/chat/completions', params={}, headers=NOT_GIVEN, max_retries=NOT_GIVEN, timeo...挑选轻便背包'}]}], 'model': 'primary', 'max_completion_tokens': 4096, 'stream': False}, extra_json={'enable_thinking': True})
+stream = False
+stream_cls = openai.AsyncStream[openai.types.chat.chat_completion_chunk.ChatCompletionChunk]
+
+    async def request(
+        self,
+        cast_to: Type[ResponseT],
+        options: FinalRequestOptions,
+        *,
+        stream: bool = False,
+        stream_cls: type[_AsyncStreamT] | None = None,
+    ) -> ResponseT | _AsyncStreamT:
+        if self._platform is None:
+            # `get_platform` can make blocking IO calls so we
+            # execute it earlier while we are in an async context
+            self._platform = await asyncify(get_platform)()
+    
+        cast_to = self._maybe_override_cast_to(cast_to, options)
+    
+        # create a copy of the options we were given so that if the
+        # options are mutated later & we then retry, the retries are
+        # given the original options
+        input_options = model_copy(options)
+        if input_options.idempotency_key is None and input_options.method.lower() != "get":
+            # ensure the idempotency key is reused between requests
+            input_options.idempotency_key = self._idempotency_key()
+    
+        response: httpx.Response | None = None
+        max_retries = input_options.get_max_retries(self.max_retries)
+    
+        retries_taken = 0
+        for retries_taken in range(max_retries + 1):
+            options = model_copy(input_options)
+            options = await self._prepare_options(options)
+    
+            remaining_retries = max_retries - retries_taken
+            request = self._build_request(options, retries_taken=retries_taken)
+            await self._prepare_request(request)
+    
+            kwargs: HttpxSendArgs = {}
+            if self.custom_auth is not None:
+                kwargs["auth"] = (
+                    normalize_httpx2_auth(self.custom_auth)
+                    if is_httpx2_async_client(self._client)
+                    else self.custom_auth
+                )
+    
+            if options.follow_redirects is not None:
+                kwargs["follow_redirects"] = options.follow_redirects
+    
+            log.debug("Sending HTTP Request: %s %s", request.method, request.url)
+    
+            response = None
+            try:
+                response = await self._send_request(
+                    request,
+                    stream=stream or self._should_stream_response_body(request=request),
+                    **kwargs,
+                )
+            except timeout_exceptions() as err:
+                log.debug("Encountered a timeout exception", exc_info=True)
+    
+                if remaining_retries > 0:
+                    await self._sleep_for_retry(
+                        retries_taken=retries_taken,
+                        max_retries=max_retries,
+                        options=input_options,
+                        response=None,
+                    )
+                    continue
+    
+                log.debug("Raising timeout error")
+                raise APITimeoutError(request=request) from err
+            except OpenAIError as err:
+                # Propagate OpenAIErrors as-is, without retrying or wrapping in APIConnectionError
+                raise err
+            except Exception as err:
+                log.debug("Encountered Exception", exc_info=True)
+    
+                if remaining_retries > 0:
+                    await self._sleep_for_retry(
+                        retries_taken=retries_taken,
+                        max_retries=max_retries,
+                        options=input_options,
+                        response=None,
+                    )
+                    continue
+    
+                log.debug("Raising connection error")
+                raise APIConnectionError(request=request) from err
+    
+            log.debug(
+                'HTTP Response: %s %s "%i %s" %s',
+                request.method,
+                request.url,
+                response.status_code,
+                response.reason_phrase,
+                response.headers,
+            )
+            log.debug("request_id: %s", response.headers.get("x-request-id"))
+    
+            try:
+                response.raise_for_status()
+            except status_exceptions() as err:  # thrown on 4xx and 5xx status code
+                log.debug("Encountered an HTTP status error", exc_info=True)
+    
+                if remaining_retries > 0 and self._should_retry(err.response):
+                    await err.response.aclose()
+                    await self._sleep_for_retry(
+                        retries_taken=retries_taken,
+                        max_retries=max_retries,
+                        options=input_options,
+                        response=response,
+                    )
+                    continue
+    
+                # If the response is streamed then we need to explicitly read the response
+                # to completion before attempting to access the response text.
+                if not err.response.is_closed:
+                    await err.response.aread()
+    
+                log.debug("Re-raising status error")
+>               raise self._make_status_error_from_response(err.response) from None
+E               openai.InternalServerError: Error code: 500 - {'detail': '注入的模型故障'}
+
+.venv/lib/python3.11/site-packages/openai/_base_client.py:1777: InternalServerError
+----------------------------- Captured stderr call -----------------------------
+2026-10-14 20:14:50,427 | WARNING | _base:__call__:241 - All 1 attempt(s) failed for model primary.
+------------------------------ Captured log call -------------------------------
+WARNING  as:_base.py:241 All 1 attempt(s) failed for model primary.
+_____ test_http_status_retries_then_primary_succeeds_without_fallback[502] _____
+
+tmp_path = PosixPath('/private/var/folders/j5/9jbbktk13f7bdrtssrkz58tw0000gn/T/pytest-of-liyuyang/pytest-90/test_http_status_retries_then_3')
+status_code = 502
+
+    @pytest.mark.parametrize('status_code', [408, 429, 500, 502, 503, 504])
+    async def test_http_status_retries_then_primary_succeeds_without_fallback(tmp_path, status_code):
+        model = build(tmp_path, profile(fallback=profile('backup')))
+        model._max_transient_retries = 1
+        model._retry_base_seconds = 0
+        requests = []
+        def handler(request):
+            payload = json.loads(request.content)
+            requests.append(payload['model'])
+            return httpx.Response(status_code, json={'detail': '注入的模型故障'}) if len(requests) == 1 else response(payload)
+        try:
+            for candidate in (model, model._fallback):
+                await mock_client(candidate, handler)
+>           result = await model([UserMsg('buyer', '挑选轻便背包')])
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_model_runtime_counting.py:118: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+app/infrastructure/llm.py:408: in __call__
+    return await recover_response(self, messages, tools, tool_choice, kwargs,
+app/infrastructure/model_recovery.py:97: in recover_response
+    raise first[2]
+app/infrastructure/model_recovery.py:83: in attempt
+    response = await model._call_once(rows, tools, choice, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:413: in _call_once
+    return await self._call_throttled(messages, tools, tool_choice, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:448: in _call_throttled
+    result = await self._call_with_fallback(messages, tools, tool_choice, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:608: in _call_with_fallback
+    return await self._invoke_upstream(messages, tools, tool_choice, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:526: in _invoke_upstream
+    return await super().__call__(messages, tools, tool_choice, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/agentscope/model/_base.py:248: in __call__
+    raise last_error
+.venv/lib/python3.11/site-packages/agentscope/model/_base.py:211: in __call__
+    res = await self._call_api(
+app/infrastructure/llm.py:354: in _call_api
+    return await super()._call_api(model_name, messages, tools, tool_choice, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:241: in _call_api
+    return await super()._call_api(model_name, messages, tools, tool_choice, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/agentscope/model/_openai_chat/_model.py:277: in _call_api
+    response = await self.client.chat.completions.create(**kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:189: in observed_create
+    response = await create(*args, **request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py:2907: in create
+    return await self._post(
+.venv/lib/python3.11/site-packages/openai/_base_client.py:1992: in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <openai.AsyncOpenAI object at 0x116a5a450>
+cast_to = <class 'openai.types.chat.chat_completion.ChatCompletion'>
+options = FinalRequestOptions(method='post', url='/chat/completions', params={}, headers=NOT_GIVEN, max_retries=NOT_GIVEN, timeo...挑选轻便背包'}]}], 'model': 'primary', 'max_completion_tokens': 4096, 'stream': False}, extra_json={'enable_thinking': True})
+stream = False
+stream_cls = openai.AsyncStream[openai.types.chat.chat_completion_chunk.ChatCompletionChunk]
+
+    async def request(
+        self,
+        cast_to: Type[ResponseT],
+        options: FinalRequestOptions,
+        *,
+        stream: bool = False,
+        stream_cls: type[_AsyncStreamT] | None = None,
+    ) -> ResponseT | _AsyncStreamT:
+        if self._platform is None:
+            # `get_platform` can make blocking IO calls so we
+            # execute it earlier while we are in an async context
+            self._platform = await asyncify(get_platform)()
+    
+        cast_to = self._maybe_override_cast_to(cast_to, options)
+    
+        # create a copy of the options we were given so that if the
+        # options are mutated later & we then retry, the retries are
+        # given the original options
+        input_options = model_copy(options)
+        if input_options.idempotency_key is None and input_options.method.lower() != "get":
+            # ensure the idempotency key is reused between requests
+            input_options.idempotency_key = self._idempotency_key()
+    
+        response: httpx.Response | None = None
+        max_retries = input_options.get_max_retries(self.max_retries)
+    
+        retries_taken = 0
+        for retries_taken in range(max_retries + 1):
+            options = model_copy(input_options)
+            options = await self._prepare_options(options)
+    
+            remaining_retries = max_retries - retries_taken
+            request = self._build_request(options, retries_taken=retries_taken)
+            await self._prepare_request(request)
+    
+            kwargs: HttpxSendArgs = {}
+            if self.custom_auth is not None:
+                kwargs["auth"] = (
+                    normalize_httpx2_auth(self.custom_auth)
+                    if is_httpx2_async_client(self._client)
+                    else self.custom_auth
+                )
+    
+            if options.follow_redirects is not None:
+                kwargs["follow_redirects"] = options.follow_redirects
+    
+            log.debug("Sending HTTP Request: %s %s", request.method, request.url)
+    
+            response = None
+            try:
+                response = await self._send_request(
+                    request,
+                    stream=stream or self._should_stream_response_body(request=request),
+                    **kwargs,
+                )
+            except timeout_exceptions() as err:
+                log.debug("Encountered a timeout exception", exc_info=True)
+    
+                if remaining_retries > 0:
+                    await self._sleep_for_retry(
+                        retries_taken=retries_taken,
+                        max_retries=max_retries,
+                        options=input_options,
+                        response=None,
+                    )
+                    continue
+    
+                log.debug("Raising timeout error")
+                raise APITimeoutError(request=request) from err
+            except OpenAIError as err:
+                # Propagate OpenAIErrors as-is, without retrying or wrapping in APIConnectionError
+                raise err
+            except Exception as err:
+                log.debug("Encountered Exception", exc_info=True)
+    
+                if remaining_retries > 0:
+                    await self._sleep_for_retry(
+                        retries_taken=retries_taken,
+                        max_retries=max_retries,
+                        options=input_options,
+                        response=None,
+                    )
+                    continue
+    
+                log.debug("Raising connection error")
+                raise APIConnectionError(request=request) from err
+    
+            log.debug(
+                'HTTP Response: %s %s "%i %s" %s',
+                request.method,
+                request.url,
+                response.status_code,
+                response.reason_phrase,
+                response.headers,
+            )
+            log.debug("request_id: %s", response.headers.get("x-request-id"))
+    
+            try:
+                response.raise_for_status()
+            except status_exceptions() as err:  # thrown on 4xx and 5xx status code
+                log.debug("Encountered an HTTP status error", exc_info=True)
+    
+                if remaining_retries > 0 and self._should_retry(err.response):
+                    await err.response.aclose()
+                    await self._sleep_for_retry(
+                        retries_taken=retries_taken,
+                        max_retries=max_retries,
+                        options=input_options,
+                        response=response,
+                    )
+                    continue
+    
+                # If the response is streamed then we need to explicitly read the response
+                # to completion before attempting to access the response text.
+                if not err.response.is_closed:
+                    await err.response.aread()
+    
+                log.debug("Re-raising status error")
+>               raise self._make_status_error_from_response(err.response) from None
+E               openai.InternalServerError: Error code: 502 - {'detail': '注入的模型故障'}
+
+.venv/lib/python3.11/site-packages/openai/_base_client.py:1777: InternalServerError
+----------------------------- Captured stderr call -----------------------------
+2026-10-14 20:14:50,500 | WARNING | _base:__call__:241 - All 1 attempt(s) failed for model primary.
+------------------------------ Captured log call -------------------------------
+WARNING  as:_base.py:241 All 1 attempt(s) failed for model primary.
+_____ test_http_status_retries_then_primary_succeeds_without_fallback[503] _____
+
+tmp_path = PosixPath('/private/var/folders/j5/9jbbktk13f7bdrtssrkz58tw0000gn/T/pytest-of-liyuyang/pytest-90/test_http_status_retries_then_4')
+status_code = 503
+
+    @pytest.mark.parametrize('status_code', [408, 429, 500, 502, 503, 504])
+    async def test_http_status_retries_then_primary_succeeds_without_fallback(tmp_path, status_code):
+        model = build(tmp_path, profile(fallback=profile('backup')))
+        model._max_transient_retries = 1
+        model._retry_base_seconds = 0
+        requests = []
+        def handler(request):
+            payload = json.loads(request.content)
+            requests.append(payload['model'])
+            return httpx.Response(status_code, json={'detail': '注入的模型故障'}) if len(requests) == 1 else response(payload)
+        try:
+            for candidate in (model, model._fallback):
+                await mock_client(candidate, handler)
+>           result = await model([UserMsg('buyer', '挑选轻便背包')])
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_model_runtime_counting.py:118: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+app/infrastructure/llm.py:408: in __call__
+    return await recover_response(self, messages, tools, tool_choice, kwargs,
+app/infrastructure/model_recovery.py:97: in recover_response
+    raise first[2]
+app/infrastructure/model_recovery.py:83: in attempt
+    response = await model._call_once(rows, tools, choice, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:413: in _call_once
+    return await self._call_throttled(messages, tools, tool_choice, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:448: in _call_throttled
+    result = await self._call_with_fallback(messages, tools, tool_choice, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:608: in _call_with_fallback
+    return await self._invoke_upstream(messages, tools, tool_choice, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:526: in _invoke_upstream
+    return await super().__call__(messages, tools, tool_choice, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/agentscope/model/_base.py:248: in __call__
+    raise last_error
+.venv/lib/python3.11/site-packages/agentscope/model/_base.py:211: in __call__
+    res = await self._call_api(
+app/infrastructure/llm.py:354: in _call_api
+    return await super()._call_api(model_name, messages, tools, tool_choice, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:241: in _call_api
+    return await super()._call_api(model_name, messages, tools, tool_choice, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/agentscope/model/_openai_chat/_model.py:277: in _call_api
+    response = await self.client.chat.completions.create(**kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:189: in observed_create
+    response = await create(*args, **request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py:2907: in create
+    return await self._post(
+.venv/lib/python3.11/site-packages/openai/_base_client.py:1992: in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <openai.AsyncOpenAI object at 0x1167faad0>
+cast_to = <class 'openai.types.chat.chat_completion.ChatCompletion'>
+options = FinalRequestOptions(method='post', url='/chat/completions', params={}, headers=NOT_GIVEN, max_retries=NOT_GIVEN, timeo...挑选轻便背包'}]}], 'model': 'primary', 'max_completion_tokens': 4096, 'stream': False}, extra_json={'enable_thinking': True})
+stream = False
+stream_cls = openai.AsyncStream[openai.types.chat.chat_completion_chunk.ChatCompletionChunk]
+
+    async def request(
+        self,
+        cast_to: Type[ResponseT],
+        options: FinalRequestOptions,
+        *,
+        stream: bool = False,
+        stream_cls: type[_AsyncStreamT] | None = None,
+    ) -> ResponseT | _AsyncStreamT:
+        if self._platform is None:
+            # `get_platform` can make blocking IO calls so we
+            # execute it earlier while we are in an async context
+            self._platform = await asyncify(get_platform)()
+    
+        cast_to = self._maybe_override_cast_to(cast_to, options)
+    
+        # create a copy of the options we were given so that if the
+        # options are mutated later & we then retry, the retries are
+        # given the original options
+        input_options = model_copy(options)
+        if input_options.idempotency_key is None and input_options.method.lower() != "get":
+            # ensure the idempotency key is reused between requests
+            input_options.idempotency_key = self._idempotency_key()
+    
+        response: httpx.Response | None = None
+        max_retries = input_options.get_max_retries(self.max_retries)
+    
+        retries_taken = 0
+        for retries_taken in range(max_retries + 1):
+            options = model_copy(input_options)
+            options = await self._prepare_options(options)
+    
+            remaining_retries = max_retries - retries_taken
+            request = self._build_request(options, retries_taken=retries_taken)
+            await self._prepare_request(request)
+    
+            kwargs: HttpxSendArgs = {}
+            if self.custom_auth is not None:
+                kwargs["auth"] = (
+                    normalize_httpx2_auth(self.custom_auth)
+                    if is_httpx2_async_client(self._client)
+                    else self.custom_auth
+                )
+    
+            if options.follow_redirects is not None:
+                kwargs["follow_redirects"] = options.follow_redirects
+    
+            log.debug("Sending HTTP Request: %s %s", request.method, request.url)
+    
+            response = None
+            try:
+                response = await self._send_request(
+                    request,
+                    stream=stream or self._should_stream_response_body(request=request),
+                    **kwargs,
+                )
+            except timeout_exceptions() as err:
+                log.debug("Encountered a timeout exception", exc_info=True)
+    
+                if remaining_retries > 0:
+                    await self._sleep_for_retry(
+                        retries_taken=retries_taken,
+                        max_retries=max_retries,
+                        options=input_options,
+                        response=None,
+                    )
+                    continue
+    
+                log.debug("Raising timeout error")
+                raise APITimeoutError(request=request) from err
+            except OpenAIError as err:
+                # Propagate OpenAIErrors as-is, without retrying or wrapping in APIConnectionError
+                raise err
+            except Exception as err:
+                log.debug("Encountered Exception", exc_info=True)
+    
+                if remaining_retries > 0:
+                    await self._sleep_for_retry(
+                        retries_taken=retries_taken,
+                        max_retries=max_retries,
+                        options=input_options,
+                        response=None,
+                    )
+                    continue
+    
+                log.debug("Raising connection error")
+                raise APIConnectionError(request=request) from err
+    
+            log.debug(
+                'HTTP Response: %s %s "%i %s" %s',
+                request.method,
+                request.url,
+                response.status_code,
+                response.reason_phrase,
+                response.headers,
+            )
+            log.debug("request_id: %s", response.headers.get("x-request-id"))
+    
+            try:
+                response.raise_for_status()
+            except status_exceptions() as err:  # thrown on 4xx and 5xx status code
+                log.debug("Encountered an HTTP status error", exc_info=True)
+    
+                if remaining_retries > 0 and self._should_retry(err.response):
+                    await err.response.aclose()
+                    await self._sleep_for_retry(
+                        retries_taken=retries_taken,
+                        max_retries=max_retries,
+                        options=input_options,
+                        response=response,
+                    )
+                    continue
+    
+                # If the response is streamed then we need to explicitly read the response
+                # to completion before attempting to access the response text.
+                if not err.response.is_closed:
+                    await err.response.aread()
+    
+                log.debug("Re-raising status error")
+>               raise self._make_status_error_from_response(err.response) from None
+E               openai.InternalServerError: Error code: 503 - {'detail': '注入的模型故障'}
+
+.venv/lib/python3.11/site-packages/openai/_base_client.py:1777: InternalServerError
+----------------------------- Captured stderr call -----------------------------
+2026-10-14 20:14:50,623 | WARNING | _base:__call__:241 - All 1 attempt(s) failed for model primary.
+------------------------------ Captured log call -------------------------------
+WARNING  as:_base.py:241 All 1 attempt(s) failed for model primary.
+_____ test_http_status_retries_then_primary_succeeds_without_fallback[504] _____
+
+tmp_path = PosixPath('/private/var/folders/j5/9jbbktk13f7bdrtssrkz58tw0000gn/T/pytest-of-liyuyang/pytest-90/test_http_status_retries_then_5')
+status_code = 504
+
+    @pytest.mark.parametrize('status_code', [408, 429, 500, 502, 503, 504])
+    async def test_http_status_retries_then_primary_succeeds_without_fallback(tmp_path, status_code):
+        model = build(tmp_path, profile(fallback=profile('backup')))
+        model._max_transient_retries = 1
+        model._retry_base_seconds = 0
+        requests = []
+        def handler(request):
+            payload = json.loads(request.content)
+            requests.append(payload['model'])
+            return httpx.Response(status_code, json={'detail': '注入的模型故障'}) if len(requests) == 1 else response(payload)
+        try:
+            for candidate in (model, model._fallback):
+                await mock_client(candidate, handler)
+>           result = await model([UserMsg('buyer', '挑选轻便背包')])
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_model_runtime_counting.py:118: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+app/infrastructure/llm.py:408: in __call__
+    return await recover_response(self, messages, tools, tool_choice, kwargs,
+app/infrastructure/model_recovery.py:97: in recover_response
+    raise first[2]
+app/infrastructure/model_recovery.py:83: in attempt
+    response = await model._call_once(rows, tools, choice, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:413: in _call_once
+    return await self._call_throttled(messages, tools, tool_choice, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:448: in _call_throttled
+    result = await self._call_with_fallback(messages, tools, tool_choice, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:608: in _call_with_fallback
+    return await self._invoke_upstream(messages, tools, tool_choice, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:526: in _invoke_upstream
+    return await super().__call__(messages, tools, tool_choice, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/agentscope/model/_base.py:248: in __call__
+    raise last_error
+.venv/lib/python3.11/site-packages/agentscope/model/_base.py:211: in __call__
+    res = await self._call_api(
+app/infrastructure/llm.py:354: in _call_api
+    return await super()._call_api(model_name, messages, tools, tool_choice, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:241: in _call_api
+    return await super()._call_api(model_name, messages, tools, tool_choice, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/agentscope/model/_openai_chat/_model.py:277: in _call_api
+    response = await self.client.chat.completions.create(**kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app/infrastructure/llm.py:189: in observed_create
+    response = await create(*args, **request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py:2907: in create
+    return await self._post(
+.venv/lib/python3.11/site-packages/openai/_base_client.py:1992: in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <openai.AsyncOpenAI object at 0x11669cc10>
+cast_to = <class 'openai.types.chat.chat_completion.ChatCompletion'>
+options = FinalRequestOptions(method='post', url='/chat/completions', params={}, headers=NOT_GIVEN, max_retries=NOT_GIVEN, timeo...挑选轻便背包'}]}], 'model': 'primary', 'max_completion_tokens': 4096, 'stream': False}, extra_json={'enable_thinking': True})
+stream = False
+stream_cls = openai.AsyncStream[openai.types.chat.chat_completion_chunk.ChatCompletionChunk]
+
+    async def request(
+        self,
+        cast_to: Type[ResponseT],
+        options: FinalRequestOptions,
+        *,
+        stream: bool = False,
+        stream_cls: type[_AsyncStreamT] | None = None,
+    ) -> ResponseT | _AsyncStreamT:
+        if self._platform is None:
+            # `get_platform` can make blocking IO calls so we
+            # execute it earlier while we are in an async context
+            self._platform = await asyncify(get_platform)()
+    
+        cast_to = self._maybe_override_cast_to(cast_to, options)
+    
+        # create a copy of the options we were given so that if the
+        # options are mutated later & we then retry, the retries are
+        # given the original options
+        input_options = model_copy(options)
+        if input_options.idempotency_key is None and input_options.method.lower() != "get":
+            # ensure the idempotency key is reused between requests
+            input_options.idempotency_key = self._idempotency_key()
+    
+        response: httpx.Response | None = None
+        max_retries = input_options.get_max_retries(self.max_retries)
+    
+        retries_taken = 0
+        for retries_taken in range(max_retries + 1):
+            options = model_copy(input_options)
+            options = await self._prepare_options(options)
+    
+            remaining_retries = max_retries - retries_taken
+            request = self._build_request(options, retries_taken=retries_taken)
+            await self._prepare_request(request)
+    
+            kwargs: HttpxSendArgs = {}
+            if self.custom_auth is not None:
+                kwargs["auth"] = (
+                    normalize_httpx2_auth(self.custom_auth)
+                    if is_httpx2_async_client(self._client)
+                    else self.custom_auth
+                )
+    
+            if options.follow_redirects is not None:
+                kwargs["follow_redirects"] = options.follow_redirects
+    
+            log.debug("Sending HTTP Request: %s %s", request.method, request.url)
+    
+            response = None
+            try:
+                response = await self._send_request(
+                    request,
+                    stream=stream or self._should_stream_response_body(request=request),
+                    **kwargs,
+                )
+            except timeout_exceptions() as err:
+                log.debug("Encountered a timeout exception", exc_info=True)
+    
+                if remaining_retries > 0:
+                    await self._sleep_for_retry(
+                        retries_taken=retries_taken,
+                        max_retries=max_retries,
+                        options=input_options,
+                        response=None,
+                    )
+                    continue
+    
+                log.debug("Raising timeout error")
+                raise APITimeoutError(request=request) from err
+            except OpenAIError as err:
+                # Propagate OpenAIErrors as-is, without retrying or wrapping in APIConnectionError
+                raise err
+            except Exception as err:
+                log.debug("Encountered Exception", exc_info=True)
+    
+                if remaining_retries > 0:
+                    await self._sleep_for_retry(
+                        retries_taken=retries_taken,
+                        max_retries=max_retries,
+                        options=input_options,
+                        response=None,
+                    )
+                    continue
+    
+                log.debug("Raising connection error")
+                raise APIConnectionError(request=request) from err
+    
+            log.debug(
+                'HTTP Response: %s %s "%i %s" %s',
+                request.method,
+                request.url,
+                response.status_code,
+                response.reason_phrase,
+                response.headers,
+            )
+            log.debug("request_id: %s", response.headers.get("x-request-id"))
+    
+            try:
+                response.raise_for_status()
+            except status_exceptions() as err:  # thrown on 4xx and 5xx status code
+                log.debug("Encountered an HTTP status error", exc_info=True)
+    
+                if remaining_retries > 0 and self._should_retry(err.response):
+                    await err.response.aclose()
+                    await self._sleep_for_retry(
+                        retries_taken=retries_taken,
+                        max_retries=max_retries,
+                        options=input_options,
+                        response=response,
+                    )
+                    continue
+    
+                # If the response is streamed then we need to explicitly read the response
+                # to completion before attempting to access the response text.
+                if not err.response.is_closed:
+                    await err.response.aread()
+    
+                log.debug("Re-raising status error")
+>               raise self._make_status_error_from_response(err.response) from None
+E               openai.InternalServerError: Error code: 504 - {'detail': '注入的模型故障'}
+
+.venv/lib/python3.11/site-packages/openai/_base_client.py:1777: InternalServerError
+----------------------------- Captured stderr call -----------------------------
+2026-10-14 20:14:50,694 | WARNING | _base:__call__:241 - All 1 attempt(s) failed for model primary.
+------------------------------ Captured log call -------------------------------
+WARNING  as:_base.py:241 All 1 attempt(s) failed for model primary.
+=========================== short test summary info ============================
+FAILED tests/test_phase3.py::TestTransientRetryPolicy::test_structured_http_status_with_neutral_message[408-True]
+FAILED tests/test_phase3.py::TestTransientRetryPolicy::test_structured_http_status_with_neutral_message[429-True]
+FAILED tests/test_phase3.py::TestTransientRetryPolicy::test_structured_http_status_with_neutral_message[500-True]
+FAILED tests/test_phase3.py::TestTransientRetryPolicy::test_structured_http_status_with_neutral_message[502-True]
+FAILED tests/test_phase3.py::TestTransientRetryPolicy::test_structured_http_status_with_neutral_message[503-True]
+FAILED tests/test_phase3.py::TestTransientRetryPolicy::test_structured_http_status_with_neutral_message[504-True]
+FAILED tests/test_phase3.py::TestTransientRetryPolicy::test_structured_http_status_with_neutral_message[599-True]
+FAILED tests/test_phase3.py::TestTransientRetryPolicy::test_nontransient_http_status_takes_priority_over_message[400]
+FAILED tests/test_phase3.py::TestTransientRetryPolicy::test_nontransient_http_status_takes_priority_over_message[401]
+FAILED tests/test_phase3.py::TestTransientRetryPolicy::test_nontransient_http_status_takes_priority_over_message[403]
+FAILED tests/test_phase3.py::TestTransientRetryPolicy::test_nontransient_http_status_takes_priority_over_message[404]
+FAILED tests/test_phase3.py::TestTransientRetryPolicy::test_nontransient_http_status_takes_priority_over_message[422]
+FAILED tests/test_model_runtime_counting.py::test_profile_fallback_uses_own_credentials_window_reasoning_and_usage[408]
+FAILED tests/test_model_runtime_counting.py::test_profile_fallback_uses_own_credentials_window_reasoning_and_usage[500]
+FAILED tests/test_model_runtime_counting.py::test_profile_fallback_uses_own_credentials_window_reasoning_and_usage[502]
+FAILED tests/test_model_runtime_counting.py::test_profile_fallback_uses_own_credentials_window_reasoning_and_usage[503]
+FAILED tests/test_model_runtime_counting.py::test_profile_fallback_uses_own_credentials_window_reasoning_and_usage[504]
+FAILED tests/test_model_runtime_counting.py::test_http_status_retries_then_primary_succeeds_without_fallback[408]
+FAILED tests/test_model_runtime_counting.py::test_http_status_retries_then_primary_succeeds_without_fallback[500]
+FAILED tests/test_model_runtime_counting.py::test_http_status_retries_then_primary_succeeds_without_fallback[502]
+FAILED tests/test_model_runtime_counting.py::test_http_status_retries_then_primary_succeeds_without_fallback[503]
+FAILED tests/test_model_runtime_counting.py::test_http_status_retries_then_primary_succeeds_without_fallback[504]
+22 failed, 15 passed in 2.55s

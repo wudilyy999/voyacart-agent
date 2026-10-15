@@ -1,0 +1,339 @@
+{
+  "matrix_complete": true,
+  "missing": [],
+  "strategies": {
+    "current": {
+      "runs": 6,
+      "passed": 6,
+      "success_rate": 1,
+      "input_tokens": {
+        "total": 175870,
+        "observed_sum": 175870,
+        "known": 16,
+        "unknown": 0
+      },
+      "output_tokens": {
+        "total": 5081,
+        "observed_sum": 5081,
+        "known": 16,
+        "unknown": 0
+      },
+      "total_tokens": {
+        "total": 180951,
+        "observed_sum": 180951,
+        "known": 16,
+        "unknown": 0
+      },
+      "cache_read_tokens": {
+        "total": null,
+        "observed_sum": null,
+        "known": 0,
+        "unknown": 16
+      },
+      "cache_write_tokens": {
+        "total": null,
+        "observed_sum": null,
+        "known": 0,
+        "unknown": 16
+      },
+      "reported_cost": {
+        "total": null,
+        "observed_sum": null,
+        "known": 0,
+        "unknown": 16
+      },
+      "physical_model_calls": 16,
+      "summary_calls": 0,
+      "lookup_calls": 1,
+      "ordinary_round_p95_ms": 27529.63775000535,
+      "compacted_round_p95_ms": null,
+      "manual_compaction_p95_ms": null,
+      "usage_by_kind": {
+        "business": {
+          "input_tokens": {
+            "total": 175870,
+            "observed_sum": 175870,
+            "known": 16,
+            "unknown": 0
+          },
+          "output_tokens": {
+            "total": 5081,
+            "observed_sum": 5081,
+            "known": 16,
+            "unknown": 0
+          }
+        }
+      },
+      "model_ttft_p95_ms": 5468.596457969397,
+      "model_ttft_known_calls": 5,
+      "scenario_p95_ms": 39688.02933301777,
+      "by_layer": {
+        "context": {
+          "runs": 4,
+          "passed": 4
+        },
+        "agent": {
+          "runs": 2,
+          "passed": 2
+        },
+        "cache_replay": {
+          "runs": 0,
+          "passed": 0
+        },
+        "skill_replay": {
+          "runs": 0,
+          "passed": 0
+        }
+      },
+      "peak_actual_input": 17433,
+      "mean_final_context_estimated_tokens": 50324.75,
+      "mean_final_product_duplicate_ratio": 0.625,
+      "loop_notices": 0,
+      "error_runs": 0,
+      "model_contract": {
+        "observed_calls": 16,
+        "response_models": [
+          "gemini-3.8-flash-high"
+        ],
+        "unknown_identity_calls": 0,
+        "mismatched_identity_calls": 0,
+        "protocol_violation_calls": 0,
+        "unknown_protocol_calls": 0
+      },
+      "cache_read_ratio": null,
+      "prefix_diagnostics": {
+        "observed_calls": 16,
+        "comparable_calls": 9,
+        "system_changes": 2,
+        "tool_changes": 0,
+        "history_rewrites": 2,
+        "append_calls": 7
+      },
+      "replay_stage_ttft_p95_ms": {
+        "initial": null,
+        "followup": null,
+        "after_rebuild": null
+      },
+      "efficiency_diagnostics": {
+        "lookup_observed": 1,
+        "lookup_errors": 0,
+        "lookup_normalized": 0,
+        "lookup_pages_with_more": 0,
+        "state_emitted": null,
+        "state_skipped": null,
+        "prune_rewrites": 2,
+        "archived_results": 42,
+        "request_reasons": {
+          "buyer_request": 9,
+          "lookup_followup": 1,
+          "tool_followup": 6
+        },
+        "estimated_sections": {
+          "system": 47898,
+          "state": 0,
+          "product": 130067,
+          "history": 62104,
+          "tool_schema": 78448
+        },
+        "measured_requests": 16,
+        "visible_evidence_answers": 1,
+        "model_elapsed_p95_ms": 24435.744374990463,
+        "after_first_text_p95_ms": 1941.3250000216067
+      },
+      "coverage_complete": true
+    },
+    "candidate": {
+      "runs": 6,
+      "passed": 6,
+      "success_rate": 1,
+      "input_tokens": {
+        "total": 166830,
+        "observed_sum": 166830,
+        "known": 15,
+        "unknown": 0
+      },
+      "output_tokens": {
+        "total": 4973,
+        "observed_sum": 4973,
+        "known": 15,
+        "unknown": 0
+      },
+      "total_tokens": {
+        "total": 171803,
+        "observed_sum": 171803,
+        "known": 15,
+        "unknown": 0
+      },
+      "cache_read_tokens": {
+        "total": null,
+        "observed_sum": null,
+        "known": 0,
+        "unknown": 15
+      },
+      "cache_write_tokens": {
+        "total": null,
+        "observed_sum": null,
+        "known": 0,
+        "unknown": 15
+      },
+      "reported_cost": {
+        "total": null,
+        "observed_sum": null,
+        "known": 0,
+        "unknown": 15
+      },
+      "physical_model_calls": 15,
+      "summary_calls": 0,
+      "lookup_calls": 1,
+      "ordinary_round_p95_ms": 25615.004833089188,
+      "compacted_round_p95_ms": null,
+      "manual_compaction_p95_ms": null,
+      "usage_by_kind": {
+        "business": {
+          "input_tokens": {
+            "total": 166830,
+            "observed_sum": 166830,
+            "known": 15,
+            "unknown": 0
+          },
+          "output_tokens": {
+            "total": 4973,
+            "observed_sum": 4973,
+            "known": 15,
+            "unknown": 0
+          }
+        }
+      },
+      "model_ttft_p95_ms": 4508.326624985784,
+      "model_ttft_known_calls": 5,
+      "scenario_p95_ms": 36667.90683299769,
+      "by_layer": {
+        "context": {
+          "runs": 4,
+          "passed": 4
+        },
+        "agent": {
+          "runs": 2,
+          "passed": 2
+        },
+        "cache_replay": {
+          "runs": 0,
+          "passed": 0
+        },
+        "skill_replay": {
+          "runs": 0,
+          "passed": 0
+        }
+      },
+      "peak_actual_input": 17778,
+      "mean_final_context_estimated_tokens": 50716,
+      "mean_final_product_duplicate_ratio": 0.625,
+      "loop_notices": 0,
+      "error_runs": 0,
+      "model_contract": {
+        "observed_calls": 15,
+        "response_models": [
+          "gemini-3.8-flash-high"
+        ],
+        "unknown_identity_calls": 0,
+        "mismatched_identity_calls": 0,
+        "protocol_violation_calls": 0,
+        "unknown_protocol_calls": 0
+      },
+      "cache_read_ratio": null,
+      "prefix_diagnostics": {
+        "observed_calls": 15,
+        "comparable_calls": 8,
+        "system_changes": 0,
+        "tool_changes": 0,
+        "history_rewrites": 0,
+        "append_calls": 8
+      },
+      "replay_stage_ttft_p95_ms": {
+        "initial": null,
+        "followup": null,
+        "after_rebuild": null
+      },
+      "efficiency_diagnostics": {
+        "lookup_observed": 1,
+        "lookup_errors": 0,
+        "lookup_normalized": 0,
+        "lookup_pages_with_more": 0,
+        "state_emitted": 9,
+        "state_skipped": 0,
+        "prune_rewrites": 2,
+        "archived_results": 42,
+        "request_reasons": {
+          "buyer_request": 9,
+          "lookup_followup": 1,
+          "tool_followup": 5
+        },
+        "estimated_sections": {
+          "system": 43935,
+          "state": 10312,
+          "product": 132537,
+          "history": 36338,
+          "tool_schema": 78447
+        },
+        "measured_requests": 15,
+        "visible_evidence_answers": 1,
+        "model_elapsed_p95_ms": 22695.141042000614,
+        "after_first_text_p95_ms": 2217.8588750539348
+      },
+      "coverage_complete": true
+    }
+  },
+  "paired_intervals": {
+    "candidate": {
+      "input_reduction": {
+        "unit": "scenario",
+        "scenarios": 6,
+        "estimate": 0.05140160345709899,
+        "ci95": [
+          -0.03066049911720059,
+          0.2041544971598096
+        ]
+      },
+      "total_token_reduction": {
+        "unit": "scenario",
+        "scenarios": 6,
+        "estimate": 0.05055512265751505,
+        "ci95": [
+          -0.033445190156599525,
+          0.20487419810324314
+        ]
+      },
+      "success_difference": {
+        "unit": "scenario",
+        "scenarios": 6,
+        "estimate": 0,
+        "ci95": [
+          0,
+          0
+        ]
+      },
+      "billing_against_current": {
+        "unit": "scenario",
+        "scenarios": 0,
+        "estimate": null,
+        "ci95": null
+      }
+    }
+  },
+  "gates": {
+    "candidate": {
+      "status": "BLOCKED",
+      "reasons": [
+        "当前档位不是留出发布评测",
+        "缓存目标缺少经过验证的计费单位与来源",
+        "缓存目标未证明完整计费收益"
+      ],
+      "ordinary_p95_ratio": 0.9304519393134482,
+      "new_failure_cases": [],
+      "production_deploy_authorized": false,
+      "billing_reduction": null
+    }
+  },
+  "failure_count": 0,
+  "unknown_currency": true
+}

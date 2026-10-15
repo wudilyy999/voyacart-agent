@@ -1,0 +1,4 @@
+{
+  "type": "CalledProcessError",
+  "message": "Command '('/private/tmp/voyacart-backend-frontend-20261014/.venv/bin/python', '/private/tmp/voyacart-backend-frontend-20261014/scripts/loadtest/hotspot.py', '--host', 'http://127.0.0.1:8086', '--output', '/private/tmp/voyacart-backend-frontend-20261014/eval/verification/2026-10-14-r2-hotspot/hotspot', '--product', 'P1005', '--sku', 'P1005-S1', '--count', '500', '--stock', '100')' returned non-zero exit status 1."
+}
