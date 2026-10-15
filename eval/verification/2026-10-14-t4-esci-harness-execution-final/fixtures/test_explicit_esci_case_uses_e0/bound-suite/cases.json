@@ -1,0 +1,418 @@
+[
+  {
+    "id": "esci-zh-us",
+    "title": "esci-zh-us",
+    "scenario": "crosslingual",
+    "layer": "esci_agent",
+    "split": "dev",
+    "mode": "ordinary",
+    "critical": true,
+    "required_checks": [
+      "exact_product_returned",
+      "foreign_title_preserved"
+    ],
+    "source_query": {
+      "locale": "us",
+      "query_id": 1,
+      "query": "constructed contract us query 1",
+      "split": "train"
+    },
+    "query": "隔离合同夹具 us 1",
+    "expected_products": [
+      {
+        "product_id": "P100000",
+        "sku_id": "P100000-S1",
+        "title": "Contract us 1 0",
+        "asin": "B000000000",
+        "locale": "us",
+        "price_major": 10,
+        "currency": "USD",
+        "stock": 5
+      }
+    ],
+    "constraints": {
+      "ship_to": "CN",
+      "price_max_major": 71.0,
+      "target_currency": "CNY"
+    },
+    "catalog_file": "/Users/liyuyang/Downloads/voyacart-agent/eval/verification/2026-10-14-t4-esci-harness-execution-final/fixtures/test_explicit_esci_case_uses_e0/catalog-esci-v1.jsonl.gz",
+    "index_dir": "/Users/liyuyang/Downloads/voyacart-agent/eval/verification/2026-10-14-t4-esci-harness-execution-final/fixtures/test_explicit_esci_case_uses_e0/index",
+    "local_model_cache": "/Users/liyuyang/Downloads/voyacart-agent/eval/verification/2026-10-14-t4-esci-harness-execution-final/fixtures/test_explicit_esci_case_uses_e0/model"
+  },
+  {
+    "id": "esci-zh-es",
+    "title": "esci-zh-es",
+    "scenario": "crosslingual",
+    "layer": "esci_agent",
+    "split": "dev",
+    "mode": "ordinary",
+    "critical": true,
+    "required_checks": [
+      "exact_product_returned",
+      "foreign_title_preserved"
+    ],
+    "source_query": {
+      "locale": "es",
+      "query_id": 1,
+      "query": "constructed contract es query 1",
+      "split": "train"
+    },
+    "query": "隔离合同夹具 es 1",
+    "expected_products": [
+      {
+        "product_id": "P100008",
+        "sku_id": "P100008-S1",
+        "title": "Contract es 1 0",
+        "asin": "B000000008",
+        "locale": "es",
+        "price_major": 10,
+        "currency": "EUR",
+        "stock": 5
+      }
+    ],
+    "constraints": {
+      "ship_to": "CN",
+      "price_max_major": 78.0,
+      "target_currency": "CNY"
+    },
+    "catalog_file": "/Users/liyuyang/Downloads/voyacart-agent/eval/verification/2026-10-14-t4-esci-harness-execution-final/fixtures/test_explicit_esci_case_uses_e0/catalog-esci-v1.jsonl.gz",
+    "index_dir": "/Users/liyuyang/Downloads/voyacart-agent/eval/verification/2026-10-14-t4-esci-harness-execution-final/fixtures/test_explicit_esci_case_uses_e0/index",
+    "local_model_cache": "/Users/liyuyang/Downloads/voyacart-agent/eval/verification/2026-10-14-t4-esci-harness-execution-final/fixtures/test_explicit_esci_case_uses_e0/model"
+  },
+  {
+    "id": "esci-zh-jp",
+    "title": "esci-zh-jp",
+    "scenario": "crosslingual",
+    "layer": "esci_agent",
+    "split": "dev",
+    "mode": "ordinary",
+    "critical": true,
+    "required_checks": [
+      "exact_product_returned",
+      "foreign_title_preserved"
+    ],
+    "source_query": {
+      "locale": "jp",
+      "query_id": 1,
+      "query": "constructed contract jp query 1",
+      "split": "train"
+    },
+    "query": "隔离合同夹具 jp 1",
+    "expected_products": [
+      {
+        "product_id": "P100014",
+        "sku_id": "P100014-S1",
+        "title": "Contract jp 1 0",
+        "asin": "B000000014",
+        "locale": "jp",
+        "price_major": 10,
+        "currency": "JPY",
+        "stock": 5
+      }
+    ],
+    "constraints": {
+      "ship_to": "CN",
+      "price_max_major": 0.48,
+      "target_currency": "CNY"
+    },
+    "catalog_file": "/Users/liyuyang/Downloads/voyacart-agent/eval/verification/2026-10-14-t4-esci-harness-execution-final/fixtures/test_explicit_esci_case_uses_e0/catalog-esci-v1.jsonl.gz",
+    "index_dir": "/Users/liyuyang/Downloads/voyacart-agent/eval/verification/2026-10-14-t4-esci-harness-execution-final/fixtures/test_explicit_esci_case_uses_e0/index",
+    "local_model_cache": "/Users/liyuyang/Downloads/voyacart-agent/eval/verification/2026-10-14-t4-esci-harness-execution-final/fixtures/test_explicit_esci_case_uses_e0/model"
+  },
+  {
+    "id": "esci-destination",
+    "title": "esci-destination",
+    "scenario": "destination",
+    "layer": "esci_agent",
+    "split": "dev",
+    "mode": "ordinary",
+    "critical": true,
+    "required_checks": [
+      "destination_constraint_preserved",
+      "no_constraint_leak"
+    ],
+    "source_query": {
+      "locale": "us",
+      "query_id": 2,
+      "query": "constructed contract us query 2",
+      "split": "train"
+    },
+    "query": "constructed contract us query 2",
+    "expected_products": [
+      {
+        "product_id": "P100002",
+        "sku_id": "P100002-S1",
+        "title": "Contract us 2 0",
+        "asin": "B000000002",
+        "locale": "us",
+        "price_major": 10,
+        "currency": "USD",
+        "stock": 5
+      }
+    ],
+    "constraints": {
+      "ship_to": "CN",
+      "price_max_major": 71.0,
+      "target_currency": "CNY"
+    },
+    "catalog_file": "/Users/liyuyang/Downloads/voyacart-agent/eval/verification/2026-10-14-t4-esci-harness-execution-final/fixtures/test_explicit_esci_case_uses_e0/catalog-esci-v1.jsonl.gz",
+    "index_dir": "/Users/liyuyang/Downloads/voyacart-agent/eval/verification/2026-10-14-t4-esci-harness-execution-final/fixtures/test_explicit_esci_case_uses_e0/index",
+    "local_model_cache": "/Users/liyuyang/Downloads/voyacart-agent/eval/verification/2026-10-14-t4-esci-harness-execution-final/fixtures/test_explicit_esci_case_uses_e0/model"
+  },
+  {
+    "id": "esci-budget",
+    "title": "esci-budget",
+    "scenario": "budget",
+    "layer": "esci_agent",
+    "split": "dev",
+    "mode": "ordinary",
+    "critical": true,
+    "required_checks": [
+      "latest_budget_preserved",
+      "currency_association",
+      "no_constraint_leak"
+    ],
+    "source_query": {
+      "locale": "es",
+      "query_id": 2,
+      "query": "constructed contract es query 2",
+      "split": "train"
+    },
+    "query": "constructed contract es query 2",
+    "expected_products": [
+      {
+        "product_id": "P100010",
+        "sku_id": "P100010-S1",
+        "title": "Contract es 2 0",
+        "asin": "B000000010",
+        "locale": "es",
+        "price_major": 10,
+        "currency": "EUR",
+        "stock": 5
+      }
+    ],
+    "constraints": {
+      "ship_to": "CN",
+      "price_max_major": 78.0,
+      "target_currency": "CNY"
+    },
+    "catalog_file": "/Users/liyuyang/Downloads/voyacart-agent/eval/verification/2026-10-14-t4-esci-harness-execution-final/fixtures/test_explicit_esci_case_uses_e0/catalog-esci-v1.jsonl.gz",
+    "index_dir": "/Users/liyuyang/Downloads/voyacart-agent/eval/verification/2026-10-14-t4-esci-harness-execution-final/fixtures/test_explicit_esci_case_uses_e0/index",
+    "local_model_cache": "/Users/liyuyang/Downloads/voyacart-agent/eval/verification/2026-10-14-t4-esci-harness-execution-final/fixtures/test_explicit_esci_case_uses_e0/model"
+  },
+  {
+    "id": "esci-stock",
+    "title": "esci-stock",
+    "scenario": "stock",
+    "layer": "esci_agent",
+    "split": "dev",
+    "mode": "ordinary",
+    "critical": true,
+    "required_checks": [
+      "in_stock_only",
+      "no_constraint_leak"
+    ],
+    "source_query": {
+      "locale": "jp",
+      "query_id": 2,
+      "query": "constructed contract jp query 2",
+      "split": "train"
+    },
+    "query": "constructed contract jp query 2",
+    "expected_products": [
+      {
+        "product_id": "P100016",
+        "sku_id": "P100016-S1",
+        "title": "Contract jp 2 0",
+        "asin": "B000000016",
+        "locale": "jp",
+        "price_major": 10,
+        "currency": "JPY",
+        "stock": 5
+      }
+    ],
+    "constraints": {
+      "ship_to": "CN",
+      "price_max_major": 0.48,
+      "target_currency": "CNY"
+    },
+    "catalog_file": "/Users/liyuyang/Downloads/voyacart-agent/eval/verification/2026-10-14-t4-esci-harness-execution-final/fixtures/test_explicit_esci_case_uses_e0/catalog-esci-v1.jsonl.gz",
+    "index_dir": "/Users/liyuyang/Downloads/voyacart-agent/eval/verification/2026-10-14-t4-esci-harness-execution-final/fixtures/test_explicit_esci_case_uses_e0/index",
+    "local_model_cache": "/Users/liyuyang/Downloads/voyacart-agent/eval/verification/2026-10-14-t4-esci-harness-execution-final/fixtures/test_explicit_esci_case_uses_e0/model"
+  },
+  {
+    "id": "esci-comparison",
+    "title": "esci-comparison",
+    "scenario": "comparison",
+    "layer": "esci_agent",
+    "split": "dev",
+    "mode": "ordinary",
+    "critical": true,
+    "required_checks": [
+      "selected_product_pair",
+      "sku_price_currency_associations",
+      "no_order_on_readonly"
+    ],
+    "source_query": {
+      "locale": "us",
+      "query_id": 3,
+      "query": "constructed contract us query 3",
+      "split": "train"
+    },
+    "query": "constructed contract us query 3",
+    "expected_products": [
+      {
+        "product_id": "P100004",
+        "sku_id": "P100004-S1",
+        "title": "Contract us 3 0",
+        "asin": "B000000004",
+        "locale": "us",
+        "price_major": 10,
+        "currency": "USD",
+        "stock": 5
+      },
+      {
+        "product_id": "P100005",
+        "sku_id": "P100005-S1",
+        "title": "Contract us 3 1",
+        "asin": "B000000005",
+        "locale": "us",
+        "price_major": 11,
+        "currency": "USD",
+        "stock": 5
+      }
+    ],
+    "constraints": {
+      "ship_to": "CN",
+      "price_max_major": 78.1,
+      "target_currency": "CNY"
+    },
+    "catalog_file": "/Users/liyuyang/Downloads/voyacart-agent/eval/verification/2026-10-14-t4-esci-harness-execution-final/fixtures/test_explicit_esci_case_uses_e0/catalog-esci-v1.jsonl.gz",
+    "index_dir": "/Users/liyuyang/Downloads/voyacart-agent/eval/verification/2026-10-14-t4-esci-harness-execution-final/fixtures/test_explicit_esci_case_uses_e0/index",
+    "local_model_cache": "/Users/liyuyang/Downloads/voyacart-agent/eval/verification/2026-10-14-t4-esci-harness-execution-final/fixtures/test_explicit_esci_case_uses_e0/model"
+  },
+  {
+    "id": "esci-awaiting-confirmation",
+    "title": "esci-awaiting-confirmation",
+    "scenario": "awaiting_confirmation",
+    "layer": "esci_agent",
+    "split": "dev",
+    "mode": "ordinary",
+    "critical": true,
+    "required_checks": [
+      "confirmation_prepared",
+      "no_order_before_approval",
+      "inventory_unchanged"
+    ],
+    "source_query": {
+      "locale": "es",
+      "query_id": 3,
+      "query": "constructed contract es query 3",
+      "split": "train"
+    },
+    "query": "constructed contract es query 3",
+    "expected_products": [
+      {
+        "product_id": "P100012",
+        "sku_id": "P100012-S1",
+        "title": "Contract es 3 0",
+        "asin": "B000000012",
+        "locale": "es",
+        "price_major": 10,
+        "currency": "EUR",
+        "stock": 5
+      }
+    ],
+    "constraints": {
+      "ship_to": "CN",
+      "price_max_major": 78.0,
+      "target_currency": "CNY"
+    },
+    "catalog_file": "/Users/liyuyang/Downloads/voyacart-agent/eval/verification/2026-10-14-t4-esci-harness-execution-final/fixtures/test_explicit_esci_case_uses_e0/catalog-esci-v1.jsonl.gz",
+    "index_dir": "/Users/liyuyang/Downloads/voyacart-agent/eval/verification/2026-10-14-t4-esci-harness-execution-final/fixtures/test_explicit_esci_case_uses_e0/index",
+    "local_model_cache": "/Users/liyuyang/Downloads/voyacart-agent/eval/verification/2026-10-14-t4-esci-harness-execution-final/fixtures/test_explicit_esci_case_uses_e0/model"
+  },
+  {
+    "id": "esci-approved-order",
+    "title": "esci-approved-order",
+    "scenario": "approved_order",
+    "layer": "esci_agent",
+    "split": "dev",
+    "mode": "ordinary",
+    "critical": true,
+    "required_checks": [
+      "confirmation_prepared",
+      "no_order_before_approval",
+      "approved_order_created",
+      "inventory_decreased_once"
+    ],
+    "source_query": {
+      "locale": "jp",
+      "query_id": 3,
+      "query": "constructed contract jp query 3",
+      "split": "train"
+    },
+    "query": "constructed contract jp query 3",
+    "expected_products": [
+      {
+        "product_id": "P100018",
+        "sku_id": "P100018-S1",
+        "title": "Contract jp 3 0",
+        "asin": "B000000018",
+        "locale": "jp",
+        "price_major": 10,
+        "currency": "JPY",
+        "stock": 5
+      }
+    ],
+    "constraints": {
+      "ship_to": "CN",
+      "price_max_major": 0.48,
+      "target_currency": "CNY"
+    },
+    "catalog_file": "/Users/liyuyang/Downloads/voyacart-agent/eval/verification/2026-10-14-t4-esci-harness-execution-final/fixtures/test_explicit_esci_case_uses_e0/catalog-esci-v1.jsonl.gz",
+    "index_dir": "/Users/liyuyang/Downloads/voyacart-agent/eval/verification/2026-10-14-t4-esci-harness-execution-final/fixtures/test_explicit_esci_case_uses_e0/index",
+    "local_model_cache": "/Users/liyuyang/Downloads/voyacart-agent/eval/verification/2026-10-14-t4-esci-harness-execution-final/fixtures/test_explicit_esci_case_uses_e0/model"
+  },
+  {
+    "id": "esci-embedding-unavailable",
+    "title": "esci-embedding-unavailable",
+    "scenario": "embedding_unavailable",
+    "layer": "esci_agent",
+    "split": "dev",
+    "mode": "ordinary",
+    "critical": true,
+    "required_checks": [
+      "remote_embedding_failure_observed",
+      "local_embedding_used",
+      "no_constraint_leak"
+    ],
+    "source_query": {
+      "locale": "us",
+      "query_id": 4,
+      "query": "constructed contract us query 4",
+      "split": "train"
+    },
+    "query": "隔离合同夹具 us 4",
+    "expected_products": [
+      {
+        "product_id": "P100006",
+        "sku_id": "P100006-S1",
+        "title": "Contract us 4 0",
+        "asin": "B000000006",
+        "locale": "us",
+        "price_major": 10,
+        "currency": "USD",
+        "stock": 5
+      }
+    ],
+    "constraints": {
+      "ship_to": "CN",
+      "price_max_major": 71.0,
+      "target_currency": "CNY"
+    },
+    "catalog_file": "/Users/liyuyang/Downloads/voyacart-agent/eval/verification/2026-10-14-t4-esci-harness-execution-final/fixtures/test_explicit_esci_case_uses_e0/catalog-esci-v1.jsonl.gz",
+    "index_dir": "/Users/liyuyang/Downloads/voyacart-agent/eval/verification/2026-10-14-t4-esci-harness-execution-final/fixtures/test_explicit_esci_case_uses_e0/index",
+    "local_model_cache": "/Users/liyuyang/Downloads/voyacart-agent/eval/verification/2026-10-14-t4-esci-harness-execution-final/fixtures/test_explicit_esci_case_uses_e0/model"
+  }
+]

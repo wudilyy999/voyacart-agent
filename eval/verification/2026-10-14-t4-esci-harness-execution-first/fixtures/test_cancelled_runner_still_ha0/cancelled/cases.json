@@ -1,0 +1,15 @@
+[
+  {
+    "id": "agent-sku",
+    "split": "dev",
+    "title": "精确 SKU 核验与更新预算",
+    "layer": "agent",
+    "mode": "workflow",
+    "scenario": "sku",
+    "critical": true,
+    "tags": [
+      "agent",
+      "sku"
+    ]
+  }
+]

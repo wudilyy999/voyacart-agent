@@ -1,0 +1,10 @@
+{"locale": "us", "query_id": 1, "query": "constructed contract us query 1", "split": "train", "translation": "隔离合同夹具 us 1", "status": "ok", "prompt_version": "contract-train"}
+{"locale": "us", "query_id": 2, "query": "constructed contract us query 2", "split": "train", "translation": "隔离合同夹具 us 2", "status": "ok", "prompt_version": "contract-train"}
+{"locale": "us", "query_id": 3, "query": "constructed contract us query 3", "split": "train", "translation": "隔离合同夹具 us 3", "status": "ok", "prompt_version": "contract-train"}
+{"locale": "us", "query_id": 4, "query": "constructed contract us query 4", "split": "train", "translation": "隔离合同夹具 us 4", "status": "ok", "prompt_version": "contract-train"}
+{"locale": "es", "query_id": 1, "query": "constructed contract es query 1", "split": "train", "translation": "隔离合同夹具 es 1", "status": "ok", "prompt_version": "contract-train"}
+{"locale": "es", "query_id": 2, "query": "constructed contract es query 2", "split": "train", "translation": "隔离合同夹具 es 2", "status": "ok", "prompt_version": "contract-train"}
+{"locale": "es", "query_id": 3, "query": "constructed contract es query 3", "split": "train", "translation": "隔离合同夹具 es 3", "status": "ok", "prompt_version": "contract-train"}
+{"locale": "jp", "query_id": 1, "query": "constructed contract jp query 1", "split": "train", "translation": "隔离合同夹具 jp 1", "status": "ok", "prompt_version": "contract-train"}
+{"locale": "jp", "query_id": 2, "query": "constructed contract jp query 2", "split": "train", "translation": "隔离合同夹具 jp 2", "status": "ok", "prompt_version": "contract-train"}
+{"locale": "jp", "query_id": 3, "query": "constructed contract jp query 3", "split": "train", "translation": "隔离合同夹具 jp 3", "status": "ok", "prompt_version": "contract-train"}

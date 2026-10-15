@@ -1,0 +1,36 @@
+[
+  {
+    "case_id": "agent-sku",
+    "strategy": "current",
+    "repetition": 0,
+    "layer": "agent",
+    "mode": "workflow",
+    "critical": true,
+    "checks": {
+      "execution_completed": false
+    },
+    "passed": false,
+    "error": "TimeoutError",
+    "usage": [],
+    "round_metrics": [],
+    "elapsed_ms": 3.6401250399649143,
+    "evidence_trace": "traces/agent-sku-current-0.jsonl"
+  },
+  {
+    "case_id": "agent-sku",
+    "strategy": "candidate",
+    "repetition": 0,
+    "layer": "agent",
+    "mode": "workflow",
+    "critical": true,
+    "checks": {
+      "execution_completed": false
+    },
+    "passed": false,
+    "error": "TimeoutError",
+    "usage": [],
+    "round_metrics": [],
+    "elapsed_ms": 0.631208997219801,
+    "evidence_trace": "traces/agent-sku-candidate-0.jsonl"
+  }
+]

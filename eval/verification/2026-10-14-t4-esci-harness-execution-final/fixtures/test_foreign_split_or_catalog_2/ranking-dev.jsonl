@@ -1,0 +1,10 @@
+{"locale": "us", "query_id": 1, "query": "constructed contract us query 1", "candidates": [{"product_id": "P999999", "label": "E"}, {"product_id": "P100001", "label": "E"}]}
+{"locale": "us", "query_id": 2, "query": "constructed contract us query 2", "candidates": [{"product_id": "P100002", "label": "E"}, {"product_id": "P100003", "label": "E"}]}
+{"locale": "us", "query_id": 3, "query": "constructed contract us query 3", "candidates": [{"product_id": "P100004", "label": "E"}, {"product_id": "P100005", "label": "E"}]}
+{"locale": "us", "query_id": 4, "query": "constructed contract us query 4", "candidates": [{"product_id": "P100006", "label": "E"}, {"product_id": "P100007", "label": "E"}]}
+{"locale": "es", "query_id": 1, "query": "constructed contract es query 1", "candidates": [{"product_id": "P100008", "label": "E"}, {"product_id": "P100009", "label": "E"}]}
+{"locale": "es", "query_id": 2, "query": "constructed contract es query 2", "candidates": [{"product_id": "P100010", "label": "E"}, {"product_id": "P100011", "label": "E"}]}
+{"locale": "es", "query_id": 3, "query": "constructed contract es query 3", "candidates": [{"product_id": "P100012", "label": "E"}, {"product_id": "P100013", "label": "E"}]}
+{"locale": "jp", "query_id": 1, "query": "constructed contract jp query 1", "candidates": [{"product_id": "P100014", "label": "E"}, {"product_id": "P100015", "label": "E"}]}
+{"locale": "jp", "query_id": 2, "query": "constructed contract jp query 2", "candidates": [{"product_id": "P100016", "label": "E"}, {"product_id": "P100017", "label": "E"}]}
+{"locale": "jp", "query_id": 3, "query": "constructed contract jp query 3", "candidates": [{"product_id": "P100018", "label": "E"}, {"product_id": "P100019", "label": "E"}]}
