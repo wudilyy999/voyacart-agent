@@ -29,7 +29,7 @@ WATCHED = ('app/application/agents/', 'app/application/harness/', 'app/applicati
            'app/infrastructure/settings.py', 'app/infrastructure/semantic_memory.py',
            'app/infrastructure/persistence/context_evidence.py', 'app/infrastructure/persistence/sql/session_store.py',
            'app/infrastructure/security/', 'app/composition.py',
-           'scripts/eval/', 'scripts/model_preflight.py', 'eval/harness/v1/', 'tests/test_harness', 'tests/test_context',
+           'scripts/eval/', 'scripts/model_preflight.py', 'eval/harness/v1/', 'eval/harness/esci-v1/', 'tests/test_esci_harness', 'tests/test_harness', 'tests/test_context',
            'tests/test_model_protocol', 'tests/test_visible_evidence',
            'tests/test_layered', 'tests/test_prompt_cache', 'tests/test_native_memory', 'pyproject.toml', 'uv.lock',
            'Makefile', '.github/workflows/harness-eval.yml', 'data/catalog-v1.jsonl')
@@ -66,6 +66,8 @@ def source_manifest(root=ROOT):
     files += list((root / 'eval/learning').glob('*.json'))
     files += list((root / 'app/application/prompts').glob('*.yml'))
     files += list((root / 'eval/harness/v1').glob('*.json'))
+    files += list((root / 'eval/harness/esci-v1').glob('*.py'))
+    files += list((root / 'eval/harness/esci-v1').glob('*.json'))
     # 此评测使用冻结目录与代码内费率，不连接外部知识索引。
     files += [root / 'data/catalog-v1.jsonl']
     hashes = {str(p.relative_to(root)): digest(p.read_bytes()) for p in sorted(files) if p.is_file()}
@@ -75,6 +77,8 @@ def source_manifest(root=ROOT):
 def load_suite(path=SUITE):
     path = Path(path).resolve()
     suite = json.loads(path.read_text())
+    if suite.get('schema_version') == 'esci-harness-preparation-v1':
+        raise ValueError('ESCI 当前为准备态；正式目录、训练译文及开发 suite 绑定齐全后执行')
     if suite.get('schema_version') != SCHEMA_VERSION:
         raise ValueError('未知评测合同版本')
     dataset = json.loads((path.parent / suite['cases_file']).read_text())
@@ -93,10 +97,16 @@ def load_suite(path=SUITE):
             raise ValueError('profile 引用了未知或重复场景')
     development={c['id'] for c in dataset if c['split']=='dev'}
     holdout={c['id'] for c in dataset if c['split']=='holdout'}
-    if set(suite['profiles']['release']['cases'])!=holdout or len(holdout)<28 or suite['profiles']['release']['repetitions']<3:
-        raise ValueError('release 必须覆盖全部留出场景（至少 28 个）并各重复至少 3 次')
-    if set(suite['profiles']['dev']['cases'])!=development or not set(suite['profiles']['smoke']['cases'])<=development:
-        raise ValueError('开发/冒烟不能使用留出场景调参')
+    if suite.get('suite_type') == 'esci-dev-v1':
+        from scripts.eval.harness.esci import validate_suite
+        validate_suite(suite, dataset)
+    else:
+        if suite.get('suite_type'):
+            raise ValueError('未知套件类型')
+        if set(suite['profiles']['release']['cases'])!=holdout or len(holdout)<28 or suite['profiles']['release']['repetitions']<3:
+            raise ValueError('release 必须覆盖全部留出场景（至少 28 个）并各重复至少 3 次')
+        if set(suite['profiles']['dev']['cases'])!=development or not set(suite['profiles']['smoke']['cases'])<=development:
+            raise ValueError('开发/冒烟不能使用留出场景调参')
     suite['_cases'] = dataset
     suite['_suite_sha256'] = digest(path.read_bytes())
     suite['_dataset_sha256'] = digest((path.parent / suite['cases_file']).read_bytes())

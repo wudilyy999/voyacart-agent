@@ -1,0 +1,76 @@
+{
+  "queries": {
+    "dev": [
+      {
+        "locale": "us",
+        "query_id": 1,
+        "query": "constructed contract us query 1",
+        "split": "test",
+        "category": "旅行装备"
+      },
+      {
+        "locale": "us",
+        "query_id": 2,
+        "query": "constructed contract us query 2",
+        "split": "train",
+        "category": "旅行装备"
+      },
+      {
+        "locale": "us",
+        "query_id": 3,
+        "query": "constructed contract us query 3",
+        "split": "train",
+        "category": "旅行装备"
+      },
+      {
+        "locale": "us",
+        "query_id": 4,
+        "query": "constructed contract us query 4",
+        "split": "train",
+        "category": "旅行装备"
+      },
+      {
+        "locale": "es",
+        "query_id": 1,
+        "query": "constructed contract es query 1",
+        "split": "train",
+        "category": "旅行装备"
+      },
+      {
+        "locale": "es",
+        "query_id": 2,
+        "query": "constructed contract es query 2",
+        "split": "train",
+        "category": "旅行装备"
+      },
+      {
+        "locale": "es",
+        "query_id": 3,
+        "query": "constructed contract es query 3",
+        "split": "train",
+        "category": "旅行装备"
+      },
+      {
+        "locale": "jp",
+        "query_id": 1,
+        "query": "constructed contract jp query 1",
+        "split": "train",
+        "category": "旅行装备"
+      },
+      {
+        "locale": "jp",
+        "query_id": 2,
+        "query": "constructed contract jp query 2",
+        "split": "train",
+        "category": "旅行装备"
+      },
+      {
+        "locale": "jp",
+        "query_id": 3,
+        "query": "constructed contract jp query 3",
+        "split": "train",
+        "category": "旅行装备"
+      }
+    ]
+  }
+}

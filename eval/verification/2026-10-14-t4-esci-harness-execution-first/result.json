@@ -1,0 +1,20 @@
+{
+  "status": "targeted_contracts_passed",
+  "tests": 17,
+  "exit_code": 0,
+  "model_calls": 0,
+  "embedding_calls": 0,
+  "scope": "隔离构造夹具；真实 ESCI Harness 未执行",
+  "source_fingerprints_blake2b": {
+    "scripts/eval/harness/esci.py": "bc623450900c4eb61f79599eb6c9424f02add745c749f301e9a2784eeaccdb083b9146a748d7f54fdc62029f7b275cfb427ddef091b1935e9a5a6ba0568b95ac",
+    "scripts/eval/harness/contracts.py": "0dd1f637016692fa2e08ac9353fa443121d3aaae64dbf9d9c37df2fbbb519350adaeef273bce675e572564dda5e9ae623d3a62b3bb34ca5e22dba334058f48ab",
+    "scripts/eval/harness/runner.py": "2f3021e7ee0f48afb175120177ff63dbc4a3068b6b4b21affc345876eeeb10bc298013421416288d1f4155ca010cb487608df6a98c89b9742fcdc97608627f69",
+    "scripts/eval/harness/workflows.py": "e021a24a6bcbfecdd187f51994729af3e090d3396dc4d4dc88792d95c279f0cf1edccc99819e697b98e97ef4358b7c332f8f7b072660f8cfa0a9efc87ec926ed",
+    "scripts/eval/harness/report.py": "e0b2ae0500e92c58ac93af5886425f2694098e4f6940574b4af42debf5e187adee8fde5b1e5c02452f67b6f6cc6df2a40d27d91717ed6fb5211e1f47f17021d4",
+    "scripts/eval/harness/__main__.py": "1d8ea0bc46fcb9b04e3460f8441cfce97db78a1656abe26a372d1c17f35a64580736fbc63d15dff0fbf2aa12fd48e6d4b6a225fc8ab8e3a43327fd12480af640",
+    "eval/harness/esci-v1/build_suite.py": "b8592c81fc50aaea41aaca12af109f3b6ca392b419073a27d8670e7fc5c6ac680170b1a3213545f9a76949fc303cbc707407064fe03ae83437b58739934bdade",
+    "eval/harness/esci-v1/prepare.py": "3193afdef7406881140d633685b5427ed5479b0d4b2ce8ddd4cb1220be69b04af578f312e5d35b227c31a428c75c1ee8532b27c9fea0c089a6099d959abb2b44",
+    "eval/harness/esci-v1/preparation.json": "3c6a902c60d5c3ee01ae3904812b04eb6d4d94fbb3f87ebfeeb4140d71ab47f0997f21e9ae818963090389cc06ca4417b58b3ef4bddbdda6f0a2f09ca9169976",
+    "tests/test_esci_harness.py": "ab191f370af125b07838d693f0749241456f2f16b2af1876c8d8f37b5f46bfa5b27b77ceb27801a44075d0c8dc610925dd992ee65d1612f34c12fe782c42541e"
+  }
+}

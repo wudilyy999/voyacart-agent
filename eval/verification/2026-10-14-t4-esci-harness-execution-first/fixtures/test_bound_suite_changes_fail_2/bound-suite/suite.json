@@ -1,0 +1,136 @@
+{
+  "schema_version": "harness-eval-v1",
+  "runtime": {
+    "concurrency": 1,
+    "min_interval_seconds": 2,
+    "model_retries": 0,
+    "request_timeout_seconds": 45,
+    "scenario_timeout_seconds": 900,
+    "output_limit": 2048,
+    "context_size": 128000,
+    "seed": 20260918
+  },
+  "gates": {
+    "actual_input_reduction": 0.25,
+    "ordinary_p95_max_ratio": 1.15,
+    "success_rate_min_difference": 0,
+    "critical_failures_max": 0,
+    "require_positive_reduction_ci": true,
+    "objective": "prompt_cache",
+    "billing_claim_requires_currency": true,
+    "actual_total_token_reduction": 0.15
+  },
+  "pricing": {
+    "currency": null,
+    "source": null,
+    "verified_at": null,
+    "verified": false
+  },
+  "suite_type": "esci-dev-v1",
+  "cases_file": "cases.json",
+  "dataset_version": "esci-dev-v1",
+  "dataset_provenance": "ESCI 正式目录和 train 人工标注；价格、库存、配送为目录声明的演示字段；买家与交易库隔离",
+  "strategies": {
+    "current": {
+      "label": "legacy_system / passthrough",
+      "overrides": {
+        "context_strategy": "layered",
+        "context_pruning_timing": "pressure",
+        "context_product_tokens": 6000,
+        "context_target_tokens": 48000,
+        "prompt_cache_mode": "passthrough",
+        "prompt_cache_policy": "static",
+        "context_prompt_layout": "legacy_system"
+      }
+    },
+    "candidate": {
+      "label": "stable_prefix / passthrough",
+      "overrides": {
+        "context_strategy": "layered",
+        "context_pruning_timing": "pressure",
+        "context_product_tokens": 6000,
+        "context_target_tokens": 48000,
+        "prompt_cache_mode": "passthrough",
+        "prompt_cache_policy": "static",
+        "context_prompt_layout": "stable_prefix"
+      }
+    }
+  },
+  "profiles": {
+    "contracts": {
+      "cases": [],
+      "repetitions": 1
+    },
+    "dev": {
+      "cases": [
+        "esci-zh-us",
+        "esci-zh-es",
+        "esci-zh-jp",
+        "esci-destination",
+        "esci-budget",
+        "esci-stock",
+        "esci-comparison",
+        "esci-awaiting-confirmation",
+        "esci-approved-order",
+        "esci-embedding-unavailable"
+      ],
+      "repetitions": 1
+    }
+  },
+  "contract_tests": [
+    "tests/test_learning_pipeline.py",
+    "tests/test_harness_guards.py",
+    "tests/test_harness_middleware.py",
+    "tests/test_harness_infra.py",
+    "tests/test_harness_drift.py",
+    "tests/test_layered_context.py",
+    "tests/test_context_governance.py",
+    "tests/test_context_v2.py",
+    "tests/test_session_fencing.py",
+    "tests/test_native_memory_confirmation.py",
+    "tests/test_trade_store.py",
+    "tests/test_selected_skill.py",
+    "tests/test_prompt_cache.py",
+    "tests/test_prompt_cache_pruning.py",
+    "tests/test_structured_model_usage.py",
+    "tests/test_harness_evaluation.py",
+    "tests/test_cache_layout.py",
+    "tests/test_context_efficiency.py",
+    "tests/test_model_protocol.py",
+    "tests/test_visible_evidence.py",
+    "tests/test_skill_catalog.py",
+    "tests/test_buyer_workspace.py",
+    "tests/test_capability_registry.py",
+    "tests/test_context_prefix_recovery.py",
+    "tests/test_skill_evaluation_suite.py",
+    "tests/test_model_registry.py",
+    "tests/test_model_runtime_counting.py",
+    "tests/test_model_selection_runtime.py",
+    "tests/test_model_workspace.py",
+    "tests/test_model_connection_identity.py"
+  ],
+  "inputs": {
+    "catalog": {
+      "path": "/Users/liyuyang/Downloads/voyacart-agent/eval/verification/2026-10-14-t4-esci-harness-execution-first/fixtures/test_bound_suite_changes_fail_2/catalog-esci-v1.jsonl.gz",
+      "blake2b": "303e7c803d66d47dedefcf0d2f99d6c97f70fd64cd711e000a987936f55b8571f014e74321ac729ef3e4c66bf412a1dd431dbc9a6baf677f8fdce10efad4a1b1"
+    },
+    "selection": {
+      "path": "/Users/liyuyang/Downloads/voyacart-agent/eval/verification/2026-10-14-t4-esci-harness-execution-first/fixtures/test_bound_suite_changes_fail_2/selection-v1.json",
+      "blake2b": "8c51d8d09a2cef6b3999cec216271503f01160cc30f665332ac023afb3bf57be52f8d7c40ee44a493ff28d257d39ce99d8fcf460b724a52989a4abcfaf296ecc"
+    },
+    "ranking": {
+      "path": "/Users/liyuyang/Downloads/voyacart-agent/eval/verification/2026-10-14-t4-esci-harness-execution-first/fixtures/test_bound_suite_changes_fail_2/ranking-dev.jsonl",
+      "blake2b": "e2ce22e77a40870dda9d5df99f529a16d003e050e31a24ca61b95e2be0e7500b26f901b90259fb1b85c84016a1bd6f1e674059a08a342ce834336af62bdea808"
+    },
+    "translations": {
+      "path": "/Users/liyuyang/Downloads/voyacart-agent/eval/verification/2026-10-14-t4-esci-harness-execution-first/fixtures/test_bound_suite_changes_fail_2/translations-train.jsonl",
+      "blake2b": "5ac37158b74ddd27a080ceaf787db7d2c7b667843a3dc0b3f4d124e2a8b6ecf9af8f41e384532df082a4bf2ef969e43ab2f49cd43a432dd52b4b1486162421ca"
+    }
+  },
+  "index_dir": "/Users/liyuyang/Downloads/voyacart-agent/eval/verification/2026-10-14-t4-esci-harness-execution-first/fixtures/test_bound_suite_changes_fail_2/index",
+  "local_model_cache": "/Users/liyuyang/Downloads/voyacart-agent/eval/verification/2026-10-14-t4-esci-harness-execution-first/fixtures/test_bound_suite_changes_fail_2/model",
+  "limits": [
+    "仅开发训练场景；留出与发布档保持未执行",
+    "使用真实目录和生产工具、隔离买家与 SQLite；支付及物流未执行"
+  ]
+}

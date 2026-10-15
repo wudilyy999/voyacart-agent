@@ -26,7 +26,7 @@ def render(output: Path, manifest, rows):
       '<title>Voyacart · Harness 评测报告</title><style>',
       ':root{color-scheme:light;--ink:#203c3a;--muted:#637573;--line:#dce4de;--accent:#147d70;--paper:#f5f7f2}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.65 system-ui,-apple-system,sans-serif}main{max-width:1240px;margin:auto;padding:44px 28px}a{color:var(--accent)}.eyebrow{letter-spacing:.13em;font-size:12px;color:var(--muted)}h1{font-size:36px;line-height:1.25;margin:12px 0}h2{font-size:22px;margin:0 0 18px}h3{font-size:17px}p{margin:8px 0}.muted,.unknown{color:var(--muted)}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:30px 0}.card,section{background:white;border:1px solid var(--line);border-radius:16px;padding:22px}.card b{font-size:25px;display:block;margin-top:10px}.card small{color:var(--muted)}section{margin:22px 0}.pill{display:inline-block;padding:4px 12px;border-radius:30px;background:#e4eee8;margin:4px}.warn{background:#fff0df;color:#834515}.ok{background:#def2e8;color:#216847}.bad{color:#a33731}.scroll{overflow-x:auto}table{width:100%;border-collapse:collapse;font-size:14px}th,td{text-align:left;padding:13px 12px;border-bottom:1px solid var(--line);vertical-align:top}th{color:var(--muted);font-weight:500}td.num{font-variant-numeric:tabular-nums}.bar{background:#e8eee9;height:8px;border-radius:9px;margin-top:6px}.bar i{display:block;background:var(--accent);height:8px;border-radius:9px}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:13px/1.6 ui-monospace,monospace;background:#f2f5f1;padding:14px;border-radius:8px}details{border-top:1px solid var(--line);padding:15px 0}summary{cursor:pointer}select,input{font:inherit;padding:8px 12px;border:1px solid var(--line);border-radius:8px;background:white;color:var(--ink)}.filters{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:16px}code{font-size:13px;overflow-wrap:anywhere}.note{border-left:3px solid #d1a958;padding-left:12px;color:#745327}.grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}ul{padding-left:22px}footer{color:var(--muted);font-size:13px;margin-top:30px}@media(max-width:750px){main{padding:24px 14px}.cards,.grid{grid-template-columns:1fr 1fr}h1{font-size:28px}.card,section{padding:16px}}@media(max-width:420px){.cards,.grid{grid-template-columns:1fr}}',
       '</style></head><body><main><div class="eyebrow">VOYACART / ENGINEERING EVALUATION</div>',
-      '<h1>Harness 上下文治理评测</h1>',
+      '<h1>'+('Harness ESCI Agent 开发评测' if manifest.get('suite_type') == 'esci-dev-v1' else 'Harness 上下文治理评测')+'</h1>',
       f'<p class="muted">运行 {e(manifest["run_id"])} · {e(manifest["profile"])} · {e(manifest.get("model","未知"))}</p>',
       f'<span class="pill">{status}</span><span class="pill warn">{gate}</span><span class="pill">不自动发布</span>',
       '<div class="cards">',
@@ -94,7 +94,7 @@ def render(output: Path, manifest, rows):
         parts.append('<p>输入：'+cell(total_input(row))+'；耗时：'+cell(row.get('elapsed_ms'),' ms')+'</p>')
         trace = row.get('evidence_trace', '')
         if re.fullmatch(r'traces/[a-z0-9_-]+\.jsonl', trace):
-            parts.append('<p><a href="'+e(trace,quote=True)+'">合成评测原始消息与工具结果</a>（仅本次隔离夹具）</p>')
+            parts.append('<p><a href="'+e(trace,quote=True)+'">隔离评测原始消息与工具结果</a>（仅本次运行）</p>')
         if row.get('answer'):parts.append('<pre>'+e(row['answer'])+'</pre>')
         if row.get('context_diagnostics'):
             parts.append('<details><summary>工具与整理诊断</summary><pre>'+e(json.dumps(row['context_diagnostics'],ensure_ascii=False,indent=2))+'</pre></details>')
@@ -107,7 +107,7 @@ def render(output: Path, manifest, rows):
        '<p>评测集：<code>'+e(manifest['dataset_sha256'])+'</code></p>',
        '<p>边界：'+e('；'.join(manifest.get('limits',[])))+'</p>',
        '<p><a href="manifest.json">完整配置</a> · <a href="results.json">原始场景结果</a> · <a href="summary.json">指标与门禁 JSON</a> · <a href="attempts.jsonl">逐次调用账本</a> · <a href="contracts.log">契约测试日志</a></p>',
-       '</section><footer>自动生成 · synthetic fixtures only · 不连接真实买家数据库。原始失败保留，复核必须使用新 run_id。</footer></main>',
+       '</section><footer>自动生成 · '+('ESCI 目录与演示交易字段、隔离买家' if manifest.get('suite_type') == 'esci-dev-v1' else 'synthetic fixtures only')+' · 不连接真实买家数据库。原始失败保留，复核必须使用新 run_id。</footer></main>',
        '<script>const controls=["status","layer","query"].map(id=>document.getElementById(id));function filter(){const[s,l,q]=controls.map(x=>x.value.toLowerCase());document.querySelectorAll(".scenario").forEach(el=>{el.hidden=(s==="failed"&&el.dataset.failed!=="true")||(l!=="all"&&el.dataset.layer!==l)||!el.dataset.query.includes(q)})}controls.forEach(el=>el.addEventListener("input",filter));</script></body></html>']
     temp=output/'report.html.tmp';temp.write_text('\n'.join(parts),encoding='utf-8');temp.replace(output/'report.html')
     return report

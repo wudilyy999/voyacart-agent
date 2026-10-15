@@ -17,6 +17,12 @@ def verify_run(path, minimum='smoke'):
     report=render(path,manifest,rows)
     reasons=[]
     if manifest['source']['sha256']!=source_manifest()['sha256']:reasons.append('评测后 Harness/评测源码或测试已改变，必须重跑')
+    if manifest.get('suite_type') == 'esci-dev-v1':
+        import hashlib
+        if manifest.get('data_stable') is not True or any(not Path(item['path']).is_file() or
+                hashlib.blake2b(Path(item['path']).read_bytes()).hexdigest() != item['blake2b']
+                for item in manifest['data_fingerprints'].values()):
+            reasons.append('ESCI 正式目录或训练输入已变化，保留该运行并重新核验')
     allowed={'smoke':{'smoke','dev','release'},'release':{'release'}}[minimum]
     if manifest['profile'] not in allowed:reasons.append('评测档位不足；诊断不能替代完整评测')
     if manifest['status']!='completed' or manifest['source_stable'] is not True:reasons.append('运行未完整完成或源码不稳定')

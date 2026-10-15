@@ -68,6 +68,8 @@ async def execute_case(case, strategy, repetition, settings, suite, work, thrott
     from scripts.eval.run_context import Benchmark
     from scripts.eval.report_context import score
     from scripts.eval.harness.workflows import run_workflow
+    if case['layer'] == 'esci_agent' and suite.get('suite_type') != 'esci-dev-v1':
+        raise ValueError('ESCI 工作流须使用显式独立开发套件')
     configured=replace(settings,**suite['strategies'][strategy]['overrides'],data_dir=work)
     if case['layer']=='skill_replay':
         from scripts.eval.harness.cache_replay import run_skill_replay
@@ -75,7 +77,7 @@ async def execute_case(case, strategy, repetition, settings, suite, work, thrott
     elif case['layer']=='cache_replay':
         from scripts.eval.harness.cache_replay import run_cache_replay
         row=await run_cache_replay(case,configured,throttle,work,repetition,collect,suite['runtime'])
-    elif case['layer']=='agent':
+    elif case['layer'] in ('agent', 'esci_agent'):
         row=await run_workflow(case,configured,throttle,work,repetition,collect,suite['runtime'])
     else:
         runner=Benchmark(configured,throttle,work,configured.context_pruning_timing,stream=False,
@@ -135,7 +137,8 @@ async def run_profile(profile, output, *, suite_path=None, strategies=None, case
       'source':frozen,'source_stable':None,'policy_overrides':{n:suite['strategies'][n]['overrides'] for n in names},
       'source_archive_sha256':digest((output/'source.tar.gz').read_bytes()),
       'gates':suite['gates'],'pricing':suite['pricing'],'limits':suite['limits'],'semantic_answer_cache':False,
-      'synthetic':True,'contracts':None,'dataset_provenance':suite['dataset_provenance'],
+      'synthetic':suite.get('suite_type') != 'esci-dev-v1','contracts':None,'dataset_provenance':suite['dataset_provenance'],
+      'suite_type':suite.get('suite_type'), 'data_fingerprints':suite.get('inputs', {}),
       'scorer_version':suite.get('scorer_version','sku-quotes-v1.1'),
       'synthetic_evidence': {'enabled': True, 'directory': 'traces', 'format': 'jsonl',
                              'request_fields': 'model/messages/tools/tool_choice/response_format/temperature/max_tokens/max_completion_tokens/stream',
@@ -208,6 +211,15 @@ async def run_profile(profile, output, *, suite_path=None, strategies=None, case
         raise
     finally:
         manifest['source_stable']=source_manifest()['sha256']==frozen['sha256']
+        if suite.get('suite_type') == 'esci-dev-v1':
+            import hashlib
+            manifest['data_stable'] = all(Path(item['path']).is_file() and
+                hashlib.blake2b(Path(item['path']).read_bytes()).hexdigest() == item['blake2b']
+                for item in suite['inputs'].values())
+            if not manifest['data_stable']:
+                manifest['source_stable'] = False
+                manifest['status'] = 'failed'
+                manifest['error'] = 'esci_inputs_changed'
         manifest['finished_at']=datetime.now(timezone.utc).isoformat()
         checkpoint()
     return checkpoint()
