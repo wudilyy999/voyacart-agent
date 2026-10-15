@@ -1,0 +1,105 @@
+Traceback (most recent call last):
+  File "/Users/liyuyang/Downloads/voyacart-agent/.venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "/Users/liyuyang/Downloads/voyacart-agent/.venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 394, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/liyuyang/Downloads/voyacart-agent/.venv/lib/python3.11/site-packages/httpcore/_async/connection_pool.py", line 256, in handle_async_request
+    raise exc from None
+  File "/Users/liyuyang/Downloads/voyacart-agent/.venv/lib/python3.11/site-packages/httpcore/_async/connection_pool.py", line 236, in handle_async_request
+    response = await connection.handle_async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/liyuyang/Downloads/voyacart-agent/.venv/lib/python3.11/site-packages/httpcore/_async/connection.py", line 101, in handle_async_request
+    raise exc
+  File "/Users/liyuyang/Downloads/voyacart-agent/.venv/lib/python3.11/site-packages/httpcore/_async/connection.py", line 78, in handle_async_request
+    stream = await self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/liyuyang/Downloads/voyacart-agent/.venv/lib/python3.11/site-packages/httpcore/_async/connection.py", line 124, in _connect
+    stream = await self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/liyuyang/Downloads/voyacart-agent/.venv/lib/python3.11/site-packages/httpcore/_backends/auto.py", line 31, in connect_tcp
+    return await self._backend.connect_tcp(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/liyuyang/Downloads/voyacart-agent/.venv/lib/python3.11/site-packages/httpcore/_backends/anyio.py", line 113, in connect_tcp
+    with map_exceptions(exc_map):
+  File "/Users/liyuyang/.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/Users/liyuyang/Downloads/voyacart-agent/.venv/lib/python3.11/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: All connection attempts failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/liyuyang/Downloads/voyacart-agent/.venv/lib/python3.11/site-packages/qdrant_client/http/api_client.py", line 226, in send_inner
+    response = await self._async_client.send(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/liyuyang/Downloads/voyacart-agent/.venv/lib/python3.11/site-packages/httpx/_client.py", line 1629, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/liyuyang/Downloads/voyacart-agent/.venv/lib/python3.11/site-packages/httpx/_client.py", line 1657, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/liyuyang/Downloads/voyacart-agent/.venv/lib/python3.11/site-packages/httpx/_client.py", line 1694, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/liyuyang/Downloads/voyacart-agent/.venv/lib/python3.11/site-packages/httpx/_client.py", line 1730, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/liyuyang/Downloads/voyacart-agent/.venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 393, in handle_async_request
+    with map_httpcore_exceptions():
+  File "/Users/liyuyang/.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/Users/liyuyang/Downloads/voyacart-agent/.venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: All connection attempts failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/liyuyang/Downloads/voyacart-agent/eval/verification/2026-10-15-esci-index-prebuild-v2/prebuild_concurrent.py", line 47, in <module>
+    asyncio.run(main(Path(sys.argv[1]), Path(sys.argv[2]), sys.argv[3]))
+  File "/Users/liyuyang/.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Users/liyuyang/.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/liyuyang/.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/liyuyang/Downloads/voyacart-agent/eval/verification/2026-10-15-esci-index-prebuild-v2/prebuild_concurrent.py", line 20, in main
+    pending = await index.products_needing_embeddings(products)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/liyuyang/Downloads/voyacart-agent/app/infrastructure/vector/qdrant_product_index.py", line 39, in products_needing_embeddings
+    if not await self._client.collection_exists(self._collection):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/liyuyang/Downloads/voyacart-agent/.venv/lib/python3.11/site-packages/qdrant_client/async_qdrant_client.py", line 1542, in collection_exists
+    return await self._client.collection_exists(collection_name=collection_name, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/liyuyang/Downloads/voyacart-agent/.venv/lib/python3.11/site-packages/qdrant_client/async_qdrant_remote.py", line 1740, in collection_exists
+    await self.http.collections_api.collection_exists(collection_name=collection_name)
+  File "/Users/liyuyang/Downloads/voyacart-agent/.venv/lib/python3.11/site-packages/qdrant_client/http/api/collections_api.py", line 308, in collection_exists
+    return await self._build_for_collection_exists(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/liyuyang/Downloads/voyacart-agent/.venv/lib/python3.11/site-packages/qdrant_client/http/api_client.py", line 187, in request
+    return await self.send(request, type_)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/liyuyang/Downloads/voyacart-agent/.venv/lib/python3.11/site-packages/qdrant_client/http/api_client.py", line 204, in send
+    response = await self.middleware(request, self.send_inner)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/liyuyang/Downloads/voyacart-agent/.venv/lib/python3.11/site-packages/qdrant_client/http/api_client.py", line 241, in new_middleware
+    return await middleware(request, inner_send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/liyuyang/Downloads/voyacart-agent/.venv/lib/python3.11/site-packages/qdrant_client/context_headers.py", line 47, in async_rest_headers_middleware
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/liyuyang/Downloads/voyacart-agent/.venv/lib/python3.11/site-packages/qdrant_client/http/api_client.py", line 239, in inner_send
+    return await current_middleware(request, call_next)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/liyuyang/Downloads/voyacart-agent/.venv/lib/python3.11/site-packages/qdrant_client/http/api_client.py", line 248, in __call__
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/liyuyang/Downloads/voyacart-agent/.venv/lib/python3.11/site-packages/qdrant_client/http/api_client.py", line 228, in send_inner
+    raise ResponseHandlingException(e)
+qdrant_client.http.exceptions.ResponseHandlingException: All connection attempts failed

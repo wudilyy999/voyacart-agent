@@ -1,0 +1,140 @@
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":10,"completed_items":100,"failed_outputs":0,"max_concurrency":16,"model_calls":24,"split_batches":0}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":20,"completed_items":200,"failed_outputs":0,"max_concurrency":16,"model_calls":35,"split_batches":0}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":30,"completed_items":300,"failed_outputs":0,"max_concurrency":16,"model_calls":45,"split_batches":0}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":40,"completed_items":400,"failed_outputs":0,"max_concurrency":16,"model_calls":55,"split_batches":0}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":50,"completed_items":500,"failed_outputs":0,"max_concurrency":16,"model_calls":65,"split_batches":0}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":60,"completed_items":600,"failed_outputs":0,"max_concurrency":16,"model_calls":75,"split_batches":0}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":70,"completed_items":700,"failed_outputs":0,"max_concurrency":16,"model_calls":85,"split_batches":0}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":80,"completed_items":800,"failed_outputs":0,"max_concurrency":16,"model_calls":95,"split_batches":0}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":90,"completed_items":900,"failed_outputs":0,"max_concurrency":16,"model_calls":105,"split_batches":0}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":100,"completed_items":1000,"failed_outputs":0,"max_concurrency":16,"model_calls":115,"split_batches":0}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":110,"completed_items":1100,"failed_outputs":0,"max_concurrency":16,"model_calls":125,"split_batches":0}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":120,"completed_items":1200,"failed_outputs":0,"max_concurrency":16,"model_calls":135,"split_batches":0}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":130,"completed_items":1300,"failed_outputs":0,"max_concurrency":16,"model_calls":145,"split_batches":0}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":140,"completed_items":1400,"failed_outputs":0,"max_concurrency":16,"model_calls":155,"split_batches":0}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":150,"completed_items":1500,"failed_outputs":0,"max_concurrency":16,"model_calls":165,"split_batches":0}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":160,"completed_items":1600,"failed_outputs":0,"max_concurrency":16,"model_calls":175,"split_batches":0}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":170,"completed_items":1700,"failed_outputs":0,"max_concurrency":16,"model_calls":185,"split_batches":0}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":180,"completed_items":1800,"failed_outputs":0,"max_concurrency":16,"model_calls":194,"split_batches":0}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":190,"completed_items":1900,"failed_outputs":0,"max_concurrency":16,"model_calls":204,"split_batches":0}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":200,"completed_items":2000,"failed_outputs":0,"max_concurrency":16,"model_calls":215,"split_batches":0}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":210,"completed_items":2100,"failed_outputs":0,"max_concurrency":16,"model_calls":225,"split_batches":0}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":220,"completed_items":2200,"failed_outputs":0,"max_concurrency":16,"model_calls":235,"split_batches":0}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":230,"completed_items":2300,"failed_outputs":0,"max_concurrency":16,"model_calls":245,"split_batches":0}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":240,"completed_items":2400,"failed_outputs":0,"max_concurrency":16,"model_calls":253,"split_batches":0}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":250,"completed_items":2500,"failed_outputs":0,"max_concurrency":16,"model_calls":265,"split_batches":0}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":260,"completed_items":2600,"failed_outputs":0,"max_concurrency":16,"model_calls":275,"split_batches":0}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":270,"completed_items":2700,"failed_outputs":0,"max_concurrency":16,"model_calls":284,"split_batches":0}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":280,"completed_items":2800,"failed_outputs":0,"max_concurrency":16,"model_calls":294,"split_batches":0}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":290,"completed_items":2900,"failed_outputs":0,"max_concurrency":16,"model_calls":305,"split_batches":0}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":300,"completed_items":3000,"failed_outputs":0,"max_concurrency":16,"model_calls":315,"split_batches":0}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":310,"completed_items":3100,"failed_outputs":0,"max_concurrency":16,"model_calls":323,"split_batches":0}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":320,"completed_items":3200,"failed_outputs":0,"max_concurrency":16,"model_calls":335,"split_batches":0}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":330,"completed_items":3300,"failed_outputs":0,"max_concurrency":16,"model_calls":343,"split_batches":0}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":340,"completed_items":3400,"failed_outputs":0,"max_concurrency":16,"model_calls":355,"split_batches":0}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":350,"completed_items":3500,"failed_outputs":0,"max_concurrency":16,"model_calls":364,"split_batches":0}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":360,"completed_items":3600,"failed_outputs":0,"max_concurrency":16,"model_calls":375,"split_batches":0}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":370,"completed_items":3700,"failed_outputs":0,"max_concurrency":16,"model_calls":385,"split_batches":0}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":380,"completed_items":3800,"failed_outputs":0,"max_concurrency":16,"model_calls":392,"split_batches":0}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":390,"completed_items":3900,"failed_outputs":0,"max_concurrency":16,"model_calls":406,"split_batches":1}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":400,"completed_items":3991,"failed_outputs":0,"max_concurrency":16,"model_calls":414,"split_batches":1}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":410,"completed_items":4082,"failed_outputs":0,"max_concurrency":16,"model_calls":426,"split_batches":1}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":420,"completed_items":4182,"failed_outputs":0,"max_concurrency":16,"model_calls":436,"split_batches":1}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":430,"completed_items":4282,"failed_outputs":0,"max_concurrency":16,"model_calls":445,"split_batches":1}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":440,"completed_items":4382,"failed_outputs":0,"max_concurrency":16,"model_calls":456,"split_batches":1}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":450,"completed_items":4464,"failed_outputs":0,"max_concurrency":16,"model_calls":466,"split_batches":1}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":460,"completed_items":4537,"failed_outputs":0,"max_concurrency":16,"model_calls":476,"split_batches":1}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":470,"completed_items":4619,"failed_outputs":0,"max_concurrency":16,"model_calls":486,"split_batches":1}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":480,"completed_items":4710,"failed_outputs":0,"max_concurrency":16,"model_calls":496,"split_batches":1}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":490,"completed_items":4810,"failed_outputs":0,"max_concurrency":16,"model_calls":506,"split_batches":1}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":500,"completed_items":4910,"failed_outputs":0,"max_concurrency":16,"model_calls":515,"split_batches":1}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":510,"completed_items":5010,"failed_outputs":0,"max_concurrency":16,"model_calls":525,"split_batches":1}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":520,"completed_items":5110,"failed_outputs":0,"max_concurrency":16,"model_calls":536,"split_batches":1}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":530,"completed_items":5210,"failed_outputs":0,"max_concurrency":16,"model_calls":546,"split_batches":1}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":540,"completed_items":5310,"failed_outputs":0,"max_concurrency":16,"model_calls":556,"split_batches":1}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":550,"completed_items":5410,"failed_outputs":0,"max_concurrency":16,"model_calls":566,"split_batches":1}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":560,"completed_items":5510,"failed_outputs":0,"max_concurrency":16,"model_calls":576,"split_batches":1}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":570,"completed_items":5610,"failed_outputs":0,"max_concurrency":16,"model_calls":586,"split_batches":1}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":580,"completed_items":5710,"failed_outputs":0,"max_concurrency":16,"model_calls":595,"split_batches":1}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":590,"completed_items":5810,"failed_outputs":0,"max_concurrency":16,"model_calls":605,"split_batches":1}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":600,"completed_items":5910,"failed_outputs":0,"max_concurrency":16,"model_calls":616,"split_batches":1}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":610,"completed_items":6010,"failed_outputs":0,"max_concurrency":16,"model_calls":625,"split_batches":1}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":620,"completed_items":6110,"failed_outputs":0,"max_concurrency":16,"model_calls":637,"split_batches":2}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":630,"completed_items":6201,"failed_outputs":0,"max_concurrency":16,"model_calls":644,"split_batches":2}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":640,"completed_items":6301,"failed_outputs":0,"max_concurrency":16,"model_calls":657,"split_batches":2}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":650,"completed_items":6401,"failed_outputs":0,"max_concurrency":16,"model_calls":667,"split_batches":2}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":660,"completed_items":6492,"failed_outputs":0,"max_concurrency":16,"model_calls":677,"split_batches":2}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":670,"completed_items":6583,"failed_outputs":0,"max_concurrency":16,"model_calls":687,"split_batches":2}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":680,"completed_items":6674,"failed_outputs":0,"max_concurrency":16,"model_calls":697,"split_batches":2}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":690,"completed_items":6774,"failed_outputs":0,"max_concurrency":16,"model_calls":706,"split_batches":2}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":700,"completed_items":6865,"failed_outputs":0,"max_concurrency":16,"model_calls":717,"split_batches":2}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":710,"completed_items":6956,"failed_outputs":0,"max_concurrency":16,"model_calls":727,"split_batches":2}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":720,"completed_items":7047,"failed_outputs":0,"max_concurrency":16,"model_calls":737,"split_batches":2}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":730,"completed_items":7138,"failed_outputs":0,"max_concurrency":16,"model_calls":747,"split_batches":2}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":740,"completed_items":7238,"failed_outputs":0,"max_concurrency":16,"model_calls":755,"split_batches":2}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":750,"completed_items":7329,"failed_outputs":0,"max_concurrency":16,"model_calls":767,"split_batches":2}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":760,"completed_items":7429,"failed_outputs":0,"max_concurrency":16,"model_calls":777,"split_batches":2}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":770,"completed_items":7520,"failed_outputs":0,"max_concurrency":16,"model_calls":787,"split_batches":2}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":780,"completed_items":7620,"failed_outputs":0,"max_concurrency":16,"model_calls":797,"split_batches":2}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":790,"completed_items":7720,"failed_outputs":0,"max_concurrency":16,"model_calls":807,"split_batches":2}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":800,"completed_items":7820,"failed_outputs":0,"max_concurrency":16,"model_calls":817,"split_batches":2}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":810,"completed_items":7920,"failed_outputs":0,"max_concurrency":16,"model_calls":827,"split_batches":2}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":820,"completed_items":8020,"failed_outputs":0,"max_concurrency":16,"model_calls":837,"split_batches":2}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":830,"completed_items":8120,"failed_outputs":0,"max_concurrency":16,"model_calls":847,"split_batches":2}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":840,"completed_items":8220,"failed_outputs":0,"max_concurrency":16,"model_calls":857,"split_batches":2}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":850,"completed_items":8320,"failed_outputs":0,"max_concurrency":16,"model_calls":865,"split_batches":2}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":860,"completed_items":8420,"failed_outputs":0,"max_concurrency":16,"model_calls":877,"split_batches":2}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":870,"completed_items":8520,"failed_outputs":0,"max_concurrency":16,"model_calls":887,"split_batches":2}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":880,"completed_items":8620,"failed_outputs":0,"max_concurrency":16,"model_calls":897,"split_batches":2}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":890,"completed_items":8720,"failed_outputs":0,"max_concurrency":16,"model_calls":907,"split_batches":2}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":900,"completed_items":8820,"failed_outputs":0,"max_concurrency":16,"model_calls":915,"split_batches":2}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":910,"completed_items":8920,"failed_outputs":0,"max_concurrency":16,"model_calls":927,"split_batches":2}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":920,"completed_items":9020,"failed_outputs":0,"max_concurrency":16,"model_calls":935,"split_batches":3}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":930,"completed_items":9111,"failed_outputs":0,"max_concurrency":16,"model_calls":947,"split_batches":3}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":940,"completed_items":9202,"failed_outputs":0,"max_concurrency":16,"model_calls":958,"split_batches":3}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":950,"completed_items":9293,"failed_outputs":0,"max_concurrency":16,"model_calls":968,"split_batches":3}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":960,"completed_items":9384,"failed_outputs":0,"max_concurrency":16,"model_calls":978,"split_batches":3}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":970,"completed_items":9466,"failed_outputs":0,"max_concurrency":16,"model_calls":988,"split_batches":3}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":980,"completed_items":9548,"failed_outputs":0,"max_concurrency":16,"model_calls":998,"split_batches":3}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":990,"completed_items":9630,"failed_outputs":0,"max_concurrency":16,"model_calls":1008,"split_batches":3}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":1000,"completed_items":9730,"failed_outputs":0,"max_concurrency":16,"model_calls":1016,"split_batches":3}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":1010,"completed_items":9830,"failed_outputs":0,"max_concurrency":16,"model_calls":1028,"split_batches":3}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":1020,"completed_items":9930,"failed_outputs":0,"max_concurrency":16,"model_calls":1038,"split_batches":3}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":1030,"completed_items":10030,"failed_outputs":0,"max_concurrency":16,"model_calls":1048,"split_batches":3}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":1040,"completed_items":10130,"failed_outputs":0,"max_concurrency":16,"model_calls":1058,"split_batches":3}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":1050,"completed_items":10230,"failed_outputs":0,"max_concurrency":16,"model_calls":1068,"split_batches":3}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":1060,"completed_items":10330,"failed_outputs":0,"max_concurrency":16,"model_calls":1078,"split_batches":3}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":1070,"completed_items":10430,"failed_outputs":0,"max_concurrency":16,"model_calls":1088,"split_batches":3}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":1080,"completed_items":10530,"failed_outputs":0,"max_concurrency":16,"model_calls":1098,"split_batches":3}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":1090,"completed_items":10630,"failed_outputs":0,"max_concurrency":16,"model_calls":1108,"split_batches":3}
+{"batch_size":10,"cache_hits":0,"candidate_count":15860,"completed_calls":1100,"completed_items":10730,"failed_outputs":0,"max_concurrency":16,"model_calls":1118,"split_batches":3}
+  + Exception Group Traceback (most recent call last):
+  |   File "<frozen runpy>", line 198, in _run_module_as_main
+  |   File "<frozen runpy>", line 88, in _run_code
+  |   File "/Users/liyuyang/Downloads/voyacart-agent/scripts/esci/enrich_catalog.py", line 248, in <module>
+  |     asyncio.run(main())
+  |   File "/Users/liyuyang/.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/asyncio/runners.py", line 190, in run
+  |     return runner.run(main)
+  |            ^^^^^^^^^^^^^^^^
+  |   File "/Users/liyuyang/.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/asyncio/runners.py", line 118, in run
+  |     return self._loop.run_until_complete(task)
+  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "/Users/liyuyang/.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+  |     return future.result()
+  |            ^^^^^^^^^^^^^^^
+  |   File "/Users/liyuyang/Downloads/voyacart-agent/scripts/esci/enrich_catalog.py", line 236, in main
+  |     report=await fill_cache(rows,mode,cache_path,args.output,settings,client)
+  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "/Users/liyuyang/Downloads/voyacart-agent/scripts/esci/enrich_catalog.py", line 193, in fill_cache
+  |     async with asyncio.TaskGroup() as group:
+  |   File "/Users/liyuyang/.local/share/uv/python/cpython-3.11.16-macos-aarch64-none/lib/python3.11/asyncio/taskgroups.py", line 145, in __aexit__
+  |     raise me from None
+  | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "/Users/liyuyang/Downloads/voyacart-agent/scripts/esci/enrich_catalog.py", line 191, in worker
+    |     await call(items)
+    |   File "/Users/liyuyang/Downloads/voyacart-agent/scripts/esci/enrich_catalog.py", line 159, in call
+    |     raise RuntimeError(f'模型服务返回 HTTP {response.status_code}')
+    | RuntimeError: 模型服务返回 HTTP 502
+    +------------------------------------

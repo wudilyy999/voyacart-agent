@@ -51,3 +51,22 @@
 本轮只新增评测数据和评测入口。运行时默认目录、`.env` 和开关都没有改动，只有 BM25 缓存容量这一项运行时改动。回滚方法：
 - **评测数据：** 删除本轮新增的数据文件，旧目录和旧评测不受影响；
 - **BM25 缓存：** 把容量改回 8,192 即可。
+
+## v2：批量商品增强后的重评（同日补充）
+
+商品级增强由 [T2 批量商品增强](T2-批量商品增强.md) 完成。用 `product-enrich-batch-v1` 的类目重新定稿，目录、评测集与基线放在 v2 位置，v1 的文件原样保留：
+
+- 目录 [`data/catalog-esci-v2.jsonl.gz`](../../../data/catalog-esci-v2.jsonl.gz)，12,299 件；选择记录 `data/esci/selection-v2.json`；评测集 [`eval/esci-v2/`](../../../eval/esci-v2/)；基线 `eval/esci-v2/baselines/{frozen,holdout-attempt,approved}-v2.json`。
+- 开发档 [esci-dev-v2](../../../eval/verification/2026-10-15-esci-dev-v2/)：四种策略完成，两种带精排的未执行；按全库 nDCG@10 冻结 `embedding_only`（0.6410）。
+- 留出档 [esci-holdout-v2](../../../eval/verification/2026-10-15-esci-holdout-v2/)：attempt=1，`COMPLETED`。
+- 汇总与 v1/v2 对照 [esci-formal-eval-v2](../../../eval/verification/2026-10-15-esci-formal-eval-v2/README.md)。
+
+留出档主要结果（`embedding_only`，300 条 test 查询，商品库 12,299 件）：
+- 全库召回：nDCG@10 0.6131，Recall@10 0.5018，Recall@50 0.7995，judged@10 0.7927；
+- 候选内排序 nDCG 0.8528；
+- 硬约束：泄漏 0，应为空准确率 1.0；
+- 中文派生集（200 条）Recall@50：远端向量 0.7054，本地多语种兜底 0.3685，关键词兜底 0.1734。
+
+两版 nDCG@10 与 Recall@50 相差不到 0.004，类目不进入全库召回。两版查询集不完全相同（留出集重合 239/300），v2 留出结果不独立于 v1 的留出结果，参数只按 v2 开发集选定。
+
+向量预建的两次失败（`.env` 的 `QDRANT_URL` 使评测连向服务端；缺少 `fastembed`）已改为设空 `QDRANT_URL` 并用 `uv sync --frozen --inexact --extra retrieval` 安装可选依赖后重跑，`uv.lock` 未变，原始日志保留在 [index-prebuild-v2](../../../eval/verification/2026-10-15-esci-index-prebuild-v2/)。仍未执行的项目同上文：人工抽检、精排、多模型比较、`make eval-harness`、后端全量回归。

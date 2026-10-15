@@ -1,0 +1,2 @@
+{"asin":"8469827472","error_type":"JSONDecodeError","input_fingerprint":"1e08a59cb0f6a455da606695f19e1fcc70c646ce86308a6a8ea5c9592a9c1085925e8686b62ed4b5ac4338d345ae666c454d451c89654ea08d43fb25cac89ed0","locale":"es","prompt_version":"product-enrich-v1","status":"failed"}
+{"asin":"8483833883","http_status":502,"input_fingerprint":"eebcecb38225e99e8e8563a6a3539e92a7c207599e1a891253f9d2676a16b30ff8b51faebf94248a8df6f3951454a360dfa263ecc921f61eb845c18ff0b84fa5","locale":"es","prompt_version":"product-enrich-v1"}

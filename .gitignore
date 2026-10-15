@@ -13,6 +13,8 @@ data/esci/*
 !data/esci/query-class-v1.jsonl
 # ESCI 正式评测目录、抽样、代理类目与中文译文缓存随评测结论版本化。
 !data/esci/selection-v1.json
+!data/esci/selection-v2.json
+!data/esci/enrichment-batch-v1.jsonl
 !data/esci/category-proxy-v1.jsonl
 !data/esci/translate-zh-v1.jsonl
 eval/report-*.md
@@ -58,6 +60,7 @@ node_modules/
 !data/catalog-demo.jsonl.gz
 !data/catalog-esci-demo-2000.jsonl.gz
 !data/catalog-esci-v1.jsonl.gz
+!data/catalog-esci-v2.jsonl.gz
 .cache/
 frontend/dist/
 *.tsbuildinfo
