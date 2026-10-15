@@ -59,7 +59,8 @@ class TestCatalogSearch:
 
     async def test_no_hit_returns_empty(self, product_repo):
         usecase = CatalogSearchUseCase(product_repo)
-        result = await usecase.execute(ProductSearchSpec(normalized_query="quantum flux capacitor"))
+        # 关键词召回按小写整词匹配；该连字符词不在任何版本目录和 ESCI 全量商品中出现。
+        result = await usecase.execute(ProductSearchSpec(normalized_query="no-such-product"))
         assert result["hits"] == []
 
 

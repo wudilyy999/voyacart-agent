@@ -162,7 +162,8 @@ async def test_real_search_projects_cards_and_preserves_message_history():
 
 
 async def test_empty_search_clears_client_products():
-    orchestrator, _, _ = make_orchestrator(query="quantum flux capacitor")
+    # 与 test_usecases 的无命中用例共用哨兵词，默认目录中检索结果为空。
+    orchestrator, _, _ = make_orchestrator(query="no-such-product")
     events = await collect(orchestrator, state={"products": [{"product_id": "fake-old-product"}]})
     snapshots = [event["snapshot"] for event in events if event["type"] == "STATE_SNAPSHOT"]
     assert snapshots[0]["products"] == [] and snapshots[0]["searchCompleted"] is False

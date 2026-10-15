@@ -1,0 +1,24 @@
+query='quantum flux capacitor' terms=['capacitor', 'flux', 'quantum']
+data/catalog-demo.jsonl.gz products=5700 hits=1
+   ('P100123', ['quantum'], 'Quantum Health Lip Clear Invisible Cold Sore Bandage, Fever ')
+data/catalog-esci-demo-2000.jsonl.gz products=2000 hits=1
+   ('P100123', ['quantum'], 'Quantum Health Lip Clear Invisible Cold Sore Bandage, Fever ')
+data/catalog-esci-v1.jsonl.gz products=12123 hits=5
+   ('P100972', ['flux'], 'Samsonite Flux Spinner S Equipaje de mano Expansible, 55 cm,')
+   ('P102875', ['quantum'], 'Samsung C34J791 - Monitor Curvo de 34" UltraWide QHD, 2021 M')
+   ('P106862', ['quantum'], 'SteelSeries ゲーミングマウス 無線 ワイヤレス デュアルチャネル Prestige OMスイッチ カスタマイ')
+   ('P112064', ['quantum'], 'VESHELY Dual Magnetic Eyelashes Without Eyeliner Kit,8D Quan')
+   ('P112065', ['quantum'], 'Magnetic Eyelashes, Dual Magnets False Lashes, Magnetic Eyel')
+data/catalog-v1.jsonl products=500 hits=0
+data/catalog-v2.jsonl products=1000 hits=0
+data/catalog-v3.jsonl products=3700 hits=0
+
+query='no-such-product' terms=['no-such-product']
+data/catalog-demo.jsonl.gz products=5700 hits=0
+data/catalog-esci-demo-2000.jsonl.gz products=2000 hits=0
+data/catalog-esci-v1.jsonl.gz products=12123 hits=0
+data/catalog-v1.jsonl products=500 hits=0
+data/catalog-v2.jsonl products=1000 hits=0
+data/catalog-v3.jsonl products=3700 hits=0
+
+exit=0

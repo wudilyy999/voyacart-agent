@@ -1,0 +1,5 @@
+rows=1814924 columns=['product_id', 'product_title', 'product_description', 'product_bullet_point', 'product_brand', 'product_color', 'product_locale']
+'no-such-product' matched_cells=0
+'quantum' matched_cells=1181
+'flux capacitor' matched_cells=4
+exit=0

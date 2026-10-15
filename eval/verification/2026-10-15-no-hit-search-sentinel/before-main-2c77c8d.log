@@ -1,0 +1,36 @@
+FF                                                                       [100%]
+=================================== FAILURES ===================================
+___________________ test_empty_search_clears_client_products ___________________
+
+    async def test_empty_search_clears_client_products():
+        orchestrator, _, _ = make_orchestrator(query="quantum flux capacitor")
+        events = await collect(orchestrator, state={"products": [{"product_id": "fake-old-product"}]})
+        snapshots = [event["snapshot"] for event in events if event["type"] == "STATE_SNAPSHOT"]
+        assert snapshots[0]["products"] == [] and snapshots[0]["searchCompleted"] is False
+>       assert snapshots[-1]["products"] == [] and snapshots[-1]["searchCompleted"] is True
+E       AssertionError: assert ([{'product_id... '美妆个护', ...}] == []
+E         
+E         Left contains one more item: {'product_id': 'P100123', 'title': 'Quantum Health Lip Clear Invisible Cold Sore Bandage, Fever Blister Patch - Patch Soothes and Protects, Hides Cold Sores, Helps Prevent Contamination, 12 Ct', 'brand': 'Quantum', 'category': '美妆个护', ...}
+E         Use -v to get more diff)
+
+tests/test_ag_ui.py:169: AssertionError
+_________________ TestCatalogSearch.test_no_hit_returns_empty __________________
+
+self = <tests.test_usecases.TestCatalogSearch object at 0x10bfe1190>
+product_repo = <app.infrastructure.persistence.in_memory_repositories.InMemoryProductRepository object at 0x10bfcbf90>
+
+    async def test_no_hit_returns_empty(self, product_repo):
+        usecase = CatalogSearchUseCase(product_repo)
+        result = await usecase.execute(ProductSearchSpec(normalized_query="quantum flux capacitor"))
+>       assert result["hits"] == []
+E       AssertionError: assert [{'product_id... '美妆个护', ...}] == []
+E         
+E         Left contains one more item: {'product_id': 'P100123', 'title': 'Quantum Health Lip Clear Invisible Cold Sore Bandage, Fever Blister Patch - Patch Soothes and Protects, Hides Cold Sores, Helps Prevent Contamination, 12 Ct', 'brand': 'Quantum', 'category': '美妆个护', ...}
+E         Use -v to get more diff
+
+tests/test_usecases.py:63: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_ag_ui.py::test_empty_search_clears_client_products - Assert...
+FAILED tests/test_usecases.py::TestCatalogSearch::test_no_hit_returns_empty
+2 failed in 2.13s
+exit=1
