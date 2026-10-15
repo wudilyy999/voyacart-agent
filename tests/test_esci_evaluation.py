@@ -233,7 +233,7 @@ async def test_frozen_selection_controls_holdout_and_consumes_one_attempt_even_o
             super().__init__()
     monkeypatch.setattr('app.infrastructure.embedding.local_multilingual.LocalMultilingualEmbedding',FixtureLocalEmbedding)
     development=tmp_path/'development'
-    common=dict(catalog=catalog,dataset_dir=tmp_path,index_dir=tmp_path/'vectors',local_model_dir=tmp_path/'local-model')
+    common=dict(catalog=catalog,dataset_dir=tmp_path,index_dir=tmp_path/'vectors',local_model_dir=tmp_path/'local-model',baseline_version='v2')
     await run_esci.run(SimpleNamespace(**common,strategies=list(STRATEGIES),output=development,profile='dev',frozen=None))
     frozen=run_esci.freeze_development(development)
     assert frozen['strategy']==max(frozen['development_scores'],key=frozen['development_scores'].get)
@@ -244,7 +244,7 @@ async def test_frozen_selection_controls_holdout_and_consumes_one_attempt_even_o
     monkeypatch.setattr(run_esci,'load_settings',lambda **kwargs:changed)
     with pytest.raises(ValueError,match='冻结开发清单不同'):
         await run_esci.run(SimpleNamespace(**common,strategies=None,output=tmp_path/'wrong-parameters',profile='holdout',frozen=frozen_file))
-    assert not (tmp_path/'baselines/holdout-attempt-v1.json').exists()
+    assert not (tmp_path/'baselines/holdout-attempt-v2.json').exists()
     rejected=json.loads((tmp_path/'wrong-parameters/report.json').read_text())
     assert rejected['status']=='FAILED' and rejected['holdout']['status']=='NOT_EXECUTED'
     monkeypatch.setattr(run_esci,'load_settings',lambda **kwargs:settings)
@@ -252,7 +252,7 @@ async def test_frozen_selection_controls_holdout_and_consumes_one_attempt_even_o
         (tmp_path/'retrieval-holdout.jsonl').write_text('invalid held-out input')
         with pytest.raises(json.JSONDecodeError):
             await run_esci.run(SimpleNamespace(**common,strategies=None,output=holdout,profile='holdout',frozen=frozen_file))
-        assert not (tmp_path/'baselines/approved-v1.json').exists()
+        assert not (tmp_path/'baselines/approved-v2.json').exists()
     else:
         result=await run_esci.run(SimpleNamespace(**common,strategies=None,output=holdout,profile='holdout',frozen=frozen_file))
         assert result['holdout']=={'status':'COMPLETED','attempt':1}
@@ -260,17 +260,17 @@ async def test_frozen_selection_controls_holdout_and_consumes_one_attempt_even_o
         fallback=result['crosslingual_fallback']
         assert {row['actual_strategy'] for row in fallback['samples']}=={'local_embedding','keyword_2gram'}
         assert set(fallback['summary'])=={'local_embedding','keyword_2gram'} and fallback['summary']['local_embedding']['all']['queries']==1
-        approved=json.loads((tmp_path/'baselines/approved-v1.json').read_text())
+        approved=json.loads((tmp_path/'baselines/approved-v2.json').read_text())
         assert approved['crosslingual_fallback']==fallback['summary']
         assert approved['strategy']==frozen['strategy'] and approved['holdout_attempt']==1
         assert set(result['strategies'])=={frozen['strategy']}
         approved_only=tmp_path/'approved-only';(approved_only/'baselines').mkdir(parents=True)
-        (approved_only/'baselines/approved-v1.json').write_text(json_line(approved))
+        (approved_only/'baselines/approved-v2.json').write_text(json_line(approved))
         with pytest.raises(FileExistsError,match='留出基线已存在'):
             await run_esci.run(SimpleNamespace(**{**common,'dataset_dir':approved_only},strategies=None,
                 output=tmp_path/'approved-only-rejected',profile='holdout',frozen=frozen_file))
-        assert not (approved_only/'baselines/holdout-attempt-v1.json').exists()
-    marker=(tmp_path/'baselines/holdout-attempt-v1.json').read_bytes()
+        assert not (approved_only/'baselines/holdout-attempt-v2.json').exists()
+    marker=(tmp_path/'baselines/holdout-attempt-v2.json').read_bytes()
     read_rows=run_esci.read_rows
     def protected_read(path):
         assert '-holdout' not in path.name and path.name!='crosslingual-zh.jsonl', '重复尝试读取留出数据'
@@ -278,7 +278,7 @@ async def test_frozen_selection_controls_holdout_and_consumes_one_attempt_even_o
     monkeypatch.setattr(run_esci,'read_rows',protected_read)
     with pytest.raises(FileExistsError):
         await run_esci.run(SimpleNamespace(**common,strategies=None,output=tmp_path/'second-attempt',profile='holdout',frozen=frozen_file))
-    assert (tmp_path/'baselines/holdout-attempt-v1.json').read_bytes()==marker
+    assert (tmp_path/'baselines/holdout-attempt-v2.json').read_bytes()==marker
 
 
 @pytest.mark.parametrize('changed_field',[
@@ -306,7 +306,7 @@ async def test_frozen_rerank_service_parameters_are_checked_before_holdout(tmp_p
     monkeypatch.setattr(run_esci,'create_reranker',lambda settings:reranker)
     async def ready(*args,**kwargs):return True
     monkeypatch.setattr(run_esci,'bootstrap_product_index',ready)
-    common=dict(catalog=catalog,dataset_dir=tmp_path,index_dir=tmp_path/'vectors')
+    common=dict(catalog=catalog,dataset_dir=tmp_path,index_dir=tmp_path/'vectors',baseline_version='v2')
     development=tmp_path/'development'
     await run_esci.run(SimpleNamespace(**common,strategies=list(STRATEGIES),output=development,profile='dev',frozen=None))
     frozen=run_esci.freeze_development(development)
@@ -315,4 +315,4 @@ async def test_frozen_rerank_service_parameters_are_checked_before_holdout(tmp_p
     monkeypatch.setattr(run_esci,'load_settings',lambda **kwargs:replace(settings,**changed_field))
     with pytest.raises(ValueError,match='冻结开发清单不同'):
         await run_esci.run(SimpleNamespace(**common,strategies=None,output=tmp_path/'rejected',profile='holdout',frozen=frozen_file))
-    assert not (tmp_path/'baselines/holdout-attempt-v1.json').exists()
+    assert not (tmp_path/'baselines/holdout-attempt-v2.json').exists()
