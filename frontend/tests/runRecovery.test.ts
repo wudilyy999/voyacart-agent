@@ -273,15 +273,15 @@ it("原生记忆审批通过 SDK resume 回传，不重发普通文本执行", a
   expect(client.getSnapshot().toolApprovals).toEqual([]);
 });
 
-it("默认固定 pao-coder，忽略随机缓存身份并从数据库恢复",async()=>{
+it("默认固定 demo-buyer，忽略随机缓存身份并从数据库恢复",async()=>{
  const storage=store();storage.setItem("voyacart.buyer","random-old-id");storage.setItem("voyacart.agui.active-session","empty-draft");
  const requested:string[]=[];
- const fetch=async(url:string)=>{requested.push(url);return url.includes("/sessions?") ? json({sessions:[{id:"pao-history",title:"数据库历史",updatedAt:1}]}) : json({run:{runId:"r",threadId:"pao-history",status:"completed",messages:[{id:"u",role:"user",content:"数据库中的对话"}],state:{}}});};
+ const fetch=async(url:string)=>{requested.push(url);return url.includes("/sessions?") ? json({sessions:[{id:"demo-history",title:"数据库历史",updatedAt:1}]}) : json({run:{runId:"r",threadId:"demo-history",status:"completed",messages:[{id:"u",role:"user",content:"数据库中的对话"}],state:{}}});};
  const first=new CommerceClient({url:"/commerce/ag-ui/run",storage,fetch});await first.initialize();
- expect(storage.getItem("voyacart.buyer")).toBe("pao-coder");expect(requested.every(url=>url.includes("buyer_id=pao-coder"))).toBe(true);
+ expect(storage.getItem("voyacart.buyer")).toBe("demo-buyer");expect(requested.every(url=>url.includes("buyer_id=demo-buyer"))).toBe(true);
  expect(first.getSnapshot().messages[0].content).toBe("数据库中的对话");
  const withoutCache=new CommerceClient({url:"/commerce/ag-ui/run",fetch});await withoutCache.initialize();
- expect(withoutCache.getSnapshot().sessionId).toBe("pao-history");
+ expect(withoutCache.getSnapshot().sessionId).toBe("demo-history");
 });
 
 it.each([false,true])("版本过期保留旧历史并仅在新会话重试一次（再次过期=%s）",async(repeat)=>{
@@ -298,7 +298,7 @@ it.each([false,true])("版本过期保留旧历史并仅在新会话重试一次
  expect(posts[0].threadId).not.toBe(posts[1].threadId);
  expect(posts[1].messages).toHaveLength(1);
  expect(posts[1].messages[0].content).toBe(query+'\n收货国家：CN。');
- expect(posts[1].forwardedProps.buyerId).toBe('pao-coder');
+ expect(posts[1].forwardedProps.buyerId).toBe('demo-buyer');
  expect(client.getSnapshot().history.some(item=>item.id===posts[0].threadId)).toBe(true);
  expect(client.getSnapshot().status).toBe(repeat?'error':'idle');
 });

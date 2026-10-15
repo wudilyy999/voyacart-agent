@@ -294,7 +294,7 @@ class ModelRegistry:
                 "presets": presets}
 
     async def resolve(self, profile_id: str = "current-gateway", window_id: str | None = None,
-                      thinking: str | None = None, buyer_id: str = "pao-coder", revision: int | None = None) -> dict:
+                      thinking: str | None = None, buyer_id: str = "demo-buyer", revision: int | None = None) -> dict:
         profile = await self._profile(profile_id, buyer_id, revision)
         if revision is None and (window_id is None or thinking is None):
             async with aiosqlite.connect(self.path) as db:
