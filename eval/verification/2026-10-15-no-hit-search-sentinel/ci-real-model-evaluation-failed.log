@@ -1,0 +1,360 @@
+Real model evaluation	UNKNOWN STEP	﻿2026-10-15T07:50:23.8835171Z Current runner version: '2.337.0'
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:23.8868617Z ##[group]Runner Image Provisioner
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:23.8869942Z Hosted Compute Agent
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:23.8870952Z Version: 20261002.596
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:23.8871850Z Commit: c3d12f3313a95f25162a1503be624f3b0617f8c0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:23.8872882Z Build Date: 2026-10-02T22:28:27Z
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:23.8873873Z Worker ID: {e8f8efdd-b24d-400a-a070-561fe3da0dc9}
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:23.8874938Z Region: northcentralus
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:23.8875690Z Cloud: Azure
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:23.8876503Z ##[endgroup]
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:23.8878588Z ##[group]Operating System
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:23.8879428Z Ubuntu
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:23.8880196Z 24.04.5
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:23.8881161Z LTS
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:23.8881838Z ##[endgroup]
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:23.8882646Z ##[group]Runner Image
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:23.8883520Z Image: ubuntu-24.04
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:23.8884352Z Version: 20261004.327.1
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:23.8886060Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261004.327/images/ubuntu/Ubuntu2404-Readme.md
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:23.8888118Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261004.327
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:23.8889292Z ##[endgroup]
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:23.8890982Z ##[group]GITHUB_TOKEN Permissions
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:23.8893697Z Contents: read
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:23.8894547Z Metadata: read
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:23.8895255Z ##[endgroup]
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:23.8898042Z Secret source: Actions
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:23.8899418Z Cache mode: write
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:23.8900303Z Prepare workflow directory
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:23.9626989Z Prepare all required actions
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:23.9700188Z Getting action download info
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:24.3354179Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:24.4492007Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:24.5994106Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:24.9181685Z Complete job name: Real model evaluation
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:24.9854691Z ##[group]Run actions/checkout@v4
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:24.9855571Z with:
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:24.9856139Z   repository: wudilyy999/voyacart-agent
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:24.9861002Z   token: ***
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:24.9861587Z   ssh-strict: true
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:24.9862176Z   ssh-user: git
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:24.9862733Z   persist-credentials: true
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:24.9863316Z   clean: true
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:24.9863907Z   sparse-checkout-cone-mode: true
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:24.9864570Z   fetch-depth: 1
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:24.9865172Z   fetch-tags: false
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:24.9865732Z   show-progress: true
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:24.9866272Z   lfs: false
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:24.9866858Z   submodules: false
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:24.9867438Z   set-safe-directory: true
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:24.9868058Z   allow-unsafe-pr-checkout: false
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:24.9868870Z env:
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:24.9869378Z   LLM_BASE_URL: 
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:24.9869997Z   LLM_API_KEY: 
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:24.9870770Z   LLM_MODEL: qwen3.8-flash
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:24.9871784Z   LLM_FALLBACK_MODEL: 
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:24.9872367Z   REDIS_URL: 
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:24.9872940Z   LANGFUSE_SECRET_KEY: 
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:24.9873556Z   LANGFUSE_PUBLIC_KEY: 
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:24.9874115Z ##[endgroup]
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:25.1088019Z Syncing repository: wudilyy999/voyacart-agent
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:25.1091814Z ##[group]Getting Git version info
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:25.1093968Z Working directory is '/home/runner/work/voyacart-agent/voyacart-agent'
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:25.1097440Z [command]/usr/bin/git version
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:25.1178184Z git version 2.55.0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:25.1186623Z ##[endgroup]
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:25.1239023Z Temporarily overriding HOME='/home/runner/work/_temp/e6fabbe5-7dc3-4093-a986-1394ce7f65a4' before making global git config changes
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:25.1242206Z Adding repository directory to the temporary git global config as a safe directory
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:25.1245205Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/voyacart-agent/voyacart-agent
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:25.1315162Z Deleting the contents of '/home/runner/work/voyacart-agent/voyacart-agent'
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:25.1339051Z ##[group]Initializing the repository
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:25.1341518Z [command]/usr/bin/git init /home/runner/work/voyacart-agent/voyacart-agent
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:25.1483846Z hint: Using 'master' as the name for the initial branch. This default branch name
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:25.1503566Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:25.1513127Z hint: to use in all of your new repositories, which will suppress this warning,
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:25.1515459Z hint: call:
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:25.1517790Z hint:
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:25.1518835Z hint: 	git config --global init.defaultBranch <name>
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:25.1519985Z hint:
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:25.1522006Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:25.1533065Z hint: 'development'. The just-created branch can be renamed via this command:
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:25.1534966Z hint:
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:25.1539825Z hint: 	git branch -m <name>
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:25.1581139Z hint:
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:25.1588873Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:25.1595427Z Initialized empty Git repository in /home/runner/work/voyacart-agent/voyacart-agent/.git/
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:25.1623357Z [command]/usr/bin/git remote add origin https://github.com/wudilyy999/voyacart-agent
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:25.1645988Z ##[endgroup]
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:25.1647540Z ##[group]Disabling automatic garbage collection
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:25.1648998Z [command]/usr/bin/git config --local gc.auto 0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:25.1653893Z ##[endgroup]
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:25.1655336Z ##[group]Setting up auth
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:25.1656911Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:25.1667313Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:25.2152878Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:25.2215970Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:25.2424360Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:25.2458303Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:25.2646442Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:25.2687770Z ##[endgroup]
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:25.2689526Z ##[group]Fetching the repository
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:25.2698289Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +0f0ba712351abff47a69c7dfd0c5da2c71a0ad40:refs/remotes/pull/1/merge
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:29.9844225Z From https://github.com/wudilyy999/voyacart-agent
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:29.9845836Z  * [new ref]         0f0ba712351abff47a69c7dfd0c5da2c71a0ad40 -> pull/1/merge
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:29.9849218Z ##[endgroup]
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:29.9850448Z ##[group]Determining the checkout info
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:29.9851958Z ##[endgroup]
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:29.9856735Z [command]/usr/bin/git sparse-checkout disable
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:30.0149818Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:30.0342019Z ##[group]Checking out the ref
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:30.0345536Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/1/merge
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:30.8485177Z Note: switching to 'refs/remotes/pull/1/merge'.
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:30.8485908Z 
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:30.8487859Z You are in 'detached HEAD' state. You can look around, make experimental
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:30.8489687Z changes and commit them, and you can discard any commits you make in this
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:30.8491002Z state without impacting any branches by switching back to a branch.
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:30.8491770Z 
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:30.8492310Z If you want to create a new branch to retain commits you create, you may
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:30.8493422Z do so (now or later) by using -c with the switch command. Example:
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:30.8494141Z 
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:30.8494555Z   git switch -c <new-branch-name>
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:30.8494993Z 
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:30.8495409Z Or undo this operation with:
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:30.8495835Z 
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:30.8496182Z   git switch -
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:30.8496926Z 
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:30.8497477Z Turn off this advice by setting config variable advice.detachedHead to false
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:30.8498146Z 
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:30.8498908Z HEAD is now at 0f0ba71 Merge 9f2b56f1ba416d4771474426660aff970a08b76c into 2c77c8db330a22c07aa45e5d7686a796363f9d90
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:30.8519942Z ##[endgroup]
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:30.8570545Z [command]/usr/bin/git log -1 --format=%H
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:30.8596524Z 0f0ba712351abff47a69c7dfd0c5da2c71a0ad40
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:30.8860291Z ##[group]Run actions/setup-python@v5
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:30.8860949Z with:
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:30.8861465Z   python-version: 3.11
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:30.8861782Z   check-latest: false
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:30.8864658Z   token: ***
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:30.8864967Z   update-environment: true
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:30.8865323Z   allow-prereleases: false
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:30.8865688Z   freethreaded: false
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:30.8865977Z env:
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:30.8866260Z   LLM_BASE_URL: 
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:30.8866585Z   LLM_API_KEY: 
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:30.8866903Z   LLM_MODEL: qwen3.8-flash
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:30.8867220Z   LLM_FALLBACK_MODEL: 
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:30.8867513Z   REDIS_URL: 
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:30.8867807Z   LANGFUSE_SECRET_KEY: 
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:30.8868104Z   LANGFUSE_PUBLIC_KEY: 
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:30.8868436Z ##[endgroup]
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:31.0175897Z ##[group]Installed versions
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:31.0285077Z (node:2088) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:31.0286509Z Successfully set up CPython (3.11.17)
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:31.0287394Z (Use `node --trace-deprecation ...` to show where the warning was created)
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:31.0313699Z ##[endgroup]
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:31.0537786Z ##[group]Run python -m pip install uv
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:31.0538479Z [36;1mpython -m pip install uv[0m
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:31.0980112Z shell: /usr/bin/bash -e {0}
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:31.0980890Z env:
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:31.0981319Z   LLM_BASE_URL: 
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:31.0981638Z   LLM_API_KEY: 
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:31.0981996Z   LLM_MODEL: qwen3.8-flash
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:31.0982346Z   LLM_FALLBACK_MODEL: 
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:31.0982642Z   REDIS_URL: 
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:31.0983010Z   LANGFUSE_SECRET_KEY: 
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:31.0983340Z   LANGFUSE_PUBLIC_KEY: 
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:31.0983762Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.17/x64
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:31.0984341Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.17/x64/lib/pkgconfig
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:31.0984836Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:31.0985348Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:31.0985904Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:31.0986409Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.17/x64/lib
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:31.0987281Z ##[endgroup]
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:34.5906809Z Collecting uv
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:34.6449559Z   Downloading uv-0.13.1-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (11 kB)
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:34.6538244Z Downloading uv-0.13.1-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (17.3 MB)
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:34.9130871Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 17.3/17.3 MB 70.7 MB/s  0:00:00
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:35.1072101Z Installing collected packages: uv
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:35.3235241Z Successfully installed uv-0.13.1
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:35.3911071Z ##[group]Run uv sync --frozen
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:35.3911539Z [36;1muv sync --frozen[0m
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:35.3952246Z shell: /usr/bin/bash -e {0}
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:35.3952606Z env:
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:35.3952866Z   LLM_BASE_URL: 
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:35.3953192Z   LLM_API_KEY: 
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:35.3953480Z   LLM_MODEL: qwen3.8-flash
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:35.3953868Z   LLM_FALLBACK_MODEL: 
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:35.3954156Z   REDIS_URL: 
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:35.3954420Z   LANGFUSE_SECRET_KEY: 
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:35.3954746Z   LANGFUSE_PUBLIC_KEY: 
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:35.3955133Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.17/x64
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:35.3955626Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.17/x64/lib/pkgconfig
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:35.3956118Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:35.3956557Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:35.3957052Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:35.3957613Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.17/x64/lib
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:35.3958033Z ##[endgroup]
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:35.4501918Z Using CPython 3.11.17 interpreter at: /opt/hostedtoolcache/Python/3.11.17/x64/bin/python3.11
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:35.4503178Z Creating virtual environment at: .venv
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:35.5355374Z Downloading pydantic-core (2.0MiB)
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:35.5364375Z Downloading aiohttp (1.7MiB)
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:35.5368905Z Downloading numpy (16.1MiB)
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:35.5369743Z Downloading pygments (1.2MiB)
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:35.5370472Z Downloading openai (1.6MiB)
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:35.5380102Z Downloading agentscope (1.2MiB)
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:35.5385753Z Downloading sqlalchemy (3.2MiB)
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:35.5386568Z Downloading grpcio (6.8MiB)
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:35.5388043Z Downloading uvloop (3.6MiB)
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:35.5389755Z Downloading cryptography (4.5MiB)
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:35.5391565Z Downloading dashscope (1.5MiB)
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:35.9659820Z  Downloaded agentscope
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:36.0355416Z  Downloaded pygments
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:36.0392767Z  Downloaded dashscope
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:36.0513877Z  Downloaded pydantic-core
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:36.0531411Z  Downloaded aiohttp
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:36.0634707Z  Downloaded openai
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:36.1139917Z  Downloaded sqlalchemy
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:36.1926170Z  Downloaded uvloop
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:36.1967119Z  Downloaded grpcio
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:36.1971574Z  Downloaded cryptography
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:36.3267419Z  Downloaded numpy
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:36.3367658Z Prepared 112 packages in 884ms
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5385632Z Installed 112 packages in 1.20s
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5386994Z  + ag-ui-protocol==0.1.22
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5387882Z  + agentscope==2.0.8
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5388642Z  + aiofiles==25.1.0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5389410Z  + aiohappyeyeballs==2.7.1
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5412120Z  + aiohttp==3.14.3
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5415445Z  + aioitertools==0.13.0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5421294Z  + aiosignal==1.4.0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5422217Z  + aiosqlite==0.22.1
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5434122Z  + annotated-doc==0.0.5
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5434725Z  + annotated-types==0.8.0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5435335Z  + anthropic==0.121.0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5435846Z  + anyio==4.14.2
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5436334Z  + attrs==26.1.0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5436817Z  + bidict==0.23.1
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5437341Z  + cached-property==2.0.1
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5437868Z  + certifi==2026.7.22
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5438348Z  + cffi==2.1.1
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5439822Z  + charset-normalizer==3.4.9
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5440362Z  + click==8.4.2
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5441104Z  + croniter==6.2.4
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5441554Z  + cryptography==50.0.0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5442108Z  + dashscope==1.26.6
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5442598Z  + distro==1.9.0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5443082Z  + docstring-parser==0.18.0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5443580Z  + fastapi==0.141.1
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5444006Z  + filetype==1.2.0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5444500Z  + frozenlist==1.8.0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5445344Z  + googleapis-common-protos==1.75.1
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5446103Z  + greenlet==3.5.5
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5446550Z  + grpcio==1.83.0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5446981Z  + h11==0.16.0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5447481Z  + h2==4.4.1
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5447920Z  + hpack==4.2.0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5448436Z  + httpcore==1.0.9
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5448879Z  + httptools==0.8.0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5449459Z  + httpx==0.28.1
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5450102Z  + httpx-sse==0.4.3
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5450942Z  + hyperframe==6.1.0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5451475Z  + idna==3.18
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5451936Z  + iniconfig==2.3.0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5452383Z  + jinja2==3.1.6
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5452902Z  + jiter==0.16.0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5453375Z  + json-repair==0.63.4
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5453914Z  + json5==0.15.0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5454380Z  + jsonschema==4.26.0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5454892Z  + jsonschema-specifications==2025.9.1
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5455598Z  + markdown-it-py==4.2.0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5456119Z  + markupsafe==3.0.3
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5456622Z  + mcp==1.29.0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5457130Z  + mdurl==0.1.2
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5457659Z  + multidict==6.7.1
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5458233Z  + numpy==2.4.6
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5458728Z  + openai==2.53.0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5459252Z  + opentelemetry-api==1.44.0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5459879Z  + opentelemetry-exporter-otlp==1.44.0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5460769Z  + opentelemetry-exporter-otlp-proto-common==1.44.0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5461621Z  + opentelemetry-exporter-otlp-proto-grpc==1.44.0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5462357Z  + opentelemetry-exporter-otlp-proto-http==1.44.0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5463019Z  + opentelemetry-proto==1.44.0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5463596Z  + opentelemetry-sdk==1.44.0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5464186Z  + opentelemetry-semantic-conventions==0.65b0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5464849Z  + packaging==26.3
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5465316Z  + pluggy==1.6.0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5465752Z  + portalocker==3.2.0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5466334Z  + propcache==0.5.2
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5466894Z  + protobuf==7.35.1
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5467406Z  + pycparser==3.0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5467879Z  + pydantic==2.13.4
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5468354Z  + pydantic-core==2.46.4
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5469465Z  + pydantic-settings==2.15.0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5470256Z  + pygments==2.20.0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5471782Z  + pyjwt==2.13.0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5472298Z  + pypdf==6.19.0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5472924Z  + pytest==9.1.1
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5483754Z  + pytest-asyncio==1.4.0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5484243Z  + python-datauri==3.0.2
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5484752Z  + python-dateutil==2.9.0.post0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5485132Z  + python-dotenv==1.2.2
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5485499Z  + python-engineio==4.13.4
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5485895Z  + python-frontmatter==1.3.0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5486298Z  + python-multipart==0.0.32
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5486688Z  + python-socketio==5.16.4
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5487040Z  + pyyaml==6.0.3
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5487419Z  + qdrant-client==1.19.0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5487772Z  + redis==8.1.0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5488177Z  + referencing==0.37.0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5488553Z  + requests==2.34.2
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5488876Z  + rich==15.0.0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5489189Z  + rpds-py==2026.6.3
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5489556Z  + shellingham==1.5.4
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5489954Z  + shortuuid==1.0.13
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5490349Z  + simple-websocket==1.1.0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5491074Z  + six==1.17.0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5491526Z  + sniffio==1.3.1
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5491893Z  + sqlalchemy==2.0.52
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5492243Z  + sse-starlette==3.4.8
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5492597Z  + starlette==1.6.0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5492923Z  + tqdm==4.70.0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5493285Z  + tree-sitter==0.26.0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5493664Z  + tree-sitter-bash==0.25.1
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5494011Z  + typer==0.27.1
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5494363Z  + typing-extensions==4.16.0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5494727Z  + typing-inspection==0.4.3
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5495063Z  + tzdata==2026.3
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5495429Z  + urllib3==2.7.0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5495832Z  + uvicorn==0.52.1
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5496368Z  + uvloop==0.22.1
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5496787Z  + watchfiles==1.2.0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5497116Z  + websocket-client==1.9.0
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5497540Z  + websockets==17.0.1
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5497867Z  + wsproto==1.3.2
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5498546Z  + yarl==1.24.5
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5539870Z ##[group]Run if [ "$HARNESS_PROFILE" = release ]; then
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5540401Z [36;1mif [ "$HARNESS_PROFILE" = release ]; then[0m
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5541309Z [36;1m  uv run python -m scripts.eval.harness run --profile release --output eval/verification/ci-model --require-benefit[0m
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5541873Z [36;1melse[0m
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5542380Z [36;1m  uv run python -m scripts.eval.harness run --profile "$HARNESS_PROFILE" --output eval/verification/ci-model[0m
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5542918Z [36;1mfi[0m
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5543326Z [36;1muv run python -m scripts.eval.harness verify eval/verification/ci-model[0m
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5585680Z shell: /usr/bin/bash -e {0}
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5586055Z env:
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5586324Z   LLM_BASE_URL: 
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5586648Z   LLM_API_KEY: 
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5586975Z   LLM_MODEL: qwen3.8-flash
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5587297Z   LLM_FALLBACK_MODEL: 
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5587597Z   REDIS_URL: 
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5587998Z   LANGFUSE_SECRET_KEY: 
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5588327Z   LANGFUSE_PUBLIC_KEY: 
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5588698Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.17/x64
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5589202Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.17/x64/lib/pkgconfig
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5589683Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5590164Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5590849Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5591301Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.17/x64/lib
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5591714Z   HARNESS_PROFILE: smoke
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:50:37.5592015Z ##[endgroup]
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:51:24.4365384Z 未执行真实模型评测，缺少配置：LLM_API_KEY, LLM_BASE_URL。GitHub Actions 请配置对应的 HARNESS_LLM_API_KEY / HARNESS_LLM_BASE_URL secrets。
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:51:24.4581425Z HTML: /home/runner/work/voyacart-agent/voyacart-agent/eval/verification/ci-model/report.html
+Real model evaluation	UNKNOWN STEP	2026-10-15T07:51:24.4798265Z ##[error]Process completed with exit code 2.
