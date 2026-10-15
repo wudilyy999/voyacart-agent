@@ -136,6 +136,13 @@ def test_product_response_requires_exact_schema_and_enumerated_labels(content):
     with pytest.raises(ValueError):parse_result(json_line(content),'enrich')
 
 
+@pytest.mark.parametrize('opening',['```json','```'])
+def test_whole_markdown_fence_is_unwrapped_and_inner_schema_still_checked(opening):
+    assert parse_result(f'{opening}\n{{"category":"其他","material_tags":[]}}\n```','enrich')=={'category':'其他','material_tags':[]}
+    with pytest.raises(ValueError):parse_result(f'{opening}\n{{"category":"越界类目","material_tags":[]}}\n```','enrich')
+    with pytest.raises(ValueError):parse_result(f'结果：{opening}\n{{"category":"其他","material_tags":[]}}\n```','enrich')
+
+
 async def test_incomplete_response_is_saved_as_failed_and_replayed_without_call(tmp_path):
     body=answer('enrich');body['choices'][0]['finish_reason']='length'
     cache=tmp_path/'cache.jsonl';replay=tmp_path/'replay';replay.mkdir()

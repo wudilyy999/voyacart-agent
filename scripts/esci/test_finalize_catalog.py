@@ -41,14 +41,15 @@ def test_final_catalog_and_evaluations_are_reproducible(tmp_path):
     (prepared/'translations.jsonl').write_text(''.join(json_line(r) for r in translated))
     reports=[]
     for destination in (tmp_path/'first',tmp_path/'second'):
-        reports.append(finalize(prepared,prepared/'enriched.jsonl',prepared/'translations.jsonl',destination))
+        reports.append(finalize(prepared,prepared/'enriched.jsonl',prepared/'translations.jsonl',destination,'v2'))
     assert reports[0]==reports[1]
     assert reports[0]['queries']==TARGETS
     assert reports[0]['products']==500 and reports[0]['chinese_queries']==200
     first,second=tmp_path/'first',tmp_path/'second'
     for path in first.rglob('*'):
         if path.is_file():assert path.read_bytes()==(second/path.relative_to(first)).read_bytes()
-    with gzip.open(first/'catalog-esci-v1.jsonl.gz', 'rt', encoding='utf-8') as stream:
+    assert (first/'selection-v2.json').exists()
+    with gzip.open(first/'catalog-esci-v2.jsonl.gz', 'rt', encoding='utf-8') as stream:
         products=[json.loads(line) for line in stream]
     assert len(products)==500 and products[0]['product_id']=='P100000'
     assert all(p['title']=='Travel\u2028Backpack\u0085Original\u2029Title' for p in products)

@@ -7,6 +7,7 @@ from datetime import datetime
 import hashlib
 import json
 from pathlib import Path
+import re
 import subprocess
 import time
 from zoneinfo import ZoneInfo
@@ -40,10 +41,13 @@ PROMPTS = {
         '直接以左花括号开始，以右花括号结束。'
     ),
 }
+# 模型偶发把整段 JSON 包进 Markdown 代码块（20 件试跑出现 1 次）；只剥整段包裹，内部仍按严格 JSON 与枚举校验。
+MARKDOWN_FENCE=re.compile(r'```(?:json)?\n(.*)\n```',re.S)
 
 
 def parse_result(content: str, mode: str) -> dict:
-    result=json.loads(content)
+    fenced=MARKDOWN_FENCE.fullmatch(content.strip())
+    result=json.loads(fenced.group(1) if fenced else content)
     if not isinstance(result,dict):
         raise ValueError('response_schema_invalid')
     if mode=='enrich':

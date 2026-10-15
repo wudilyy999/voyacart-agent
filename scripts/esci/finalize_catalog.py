@@ -78,7 +78,7 @@ def translation_inputs(prepared: Path, enrichment_path: Path) -> list[dict]:
         for row in chinese_selection(selection['holdout'])]
 
 
-def finalize(prepared: Path, enrichment_path: Path, translations_path: Path, output: Path) -> dict:
+def finalize(prepared: Path, enrichment_path: Path, translations_path: Path, output: Path, version: str) -> dict:
     products,enriched,examples,selection,rejected=selected_inputs(prepared,enrichment_path)
     wanted={(r['product_locale'],r['product_id']) for qs in selection.values() for q in qs for r in examples[q['locale'],q['query_id']]}
     records=[catalog_record(products[key],enriched[key],100000+i) for i,key in enumerate(sorted(wanted))]
@@ -88,7 +88,7 @@ def finalize(prepared: Path, enrichment_path: Path, translations_path: Path, out
     by_id={r['product_id']:r for r in records}
     output.mkdir(parents=True,exist_ok=False)
     data=''.join(json_line(row) for row in records).encode()
-    with (output/'catalog-esci-v1.jsonl.gz').open('wb') as stream:
+    with (output/f'catalog-esci-{version}.jsonl.gz').open('wb') as stream:
         with gzip.GzipFile(filename='',mode='wb',fileobj=stream,mtime=0) as zipped:
             zipped.write(data)
     evaluation=output/'eval'; evaluation.mkdir()
@@ -140,7 +140,7 @@ def finalize(prepared: Path, enrichment_path: Path, translations_path: Path, out
         for row in random.Random(SEED).sample(chinese,50):
             writer.writerow({'locale':row['locale'],'query_id':row['query_id'],'original_query':row['original_query'],'translation':row['query']})
     selected={'seed':SEED,'targets':TARGETS,'queries':selection,'rejected':rejected}
-    (output/'selection-v1.json').write_text(json.dumps(selected,ensure_ascii=False,sort_keys=True,indent=2)+'\n')
+    (output/f'selection-{version}.json').write_text(json.dumps(selected,ensure_ascii=False,sort_keys=True,indent=2)+'\n')
     report={'queries':{k:len(v) for k,v in selection.items()},'products':len(records),
         'categories':dict(Counter(r['category'] for r in records)), 'locales':dict(Counter(r['source_locale'] for r in records)),
         'out_of_stock_ratio':sum(p['skus'][0]['stock']==0 for p in records)/len(records),
@@ -157,8 +157,9 @@ def main():
     parser.add_argument('--enrichment',type=Path,required=True)
     parser.add_argument('--translations',type=Path,required=True)
     parser.add_argument('--output',type=Path,required=True)
+    parser.add_argument('--version',required=True,help='目录与抽样文件的版本号，如 v2')
     args=parser.parse_args()
-    print(json.dumps(finalize(args.prepared,args.enrichment,args.translations,args.output),ensure_ascii=False))
+    print(json.dumps(finalize(args.prepared,args.enrichment,args.translations,args.output,args.version),ensure_ascii=False))
 
 
 if __name__=='__main__':main()
