@@ -17,7 +17,7 @@ from scripts.esci.prepare import json_line
 
 
 # 商品级模型增强，或增强前以查询预分类众数代理的类目（材质为空）。
-CATEGORY_SOURCES=('product-enrich-v1','query-class-proxy-v1')
+CATEGORY_SOURCES=('product-enrich-batch-v1','product-enrich-v1','query-class-proxy-v1')
 
 
 def load_rows(path: Path) -> list[dict]:
