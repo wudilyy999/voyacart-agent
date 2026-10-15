@@ -1,0 +1,65 @@
+{
+  "items": 15860,
+  "status": {
+    "ok": 15860
+  },
+  "batch_size_of_saved_rows": {
+    "10": 15710,
+    "1": 150
+  },
+  "http_requests_logged": 1740,
+  "http_status": {
+    "200": 1736,
+    "502": 3,
+    "503": 1
+  },
+  "runs": 5,
+  "split_batches_total": 15,
+  "model_calls_total_across_runs": 1756,
+  "latency_seconds_http200": {
+    "count": 1736,
+    "mean": 7.450772098754653,
+    "p50": 3.778387416037731,
+    "p95": 20.996486042044125,
+    "max": 179.00425462494604,
+    "scope": "从发起 HTTP 请求计到收到响应，不含网关节流等待；每次请求含 10 件（拆分后含 1 件）"
+  },
+  "gateway_reported_usage_http200": {
+    "prompt_tokens": 5158595,
+    "completion_tokens": 1200929,
+    "total_tokens": 6359524
+  },
+  "usage_reported_requests": 1736,
+  "billing": "网关未返回费用，记为未知",
+  "category_distribution": {
+    "其他": 1599,
+    "办公学习": 1476,
+    "数码配件": 2006,
+    "美妆个护": 2382,
+    "母婴宠物": 1396,
+    "家居生活": 2549,
+    "厨房餐饮": 2102,
+    "户外运动": 2090,
+    "旅行装备": 260
+  },
+  "products_with_material_tags": 7516,
+  "material_tag_counts": {
+    "合成聚合物": 4401,
+    "金属": 2633,
+    "纸": 563,
+    "天然材料": 844,
+    "陶瓷": 211,
+    "玻璃": 543,
+    "天然纤维": 687
+  },
+  "agreement_with_query_proxy_category": 0.7954602774274906,
+  "overlap_with_741_single_call_rows": {
+    "products": 740,
+    "locales": {
+      "es": 740
+    },
+    "category_agreement": 0.7851351351351351,
+    "material_tags_exact_agreement": 0.9716216216216216,
+    "note": "只说明批量与单件结果的接近程度，不是准确率"
+  }
+}

@@ -341,8 +341,8 @@ async def run(args) -> dict:
                 raise ValueError('留出配置或目录与冻结开发清单不同')
             if strategies[0].endswith('_rerank') and reranker is None:
                 raise ValueError('冻结策略的精排服务未配置')
-            attempt=args.dataset_dir/'baselines/holdout-attempt-v1.json'
-            if (attempt.parent/'approved-v1.json').exists():
+            attempt=args.dataset_dir/f'baselines/holdout-attempt-{args.baseline_version}.json'
+            if (attempt.parent/f'approved-{args.baseline_version}.json').exists():
                 raise FileExistsError('留出基线已存在，本轮保持首次结果')
             attempt.parent.mkdir(parents=True,exist_ok=True)
             with attempt.open('x') as stream:
@@ -429,19 +429,20 @@ async def run(args) -> dict:
                 'report':str((args.output/'report.json').resolve()),'report_fingerprint':fingerprint(args.output/'report.json'),
                 'manifest':str((args.output/'manifest.json').resolve()),'manifest_fingerprint':fingerprint(args.output/'manifest.json'),
                 'summary':report['summary'],'crosslingual_fallback':report['crosslingual_fallback']['summary']}
-            with (args.dataset_dir/'baselines/approved-v1.json').open('x') as stream:
+            with (args.dataset_dir/f'baselines/approved-{args.baseline_version}.json').open('x') as stream:
                 stream.write(json_line(approved))
 
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--catalog',type=Path,default=ROOT/'data/catalog-esci-v1.jsonl.gz')
+    parser.add_argument('--catalog',type=Path,default=ROOT/'data/catalog-esci-v2.jsonl.gz')
     parser.add_argument('--dataset-dir',type=Path,default=ROOT/'eval/esci')
     parser.add_argument('--strategies',nargs='+',choices=STRATEGIES)
     parser.add_argument('--profile',choices=('dev','holdout'),default='dev')
     parser.add_argument('--frozen',type=Path,help='留出档使用的完整开发参数清单')
+    parser.add_argument('--baseline-version',default='v2',help='留出尝试标记与批准基线的版本号，与目录、评测集属于同一轮定稿')
     parser.add_argument('--freeze-from',type=Path,help='从完整开发证据选策并写入 --output 指定的新清单文件')
-    parser.add_argument('--index-dir',type=Path,default=ROOT/'data/esci-evaluation-vectors')
+    parser.add_argument('--index-dir',type=Path,default=ROOT/'data/esci-evaluation-vectors-v2')
     parser.add_argument('--local-model-dir',type=Path,default=ROOT/'data/local_embedding/model',help='留出档兜底对比使用的本地多语种模型缓存')
     parser.add_argument('--output',type=Path,required=True)
     args=parser.parse_args()

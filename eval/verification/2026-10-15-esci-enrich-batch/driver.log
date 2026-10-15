@@ -1,0 +1,12 @@
+2026-10-15 18:01:27 run-1 start cache_rows=0
+2026-10-15 19:04:42 run-1 exited non-zero cache_rows=   10760
+2026-10-15 19:12:07 run-2 start cache_rows=   10760
+2026-10-15 19:12:08 run-2 exited non-zero cache_rows=   10760
+run-2 没有新增缓存，停止
+restart
+2026-10-15 19:15:57 run-3 start cache_rows=10760
+2026-10-15 19:15:58 run-3 exited non-zero cache_rows=10760
+2026-10-15 19:16:58 run-4 start cache_rows=10760
+2026-10-15 19:16:59 run-4 exited non-zero cache_rows=10760
+2026-10-15 19:17:59 run-5 start cache_rows=10760
+2026-10-15 19:23:44 run-5 completed cache_rows=15860

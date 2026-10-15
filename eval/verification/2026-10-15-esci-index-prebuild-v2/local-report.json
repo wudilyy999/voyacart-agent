@@ -1,0 +1,15 @@
+{
+  "total_products": 12299,
+  "reused_products": 0,
+  "embedded_products": 12299,
+  "written_products": 12299,
+  "pending_products": 0,
+  "batches": 1230,
+  "complete": true,
+  "vector_dimension": 384,
+  "seconds": 808.7680396659998,
+  "products": 12299,
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "version": "mean-pooling-onnx-q-content-chunks-128-v1:bf56c26394a04b0b95aacf9d7fb695f13cdede47ae67ef845d793392fde7c871",
+  "dimension": 384
+}

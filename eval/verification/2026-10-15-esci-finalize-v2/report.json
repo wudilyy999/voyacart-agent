@@ -1,0 +1,36 @@
+{
+  "categories": {
+    "其他": 767,
+    "办公学习": 1178,
+    "厨房餐饮": 1719,
+    "家居生活": 1970,
+    "户外运动": 1681,
+    "数码配件": 1594,
+    "旅行装备": 213,
+    "母婴宠物": 1184,
+    "美妆个护": 1993
+  },
+  "category_source": "product-enrich-batch-v1",
+  "chinese_queries": 200,
+  "destination_coverage": {
+    "CN": 0.8544597121717212,
+    "EU": 0.4976014310106513,
+    "JP": 0.5106106187494919,
+    "SG": 0.29547117651841615,
+    "US": 0.5921619643873486
+  },
+  "locales": {
+    "es": 3391,
+    "jp": 3768,
+    "us": 5140
+  },
+  "manual_audit": "pending",
+  "model_calls": 0,
+  "out_of_stock_ratio": 0.10000813074233678,
+  "products": 12299,
+  "queries": {
+    "dev": 100,
+    "distractors": 100,
+    "holdout": 300
+  }
+}
