@@ -1,0 +1,6 @@
+命令 LLM_API_KEY=unit-test-key LLM_BASE_URL=http://127.0.0.1:1/v1 LLM_MODEL=unit-test .venv/bin/python -m pytest tests/test_fixed_buyer_persistence.py -v（迁移测试改用 old-buyer 后复测）
+tests/test_fixed_buyer_persistence.py::test_favorite_api_persists_after_reopen_and_isolates PASSED [ 33%]
+tests/test_fixed_buyer_persistence.py::test_migrate_only_selected_identity_keeps_history_and_backup PASSED [ 66%]
+tests/test_fixed_buyer_persistence.py::test_migrate_covers_model_preferences_and_shopping_forms PASSED [100%]
+============================== 3 passed in 0.33s ===============================
+exit=0

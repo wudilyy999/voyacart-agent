@@ -412,7 +412,7 @@ export default function App() {
           <div className="profile">
             <span className="avatar">泡</span>
             <span>
-              <span className="profile-name">{import.meta.env.VITE_BUYER_ID || "pao-coder"}</span>
+              <span className="profile-name">{import.meta.env.VITE_BUYER_ID || "demo-buyer"}</span>
               <span className="profile-caption">每一次选择，都有新发现</span>
             </span>
             <Icon name="leaf" />

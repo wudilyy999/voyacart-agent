@@ -3,7 +3,7 @@ import argparse,sqlite3,json,hashlib
 from pathlib import Path
 from datetime import datetime,timezone
 
-FILES=['voyacart.db','ag_ui_runs.db','buyer_memory.db','buyer_skills.db','context_evidence.db','capabilities.db','prompts/registry.sqlite3','buyer_favorites.db']
+FILES=['voyacart.db','ag_ui_runs.db','buyer_memory.db','buyer_skills.db','context_evidence.db','capabilities.db','prompts/registry.sqlite3','buyer_favorites.db','models.sqlite3','shopping_forms.db']
 def quoted(value):return '"'+value.replace('"','""')+'"'
 def convert(value,source,target):
     if isinstance(value,dict):return {k:convert(v,source,target) for k,v in value.items()}
@@ -18,6 +18,7 @@ def migrate(data,source,target):
     for path in paths:
         dest=backup/path.relative_to(data);dest.parent.mkdir(parents=True,exist_ok=True)
         with sqlite3.connect(path) as original,sqlite3.connect(dest) as saved:original.backup(saved)
+        dest.chmod(path.stat().st_mode&0o777)  # models.sqlite3 含密文，备份沿用源文件权限
     report={'source':source,'target':target,'backup':str(backup),'tables':{}}
     db=sqlite3.connect(':memory:')
     try:
@@ -28,7 +29,7 @@ def migrate(data,source,target):
             for (table,) in db.execute(f"SELECT name FROM {schema}.sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite_%'").fetchall():
                 full=schema+'.'+quoted(table)
                 cols=[r[1] for r in db.execute(f'PRAGMA {schema}.table_info({quoted(table)})')]
-                owner='buyer_id' if 'buyer_id' in cols else 'buyer' if table=='context_evidence' else 'owner_id' if table=='session_write_claims' else None
+                owner='buyer_id' if 'buyer_id' in cols else 'buyer' if table in ('context_evidence','shopping_forms') else 'owner_id' if table=='session_write_claims' else None
                 if owner:
                     if db.execute(f'SELECT 1 FROM {full} WHERE {quoted(owner)}=? LIMIT 1',(target,)).fetchone():raise ValueError(f'{p.name}/{table}: 目标已有记录，未自动合并')
                     count=db.execute(f'UPDATE {full} SET {quoted(owner)}=? WHERE {quoted(owner)}=?',(target,source)).rowcount
@@ -61,4 +62,4 @@ def migrate(data,source,target):
     return report
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--data-dir',type=Path,default=Path('data'));p.add_argument('--source',required=True);p.add_argument('--target',default='pao-coder');args=p.parse_args();print(json.dumps(migrate(args.data_dir,args.source,args.target),ensure_ascii=False,indent=2))
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--data-dir',type=Path,default=Path('data'));p.add_argument('--source',required=True);p.add_argument('--target',default='demo-buyer');args=p.parse_args();print(json.dumps(migrate(args.data_dir,args.source,args.target),ensure_ascii=False,indent=2))
