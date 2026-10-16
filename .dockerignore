@@ -12,7 +12,7 @@ frontend/dist
 data/*
 !data/catalog-v1.jsonl
 !data/catalog-v3.jsonl
-!data/catalog-demo.jsonl.gz
+!data/catalog-esci-v2.jsonl.gz
 eval/verification
 
 frontend/.cache

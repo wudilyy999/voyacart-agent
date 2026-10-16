@@ -1,0 +1,232 @@
+[
+  {
+    "query": {
+      "normalized_query": "旅行颈枕 长途飞行",
+      "ship_to": "CN",
+      "price_max_major": 300
+    },
+    "path": null,
+    "hits": [
+      {
+        "product_id": "P111108",
+        "title": "Yousu Travel Pillow, Memory Foam Neck Pillow Breathable & Comfortable Pillow with Machine Washable Cover Travel Kit with Airplane Pillow with 3D Contoured Eye Masks Reusable Bag and Earplugs",
+        "source_locale": "us",
+        "landed_price": {
+          "ship_to": "CN",
+          "subtotal_major": 126.1,
+          "freight_major": 25.0,
+          "tariff_major": 0.0,
+          "tariff_rate": 0.09,
+          "de_minimis_applied": true,
+          "landed_total_major": 151.1,
+          "currency": "CNY"
+        },
+        "price": null
+      },
+      {
+        "product_id": "P109541",
+        "title": "SAIREIDER Travel Pillow 100% Memory Foam Airplanes Neck Pillows -Prevent The Heads from Falling Forward Travel Neck Pillows with Sleep Mask and Earplugs (Navy Blue)",
+        "source_locale": "us",
+        "landed_price": {
+          "ship_to": "CN",
+          "subtotal_major": 286.98,
+          "freight_major": 25.0,
+          "tariff_major": 0.0,
+          "tariff_rate": 0.09,
+          "de_minimis_applied": true,
+          "landed_total_major": 311.98,
+          "currency": "CNY"
+        },
+        "price": null
+      },
+      {
+        "product_id": "P110496",
+        "title": "DYD Travel Pillow Memory Foam Neck Pillow for Airplane Washable Velour Cover Ergonomic Neck Support Pillow with Sleep Mask & Earplugs",
+        "source_locale": "us",
+        "landed_price": {
+          "ship_to": "CN",
+          "subtotal_major": 123.26,
+          "freight_major": 25.0,
+          "tariff_major": 0.0,
+          "tariff_rate": 0.09,
+          "de_minimis_applied": true,
+          "landed_total_major": 148.26,
+          "currency": "CNY"
+        },
+        "price": null
+      }
+    ]
+  },
+  {
+    "query": {
+      "normalized_query": "保温杯 不锈钢",
+      "ship_to": "CN"
+    },
+    "path": null,
+    "hits": [
+      {
+        "product_id": "P106404",
+        "title": "銉偆銉炽偪銉炽儢銉┿兗 钃嬩粯銇?鐪熺┖鏂啽 銉犮兗銉熴兂 銉儓銉儫銈?350ml 鍗垫銈儍銉?浜岄噸妲嬮€?銉炪偘銈儍銉?姘寸瓛 銈广儐銉炽儸銈硅＝ 鐩存帴銉夈儶銉冦儣 銈炽兗銉掋兗銈儍銉?榄旀硶鐡?銉撱兗銉偒銉冦儣 銈儠銈ｃ偣 銈儠銈с優銈?淇濆喎淇濇俯 銇俱伝銇嗐伋銈?鑷畢",
+        "source_locale": "jp",
+        "landed_price": {
+          "ship_to": "CN",
+          "subtotal_major": 114.1,
+          "freight_major": 25.0,
+          "tariff_major": 0.0,
+          "tariff_rate": 0.09,
+          "de_minimis_applied": true,
+          "landed_total_major": 139.1,
+          "currency": "CNY"
+        },
+        "price": null
+      },
+      {
+        "product_id": "P108928",
+        "title": "Stainless Steel Double Boiler Pot for Melting Chocolate, Candy and Candle Making (18/8 Steel, 2 Cup Capacity, 480ML)",
+        "source_locale": "us",
+        "landed_price": {
+          "ship_to": "CN",
+          "subtotal_major": 125.46,
+          "freight_major": 25.0,
+          "tariff_major": 0.0,
+          "tariff_rate": 0.09,
+          "de_minimis_applied": true,
+          "landed_total_major": 150.46,
+          "currency": "CNY"
+        },
+        "price": null
+      },
+      {
+        "product_id": "P108666",
+        "title": "Tervis Harry Potter - Glasses and Scar Tumbler with Wrap and Black Lid 10oz Wavy, Clear",
+        "source_locale": "us",
+        "landed_price": {
+          "ship_to": "CN",
+          "subtotal_major": 202.78,
+          "freight_major": 25.0,
+          "tariff_major": 0.0,
+          "tariff_rate": 0.09,
+          "de_minimis_applied": true,
+          "landed_total_major": 227.78,
+          "currency": "CNY"
+        },
+        "price": null
+      }
+    ]
+  },
+  {
+    "query": {
+      "normalized_query": "儿童防晒霜",
+      "ship_to": "CN",
+      "price_max_major": 200
+    },
+    "path": null,
+    "hits": [
+      {
+        "product_id": "P100132",
+        "title": "Biofreeze Gel 110 Gr",
+        "source_locale": "es",
+        "landed_price": {
+          "ship_to": "CN",
+          "subtotal_major": 143.83,
+          "freight_major": 25.0,
+          "tariff_major": 0.0,
+          "tariff_rate": 0.09,
+          "de_minimis_applied": true,
+          "landed_total_major": 168.83,
+          "currency": "CNY"
+        },
+        "price": null
+      },
+      {
+        "product_id": "P101278",
+        "title": "L'Oreal Cerave Espuma Limpiadora Facial, Estándar, Sin Fragancia, 236 Mililitro",
+        "source_locale": "es",
+        "landed_price": {
+          "ship_to": "CN",
+          "subtotal_major": 74.72,
+          "freight_major": 25.0,
+          "tariff_major": 0.0,
+          "tariff_rate": 0.09,
+          "de_minimis_applied": true,
+          "landed_total_major": 99.72,
+          "currency": "CNY"
+        },
+        "price": null
+      },
+      {
+        "product_id": "P101280",
+        "title": "CeraVe Limpiador Hidratante | Ml/16oz | Lavado Diario De Cara Y Cuerpo Para Piel Normal A Seca, Sin Fragancia, 473 Mililitro",
+        "source_locale": "es",
+        "landed_price": {
+          "ship_to": "CN",
+          "subtotal_major": 99.06,
+          "freight_major": 25.0,
+          "tariff_major": 0.0,
+          "tariff_rate": 0.09,
+          "de_minimis_applied": true,
+          "landed_total_major": 124.06,
+          "currency": "CNY"
+        },
+        "price": null
+      }
+    ]
+  },
+  {
+    "query": {
+      "normalized_query": "无线蓝牙耳机 运动",
+      "ship_to": "CN"
+    },
+    "path": null,
+    "hits": [
+      {
+        "product_id": "P110723",
+        "title": "Bluetooth Earbuds, Bluetooth 5.0 Headphones Wireless Earbuds 35H Cycle Playtime in-Ear Wireless Headphones Hi-Fi Stereo Sweatproof Earphones Sport Headsets Built-in Mic for Work/Running/Travel/Gym",
+        "source_locale": "us",
+        "landed_price": {
+          "ship_to": "CN",
+          "subtotal_major": 248.14,
+          "freight_major": 25.0,
+          "tariff_major": 0.0,
+          "tariff_rate": 0.13,
+          "de_minimis_applied": true,
+          "landed_total_major": 273.14,
+          "currency": "CNY"
+        },
+        "price": null
+      },
+      {
+        "product_id": "P109801",
+        "title": "Powerbeats3 Wireless Earphones - Apple W1 Headphone Chip, Class 1 Bluetooth, 12 Hours of Listening Time, Sweat Resistant Earbuds - Defiant Black-Red",
+        "source_locale": "us",
+        "landed_price": {
+          "ship_to": "CN",
+          "subtotal_major": 162.87,
+          "freight_major": 25.0,
+          "tariff_major": 0.0,
+          "tariff_rate": 0.13,
+          "de_minimis_applied": true,
+          "landed_total_major": 187.87,
+          "currency": "CNY"
+        },
+        "price": null
+      },
+      {
+        "product_id": "P111303",
+        "title": "Bluetooth 5.0 Wireless Earbuds TWS Wireless Earbud Headphones 40H Cycle Playtime Hi-Fi Stereo with Charging Case Compatible with i-Phone Android",
+        "source_locale": "us",
+        "landed_price": {
+          "ship_to": "CN",
+          "subtotal_major": 195.6,
+          "freight_major": 25.0,
+          "tariff_major": 0.0,
+          "tariff_rate": 0.13,
+          "de_minimis_applied": true,
+          "landed_total_major": 220.6,
+          "currency": "CNY"
+        },
+        "price": null
+      }
+    ]
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "model": "text-embedding-v4",
+  "model_version": "",
+  "model_key": "7ace48e6f7264054d03887d33857e2c25d591dfdfdedf3d9055fa650cf4053af",
+  "collection": "voyacart_products",
+  "total_products": 12299,
+  "reused_products": 12299,
+  "embedded_products": 0,
+  "written_products": 0,
+  "pending_products": 0,
+  "batches": 0,
+  "complete": true
+}
