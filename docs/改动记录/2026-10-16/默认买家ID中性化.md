@@ -57,12 +57,25 @@
 | Harness 影响 | [harness-impact.json](../../../eval/verification/2026-10-16-demo-buyer-default/harness-impact.json) | `harness_changed: true`（`model_registry.py`），要求 contracts 与 smoke |
 | 离线安全契约（第一次） | [harness-contracts](../../../eval/verification/2026-10-16-demo-buyer-default/harness-contracts/report.html)，[verify 结果](../../../eval/verification/2026-10-16-demo-buyer-default/harness-contracts-verify.log) | 869 passed；之后改了测试夹具，`verify` 判定源码已变化、必须重跑 |
 | 离线安全契约（复测） | [harness-contracts-rerun](../../../eval/verification/2026-10-16-demo-buyer-default/harness-contracts-rerun/report.html)，[verify 结果](../../../eval/verification/2026-10-16-demo-buyer-default/harness-contracts-rerun-verify.log) | 869 passed，证据与当前源码一致；`verify` 仍不通过，原因是只跑了 contracts 档位 |
-| 真实模型冒烟 `make eval-harness` | 无 | 未执行，按 AGENTS.md 记为未通过 |
+| 真实模型冒烟 `make eval-harness`（PR 初版） | 无 | 未执行，当时按 AGENTS.md 记为未通过 |
+| 真实模型冒烟 `make eval-harness`（用户确认后补跑） | [harness-smoke](../../../eval/verification/2026-10-16-demo-buyer-default/harness-smoke/report.html)，[命令日志](../../../eval/verification/2026-10-16-demo-buyer-default/harness-smoke.log) | contracts 869 passed；12 个场景组合全部通过；`verify` 通过。详见下节 |
 
 改动不涉及真实外部链路和效果验收。
 
+## 补充：真实模型冒烟
+
+PR 初版只跑了离线安全契约。经用户确认，在同一提交 `1c34af3` 上用 `.env` 中的网关补跑 `make eval-harness`，结果写入新目录 `harness-smoke/`。
+
+- **配置：** 模型 `gemini-3.8-flash-high`，经本机网关 `127.0.0.1` 转发；套件 `eval/harness/v1/suite.json` 的 smoke 档位，6 个场景（`h1-dev-sku`、`h1-dev-budget`、`h1-dev-stock`、`h1-dev-cost`、`agent-sku`、`agent-approval`）× 2 个策略（current、candidate）× 1 次。没有修改 `.env`、源码或测试。
+- **时间：** 2026-10-16 12:07:07 至 12:10:08（Asia/Shanghai）。命令日志开头记录的 1 个未提交改动是这份日志本身；`verify` 核对源码归档与当前源码一致。
+- **结果：** 确定性契约 869 passed，0 失败，0 跳过。12 个场景组合全部通过，0 个错误运行，矩阵完整。`make` 退出码 0，`verify` 通过，没有拒绝理由。
+- **用量：** 每个策略 15 次实际模型调用。网关返回的总 token 为 current 168,152、candidate 171,672；场景耗时 p95 分别为 27.8 秒、26.9 秒。网关没有返回价格，费用未知。
+- **发布门禁：** 报告中 candidate 的发布门禁为 BLOCKED，原因有三条：当前档位不是留出发布评测；缓存目标缺少经过验证的计费单位与来源；缓存目标未证明完整计费收益。smoke 档位本身不可用于发布，这个结果不影响冒烟结论。本改动不调整策略、阈值或模型，不需要 `make eval-harness-release`。
+- **凭据检查：** 证据目录 70 个文件（包括展开的源码归档）中没有 `.env` 里的两个 API Key，计数见 [secret-scan.json](../../../eval/verification/2026-10-16-demo-buyer-default/secret-scan.json)，文件不记录凭据值。
+
+冒烟通过只说明这次改动没有破坏 Harness 场景，不代表收益验收。本改动不是 Harness 修复或优化，所以没有做基线对比。
+
 ## 未完成项
 
-- 真实模型冒烟未执行。`harness impact` 按文件判定 `model_registry.py` 属于 Harness 范围；本次只改了 `resolve()` 的默认参数，生产调用方都显式传入 `buyer_id`，所以冒烟场景不会经过这个默认值。是否补跑由仓库所有者决定。
 - PR 上的 `Real model evaluation` 在仓库配置 `HARNESS_LLM_API_KEY`、`HARNESS_LLM_BASE_URL` 之前会因缺少凭据失败，情况同[无命中检索测试](../2026-10-15/无命中检索测试.md)。
 - 其他安装的数据迁移需要各自执行，本机没有可验证的 `pao-coder` 数据。

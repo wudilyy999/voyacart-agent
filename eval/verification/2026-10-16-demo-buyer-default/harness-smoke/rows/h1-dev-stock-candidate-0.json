@@ -1,0 +1,199 @@
+{
+  "case_id": "h1-dev-stock",
+  "split": "dev",
+  "mode": "snapshot",
+  "strategy": "candidate",
+  "repetition": 0,
+  "answer": "经最新权威业务状态核对，商品 **P28173**（SKU：**P28173-S1**）的当前实时数据如下：\n\n- **商品ID**：P28173\n- **规格ID**：P28173-S1\n- **当前库存**：3 件\n- **当前单价**：183 CNY\n\n*(注：历史搜索记录中的库存为 51 件，当前权威核验库存为 3 件，以最新实时数据为准)*",
+  "checks": {
+    "facts": true,
+    "current_lookup": true,
+    "no_error": true
+  },
+  "passed": true,
+  "error": null,
+  "usage": [
+    {
+      "kind": "business",
+      "input_tokens": 15451,
+      "output_tokens": 247,
+      "elapsed_ms": 4223.920959047973,
+      "request_context": {
+        "system_estimated_tokens": 884,
+        "state_estimated_tokens": 482,
+        "product_estimated_tokens": 22127,
+        "history_estimated_tokens": 4602,
+        "tool_schema_estimated_tokens": 788,
+        "reason": "buyer_request",
+        "visible_evidence_answer": false,
+        "recovery_attempt": 0
+      },
+      "prompt_cache": {
+        "model": "gemini-3.8-flash-high",
+        "response_model": "gemini-3.8-flash-high",
+        "response_model_matches": true,
+        "response_model_conflict": false,
+        "protocol_status": "valid",
+        "cache_mode": "passthrough",
+        "cache_policy": "static",
+        "cache_marker_count": 0,
+        "cache_reason": "passthrough",
+        "cache_retry_without_markers": false,
+        "cache_read_tokens": null,
+        "cache_write_tokens": null,
+        "cache_usage_invalid": false,
+        "reported_cost": null,
+        "prefix_comparison": "first_request",
+        "prefix_scope_known": true,
+        "prefix_system_hash": "0217caaeaefcd119e9cdcd518c074ddc670bd9ec092f44b6197816343a05dff0",
+        "prefix_tools_hash": "76170fe99eecf618c3294e17c22b244b6ee4a6bcc96dcd2bd954e01c88e24fb0",
+        "prefix_message_count": 100,
+        "prefix_common_messages": null,
+        "prefix_common_message_bytes": null,
+        "prefix_first_changed_message": null,
+        "prefix_system_changed": null,
+        "prefix_tools_changed": null,
+        "prefix_parameters_changed": null
+      },
+      "model_execution": {
+        "identity": "gemini-3.8-flash-high|http://127.0.0.1:8917/v1/",
+        "requested_model": "gemini-3.8-flash-high",
+        "response_models": [
+          "gemini-3.8-flash-high"
+        ],
+        "response_model_matches": true,
+        "profile_id": null,
+        "profile_revision": null
+      },
+      "ttft_ms": null
+    },
+    {
+      "kind": "business",
+      "input_tokens": 15572,
+      "output_tokens": 121,
+      "elapsed_ms": 5681.152792065404,
+      "request_context": {
+        "system_estimated_tokens": 884,
+        "state_estimated_tokens": 482,
+        "product_estimated_tokens": 22127,
+        "history_estimated_tokens": 4957,
+        "tool_schema_estimated_tokens": 788,
+        "reason": "tool_followup",
+        "visible_evidence_answer": false,
+        "recovery_attempt": 0
+      },
+      "prompt_cache": {
+        "model": "gemini-3.8-flash-high",
+        "response_model": "gemini-3.8-flash-high",
+        "response_model_matches": true,
+        "response_model_conflict": false,
+        "protocol_status": "valid",
+        "cache_mode": "passthrough",
+        "cache_policy": "static",
+        "cache_marker_count": 0,
+        "cache_reason": "passthrough",
+        "cache_retry_without_markers": false,
+        "cache_read_tokens": null,
+        "cache_write_tokens": null,
+        "cache_usage_invalid": false,
+        "reported_cost": null,
+        "prefix_comparison": "append",
+        "prefix_scope_known": true,
+        "prefix_system_hash": "0217caaeaefcd119e9cdcd518c074ddc670bd9ec092f44b6197816343a05dff0",
+        "prefix_tools_hash": "76170fe99eecf618c3294e17c22b244b6ee4a6bcc96dcd2bd954e01c88e24fb0",
+        "prefix_message_count": 102,
+        "prefix_common_messages": 100,
+        "prefix_common_message_bytes": 50664,
+        "prefix_first_changed_message": 100,
+        "prefix_system_changed": false,
+        "prefix_tools_changed": false,
+        "prefix_parameters_changed": false
+      },
+      "model_execution": {
+        "identity": "gemini-3.8-flash-high|http://127.0.0.1:8917/v1/",
+        "requested_model": "gemini-3.8-flash-high",
+        "response_models": [
+          "gemini-3.8-flash-high"
+        ],
+        "response_model_matches": true,
+        "profile_id": null,
+        "profile_revision": null
+      },
+      "ttft_ms": null
+    }
+  ],
+  "input_tokens": 31023,
+  "output_tokens": 368,
+  "model_calls": 2,
+  "lookup_calls": 0,
+  "lookup_events": [],
+  "context_diagnostics": [
+    {
+      "type": "state",
+      "mode": "snapshot",
+      "emitted": true,
+      "estimated_tokens": 298
+    },
+    {
+      "type": "prune",
+      "before_tokens": 55128,
+      "after_tokens": 55128,
+      "high_watermark": 6000,
+      "next_high_watermark": 6000,
+      "low_watermark": 6000,
+      "archived_results": 0,
+      "protected_results": 2,
+      "below_target": false,
+      "trigger": "pressure"
+    },
+    {
+      "type": "prune",
+      "before_tokens": 55128,
+      "after_tokens": 55128,
+      "high_watermark": 6000,
+      "next_high_watermark": 6000,
+      "low_watermark": 6000,
+      "archived_results": 0,
+      "protected_results": 3,
+      "below_target": false,
+      "trigger": "pressure"
+    }
+  ],
+  "current_calls": 1,
+  "elapsed_ms": 10024,
+  "compactions": [],
+  "round_metrics": [
+    {
+      "elapsed_ms": 9960,
+      "compacted": false,
+      "model_calls": 2
+    }
+  ],
+  "compaction_metrics": [],
+  "final_context_estimated_tokens": 75659,
+  "last_compaction": {
+    "policy_version": "layered-v4",
+    "reason": "pressure",
+    "before_tokens": 17101,
+    "after_tokens": 17101,
+    "archived_results": 0,
+    "summary_changed": false,
+    "elapsed_ms": 19,
+    "status": "noop"
+  },
+  "final_product_observations": 120,
+  "final_product_duplicate_ratio": 0.9166666666666666,
+  "association_check": {
+    "applicable": false,
+    "status": "not_applicable"
+  },
+  "original_checks": {
+    "facts": true,
+    "current_lookup": true,
+    "no_error": true
+  },
+  "layer": "context",
+  "critical": true,
+  "title": "当前库存",
+  "evidence_trace": "traces/h1-dev-stock-candidate-0.jsonl"
+}
