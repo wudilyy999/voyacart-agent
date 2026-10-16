@@ -1,0 +1,38 @@
+扫描时间 2026-10-16 02:37:25 CST
+基线提交 264ef63（只读打开，未执行迁移）
+命令 PYTHONPATH=. python eval/verification/2026-10-16-demo-buyer-default/scan_local_buyer.py data
+voyacart.db/buyer_preferences: 总行数=0 归属列=buyer_id pao-coder=0 demo-buyer=0 任意列含pao-coder的行=0
+voyacart.db/context_checkpoints: 总行数=0 归属列=buyer_id pao-coder=0 demo-buyer=0 任意列含pao-coder的行=0
+voyacart.db/context_operations: 总行数=0 归属列=buyer_id pao-coder=0 demo-buyer=0 任意列含pao-coder的行=0
+voyacart.db/conversation_messages: 总行数=0 归属列=buyer_id pao-coder=0 demo-buyer=0 任意列含pao-coder的行=0
+voyacart.db/conversation_sessions: 总行数=0 归属列=buyer_id pao-coder=0 demo-buyer=0 任意列含pao-coder的行=0
+voyacart.db/orders: 总行数=0 归属列=buyer_id pao-coder=0 demo-buyer=0 任意列含pao-coder的行=0
+voyacart.db/session_write_claims: 总行数=0 归属列=owner_id pao-coder=0 demo-buyer=0 任意列含pao-coder的行=0
+voyacart.db/task_access_bindings: 总行数=0 归属列=buyer_id pao-coder=0 demo-buyer=0 任意列含pao-coder的行=0
+voyacart.db/trade_confirmations: 总行数=0 归属列=buyer_id pao-coder=0 demo-buyer=0 任意列含pao-coder的行=0
+ag_ui_runs.db/agui_runs: 总行数=0 归属列=buyer_id pao-coder=0 demo-buyer=0 任意列含pao-coder的行=0
+ag_ui_runs.db/agui_sessions: 总行数=0 归属列=buyer_id pao-coder=0 demo-buyer=0 任意列含pao-coder的行=0
+ag_ui_runs.db/automation_audit: 总行数=0 归属列=buyer_id pao-coder=0 demo-buyer=0 任意列含pao-coder的行=0
+ag_ui_runs.db/automation_commands: 总行数=0 归属列=buyer_id pao-coder=0 demo-buyer=0 任意列含pao-coder的行=0
+ag_ui_runs.db/automation_runs: 总行数=0 归属列=buyer_id pao-coder=0 demo-buyer=0 任意列含pao-coder的行=0
+ag_ui_runs.db/automations: 总行数=0 归属列=buyer_id pao-coder=0 demo-buyer=0 任意列含pao-coder的行=0
+ag_ui_runs.db/learning_jobs: 总行数=0 归属列=buyer_id pao-coder=0 demo-buyer=0 任意列含pao-coder的行=0
+ag_ui_runs.db/strategy_feedback: 总行数=0 归属列=buyer_id pao-coder=0 demo-buyer=0 任意列含pao-coder的行=0
+buyer_memory.db/memory_audit: 总行数=0 归属列=buyer_id pao-coder=0 demo-buyer=0 任意列含pao-coder的行=0
+buyer_memory.db/memory_facts: 总行数=0 归属列=buyer_id pao-coder=0 demo-buyer=0 任意列含pao-coder的行=0
+buyer_memory.db/memory_migrations: 总行数=0 归属列=buyer_id pao-coder=0 demo-buyer=0 任意列含pao-coder的行=0
+buyer_skills.db: 不存在
+context_evidence.db: 不存在
+capabilities.db: 不存在
+prompts/registry.sqlite3/prompt_assignments: 总行数=0 归属列=buyer_id pao-coder=0 demo-buyer=0 任意列含pao-coder的行=0
+buyer_favorites.db: 不存在
+models.sqlite3/model_buyer_defaults: 总行数=0 归属列=buyer_id pao-coder=0 demo-buyer=0 任意列含pao-coder的行=0
+models.sqlite3/model_display_preferences: 总行数=0 归属列=buyer_id pao-coder=0 demo-buyer=0 任意列含pao-coder的行=0
+models.sqlite3/model_profiles: 总行数=2 归属列=buyer_id pao-coder=0 demo-buyer=0 任意列含pao-coder的行=0
+models.sqlite3/model_validation_tickets: 总行数=0 归属列=buyer_id pao-coder=0 demo-buyer=0 任意列含pao-coder的行=0
+shopping_forms.db/shopping_forms: 总行数=0 归属列=buyer pao-coder=0 demo-buyer=0 任意列含pao-coder的行=0
+exit=0
+JSON 文件存储目录（DATA_DIR/preferences、sessions、conversations）：
+ls: data/conversations: No such file or directory
+ls: data/preferences: No such file or directory
+ls: data/sessions: No such file or directory

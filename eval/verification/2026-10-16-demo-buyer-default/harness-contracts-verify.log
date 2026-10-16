@@ -1,0 +1,9 @@
+{
+  "passed": false,
+  "reasons": [
+    "评测后 Harness/评测源码或测试已改变，必须重跑",
+    "评测档位不足；诊断不能替代完整评测"
+  ],
+  "report": "eval/verification/2026-10-16-demo-buyer-default/harness-contracts/report.html"
+}
+exit=2

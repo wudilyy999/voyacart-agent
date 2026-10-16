@@ -1,0 +1,25 @@
+开始 2026-10-16 12:07:07 CST
+提交 1c34af3，工作区 1 个未提交改动
+命令 make eval-harness HARNESS_RUN_DIR=eval/verification/2026-10-16-demo-buyer-default/harness-smoke
+uv run python -m scripts.eval.harness run --suite eval/harness/v1/suite.json --profile smoke --strategies current,candidate --output eval/verification/2026-10-16-demo-buyer-default/harness-smoke
+{"case_id": "h1-dev-cost", "strategy": "current", "repetition": 0, "passed": true, "error": null}
+{"case_id": "h1-dev-cost", "strategy": "candidate", "repetition": 0, "passed": true, "error": null}
+{"case_id": "agent-sku", "strategy": "current", "repetition": 0, "passed": true, "error": null}
+{"case_id": "agent-sku", "strategy": "candidate", "repetition": 0, "passed": true, "error": null}
+{"case_id": "agent-approval", "strategy": "current", "repetition": 0, "passed": true, "error": null}
+{"case_id": "agent-approval", "strategy": "candidate", "repetition": 0, "passed": true, "error": null}
+{"case_id": "h1-dev-sku", "strategy": "current", "repetition": 0, "passed": true, "error": null}
+{"case_id": "h1-dev-sku", "strategy": "candidate", "repetition": 0, "passed": true, "error": null}
+{"case_id": "h1-dev-budget", "strategy": "current", "repetition": 0, "passed": true, "error": null}
+{"case_id": "h1-dev-budget", "strategy": "candidate", "repetition": 0, "passed": true, "error": null}
+{"case_id": "h1-dev-stock", "strategy": "current", "repetition": 0, "passed": true, "error": null}
+{"case_id": "h1-dev-stock", "strategy": "candidate", "repetition": 0, "passed": true, "error": null}
+HTML: /Users/liyuyang/Downloads/voyacart-agent/eval/verification/2026-10-16-demo-buyer-default/harness-smoke/report.html
+uv run python -m scripts.eval.harness verify eval/verification/2026-10-16-demo-buyer-default/harness-smoke
+{
+  "passed": true,
+  "reasons": [],
+  "report": "eval/verification/2026-10-16-demo-buyer-default/harness-smoke/report.html"
+}
+make exit=0
+结束 2026-10-16 12:10:08 CST

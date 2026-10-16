@@ -1,0 +1,60 @@
+== 改动前（main 264ef63）git grep -c pao-coder ==
+app/infrastructure/model_registry.py:1
+eval/verification/2026-10-14-demo-delivery/confirmation-before.json:1
+eval/verification/2026-10-14-demo-delivery/orders-after-repeat.json:1
+eval/verification/2026-10-14-demo-delivery/orders-after.json:1
+eval/verification/2026-10-14-demo-delivery/repeat-approval.json:3
+eval/verification/2026-10-14-demo-delivery/run-final.json:1
+eval/verification/2026-10-14-demo-delivery/session-final.json:1
+eval/verification/2026-10-14-esci-demo-integration/confirmation-after.json:1
+eval/verification/2026-10-14-esci-demo-integration/confirmation-before.json:1
+eval/verification/2026-10-14-esci-demo-integration/repeat-approval.json:1
+eval/verification/2026-10-14-queue-wait-fixed/frontend.log:1
+eval/verification/clarification-browser-20260918/REPORT.md:1
+eval/verification/context-v2-20260910/README.md:1
+eval/verification/fixed-buyer-20260909/acceptance.json:1
+eval/verification/fixed-buyer-20260909/migration.json:1
+eval/verification/history-restore-20260918/REPORT.md:2
+eval/verification/history-restore-20260918/normal-browser.json:1
+eval/verification/history-restore-20260918/normal-data-before.json:1
+eval/verification/history-restore-20260918/normal-data-integrity.json:1
+eval/verification/history-restore-20260918/verify_normal.py:3
+eval/verification/version-recovery-20260909/acceptance.json:1
+frontend/src/App.tsx:1
+frontend/src/hooks/useCommerceAgent.ts:1
+frontend/src/lib/commerceClient.ts:2
+frontend/tests/runRecovery.test.ts:3
+scripts/migrate_local_buyer.py:1
+tests/test_fixed_buyer_persistence.py:7
+
+== 改动后工作区 git grep -c pao-coder（不含本证据目录）==
+eval/verification/2026-10-14-demo-delivery/confirmation-before.json:1
+eval/verification/2026-10-14-demo-delivery/orders-after-repeat.json:1
+eval/verification/2026-10-14-demo-delivery/orders-after.json:1
+eval/verification/2026-10-14-demo-delivery/repeat-approval.json:3
+eval/verification/2026-10-14-demo-delivery/run-final.json:1
+eval/verification/2026-10-14-demo-delivery/session-final.json:1
+eval/verification/2026-10-14-esci-demo-integration/confirmation-after.json:1
+eval/verification/2026-10-14-esci-demo-integration/confirmation-before.json:1
+eval/verification/2026-10-14-esci-demo-integration/repeat-approval.json:1
+eval/verification/2026-10-14-queue-wait-fixed/frontend.log:1
+eval/verification/clarification-browser-20260918/REPORT.md:1
+eval/verification/context-v2-20260910/README.md:1
+eval/verification/fixed-buyer-20260909/acceptance.json:1
+eval/verification/fixed-buyer-20260909/migration.json:1
+eval/verification/history-restore-20260918/REPORT.md:2
+eval/verification/history-restore-20260918/normal-browser.json:1
+eval/verification/history-restore-20260918/normal-data-before.json:1
+eval/verification/history-restore-20260918/normal-data-integrity.json:1
+eval/verification/history-restore-20260918/verify_normal.py:3
+eval/verification/version-recovery-20260909/acceptance.json:1
+
+== 改动后 eval/verification 之外的出现（应为空）==
+exit=1 (1 表示无匹配)
+
+== 前端构建产物 frontend/dist ==
+含 demo-buyer 的行数（grep -c）:
+frontend/dist/assets/agent-CWWVwje9.js:0
+frontend/dist/assets/index-CkhE_WDu.js:3
+frontend/dist/assets/ui-vendor-CMif1nyE.js:0
+grep pao-coder exit=1 (1 表示无匹配)
